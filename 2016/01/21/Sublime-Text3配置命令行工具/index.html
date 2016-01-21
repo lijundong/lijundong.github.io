@@ -35,7 +35,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="kindle,工具使用," />
+  <meta name="keywords" content="SublimeText,命令行," />
 
 
 
@@ -51,20 +51,22 @@
 
 
 
-<meta name="description" content="关于kindle常说的kindle默认指代kindle电子书阅读器，但亚马逊除了硬件阅读器，也做了全平台的软件应用，我可以用我的kindle阅读器看书，同时也可以在手机（Android、iOS）和电脑（MacOS、windows）上阅读本地文件，看我在Amazon商城买的书，有没有觉得很方便，与此同时，问题也出现了，如此多的设备和文件，该怎么管理？
-设备与文件管理此处的设备包括硬件阅读器与软件ki">
+<meta name="description" content="缘起每次用命令行new一个新文件都得在文件夹里打开，很不方便，一直都在用Sublime，想在命令行里启动Sublime。
+Windows配置Subl命令
+方法一：将SublimeText的安装路径添加到环境变量中，使用sublime_text命令打开文件。但是sublime_text这个命令太长，可以用doskey命令创建宏：doskey subl=&amp;quot;C:\Program Files\S">
 <meta property="og:type" content="article">
-<meta property="og:title" content="管理你的Kindle">
-<meta property="og:url" content="http://lijundong.com/2016/01/12/Kindle内容管理/index.html">
+<meta property="og:title" content="Sublime Text3配置命令行工具">
+<meta property="og:url" content="http://lijundong.com/2016/01/21/Sublime-Text3配置命令行工具/index.html">
 <meta property="og:site_name" content="Leon's BLOG">
-<meta property="og:description" content="关于kindle常说的kindle默认指代kindle电子书阅读器，但亚马逊除了硬件阅读器，也做了全平台的软件应用，我可以用我的kindle阅读器看书，同时也可以在手机（Android、iOS）和电脑（MacOS、windows）上阅读本地文件，看我在Amazon商城买的书，有没有觉得很方便，与此同时，问题也出现了，如此多的设备和文件，该怎么管理？
-设备与文件管理此处的设备包括硬件阅读器与软件ki">
-<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg">
-<meta property="og:updated_time" content="2016-01-14T06:20:24.544Z">
+<meta property="og:description" content="缘起每次用命令行new一个新文件都得在文件夹里打开，很不方便，一直都在用Sublime，想在命令行里启动Sublime。
+Windows配置Subl命令
+方法一：将SublimeText的安装路径添加到环境变量中，使用sublime_text命令打开文件。但是sublime_text这个命令太长，可以用doskey命令创建宏：doskey subl=&amp;quot;C:\Program Files\S">
+<meta property="og:updated_time" content="2016-01-21T13:58:15.684Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="管理你的Kindle">
-<meta name="twitter:description" content="关于kindle常说的kindle默认指代kindle电子书阅读器，但亚马逊除了硬件阅读器，也做了全平台的软件应用，我可以用我的kindle阅读器看书，同时也可以在手机（Android、iOS）和电脑（MacOS、windows）上阅读本地文件，看我在Amazon商城买的书，有没有觉得很方便，与此同时，问题也出现了，如此多的设备和文件，该怎么管理？
-设备与文件管理此处的设备包括硬件阅读器与软件ki">
+<meta name="twitter:title" content="Sublime Text3配置命令行工具">
+<meta name="twitter:description" content="缘起每次用命令行new一个新文件都得在文件夹里打开，很不方便，一直都在用Sublime，想在命令行里启动Sublime。
+Windows配置Subl命令
+方法一：将SublimeText的安装路径添加到环境变量中，使用sublime_text命令打开文件。但是sublime_text这个命令太长，可以用doskey命令创建宏：doskey subl=&amp;quot;C:\Program Files\S">
 
 
 
@@ -76,7 +78,7 @@
   };
 </script>
 
-  <title> 管理你的Kindle | Leon's BLOG </title>
+  <title> Sublime Text3配置命令行工具 | Leon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -216,7 +218,7 @@
             
             
               
-                管理你的Kindle
+                Sublime Text3配置命令行工具
               
             
           </h1>
@@ -225,8 +227,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-01-12T20:55:33+08:00" content="2016-01-12">
-              2016-01-12
+            <time itemprop="dateCreated" datetime="2016-01-21T20:40:03+08:00" content="2016-01-21">
+              2016-01-21
             </time>
           </span>
 
@@ -235,8 +237,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
                   </a>
                 </span>
 
@@ -251,8 +253,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/12/Kindle内容管理/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/12/Kindle内容管理/" itemprop="commentsCount"></span>
+                <a href="/2016/01/21/Sublime-Text3配置命令行工具/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/21/Sublime-Text3配置命令行工具/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -269,49 +271,15 @@
 
       
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" rel="gallery_cijobn0oe000scsk9b3t26ydr"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
 
       
-        <span itemprop="articleBody"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="420" height="86" src="http://music.163.com/outchain/player?type=2&id=16823351&auto=0&height=66"></iframe>
-
-<h2 id="u5173_u4E8Ekindle"><a href="#u5173_u4E8Ekindle" class="headerlink" title="关于kindle"></a>关于kindle</h2><p>常说的kindle默认指代kindle电子书阅读器，但亚马逊除了硬件阅读器，也做了全平台的软件应用，我可以用我的kindle阅读器看书，同时也可以在手机（Android、iOS）和电脑（MacOS、windows）上阅读本地文件，看我在Amazon商城买的书，有没有觉得很方便，与此同时，问题也出现了，如此多的设备和文件，该怎么管理？</p>
-<h2 id="u8BBE_u5907_u4E0E_u6587_u4EF6_u7BA1_u7406"><a href="#u8BBE_u5907_u4E0E_u6587_u4EF6_u7BA1_u7406" class="headerlink" title="设备与文件管理"></a>设备与文件管理</h2><p>此处的设备包括硬件阅读器与软件kindle，设备默认使用Amazon账号进行绑定，绑定成功后，就可以在Amazon的设备管理中进行管理。<img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-12/88803027.jpg" alt="进入设置"></p>
-<h3 id="u5185_u5BB9_u7BA1_u7406"><a href="#u5185_u5BB9_u7BA1_u7406" class="headerlink" title="内容管理"></a>内容管理</h3><p>这些内容只限于从Amazon商城购买的书籍，操作包括删除或者推送到某个设备上。<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-12/25550060.jpg" alt="文件管理"></p>
-<h3 id="u8BBE_u5907_u7BA1_u7406"><a href="#u8BBE_u5907_u7BA1_u7406" class="headerlink" title="设备管理"></a>设备管理</h3><p>所有与Amazon账号绑定的设备在这里都可以看到，在这里你可以设置设备名，邮箱地址，或者注销设备。<br><em>注：下面的那个 kindle for pc 是个不存在的设备，那是第一次在windows平台上绑定Amazon账号到kindle，只是我没有注销登陆就重装了系统，于是这个设备就成了幽灵设备。</em><br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-12/41498799.jpg" alt="设备管理"></p>
-<h2 id="u6587_u4EF6_u63A8_u9001"><a href="#u6587_u4EF6_u63A8_u9001" class="headerlink" title="文件推送"></a>文件推送</h2><p>在Amazon商城里买的书，在设备联网的条件下很快就同步到了所有设备上，体验很棒。除了Kindle格式 (.MOBI, .AZW)，kindle还支持其他格式的文件(Word、HTML、RTF、Text、JPEG、GIF、PNG、BMP、PDF),所以可以将这些文件推送到kindle上阅读，推送的方式有两种。</p>
-<h3 id="USB_u7EBF_u8FDE"><a href="#USB_u7EBF_u8FDE" class="headerlink" title="USB线连"></a>USB线连</h3><p>使用USB就比较硬了，直接把kindle用数据线连接电脑，把需要推送的文件放在documents目录下即可，较大的文件建议通过这种方式，使用Email推送较大的文件审核不过，推送不了。</p>
-<h3 id="Email_u63A8_u9001"><a href="#Email_u63A8_u9001" class="headerlink" title="Email推送"></a>Email推送</h3><p>相对于直接用数据线复制，Email推送就显得极客多了，个人觉得更方便。<br><strong>原理：</strong></p>
-<ul>
-<li>kindle设备具有一个email地址</li>
-<li>用户把需要的文件以邮件的方式发给kindle的email地址</li>
-<li>推送完成</li>
+        <span itemprop="articleBody"><h2 id="u7F18_u8D77"><a href="#u7F18_u8D77" class="headerlink" title="缘起"></a>缘起</h2><p>每次用命令行new一个新文件都得在文件夹里打开，很不方便，一直都在用Sublime，想在命令行里启动Sublime。</p>
+<h2 id="Windows_u914D_u7F6ESubl_u547D_u4EE4"><a href="#Windows_u914D_u7F6ESubl_u547D_u4EE4" class="headerlink" title="Windows配置Subl命令"></a>Windows配置Subl命令</h2><ul>
+<li><p>方法一：将SublimeText的安装路径添加到环境变量中，使用<code>sublime_text</code>命令打开文件。<br>但是<code>sublime_text</code>这个命令太长，可以用<code>doskey</code>命令创建宏：<br><code>doskey subl=&quot;C:\Program Files\Sublime Text 2\sublime_text.exe&quot;</code></p>
+</li>
+<li><p>方法二：在SublimeText的安装目录下包含一个<code>subl.exe</code>，将这个文件复制到<code>C:\Windows\System32</code>路径下，使用<code>subl</code>命令打开文件。</p>
+</li>
 </ul>
-<p><strong>开始推送：</strong></p>
-<ul>
-<li>Step1：给你的设备配置一个邮件地址，kindle阅读器有一个默认的邮箱地址，我把默认的邮箱地址改成了一个更容易记住的地址。<img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-12/82468726.jpg" alt="设备邮件设置"></li>
-</ul>
-<ul>
-<li>Step2：设备有了邮箱地址，此时发送邮件给kindle是无法成功的（你的Amazon注册邮箱发送的邮件除外），除了你添加信任的邮箱地址，其余邮箱发送的内容都会被系统屏蔽，如果没有这个功能，难以想象我们每天会接收到多少垃圾邮件和广告。所以第二步要做的是添加信任邮箱。<br>管理我的内容和设备-&gt;设置-&gt;添加认可的电子信箱<img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-12/67873173.jpg" alt="添加认可的电子信箱"></li>
-</ul>
-<ul>
-<li>Step3：开始推送：将文件以附件的形式发送到kindle邮箱地址，很快文件就会同步到kindle上。</li>
-</ul>
-<h2 id="kindle_u4E5F_u53EF_u8C08_u60C5_u8BF4_u7231"><a href="#kindle_u4E5F_u53EF_u8C08_u60C5_u8BF4_u7231" class="headerlink" title="kindle也可谈情说爱"></a>kindle也可谈情说爱</h2><p>曾在知乎上看过一个故事，主人公和女票跨国恋，女主在海外读书，男主在国内复读考研，住在地下室，因为地下室没有信号，写给她的信不能立即发出去，随即想到了一个方法，在地下室写好信放手机里用邮件发出去，回到地面有信号时，邮件自动发送，她的kindle便会同步内容，他们俩就这样互相写信度过了最困难的时光。<a href="http://zhihu.com/question/28468835/answer/41341142?utm_campaign=webshare&amp;utm_source=weibo&amp;utm_medium=zhihu" target="_blank" rel="external">原版在这里</a></p>
 </span>
       
     </div>
@@ -320,9 +288,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/kindle/" rel="tag">#kindle</a>
+            <a href="/tags/SublimeText/" rel="tag">#SublimeText</a>
           
-            <a href="/tags/工具使用/" rel="tag">#工具使用</a>
+            <a href="/tags/命令行/" rel="tag">#命令行</a>
           
         </div>
       
@@ -331,17 +299,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/11/Chrome扩展「一」简易时钟/" rel="next" title="Chrome扩展[一]:简易时钟">
-                <i class="fa fa-chevron-left"></i> Chrome扩展[一]:简易时钟
+              <a href="/2016/01/21/又是一年/" rel="next" title="又是一年">
+                <i class="fa fa-chevron-left"></i> 又是一年
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/21/又是一年/" rel="prev" title="又是一年">
-                又是一年 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -368,8 +332,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/12/Kindle内容管理/"
-           data-title="管理你的Kindle" data-url="http://lijundong.com/2016/01/12/Kindle内容管理/">
+      <div class="ds-thread" data-thread-key="2016/01/21/Sublime-Text3配置命令行工具/"
+           data-title="Sublime Text3配置命令行工具" data-url="http://lijundong.com/2016/01/21/Sublime-Text3配置命令行工具/">
       </div>
     
   </div>
@@ -500,7 +464,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u5173_u4E8Ekindle"><span class="nav-text">关于kindle</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u8BBE_u5907_u4E0E_u6587_u4EF6_u7BA1_u7406"><span class="nav-text">设备与文件管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5185_u5BB9_u7BA1_u7406"><span class="nav-text">内容管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8BBE_u5907_u7BA1_u7406"><span class="nav-text">设备管理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u6587_u4EF6_u63A8_u9001"><span class="nav-text">文件推送</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#USB_u7EBF_u8FDE"><span class="nav-text">USB线连</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Email_u63A8_u9001"><span class="nav-text">Email推送</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#kindle_u4E5F_u53EF_u8C08_u60C5_u8BF4_u7231"><span class="nav-text">kindle也可谈情说爱</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u7F18_u8D77"><span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Windows_u914D_u7F6ESubl_u547D_u4EE4"><span class="nav-text">Windows配置Subl命令</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
