@@ -1,0 +1,764 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="canvas,排序动画," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="Tips:形象化演示排序算法可以让初学者快速理解，最近在看canvas，试着用js+canvas自己做了一个。已有比较好的demo：jun-lu的SortAnimate，旧金山大学的David Galles教授的算法演示课件。
+
+实现思路
+获取输入字符串
+存入数组S[]中
+新建一个对象数组Rect[]{ x , y , target_x , target_y ,   text:S[i]}（注：x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Canvas制作排序算法演示动画">
+<meta property="og:url" content="http://lijundong.com/2015/09/05/Canvas制作排序算法演示动画/index.html">
+<meta property="og:site_name" content="Leon's BLOG">
+<meta property="og:description" content="Tips:形象化演示排序算法可以让初学者快速理解，最近在看canvas，试着用js+canvas自己做了一个。已有比较好的demo：jun-lu的SortAnimate，旧金山大学的David Galles教授的算法演示课件。
+
+实现思路
+获取输入字符串
+存入数组S[]中
+新建一个对象数组Rect[]{ x , y , target_x , target_y ,   text:S[i]}（注：x">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/15-9-5/33395157.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/15-9-5/72285328.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/15-9-5/80070619.jpg">
+<meta property="og:updated_time" content="2016-02-19T03:34:14.038Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Canvas制作排序算法演示动画">
+<meta name="twitter:description" content="Tips:形象化演示排序算法可以让初学者快速理解，最近在看canvas，试着用js+canvas自己做了一个。已有比较好的demo：jun-lu的SortAnimate，旧金山大学的David Galles教授的算法演示课件。
+
+实现思路
+获取输入字符串
+存入数组S[]中
+新建一个对象数组Rect[]{ x , y , target_x , target_y ,   text:S[i]}（注：x">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> Canvas制作排序算法演示动画 | Leon's BLOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?c6907c4f3552baba34e8ee2c5980996d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Leon's BLOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">但求好事，莫问前程！</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Canvas制作排序算法演示动画
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-09-05T22:18:12+08:00" content="2015-09-05">
+              2015-09-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/09/05/Canvas制作排序算法演示动画/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/05/Canvas制作排序算法演示动画/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>Tips:<br>形象化演示排序算法可以让初学者快速理解，最近在看canvas，试着用js+canvas自己做了一个。<br>已有比较好的demo：<a href="http://jun-lu.github.io/SortAnimate/index.html" target="_blank" rel="external">jun-lu的SortAnimate</a>，<a href="http://www.webhek.com/misc/comparison-sort" target="_blank" rel="external">旧金山大学的David Galles教授的算法演示课件</a>。</p>
+<hr>
+<h3 id="u5B9E_u73B0_u601D_u8DEF"><a href="#u5B9E_u73B0_u601D_u8DEF" class="headerlink" title="实现思路"></a>实现思路</h3><ul>
+<li>获取输入字符串</li>
+<li>存入数组<code>S[]</code>中</li>
+<li>新建一个对象数组<code>Rect[]{ x , y , target_x , target_y ,   text:S[i]}</code>（注：<code>x , y</code> 是当前坐标，<code>target_x , target_y</code> 是目的坐标，<code>text</code> 记录字符）</li>
+<li>排序</li>
+<li>使用插入排序进行顺序排序，当数值有交换行为时， 用<code>track_insert[]</code>记录进行交换的元素在数组中的位置（方便在绘制动画时进行坐标定位）</li>
+<li>因为我用的是插入排序，属于<code>arr[i]</code>和<code>arr[i+1]</code>进行交换，所以只需要记录<code>i</code>就可以。<ul>
+<li>绘制</li>
+</ul>
+</li>
+<li>图片绘制<code>function Draw(){}</code></li>
+<li>图片坐标更新<code>function Update(){}</code></li>
+<li>使用<code>setInterval()</code>定时调用<code>Draw()</code>和<code>Update()</code>函数进行页面刷新</li>
+</ul>
+<h3 id="u6548_u679C"><a href="#u6548_u679C" class="headerlink" title="效果"></a>效果</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-9-5/33395157.jpg" alt="初始界面"></p>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-9-5/72285328.jpg" alt="排序过程"></p>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-9-5/80070619.jpg" alt="gif演示"></p>
+<h3 id="u5C0F_u7ED3"><a href="#u5C0F_u7ED3" class="headerlink" title="小结"></a>小结</h3><p>做动画都是一个原理，不短刷新更新坐标，擦除，绘制，之前用opencv做的2d的小游戏也是同样的原理。</p>
+<h3 id="Source_code"><a href="#Source_code" class="headerlink" title="Source code"></a>Source code</h3><h4 id="html"><a href="#html" class="headerlink" title=".html"></a>.html</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"Content-Type"</span> <span class="attribute">content</span>=<span class="value">"text/html;charset=utf-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"css/demo.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span><span class="value">src="js</span>/<span class="attribute">demo2.js</span>"&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">title</span>&gt;</span>Demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">p</span>&gt;</span>Input String：</span><br><span class="line">                <span class="tag">&lt;<span class="title">input</span>  <span class="attribute">name</span>=<span class="value">"string"</span> <span class="attribute">id</span>=<span class="value">"tin"</span> <span class="attribute">type</span>=<span class="value">"text"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">p</span>&gt;</span>                    </span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">p</span>&gt;</span> </span><br><span class="line">                <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">onclick</span>=<span class="value">"showDemo()"</span><span class="value">id="bin"</span> <span class="attribute">value</span>=<span class="value">"Show"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">canvas</span> <span class="attribute">id</span>=<span class="value">"mycanvas"</span>  &gt;</span><span class="tag">&lt;/<span class="title">canvas</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="js"><a href="#js" class="headerlink" title=".js"></a>.js</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> S;</span><br><span class="line"><span class="keyword">var</span> Coordinate_y = <span class="number">40</span>;</span><br><span class="line"><span class="keyword">var</span> Rect = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line"><span class="keyword">var</span> track_insert = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line"><span class="keyword">var</span> cons = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> cnt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="comment">//获取字符串，存入数组</span></span><br><span class="line">    S = <span class="built_in">document</span>.getElementsByName(<span class="string">"string"</span>)[<span class="number">0</span>].value.split(<span class="string">""</span>);</span><br><span class="line"><span class="comment">//依据数组元素，完成对象数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; S.length; i++) &#123;</span><br><span class="line">        <span class="keyword">var</span> rect = &#123;</span><br><span class="line">            x: <span class="number">30</span> * i,</span><br><span class="line">            y: Coordinate_y,</span><br><span class="line">            target_x: <span class="number">30</span> * i,</span><br><span class="line">            target_y: Coordinate_y,</span><br><span class="line">            text: S[i]</span><br><span class="line">        &#125;</span><br><span class="line">        Rect.push(rect);</span><br><span class="line">    &#125;</span><br><span class="line">    insertSort(S);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">insertSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> i = <span class="number">1</span>,</span><br><span class="line">    j, key, temp;</span><br><span class="line">    <span class="keyword">for</span> (; i &lt; arr.length; i++) &#123;</span><br><span class="line">        j = i;</span><br><span class="line">        key = arr[i];</span><br><span class="line">        <span class="keyword">while</span> (--j &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &gt; key) &#123;</span><br><span class="line">                arr[j + <span class="number">1</span>] = arr[j];</span><br><span class="line">                arr[j] = key;</span><br><span class="line"><span class="comment">//当数据有交换时，记录下标</span></span><br><span class="line">                track_insert.push(j);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//坐标更新</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">update</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (cons &gt; track_insert.length) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (cons == <span class="number">0</span>) &#123;</span><br><span class="line">        cnt = track_insert[cons];</span><br><span class="line">        Rect[cnt].target_x = Rect[cnt + <span class="number">1</span>].x;</span><br><span class="line">        Rect[cnt + <span class="number">1</span>].target_x = Rect[cnt].x;</span><br><span class="line">        cons += <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(cnt);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (Rect[cnt].x == Rect[cnt].target_x) &#123;</span><br><span class="line">        <span class="keyword">if</span> (cons == track_insert.length) &#123;</span><br><span class="line">            cons += <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> tem = Rect[cnt];</span><br><span class="line">        Rect[cnt] = Rect[cnt + <span class="number">1</span>];</span><br><span class="line">        Rect[cnt + <span class="number">1</span>] = tem;</span><br><span class="line">        cnt = track_insert[cons];</span><br><span class="line">        Rect[cnt].target_x = Rect[cnt + <span class="number">1</span>].x;</span><br><span class="line">        Rect[cnt + <span class="number">1</span>].target_x = Rect[cnt].x;</span><br><span class="line">        cons += <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(cnt);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Rect[cnt].x += <span class="number">1</span>;</span><br><span class="line">        Rect[cnt + <span class="number">1</span>].x -= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//绘制图像</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">draw</span>(<span class="params">context</span>) </span>&#123;</span><br><span class="line">    context.clearRect(<span class="number">0</span>, <span class="number">0</span>, context.canvas.width, context.canvas.height);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; Rect.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> ((Rect[i].x - Rect[i].target_x) &gt;= <span class="number">2</span> || (Rect[i].x - Rect[i].target_x) &lt; -<span class="number">2</span>) &#123;</span><br><span class="line">            context.fillStyle = <span class="string">"yellow"</span>;</span><br><span class="line">            context.fillRect(Rect[i].x, Rect[i].y, <span class="number">25</span>, <span class="number">25</span>);</span><br><span class="line">            context.fillStyle = <span class="string">"blue"</span>;</span><br><span class="line">            context.fillText(Rect[i].text, Rect[i].x + <span class="number">10</span>, Rect[i].y + <span class="number">15</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            context.strokeStyle = <span class="string">"blue"</span>;</span><br><span class="line">            context.strokeRect(Rect[i].x, Rect[i].y, <span class="number">25</span>, <span class="number">25</span>);</span><br><span class="line">            context.fillStyle = <span class="string">"blue"</span>;</span><br><span class="line">            context.fillText(Rect[i].text, Rect[i].x + <span class="number">10</span>, Rect[i].y + <span class="number">15</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    context.fillText(<span class="string">"插入排序"</span>, <span class="number">40</span>, <span class="number">80</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showDemo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    func();</span><br><span class="line">    <span class="keyword">var</span> c = <span class="built_in">document</span>.getElementById(<span class="string">"mycanvas"</span>);</span><br><span class="line">    c.width = <span class="number">600</span>;</span><br><span class="line">    c.height = <span class="number">300</span>;</span><br><span class="line">    <span class="keyword">var</span> context = c.getContext(<span class="string">"2d"</span>);</span><br><span class="line"><span class="comment">//40ms调用一次函数</span></span><br><span class="line">    setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        draw(context);</span><br><span class="line">        update();</span><br><span class="line">    &#125;, <span class="number">40</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="css"><a href="#css" class="headerlink" title=".css"></a>.css</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">input#tin&#123;</span><br><span class="line">    margin-bottom: 5px;</span><br><span class="line">    background-color: #fff;opacity:0.85;8</span><br><span class="line">    width:20px;</span><br><span class="line">    height:25px; </span><br><span class="line">    border-width: 1;</span><br><span class="line">    font-size: 17px; </span><br><span class="line">    color: #000; </span><br><span class="line">    font-weight: 500; </span><br><span class="line">    border-radius: 5px;</span><br><span class="line">    cursor:pointer; </span><br><span class="line">&#125;</span><br><span class="line">input#bin&#123;</span><br><span class="line">    background-color: gray;</span><br><span class="line">    width:80; </span><br><span class="line">    height:25; </span><br><span class="line">    border-width: 2; </span><br><span class="line">    font-size: 20px; </span><br><span class="line">    color: #FFFFFF; </span><br><span class="line">    font-weight: 500;</span><br><span class="line">    cursor:pointer; </span><br><span class="line">    border-radius: 5px;</span><br><span class="line">&#125;</span><br><span class="line">canvas#mycanvas&#123;</span><br><span class="line">    border:1px solid;</span><br><span class="line">    width: 600px;</span><br><span class="line">    height: 300px;</span><br><span class="line">    margin-top: 5px;</span><br><span class="line">    border-radius: 5px;</span><br><span class="line">&#125;</span><br><span class="line">div#container&#123;</span><br><span class="line">    margin-left: 70px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/canvas/" rel="tag">#canvas</a>
+          
+            <a href="/tags/排序动画/" rel="tag">#排序动画</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/06/12/编写语法分析程序/" rel="next" title="编写语法分析程序">
+                <i class="fa fa-chevron-left"></i> 编写语法分析程序
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/09/10/Hello World/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/09/05/Canvas制作排序算法演示动画/"
+           data-title="Canvas制作排序算法演示动画" data-url="http://lijundong.com/2015/09/05/Canvas制作排序算法演示动画/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-20/45710727.jpg" alt="Leon" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Leon</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">21</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lijundong" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/3949255496/profile?topnav=1&wvr=6&is_all=1" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.douban.com/people/103163980/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/leon-lee-42" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">友情链接</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://macshuo.com/" target="_blank">MacTalk</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B9E_u73B0_u601D_u8DEF"><span class="nav-text">实现思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6548_u679C"><span class="nav-text">效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5C0F_u7ED3"><span class="nav-text">小结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Source_code"><span class="nav-text">Source code</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#html"><span class="nav-text">.html</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#js"><span class="nav-text">.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#css"><span class="nav-text">.css</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"coderleon"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>
