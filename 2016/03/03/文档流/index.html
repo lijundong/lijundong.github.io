@@ -1,0 +1,780 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="css,html,文档流," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="缘起页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。欢迎指正！
+定位方式
+身处Normal flow：块级元素(块级格式)、行内元素(行内格式)、相对定位(relative)
+脱离Normal flow：浮动定位(float)、绝对定位(absolute)、固定定位(fixed)
+
+Normal">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS定位 & 文档流">
+<meta property="og:url" content="http://lijundong.com/2016/03/03/文档流/index.html">
+<meta property="og:site_name" content="Leon's BLOG">
+<meta property="og:description" content="缘起页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。欢迎指正！
+定位方式
+身处Normal flow：块级元素(块级格式)、行内元素(行内格式)、相对定位(relative)
+脱离Normal flow：浮动定位(float)、绝对定位(absolute)、固定定位(fixed)
+
+Normal">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/58206411.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/29762873.jpg">
+<meta property="og:updated_time" content="2016-03-08T11:58:44.305Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS定位 & 文档流">
+<meta name="twitter:description" content="缘起页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。欢迎指正！
+定位方式
+身处Normal flow：块级元素(块级格式)、行内元素(行内格式)、相对定位(relative)
+脱离Normal flow：浮动定位(float)、绝对定位(absolute)、固定定位(fixed)
+
+Normal">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> CSS定位 & 文档流 | Leon's BLOG </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?c6907c4f3552baba34e8ee2c5980996d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Leon's BLOG</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">但求好事，莫问前程！</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                CSS定位 & 文档流
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-03-03T10:08:01+08:00" content="2016-03-03">
+              2016-03-03
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/03/文档流/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/03/文档流/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><h2 id="u7F18_u8D77"><a href="#u7F18_u8D77" class="headerlink" title="缘起"></a>缘起</h2><p>页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。<br><em>欢迎指正！</em></p>
+<h2 id="u5B9A_u4F4D_u65B9_u5F0F"><a href="#u5B9A_u4F4D_u65B9_u5F0F" class="headerlink" title="定位方式"></a>定位方式</h2><ul>
+<li>身处Normal flow：块级元素(块级格式)、行内元素(行内格式)、相对定位(relative)</li>
+<li>脱离Normal flow：浮动定位(float)、绝对定位(absolute)、固定定位(fixed)</li>
+</ul>
+<h3 id="Normal_flow"><a href="#Normal_flow" class="headerlink" title="Normal flow"></a>Normal flow</h3><p>“normal flow”不明白为什么会被翻译成文档流，也有人叫普通流、正常流，本以为是很高深的内容，实际就是语言文本从左到右，从上到下显示，这是传统HTML文档的文本布局。</p>
+<h3 id="u8131_u79BBNormal_flow"><a href="#u8131_u79BBNormal_flow" class="headerlink" title="脱离Normal flow"></a>脱离Normal flow</h3><h4 id="u6D6E_u52A8"><a href="#u6D6E_u52A8" class="headerlink" title="浮动"></a>浮动</h4><ul>
+<li>float：<br>  属性值：left|right|none|inherit<br>  初始值：none<br>  应用元素：所有元素<br>  继承性：无<br>  特点：<ul>
+<li>浮动定位是脱离normal_flow</li>
+<li>包含块：浮动元素最近的块级祖先。</li>
+<li>浮动元素会生成一个块级框（行内框）。</li>
+<li>浮动的元素不会超过父元素框</li>
+<li>浮动的元素左右不会重叠，会依情况另起一行进行浮动。</li>
+<li>浮动元素不能比之前所有的浮动元素或者块级元素的顶部更高。</li>
+</ul>
+</li>
+<li>说到float，自然不能落下clear。<br>  clear：<br>  属性值：left|right|both|none|inherit<br>  初始值：none<br>  应用于：块级元素<br>  继承性：无<br>  对于clear的理解开始以为是消除浮动，然而实际是，块级元素通过配置clear属性，选择两边是否可以存在浮动元素，left、right分别是元素左边、右边不允许存在，而both则是两边都不允许浮动元素存在。</li>
+</ul>
+<h4 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h4><ul>
+<li><p>特点：</p>
+<ul>
+<li>定位时，从文档流中删除，相对于其包含块，其边界根据偏移属性（top，left）放置。</li>
+<li>绝对定位元素可能覆盖其他元素，或者被其他元素覆盖。</li>
+<li>绝对定位元素的包含块是最近的position值不为static的祖先元素，通常选择一个元素     （其position为relative并且没有偏移）作为绝对定位的包含块。</li>
+<li>如若为确保body元素为其后代建立一个包含块，而不是让用户代理选择初始包含块，则可以进行如下声明<code>body{position:relative;}</code></li>
+</ul>
+</li>
+<li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/58206411.jpg" alt="水平居中"></p>
+<ul>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/29762873.jpg" alt="垂直居中"></p>
+<h4 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h4><p>固定定位虽然与绝对定位很相似，只不过其包含块是视窗，元素进行固定定位之后，会从文档流中完全去除，不会有相对于文档中任何部分的位置，即定位之后完全保持不动。</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag">#css</a>
+          
+            <a href="/tags/html/" rel="tag">#html</a>
+          
+            <a href="/tags/文档流/" rel="tag">#文档流</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/21/Sublime-Text3配置命令行工具/" rel="next" title="Sublime Text3配置命令行工具">
+                <i class="fa fa-chevron-left"></i> Sublime Text3配置命令行工具
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/07/Dell笔记本加装固态/" rel="prev" title="Dell笔记本加装固态">
+                Dell笔记本加装固态 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/03/03/文档流/"
+           data-title="CSS定位 & 文档流" data-url="http://lijundong.com/2016/03/03/文档流/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-20/45710727.jpg" alt="Leon" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Leon</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/lijundong" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> github
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/3949255496/profile?topnav=1&wvr=6&is_all=1" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.douban.com/people/103163980/" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> douban
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/leon-lee-42" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">友情链接</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://macshuo.com/" target="_blank">MacTalk</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u7F18_u8D77"><span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B9A_u4F4D_u65B9_u5F0F"><span class="nav-text">定位方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Normal_flow"><span class="nav-text">Normal flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8131_u79BBNormal_flow"><span class="nav-text">脱离Normal flow</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u6D6E_u52A8"><span class="nav-text">浮动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#absolute"><span class="nav-text">absolute</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fixed"><span class="nav-text">fixed</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leon</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"coderleon"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+
+  
+  
+
+</body>
+</html>
