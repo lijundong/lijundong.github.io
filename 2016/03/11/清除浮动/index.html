@@ -64,10 +64,10 @@
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/56232609.jpg">
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/62991421.jpg">
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/70003120.jpg">
-<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/9036738.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/22540140.jpg">
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/9036738.jpg">
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/12296220.jpg">
-<meta property="og:updated_time" content="2016-03-11T05:39:48.997Z">
+<meta property="og:updated_time" content="2016-03-11T09:30:20.919Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="清除浮动">
 <meta name="twitter:description" content="为什么清除浮动因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。
@@ -296,7 +296,7 @@
 <p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
-<li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/9036738.jpg" alt=""></li>
+<li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/22540140.jpg" alt=""></li>
 </ul>
 <figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"outer"</span> style=<span class="string">"overflow: auto"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"height: 80px;width:80px;float: left;background:#e67e22"</span>&gt;float1&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"height: 80px;width:80px;float: left;background:#34495e"</span>&gt;float2&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"height: 80px;width:80px;float: left;background:#9b59b6"</span>&gt;float3&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"height: 80px;width:80px;float:right;background:#e67e22"</span>&gt;float1&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"height: 80px;width:80px;float:right;background:#34495e"</span>&gt;float2&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"height: 80px;width:80px;float:right;background:#9b59b6"</span>&gt;float3&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">    &lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/9036738.jpg" alt=""></p>
