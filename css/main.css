@@ -185,8 +185,8 @@ th {
 }
 body {
   position: relative;
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-family: Lato, 'Microsoft Jhenghei', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1;
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Cambria, Georgia, 'Microsoft Jhenghei', 'Hiragino Sans GB', 'Microsoft YaHei', 'Times New Roman', serif;
 }
 h1 {
   font-size: 24px;
@@ -457,12 +457,12 @@ td {
 }
 pre,
 .highlight {
-  background: #1d1f21;
+  background: #2d2d2d;
   margin: 20px 0;
   padding: 15px;
   overflow: auto;
-  font-size: 13px;
-  color: #c5c8c6;
+  font-size: 14px;
+  color: #ccc;
   line-height: 1.6;
 }
 .highlight .gutter pre,
@@ -471,7 +471,7 @@ pre,
 }
 pre,
 code {
-  font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
+  font-family: 'PT Mono', Consolas, Monaco, Menlo, monospace;
 }
 code {
   word-break: break-all;
@@ -500,7 +500,7 @@ pre code {
 }
 .highlight figcaption {
   font-size: 0.85em;
-  color: #969896;
+  color: #999;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -527,7 +527,7 @@ pre code {
   border-style: solid;
   border-color: #ccc;
   border-width: 1px 0;
-  background: #1d1f21;
+  background: #2d2d2d;
   padding: 15px 40px 15px 15px;
 }
 .gist .gist-file {
@@ -553,9 +553,9 @@ pre code {
   border: none;
 }
 .gist .gist-file .gist-meta {
-  background: #1d1f21;
-  color: #969896;
-  font: 13px Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #2d2d2d;
+  color: #999;
+  font: 13px Lato, 'Microsoft Jhenghei', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
   text-shadow: 0 0;
   padding: 0;
   margin-top: 1em;
@@ -569,7 +569,7 @@ pre code {
   text-decoration: underline;
 }
 pre .comment {
-  color: #969896;
+  color: #999;
 }
 pre .variable,
 pre .attribute,
@@ -583,7 +583,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c66;
+  color: #f2777a;
 }
 pre .number,
 pre .preprocessor,
@@ -591,11 +591,11 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: #de935f;
+  color: #f99157;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #b5bd68;
+  color: #9c9;
 }
 pre .string,
 pre .value,
@@ -603,11 +603,11 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #b5bd68;
+  color: #9c9;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #8abeb7;
+  color: #6cc;
 }
 pre .function,
 pre .python .decorator,
@@ -617,11 +617,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #81a2be;
+  color: #69c;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #b294bb;
+  color: #c9c;
 }
 html,
 body {
@@ -965,7 +965,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cd523c;
+  background: #ff1fff;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -1202,7 +1202,7 @@ body {
 .post-body .figure .caption {
   margin: 10px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -2181,7 +2181,7 @@ ul li {
 }
 .post-more-link a {
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #666;
   background: none;
   border: none;
