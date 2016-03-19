@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Chrome,JS,扩展," />
@@ -44,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=0.5.0" />
 
 
 
@@ -66,10 +72,16 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -78,15 +90,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -104,7 +107,16 @@
 
 
 
-  <div class="container one-column page-post-detail">
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -133,7 +145,7 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
@@ -187,7 +199,6 @@
       
 
       
-      
     </ul>
   
 
@@ -199,8 +210,9 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
 
   <div id="posts" class="posts-expand">
     
@@ -231,7 +243,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-11T09:31:14+08:00" content="2016-01-11">
               2016-01-11
             </time>
@@ -248,8 +263,21 @@
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/01/11/Chrome扩展「一」简易时钟/" class="leancloud_visitors" data-flag-title="Chrome扩展[一]:简易时钟">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -257,7 +285,7 @@
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -266,7 +294,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_cilxs2a9x002iekk9xtw5evki"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_cilyjd8rq002ip0k9jxm8knxt"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" itemprop="contentUrl"/>
               </a>
@@ -279,14 +307,20 @@
       
 
       
-        <span itemprop="articleBody"><h2 id="u7F18_u8D77"><a href="#u7F18_u8D77" class="headerlink" title="缘起"></a>缘起</h2><p>喜欢Chrome，简洁的设计，强悍的内核只是一方面，应用商店里丰富的扩展和插件才是让我对Chrome爱不释手的根本原因。这些扩展增强了Chrome的使用体验，同时也提高了开发人员的效率，最近用了一个很方便的便签应用，可惜字体只支持英文，看着让人恼火的中文，索性决定自己写一个。一个扩展很容易实现，Chrome可以直接编译JS代码，需要界面时可添加html文件，方式与网页相差无几。<br><strong>官方资源:</strong><br><a href="https://developer.chrome.com/extensions/api_index" target="_blank" rel="external">API文档</a><br><a href="https://developer.chrome.com/extensions/samples#search:" target="_blank" rel="external">Samples</a><br><a href="http://open.chrome.360.cn/extension_dev/overview.html" target="_blank" rel="external">中文API</a><br><strong>书籍:</strong><br><a href="http://www.ituring.com.cn/book/1421" target="_blank" rel="external">Chrome扩展及应用开发</a>。</p>
+        <h2 id="u7F18_u8D77"><a href="#u7F18_u8D77" class="headerlink" title="缘起"></a>缘起</h2><p>喜欢Chrome，简洁的设计，强悍的内核只是一方面，应用商店里丰富的扩展和插件才是让我对Chrome爱不释手的根本原因。这些扩展增强了Chrome的使用体验，同时也提高了开发人员的效率，最近用了一个很方便的便签应用，可惜字体只支持英文，看着让人恼火的中文，索性决定自己写一个。一个扩展很容易实现，Chrome可以直接编译JS代码，需要界面时可添加html文件，方式与网页相差无几。<br><strong>官方资源:</strong><br><a href="https://developer.chrome.com/extensions/api_index" target="_blank" rel="external">API文档</a><br><a href="https://developer.chrome.com/extensions/samples#search:" target="_blank" rel="external">Samples</a><br><a href="http://open.chrome.360.cn/extension_dev/overview.html" target="_blank" rel="external">中文API</a><br><strong>书籍:</strong><br><a href="http://www.ituring.com.cn/book/1421" target="_blank" rel="external">Chrome扩展及应用开发</a>。</p>
 <h2 id="Hello_Chrome"><a href="#Hello_Chrome" class="headerlink" title="Hello Chrome"></a>Hello Chrome</h2><h3 id="u6548_u679C"><a href="#u6548_u679C" class="headerlink" title="效果"></a>效果</h3><p>最后出来的效果是这样：<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/63411267.jpg" alt=""></p>
 <h3 id="u7ED3_u6784"><a href="#u7ED3_u6784" class="headerlink" title="结构"></a>结构</h3><h4 id="manifest-json"><a href="#manifest-json" class="headerlink" title="manifest.json"></a>manifest.json</h4><p>每一个扩展、可安装的WebApp、皮肤，都有一个manifest.json，里面提供了重要的信息<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	"manifest_version": 2,                        //默认值 2</span><br><span class="line">	"name": "我的时钟",                          //扩展名</span><br><span class="line">	"version": "1.0",                           //版本信息</span><br><span class="line">	"description":"一个简单的Chrome时钟扩展",  //扩展描述</span><br><span class="line">	"icons": &#123;                                //扩展的图标</span><br><span class="line">		"16": "images/icon16.png",</span><br><span class="line">		"48": "images/icon48.png",</span><br><span class="line">		"128": "images/icon128.png"</span><br><span class="line">	&#125;,</span><br><span class="line">	"browser_action": &#123;                  //用于在chrome主工具条的地址栏右侧增加一个图标。</span><br><span class="line">		"default_icon": &#123;</span><br><span class="line">			"19": "images/icon19.png",</span><br><span class="line">			"38": "images/icon38.png"</span><br><span class="line">		&#125;,</span><br><span class="line">		"default_title": "我的时钟",      //鼠标悬在扩展图标上显示的信息</span><br><span class="line">		"default_popup": "popup.html"     //默认的html文件</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h4 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- popup.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">style</span> <span class="attribute">type</span>=<span class="value">"text/css"</span>&gt;</span><span class="css"></span><br><span class="line">		*<span class="rules">&#123;</span><br><span class="line">			<span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>;</span><br><span class="line">			<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">		&#125;</span></span><br><span class="line">		<span class="tag">body</span><span class="rules">&#123;</span><br><span class="line">			<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">200px</span></span></span>;</span><br><span class="line">			<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100px</span></span></span>;</span><br><span class="line">		&#125;</span></span><br><span class="line">		<span class="tag">div</span><span class="rules">&#123;</span><br><span class="line">			<span class="rule"><span class="attribute">line-height</span>:<span class="value"><span class="number">100px</span></span></span>;</span><br><span class="line">			<span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">42px</span></span></span>;</span><br><span class="line">			<span class="rule"><span class="attribute">text-align</span>:<span class="value">center</span></span>;</span><br><span class="line">		&#125;</span></span><br><span class="line">	</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"clock_div"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span><span class="value">src="js</span>/<span class="attribute">my_clock.js</span>"&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h4 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h4><p>因为Chrome不允许将javascript代码段直接内嵌入HTML文档，所以我们需要通过外部引入的方式引用JS文件。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">my_clock</span>(<span class="params">el</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> today = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line">	<span class="keyword">var</span> h = today.getHours();</span><br><span class="line">	<span class="keyword">var</span> m = today.getMinutes();</span><br><span class="line">	<span class="keyword">var</span> s = today.getSeconds();</span><br><span class="line">	m = m &gt;= <span class="number">10</span> ? m : (<span class="string">'0'</span> + m);</span><br><span class="line">	s = s &gt;= <span class="number">10</span> ? s : (<span class="string">'0'</span> + s);</span><br><span class="line">	el.innerHTML = h + <span class="string">":"</span> + m + <span class="string">":"</span> + s;</span><br><span class="line">	setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		my_clock(el)</span><br><span class="line">	&#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> clock_div = <span class="built_in">document</span>.getElementById(<span class="string">"clock_div"</span>);</span><br><span class="line">my_clock(clock_div);</span><br></pre></td></tr></table></figure></p>
 <h3 id="u6253_u5305"><a href="#u6253_u5305" class="headerlink" title="打包"></a>打包</h3><p>进入chrome://extensions/，右上角打开开发者模式<br>查看效果：选择已解压的扩展程序，选择写好的文件夹即可。<br>程序打包：选择打包扩展程序，选择写好的文件夹，打包后得到一个crx文件。<br><a href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/97227943.jpg" target="_blank" rel="external"></a></p>
 <h2 id="u6269_u5C55_u63A8_u8350"><a href="#u6269_u5C55_u63A8_u8350" class="headerlink" title="扩展推荐"></a>扩展推荐</h2><p>livereload：可以与sublimeText通信，实时刷新页面。<br>pocket：标记没有读完或者将要阅读的网页<br>悦读：增强阅读体验同时可以绑定Evernote<br>ADBlock:强大的广告拦截<br>极简图床：可以绑定七牛云，方便快捷的存储图片，麻麻再也不用担心我Markdown写的博客图片存哪了（其实百度云也可以）<br>anydo：多平台同步的GTD</p>
-</span>
+
+      
+    </div>
+
+    <div>
+      
+        
       
     </div>
 
@@ -336,12 +370,11 @@
   </div>
 
 
-        </div>
+          </div>
+          
 
-        
 
-
-        
+          
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/01/11/Chrome扩展「一」简易时钟/"
@@ -351,10 +384,9 @@
   </div>
 
 
-      </div>
-
-      
+        </div>
         
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -382,10 +414,12 @@
 
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg" alt="Leon" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg"
+               alt="Leon" />
           <p class="site-author-name" itemprop="name">Leon</p>
+          <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -394,19 +428,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">31</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -418,7 +456,15 @@
               <span class="links-of-author-item">
                 <a href="https://github.com/lijundong" target="_blank">
                   
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="fa fa-github-square"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://plus.google.com/u/0/105476317091375278758" target="_blank">
+                  
+                    <i class="fa fa-google-plus-square"></i> Google+
                   
                 </a>
               </span>
@@ -434,7 +480,7 @@
               <span class="links-of-author-item">
                 <a href="https://www.facebook.com/coderleon?ref=bookmarks" target="_blank">
                   
-                    <i class="fa fa-facebook"></i> facebook
+                    <i class="fa fa-facebook-square"></i> facebook
                   
                 </a>
               </span>
@@ -450,7 +496,7 @@
               <span class="links-of-author-item">
                 <a href="http://www.douban.com/people/103163980/" target="_blank">
                   
-                    <i class="fa fa-douban"></i> Douban
+                    <i class="fa fa-spinner"></i> 豆
                   
                 </a>
               </span>
@@ -458,15 +504,7 @@
               <span class="links-of-author-item">
                 <a href="https://www.zhihu.com/people/leon-lee-42" target="_blank">
                   
-                    <i class="fa fa-zhihu"></i> Zhihu
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://plus.google.com/u/0/105476317091375278758" target="_blank">
-                  
-                    <i class="fa fa-google+"></i> Google+
+                    <i class="fa fa-spinner"></i> 知
                   
                 </a>
               </span>
@@ -477,7 +515,8 @@
         
         
 
-        <div class="links-of-author motion-element">
+        
+        <div class="links-of-blogroll motion-element">
           
         </div>
 
@@ -506,7 +545,8 @@
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -516,7 +556,7 @@
   &copy;  2015 - 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Leon</span>
 </div>
@@ -528,7 +568,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -537,59 +577,61 @@
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-  
-  
-
-  
-    
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"coderleon"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-    
-     
-
-
-    
-  
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
-
-
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
-
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  
-  
-<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
 <script type="text/javascript" id="sidebar.toc.highlight">
   $(document).ready(function () {
@@ -723,7 +765,7 @@
 
     $('.post-toc a').on('click', function (e) {
       e.preventDefault();
-      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
       var offset = $(targetSelector).offset().top;
       hasVelocity ?
         html.velocity('stop').velocity('scroll', {
@@ -736,11 +778,12 @@
     });
 
     // Expand sidebar on post detail page by default, when post has a toc.
-    motionMiddleWares.sidebar = function () {
+    NexT.motion.middleWares.sidebar = function () {
       var $tocContent = $('.post-toc-content');
-      if (CONFIG.sidebar === 'post') {
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
         if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          displaySidebar();
+          NexT.utils.displaySidebar();
         }
       }
     };
@@ -749,13 +792,163 @@
 
 
 
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"coderleon"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
 
   
   
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
 
   
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
   
 
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("pJdYd3bVkuCMKiGlqFilwfbY-gzGzoHsz", "5HFxgKVCT5jJDtW3gHibs0Tn");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+ 
 </body>
 </html>

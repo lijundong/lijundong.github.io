@@ -1,5 +1,11 @@
 <!doctype html>
-<html class="theme-next   use-motion ">
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -32,7 +38,7 @@
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -44,7 +50,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=0.4.5.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=0.5.0" />
 
 
 
@@ -64,10 +70,16 @@
 
 
 <script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Mist',
-    sidebar: 'post',
-    motion: true
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
   };
 </script>
 
@@ -76,15 +88,6 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  <!--[if lte IE 8]>
-  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
-    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
-           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
-           style='margin-left:auto;margin-right:auto;display: block;'/>
-    </a>
-  </div>
-<![endif]-->
   
 
 
@@ -102,9 +105,18 @@
 
 
 
-  <div class="container one-column 
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
    page-home 
-">
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -133,7 +145,7 @@
   
 
   
-    <ul id="menu" class="menu ">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
@@ -187,7 +199,6 @@
       
 
       
-      
     </ul>
   
 
@@ -199,24 +210,10 @@
 
     <main id="main" class="main">
       <div class="main-inner">
-        <div id="content" class="content">
-          
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
   <section id="posts" class="posts-expand">
-
-    
-
-    
-    
-      
-      
-        
-        
-        
-      
-
-      
-    
-
     
       
 
@@ -249,7 +246,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-03-17T09:43:02+08:00" content="2016-03-17">
               2016-03-17
             </time>
@@ -257,7 +257,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/学习/" itemprop="url" rel="index">
@@ -281,8 +285,21 @@
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/03/17/SublimeText-插件推荐/" class="leancloud_visitors" data-flag-title="SublimeText 插件推荐">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -290,26 +307,29 @@
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            SublimeText3是我最喜欢的编辑器，如果你跟我争Vim或者Emacs，来来来，先出门打一架……喜欢归因于它丰富的插件，ST2插件装多了启动会变得很慢，而ST3完全解决了这个问题，无论装多少插件，一律秒开，因为有朋友想装插件，在这里列举一些我个人很喜欢的，权当做分享。
+          
+          SublimeText3是我最喜欢的编辑器，如果你跟我争Vim或者Emacs，来来来，先出门打一架……喜欢归因于它丰富的插件，ST2插件装多了启动会变得很慢，而ST3完全解决了这个问题，无论装多少插件，一律秒开，因为有朋友想装插件，在这里列举一些我个人很喜欢的，权当做分享。
 科学上网传送门
-插件安装
-            ...
-          </span>
+插件安装Package ControlPackage Control可以非常方便的管理插件，打开 Ctrl 
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/17/SublimeText-插件推荐/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -358,7 +378,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-03-11T10:37:38+08:00" content="2016-03-11">
               2016-03-11
             </time>
@@ -366,7 +389,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/学习/" itemprop="url" rel="index">
@@ -390,8 +417,21 @@
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/03/11/清除浮动/" class="leancloud_visitors" data-flag-title="清除浮动">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -399,25 +439,28 @@
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            为什么清除浮动因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。
-1234.outer&#123;border:1px solid #ccc;background-color:#fc9;color:#f5f;margin:50px auto;padding:50px;&#
-            ...
-          </span>
+          
+          为什么清除浮动因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。
+1234.outer&#123;border:1px solid #ccc;background-color:#fc9;color:#f5f;margin:50px auto;padding:50px;&#125;.div1&#123;width:80px;height:80px;background:r
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/11/清除浮动/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -466,7 +509,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-03-07T08:01:07+08:00" content="2016-03-07">
               2016-03-07
             </time>
@@ -474,7 +520,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/生活/" itemprop="url" rel="index">
@@ -498,8 +548,21 @@
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/03/07/Dell笔记本加装固态/" class="leancloud_visitors" data-flag-title="Dell笔记本加装固态">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -507,24 +570,30 @@
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            缘起老大这学期的课程需要装很多测试软件，那台32位系统的Dell inspiron 14本来就卡的不行，再装软件恐怕连开机都困难，想到此处，拍案而起，大呼道“我要加装SSD！”，加之最近发现用的是64位的i3，换系统更是刻不容缓了。昨天用了半个下午装完，因为第一次拆Dell，这里总结几个需要注意的地
-            ...
-          </span>
+          
+          缘起老大这学期的课程需要装很多测试软件，那台32位系统的Dell inspiron 14本来就卡的不行，再装软件恐怕连开机都困难，想到此处，拍案而起，大呼道“我要加装SSD！”，加之最近发现用的是64位的i3，换系统更是刻不容缓了。昨天用了半个下午装完，因为第一次拆Dell，这里总结几个需要注意的地方。
+主料
+Dell inspiron 14:光驱、64位i3处理器
+SSD、9.5mm硬盘托盘（笔
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/07/Dell笔记本加装固态/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -573,7 +642,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-03-03T10:08:01+08:00" content="2016-03-03">
               2016-03-03
             </time>
@@ -581,7 +653,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/学习/" itemprop="url" rel="index">
@@ -605,8 +681,21 @@
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/03/03/文档流/" class="leancloud_visitors" data-flag-title="CSS定位 & 文档流">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -614,27 +703,32 @@
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            缘起页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。欢迎指正！
+          
+          缘起页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。欢迎指正！
 定位方式
 身处Normal flow：块级元素(块级格式)、行内元素(行内格式)、相对定位(relative)
-脱离Normal fl
-            ...
-          </span>
+脱离Normal flow：浮动定位(float)、绝对定位(absolute)、固定定位(fixed)
+
+Normal 
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/03/03/文档流/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -683,7 +777,10 @@
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-21T20:40:03+08:00" content="2016-01-21">
               2016-01-21
             </time>
@@ -691,7 +788,11 @@
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/学习/" itemprop="url" rel="index">
@@ -715,8 +816,21 @@
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/01/21/Sublime-Text3配置命令行工具/" class="leancloud_visitors" data-flag-title="Sublime Text3配置命令行工具">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -724,26 +838,29 @@
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            缘起每次用命令行new一个新文件都得在文件夹里打开，很不方便，一直都在用Sublime，想在命令行里启动Sublime。
+          
+          缘起每次用命令行new一个新文件都得在文件夹里打开，很不方便，一直都在用Sublime，想在命令行里启动Sublime。
 Windows配置Subl命令
-方法一：将SublimeText的安装路径添加到环境变量中，使用sublime_text命令打开文件。但是sublime_text这个命令太长，可
-            ...
-          </span>
+方法一：将SublimeText的安装路径添加到环境变量中，使用sublime_text命令打开文件。但是sublime_text这个命令太长，可以用doskey命令创建宏：doskey subl=&quot;C:\Program Files\S
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/01/21/Sublime-Text3配置命令行工具/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -792,7 +909,10 @@ Windows配置Subl命令
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-21T20:30:42+08:00" content="2016-01-21">
               2016-01-21
             </time>
@@ -809,8 +929,21 @@ Windows配置Subl命令
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/01/21/又是一年/" class="leancloud_visitors" data-flag-title="又是一年">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -818,16 +951,15 @@ Windows配置Subl命令
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
         
-          <span itemprop="articleBody">
-            
-            
+          
+          
 
 
 明天上午离校，转眼又是一年。
@@ -835,15 +967,19 @@ Windows配置Subl命令
 
 一年的时间，结识了HB，从硬件转到Web，完成了一次骑行，找到了一个很棒的实验室，一群有趣的人，跟了一位靠谱的boss。回顾这一年，大概就这些了。
 
-寥寥几句轻描淡写的盖过了
-            ...
-          </span>
+寥寥几句轻描淡写的盖过了过去这一年，不禁想起YouTube上一段很热的视频，五分钟讲完一个人的一生，对生活有着决定性因素得选
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/01/21/又是一年/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -892,7 +1028,10 @@ Windows配置Subl命令
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-12T20:55:33+08:00" content="2016-01-12">
               2016-01-12
             </time>
@@ -900,7 +1039,11 @@ Windows配置Subl命令
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/生活/" itemprop="url" rel="index">
@@ -924,8 +1067,21 @@ Windows配置Subl命令
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/01/12/Kindle内容管理/" class="leancloud_visitors" data-flag-title="管理你的Kindle">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -933,7 +1089,7 @@ Windows配置Subl命令
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -942,7 +1098,7 @@ Windows配置Subl命令
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" rel="gallery_cilxs2a8z0022ekk9rd1nv4yp"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" rel="gallery_cilyjd8qz0022p0k9xz961ayu"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" itemprop="contentUrl"/>
               </a>
@@ -956,19 +1112,23 @@ Windows配置Subl命令
 
       
         
-          <span itemprop="articleBody">
-            
-            
+          
+          
 
-关于kindle常说的kindle默认指代kindle电子书阅读器，但亚马逊除了硬件阅读器，也做了全平台的软件应用，我可以用我的kindle阅读器看书，同时也可以在手机（Android、iOS）和电脑（MacOS、windows）上阅读本地文件，看我在Amazon商城买的书，有没有觉得很方便，与
-            ...
-          </span>
+关于kindle常说的kindle默认指代kindle电子书阅读器，但亚马逊除了硬件阅读器，也做了全平台的软件应用，我可以用我的kindle阅读器看书，同时也可以在手机（Android、iOS）和电脑（MacOS、windows）上阅读本地文件，看我在Amazon商城买的书，有没有觉得很方便，与此同时，问题也出现了，如此多的设备和文件，该怎么管理？
+设备与文件管理此处的设备包括硬件阅读器与软件
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/01/12/Kindle内容管理/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1017,7 +1177,10 @@ Windows配置Subl命令
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-11T09:31:14+08:00" content="2016-01-11">
               2016-01-11
             </time>
@@ -1034,8 +1197,21 @@ Windows配置Subl命令
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2016/01/11/Chrome扩展「一」简易时钟/" class="leancloud_visitors" data-flag-title="Chrome扩展[一]:简易时钟">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -1043,7 +1219,7 @@ Windows配置Subl命令
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -1052,7 +1228,7 @@ Windows配置Subl命令
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_cilxs2a9x002iekk9xtw5evki"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_cilyjd8rq002ip0k9jxm8knxt"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" itemprop="contentUrl"/>
               </a>
@@ -1066,17 +1242,20 @@ Windows配置Subl命令
 
       
         
-          <span itemprop="articleBody">
-            
-            缘起喜欢Chrome，简洁的设计，强悍的内核只是一方面，应用商店里丰富的扩展和插件才是让我对Chrome爱不释手的根本原因。这些扩展增强了Chrome的使用体验，同时也提高了开发人员的效率，最近用了一个很方便的便签应用，可惜字体只支持英文，看着让人恼火的中文，索性决定自己写一个。一个扩展很容易实现，
-            ...
-          </span>
+          
+          缘起喜欢Chrome，简洁的设计，强悍的内核只是一方面，应用商店里丰富的扩展和插件才是让我对Chrome爱不释手的根本原因。这些扩展增强了Chrome的使用体验，同时也提高了开发人员的效率，最近用了一个很方便的便签应用，可惜字体只支持英文，看着让人恼火的中文，索性决定自己写一个。一个扩展很容易实现，Chrome可以直接编译JS代码，需要界面时可添加html文件，方式与网页相差无几。官方资源:API
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/01/11/Chrome扩展「一」简易时钟/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1125,7 +1304,10 @@ Windows配置Subl命令
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-11-20T18:00:03+08:00" content="2015-11-20">
               2015-11-20
             </time>
@@ -1142,8 +1324,21 @@ Windows配置Subl命令
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2015/11/20/『当李晓峰成为Sky』/" class="leancloud_visitors" data-flag-title="『当李晓峰成为Sky』">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -1151,7 +1346,7 @@ Windows配置Subl命令
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -1160,7 +1355,7 @@ Windows配置Subl命令
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" rel="gallery_cilxs2a7g001cekk9wikaqc2l"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" rel="gallery_cilyjd8px001cp0k99ts3op31"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" itemprop="contentUrl"/>
               </a>
@@ -1174,20 +1369,23 @@ Windows配置Subl命令
 
       
         
-          <span itemprop="articleBody">
-            
-            先来首歌怀念一下
+          
+          先来首歌怀念一下
 
 
-缘起细想应该是高三接触到这本书，偶然翻到跃峰买的一本电子杂志，sky在杂志里开了一篇专栏，连载的是他的一本自传『当李晓峰成为Sky』，那一刊记载的正是sky从郑州回家，再次上路后彻底转型为魔兽玩家的那段时光，光阴如梭，白云苍狗，没想到三四年过去了我一直念念不忘，很久之前就已经入
-            ...
-          </span>
+缘起细想应该是高三接触到这本书，偶然翻到跃峰买的一本电子杂志，sky在杂志里开了一篇专栏，连载的是他的一本自传『当李晓峰成为Sky』，那一刊记载的正是sky从郑州回家，再次上路后彻底转型为魔兽玩家的那段时光，光阴如梭，白云苍狗，没想到三四年过去了我一直念念不忘，很久之前就已经入手了电子版，只是重度拖延症一直延期到Kindle到手的第二天，利用一节科技英语课，开始看这本执念了三
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/11/20/『当李晓峰成为Sky』/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1236,7 +1434,10 @@ Windows配置Subl命令
 
         <div class="post-meta">
           <span class="post-time">
-            发表于
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-11-08T00:05:29+08:00" content="2015-11-08">
               2015-11-08
             </time>
@@ -1253,8 +1454,21 @@ Windows配置Subl命令
                 </a>
               </span>
             
+
           
 
+          
+
+          
+          
+             <span id="/2015/11/08/科学上网/" class="leancloud_visitors" data-flag-title="科学上网">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
         </div>
@@ -1262,7 +1476,7 @@ Windows配置Subl命令
     
 
 
-    <div class="post-body">
+    <div class="post-body" itemprop="articleBody">
 
       
       
@@ -1271,7 +1485,7 @@ Windows配置Subl命令
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-26/74855966.jpg" rel="gallery_cilxs2a5q000oekk9dnfow1yf"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-26/74855966.jpg" rel="gallery_cilyjd8o6000op0k93j5dy3l0"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-26/74855966.jpg" itemprop="contentUrl"/>
               </a>
@@ -1285,19 +1499,22 @@ Windows配置Subl命令
 
       
         
-          <span itemprop="articleBody">
-            
-            方法一：更改Google的hosts通过修改 C:WINDOWS/system32/drivers/etc  目录下的 hosts文件可以使用谷歌服务。使用记事本把 Google host IP地址 添加到hosts文件里，保存，重启浏览器就可以访问Google。
+          
+          方法一：更改Google的hosts通过修改 C:WINDOWS/system32/drivers/etc  目录下的 hosts文件可以使用谷歌服务。使用记事本把 Google host IP地址 添加到hosts文件里，保存，重启浏览器就可以访问Google。
 
-我传了一份已经修改好的， hos
-            ...
-          </span>
+我传了一份已经修改好的， hosts文件下载，上传到七牛时被改了名字，下载之后请把名字改成 hosts ，粘贴替换（需要管理员权限）
+          ...
+
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/11/08/科学上网/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1315,7 +1532,6 @@ Windows配置Subl命令
 
 
     
-
   </section>
 
   
@@ -1325,17 +1541,15 @@ Windows配置Subl命令
 
 
 
+          </div>
+          
+
+
+          
+
         </div>
-
         
-
-
-        
-
-      </div>
-
-      
-        
+          
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -1354,10 +1568,12 @@ Windows配置Subl命令
 
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg" alt="Leon" itemprop="image"/>
+          <img class="site-author-image" itemprop="image"
+               src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg"
+               alt="Leon" />
           <p class="site-author-name" itemprop="name">Leon</p>
+          <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
@@ -1366,19 +1582,23 @@ Windows配置Subl命令
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">31</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -1390,7 +1610,15 @@ Windows配置Subl命令
               <span class="links-of-author-item">
                 <a href="https://github.com/lijundong" target="_blank">
                   
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="fa fa-github-square"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://plus.google.com/u/0/105476317091375278758" target="_blank">
+                  
+                    <i class="fa fa-google-plus-square"></i> Google+
                   
                 </a>
               </span>
@@ -1406,7 +1634,7 @@ Windows配置Subl命令
               <span class="links-of-author-item">
                 <a href="https://www.facebook.com/coderleon?ref=bookmarks" target="_blank">
                   
-                    <i class="fa fa-facebook"></i> facebook
+                    <i class="fa fa-facebook-square"></i> facebook
                   
                 </a>
               </span>
@@ -1422,7 +1650,7 @@ Windows配置Subl命令
               <span class="links-of-author-item">
                 <a href="http://www.douban.com/people/103163980/" target="_blank">
                   
-                    <i class="fa fa-douban"></i> Douban
+                    <i class="fa fa-spinner"></i> 豆
                   
                 </a>
               </span>
@@ -1430,15 +1658,7 @@ Windows配置Subl命令
               <span class="links-of-author-item">
                 <a href="https://www.zhihu.com/people/leon-lee-42" target="_blank">
                   
-                    <i class="fa fa-zhihu"></i> Zhihu
-                  
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://plus.google.com/u/0/105476317091375278758" target="_blank">
-                  
-                    <i class="fa fa-google+"></i> Google+
+                    <i class="fa fa-spinner"></i> 知
                   
                 </a>
               </span>
@@ -1449,7 +1669,8 @@ Windows配置Subl命令
         
         
 
-        <div class="links-of-author motion-element">
+        
+        <div class="links-of-blogroll motion-element">
           
         </div>
 
@@ -1461,7 +1682,8 @@ Windows配置Subl命令
   </aside>
 
 
-      
+        
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -1471,7 +1693,7 @@ Windows配置Subl命令
   &copy;  2015 - 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Leon</span>
 </div>
@@ -1483,7 +1705,7 @@ Windows配置Subl命令
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
+    NexT.Pisces
   </a>
 </div>
 
@@ -1492,16 +1714,68 @@ Windows配置Subl命令
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
 
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
   
-    
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
 
   
     
@@ -1519,37 +1793,138 @@ Windows配置Subl命令
       || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
   </script>
-    
-     
 
-
+  
     
   
 
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
 
 
-  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
-<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
-<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
-
-
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
 
   
   
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
 
   
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
   
 
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("pJdYd3bVkuCMKiGlqFilwfbY-gzGzoHsz", "5HFxgKVCT5jJDtW3gHibs0Tn");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+ 
 </body>
 </html>
