@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>http://lijundong.com/2015/11/08/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
+    <lastmod>2016-03-20T06:54:59.100Z</lastmod>
+    <data>
+        <display>
+        <title>科学上网</title>
+        <pubTime>2015-11-07T16:05:29.000Z</pubTime>
+        
+        <tag>力所能及的分享</tag>
+         
+        <tag>科学上网</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/2016/01/11/Chrome%E6%89%A9%E5%B1%95%E3%80%8C%E4%B8%80%E3%80%8D%E7%AE%80%E6%98%93%E6%97%B6%E9%92%9F/</loc>
+    <lastmod>2016-03-20T06:54:21.928Z</lastmod>
+    <data>
+        <display>
+        <title>Chrome扩展[一]:简易时钟</title>
+        <pubTime>2016-01-11T01:31:14.000Z</pubTime>
+        
+        <tag>Chrome</tag>
+         
+        <tag>JS</tag>
+         
+        <tag>扩展</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2015/11/20/%E3%80%8E%E5%BD%93%E6%9D%8E%E6%99%93%E5%B3%B0%E6%88%90%E4%B8%BASky%E3%80%8F/</loc>
     <lastmod>2016-03-20T06:48:46.923Z</lastmod>
     <data>
@@ -190,25 +236,6 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/11/08/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
-    <lastmod>2016-02-25T04:49:31.571Z</lastmod>
-    <data>
-        <display>
-        <title>科学上网</title>
-        <pubTime>2015-11-07T16:05:29.000Z</pubTime>
-        
-        <tag>力所能及的分享</tag>
-         
-        <tag>科学上网</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://lijundong.com/2015/05/01/OpenCV%E9%BC%A0%E6%A0%87%E4%BA%8B%E4%BB%B6/</loc>
     <lastmod>2016-02-19T03:58:52.576Z</lastmod>
     <data>
@@ -341,27 +368,6 @@
              
               <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/2016/01/11/Chrome%E6%89%A9%E5%B1%95%E3%80%8C%E4%B8%80%E3%80%8D%E7%AE%80%E6%98%93%E6%97%B6%E9%92%9F/</loc>
-    <lastmod>2016-01-11T03:17:58.365Z</lastmod>
-    <data>
-        <display>
-        <title>Chrome扩展[一]:简易时钟</title>
-        <pubTime>2016-01-11T01:31:14.000Z</pubTime>
-        
-        <tag>Chrome</tag>
-         
-        <tag>JS</tag>
-         
-        <tag>扩展</tag>
-         
-         
-           
         </display>
     </data>
     </url>
