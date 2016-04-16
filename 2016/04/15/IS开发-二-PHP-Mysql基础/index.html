@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="电竞,读书," />
+  <meta name="keywords" content="wampserver,信息系统开发," />
 
 
 
@@ -57,26 +57,72 @@
 
 
 
-<meta name="description" content="先来首歌怀念一下
+<meta name="description" content="信息系统的大作业选的是 教室预约管理系统
+功能：
+用户 登录，分为 管理员与 普通用户
+用户 搜索、预约教室，以及 取消预约
+管理员对预约进行审核，可以 取消用户的预约
+
+设计：
+页面用HTML实现
+登陆界面
+预约主界面
+用户管理界面
+搜索界面
+后台管理
 
 
-缘起细想应该是高三接触到这本书，偶然翻到跃峰买的一本电子杂志，sky在杂志里开了一篇专栏，连载的是他的一本自传『当李晓峰成为Sky』，那一刊记载的正是sky从郑州回家，再次上路后彻底转型为魔兽玩家的那段时光，光阴如梭，白云苍狗，没想到三四年过去了我一直念念不忘，很久之前就已经入手了电子版，只是重度拖延症一直延期到Kindle到手的第二天，利用一节科技英语课，开始看这本执念了三">
+数据库建三个表：
+用户表：ID、name、password、authority
+教室表：Id、zone(west\east)、roomnum">
 <meta property="og:type" content="article">
-<meta property="og:title" content="『当李晓峰成为Sky』">
-<meta property="og:url" content="http://lijundong.com/2015/11/20/『当李晓峰成为Sky』/index.html">
+<meta property="og:title" content="IS开发(二):PHP&Mysql基础">
+<meta property="og:url" content="http://lijundong.com/2016/04/15/IS开发-二-PHP-Mysql基础/index.html">
 <meta property="og:site_name" content="Leon's BLOG">
-<meta property="og:description" content="先来首歌怀念一下
+<meta property="og:description" content="信息系统的大作业选的是 教室预约管理系统
+功能：
+用户 登录，分为 管理员与 普通用户
+用户 搜索、预约教室，以及 取消预约
+管理员对预约进行审核，可以 取消用户的预约
+
+设计：
+页面用HTML实现
+登陆界面
+预约主界面
+用户管理界面
+搜索界面
+后台管理
 
 
-缘起细想应该是高三接触到这本书，偶然翻到跃峰买的一本电子杂志，sky在杂志里开了一篇专栏，连载的是他的一本自传『当李晓峰成为Sky』，那一刊记载的正是sky从郑州回家，再次上路后彻底转型为魔兽玩家的那段时光，光阴如梭，白云苍狗，没想到三四年过去了我一直念念不忘，很久之前就已经入手了电子版，只是重度拖延症一直延期到Kindle到手的第二天，利用一节科技英语课，开始看这本执念了三">
-<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg">
-<meta property="og:updated_time" content="2016-03-20T06:48:46.923Z">
+数据库建三个表：
+用户表：ID、name、password、authority
+教室表：Id、zone(west\east)、roomnum">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/45373635.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/30157285.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/54712347.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/42062484.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/48676591.jpg">
+<meta property="og:updated_time" content="2016-04-16T14:56:55.415Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="『当李晓峰成为Sky』">
-<meta name="twitter:description" content="先来首歌怀念一下
+<meta name="twitter:title" content="IS开发(二):PHP&Mysql基础">
+<meta name="twitter:description" content="信息系统的大作业选的是 教室预约管理系统
+功能：
+用户 登录，分为 管理员与 普通用户
+用户 搜索、预约教室，以及 取消预约
+管理员对预约进行审核，可以 取消用户的预约
+
+设计：
+页面用HTML实现
+登陆界面
+预约主界面
+用户管理界面
+搜索界面
+后台管理
 
 
-缘起细想应该是高三接触到这本书，偶然翻到跃峰买的一本电子杂志，sky在杂志里开了一篇专栏，连载的是他的一本自传『当李晓峰成为Sky』，那一刊记载的正是sky从郑州回家，再次上路后彻底转型为魔兽玩家的那段时光，光阴如梭，白云苍狗，没想到三四年过去了我一直念念不忘，很久之前就已经入手了电子版，只是重度拖延症一直延期到Kindle到手的第二天，利用一节科技英语课，开始看这本执念了三">
+数据库建三个表：
+用户表：ID、name、password、authority
+教室表：Id、zone(west\east)、roomnum">
 
 
 
@@ -94,7 +140,7 @@
   };
 </script>
 
-  <title> 『当李晓峰成为Sky』 | Leon's BLOG </title>
+  <title> IS开发(二):PHP&Mysql基础 | Leon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -244,7 +290,7 @@
             
             
               
-                『当李晓峰成为Sky』
+                IS开发(二):PHP&Mysql基础
               
             
           </h1>
@@ -256,8 +302,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-11-20T18:00:03+08:00" content="2015-11-20">
-              2015-11-20
+            <time itemprop="dateCreated" datetime="2016-04-15T22:09:05+08:00" content="2016-04-15">
+              2016-04-15
             </time>
           </span>
 
@@ -270,8 +316,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
                   </a>
                 </span>
 
@@ -286,8 +332,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/11/20/『当李晓峰成为Sky』/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/20/『当李晓峰成为Sky』/" itemprop="commentsCount"></span>
+                <a href="/2016/04/15/IS开发-二-PHP-Mysql基础/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/15/IS开发-二-PHP-Mysql基础/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -298,7 +344,7 @@
 
           
           
-             <span id="/2015/11/20/『当李晓峰成为Sky』/" class="leancloud_visitors" data-flag-title="『当李晓峰成为Sky』">
+             <span id="/2016/04/15/IS开发-二-PHP-Mysql基础/" class="leancloud_visitors" data-flag-title="IS开发(二):PHP&Mysql基础">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -317,38 +363,44 @@
 
       
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" rel="gallery_cin39piqy001kz8k9coo490mr"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
-
-          
-          </div>
-        </div>
-      
 
       
-        <p>先来首歌怀念一下</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="420" height="86" src="http://music.163.com/outchain/player?type=2&id=4017240&auto=0&height=66"></iframe>
-
-<h3 id="u7F18_u8D77"><a href="#u7F18_u8D77" class="headerlink" title="缘起"></a>缘起</h3><p>细想应该是高三接触到这本书，偶然翻到跃峰买的一本电子杂志，sky在杂志里开了一篇专栏，连载的是他的一本自传『当李晓峰成为Sky』，那一刊记载的正是sky从郑州回家，再次上路后彻底转型为魔兽玩家的那段时光，光阴如梭，白云苍狗，没想到三四年过去了我一直念念不忘，很久之前就已经入手了电子版，只是重度拖延症一直延期到Kindle到手的第二天，利用一节科技英语课，开始看这本执念了三四年的书。 </p>
-<h3 id="25_25"><a href="#25_25" class="headerlink" title="25%"></a>25%</h3><p>初始看到了“深蓝网吧”，陌生又熟悉，印象里没有去过这家网吧，直觉告诉我这就是杂志里连载文章提到的那家网吧，意味着我已经看到了当年那篇文章提到的那一段时间，这种现实与过去重叠的错觉感，像是一把钥匙，打开了记忆的那扇门，门内星星点点的片段鱼贯而出，从我眼前划过，一幕幕幻灯片以流星雨的姿态转瞬即逝，让还未缓过神来的我徒有唏嘘。第一时间给跃峰留言，只是不知道他是否还能记起。</p>
-<h3 id="50_25"><a href="#50_25" class="headerlink" title="50%"></a>50%</h3><p>这本书看到这里已经看了一半了，我既不玩星际也不玩魔兽，我有大侠梦，所以我崇拜大侠，即便他的江湖于我无关。我很喜欢这本书，因为我看到了那一份不屈，那一份执着，还看到了一个人，那段夜夜通宵练技能，每天水蒸包果腹的时光让我自惭形秽，我开始反思，我可以为了我的梦想付出多少，我迫不及待的记下此时此刻我的想法。</p>
-<h3 id="70_25"><a href="#70_25" class="headerlink" title="70%"></a>70%</h3><p>后半段，sky开始走上传奇之路，然而我知道，那一件件荣耀，一座座奖杯都是长年累月的熬夜练习换来的，书已经看了70%，想的事情也多了起来，最近的一门考试在两周后，转眼大三的上半学期已经过去了一大半了，做的事情并没有多少，现实也没有改变多少，我的计划依旧只是计划，也许生活的太轻松，在sky之前很多高手选择退役，一方面肯定有放弃坚持的因素，另一个很重要的原因我相信是他们有退路，而sky的人生别无选择，如果在电竞上做不到登峰造极，后退的机会可能都没有，连个骨科医生都做不了，像是一头被逼到死角的困兽，除了置之死地而后生，殊死搏斗一番尝试翻盘，留给他的只能是灭亡，所以他奋不顾身，忘掉一切，将生活投入到了电竞，就像疯狂的程序员里面的绝影！ </p>
-<h3 id="80_25"><a href="#80_25" class="headerlink" title="80%"></a>80%</h3><p>整本书花了近60%的篇幅描述未成名之前的生活经历，整日的训练，还未成为职业之前，因为父母不支持，需要四下打比赛赚生活费，然而对拮据的生活并没有很大程度的改善，多数时间都是朋友资助过来，那段时光之前也有描述，每天十个水煎包，夜夜通宵，这样的日子坚持三四年之久，SKy自己也坦言，倘若时光倒流，他不确定他能否坚持下来，其实年轻时的自己，并没有坚持一说，只是想极力的努力的想去证明自己，那些对于未来的YY成了我们最大的精神食粮，我们忘掉了身边的一切，心里只有一个声音练习！练习！！再练习！！！我们很累，但是我们更渴望看到梦想的一步步逼近，所以我们放弃休息，继续练习。</p>
-<p>年轻的时候，你愿意为了喜欢的女孩子，花上一中午的时间爬遍整个村的树寻蝉壳，只因为她无意间说了句喜欢；<br>年轻的时候，你为了在校运会篮球赛上精彩的表现一把，没日没夜的练习球技，即便你从未接触过篮球，即便你一时兴起；<br>年轻的时候，你因为脑子里一闪而过的YY，浪子回头，幡然悔悟，决定对自己狠一把，即便那个画面只是一时YY，乐此不疲！</p>
-<blockquote>
-<p>年轻真好<br>年轻时那么鲁莽<br>年轻相信一切可以努力的梦想<br>年轻甚至相信那些努力不了的梦想<br>年轻真好<br>年轻时那么倔强<br>我们一路向北，誓不回头<br>我们执拗着梦想，执拗着坚信<br>我们努力着，尽最大的努力去达到我们的目标<br>我们坚持着，日复一日，年复一年<br>我们把最好的青春，拿去赌，赌未来，赌自己想要的一片天<br>读到此处，你的脑海出现的那幅画面是如此熟悉，却又如此遥远<br>我们再也回不去，回不去那时，一切都有希望的青春<br>已经忘了上次幻想未来的时间是何时<br>对于生活，似乎忙的少有了期待<br>对于人生，也就这样吧<br>然后提笔写下，年轻真好。</p>
-</blockquote>
-<h3 id="100_25"><a href="#100_25" class="headerlink" title="100%"></a>100%</h3><p>今天把『当李晓峰成为Sky』看完了，像是陪着一个朋友走了好久，历经了所有的荣耀与苦难，终于要分别了，结局像是彼此告别，他说他会一直坚持下去，一直努力下去，互相道声珍重，江湖再见！</p>
-<p>值得一提的是看这本书的同时，我脑海里不断显现出绝影的身影，『疯狂的程序员』的作者，这本书算是他的自传，一个疯狂的人，成就了一段传说，让我们这些后来的学弟时常瞻仰，只是疯狂到几近癫狂的状态时，辉煌戛然而止，让人唏嘘不已。</p>
+        <p>信息系统的大作业选的是 <em>教室预约管理系统</em></p>
+<h3 id="u529F_u80FD_uFF1A"><a href="#u529F_u80FD_uFF1A" class="headerlink" title="功能："></a>功能：</h3><ul>
+<li>用户 <strong>登录</strong>，分为 <strong>管理员</strong>与 <strong>普通用户</strong></li>
+<li>用户 <strong>搜索</strong>、<strong>预约教室</strong>，以及 <strong>取消预约</strong></li>
+<li>管理员对预约进行审核，可以 <strong>取消用户的预约</strong></li>
+</ul>
+<h3 id="u8BBE_u8BA1_uFF1A"><a href="#u8BBE_u8BA1_uFF1A" class="headerlink" title="设计："></a>设计：</h3><ul>
+<li>页面用HTML实现<ul>
+<li>登陆界面<img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/45373635.jpg" alt=""></li>
+<li>预约主界面<img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/30157285.jpg" alt=""></li>
+<li>用户管理界面<img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/54712347.jpg" alt=""></li>
+<li>搜索界面<img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/42062484.jpg" alt=""></li>
+<li>后台管理<img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/48676591.jpg" alt=""></li>
+</ul>
+</li>
+<li>数据库建三个表：<ul>
+<li>用户表：ID、name、password、authority</li>
+<li>教室表：Id、zone(west\east)、roomnum、size、adminID</li>
+<li>预约表：ID、roomnum、username、ordertime</li>
+</ul>
+</li>
+</ul>
+<h3 id="u7136_u540E_u5462_uFF1F"><a href="#u7136_u540E_u5462_uFF1F" class="headerlink" title="然后呢？"></a>然后呢？</h3><p>页面有了，数据有了，如何把两者结合起来，与用户进行交互呢？因为没有接触过后台，所有很长一段时间里一直不得其解，学长听我说在做这个作业，撂下句“那个很easy”，留下我在风中凌乱了好久……，后来进行实现时，果真如他所言，比想象的容易很多。</p>
+<h3 id="u65B0_u624B_u56F0_u60D1"><a href="#u65B0_u624B_u56F0_u60D1" class="headerlink" title="新手困惑"></a>新手困惑</h3><p>我在学习很多新的内容时，多数情况像是无头苍蝇，四处乱撞，因为理解不了当前所学的内容在这一门技术中承担的任务，从头开始学，效率低，效果还预见不了，例如这次的信息系统，两三天的时间就得完成，PHP的语法看一遍，复习下mysql的语法，然而看完语法之后该怎么做还是一头雾水，如果有人能带着自己从前到后用几分钟梳理下可能就不会这样了，而且单凭借Google+度娘，无法做到很短时间内对一门技术在宏观上进行详细的了解，大多数的博主写的文章是站在自己的角度，然而站在小白的角度，看到的信息可能会非常少，甚至与作者的立意相差甚远。</p>
+<h3 id="u65B0_u624B_u8BFE_u7A0B"><a href="#u65B0_u624B_u8BFE_u7A0B" class="headerlink" title="新手课程"></a>新手课程</h3><p>如果你有这样的困扰，我建议你可以看一下慕课网的<a href="http://www.imooc.com/learn/116" target="_blank" rel="external">PHP和Mysql关系揭秘</a>，这个作者用一个文章发布系统很详细的阐述了PHP、Mysql、HTML如何结合，看完之后如果对于前后台的关系有更清楚的认识，请给作者点赞。</p>
+<h3 id="u8BBF_u95EE_u6570_u636E_u5E93_u524D"><a href="#u8BBF_u95EE_u6570_u636E_u5E93_u524D" class="headerlink" title="访问数据库前"></a>访问数据库前</h3><ul>
+<li>连接数据库<br>PHP内置了大量的Mysql函数，多数操作需要通过这些内置函数完成。访问数据库之前需要连接数据库，，你得告诉后台你的数据库的地址，以及用于登陆数据库的用户名与密码。<br><code>$con=mysql_connect(HOST,USERNAME,PASSWORD);</code>，连接函数连接成功时会返回连接标识符，失败则返回false。</li>
+<li>选择数据库<br>进入数据库，具体用哪个数据库呢，这时候选择需要使用的数据库，上一步的连接标识符在这一步就有作用了，选库的函数有两个参数：连接标志符、目标库名。<br><code>mysql_select_db($con,&#39;roomis&#39;)</code></li>
+<li>定义字符集<br>避免输出乱码，定义编码格式为UTF-8。<br><code>mysql_query($con,&#39;set names utf8&#39;)</code></li>
+</ul>
+<h3 id="u83B7_u53D6_u8868_u5355_u5185_u5BB9"><a href="#u83B7_u53D6_u8868_u5355_u5185_u5BB9" class="headerlink" title="获取表单内容"></a>获取表单内容</h3><h4 id="u8868_u5355_u8F93_u5165"><a href="#u8868_u5355_u8F93_u5165" class="headerlink" title="表单输入"></a>表单输入</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="title">form</span> <span class="attribute">role</span>=<span class="value">"form"</span> <span class="attribute">class</span>=<span class="value">"col-md-12 "</span> <span class="attribute">method</span>=<span class="value">"post"</span> <span class="attribute">action</span>=<span class="value">"login.php"</span> <span class="attribute">style</span>=<span class="value">"margin-top: 50px;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-12"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"col-md-1 col-md-offset-4 text-center"</span> <span class="attribute">style</span>=<span class="value">"line-height: 30px;font-size: 20px;"</span>&gt;</span> ID:<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="value">"text-center center-block col-md-2"</span><span class="value">name="id"</span> <span class="attribute">style</span>=<span class="value">"line-height: 30px;border-radius: 5px;"</span>&gt;</span><span class="tag">&lt;/<span class="title">input</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-12"</span> <span class="attribute">style</span>=<span class="value">"margin-top: 30px;"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"col-md-1 col-md-offset-4 text-center"</span>  <span class="attribute">style</span>=<span class="value">"line-height: 30px;font-size: 20px;"</span>&gt;</span> 密码:<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="value">"text-center center-block col-md-2"</span> <span class="attribute">name</span>=<span class="value">"password"</span> <span class="attribute">type</span>=<span class="value">"password"</span> <span class="attribute">style</span>=<span class="value">"line-height: 30px;border-radius: 5px;"</span>&gt;</span><span class="tag">&lt;/<span class="title">input</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-12"</span> <span class="attribute">style</span>=<span class="value">"margin-top: 30px;"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">input</span>  <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">class</span>=<span class="value">"col-md-2 col-md-offset-5 btn btn-default"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>上面是登陆界面的表单代码，表单的<code>method</code>属性有两个属性<code>POST</code>，<code>GET</code>，这里使用<code>POST</code>属性。<code>action</code>指向PHP写的登陆程序，<strong>每个输入框都需要names属性，否则输入的内容后台会获取不到</strong>，</p>
+<h4 id="u540E_u53F0_u83B7_u53D6"><a href="#u540E_u53F0_u83B7_u53D6" class="headerlink" title="后台获取"></a>后台获取</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="keyword">require_once</span>(<span class="string">'connect.php'</span>);</span><br><span class="line"><span class="variable">$userid</span>=<span class="variable">$_POST</span>[<span class="string">'id'</span>];</span><br><span class="line"><span class="variable">$password</span>=<span class="variable">$_POST</span>[<span class="string">'password'</span>];</span><br><span class="line"><span class="variable">$selectuser</span>=<span class="string">"select * from user where username = '$userid'"</span>;</span><br><span class="line"><span class="variable">$query</span>=mysql_query(<span class="variable">$con</span>,<span class="variable">$selectuser</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$query</span>&amp;&amp;mysql_num_rows(<span class="variable">$query</span>))&#123;</span><br><span class="line">    <span class="variable">$userinfo</span>=mysql_fetch_row(<span class="variable">$query</span>);</span><br><span class="line">    <span class="keyword">if</span>(!strcmp(<span class="variable">$userinfo</span>[<span class="number">2</span>],<span class="variable">$password</span>))&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable">$userinfo</span>[<span class="number">3</span>])&#123;</span><br><span class="line">            setcookie(<span class="string">"loginname"</span>,<span class="variable">$userinfo</span>[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('登陆成功');window.location.href='user.php'; &lt;/script&gt;"</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            setcookie(<span class="string">"loginname"</span>,<span class="variable">$userinfo</span>[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('登陆成功');window.location.href='admin.php';&lt;/script&gt;"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('密码错误');window.location.href='index.php'&lt;/script&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"&lt;script&gt;alert('用户ID错误');window.location.href='index.php'&lt;/script&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<p>我把连库、选库、设置编码格式的代码放在了<code>connect.php</code>文件里，数据库操作之前都需要先进行引用。<br>表单提交的数据都保存在<code>$_POST[]</code>这个关联数组中，用<code>name</code>属性进行访问</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$selectuser</span>=<span class="string">"select * from user where username = '$userid'"</span>;</span><br><span class="line"><span class="variable">$query</span>=mysql_query(<span class="variable">$con</span>,<span class="variable">$selectuser</span>);</span><br></pre></td></tr></table></figure>
+<p>PHP通过<code>mysql_query</code>函数执行Mysql语句</p>
 
       
     </div>
@@ -363,9 +415,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/电竞/" rel="tag">#电竞</a>
+            <a href="/tags/wampserver/" rel="tag">#wampserver</a>
           
-            <a href="/tags/读书/" rel="tag">#读书</a>
+            <a href="/tags/信息系统开发/" rel="tag">#信息系统开发</a>
           
         </div>
       
@@ -374,17 +426,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/08/科学上网/" rel="next" title="科学上网">
-                <i class="fa fa-chevron-left"></i> 科学上网
+              <a href="/2016/04/14/IS开发-一-Wampserver/" rel="next" title="IS开发(一):Wampserver">
+                <i class="fa fa-chevron-left"></i> IS开发(一):Wampserver
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/11/Chrome扩展「一」简易时钟/" rel="prev" title="Chrome扩展[一]:简易时钟">
-                Chrome扩展[一]:简易时钟 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -410,8 +458,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/11/20/『当李晓峰成为Sky』/"
-           data-title="『当李晓峰成为Sky』" data-url="http://lijundong.com/2015/11/20/『当李晓峰成为Sky』/">
+      <div class="ds-thread" data-thread-key="2016/04/15/IS开发-二-PHP-Mysql基础/"
+           data-title="IS开发(二):PHP&Mysql基础" data-url="http://lijundong.com/2016/04/15/IS开发-二-PHP-Mysql基础/">
       </div>
     
   </div>
@@ -565,7 +613,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7F18_u8D77"><span class="nav-text">缘起</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#25_25"><span class="nav-text">25%</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#50_25"><span class="nav-text">50%</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#70_25"><span class="nav-text">70%</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#80_25"><span class="nav-text">80%</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#100_25"><span class="nav-text">100%</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u529F_u80FD_uFF1A"><span class="nav-text">功能：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8BBE_u8BA1_uFF1A"><span class="nav-text">设计：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7136_u540E_u5462_uFF1F"><span class="nav-text">然后呢？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u65B0_u624B_u56F0_u60D1"><span class="nav-text">新手困惑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u65B0_u624B_u8BFE_u7A0B"><span class="nav-text">新手课程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8BBF_u95EE_u6570_u636E_u5E93_u524D"><span class="nav-text">访问数据库前</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u83B7_u53D6_u8868_u5355_u5185_u5BB9"><span class="nav-text">获取表单内容</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u8868_u5355_u8F93_u5165"><span class="nav-text">表单输入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u540E_u53F0_u83B7_u53D6"><span class="nav-text">后台获取</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
