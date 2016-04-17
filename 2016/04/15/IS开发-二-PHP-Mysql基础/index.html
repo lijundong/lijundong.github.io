@@ -78,7 +78,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="IS开发(二):PHP&Mysql基础">
 <meta property="og:url" content="http://lijundong.com/2016/04/15/IS开发-二-PHP-Mysql基础/index.html">
-<meta property="og:site_name" content="Leon's BLOG">
+<meta property="og:site_name" content="Leeon's BLOG">
 <meta property="og:description" content="信息系统的大作业选的是 教室预约管理系统
 功能：
 用户 登录，分为 管理员与 普通用户
@@ -102,7 +102,7 @@
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/54712347.jpg">
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/42062484.jpg">
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-4-16/48676591.jpg">
-<meta property="og:updated_time" content="2016-04-16T14:56:55.415Z">
+<meta property="og:updated_time" content="2016-04-17T12:15:46.323Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IS开发(二):PHP&Mysql基础">
 <meta name="twitter:description" content="信息系统的大作业选的是 教室预约管理系统
@@ -140,7 +140,7 @@
   };
 </script>
 
-  <title> IS开发(二):PHP&Mysql基础 | Leon's BLOG </title>
+  <title> IS开发(二):PHP&Mysql基础 | Leeon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -181,11 +181,11 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Leon's BLOG</span>
+      <span class="site-title">Leeon's BLOG</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle">但求好事，莫问前程！</p>
+  <p class="site-subtitle"></p>
 </div>
 
 <div class="site-nav-toggle">
@@ -391,16 +391,29 @@
 <h3 id="u65B0_u624B_u56F0_u60D1"><a href="#u65B0_u624B_u56F0_u60D1" class="headerlink" title="新手困惑"></a>新手困惑</h3><p>我在学习很多新的内容时，多数情况像是无头苍蝇，四处乱撞，因为理解不了当前所学的内容在这一门技术中承担的任务，从头开始学，效率低，效果还预见不了，例如这次的信息系统，两三天的时间就得完成，PHP的语法看一遍，复习下mysql的语法，然而看完语法之后该怎么做还是一头雾水，如果有人能带着自己从前到后用几分钟梳理下可能就不会这样了，而且单凭借Google+度娘，无法做到很短时间内对一门技术在宏观上进行详细的了解，大多数的博主写的文章是站在自己的角度，然而站在小白的角度，看到的信息可能会非常少，甚至与作者的立意相差甚远。</p>
 <h3 id="u65B0_u624B_u8BFE_u7A0B"><a href="#u65B0_u624B_u8BFE_u7A0B" class="headerlink" title="新手课程"></a>新手课程</h3><p>如果你有这样的困扰，我建议你可以看一下慕课网的<a href="http://www.imooc.com/learn/116" target="_blank" rel="external">PHP和Mysql关系揭秘</a>，这个作者用一个文章发布系统很详细的阐述了PHP、Mysql、HTML如何结合，看完之后如果对于前后台的关系有更清楚的认识，请给作者点赞。</p>
 <h3 id="u8BBF_u95EE_u6570_u636E_u5E93_u524D"><a href="#u8BBF_u95EE_u6570_u636E_u5E93_u524D" class="headerlink" title="访问数据库前"></a>访问数据库前</h3><ul>
-<li>连接数据库<br>PHP内置了大量的Mysql函数，多数操作需要通过这些内置函数完成。访问数据库之前需要连接数据库，，你得告诉后台你的数据库的地址，以及用于登陆数据库的用户名与密码。<br><code>$con=mysql_connect(HOST,USERNAME,PASSWORD);</code>，连接函数连接成功时会返回连接标识符，失败则返回false。</li>
-<li>选择数据库<br>进入数据库，具体用哪个数据库呢，这时候选择需要使用的数据库，上一步的连接标识符在这一步就有作用了，选库的函数有两个参数：连接标志符、目标库名。<br><code>mysql_select_db($con,&#39;roomis&#39;)</code></li>
-<li>定义字符集<br>避免输出乱码，定义编码格式为UTF-8。<br><code>mysql_query($con,&#39;set names utf8&#39;)</code></li>
+<li>连接数据库<br>PHP内置了大量的Mysql函数，多数操作需要通过这些内置函数完成。访问数据库之前需要连接数据库，，你得告诉后台你的数据库的地址，以及用于登陆数据库的用户名与密码。<br><code>$con=mysqli_connect(HOST,USERNAME,PASSWORD);</code>，连接函数连接成功时会返回连接标识符，失败则返回false。</li>
+<li>选择数据库<br>进入数据库，具体用哪个数据库呢，这时候选择需要使用的数据库，上一步的连接标识符在这一步就有作用了，选库的函数有两个参数：连接标志符、目标库名。<br><code>mysqli_select_db($con,&#39;roomis&#39;)</code></li>
+<li>定义字符集<br>避免输出乱码，定义编码格式为UTF-8。<br><code>mysqli_query($con,&#39;set names utf8&#39;)</code></li>
 </ul>
 <h3 id="u83B7_u53D6_u8868_u5355_u5185_u5BB9"><a href="#u83B7_u53D6_u8868_u5355_u5185_u5BB9" class="headerlink" title="获取表单内容"></a>获取表单内容</h3><h4 id="u8868_u5355_u8F93_u5165"><a href="#u8868_u5355_u8F93_u5165" class="headerlink" title="表单输入"></a>表单输入</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="title">form</span> <span class="attribute">role</span>=<span class="value">"form"</span> <span class="attribute">class</span>=<span class="value">"col-md-12 "</span> <span class="attribute">method</span>=<span class="value">"post"</span> <span class="attribute">action</span>=<span class="value">"login.php"</span> <span class="attribute">style</span>=<span class="value">"margin-top: 50px;"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-12"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"col-md-1 col-md-offset-4 text-center"</span> <span class="attribute">style</span>=<span class="value">"line-height: 30px;font-size: 20px;"</span>&gt;</span> ID:<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="value">"text-center center-block col-md-2"</span><span class="value">name="id"</span> <span class="attribute">style</span>=<span class="value">"line-height: 30px;border-radius: 5px;"</span>&gt;</span><span class="tag">&lt;/<span class="title">input</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-12"</span> <span class="attribute">style</span>=<span class="value">"margin-top: 30px;"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"col-md-1 col-md-offset-4 text-center"</span>  <span class="attribute">style</span>=<span class="value">"line-height: 30px;font-size: 20px;"</span>&gt;</span> 密码:<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="value">"text-center center-block col-md-2"</span> <span class="attribute">name</span>=<span class="value">"password"</span> <span class="attribute">type</span>=<span class="value">"password"</span> <span class="attribute">style</span>=<span class="value">"line-height: 30px;border-radius: 5px;"</span>&gt;</span><span class="tag">&lt;/<span class="title">input</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"col-md-12"</span> <span class="attribute">style</span>=<span class="value">"margin-top: 30px;"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="title">input</span>  <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">class</span>=<span class="value">"col-md-2 col-md-offset-5 btn btn-default"</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>上面是登陆界面的表单代码，表单的<code>method</code>属性有两个属性<code>POST</code>，<code>GET</code>，这里使用<code>POST</code>属性。<code>action</code>指向PHP写的登陆程序，<strong>每个输入框都需要names属性，否则输入的内容后台会获取不到</strong>，</p>
-<h4 id="u540E_u53F0_u83B7_u53D6"><a href="#u540E_u53F0_u83B7_u53D6" class="headerlink" title="后台获取"></a>后台获取</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="keyword">require_once</span>(<span class="string">'connect.php'</span>);</span><br><span class="line"><span class="variable">$userid</span>=<span class="variable">$_POST</span>[<span class="string">'id'</span>];</span><br><span class="line"><span class="variable">$password</span>=<span class="variable">$_POST</span>[<span class="string">'password'</span>];</span><br><span class="line"><span class="variable">$selectuser</span>=<span class="string">"select * from user where username = '$userid'"</span>;</span><br><span class="line"><span class="variable">$query</span>=mysql_query(<span class="variable">$con</span>,<span class="variable">$selectuser</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$query</span>&amp;&amp;mysql_num_rows(<span class="variable">$query</span>))&#123;</span><br><span class="line">    <span class="variable">$userinfo</span>=mysql_fetch_row(<span class="variable">$query</span>);</span><br><span class="line">    <span class="keyword">if</span>(!strcmp(<span class="variable">$userinfo</span>[<span class="number">2</span>],<span class="variable">$password</span>))&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable">$userinfo</span>[<span class="number">3</span>])&#123;</span><br><span class="line">            setcookie(<span class="string">"loginname"</span>,<span class="variable">$userinfo</span>[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('登陆成功');window.location.href='user.php'; &lt;/script&gt;"</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            setcookie(<span class="string">"loginname"</span>,<span class="variable">$userinfo</span>[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('登陆成功');window.location.href='admin.php';&lt;/script&gt;"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('密码错误');window.location.href='index.php'&lt;/script&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"&lt;script&gt;alert('用户ID错误');window.location.href='index.php'&lt;/script&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u540E_u53F0_u83B7_u53D6"><a href="#u540E_u53F0_u83B7_u53D6" class="headerlink" title="后台获取"></a>后台获取</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">&lt;?php</span></span><br><span class="line"><span class="keyword">require_once</span>(<span class="string">'connect.php'</span>);</span><br><span class="line"><span class="variable">$userid</span>=<span class="variable">$_POST</span>[<span class="string">'id'</span>];</span><br><span class="line"><span class="variable">$password</span>=<span class="variable">$_POST</span>[<span class="string">'password'</span>];</span><br><span class="line"><span class="variable">$selectuser</span>=<span class="string">"select * from user where username = '$userid'"</span>;</span><br><span class="line"><span class="variable">$query</span>=mysqli_query(<span class="variable">$con</span>,<span class="variable">$selectuser</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="variable">$query</span>&amp;&amp;mysqli_num_rows(<span class="variable">$query</span>))&#123;</span><br><span class="line">    <span class="variable">$userinfo</span>=mysqli_fetch_row(<span class="variable">$query</span>);</span><br><span class="line">    <span class="keyword">if</span>(!strcmp(<span class="variable">$userinfo</span>[<span class="number">2</span>],<span class="variable">$password</span>))&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable">$userinfo</span>[<span class="number">3</span>])&#123;</span><br><span class="line">            setcookie(<span class="string">"loginname"</span>,<span class="variable">$userinfo</span>[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('登陆成功');window.location.href='user.php'; &lt;/script&gt;"</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            setcookie(<span class="string">"loginname"</span>,<span class="variable">$userinfo</span>[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('登陆成功');window.location.href='admin.php';&lt;/script&gt;"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">echo</span><span class="string">"&lt;script&gt;alert('密码错误');window.location.href='index.php'&lt;/script&gt;"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"&lt;script&gt;alert('用户ID错误');window.location.href='index.php'&lt;/script&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="preprocessor">?&gt;</span></span><br></pre></td></tr></table></figure>
 <p>我把连库、选库、设置编码格式的代码放在了<code>connect.php</code>文件里，数据库操作之前都需要先进行引用。<br>表单提交的数据都保存在<code>$_POST[]</code>这个关联数组中，用<code>name</code>属性进行访问</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$selectuser</span>=<span class="string">"select * from user where username = '$userid'"</span>;</span><br><span class="line"><span class="variable">$query</span>=mysql_query(<span class="variable">$con</span>,<span class="variable">$selectuser</span>);</span><br></pre></td></tr></table></figure>
-<p>PHP通过<code>mysql_query</code>函数执行Mysql语句</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$selectuser</span>=<span class="string">"select * from user where username = '$userid'"</span>;</span><br><span class="line"><span class="variable">$query</span>=mysqli_query(<span class="variable">$con</span>,<span class="variable">$selectuser</span>);</span><br></pre></td></tr></table></figure>
+<p>将Mysql语句放在$selectuser，通过PHP的内置函数<code>mysqli_query</code>执行。操作不同，函数返回值也不同。</p>
+<ul>
+<li>查询语句：<ul>
+<li>成功：返回资源对象</li>
+<li>失败：返回false</li>
+</ul>
+</li>
+<li>增删改语句：<ul>
+<li>成功：返回True</li>
+<li>失败：返回false</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mysqli_query(connection,query,resultmode);</span><br><span class="line"></span><br><span class="line">参数：</span><br><span class="line">connection      <span class="comment">//必需。要使用的 MySQL 连接。即之前连库时传回的连接标识符</span></span><br><span class="line">query           <span class="comment">//必需，需要查询字符串。</span></span><br><span class="line">resultmode     </span><br><span class="line"><span class="comment">//可选，这里没填。一个常量。可以是下列值中的任意一个：</span></span><br><span class="line"> MYSQLI_USE_RESULT      <span class="comment">//如果需要检索大量数据，请使用这个</span></span><br><span class="line"> MYSQLI_STORE_RESULT    <span class="comment">//默认</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -433,6 +446,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/17/可能错过的Windows便签/" rel="prev" title="可能错过的Windows便签">
+                可能错过的Windows便签 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -497,14 +514,14 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg"
-               alt="Leon" />
-          <p class="site-author-name" itemprop="name">Leon</p>
+               alt="Leeon" />
+          <p class="site-author-name" itemprop="name">Leeon</p>
           <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">20</span>
+              <span class="site-state-item-count">21</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -521,7 +538,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">34</span>
+                <span class="site-state-item-count">36</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -639,7 +656,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Leon</span>
+  <span class="author" itemprop="copyrightHolder">Leeon</span>
 </div>
 
 <div class="powered-by">
