@@ -60,7 +60,9 @@
 <meta name="description" content="使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”,Google上多半的解决方案是通过修改/etc/ssh/sshd_config文件。
 
 添加参数TCPKeepAlive yes
-ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connecti">
+ClientAliveInterval 0中修改0为60
+
+但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connec">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Putty登陆阿里云 Network error: Software caused connection abort">
 <meta property="og:url" content="http://lijundong.com/2016/06/13/Putty登陆阿里云-Network-error-Software-caused-connection-abort/index.html">
@@ -68,14 +70,18 @@ ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不
 <meta property="og:description" content="使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”,Google上多半的解决方案是通过修改/etc/ssh/sshd_config文件。
 
 添加参数TCPKeepAlive yes
-ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connecti">
-<meta property="og:updated_time" content="2016-06-13T14:48:14.383Z">
+ClientAliveInterval 0中修改0为60
+
+但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connec">
+<meta property="og:updated_time" content="2016-06-13T14:51:09.309Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Putty登陆阿里云 Network error: Software caused connection abort">
 <meta name="twitter:description" content="使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”,Google上多半的解决方案是通过修改/etc/ssh/sshd_config文件。
 
 添加参数TCPKeepAlive yes
-ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connecti">
+ClientAliveInterval 0中修改0为60
+
+但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connec">
 
 
 
@@ -321,9 +327,10 @@ ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不
         <p>使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”,Google上多半的解决方案是通过修改<code>/etc/ssh/sshd_config</code>文件。</p>
 <ul>
 <li>添加参数<code>TCPKeepAlive yes</code></li>
-<li><code>ClientAliveInterval 0</code>中修改0为60<br>但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。<br>这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”<br>云盾！拦截了……<a id="more"></a>
-解决方案：<br>在云盾设置登陆IP白名单:<br>云盾&gt;服务器安全&gt;设置&gt;登陆安全&gt;添加&gt;添加服务器到白名单生效的服务器&gt;白名单IP设置为<code>0.0.0.0</code>(防止IP改变)<br>使用Putty再次连接，成功。</li>
+<li><code>ClientAliveInterval 0</code>中修改0为60</li>
 </ul>
+<p>但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。<br>这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”<br>云盾！拦截了……<br><a id="more"></a></p>
+<h3 id="u89E3_u51B3_u65B9_u6848_uFF1A"><a href="#u89E3_u51B3_u65B9_u6848_uFF1A" class="headerlink" title="解决方案："></a>解决方案：</h3><p>在云盾设置登陆IP白名单:<br>云盾&gt;服务器安全&gt;设置&gt;登陆安全&gt;添加&gt;添加服务器到白名单生效的服务器&gt;白名单IP设置为<code>0.0.0.0</code>(防止IP改变)<br>使用Putty再次连接，成功。</p>
 
       
     </div>
@@ -528,7 +535,7 @@ ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u89E3_u51B3_u65B9_u6848_uFF1A"><span class="nav-text">解决方案：</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
