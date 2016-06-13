@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="SSH,云盾," />
 
 
 
@@ -57,15 +57,25 @@
 
 
 
-<meta name="description" content="但求好事，莫问前程!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leeon's BLOG">
-<meta property="og:url" content="http://lijundong.com/page/3/index.html">
+<meta name="description" content="使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”,Google上多半的解决方案是通过修改/etc/ssh/sshd_config文件。
+
+添加参数TCPKeepAlive yes
+ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connecti">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Putty登陆阿里云 Network error: Software caused connection abort">
+<meta property="og:url" content="http://lijundong.com/2016/06/13/Putty登陆阿里云-Network-error-Software-caused-connection-abort/index.html">
 <meta property="og:site_name" content="Leeon's BLOG">
-<meta property="og:description" content="但求好事，莫问前程!">
+<meta property="og:description" content="使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”,Google上多半的解决方案是通过修改/etc/ssh/sshd_config文件。
+
+添加参数TCPKeepAlive yes
+ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connecti">
+<meta property="og:updated_time" content="2016-06-13T14:48:14.383Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leeon's BLOG">
-<meta name="twitter:description" content="但求好事，莫问前程!">
+<meta name="twitter:title" content="Putty登陆阿里云 Network error: Software caused connection abort">
+<meta name="twitter:description" content="使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”,Google上多半的解决方案是通过修改/etc/ssh/sshd_config文件。
+
+添加参数TCPKeepAlive yes
+ClientAliveInterval 0中修改0为60但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connecti">
 
 
 
@@ -83,7 +93,7 @@
   };
 </script>
 
-  <title> Leeon's BLOG </title>
+  <title> Putty登陆阿里云 Network error: Software caused connection abort | Leeon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -114,9 +124,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,9 +221,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -235,10 +243,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2015/05/12/编写词法分析程序/" itemprop="url">
-                  编写词法分析程序
-                </a>
+                Putty登陆阿里云 Network error: Software caused connection abort
               
             
           </h1>
@@ -250,8 +255,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-05-12T21:11:51+08:00" content="2015-05-12">
-              2015-05-12
+            <time itemprop="dateCreated" datetime="2016-06-13T21:52:18+08:00" content="2016-06-13">
+              2016-06-13
             </time>
           </span>
 
@@ -264,8 +269,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习/" itemprop="url" rel="index">
-                    <span itemprop="name">学习</span>
+                  <a href="/categories/问题解决/" itemprop="url" rel="index">
+                    <span itemprop="name">问题解决</span>
                   </a>
                 </span>
 
@@ -280,8 +285,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/05/12/编写词法分析程序/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/12/编写词法分析程序/" itemprop="commentsCount"></span>
+                <a href="/2016/06/13/Putty登陆阿里云-Network-error-Software-caused-connection-abort/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/13/Putty登陆阿里云-Network-error-Software-caused-connection-abort/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -292,7 +297,7 @@
 
           
           
-             <span id="/2015/05/12/编写词法分析程序/" class="leancloud_visitors" data-flag-title="编写词法分析程序">
+             <span id="/2016/06/13/Putty登陆阿里云-Network-error-Software-caused-connection-abort/" class="leancloud_visitors" data-flag-title="Putty登陆阿里云 Network error: Software caused connection abort">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -313,184 +318,60 @@
       
 
       
-        
-          <h4 id="Note_uFF1A"><a href="#Note_uFF1A" class="headerlink" title="Note："></a>Note：</h4><p>这学期修了严厉的Mr.J的编译原理，不定期更新笔记！<br>欢迎指正！</p>
-<h4 id="Github_3A"><a href="#Github_3A" class="headerlink" title="Github:"></a>Github:</h4><ul>
-<li><a href="https://github.com/lijundong/lexi">词法分析</a></li>
-<li><a href="https://github.com/lijundong/syntax">语法分析</a></li>
-<li><a href="https://github.com/lijundong/semantic">语义分析</a></li>
+        <p>使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”,Google上多半的解决方案是通过修改<code>/etc/ssh/sshd_config</code>文件。</p>
+<ul>
+<li>添加参数<code>TCPKeepAlive yes</code></li>
+<li><code>ClientAliveInterval 0</code>中修改0为60<br>但是都没能解决问题，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。<br>这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”<br>云盾！拦截了……<a id="more"></a>
+解决方案：<br>在云盾设置登陆IP白名单:<br>云盾&gt;服务器安全&gt;设置&gt;登陆安全&gt;添加&gt;添加服务器到白名单生效的服务器&gt;白名单IP设置为<code>0.0.0.0</code>(防止IP改变)<br>使用Putty再次连接，成功。</li>
 </ul>
-<hr>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/05/12/编写词法分析程序/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+
       
     </div>
 
     <div>
       
+        
+      
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/01/OpenCV鼠标事件/" itemprop="url">
-                  OpenCV鼠标事件
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-05-01T10:30:44+08:00" content="2015-05-01">
-              2015-05-01
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习/" itemprop="url" rel="index">
-                    <span itemprop="name">学习</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/SSH/" rel="tag">#SSH</a>
           
-
+            <a href="/tags/云盾/" rel="tag">#云盾</a>
           
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/05/01/OpenCV鼠标事件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/01/OpenCV鼠标事件/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-
-          
-
-          
-
-          
-          
-             <span id="/2015/05/01/OpenCV鼠标事件/" class="leancloud_visitors" data-flag-title="OpenCV鼠标事件">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>与鼠标事件相关两个函数</p>
-<h4 id="u56DE_u8C03_u51FD_u6570cvSetMouseCallback"><a href="#u56DE_u8C03_u51FD_u6570cvSetMouseCallback" class="headerlink" title="回调函数cvSetMouseCallback"></a>回调函数<code>cvSetMouseCallback</code></h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">void cvSetMouseCallback( const char* window_name, CvMouseCallback on_mouse, void* param CV_DEFAULT(NULL));</span><br></pre></td></tr></table></figure>
-<hr>
-<p><code>window_name</code>：鼠标执行的窗口名</p>
-<p><code>on_mouse</code>：每次指定窗口鼠标事件发生时被调用的函数指针</p>
-<p><code>param</code> :传递到回调函数的参数</p>
-<hr>
-<h4 id="on_mouse_u7684_u539F_u578B"><a href="#on_mouse_u7684_u539F_u578B" class="headerlink" title="on_mouse的原型"></a><code>on_mouse</code>的原型</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Foo</span><span class="params">(<span class="keyword">int</span> event, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> flags, <span class="keyword">void</span>* param)</span></span>;</span><br></pre></td></tr></table></figure>
-<hr>
-<p><code>param</code>:传递到cvSetMouseCallback函数调用的参数<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/05/01/OpenCV鼠标事件/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/17/可能错过的Windows便签/" rel="next" title="可能错过的Windows便签">
+                <i class="fa fa-chevron-left"></i> 可能错过的Windows便签
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -498,6 +379,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/13/Putty登陆阿里云-Network-error-Software-caused-connection-abort/"
+           data-title="Putty登陆阿里云 Network error: Software caused connection abort" data-url="http://lijundong.com/2016/06/13/Putty登陆阿里云-Network-error-Software-caused-connection-abort/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -517,8 +406,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg"
@@ -621,6 +519,23 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -704,6 +619,167 @@
   
 
   
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
 
   
 
