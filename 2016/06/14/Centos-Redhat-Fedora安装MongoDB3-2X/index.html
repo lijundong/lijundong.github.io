@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="CentOS,MongoDB," />
+  <meta name="keywords" content="MongoDB,CentOS," />
 
 
 
@@ -312,10 +312,10 @@
         <p>CentOS 7(64位)上使用yum安装MongoDB。</p>
 <hr>
 <a id="more"></a>
-<h3 id="u6DFB_u52A0MongoDB_u7684yum_u5E93"><a href="#u6DFB_u52A0MongoDB_u7684yum_u5E93" class="headerlink" title="添加MongoDB的yum库"></a>添加MongoDB的yum库</h3><p>在<code>/etc/yum.repos.d/</code>目录下新建<code>mongodb.repo</code><br><code>vi /etc/yum.repos.d/mongodb.repo</code><br>内容为<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">[MongoDB]</span></span><br><span class="line"><span class="setting">name=<span class="value">MongoDB Repository</span></span></span><br><span class="line"><span class="setting">baseurl=<span class="value">http://repo.mongodb.org/yum/redhat/<span class="variable">$releasever</span>/mongodb-org/<span class="number">3.2</span>/x<span class="number">86_64</span>/</span></span></span><br><span class="line"><span class="setting">gpgcheck=<span class="value"><span class="number">0</span></span></span></span><br><span class="line"><span class="setting">enabled=<span class="value"><span class="number">1</span></span></span></span><br></pre></td></tr></table></figure></p>
-<h3 id="u5B89_u88C5MongoDB"><a href="#u5B89_u88C5MongoDB" class="headerlink" title="安装MongoDB"></a>安装MongoDB</h3><p>安装命令<br><code># yum install mongodb-org</code></p>
-<h3 id="u542F_u52A8MongoDB"><a href="#u542F_u52A8MongoDB" class="headerlink" title="启动MongoDB"></a>启动MongoDB</h3><p>使用mongodb-org-server提供的初始化脚本启动服务<br><code># /etc/init.d/mongod restart</code><br>设置开机启动MongoDB<br><code># chkconfig mongod on</code></p>
-<h3 id="u5F00_u59CB_u4F7F_u7528"><a href="#u5F00_u59CB_u4F7F_u7528" class="headerlink" title="开始使用"></a>开始使用</h3><p>使用<code>mongo</code>命令进入命令行模式，可以放肆的玩耍了<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[<span class="keyword">test</span>@<span class="keyword">test</span>~]# mongo</span><br><span class="line">&gt;<span class="keyword">use</span> game</span><br><span class="line">&gt;<span class="keyword">db</span>.gameone.<span class="keyword">save</span>(&#123;name:<span class="string">"hello"</span>&#125;)</span><br><span class="line">&gt;<span class="keyword">db</span>.gameone.find()</span><br><span class="line">     &#123; <span class="string">"_id"</span> : ObjectId(<span class="string">"54fc2a4c71b56443ced99ba2"</span>), <span class="string">"name"</span> : <span class="string">"hello"</span> &#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="添加MongoDB的yum库"><a href="#添加MongoDB的yum库" class="headerlink" title="添加MongoDB的yum库"></a>添加MongoDB的yum库</h3><p>在<code>/etc/yum.repos.d/</code>目录下新建<code>mongodb.repo</code><br><code>vi /etc/yum.repos.d/mongodb.repo</code><br>内容为<br><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[MongoDB]</span></span><br><span class="line"><span class="attr">name</span>=MongoDB Repository</span><br><span class="line"><span class="attr">baseurl</span>=http://repo.mongodb.org/yum/redhat/<span class="variable">$releasever</span>/mongodb-org/<span class="number">3.2</span>/x<span class="number">86_64</span>/</span><br><span class="line"><span class="attr">gpgcheck</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">enabled</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="安装MongoDB"><a href="#安装MongoDB" class="headerlink" title="安装MongoDB"></a>安装MongoDB</h3><p>安装命令<br><code># yum install mongodb-org</code></p>
+<h3 id="启动MongoDB"><a href="#启动MongoDB" class="headerlink" title="启动MongoDB"></a>启动MongoDB</h3><p>使用mongodb-org-server提供的初始化脚本启动服务<br><code># /etc/init.d/mongod restart</code><br>设置开机启动MongoDB<br><code># chkconfig mongod on</code></p>
+<h3 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h3><p>使用<code>mongo</code>命令进入命令行模式，可以放肆的玩耍了<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[<span class="keyword">test</span>@<span class="keyword">test</span>~]# mongo</span><br><span class="line">&gt;<span class="keyword">use</span> game</span><br><span class="line">&gt;<span class="keyword">db</span>.gameone.<span class="keyword">save</span>(&#123;name:<span class="string">"hello"</span>&#125;)</span><br><span class="line">&gt;<span class="keyword">db</span>.gameone.find()</span><br><span class="line">     &#123; <span class="string">"_id"</span> : ObjectId(<span class="string">"54fc2a4c71b56443ced99ba2"</span>), <span class="string">"name"</span> : <span class="string">"hello"</span> &#125;</span><br></pre></td></tr></table></figure></p>
 <p>参考：<a href="http://tecadmin.net/install-mongodb-on-centos-rhel-and-fedora/" target="_blank" rel="external">How to Install MongoDB 3.2 on CentOS/RHEL &amp; Fedora</a></p>
 
       
@@ -331,9 +331,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/CentOS/" rel="tag">#CentOS</a>
-          
             <a href="/tags/MongoDB/" rel="tag">#MongoDB</a>
+          
+            <a href="/tags/CentOS/" rel="tag">#CentOS</a>
           
         </div>
       
@@ -415,7 +415,7 @@
                src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg"
                alt="Leeon" />
           <p class="site-author-name" itemprop="name">Leeon</p>
-          <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
+          <p class="site-description motion-element" itemprop="description">笔记来的</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -521,7 +521,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u6DFB_u52A0MongoDB_u7684yum_u5E93"><span class="nav-text">添加MongoDB的yum库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B89_u88C5MongoDB"><span class="nav-text">安装MongoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u542F_u52A8MongoDB"><span class="nav-text">启动MongoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5F00_u59CB_u4F7F_u7528"><span class="nav-text">开始使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#添加MongoDB的yum库"><span class="nav-text">添加MongoDB的yum库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装MongoDB"><span class="nav-text">安装MongoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动MongoDB"><span class="nav-text">启动MongoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开始使用"><span class="nav-text">开始使用</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

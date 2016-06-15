@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="css,html,文档流," />
+  <meta name="keywords" content="html,文档流,css," />
 
 
 
@@ -69,6 +69,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS定位 & 文档流">
 <meta name="twitter:description" content="文档流小计页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。欢迎指正！">
+<meta name="twitter:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/58206411.jpg">
 
 
 
@@ -311,13 +312,13 @@
       
 
       
-        <h2 id="u6587_u6863_u6D41_u5C0F_u8BA1"><a href="#u6587_u6863_u6D41_u5C0F_u8BA1" class="headerlink" title="文档流小计"></a>文档流小计</h2><p>页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。<br><em>欢迎指正！</em><br><a id="more"></a></p>
-<h2 id="u5B9A_u4F4D_u65B9_u5F0F"><a href="#u5B9A_u4F4D_u65B9_u5F0F" class="headerlink" title="定位方式"></a>定位方式</h2><ul>
+        <h2 id="文档流小计"><a href="#文档流小计" class="headerlink" title="文档流小计"></a>文档流小计</h2><p>页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。<br><em>欢迎指正！</em><br><a id="more"></a></p>
+<h2 id="定位方式"><a href="#定位方式" class="headerlink" title="定位方式"></a>定位方式</h2><ul>
 <li>身处Normal flow：块级元素(块级格式)、行内元素(行内格式)、相对定位(relative)</li>
 <li>脱离Normal flow：浮动定位(float)、绝对定位(absolute)、固定定位(fixed)</li>
 </ul>
-<h3 id="Normal_flow"><a href="#Normal_flow" class="headerlink" title="Normal flow"></a>Normal flow</h3><p>“normal flow”不明白为什么会被翻译成文档流，也有人叫普通流、正常流，本以为是很高深的内容，实际就是语言文本从左到右，从上到下显示，这是传统HTML文档的文本布局。</p>
-<h3 id="u8131_u79BBNormal_flow"><a href="#u8131_u79BBNormal_flow" class="headerlink" title="脱离Normal flow"></a>脱离Normal flow</h3><h4 id="u6D6E_u52A8"><a href="#u6D6E_u52A8" class="headerlink" title="浮动"></a>浮动</h4><ul>
+<h3 id="Normal-flow"><a href="#Normal-flow" class="headerlink" title="Normal flow"></a>Normal flow</h3><p>“normal flow”不明白为什么会被翻译成文档流，也有人叫普通流、正常流，本以为是很高深的内容，实际就是语言文本从左到右，从上到下显示，这是传统HTML文档的文本布局。</p>
+<h3 id="脱离Normal-flow"><a href="#脱离Normal-flow" class="headerlink" title="脱离Normal flow"></a>脱离Normal flow</h3><h4 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h4><ul>
 <li>float：<br>  属性值：left|right|none|inherit<br>  初始值：none<br>  应用元素：所有元素<br>  继承性：无<br>  特点：<ul>
 <li>浮动定位是脱离normal_flow</li>
 <li>包含块：浮动元素最近的块级祖先。</li>
@@ -339,12 +340,12 @@
 </ul>
 </li>
 <li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;</span>水平居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/58206411.jpg" alt="水平居中"></p>
 <ul>
-<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;</span>垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/29762873.jpg" alt="垂直居中"></p>
@@ -363,11 +364,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/css/" rel="tag">#css</a>
-          
             <a href="/tags/html/" rel="tag">#html</a>
           
             <a href="/tags/文档流/" rel="tag">#文档流</a>
+          
+            <a href="/tags/css/" rel="tag">#css</a>
           
         </div>
       
@@ -453,7 +454,7 @@
                src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg"
                alt="Leeon" />
           <p class="site-author-name" itemprop="name">Leeon</p>
-          <p class="site-description motion-element" itemprop="description">但求好事，莫问前程!</p>
+          <p class="site-description motion-element" itemprop="description">笔记来的</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -559,7 +560,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u6587_u6863_u6D41_u5C0F_u8BA1"><span class="nav-text">文档流小计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5B9A_u4F4D_u65B9_u5F0F"><span class="nav-text">定位方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Normal_flow"><span class="nav-text">Normal flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8131_u79BBNormal_flow"><span class="nav-text">脱离Normal flow</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u6D6E_u52A8"><span class="nav-text">浮动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#absolute"><span class="nav-text">absolute</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fixed"><span class="nav-text">fixed</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文档流小计"><span class="nav-text">文档流小计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定位方式"><span class="nav-text">定位方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Normal-flow"><span class="nav-text">Normal flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#脱离Normal-flow"><span class="nav-text">脱离Normal flow</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#浮动"><span class="nav-text">浮动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#absolute"><span class="nav-text">absolute</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#fixed"><span class="nav-text">fixed</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
