@@ -64,7 +64,8 @@
 <meta property="og:site_name" content="Leeon's BLOG">
 <meta property="og:description" content="问题描述使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”。Google了很多方式都没能解决，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”云盾！拦截了……囧">
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-17/26600917.jpg">
-<meta property="og:updated_time" content="2016-06-17T02:24:30.765Z">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-17/72508725.jpg">
+<meta property="og:updated_time" content="2016-06-17T06:06:24.219Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Putty登陆阿里云 Network error: Software caused connection abort">
 <meta name="twitter:description" content="问题描述使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”。Google了很多方式都没能解决，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”云盾！拦截了……囧">
@@ -317,8 +318,8 @@
 <li>添加参数<code>TCPKeepAlive yes</code></li>
 <li><code>ClientAliveInterval 0</code>中修改0为60</li>
 </ul>
-<p>这个方法并没能奏效</p>
-<h4 id="云盾设置登陆IP白名单"><a href="#云盾设置登陆IP白名单" class="headerlink" title="云盾设置登陆IP白名单:"></a>云盾设置登陆IP白名单:</h4><p>云盾&gt;服务器安全&gt;设置&gt;登陆安全&gt;添加&gt;添加服务器到白名单生效的服务器&gt;白名单IP设置为<code>0.0.0.0</code>(防止IP改变)<br>使用Putty再次连接，成功。</p>
+<p>然而这个方法并没能奏效。</p>
+<h4 id="云盾设置登陆IP白名单"><a href="#云盾设置登陆IP白名单" class="headerlink" title="云盾设置登陆IP白名单:"></a>云盾设置登陆IP白名单:</h4><p>侧边栏&gt;产品与服务&gt;服务器安全(安骑士)&gt;<br>设置&gt;安全配置&gt;登陆安全&gt;登陆IP白名单&gt;<br>添加白名单生效的服务器&gt;白名单IP设置为<code>0.0.0.0</code>(防止IP改变)<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-17/72508725.jpg" alt=""><br>使用Putty再次连接，成功。</p>
 
       
     </div>
