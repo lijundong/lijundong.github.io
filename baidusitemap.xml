@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/06/13/Putty%E7%99%BB%E9%99%86%E9%98%BF%E9%87%8C%E4%BA%91-Network-error-Software-caused-connection-abort/</loc>
+    <lastmod>2016-06-17T02:18:41.309Z</lastmod>
+    <data>
+        <display>
+        <title>Putty登陆阿里云 Network error: Software caused connection abort</title>
+        <pubTime>2016-06-13T13:52:18.000Z</pubTime>
+        
+        <tag>SSH</tag>
+         
+        <tag>云盾</tag>
+         
+         
+           
+             
+              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/06/14/Centos-Redhat-Fedora%E5%AE%89%E8%A3%85MongoDB3-2X/</loc>
     <lastmod>2016-06-14T12:00:08.940Z</lastmod>
     <data>
@@ -19,28 +41,6 @@
            
              
               <breadCrumb title="MongoDB" url="http://lijundong.com/categories/MongoDB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/2016/06/13/Putty%E7%99%BB%E9%99%86%E9%98%BF%E9%87%8C%E4%BA%91-Network-error-Software-caused-connection-abort/</loc>
-    <lastmod>2016-06-13T14:51:09.309Z</lastmod>
-    <data>
-        <display>
-        <title>Putty登陆阿里云 Network error: Software caused connection abort</title>
-        <pubTime>2016-06-13T13:52:18.000Z</pubTime>
-        
-        <tag>SSH</tag>
-         
-        <tag>云盾</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
           
         </display>
     </data>
