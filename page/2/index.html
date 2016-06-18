@@ -236,6 +236,136 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/11/清除浮动/" itemprop="url">
+                  清除浮动
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-03-11T10:37:38+08:00" content="2016-03-11">
+              2016-03-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/11/清除浮动/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/11/清除浮动/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+
+          
+
+          
+
+          
+          
+             <span id="/2016/03/11/清除浮动/" class="leancloud_visitors" data-flag-title="清除浮动">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="为什么清除浮动"><a href="#为什么清除浮动" class="headerlink" title="为什么清除浮动"></a>为什么清除浮动</h2><p>因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.outer</span>&#123;<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;<span class="attribute">background-color</span>:<span class="number">#fc9</span>;<span class="attribute">color</span>:<span class="number">#f5f</span>;<span class="attribute">margin</span>:<span class="number">50px</span> auto;<span class="attribute">padding</span>:<span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-class">.div1</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:red;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div2</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:blue;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div3</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:green;<span class="attribute">float</span>:left;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span>float1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span>float2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div3"</span>&gt;</span>float3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/66642323.jpg" alt="浮动未清除"><br>途中三个浮动上面的那条白线是整个outer的内容，height值为0，造成这样的原因是float已经脱离了文档流，这显然不是我们想要的，可能上面的内容不能很清楚的描述问题，下面在三个浮动元素后添加非浮动的div。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/11/清除浮动/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/07/Dell笔记本加装固态/" itemprop="url">
                   Dell笔记本加装固态
                 </a>
@@ -831,7 +961,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" rel="gallery_cipkr2b6b0007ykk9p5ma4okx"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" rel="gallery_cipky3jye000mo4k9vmsmzvwc"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" itemprop="contentUrl"/>
               </a>
@@ -976,7 +1106,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_cipkr2b7m000fykk9azoy103l"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_cipky3jwu0009o4k9k2ri5oq6"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" itemprop="contentUrl"/>
               </a>
@@ -1119,7 +1249,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" rel="gallery_cipkr2bb2001sykk9q5bslzs4"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" rel="gallery_cipky3k09001ao4k9w8whnxq3"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" itemprop="contentUrl"/>
               </a>
@@ -1265,7 +1395,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-26/74855966.jpg" rel="gallery_cipkr2bbm001yykk9ncnmbx5q"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-26/74855966.jpg" rel="gallery_cipky3k1o001so4k908q1jotd"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-26/74855966.jpg" itemprop="contentUrl"/>
               </a>
@@ -1408,7 +1538,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-21/46543782.jpg" rel="gallery_cipkr2ba9001iykk98dcrgt8d"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-21/46543782.jpg" rel="gallery_cipky3k2b0021o4k9eb8t27rb"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-21/46543782.jpg" itemprop="contentUrl"/>
               </a>
@@ -1430,135 +1560,6 @@
 <p>7.15成都出发，8.5到达拉萨，历时二十一天，行程2100+km，翻了13座山（两座5000+，9座4000+，两座4000-），爆了一个外胎和一个内胎，都是后胎，同时爆的……，一行四人，路上结识三位，七人布达拉宫广场举车，喝拉萨啤酒，这些事情我会记得很久。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2015/09/15/记暑假骑行川藏/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/09/10/Hello World/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2015-09-10T23:54:36+08:00" content="2015-09-10">
-              2015-09-10
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/09/10/Hello World/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/10/Hello World/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-
-          
-
-          
-
-          
-          
-             <span id="/2015/09/10/Hello World/" class="leancloud_visitors" data-flag-title="Hello World">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="About"><a href="#About" class="headerlink" title="About"></a>About</h3><p>写博客的习惯源于想哥，最初在CSDN上写，后转到cnBlogs上，最近给自己搭了一个空间，记录自己的思考，技术学习、生活五味。</p>
-<blockquote>
-<p>借刘未鹏前辈语：<br>一行字被你写下来之后，你就不用在将其费力的保持在大脑的临时记忆中，因为这行黑底白字会不断地通过视觉刺激来提醒你它的存在，于是你就可以将空出来的思维精力用于反思你自己的观点<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/09/10/Hello World/#more" rel="contents">
               Read more &raquo;
             </a>
           </div>
@@ -1629,7 +1630,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -1646,7 +1647,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">42</span>
+                <span class="site-state-item-count">44</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

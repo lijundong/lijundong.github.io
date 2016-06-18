@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="life," />
+  <meta name="keywords" content="nodejs,path," />
 
 
 
@@ -57,22 +57,19 @@
 
 
 
-<meta name="description" content="About写博客的习惯源于想哥，最初在CSDN上写，后转到cnBlogs上，最近给自己搭了一个空间，记录自己的思考，技术学习、生活五味。
-
-借刘未鹏前辈语：一行字被你写下来之后，你就不用在将其费力的保持在大脑的临时记忆中，因为这行黑底白字会不断地通过视觉刺激来提醒你它的存在，于是你就可以将空出来的思维精力用于反思你自己的观点">
+<meta name="description" content="‘./‘指向的目录是执行脚本时所在的当前目录，’__dirname’指向的目录是执行的脚本所保存的目录。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://lijundong.com/2015/09/10/Hello World/index.html">
+<meta property="og:title" content="node.js中__dirname与./的区别">
+<meta property="og:url" content="http://lijundong.com/2016/06/18/node-js中-dirname与-的区别/index.html">
 <meta property="og:site_name" content="Leeon's BLOG">
-<meta property="og:description" content="About写博客的习惯源于想哥，最初在CSDN上写，后转到cnBlogs上，最近给自己搭了一个空间，记录自己的思考，技术学习、生活五味。
-
-借刘未鹏前辈语：一行字被你写下来之后，你就不用在将其费力的保持在大脑的临时记忆中，因为这行黑底白字会不断地通过视觉刺激来提醒你它的存在，于是你就可以将空出来的思维精力用于反思你自己的观点">
-<meta property="og:updated_time" content="2016-06-07T14:08:04.961Z">
+<meta property="og:description" content="‘./‘指向的目录是执行脚本时所在的当前目录，’__dirname’指向的目录是执行的脚本所保存的目录。">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-18/88967313.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-18/15613612.jpg">
+<meta property="og:updated_time" content="2016-06-18T09:10:27.461Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="About写博客的习惯源于想哥，最初在CSDN上写，后转到cnBlogs上，最近给自己搭了一个空间，记录自己的思考，技术学习、生活五味。
-
-借刘未鹏前辈语：一行字被你写下来之后，你就不用在将其费力的保持在大脑的临时记忆中，因为这行黑底白字会不断地通过视觉刺激来提醒你它的存在，于是你就可以将空出来的思维精力用于反思你自己的观点">
+<meta name="twitter:title" content="node.js中__dirname与./的区别">
+<meta name="twitter:description" content="‘./‘指向的目录是执行脚本时所在的当前目录，’__dirname’指向的目录是执行的脚本所保存的目录。">
+<meta name="twitter:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-18/88967313.jpg">
 
 
 
@@ -90,7 +87,7 @@
   };
 </script>
 
-  <title> Hello World | Leeon's BLOG </title>
+  <title> node.js中__dirname与./的区别 | Leeon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -240,7 +237,7 @@
             
             
               
-                Hello World
+                node.js中__dirname与./的区别
               
             
           </h1>
@@ -252,8 +249,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2015-09-10T23:54:36+08:00" content="2015-09-10">
-              2015-09-10
+            <time itemprop="dateCreated" datetime="2016-06-18T16:40:44+08:00" content="2016-06-18">
+              2016-06-18
             </time>
           </span>
 
@@ -266,8 +263,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
                   </a>
                 </span>
 
@@ -282,8 +279,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/09/10/Hello World/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/10/Hello World/" itemprop="commentsCount"></span>
+                <a href="/2016/06/18/node-js中-dirname与-的区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/18/node-js中-dirname与-的区别/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -294,7 +291,7 @@
 
           
           
-             <span id="/2015/09/10/Hello World/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2016/06/18/node-js中-dirname与-的区别/" class="leancloud_visitors" data-flag-title="node.js中__dirname与./的区别">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -315,14 +312,14 @@
       
 
       
-        <h3 id="About"><a href="#About" class="headerlink" title="About"></a>About</h3><p>写博客的习惯源于想哥，最初在CSDN上写，后转到cnBlogs上，最近给自己搭了一个空间，记录自己的思考，技术学习、生活五味。</p>
-<blockquote>
-<p>借刘未鹏前辈语：<br>一行字被你写下来之后，你就不用在将其费力的保持在大脑的临时记忆中，因为这行黑底白字会不断地通过视觉刺激来提醒你它的存在，于是你就可以将空出来的思维精力用于反思你自己的观点<br><a id="more"></a></p>
-</blockquote>
-<h3 id="技术支持"><a href="#技术支持" class="headerlink" title="技术支持"></a>技术支持</h3><blockquote>
-<p>博客由<a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>支撑，部署在<a href="">Github</a>上，使用的主题是<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next</a>，评论系统由<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>强力驱动，DNS解析由<a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod</a>支持。</p>
-</blockquote>
-<p><em>生活，最重要的就是要开心嘛！</em></p>
+        <p>‘./‘指向的目录是执行脚本时所在的当前目录，’__dirname’指向的目录是执行的脚本所保存的目录。<br><a id="more"></a><br>举个例子：<br>现在我的文件目录结构是<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/dir1</span><br><span class="line">    /dir2</span><br><span class="line">        <span class="built_in">path</span>.js</span><br></pre></td></tr></table></figure></p>
+<p>path.js的内容是<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> path=<span class="built_in">require</span>(<span class="string">"path"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" . ="</span>+path.resolve(<span class="string">"."</span>));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" __dirname ="</span>+path.resolve(__dirname));</span><br></pre></td></tr></table></figure></p>
+<p>在<code>/dir2</code>目录下运行<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-18/88967313.jpg" alt=""></p>
+<p>在<code>/dir1</code>目录下运行<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-18/15613612.jpg" alt=""></p>
+<p>参考：</p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/8131344/what-is-the-difference-between-dirname-and-in-node-js" target="_blank" rel="external">What is the difference between __dirname and ./ in node.js(stackoverflow)</a></li>
+</ul>
 
       
     </div>
@@ -337,7 +334,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/life/" rel="tag">#life</a>
+            <a href="/tags/nodejs/" rel="tag">#nodejs</a>
+          
+            <a href="/tags/path/" rel="tag">#path</a>
           
         </div>
       
@@ -346,17 +345,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/09/05/Canvas制作排序算法演示动画/" rel="next" title="Canvas制作排序算法演示动画">
-                <i class="fa fa-chevron-left"></i> Canvas制作排序算法演示动画
+              <a href="/2016/06/18/Tmux常用命令及快捷键/" rel="next" title="Tmux常用命令及快捷键">
+                <i class="fa fa-chevron-left"></i> Tmux常用命令及快捷键
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/09/15/记暑假骑行川藏/" rel="prev" title="记暑假骑行川藏">
-                记暑假骑行川藏 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -382,8 +377,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/09/10/Hello World/"
-           data-title="Hello World" data-url="http://lijundong.com/2015/09/10/Hello World/">
+      <div class="ds-thread" data-thread-key="2016/06/18/node-js中-dirname与-的区别/"
+           data-title="node.js中__dirname与./的区别" data-url="http://lijundong.com/2016/06/18/node-js中-dirname与-的区别/">
       </div>
     
   </div>
@@ -529,7 +524,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#About"><span class="nav-text">About</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术支持"><span class="nav-text">技术支持</span></a></li></ol></div>
+              <p class="post-toc-empty">This post does not have a Table of Contents</p>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
