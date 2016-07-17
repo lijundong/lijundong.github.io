@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/07/15/%E5%86%8D%E8%B0%88setTimeout%E4%B8%8EsetInterval/</loc>
+    <lastmod>2016-07-17T02:39:37.956Z</lastmod>
+    <data>
+        <display>
+        <title>再谈setTimeout与setInterval</title>
+        <pubTime>2016-07-15T13:14:56.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>setTimeout</tag>
+         
+        <tag>setInterval</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/2016/01/11/Chrome%E6%89%A9%E5%B1%95%E3%80%8C%E4%B8%80%E3%80%8D%E7%AE%80%E6%98%93%E6%97%B6%E9%92%9F/</loc>
+    <lastmod>2016-07-15T13:17:12.236Z</lastmod>
+    <data>
+        <display>
+        <title>Chrome扩展[一]:简易时钟</title>
+        <pubTime>2016-01-11T01:31:14.000Z</pubTime>
+        
+        <tag>Chrome</tag>
+         
+        <tag>扩展</tag>
+         
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/06/27/%E8%87%AA%E5%AF%BB%E7%83%A6%E6%81%BC/</loc>
     <lastmod>2016-06-27T12:29:03.272Z</lastmod>
     <data>
@@ -285,30 +333,6 @@
            
              
               <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/2016/01/11/Chrome%E6%89%A9%E5%B1%95%E3%80%8C%E4%B8%80%E3%80%8D%E7%AE%80%E6%98%93%E6%97%B6%E9%92%9F/</loc>
-    <lastmod>2016-06-07T14:06:43.792Z</lastmod>
-    <data>
-        <display>
-        <title>Chrome扩展[一]:简易时钟</title>
-        <pubTime>2016-01-11T01:31:14.000Z</pubTime>
-        
-        <tag>Chrome</tag>
-         
-        <tag>扩展</tag>
-         
-        <tag>JS</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
