@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/07/19/BOM%E4%B9%8Blocation%E5%AF%B9%E8%B1%A1/</loc>
+    <lastmod>2016-07-20T06:20:13.760Z</lastmod>
+    <data>
+        <display>
+        <title>BOM之location对象</title>
+        <pubTime>2016-07-19T03:01:52.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>BOM</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/2016/07/19/%E5%BE%AE%E4%BF%A1%E5%85%AC%E5%8F%B7Node%E5%BC%80%E5%8F%91%E3%80%8C%E9%9B%B6%E3%80%8D/</loc>
+    <lastmod>2016-07-19T06:01:51.597Z</lastmod>
+    <data>
+        <display>
+        <title></title>
+        <pubTime>2016-07-19T03:04:34.000Z</pubTime>
+        
+        <tag>NodeJS</tag>
+         
+        <tag>微信</tag>
+         
+         
+           
+             
+              <breadCrumb title="NodeJS" url="http://lijundong.com/categories/NodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/07/18/%E6%89%B9%E9%87%8F%E5%A4%84%E7%90%86PPT%E5%9B%BE%E7%89%87/</loc>
     <lastmod>2016-07-18T12:59:30.299Z</lastmod>
     <data>
@@ -57,11 +101,11 @@
         <title>Chrome扩展[一]:简易时钟</title>
         <pubTime>2016-01-11T01:31:14.000Z</pubTime>
         
+        <tag>JavaScript</tag>
+         
         <tag>Chrome</tag>
          
         <tag>扩展</tag>
-         
-        <tag>JavaScript</tag>
          
          
            
@@ -413,9 +457,9 @@
         
         <tag>C++</tag>
          
-        <tag>语法分析</tag>
-         
         <tag>编译原理</tag>
+         
+        <tag>语法分析</tag>
          
          
            
@@ -437,9 +481,9 @@
         
         <tag>C++</tag>
          
-        <tag>编译原理</tag>
-         
         <tag>词法分析</tag>
+         
+        <tag>编译原理</tag>
          
          
            
