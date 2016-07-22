@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/19/%E5%BE%AE%E4%BF%A1%E5%85%AC%E5%8F%B7Node%E5%BC%80%E5%8F%91%E3%80%8C%E9%9B%B6%E3%80%8D/</loc>
-    <lastmod>2016-07-20T06:26:06.169Z</lastmod>
+    <loc>http://lijundong.com/2016/06/19/%E5%BE%AE%E4%BF%A1%E5%85%AC%E5%8F%B7Node%E5%BC%80%E5%8F%91%E3%80%8C%E9%9B%B6%E3%80%8D/</loc>
+    <lastmod>2016-07-22T12:01:34.243Z</lastmod>
     <data>
         <display>
-        <title>微信公号Node开发「零」</title>
-        <pubTime>2016-07-19T03:04:34.000Z</pubTime>
+        <title>微信公号Node开发「零」之项目建立</title>
+        <pubTime>2016-06-19T03:04:34.000Z</pubTime>
         
         <tag>NodeJS</tag>
          
@@ -19,6 +19,30 @@
            
              
               <breadCrumb title="NodeJS" url="http://lijundong.com/categories/NodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/2016/06/12/Centos7%E5%AE%89%E8%A3%85NodeJS%E4%BB%A5%E5%8F%8A%E6%9B%B4%E6%96%B0/</loc>
+    <lastmod>2016-07-22T11:57:13.056Z</lastmod>
+    <data>
+        <display>
+        <title>Centos7安装Node以及更新</title>
+        <pubTime>2016-06-12T09:23:09.000Z</pubTime>
+        
+        <tag>centos</tag>
+         
+        <tag>node</tag>
+         
+        <tag>npm</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -253,13 +277,13 @@
         <title>SublimeText 插件推荐</title>
         <pubTime>2016-03-17T01:43:02.000Z</pubTime>
         
-        <tag>工具使用</tag>
-         
         <tag>SublimeText</tag>
          
         <tag>插件</tag>
          
         <tag>力所能及的分享</tag>
+         
+        <tag>工具使用</tag>
          
          
            
@@ -325,9 +349,9 @@
         <title>管理你的Kindle</title>
         <pubTime>2016-01-12T12:55:33.000Z</pubTime>
         
-        <tag>kindle</tag>
-         
         <tag>工具使用</tag>
+         
+        <tag>kindle</tag>
          
          
            
