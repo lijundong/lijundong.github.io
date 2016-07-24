@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="life," />
+  <meta name="keywords" content="MongoDB,NodeJS,微信," />
 
 
 
@@ -57,25 +57,16 @@
 
 
 
-<meta name="description" content="这首歌很棒，我更喜欢谭维维的版本
-
-
-最近的生活过的好快，和室友聊天时经常把前天的事记成昨天，细想好久才能纠正，但大脑缓存就这么点大，光凭回忆不是长久之计，还得存进硬盘，拾起每天记事的习惯，五到十分钟记录这一天的收获或者流水账，上个学期连续写了三个月，现在偶尔翻看，挺好玩。">
+<meta name="description" content="项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="但求好事">
-<meta property="og:url" content="http://lijundong.com/2016/03/27/但求好事/index.html">
+<meta property="og:title" content="微信公号Node开发「壹」之操作MongoDB(上)">
+<meta property="og:url" content="http://lijundong.com/2016/07/23/微信公号Node开发「壹」之操作MongoDB/index.html">
 <meta property="og:site_name" content="Leeon's BLOG">
-<meta property="og:description" content="这首歌很棒，我更喜欢谭维维的版本
-
-
-最近的生活过的好快，和室友聊天时经常把前天的事记成昨天，细想好久才能纠正，但大脑缓存就这么点大，光凭回忆不是长久之计，还得存进硬盘，拾起每天记事的习惯，五到十分钟记录这一天的收获或者流水账，上个学期连续写了三个月，现在偶尔翻看，挺好玩。">
-<meta property="og:updated_time" content="2016-06-07T14:03:06.805Z">
+<meta property="og:description" content="项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。">
+<meta property="og:updated_time" content="2016-07-24T03:43:30.929Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="但求好事">
-<meta name="twitter:description" content="这首歌很棒，我更喜欢谭维维的版本
-
-
-最近的生活过的好快，和室友聊天时经常把前天的事记成昨天，细想好久才能纠正，但大脑缓存就这么点大，光凭回忆不是长久之计，还得存进硬盘，拾起每天记事的习惯，五到十分钟记录这一天的收获或者流水账，上个学期连续写了三个月，现在偶尔翻看，挺好玩。">
+<meta name="twitter:title" content="微信公号Node开发「壹」之操作MongoDB(上)">
+<meta name="twitter:description" content="项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。">
 
 
 
@@ -93,7 +84,7 @@
   };
 </script>
 
-  <title> 但求好事 | Leeon's BLOG </title>
+  <title> 微信公号Node开发「壹」之操作MongoDB(上) | Leeon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -243,7 +234,7 @@
             
             
               
-                但求好事
+                微信公号Node开发「壹」之操作MongoDB(上)
               
             
           </h1>
@@ -255,8 +246,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-03-27T23:15:09+08:00" content="2016-03-27">
-              2016-03-27
+            <time itemprop="dateCreated" datetime="2016-07-23T00:06:31+08:00" content="2016-07-23">
+              2016-07-23
             </time>
           </span>
 
@@ -269,8 +260,8 @@
               <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/NodeJS/" itemprop="url" rel="index">
+                    <span itemprop="name">NodeJS</span>
                   </a>
                 </span>
 
@@ -285,8 +276,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/27/但求好事/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/27/但求好事/" itemprop="commentsCount"></span>
+                <a href="/2016/07/23/微信公号Node开发「壹」之操作MongoDB/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/23/微信公号Node开发「壹」之操作MongoDB/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -297,7 +288,7 @@
 
           
           
-             <span id="/2016/03/27/但求好事/" class="leancloud_visitors" data-flag-title="但求好事">
+             <span id="/2016/07/23/微信公号Node开发「壹」之操作MongoDB/" class="leancloud_visitors" data-flag-title="微信公号Node开发「壹」之操作MongoDB(上)">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -318,11 +309,54 @@
       
 
       
-        <p>这首歌很棒，我更喜欢谭维维的版本</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="420" height="86" src="http://music.163.com/outchain/player?type=2&id=28935312&auto=0&height=66"></iframe>
-
-<p>最近的生活过的好快，和室友聊天时经常把前天的事记成昨天，细想好久才能纠正，但大脑缓存就这么点大，光凭回忆不是长久之计，还得存进硬盘，拾起每天记事的习惯，五到十分钟记录这一天的收获或者流水账，上个学期连续写了三个月，现在偶尔翻看，挺好玩。<br><a id="more"></a></p>
-<p>进入大学之后有三次选择，一次在大一暑假，一次在大二暑假，还有一次，仍在考虑的眼前，生活是一次次的选择，回望过去的两年，有得有失，有难忘和欢乐，难免的遗憾和悲伤。<br>一直很喜欢一句话“但求好事，莫问前程”，私以为这句话的境界该是，摒弃利益驱动，把一件事自己想做的事，做完整，做完美。好事求成，前程自来。<br>过去很长一段时间一直在挖坑，挖了这么久，也该填一填，把那些我想学的，想做的，着手去学，去做，跳出自己的<code>confort zone</code>。</p>
+        <p>项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。<br><a id="more"></a></p>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>关于MongoDB的结构，官方文档给出了下面的参考</p>
+<table>
+<thead>
+<tr>
+<th>SQL</th>
+<th>MongoDB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>database</td>
+<td>database</td>
+</tr>
+<tr>
+<td>table</td>
+<td>collection</td>
+</tr>
+<tr>
+<td>row</td>
+<td>document or BSON document</td>
+</tr>
+<tr>
+<td>column</td>
+<td>field</td>
+</tr>
+<tr>
+<td>index</td>
+<td>index</td>
+</tr>
+<tr>
+<td>primary key</td>
+<td>primary key(默认自动设置为<code>_id</code>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注：</strong><code>_id</code>是在插入一条新的document时，系统自动生成的一个由时间、主机名、PID(进程ID)、INC(自增计数器)组合转换而成的24位字符串。</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>现MongoDB内容如下<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-- info         //dbs</span><br><span class="line"></span>|<span class="string">   </span>|<span class="string">-- users    //collection</span><br><span class="line"></span>|<span class="string">   </span>|<span class="string">-- logs</span><br><span class="line"></span>|</span><br><span class="line">|<span class="string">-- test</span></span><br></pre></td></tr></table></figure></p>
+<p>进入MongoDB操作界面，默认进入test数据库。<br>操作及数据库<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//显示所有数据库</span></span><br><span class="line">show dbs             </span><br><span class="line"><span class="comment">//显示操作数据库的帮助</span></span><br><span class="line"><span class="keyword">db</span>.<span class="keyword">help</span>()            </span><br><span class="line"><span class="comment">//进入info数据库，如果没有则创建一个info数据库，所以这也是创建命令</span></span><br><span class="line"><span class="keyword">use</span> infos</span><br><span class="line"><span class="comment">//显示当前所在的数据库，默认是test数据库           </span></span><br><span class="line"><span class="keyword">db</span>       </span><br><span class="line"><span class="comment">//删除当前数据库的所有记录，如果没有选定，默认删除test</span></span><br><span class="line"><span class="keyword">db</span>.dropDatabase()</span><br></pre></td></tr></table></figure></p>
+<p>操作集合<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//显示当前数据库中所有集合</span></span><br><span class="line">show collections     </span><br><span class="line"></span><br><span class="line"><span class="comment">//创建新集合records</span></span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.insert</span>(&#123;name:<span class="string">"leeon"</span>,<span class="selector-tag">time</span>:new Date(),age:<span class="number">12</span>&#125;)</span><br><span class="line">db.createCollection(<span class="string">"records"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//插入记录</span></span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.insert</span>(&#123;name:<span class="string">"pine"</span>,<span class="selector-tag">time</span>:new Date(),age:<span class="number">12</span>&#125;)</span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.save</span>(&#123;name:<span class="string">"pine"</span>,<span class="selector-tag">time</span>:new Date(),age:<span class="number">12</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//删除集合records的所有记录</span></span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.remove</span>(&#123;&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//更新，name为leeon的记录age更新为20</span></span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.update</span>(&#123;name:<span class="string">"leeon"</span>&#125;,&#123;<span class="variable">$set</span>:&#123;age:<span class="number">20</span>&#125;&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//查询所有记录</span></span><br><span class="line">db<span class="selector-class">.users</span><span class="selector-class">.find</span>()</span><br></pre></td></tr></table></figure></p>
+<h3 id="常用操作符"><a href="#常用操作符" class="headerlink" title="常用操作符"></a>常用操作符</h3><p><strong>$ne</strong><br>语法：{field: {$ne: value} }<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查找users集合中，age!=20的记录</span></span><br><span class="line">db<span class="selector-class">.users</span><span class="selector-class">.find</span>(&#123;age:&#123;<span class="variable">$ne</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>$and</strong><br>语法：{ $and: [{ <expression1> }, { <expression2> } , … , {<expressionn> } ]}<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下name!=leeon&amp;&amp;age=20的记录</span></span><br><span class="line">db<span class="selector-class">.users</span><span class="selector-class">.find</span>(&#123;<span class="variable">$and</span>:[&#123;name:&#123;<span class="variable">$ne</span>:<span class="string">"leeon"</span>&#125;&#125;,&#123;age:<span class="number">20</span>&#125;]&#125;)</span><br></pre></td></tr></table></figure></expressionn></expression2></expression1></p>
+<p><strong>$or</strong><br>语法：{ $or: [{ <expression1> }, { <expression2> }, … , { <expressionn> }]}<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下name!=leeon||age=20的记录</span></span><br><span class="line">db<span class="selector-class">.users</span><span class="selector-class">.find</span>(&#123;<span class="variable">$or</span>:[&#123;name:&#123;<span class="variable">$ne</span>:<span class="string">"leeon"</span>&#125;&#125;,&#123;age:<span class="number">20</span>&#125;]&#125;)</span><br></pre></td></tr></table></figure></expressionn></expression2></expression1></p>
+<p><strong>$lt</strong><br>语法：{field: {$lt: value} }<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&lt;20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">lt</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>$lte</strong><br>语法：{ field: { $lte: value} }<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&lt;=20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">lte</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>$gt</strong><br>语法：{field: {$gt: value} }<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&gt;20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">gt</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>$gte</strong><br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&gt;=20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">gte</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>注：save和insert的区别主要在于，新记录中指定的<code>_id</code>在集合中已存在，save会对原纪录进行覆盖，而insert不会操作，如果<code>_id</code>没有指定，则没有区别，都是进行插入</strong><br>例子:<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">db.users.find()</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.<span class="keyword">insert</span>(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.save(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"li"</span>,<span class="string">"age"</span>:<span class="number">12</span>&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -337,7 +371,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/life/" rel="tag">#life</a>
+            <a href="/tags/MongoDB/" rel="tag">#MongoDB</a>
+          
+            <a href="/tags/NodeJS/" rel="tag">#NodeJS</a>
+          
+            <a href="/tags/微信/" rel="tag">#微信</a>
           
         </div>
       
@@ -346,17 +384,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/17/SublimeText-插件推荐/" rel="next" title="SublimeText 插件推荐">
-                <i class="fa fa-chevron-left"></i> SublimeText 插件推荐
+              <a href="/2016/07/19/BOM之location对象/" rel="next" title="BOM之location对象">
+                <i class="fa fa-chevron-left"></i> BOM之location对象
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/01/Bootstrap初体验-鼠标hover时自动下拉菜单/" rel="prev" title="Bootstrap初体验:鼠标hover时自动下拉菜单">
-                Bootstrap初体验:鼠标hover时自动下拉菜单 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -382,8 +416,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/27/但求好事/"
-           data-title="但求好事" data-url="http://lijundong.com/2016/03/27/但求好事/">
+      <div class="ds-thread" data-thread-key="2016/07/23/微信公号Node开发「壹」之操作MongoDB/"
+           data-title="微信公号Node开发「壹」之操作MongoDB(上)" data-url="http://lijundong.com/2016/07/23/微信公号Node开发「壹」之操作MongoDB/">
       </div>
     
   </div>
@@ -529,7 +563,7 @@
               
             
             
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#结构"><span class="nav-text">结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用操作符"><span class="nav-text">常用操作符</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
