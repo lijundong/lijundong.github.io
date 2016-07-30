@@ -64,7 +64,7 @@
 <meta property="og:site_name" content="Leeon's BLOG">
 <meta property="og:description" content="从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……">
 <meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-7-30/94481137.jpg">
-<meta property="og:updated_time" content="2016-07-30T07:27:22.430Z">
+<meta property="og:updated_time" content="2016-07-30T07:35:06.636Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="coding page与github page博客部署及域名绑定">
 <meta name="twitter:description" content="从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……">
@@ -336,16 +336,16 @@
 <li><p>本地建立Hexo项目(hexo init)，在根目录下配置文件_config.yml中配置远程仓库地址以及分支(注意属性与值之间的空格)，下面是我的配置(我同时推到Github和Coding上，同时部署，这样做之前需要在项目的source目录下添加<code>staticfile</code>文件)</p>
 <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>: </span><br><span class="line">      <span class="attribute">coding</span>: git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:jundong/jundong.git,master</span><br><span class="line">      <span class="attribute">github</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:lijundong/lijundong.github.io.git,master</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><code>hexo g -d</code>生成博客并推到远程仓库，稍等片刻，访问yourname.coding.me/yourname.github.io，可以看到部署成功</p>
+<li><p><code>hexo g -d</code>生成博客并推到远程仓库，稍等片刻，访问<code>yourname.coding.me</code>/<code>yourname.github.io</code>，可以看到部署成功</p>
 </li>
-<li>博客部署完，绑定自定义域名，通过DNS解析，将自定义域名指向yourname.coding.me/yourname.github.io，区别在于添加CNAMe的方式，<ul>
+<li>博客部署完，绑定自定义域名，通过DNS解析，将自定义域名指向<code>yourname.coding.me</code>/<code>yourname.github.io</code>，区别在于添加CNAMe的方式，<ul>
 <li>Github需要在项目根目录下添加<code>CNAME</code>文件，文件中加上需要绑定的域名如<code>lijundong.com</code></li>
 <li>Coding绑定的方式是在项目的Pages服务下添加域名绑定</li>
 </ul>
 </li>
-<li>添加DNS解析，这里两者仍有区别，<ul>
-<li>Github绑定<code>yourname.github.io</code></li>
-<li>Coding绑定<code>pages.coding.me</code>(<strong>此处踩过坑</strong>)<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-7-30/77087768.jpg" alt=""></li>
+<li>添加DNS解析，这里两者仍有区别<ul>
+<li>Github绑定<code>yourname.github.io</code>，访问<code>yourname.github.io</code>会定向到自定义域名</li>
+<li>Coding绑定<code>pages.coding.me</code>(<strong>此处踩过坑</strong>)，访问<code>yourname.coding.me</code>不会重定向<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-7-30/77087768.jpg" alt=""></li>
 </ul>
 </li>
 <li><strong>更换DNS解析服务器时，别忘了在域名提供商出更改DNS服务器(此处踩过坑)</strong></li>
