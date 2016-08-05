@@ -313,6 +313,140 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/11/清除浮动/" itemprop="url">
+                  清除浮动
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-03-11T10:37:38+08:00" content="2016-03-11">
+              2016-03-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/11/清除浮动/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/11/清除浮动/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/03/11/清除浮动/" class="leancloud_visitors" data-flag-title="清除浮动">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="为什么清除浮动"><a href="#为什么清除浮动" class="headerlink" title="为什么清除浮动"></a>为什么清除浮动</h2><p>因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.outer</span>&#123;<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;<span class="attribute">background-color</span>:<span class="number">#fc9</span>;<span class="attribute">color</span>:<span class="number">#f5f</span>;<span class="attribute">margin</span>:<span class="number">50px</span> auto;<span class="attribute">padding</span>:<span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-class">.div1</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:red;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div2</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:blue;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div3</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:green;<span class="attribute">float</span>:left;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span>float1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span>float2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div3"</span>&gt;</span>float3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/66642323.jpg" alt="浮动未清除"><br>途中三个浮动上面的那条白线是整个outer的内容，height值为0，造成这样的原因是float已经脱离了文档流，这显然不是我们想要的，可能上面的内容不能很清楚的描述问题，下面在三个浮动元素后添加非浮动的div。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/11/清除浮动/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/03/07/Dell笔记本加装固态/" itemprop="url">
                   Dell笔记本加装固态
                 </a>
@@ -924,7 +1058,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" rel="gallery_cir9yoogl000tggk9ss2atv2z"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" rel="gallery_cirhhgebc001ly0k9b20c5u8m"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" itemprop="contentUrl"/>
               </a>
@@ -1073,7 +1207,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_cir9yoof2000dggk99scmuo45"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_cirhhge7y000ry0k9zgsx3ip3"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" itemprop="contentUrl"/>
               </a>
@@ -1220,7 +1354,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" rel="gallery_cir9yoojb001jggk9i9yql7lk"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" rel="gallery_cirhhgeby001xy0k9lmog3l9j"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-22/38260166.jpg" itemprop="contentUrl"/>
               </a>
@@ -1370,7 +1504,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-21/46543782.jpg" rel="gallery_cir9yoomy002tggk9c1uwvtxc"
+                 href="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-21/46543782.jpg" rel="gallery_cirhhgefb0030y0k9j1lbqvbv"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://7xlkdt.com1.z0.glb.clouddn.com/15-12-21/46543782.jpg" itemprop="contentUrl"/>
               </a>
@@ -1554,138 +1688,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/09/05/Canvas制作排序算法演示动画/" itemprop="url">
-                  Canvas制作排序算法演示动画
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2015-09-05T22:18:12+08:00" content="2015-09-05">
-              2015-09-05
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习/" itemprop="url" rel="index">
-                    <span itemprop="name">学习</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/09/05/Canvas制作排序算法演示动画/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/05/Canvas制作排序算法演示动画/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/09/05/Canvas制作排序算法演示动画/" class="leancloud_visitors" data-flag-title="Canvas制作排序算法演示动画">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Tips:<br>形象化演示排序算法可以让初学者快速理解，最近在看canvas，试着用js+canvas自己做了一个。<br>已有比较好的demo：<a href="http://jun-lu.github.io/SortAnimate/index.html">jun-lu的SortAnimate</a>，<a href="http://www.webhek.com/misc/comparison-sort">旧金山大学的David Galles教授的算法演示课件</a>。</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/09/05/Canvas制作排序算法演示动画/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1731,7 +1733,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">33</span>
+              <span class="site-state-item-count">34</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
