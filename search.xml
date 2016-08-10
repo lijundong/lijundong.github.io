@@ -36,7 +36,7 @@
       <title><![CDATA[Coding page与Github page博客部署及域名绑定]]></title>
       <url>http://lijundong.com/2016/07/30/coding-page%E4%B8%8Egithub-page%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%8F%8A%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/</url>
       <content type="html"><![CDATA[<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-7-30/94481137.jpg" style="margin:0 auto;display: block;"></p>
-<p>从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……<br><a id="more"></a><br>去<a href="http://www.checkgfw.com/查了下，就出现了这篇文章的题图，不管测的权威性多大，反正挺郁闷的。唉，苦闷！" target="_blank" rel="external">http://www.checkgfw.com/查了下，就出现了这篇文章的题图，不管测的权威性多大，反正挺郁闷的。唉，苦闷！</a><br>之前一直用的DNSPod做DNS解析，前端时间转到了阿里云，域名是万网买的，心想自家孩子速度可能快些，谁曾想没过多久就出了这档子事(虽然没有多大关联性)，非常不爽，又转回DNSPod，添加解析后等待是最痛苦的，最痛苦的是等来的是继续无法连接，折腾了一晚上还是选择把博客放在国内，在Coding上创建项目，添加公钥，上传项目，开启Page服务，部署，熟悉的界面再次出现异常亲切，好了，现在只要添加一条DNS解析就齐活。</p>
+<p>从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……<br><a id="more"></a><br>去<a href="http://www.checkgfw.com/" target="_blank" rel="external">checkgfw</a>查了下，就出现了这篇文章的题图，不管测的权威性多大，反正挺郁闷的。唉，苦闷！<br>之前一直用的DNSPod做DNS解析，前端时间转到了阿里云，域名是万网买的，心想自家孩子速度可能快些，谁曾想没过多久就出了这档子事(虽然没有多大关联性)，非常不爽，又转回DNSPod，添加解析后等待是最痛苦的，最痛苦的是等来的是继续无法连接，折腾了一晚上还是选择把博客放在国内，在Coding上创建项目，添加公钥，上传项目，开启Page服务，部署，熟悉的界面再次出现异常亲切，好了，现在只要添加一条DNS解析就齐活。</p>
 <h3 id="Coding-Page部署博客"><a href="#Coding-Page部署博客" class="headerlink" title="Coding Page部署博客"></a>Coding Page部署博客</h3><p>无论是在Github还是在Coding上部署博客，过程都类似(<strong>注:以下统一用yourname代表项目名</strong>)</p>
 <ul>
 <li>注册Coding/Github </li>
@@ -60,7 +60,7 @@
 <li><strong>更换DNS解析服务器时，别忘了在域名提供商出更改DNS服务器(此处踩过坑)</strong></li>
 </ul>
 <hr>
-<p>那，我的域名到底被墙了没？</p>
+<p>那么，我的域名到底被墙了没？</p>
 ]]></content>
     </entry>
     
