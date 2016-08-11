@@ -106,16 +106,16 @@
 
 
 
-<meta name="description" content="别看了，这是测试">
+<meta name="description" content="笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信公号Node开发「贰」之express">
 <meta property="og:url" content="http://lijundong.com/2016/07/30/微信公号Node开发「贰」之express/index.html">
 <meta property="og:site_name" content="Leeon's BLOG">
-<meta property="og:description" content="别看了，这是测试">
-<meta property="og:updated_time" content="2016-07-30T14:10:02.693Z">
+<meta property="og:description" content="笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。">
+<meta property="og:updated_time" content="2016-08-10T13:50:00.918Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信公号Node开发「贰」之express">
-<meta name="twitter:description" content="别看了，这是测试">
+<meta name="twitter:description" content="笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。">
 
 
 
@@ -386,7 +386,8 @@
       
 
       
-        <blockquote class="blockquote-center">别看了，这是测试</blockquote>
+        <p>笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。<br><a id="more"></a></p>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-——bin   //存放www文件，包含着项目启动命令</span><br><span class="line"></span>|<span class="string">-——node_modules   //存放npm安装到本地的依赖项，依赖包声明在package.json</span><br><span class="line"></span>|<span class="string">-——public         //存放静态资源，图片、js文件、样式文件</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——images</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——javascripts</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——stylesheets</span><br><span class="line"></span>|<span class="string">-——routes //存放路由文件</span><br><span class="line"></span>|<span class="string">-——views  //模板文件，默认使用jade，如果用ejs，则用`express -e &lt;项目名&gt;`初始化</span><br><span class="line"></span>|<span class="string">-——app.js //入口文件</span><br><span class="line"></span>|<span class="string">-——package.json //npm依赖配置文件，`npm install`命令安装</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -638,7 +639,7 @@
               
             
             
-              <p class="post-toc-empty">This post does not have a Table of Contents</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#结构"><span class="nav-number">1.</span> <span class="nav-text">结构</span></a></li></ol></div>
             
           </div>
         </section>
