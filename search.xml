@@ -247,6 +247,20 @@
     </entry>
     
     <entry>
+      <title><![CDATA[CentOS源码安装NodeJS]]></title>
+      <url>http://lijundong.com/2016/06/19/centos-install-node/</url>
+      <content type="html"><![CDATA[<p>之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。<br><a id="more"></a></p>
+<h3 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h3><p>在<a href="https://nodejs.org/en/download/" target="_blank" rel="external">NodeJS官网</a>下载源码，如果不需要体验最新特性，推荐下载LTS（long term support）版本，当前版本为4.5.0</p>
+<p><code>wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz</code></p>
+<h3 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h3><p>解压源码包并进入解压后文件夹<br><code>tar xzvf node-v* &amp;&amp; cd node-v*</code></p>
+<h3 id="编译-amp-amp-安装"><a href="#编译-amp-amp-安装" class="headerlink" title="编译 &amp;&amp; 安装"></a>编译 &amp;&amp; 安装</h3><figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br><span class="line"></span><br><span class="line"><span class="built_in">make</span></span><br><span class="line"></span><br><span class="line">sudo <span class="built_in">make</span> install</span><br></pre></td></tr></table></figure>
+<p>查看版本号<br><code>node -v</code><br><code>v4.5.0</code></p>
+<p>安装完成。</p>
+<p>###结语<br>之前也想过使用源码安装，但是意识上认为解压、编译、安装过程会很复杂，然而真正操作一遍之后，完全不是那回事，我认为的困难只是我的大脑懒于接受新知识所找出来的借口，如果不突破这些障碍、懒惰，我会错过很多好玩的东西，光是想想都觉得可惜。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[微信公号Node开发「零」之项目建立]]></title>
       <url>http://lijundong.com/2016/06/19/wechat-node-0th/</url>
       <content type="html"><![CDATA[<p>前段时间帮忙做一个微信后台开发，并且用了Node + Mongo，做一次实践，后面又添加了一些功能，整个项目开始变得系统，做了一段时间，对于整个系统的把握变得清晰，Node的使用也有了些思路，过程中遇到很多问题，虽然最后项目作废了，但是笔记还是要做的，这里就记录下开发中遇到的问题。<br><a id="more"></a></p>
@@ -314,10 +328,6 @@
 <tr>
 <td><code>tmux</code></td>
 <td>创建session</td>
-</tr>
-<tr>
-<td><code>tmux -v</code></td>
-<td>获取tmux版本号</td>
 </tr>
 <tr>
 <td><code>tmux ls</code></td>

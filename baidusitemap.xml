@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/06/19/centos-install-node/</loc>
+    <lastmod>2016-08-20T02:01:14.393Z</lastmod>
+    <data>
+        <display>
+        <title>CentOS源码安装NodeJS</title>
+        <pubTime>2016-06-19T14:03:20.000Z</pubTime>
+        
+        <tag>centos</tag>
+         
+        <tag>node</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/2016/06/18/Tmux-common-comands-shortcuts/</loc>
+    <lastmod>2016-08-19T14:01:55.410Z</lastmod>
+    <data>
+        <display>
+        <title>Tmux常用命令及快捷键</title>
+        <pubTime>2016-06-18T04:47:28.000Z</pubTime>
+        
+        <tag>putty</tag>
+         
+        <tag>tmux</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/07/30/wechat-node-2th-express/</loc>
     <lastmod>2016-08-10T13:50:00.918Z</lastmod>
     <data>
@@ -266,28 +310,6 @@
            
              
               <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/2016/06/18/Tmux-common-comands-shortcuts/</loc>
-    <lastmod>2016-06-18T06:59:53.805Z</lastmod>
-    <data>
-        <display>
-        <title>Tmux常用命令及快捷键</title>
-        <pubTime>2016-06-18T04:47:28.000Z</pubTime>
-        
-        <tag>putty</tag>
-         
-        <tag>tmux</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -646,9 +668,9 @@
         
         <tag>html</tag>
          
-        <tag>css</tag>
-         
         <tag>文档流</tag>
+         
+        <tag>css</tag>
          
          
            

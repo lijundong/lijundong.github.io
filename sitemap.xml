@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lijundong.com/2016/06/19/centos-install-node/</loc>
+    
+    <lastmod>2016-08-20T02:01:14.393Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/2016/06/18/Tmux-common-comands-shortcuts/</loc>
+    
+    <lastmod>2016-08-19T14:01:55.410Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lijundong.com/2016/07/30/wechat-node-2th-express/</loc>
     
     <lastmod>2016-08-10T13:50:00.918Z</lastmod>
@@ -89,13 +103,6 @@
     <loc>http://lijundong.com/2016/06/18/node-js-dirname-difference/</loc>
     
     <lastmod>2016-06-18T09:10:27.461Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/2016/06/18/Tmux-common-comands-shortcuts/</loc>
-    
-    <lastmod>2016-06-18T06:59:53.805Z</lastmod>
     
   </url>
   

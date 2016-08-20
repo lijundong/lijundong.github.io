@@ -90,7 +90,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="centos,node,npm," />
+  <meta name="keywords" content="centos,node," />
 
 
 
@@ -106,25 +106,16 @@
 
 
 
-<meta name="description" content="安装node &amp;amp; npmYum安装使用yum安装，需要先启用EPEL repository# yum install epel-release
-安装node# yum install nodejs查看是否安装成功# node -version
-安装npm# yum install npm查看是否安装成功# npm -version
-安装express12npm install -g exp">
+<meta name="description" content="之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Centos7安装Node以及更新">
-<meta property="og:url" content="http://lijundong.com/2016/06/12/Centos7-install-nodejs-update/index.html">
+<meta property="og:title" content="CentOS源码安装NodeJS">
+<meta property="og:url" content="http://lijundong.com/2016/06/19/centos-install-node/index.html">
 <meta property="og:site_name" content="Leeon's BLOG">
-<meta property="og:description" content="安装node &amp;amp; npmYum安装使用yum安装，需要先启用EPEL repository# yum install epel-release
-安装node# yum install nodejs查看是否安装成功# node -version
-安装npm# yum install npm查看是否安装成功# npm -version
-安装express12npm install -g exp">
-<meta property="og:updated_time" content="2016-07-22T11:57:13.056Z">
+<meta property="og:description" content="之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。">
+<meta property="og:updated_time" content="2016-08-20T02:01:14.393Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Centos7安装Node以及更新">
-<meta name="twitter:description" content="安装node &amp;amp; npmYum安装使用yum安装，需要先启用EPEL repository# yum install epel-release
-安装node# yum install nodejs查看是否安装成功# node -version
-安装npm# yum install npm查看是否安装成功# npm -version
-安装express12npm install -g exp">
+<meta name="twitter:title" content="CentOS源码安装NodeJS">
+<meta name="twitter:description" content="之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。">
 
 
 
@@ -145,9 +136,9 @@
 
 
 
-  <link rel="canonical" href="http://lijundong.com/2016/06/12/Centos7-install-nodejs-update/"/>
+  <link rel="canonical" href="http://lijundong.com/2016/06/19/centos-install-node/"/>
 
-  <title> Centos7安装Node以及更新 | Leeon's BLOG </title>
+  <title> CentOS源码安装NodeJS | Leeon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -320,7 +311,7 @@
             
             
               
-                Centos7安装Node以及更新
+                CentOS源码安装NodeJS
               
             
           </h1>
@@ -332,8 +323,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-06-12T17:23:09+08:00" content="2016-06-12">
-              2016-06-12
+            <time itemprop="dateCreated" datetime="2016-06-19T22:03:20+08:00" content="2016-06-19">
+              2016-06-19
             </time>
           </span>
 
@@ -362,8 +353,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/06/12/Centos7-install-nodejs-update/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/12/Centos7-install-nodejs-update/" itemprop="commentsCount"></span>
+                <a href="/2016/06/19/centos-install-node/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/19/centos-install-node/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -373,7 +364,7 @@
 
           
           
-             <span id="/2016/06/12/Centos7-install-nodejs-update/" class="leancloud_visitors" data-flag-title="Centos7安装Node以及更新">
+             <span id="/2016/06/19/centos-install-node/" class="leancloud_visitors" data-flag-title="CentOS源码安装NodeJS">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -395,21 +386,14 @@
       
 
       
-        <h3 id="安装node-amp-npm"><a href="#安装node-amp-npm" class="headerlink" title="安装node &amp; npm"></a>安装node &amp; npm</h3><p><strong>Yum安装</strong><br>使用yum安装，需要先启用EPEL repository<br><code># yum install epel-release</code></p>
-<p>安装<strong>node</strong><br><code># yum install nodejs</code><br>查看是否安装成功<br><code># node -version</code></p>
-<p>安装<strong>npm</strong><br><code># yum install npm</code><br>查看是否安装成功<br><code># npm -version</code></p>
-<h3 id="安装express"><a href="#安装express" class="headerlink" title="安装express"></a>安装express</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> -g express</span><br><span class="line">npm <span class="keyword">install</span> -g express-generator</span><br></pre></td></tr></table></figure>
-<p>查看是否安装成功<br><code>express -version</code></p>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p><strong>node</strong>更新</p>
-<p>安装 n 模块<br><code>npm install -g n</code><br>通过 n 模块安升级到NodeJS最新稳定版<br><code>n stable</code></p>
-<p>同时，可以变更到指定版本<br><code>n 0.10.26      //切换到版本 0.10.26</code></p>
-<p><strong>npm</strong>更新<br><figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">update</span>              <span class="comment">//升级当前目录下的项目的所有模块</span></span><br><span class="line">npm <span class="keyword">update</span> express      <span class="comment">//升级当前目录下的项目的指定模块</span></span><br><span class="line">npm <span class="keyword">update</span> -g express   <span class="comment">//升级全局安装的express模块</span></span><br></pre></td></tr></table></figure></p>
-<p>参考:</p>
-<ul>
-<li><a href="http://www.phpini.com/linux/rhel-centos-install-node-js" target="_blank" rel="external">RHEL / CentOS 7 安裝 Node.js</a></li>
-<li><a href="http://blog.chinaunix.net/uid-14735472-id-5119134.html" target="_blank" rel="external">安装Express-Centos7</a></li>
-<li><a href="http://cnbin.github.io/blog/2015/06/12/geng-xin-node-ban-ben/" target="_blank" rel="external">更新 Node 版本</a></li>
-</ul>
+        <p>之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。<br><a id="more"></a></p>
+<h3 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h3><p>在<a href="https://nodejs.org/en/download/" target="_blank" rel="external">NodeJS官网</a>下载源码，如果不需要体验最新特性，推荐下载LTS（long term support）版本，当前版本为4.5.0</p>
+<p><code>wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz</code></p>
+<h3 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h3><p>解压源码包并进入解压后文件夹<br><code>tar xzvf node-v* &amp;&amp; cd node-v*</code></p>
+<h3 id="编译-amp-amp-安装"><a href="#编译-amp-amp-安装" class="headerlink" title="编译 &amp;&amp; 安装"></a>编译 &amp;&amp; 安装</h3><figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br><span class="line"></span><br><span class="line"><span class="built_in">make</span></span><br><span class="line"></span><br><span class="line">sudo <span class="built_in">make</span> install</span><br></pre></td></tr></table></figure>
+<p>查看版本号<br><code>node -v</code><br><code>v4.5.0</code></p>
+<p>安装完成。</p>
+<p>###结语<br>之前也想过使用源码安装，但是意识上认为解压、编译、安装过程会很复杂，然而真正操作一遍之后，完全不是那回事，我认为的困难只是我的大脑懒于接受新知识所找出来的借口，如果不突破这些障碍、懒惰，我会错过很多好玩的东西，光是想想都觉得可惜。</p>
 
       
     </div>
@@ -436,8 +420,6 @@
           
             <a href="/tags/node/" rel="tag">#node</a>
           
-            <a href="/tags/npm/" rel="tag">#npm</a>
-          
         </div>
       
 
@@ -445,16 +427,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/17/Windows-tips-you-may-ignore/" rel="next" title="可能错过的Windows便签">
-                <i class="fa fa-chevron-left"></i> 可能错过的Windows便签
+              <a href="/2016/06/19/wechat-node-0th/" rel="next" title="微信公号Node开发「零」之项目建立">
+                <i class="fa fa-chevron-left"></i> 微信公号Node开发「零」之项目建立
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/06/13/Putty-login-aliyun-Network-error-Software-caused-connection-abort/" rel="prev" title="Putty登陆阿里云 Network error: Software caused connection abort">
-                Putty登陆阿里云 Network error: Software caused connection abort <i class="fa fa-chevron-right"></i>
+              <a href="/2016/06/27/troubleyourself/" rel="prev" title="自寻烦恼">
+                自寻烦恼 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -507,8 +489,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/06/12/Centos7-install-nodejs-update/"
-           data-title="Centos7安装Node以及更新" data-url="http://lijundong.com/2016/06/12/Centos7-install-nodejs-update/">
+      <div class="ds-thread" data-thread-key="2016/06/19/centos-install-node/"
+           data-title="CentOS源码安装NodeJS" data-url="http://lijundong.com/2016/06/19/centos-install-node/">
       </div>
     
   </div>
@@ -664,7 +646,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装node-amp-npm"><span class="nav-number">1.</span> <span class="nav-text">安装node & npm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装express"><span class="nav-number">2.</span> <span class="nav-text">安装express</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#更新"><span class="nav-number">3.</span> <span class="nav-text">更新</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#获取源码"><span class="nav-number">1.</span> <span class="nav-text">获取源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解压"><span class="nav-number">2.</span> <span class="nav-text">解压</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译-amp-amp-安装"><span class="nav-number">3.</span> <span class="nav-text">编译 && 安装</span></a></li></ol></div>
             
           </div>
         </section>
