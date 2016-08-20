@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/06/12/Centos7-install-nodejs-update/</loc>
+    <lastmod>2016-08-20T16:55:24.806Z</lastmod>
+    <data>
+        <display>
+        <title>Centos7安装Node以及更新</title>
+        <pubTime>2016-06-12T09:23:09.000Z</pubTime>
+        
+        <tag>centos</tag>
+         
+        <tag>node</tag>
+         
+        <tag>npm</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/05/20/secure-copy/</loc>
     <lastmod>2016-08-20T16:49:54.552Z</lastmod>
     <data>
@@ -176,30 +200,6 @@
            
              
               <breadCrumb title="NodeJS" url="http://lijundong.com/categories/NodeJS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/2016/06/12/Centos7-install-nodejs-update/</loc>
-    <lastmod>2016-07-22T11:57:13.056Z</lastmod>
-    <data>
-        <display>
-        <title>Centos7安装Node以及更新</title>
-        <pubTime>2016-06-12T09:23:09.000Z</pubTime>
-        
-        <tag>centos</tag>
-         
-        <tag>node</tag>
-         
-        <tag>npm</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
