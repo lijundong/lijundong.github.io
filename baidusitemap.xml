@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/05/20/secure-copy/</loc>
+    <lastmod>2016-08-20T16:49:54.552Z</lastmod>
+    <data>
+        <display>
+        <title>SCP跨机远程拷贝</title>
+        <pubTime>2016-05-20T14:08:51.000Z</pubTime>
+        
+        <tag>scp</tag>
+         
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/06/19/centos-install-node/</loc>
     <lastmod>2016-08-20T02:26:46.573Z</lastmod>
     <data>
@@ -594,9 +616,9 @@
         
         <tag>C++</tag>
          
-        <tag>编译原理</tag>
-         
         <tag>语法分析</tag>
+         
+        <tag>编译原理</tag>
          
          
            
@@ -618,9 +640,9 @@
         
         <tag>C++</tag>
          
-        <tag>词法分析</tag>
-         
         <tag>编译原理</tag>
+         
+        <tag>词法分析</tag>
          
          
            
