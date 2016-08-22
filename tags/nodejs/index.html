@@ -109,7 +109,7 @@
 <meta name="description" content="笔记来的">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Leeon's BLOG">
-<meta property="og:url" content="http://lijundong.com/tags/nodejs/index.html">
+<meta property="og:url" content="http://lijundong.com/tags/NodeJS/index.html">
 <meta property="og:site_name" content="Leeon's BLOG">
 <meta property="og:description" content="笔记来的">
 <meta name="twitter:card" content="summary">
@@ -135,9 +135,9 @@
 
 
 
-  <link rel="canonical" href="http://lijundong.com/tags/nodejs/"/>
+  <link rel="canonical" href="http://lijundong.com/tags/NodeJS/"/>
 
-  <title> Tag: nodejs | Leeon's BLOG </title>
+  <title> Tag: NodeJS | Leeon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -292,7 +292,7 @@
   <div id="posts" class="posts-collapse">
     <div class="collection-title">
       <h2 >
-        nodejs
+        NodeJS
         <small>Tag</small>
       </h2>
     </div>
@@ -305,9 +305,9 @@
 
       <h1 class="post-title">
         
-            <a class="post-title-link" href="/2016/06/18/node-js-dirname-difference/" itemprop="url">
+            <a class="post-title-link" href="/2016/07/23/wechat-node-1th-MongoDB/" itemprop="url">
               
-                <span itemprop="name">node.js中__dirname与./的区别</span>
+                <span itemprop="name">微信公号Node开发「壹」之操作MongoDB(上)</span>
               
             </a>
         
@@ -315,9 +315,37 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-18T16:40:44+08:00"
-              content="2016-06-18" >
-          06-18
+              datetime="2016-07-23T00:06:31+08:00"
+              content="2016-07-23" >
+          07-23
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/06/19/wechat-node-0th/" itemprop="url">
+              
+                <span itemprop="name">微信公号Node开发「零」之项目建立</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-06-19T11:04:34+08:00"
+              content="2016-06-19" >
+          06-19
         </time>
       </div>
 
@@ -367,7 +395,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -384,7 +412,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">58</span>
+                <span class="site-state-item-count">59</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -822,37 +850,6 @@
             newcounter.save(null, {
               success: function(newcounter) {
                 var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
-
-</body>
-</html>
-ent.getElementById(url));
                 $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
               },
               error: function(newcounter, error) {

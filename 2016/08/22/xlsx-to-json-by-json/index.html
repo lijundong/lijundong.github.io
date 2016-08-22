@@ -90,7 +90,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="node,excel," />
 
 
 
@@ -106,15 +106,21 @@
 
 
 
-<meta name="description" content="笔记来的">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leeon's BLOG">
-<meta property="og:url" content="http://lijundong.com/categories/问题解决/index.html">
+<meta name="description" content="试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。在 Java 环境下，可以用 Apache POI 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node将Excel数据解析为Json">
+<meta property="og:url" content="http://lijundong.com/2016/08/22/xlsx-to-json-by-json/index.html">
 <meta property="og:site_name" content="Leeon's BLOG">
-<meta property="og:description" content="笔记来的">
+<meta property="og:description" content="试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。在 Java 环境下，可以用 Apache POI 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/88488524.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/74481753.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/31515580.jpg">
+<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/44196162.jpg">
+<meta property="og:updated_time" content="2016-08-22T07:59:55.524Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leeon's BLOG">
-<meta name="twitter:description" content="笔记来的">
+<meta name="twitter:title" content="Node将Excel数据解析为Json">
+<meta name="twitter:description" content="试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。在 Java 环境下，可以用 Apache POI 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。">
+<meta name="twitter:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/88488524.jpg">
 
 
 
@@ -135,9 +141,9 @@
 
 
 
-  <link rel="canonical" href="http://lijundong.com/categories/问题解决/"/>
+  <link rel="canonical" href="http://lijundong.com/2016/08/22/xlsx-to-json-by-json/"/>
 
-  <title> Category: 问题解决 | Leeon's BLOG </title>
+  <title> Node将Excel数据解析为Json | Leeon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -168,7 +174,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -289,82 +295,208 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        问题解决
-        <small>Category</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/07/18/Batch Process-PPT-images/" itemprop="url">
-              
-                <span itemprop="name">批量处理PPT图片</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-07-18T18:29:12+08:00"
-              content="2016-07-18" >
-          07-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/06/13/Putty-login-aliyun-Network-error-Software-caused-connection-abort/" itemprop="url">
-              
-                <span itemprop="name">Putty登陆阿里云 Network error: Software caused connection abort</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-13T21:52:18+08:00"
-              content="2016-06-13" >
-          06-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Node将Excel数据解析为Json
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-08-22T15:00:50+08:00" content="2016-08-22">
+              2016-08-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/NodeJS/" itemprop="url" rel="index">
+                    <span itemprop="name">NodeJS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/22/xlsx-to-json-by-json/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/22/xlsx-to-json-by-json/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/08/22/xlsx-to-json-by-json/" class="leancloud_visitors" data-flag-title="Node将Excel数据解析为Json">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。<br>在 Java 环境下，可以用 <code>Apache POI</code> 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。<br><a id="more"></a></p>
+<h3 id="node-xlsx"><a href="#node-xlsx" class="headerlink" title="node-xlsx"></a>node-xlsx</h3><p>这篇文章是建立在 <code>node-xlsx</code> 的基础上的，你可以在 <a href="https://github.com/mgcrea/node-xlsx" target="_blank" rel="external">github</a> 以及 <a href="https://www.npmjs.com/package/node-xlsx" target="_blank" rel="external">npm</a> 获取到包。<br>用法如下：</p>
+<h4 id="xlsx-gt-Json"><a href="#xlsx-gt-Json" class="headerlink" title="xlsx -&gt; Json"></a>xlsx -&gt; Json</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xlsx = <span class="built_in">require</span>(<span class="string">'node-xlsx'</span>).default; </span><br><span class="line"><span class="comment">//Or import xlsx from 'node-xlsx';</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Parse a buffer</span></span><br><span class="line"><span class="keyword">const</span> workSheetsFromBuffer = xlsx.parse(fs.readFileSync(<span class="string">`<span class="subst">$&#123;__dirname&#125;</span>/myFile.xlsx`</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">// Parse a file</span></span><br><span class="line"><span class="keyword">const</span> workSheetsFromFile = xlsx.parse(<span class="string">`<span class="subst">$&#123;__dirname&#125;</span>/myFile.xlsx`</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="Json-gt-xlsx"><a href="#Json-gt-xlsx" class="headerlink" title="Json -&gt; xlsx"></a>Json -&gt; xlsx</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xlsx = <span class="built_in">require</span>(<span class="string">'node-xlsx'</span>).default;</span><br><span class="line"><span class="comment">// Or import xlsx from 'node-xlsx';</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> data = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="literal">true</span>, <span class="literal">false</span>, <span class="literal">null</span>, <span class="string">'sheetjs'</span>], [<span class="string">'foo'</span>, <span class="string">'bar'</span>, <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">'2014-02-19T14:30Z'</span>), <span class="string">'0.3'</span>], [<span class="string">'baz'</span>, <span class="literal">null</span>, <span class="string">'qux'</span>]];</span><br><span class="line"><span class="keyword">var</span> buffer = xlsx.build([&#123;name: <span class="string">"mySheetName"</span>, data: data&#125;]); <span class="comment">// Returns a buffer</span></span><br></pre></td></tr></table></figure>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><h4 id="Excel-转-Json"><a href="#Excel-转-Json" class="headerlink" title="Excel 转 Json"></a>Excel 转 Json</h4><figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">var</span> xlsx = <span class="built_in">require</span>(<span class="string">"node-xlsx"</span>); </span><br><span class="line"><span class="built_in">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>); </span><br><span class="line"><span class="built_in">var</span> <span class="built_in">list</span> = xlsx.parse(<span class="string">"demo.xlsx"</span>); </span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.stringify(<span class="built_in">list</span>)); </span><br><span class="line"><span class="comment">//console.log(list); </span></span><br><span class="line">writeFile(<span class="string">"xlsx2json.json"</span>,<span class="built_in">JSON</span>.stringify(<span class="built_in">list</span>)); </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">writeFile</span>(<span class="params">fileName,data</span>) </span>&#123; </span><br><span class="line">  fs.writeFile(fileName,data,<span class="string">'utf-8'</span>,complete);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">complete</span>(<span class="params">err</span>) </span>&#123; </span><br><span class="line">      <span class="keyword">if</span>(!err) &#123; </span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"文件生成成功"</span>); </span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>demo.xlsx 内容如下<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/88488524.jpg" alt="demo.xlsx"><br>生成的 Json 格式如下<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/74481753.jpg" alt="xlsx2json"></p>
+<h4 id="Json-转-Excel"><a href="#Json-转-Excel" class="headerlink" title="Json 转 Excel"></a>Json 转 Excel</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> xlsx = <span class="built_in">require</span>(<span class="string">'node-xlsx'</span>);</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">const</span> data = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="literal">true</span>, <span class="literal">false</span>, <span class="literal">null</span>, <span class="string">'sheetjs'</span>], [<span class="string">'foo'</span>, <span class="string">'bar'</span>, <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">'2014-02-19T14:30Z'</span>), <span class="string">'0.3'</span>], [<span class="string">'baz'</span>, <span class="literal">null</span>, <span class="string">'qux'</span>]];</span><br><span class="line"><span class="keyword">var</span> buffer = xlsx.build([&#123;name:<span class="string">"mySheetName"</span>, data: data&#125;]); <span class="comment">// Returns a buffer</span></span><br><span class="line">writeFile(<span class="string">"all.xlsx"</span>,buffer); </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">writeFile</span>(<span class="params">fileName,data</span>) </span>&#123; </span><br><span class="line">  fs.writeFile(fileName,data,<span class="string">'utf-8'</span>,complete);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">complete</span>(<span class="params">err</span>) </span>&#123; </span><br><span class="line">      <span class="keyword">if</span>(!err) &#123; </span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"文件生成成功"</span>); </span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>demo.json 格式如下<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/31515580.jpg" alt="xlsx2json"><br>json2xlsx.xlsx 内容如下<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/44196162.jpg" alt="demo.xlsx"></p>
+<p>通过上面的例子可以看出，Excel 的一行对应着一条 Json 数据，然而这种方式并不适合数据库与 Excel 之间的转换，所以需要对 Json 内容作转换。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/node/" rel="tag">#node</a>
+          
+            <a href="/tags/excel/" rel="tag">#excel</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/05/html-make-clock-select/" rel="next" title="Html仿手机时钟选项框">
+                <i class="fa fa-chevron-left"></i> Html仿手机时钟选项框
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/08/22/xlsx-to-json-by-json/"
+           data-title="Node将Excel数据解析为Json" data-url="http://lijundong.com/2016/08/22/xlsx-to-json-by-json/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -384,8 +516,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg"
@@ -501,6 +642,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-xlsx"><span class="nav-number">1.</span> <span class="nav-text">node-xlsx</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#xlsx-gt-Json"><span class="nav-number">1.1.</span> <span class="nav-text">xlsx -> Json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Json-gt-xlsx"><span class="nav-number">1.2.</span> <span class="nav-text">Json -> xlsx</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-number">2.</span> <span class="nav-text">实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Excel-转-Json"><span class="nav-number">2.1.</span> <span class="nav-text">Excel 转 Json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Json-转-Excel"><span class="nav-number">2.2.</span> <span class="nav-text">Json 转 Excel</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -596,6 +748,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
