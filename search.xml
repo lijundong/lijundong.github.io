@@ -4,6 +4,23 @@
   
     
     <entry>
+      <title><![CDATA[常用速查表集合]]></title>
+      <url>http://lijundong.com/2016/08/23/sheets-collections/</url>
+      <content type="html"><![CDATA[<blockquote class="blockquote-center">这是一个资源合集，提供的都是我用着不错的常用的速查表，持续更新，方便有需要的同学查找。<br>以后可能会有更多的集合，Chrome 扩展？开发小工具？谁知道呢</blockquote>
+
+
+<h3 id="Linux-命令速查"><a href="#Linux-命令速查" class="headerlink" title="Linux 命令速查"></a>Linux 命令速查</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-23/3279812.jpg" alt=""><br><a href="http://i.linuxtoy.org/files/pdf/fwunixref.pdf" target="_blank" rel="external">PDF 下载</a></p>
+<h3 id="Vim-命令速查"><a href="#Vim-命令速查" class="headerlink" title="Vim 命令速查"></a>Vim 命令速查</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-23/89959675.jpg" alt=""><br><a href="http://jrmiii.com/attachments/Vim.pdf" target="_blank" rel="external">PDF 下载</a></p>
+<h3 id="Git-命令速查"><a href="#Git-命令速查" class="headerlink" title="Git 命令速查"></a>Git 命令速查</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-23/44995875.jpg" alt=""><br><a href="https://www.git-tower.com/blog/git-cheat-sheet-cn" target="_blank" rel="external">PDF 下载</a></p>
+<h3 id="正则速查"><a href="#正则速查" class="headerlink" title="正则速查"></a>正则速查</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-23/94278931.jpg" alt=""><br><a href="http://plcdn.qiniudn.com/wp-content/uploads/2011/12/regular-expressions-cheat-sheet-v2.pdf" target="_blank" rel="external">PDF 下载</a></p>
+<blockquote class="blockquote-center">欢迎补充！</blockquote>
+
+
+
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Node将Excel数据解析为Json]]></title>
       <url>http://lijundong.com/2016/08/22/xlsx-to-json-by-json/</url>
       <content type="html"><![CDATA[<p>试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。<br>在 Java 环境下，可以用 <code>Apache POI</code> 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。<br><a id="more"></a></p>

@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/08/23/sheets-collections/</loc>
+    <lastmod>2016-08-23T08:34:15.622Z</lastmod>
+    <data>
+        <display>
+        <title>常用速查表集合</title>
+        <pubTime>2016-08-23T07:57:21.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>vim</tag>
+         
+        <tag>正则</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/06/14/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
     <lastmod>2016-08-23T02:43:51.015Z</lastmod>
     <data>
@@ -712,9 +738,9 @@
         
         <tag>html</tag>
          
-        <tag>文档流</tag>
-         
         <tag>css</tag>
+         
+        <tag>文档流</tag>
          
          
            
