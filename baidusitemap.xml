@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/07/25/jquery-prevent-form-sbumit/</loc>
+    <lastmod>2016-08-25T11:48:34.984Z</lastmod>
+    <data>
+        <display>
+        <title>表单提交</title>
+        <pubTime>2016-07-25T11:19:42.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>表单</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/08/23/sheets-collections/</loc>
     <lastmod>2016-08-23T08:51:56.616Z</lastmod>
     <data>
@@ -11,9 +33,9 @@
         <title>常用速查表集合</title>
         <pubTime>2016-08-23T07:57:21.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>vim</tag>
+         
+        <tag>linux</tag>
          
         <tag>正则</tag>
          
@@ -105,9 +127,9 @@
         <title>SCP跨机远程拷贝</title>
         <pubTime>2016-05-20T14:08:51.000Z</pubTime>
         
-        <tag>scp</tag>
-         
         <tag>linux</tag>
+         
+        <tag>scp</tag>
          
          
            
@@ -664,9 +686,9 @@
         
         <tag>C++</tag>
          
-        <tag>编译原理</tag>
-         
         <tag>语法分析</tag>
+         
+        <tag>编译原理</tag>
          
          
            
@@ -688,9 +710,9 @@
         
         <tag>C++</tag>
          
-        <tag>词法分析</tag>
-         
         <tag>编译原理</tag>
+         
+        <tag>词法分析</tag>
          
          
            
@@ -738,9 +760,9 @@
         
         <tag>html</tag>
          
-        <tag>css</tag>
-         
         <tag>文档流</tag>
+         
+        <tag>css</tag>
          
          
            

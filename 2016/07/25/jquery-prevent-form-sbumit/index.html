@@ -90,7 +90,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript,表单," />
 
 
 
@@ -106,15 +106,16 @@
 
 
 
-<meta name="description" content="笔记来的">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leeon's BLOG">
-<meta property="og:url" content="http://lijundong.com/tags/git/index.html">
+<meta name="description" content="用户在填写表单时，常出现遗漏或者不符合规范的填写，解决这些问题需要在 input 处添加筛选条件，例如 email 或者password，或者是在提交前进行信息确认，如不符合提交条件，应该组织表单的提交，今天正好遇到了这个问题，借机会做一个关于表单的笔记。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="表单提交">
+<meta property="og:url" content="http://lijundong.com/2016/07/25/jquery-prevent-form-sbumit/index.html">
 <meta property="og:site_name" content="Leeon's BLOG">
-<meta property="og:description" content="笔记来的">
+<meta property="og:description" content="用户在填写表单时，常出现遗漏或者不符合规范的填写，解决这些问题需要在 input 处添加筛选条件，例如 email 或者password，或者是在提交前进行信息确认，如不符合提交条件，应该组织表单的提交，今天正好遇到了这个问题，借机会做一个关于表单的笔记。">
+<meta property="og:updated_time" content="2016-08-25T11:48:34.984Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leeon's BLOG">
-<meta name="twitter:description" content="笔记来的">
+<meta name="twitter:title" content="表单提交">
+<meta name="twitter:description" content="用户在填写表单时，常出现遗漏或者不符合规范的填写，解决这些问题需要在 input 处添加筛选条件，例如 email 或者password，或者是在提交前进行信息确认，如不符合提交条件，应该组织表单的提交，今天正好遇到了这个问题，借机会做一个关于表单的笔记。">
 
 
 
@@ -135,9 +136,9 @@
 
 
 
-  <link rel="canonical" href="http://lijundong.com/tags/git/"/>
+  <link rel="canonical" href="http://lijundong.com/2016/07/25/jquery-prevent-form-sbumit/"/>
 
-  <title> Tag: git | Leeon's BLOG </title>
+  <title> 表单提交 | Leeon's BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -168,7 +169,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -289,53 +290,206 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        git
-        <small>Tag</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                表单提交
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-07-25T19:19:42+08:00" content="2016-07-25">
+              2016-07-25
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/25/jquery-prevent-form-sbumit/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/25/jquery-prevent-form-sbumit/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/07/25/jquery-prevent-form-sbumit/" class="leancloud_visitors" data-flag-title="表单提交">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>用户在填写表单时，常出现遗漏或者不符合规范的填写，解决这些问题需要在 <code>input</code> 处添加筛选条件，例如 email 或者password，或者是在提交前进行信息确认，如不符合提交条件，应该组织表单的提交，今天正好遇到了这个问题，借机会做一个关于表单的笔记。<br><a id="more"></a></p>
+<h3 id="阻止表单提交"><a href="#阻止表单提交" class="headerlink" title="阻止表单提交"></a>阻止表单提交</h3><p>在表单提交之前，对信息进行校验，判断是否符合提交条件，如果不符合，及时阻止表单的默认提交行为。<br>表单代码如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"usrname"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"passwd"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="通过jQuery"><a href="#通过jQuery" class="headerlink" title="通过jQuery"></a>通过jQuery</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"form"</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>( error )&#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">    alert(<span class="string">"请检查表单"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/08/23/sheets-collections/" itemprop="url">
-              
-                <span itemprop="name">常用速查表集合</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-23T15:57:21+08:00"
-              content="2016-08-23" >
-          08-23
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+            <a href="/tags/表单/" rel="tag">#表单</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/23/wechat-node-1th-MongoDB/" rel="next" title="微信公号Node开发「壹」之操作MongoDB(上)">
+                <i class="fa fa-chevron-left"></i> 微信公号Node开发「壹」之操作MongoDB(上)
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/30/coding-page-github-page-deploy-dns/" rel="prev" title="Coding page与Github page博客部署及域名绑定">
+                Coding page与Github page博客部署及域名绑定 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/07/25/jquery-prevent-form-sbumit/"
+           data-title="表单提交" data-url="http://lijundong.com/2016/07/25/jquery-prevent-form-sbumit/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -355,8 +509,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-18/59657432.jpg"
@@ -472,6 +635,17 @@
       </section>
 
       
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#阻止表单提交"><span class="nav-number">1.</span> <span class="nav-text">阻止表单提交</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通过jQuery"><span class="nav-number">1.1.</span> <span class="nav-text">通过jQuery</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
 
     </div>
   </aside>
@@ -567,6 +741,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

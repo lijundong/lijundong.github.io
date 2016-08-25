@@ -98,6 +98,15 @@
     </entry>
     
     <entry>
+      <title><![CDATA[表单提交]]></title>
+      <url>http://lijundong.com/2016/07/25/jquery-prevent-form-sbumit/</url>
+      <content type="html"><![CDATA[<p>用户在填写表单时，常出现遗漏或者不符合规范的填写，解决这些问题需要在 <code>input</code> 处添加筛选条件，例如 email 或者password，或者是在提交前进行信息确认，如不符合提交条件，应该组织表单的提交，今天正好遇到了这个问题，借机会做一个关于表单的笔记。<br><a id="more"></a></p>
+<h3 id="阻止表单提交"><a href="#阻止表单提交" class="headerlink" title="阻止表单提交"></a>阻止表单提交</h3><p>在表单提交之前，对信息进行校验，判断是否符合提交条件，如果不符合，及时阻止表单的默认提交行为。<br>表单代码如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"usrname"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"passwd"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="通过jQuery"><a href="#通过jQuery" class="headerlink" title="通过jQuery"></a>通过jQuery</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"form"</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>( error )&#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">    alert(<span class="string">"请检查表单"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[微信公号Node开发「壹」之操作MongoDB(上)]]></title>
       <url>http://lijundong.com/2016/07/23/wechat-node-1th-MongoDB/</url>
       <content type="html"><![CDATA[<p>项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。<br><a id="more"></a></p>
