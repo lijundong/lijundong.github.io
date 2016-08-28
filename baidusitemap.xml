@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>http://lijundong.com/2016/08/28/accept-in-input-and-mime-intro/</loc>
+    <lastmod>2016-08-28T08:38:15.048Z</lastmod>
+    <data>
+        <display>
+        <title>Input 的 accept 属性以及 MIME 参考</title>
+        <pubTime>2016-08-28T07:03:11.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>mime</tag>
+         
+        <tag>input</tag>
+         
+        <tag>accept</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/2016/07/30/coding-page-github-page-deploy-dns/</loc>
+    <lastmod>2016-08-28T07:19:10.724Z</lastmod>
+    <data>
+        <display>
+        <title>Coding page与Github page博客部署及域名绑定</title>
+        <pubTime>2016-07-30T05:29:13.000Z</pubTime>
+        
+        <tag>博客</tag>
+         
+        <tag>DNS</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/2016/07/25/jquery-prevent-form-sbumit/</loc>
     <lastmod>2016-08-25T11:48:34.984Z</lastmod>
     <data>
@@ -33,9 +81,9 @@
         <title>常用速查表集合</title>
         <pubTime>2016-08-23T07:57:21.000Z</pubTime>
         
-        <tag>vim</tag>
-         
         <tag>linux</tag>
+         
+        <tag>vim</tag>
          
         <tag>正则</tag>
          
@@ -127,9 +175,9 @@
         <title>SCP跨机远程拷贝</title>
         <pubTime>2016-05-20T14:08:51.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>scp</tag>
+         
+        <tag>linux</tag>
          
          
            
@@ -201,28 +249,6 @@
            
              
               <breadCrumb title="NodeJS" url="http://lijundong.com/categories/NodeJS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/2016/07/30/coding-page-github-page-deploy-dns/</loc>
-    <lastmod>2016-08-10T11:14:44.456Z</lastmod>
-    <data>
-        <display>
-        <title>Coding page与Github page博客部署及域名绑定</title>
-        <pubTime>2016-07-30T05:29:13.000Z</pubTime>
-        
-        <tag>博客</tag>
-         
-        <tag>DNS</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -686,9 +712,9 @@
         
         <tag>C++</tag>
          
-        <tag>语法分析</tag>
-         
         <tag>编译原理</tag>
+         
+        <tag>语法分析</tag>
          
          
            
@@ -710,9 +736,9 @@
         
         <tag>C++</tag>
          
-        <tag>编译原理</tag>
-         
         <tag>词法分析</tag>
+         
+        <tag>编译原理</tag>
          
          
            
@@ -760,9 +786,9 @@
         
         <tag>html</tag>
          
-        <tag>文档流</tag>
-         
         <tag>css</tag>
+         
+        <tag>文档流</tag>
          
          
            

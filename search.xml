@@ -4,6 +4,20 @@
   
     
     <entry>
+      <title><![CDATA[Input 的 accept 属性以及 MIME 参考]]></title>
+      <url>http://lijundong.com/2016/08/28/accept-in-input-and-mime-intro/</url>
+      <content type="html"><![CDATA[<p>最近在做上传文件模块时，对 input 的 accept 属性做了些了解，以及与其关联的 MIME，之前也了解过，只是没做理解，导致如今再看到竟然没有半点印象，其实就是个因特网标准，这次做下笔记，欢迎指正。</p>
+<a id="more"></a>
+<h3 id="关于-accept"><a href="#关于-accept" class="headerlink" title="关于 accept"></a>关于 accept</h3><p>当 <code>input</code> 的 <code>type</code> 定义为 <code>file</code> 时，<code>accpet</code> 属性给客户端传递一种信息，哪些文件格式是可被接受的，在进行文件选择时，客户端只会匹配可接受格式的文件供选择，给用户提供了很大的方便。</p>
+<p>用法：<br><code>&lt;input accept=&quot;value&quot;&gt;</code><br>value 是逗号隔开的 MIME 类型列表。</p>
+<p>举例：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>匹配所有图片格式、视频格式、音频文件、文本格式<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">accept</span>=<span class="string">"image/*,video/*,audio/*,text/*"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>匹配 xls xlsx 两种表格文件<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">accept</span>=<span class="string">".xlsx,.xls"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="关于-MIME"><a href="#关于-MIME" class="headerlink" title="关于 MIME"></a>关于 MIME</h3><p>MIME 是什么？一句话描述，MIME (Multipurpose Internet Mail Extensions) 是描述消息内容类型的因特网标准。</p>
+<p>没了？没了。</p>
+<p>类型包括 application(pdf\doc\xls\ppt……)、image(jpg\png\gif……)、audio(mp3\mid\wav\bom……)、video(avi\movie\mpg……)、text(css\html\c\h……)、x-world(flr\wrl\wrz……)等</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[常用速查表集合]]></title>
       <url>http://lijundong.com/2016/08/23/sheets-collections/</url>
       <content type="html"><![CDATA[<blockquote class="blockquote-center">这个资源合集包含的是我用着不错的常用速查表<br>方便有需要的同学查找<br>持续更新<br>以后可能会有更多的集合<br>Chrome 扩展？<br>开发小工具？<br>你说呢？</blockquote>
@@ -68,8 +82,12 @@
     <entry>
       <title><![CDATA[Coding page与Github page博客部署及域名绑定]]></title>
       <url>http://lijundong.com/2016/07/30/coding-page-github-page-deploy-dns/</url>
-      <content type="html"><![CDATA[<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-7-30/94481137.jpg" style="margin:0 auto;display: block;"></p>
-<p>从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……<br><a id="more"></a><br>去<a href="http://www.checkgfw.com/" target="_blank" rel="external">checkgfw</a>查了下，就出现了这篇文章的题图，不管测的权威性多大，反正挺郁闷的。唉，苦闷！<br>之前一直用的DNSPod做DNS解析，前端时间转到了阿里云，域名是万网买的，心想自家孩子速度可能快些，谁曾想没过多久就出了这档子事(虽然没有多大关联性)，非常不爽，又转回DNSPod，添加解析后等待是最痛苦的，最痛苦的是等来的是继续无法连接，折腾了一晚上还是选择把博客放在国内，在Coding上创建项目，添加公钥，上传项目，开启Page服务，部署，熟悉的界面再次出现异常亲切，好了，现在只要添加一条DNS解析就齐活。</p>
+      <content type="html"><![CDATA[<p>从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……</p>
+<p>2016/8/28更新</p>
+<p>域名被屏蔽，可能是没有备案的原因……，最近正在办备案。</p>
+<p>哎！好好说话，你别打我啊，WOC，别打脸……</p>
+<a id="more"></a>
+<p>去<a href="http://www.checkgfw.com/" target="_blank" rel="external">checkgfw</a>查了下，就出现了这篇文章的题图，不管测的权威性多大，反正挺郁闷的。唉，苦闷！<br>之前一直用的DNSPod做DNS解析，前端时间转到了阿里云，域名是万网买的，心想自家孩子速度可能快些，谁曾想没过多久就出了这档子事(虽然没有多大关联性)，非常不爽，又转回DNSPod，添加解析后等待是最痛苦的，最痛苦的是等来的是继续无法连接，折腾了一晚上还是选择把博客放在国内，在Coding上创建项目，添加公钥，上传项目，开启Page服务，部署，熟悉的界面再次出现异常亲切，好了，现在只要添加一条DNS解析就齐活。</p>
 <h3 id="Coding-Page部署博客"><a href="#Coding-Page部署博客" class="headerlink" title="Coding Page部署博客"></a>Coding Page部署博客</h3><p>无论是在Github还是在Coding上部署博客，过程都类似(<strong>注:以下统一用yourname代表项目名</strong>)</p>
 <ul>
 <li>注册Coding/Github </li>
@@ -94,6 +112,9 @@
 </ul>
 <hr>
 <p>那么，我的域名到底被墙了没？</p>
+<p>2016/8/28更新</p>
+<p>域名被屏蔽，可能是没有备案的原因……，最近正在办备案。</p>
+<p>哎！好好说话，你别打我啊，WOC，别打脸……</p>
 ]]></content>
     </entry>
     
