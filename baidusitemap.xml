@@ -4,7 +4,49 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/08/28/accept-in-input-and-mime-intro/</loc>
+    <loc>http://www.lijundong.com/2016/08/31/huawei-phone-browser-height-self-adapt/</loc>
+    <lastmod>2016-09-10T03:41:27.615Z</lastmod>
+    <data>
+        <display>
+        <title>虚拟按键手机页面高度自适应</title>
+        <pubTime>2016-08-31T12:34:44.000Z</pubTime>
+        
+        <tag>自适应</tag>
+         
+        <tag>height</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.lijundong.com/2016/09/01/embeded-javascript-templates/</loc>
+    <lastmod>2016-09-01T03:07:44.137Z</lastmod>
+    <data>
+        <display>
+        <title>EJS渲染模板</title>
+        <pubTime>2016-09-01T03:05:56.000Z</pubTime>
+        
+        <tag>ejs</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.lijundong.com/2016/08/28/accept-in-input-and-mime-intro/</loc>
     <lastmod>2016-08-28T08:38:15.048Z</lastmod>
     <data>
         <display>
@@ -22,7 +64,7 @@
          
            
              
-              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+              <breadCrumb title="前端" url="http://www.lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
           
         </display>
     </data>
@@ -30,7 +72,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/30/coding-page-github-page-deploy-dns/</loc>
+    <loc>http://www.lijundong.com/2016/07/30/coding-page-github-page-deploy-dns/</loc>
     <lastmod>2016-08-28T07:19:10.724Z</lastmod>
     <data>
         <display>
@@ -44,7 +86,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -52,7 +94,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/25/jquery-prevent-form-sbumit/</loc>
+    <loc>http://www.lijundong.com/2016/07/25/jquery-prevent-form-sbumit/</loc>
     <lastmod>2016-08-25T11:48:34.984Z</lastmod>
     <data>
         <display>
@@ -66,7 +108,7 @@
          
            
              
-              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+              <breadCrumb title="前端" url="http://www.lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
           
         </display>
     </data>
@@ -74,16 +116,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/08/23/sheets-collections/</loc>
+    <loc>http://www.lijundong.com/2016/08/23/sheets-collections/</loc>
     <lastmod>2016-08-23T08:51:56.616Z</lastmod>
     <data>
         <display>
         <title>常用速查表集合</title>
         <pubTime>2016-08-23T07:57:21.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>vim</tag>
+         
+        <tag>linux</tag>
          
         <tag>正则</tag>
          
@@ -92,7 +134,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -100,7 +142,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/14/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
+    <loc>http://www.lijundong.com/2016/06/14/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
     <lastmod>2016-08-23T02:43:51.015Z</lastmod>
     <data>
         <display>
@@ -114,7 +156,7 @@
          
            
              
-              <breadCrumb title="MongoDB" url="http://lijundong.com/categories/MongoDB/"/>
+              <breadCrumb title="MongoDB" url="http://www.lijundong.com/categories/MongoDB/"/>
           
         </display>
     </data>
@@ -122,7 +164,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/08/22/xlsx-to-json-by-json/</loc>
+    <loc>http://www.lijundong.com/2016/08/22/xlsx-to-json-by-json/</loc>
     <lastmod>2016-08-22T08:05:50.868Z</lastmod>
     <data>
         <display>
@@ -136,7 +178,7 @@
          
            
              
-              <breadCrumb title="NodeJS" url="http://lijundong.com/categories/NodeJS/"/>
+              <breadCrumb title="NodeJS" url="http://www.lijundong.com/categories/NodeJS/"/>
           
         </display>
     </data>
@@ -144,7 +186,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/12/Centos7-install-nodejs-update/</loc>
+    <loc>http://www.lijundong.com/2016/06/12/Centos7-install-nodejs-update/</loc>
     <lastmod>2016-08-20T16:55:24.806Z</lastmod>
     <data>
         <display>
@@ -160,7 +202,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -168,21 +210,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/05/20/secure-copy/</loc>
+    <loc>http://www.lijundong.com/2016/05/20/secure-copy/</loc>
     <lastmod>2016-08-20T16:49:54.552Z</lastmod>
     <data>
         <display>
         <title>SCP跨机远程拷贝</title>
         <pubTime>2016-05-20T14:08:51.000Z</pubTime>
         
-        <tag>scp</tag>
-         
         <tag>linux</tag>
+         
+        <tag>scp</tag>
          
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -190,7 +232,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/19/centos-install-node/</loc>
+    <loc>http://www.lijundong.com/2016/06/19/centos-install-node/</loc>
     <lastmod>2016-08-20T02:26:46.573Z</lastmod>
     <data>
         <display>
@@ -204,7 +246,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -212,7 +254,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/18/Tmux-common-comands-shortcuts/</loc>
+    <loc>http://www.lijundong.com/2016/06/18/Tmux-common-comands-shortcuts/</loc>
     <lastmod>2016-08-19T14:01:55.410Z</lastmod>
     <data>
         <display>
@@ -226,7 +268,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -234,7 +276,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/30/wechat-node-2th-express/</loc>
+    <loc>http://www.lijundong.com/2016/07/30/wechat-node-2th-express/</loc>
     <lastmod>2016-08-10T13:50:00.918Z</lastmod>
     <data>
         <display>
@@ -248,7 +290,7 @@
          
            
              
-              <breadCrumb title="NodeJS" url="http://lijundong.com/categories/NodeJS/"/>
+              <breadCrumb title="NodeJS" url="http://www.lijundong.com/categories/NodeJS/"/>
           
         </display>
     </data>
@@ -257,7 +299,7 @@
     
     
   <url>
-    <loc>http://lijundong.com/2016/08/05/html-make-clock-select/</loc>
+    <loc>http://www.lijundong.com/2016/08/05/html-make-clock-select/</loc>
     <lastmod>2016-08-05T08:21:38.852Z</lastmod>
     <data>
         <display>
@@ -271,7 +313,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -279,7 +321,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/23/wechat-node-1th-MongoDB/</loc>
+    <loc>http://www.lijundong.com/2016/07/23/wechat-node-1th-MongoDB/</loc>
     <lastmod>2016-07-24T03:43:30.929Z</lastmod>
     <data>
         <display>
@@ -288,14 +330,14 @@
         
         <tag>MongoDB</tag>
          
-        <tag>NodeJS</tag>
-         
         <tag>微信</tag>
+         
+        <tag>NodeJS</tag>
          
          
            
              
-              <breadCrumb title="NodeJS" url="http://lijundong.com/categories/NodeJS/"/>
+              <breadCrumb title="NodeJS" url="http://www.lijundong.com/categories/NodeJS/"/>
           
         </display>
     </data>
@@ -303,21 +345,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/19/wechat-node-0th/</loc>
+    <loc>http://www.lijundong.com/2016/06/19/wechat-node-0th/</loc>
     <lastmod>2016-07-22T12:01:34.243Z</lastmod>
     <data>
         <display>
         <title>微信公号Node开发「零」之项目建立</title>
         <pubTime>2016-06-19T03:04:34.000Z</pubTime>
         
-        <tag>NodeJS</tag>
-         
         <tag>微信</tag>
+         
+        <tag>NodeJS</tag>
          
          
            
              
-              <breadCrumb title="NodeJS" url="http://lijundong.com/categories/NodeJS/"/>
+              <breadCrumb title="NodeJS" url="http://www.lijundong.com/categories/NodeJS/"/>
           
         </display>
     </data>
@@ -325,7 +367,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/19/location-of-bom/</loc>
+    <loc>http://www.lijundong.com/2016/07/19/location-of-bom/</loc>
     <lastmod>2016-07-20T06:20:13.760Z</lastmod>
     <data>
         <display>
@@ -339,7 +381,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -347,7 +389,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/18/Batch%20Process-PPT-images/</loc>
+    <loc>http://www.lijundong.com/2016/07/18/Batch%20Process-PPT-images/</loc>
     <lastmod>2016-07-18T12:59:30.299Z</lastmod>
     <data>
         <display>
@@ -361,7 +403,7 @@
          
            
              
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+              <breadCrumb title="问题解决" url="http://www.lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
           
         </display>
     </data>
@@ -369,7 +411,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/15/talk-setTimeout-setInterval-2th/</loc>
+    <loc>http://www.lijundong.com/2016/07/15/talk-setTimeout-setInterval-2th/</loc>
     <lastmod>2016-07-17T02:39:37.956Z</lastmod>
     <data>
         <display>
@@ -385,7 +427,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -393,7 +435,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/01/11/Chrome-extension-one-clock/</loc>
+    <loc>http://www.lijundong.com/2016/01/11/Chrome-extension-one-clock/</loc>
     <lastmod>2016-07-15T13:17:12.236Z</lastmod>
     <data>
         <display>
@@ -409,7 +451,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -417,7 +459,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/27/troubleyourself/</loc>
+    <loc>http://www.lijundong.com/2016/06/27/troubleyourself/</loc>
     <lastmod>2016-06-27T12:29:03.272Z</lastmod>
     <data>
         <display>
@@ -427,7 +469,7 @@
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="生活" url="http://www.lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -435,7 +477,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/18/node-js-dirname-difference/</loc>
+    <loc>http://www.lijundong.com/2016/06/18/node-js-dirname-difference/</loc>
     <lastmod>2016-06-18T09:10:27.461Z</lastmod>
     <data>
         <display>
@@ -449,7 +491,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -457,7 +499,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/13/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
+    <loc>http://www.lijundong.com/2016/06/13/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
     <lastmod>2016-06-17T06:06:24.219Z</lastmod>
     <data>
         <display>
@@ -471,7 +513,7 @@
          
            
              
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+              <breadCrumb title="问题解决" url="http://www.lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
           
         </display>
     </data>
@@ -479,7 +521,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/09/15/cycling-on-318/</loc>
+    <loc>http://www.lijundong.com/2015/09/15/cycling-on-318/</loc>
     <lastmod>2016-06-07T14:20:38.216Z</lastmod>
     <data>
         <display>
@@ -493,7 +535,7 @@
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="生活" url="http://www.lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -501,7 +543,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/17/SublimeText-extension-recommand/</loc>
+    <loc>http://www.lijundong.com/2016/03/17/SublimeText-extension-recommand/</loc>
     <lastmod>2016-06-07T14:10:31.959Z</lastmod>
     <data>
         <display>
@@ -519,7 +561,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -527,7 +569,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/01/21/Sublime-Text3-set-command-line/</loc>
+    <loc>http://www.lijundong.com/2016/01/21/Sublime-Text3-set-command-line/</loc>
     <lastmod>2016-06-07T14:10:21.956Z</lastmod>
     <data>
         <display>
@@ -541,7 +583,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -549,7 +591,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/05/01/OpenCV-mouse-event/</loc>
+    <loc>http://www.lijundong.com/2015/05/01/OpenCV-mouse-event/</loc>
     <lastmod>2016-06-07T14:09:46.867Z</lastmod>
     <data>
         <display>
@@ -565,7 +607,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -573,7 +615,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/01/12/Kindle-content-manage/</loc>
+    <loc>http://www.lijundong.com/2016/01/12/Kindle-content-manage/</loc>
     <lastmod>2016-06-07T14:09:25.843Z</lastmod>
     <data>
         <display>
@@ -587,7 +629,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -595,7 +637,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/04/14/information-system-Wampserver/</loc>
+    <loc>http://www.lijundong.com/2016/04/14/information-system-Wampserver/</loc>
     <lastmod>2016-06-07T14:09:16.398Z</lastmod>
     <data>
         <display>
@@ -609,7 +651,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -617,7 +659,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/09/10/Hello%20World/</loc>
+    <loc>http://www.lijundong.com/2015/09/10/Hello%20World/</loc>
     <lastmod>2016-06-07T14:08:04.961Z</lastmod>
     <data>
         <display>
@@ -629,7 +671,7 @@
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="生活" url="http://www.lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -637,7 +679,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/07/Dell-laptop-add-ssd/</loc>
+    <loc>http://www.lijundong.com/2016/03/07/Dell-laptop-add-ssd/</loc>
     <lastmod>2016-06-07T14:07:53.569Z</lastmod>
     <data>
         <display>
@@ -653,7 +695,7 @@
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="生活" url="http://www.lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -661,7 +703,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/09/05/Canvas-animation-about-sort/</loc>
+    <loc>http://www.lijundong.com/2015/09/05/Canvas-animation-about-sort/</loc>
     <lastmod>2016-06-07T14:06:25.745Z</lastmod>
     <data>
         <display>
@@ -675,7 +717,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -683,7 +725,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/04/01/Bootstrap-hover-toggle-menu/</loc>
+    <loc>http://www.lijundong.com/2016/04/01/Bootstrap-hover-toggle-menu/</loc>
     <lastmod>2016-06-07T14:06:15.403Z</lastmod>
     <data>
         <display>
@@ -695,7 +737,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -703,7 +745,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/06/12/Syntactic%20analysis/</loc>
+    <loc>http://www.lijundong.com/2015/06/12/Syntactic%20analysis/</loc>
     <lastmod>2016-06-07T14:05:27.131Z</lastmod>
     <data>
         <display>
@@ -712,14 +754,14 @@
         
         <tag>C++</tag>
          
-        <tag>编译原理</tag>
-         
         <tag>语法分析</tag>
+         
+        <tag>编译原理</tag>
          
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -727,7 +769,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/05/12/Lexical%20analysis/</loc>
+    <loc>http://www.lijundong.com/2015/05/12/Lexical%20analysis/</loc>
     <lastmod>2016-06-07T14:05:21.932Z</lastmod>
     <data>
         <display>
@@ -736,14 +778,14 @@
         
         <tag>C++</tag>
          
-        <tag>词法分析</tag>
-         
         <tag>编译原理</tag>
+         
+        <tag>词法分析</tag>
          
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -751,7 +793,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/11/clear-float/</loc>
+    <loc>http://www.lijundong.com/2016/03/11/clear-float/</loc>
     <lastmod>2016-06-07T14:04:22.341Z</lastmod>
     <data>
         <display>
@@ -769,7 +811,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -777,7 +819,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/03/normal-flow/</loc>
+    <loc>http://www.lijundong.com/2016/03/03/normal-flow/</loc>
     <lastmod>2016-06-07T14:03:55.604Z</lastmod>
     <data>
         <display>
@@ -786,14 +828,14 @@
         
         <tag>html</tag>
          
-        <tag>css</tag>
-         
         <tag>文档流</tag>
+         
+        <tag>css</tag>
          
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -801,7 +843,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/01/21/year-again/</loc>
+    <loc>http://www.lijundong.com/2016/01/21/year-again/</loc>
     <lastmod>2016-06-07T14:03:20.035Z</lastmod>
     <data>
         <display>
@@ -813,7 +855,7 @@
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="生活" url="http://www.lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -821,7 +863,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/11/20/when-lixiaofeng-become-sky/</loc>
+    <loc>http://www.lijundong.com/2015/11/20/when-lixiaofeng-become-sky/</loc>
     <lastmod>2016-06-07T14:03:09.588Z</lastmod>
     <data>
         <display>
@@ -835,7 +877,7 @@
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="生活" url="http://www.lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -843,7 +885,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/27/just-do-good-thing/</loc>
+    <loc>http://www.lijundong.com/2016/03/27/just-do-good-thing/</loc>
     <lastmod>2016-06-07T14:03:06.805Z</lastmod>
     <data>
         <display>
@@ -855,7 +897,7 @@
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="生活" url="http://www.lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -863,7 +905,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/04/17/Windows-tips-you-may-ignore/</loc>
+    <loc>http://www.lijundong.com/2016/04/17/Windows-tips-you-may-ignore/</loc>
     <lastmod>2016-06-07T13:47:43.016Z</lastmod>
     <data>
         <display>
@@ -879,7 +921,7 @@
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="工具使用" url="http://www.lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -887,7 +929,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/04/15/information-system-PHP-Mysql/</loc>
+    <loc>http://www.lijundong.com/2016/04/15/information-system-PHP-Mysql/</loc>
     <lastmod>2016-06-07T13:47:03.370Z</lastmod>
     <data>
         <display>
@@ -901,7 +943,7 @@
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="学习" url="http://www.lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
