@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jundong.coding.me/2016/10/12/nginx-conficure-domains-to-servers/</loc>
+    
+    <lastmod>2016-10-11T18:17:30.097Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jundong.coding.me/2016/08/31/huawei-phone-browser-height-self-adapt/</loc>
     
     <lastmod>2016-10-11T18:14:04.421Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://jundong.coding.me/2016/09/01/embeded-javascript-templates/</loc>
     
     <lastmod>2016-10-11T18:09:59.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jundong.coding.me/2016/10/12/nginx-conficure-domains-to-servers/</loc>
-    
-    <lastmod>2016-10-11T17:38:19.577Z</lastmod>
     
   </url>
   
