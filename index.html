@@ -108,12 +108,12 @@
 
 <meta name="description" content="笔记来的">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Leeon's BLOG">
+<meta property="og:title" content="Leeon Notes">
 <meta property="og:url" content="http://jundong.coding.me/index.html">
-<meta property="og:site_name" content="Leeon's BLOG">
+<meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="笔记来的">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leeon's BLOG">
+<meta name="twitter:title" content="Leeon Notes">
 <meta name="twitter:description" content="笔记来的">
 
 
@@ -137,7 +137,7 @@
 
   <link rel="canonical" href="http://jundong.coding.me/"/>
 
-  <title> Leeon's BLOG </title>
+  <title> Leeon Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -180,7 +180,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Leeon's BLOG</span>
+      <span class="site-title">Leeon Notes</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -313,6 +313,137 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/12/nginx-conficure-domains-to-servers/" itemprop="url">
+                  Nginx 配置多个Node服务的域名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-10-12T00:15:48+08:00" content="2016-10-12">
+              2016-10-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具使用/" itemprop="url" rel="index">
+                    <span itemprop="name">工具使用</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/12/nginx-conficure-domains-to-servers/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/12/nginx-conficure-domains-to-servers/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/12/nginx-conficure-domains-to-servers/" class="leancloud_visitors" data-flag-title="Nginx 配置多个Node服务的域名">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>最近用 Node 写的两个小项目都需要上线，项目跑在阿里云上，给了不同的端口，平时在各自的端口上，相安无事，但是要挂在微信公号上就需要域名，IP只有一个，两个域名势必要搭起来，我资历尚浅，肯定劝不动他俩，不看僧面看佛面，只好请来神器 Nginx 主持公道。这里做个笔记，欢迎补充指正。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/12/nginx-conficure-domains-to-servers/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/01/embeded-javascript-templates/" itemprop="url">
                   EJS渲染模板
                 </a>
@@ -391,10 +522,12 @@
 
       
         
-          
-            <p><a href="https://github.com/mde/ejs/blob/master/docs/syntax.md" target="_blank" rel="external">官方文档</a></p>
-
-          
+          <p>这段时间一直在使用 Express 框架，虽然官方推荐 Pug 作为模板引擎，但我还是对 EJS 更感冒，官方也提供了 <code>Express -e</code> 的选择，由于之前没有认真看文档，导致了前段时间遇到的一个渲染问题，纠结了很久才得以解决，这里笔记下 EJS 的常用方法，算作一次梳理，欢迎补充指正。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/09/01/embeded-javascript-templates/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -520,7 +653,7 @@
 
       
         
-          <p>华为系手机、谷歌亲儿子 Nexus 系列等配备的都是虚拟按键，虚拟按键唤出与隐藏会导致页面的高度变化，如果没有对内容高度进行适应，会出现页面内容被覆盖，或者页面空出一段留白，实验室用华为的同学挺多的，包括我，所以难免在调试页面的时候遇到这个问题，做个笔记先，希望对你有用。<br>
+          <p>华为系手机、谷歌亲儿子 Nexus 系列等配备的都是虚拟按键，虚拟按键唤出与隐藏会导致页面的高度变化，如果没有对内容高度进行适应，会出现页面内容被覆盖，或者页面空出一段留白，实验室用华为的同学挺多的，包括我，所以难免在调试页面的时候遇到这个问题，做个笔记先，欢迎补充指正。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/08/31/huawei-phone-browser-height-self-adapt/#more" rel="contents">
               Read more &raquo;
@@ -1472,137 +1605,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/23/wechat-node-1th-MongoDB/" itemprop="url">
-                  微信公号Node开发「壹」之操作MongoDB(上)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-07-23T00:06:31+08:00" content="2016-07-23">
-              2016-07-23
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/NodeJS/" itemprop="url" rel="index">
-                    <span itemprop="name">NodeJS</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/23/wechat-node-1th-MongoDB/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/23/wechat-node-1th-MongoDB/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/07/23/wechat-node-1th-MongoDB/" class="leancloud_visitors" data-flag-title="微信公号Node开发「壹」之操作MongoDB(上)">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">visitors </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/07/23/wechat-node-1th-MongoDB/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1648,7 +1650,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">42</span>
+              <span class="site-state-item-count">43</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -1665,7 +1667,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">70</span>
+                <span class="site-state-item-count">73</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>

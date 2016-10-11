@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://jundong.coding.me/2016/08/31/huawei-phone-browser-height-self-adapt/</loc>
-    <lastmod>2016-09-10T03:41:27.615Z</lastmod>
+    <lastmod>2016-10-11T18:14:04.421Z</lastmod>
     <data>
         <display>
         <title>虚拟按键手机页面高度自适应</title>
@@ -27,7 +27,7 @@
     
   <url>
     <loc>http://jundong.coding.me/2016/09/01/embeded-javascript-templates/</loc>
-    <lastmod>2016-09-01T03:07:44.137Z</lastmod>
+    <lastmod>2016-10-11T18:09:59.259Z</lastmod>
     <data>
         <display>
         <title>EJS渲染模板</title>
@@ -39,6 +39,30 @@
            
              
               <breadCrumb title="前端" url="http://jundong.coding.me/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://jundong.coding.me/2016/10/12/nginx-conficure-domains-to-servers/</loc>
+    <lastmod>2016-10-11T17:38:19.577Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx 配置多个Node服务的域名</title>
+        <pubTime>2016-10-11T16:15:48.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+        <tag>域名</tag>
+         
+        <tag>服务器</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://jundong.coding.me/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
