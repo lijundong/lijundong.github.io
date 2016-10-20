@@ -4,6 +4,24 @@
   
     
     <entry>
+      <title><![CDATA[解决 Google 重定向，体验 Google 本味]]></title>
+      <url>http://jundong.coding.me/2016/10/20/google-no-country-redirect-disabled/</url>
+      <content type="html"><![CDATA[<p>由于不可抗力的缘故，每过一段时间，Google 就会重新被拿出来说一次，上一次说的是入门之法，关于 VPN 和 Shadowsocks 的一些很基础的东西。<br>最近小飞机换了更快的香港的服务器，体验非常棒，但是在使用 Google 时，Google 为了提供更好的本地搜索体验，<code>google.com</code> 会自动重定向到 <code>google.com.hk</code> ，可惜这些体验只有身在香港的服务器才能体验，而身在天朝的我还需要去考虑 <code>google country redirect disable</code>。<br><a id="more"></a><br>想要体验原汁原味的 Google(google.com)，下面的方案是我用过的较方便的方案。<br><strong>欢迎更正及补充</strong></p>
+<h3 id="Chrome-扩展"><a href="#Chrome-扩展" class="headerlink" title="Chrome 扩展"></a>Chrome 扩展</h3><p>Chrone 商店有一款禁止重定向的扩展 <a href="https://chrome.google.com/webstore/detail/nocountryredirect-ncr/ciboebddidackjicoeoiigdnbmchkdll?hl=en" target="_blank" rel="external">NoCountryRedirect (NCR)</a><br>这款插件是将重定向后的 <code>google.com.hk</code> 再重定向到 <code>google.com</code>，虽然有效，但是多次重定向导致页面相应变慢，体验不太好，装完体验两分钟就卸了<br>优点：安装方便<br>缺点：导致 Google 访问速度变得很慢</p>
+<h3 id="手动-google-com-ncr"><a href="#手动-google-com-ncr" class="headerlink" title="手动 google.com/ncr"></a>手动 google.com/ncr</h3><p>可以通过手动 ncr(no country redirect) 来强制禁止重定向，我将这个 url 设置了书签。</p>
+<h3 id="设置默认搜索引擎"><a href="#设置默认搜索引擎" class="headerlink" title="设置默认搜索引擎"></a>设置默认搜索引擎</h3><p>Chrome –&gt; 设置 -&gt; 搜索 -&gt; 管理搜索引擎 –&gt; 其他搜索引擎<br>拉到最下，有一个“添加新的搜索引擎”，参数如下</p>
+<blockquote>
+<p>名字：google.com<br>关键字: Google-ncr<br>url: <a href="http://www.google.com/search?q=%s" target="_blank" rel="external">http://www.google.com/search?q=%s</a></p>
+</blockquote>
+<p>配置完设置为默认搜索引擎，完成</p>
+<p><em>人生苦短，我用 Google</em></p>
+<hr>
+<p>新的 MBP 一周后发布，等了大半年，终于等来了，下面的事情就是存钱了，Fighting！</p>
+<p><em>人生苦短，我用 Mac</em></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Nginx 配置多个Node服务的域名]]></title>
       <url>http://jundong.coding.me/2016/10/12/nginx-conficure-domains-to-servers/</url>
       <content type="html"><![CDATA[<p>最近用 Node 写的两个小项目都需要上线，项目跑在阿里云上，给了不同的端口，平时在各自的端口上，相安无事，但是要挂在微信公号上就需要域名，IP只有一个，两个域名势必要搭起来，我资历尚浅，肯定劝不动他俩，不看僧面看佛面，只好请来神器 Nginx 主持公道。这里做个笔记，欢迎补充指正。<br><a id="more"></a></p>
@@ -913,10 +931,10 @@
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/22540140.jpg" alt=""></li>
@@ -1006,12 +1024,12 @@
 </ul>
 </li>
 <li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;</span>水平居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/58206411.jpg" alt="水平居中"></p>
 <ul>
-<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;</span>垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-8/29762873.jpg" alt="垂直居中"></p>

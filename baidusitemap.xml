@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://jundong.coding.me/2016/10/20/google-no-country-redirect-disabled/</loc>
+    <lastmod>2016-10-20T14:16:59.409Z</lastmod>
+    <data>
+        <display>
+        <title>解决 Google 重定向，体验 Google 本味</title>
+        <pubTime>2016-10-20T13:30:19.000Z</pubTime>
+        
+        <tag>Google</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://jundong.coding.me/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://jundong.coding.me/2016/10/12/nginx-conficure-domains-to-servers/</loc>
     <lastmod>2016-10-11T18:17:30.097Z</lastmod>
     <data>
@@ -147,9 +167,9 @@
         <title>常用速查表集合</title>
         <pubTime>2016-08-23T07:57:21.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>vim</tag>
+         
+        <tag>linux</tag>
          
         <tag>正则</tag>
          
@@ -241,9 +261,9 @@
         <title>SCP跨机远程拷贝</title>
         <pubTime>2016-05-20T14:08:51.000Z</pubTime>
         
-        <tag>scp</tag>
-         
         <tag>linux</tag>
+         
+        <tag>scp</tag>
          
          
            

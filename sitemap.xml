@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jundong.coding.me/2016/10/20/google-no-country-redirect-disabled/</loc>
+    
+    <lastmod>2016-10-20T14:16:59.409Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://jundong.coding.me/2016/10/12/nginx-conficure-domains-to-servers/</loc>
     
     <lastmod>2016-10-11T18:17:30.097Z</lastmod>
