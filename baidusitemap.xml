@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://jundong.coding.me/2016/10/29/develop-automatic-gulp-set/</loc>
+    <lastmod>2016-10-29T08:58:28.884Z</lastmod>
+    <data>
+        <display>
+        <title>前端开发自动化之 Gulp</title>
+        <pubTime>2016-10-29T07:05:36.000Z</pubTime>
+        
+        <tag>gulp</tag>
+         
+        <tag>前端开发</tag>
+         
+         
+           
+             
+              <breadCrumb title="开发工具" url="http://jundong.coding.me/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://jundong.coding.me/2016/10/20/google-no-country-redirect-disabled/</loc>
     <lastmod>2016-10-20T14:16:59.409Z</lastmod>
     <data>
@@ -167,9 +189,9 @@
         <title>常用速查表集合</title>
         <pubTime>2016-08-23T07:57:21.000Z</pubTime>
         
-        <tag>vim</tag>
-         
         <tag>linux</tag>
+         
+        <tag>vim</tag>
          
         <tag>正则</tag>
          
@@ -261,9 +283,9 @@
         <title>SCP跨机远程拷贝</title>
         <pubTime>2016-05-20T14:08:51.000Z</pubTime>
         
-        <tag>linux</tag>
-         
         <tag>scp</tag>
+         
+        <tag>linux</tag>
          
          
            
@@ -594,9 +616,9 @@
         <title>SublimeText 插件推荐</title>
         <pubTime>2016-03-17T01:43:02.000Z</pubTime>
         
-        <tag>工具使用</tag>
-         
         <tag>SublimeText</tag>
+         
+        <tag>工具使用</tag>
          
         <tag>插件</tag>
          
@@ -666,9 +688,9 @@
         <title>管理你的Kindle</title>
         <pubTime>2016-01-12T12:55:33.000Z</pubTime>
         
-        <tag>kindle</tag>
-         
         <tag>工具使用</tag>
+         
+        <tag>kindle</tag>
          
          
            
@@ -798,9 +820,9 @@
         
         <tag>C++</tag>
          
-        <tag>编译原理</tag>
-         
         <tag>语法分析</tag>
+         
+        <tag>编译原理</tag>
          
          
            
@@ -822,9 +844,9 @@
         
         <tag>C++</tag>
          
-        <tag>词法分析</tag>
-         
         <tag>编译原理</tag>
+         
+        <tag>词法分析</tag>
          
          
            
@@ -956,11 +978,11 @@
         <title>可能错过的Windows便签</title>
         <pubTime>2016-04-17T11:49:22.000Z</pubTime>
         
-        <tag>工具使用</tag>
-         
         <tag>便签</tag>
          
         <tag>Windows</tag>
+         
+        <tag>工具使用</tag>
          
          
            
