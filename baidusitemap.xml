@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://jundong.coding.me/2016/10/12/update-laptop-cpu/</loc>
+    <lastmod>2016-11-12T08:39:09.622Z</lastmod>
+    <data>
+        <display>
+        <title>升级笔记本 CPU</title>
+        <pubTime>2016-10-12T06:18:44.000Z</pubTime>
+        
+        <tag>cpu</tag>
+         
+        <tag>笔记本</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://jundong.coding.me/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://jundong.coding.me/2016/10/29/develop-automatic-gulp-set/</loc>
     <lastmod>2016-10-29T09:03:46.197Z</lastmod>
     <data>
@@ -616,9 +638,9 @@
         <title>SublimeText 插件推荐</title>
         <pubTime>2016-03-17T01:43:02.000Z</pubTime>
         
-        <tag>SublimeText</tag>
-         
         <tag>工具使用</tag>
+         
+        <tag>SublimeText</tag>
          
         <tag>插件</tag>
          
@@ -688,9 +710,9 @@
         <title>管理你的Kindle</title>
         <pubTime>2016-01-12T12:55:33.000Z</pubTime>
         
-        <tag>工具使用</tag>
-         
         <tag>kindle</tag>
+         
+        <tag>工具使用</tag>
          
          
            
@@ -978,11 +1000,11 @@
         <title>可能错过的Windows便签</title>
         <pubTime>2016-04-17T11:49:22.000Z</pubTime>
         
+        <tag>工具使用</tag>
+         
         <tag>便签</tag>
          
         <tag>Windows</tag>
-         
-        <tag>工具使用</tag>
          
          
            
