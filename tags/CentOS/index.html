@@ -109,7 +109,7 @@
 <meta name="description" content="笔记来的">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Leeon Notes">
-<meta property="og:url" content="http://jundong.coding.me/tags/CentOS/index.html">
+<meta property="og:url" content="http://jundong.coding.me/tags/centos/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="笔记来的">
 <meta name="twitter:card" content="summary">
@@ -135,9 +135,9 @@
 
 
 
-  <link rel="canonical" href="http://jundong.coding.me/tags/CentOS/"/>
+  <link rel="canonical" href="http://jundong.coding.me/tags/centos/"/>
 
-  <title> Tag: CentOS | Leeon Notes </title>
+  <title> Tag: centos | Leeon Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -292,10 +292,38 @@
   <div id="posts" class="posts-collapse">
     <div class="collection-title">
       <h2 >
-        CentOS
+        centos
         <small>Tag</small>
       </h2>
     </div>
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/06/19/centos-install-node/" itemprop="url">
+              
+                <span itemprop="name">CentOS源码安装NodeJS</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-06-19T22:03:20+08:00"
+              content="2016-06-19" >
+          06-19
+        </time>
+      </div>
+
+    </header>
+  </article>
+
 
     
       
@@ -318,6 +346,34 @@
               datetime="2016-06-14T19:30:37+08:00"
               content="2016-06-14" >
           06-14
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/06/12/Centos7-install-nodejs-update/" itemprop="url">
+              
+                <span itemprop="name">Centos7安装Node以及更新</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-06-12T17:23:09+08:00"
+              content="2016-06-12" >
+          06-12
         </time>
       </div>
 
@@ -367,7 +423,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">46</span>
+              <span class="site-state-item-count">47</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -384,7 +440,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">78</span>
+                <span class="site-state-item-count">73</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -792,36 +848,6 @@
               success: function(newcounter) {
                 var $element = $(document.getElementById(url));
                 $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
-
-</body>
-</html>
-   $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
               },
               error: function(newcounter, error) {
                 console.log('Failed to create');
