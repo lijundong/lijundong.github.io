@@ -4,6 +4,51 @@
   
     
     <entry>
+      <title><![CDATA[SublimeText 配置 LaTeX 编辑器]]></title>
+      <url>http://jundong.coding.me/2016/11/23/start-latex-and-configure-latext-editor-with-sublime/</url>
+      <content type="html"><![CDATA[<p>上一篇 <a href="http://jundong.coding.me/2016/11/17/novel-crawler-by-Nodejs/">Node.js 实现简单小说爬虫</a>，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。<br>工欲善其事，必先利其器。这里笔记下 SublimeTeXt3 下用 TeXlive 配置 LaTeX 编辑环境。<br><a id="more"></a></p>
+<h3 id="系统-amp-软件-版本"><a href="#系统-amp-软件-版本" class="headerlink" title="系统 &amp; 软件 版本"></a>系统 &amp; 软件 版本</h3><ul>
+<li>windows 10</li>
+<li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text3</a></li>
+<li><a href="http://mirror.hust.edu.cn/CTAN/systems/texlive/Images/" target="_blank" rel="external">TeX Live 2016</a></li>
+</ul>
+<h3 id="关于-TeX、LaTeX、TeX-Live"><a href="#关于-TeX、LaTeX、TeX-Live" class="headerlink" title="关于 TeX、LaTeX、TeX Live"></a>关于 TeX、LaTeX、TeX Live</h3><h4 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>专有名词，注意名词大小写</strong><br><strong>TeX：</strong>美国计算机教授高德纳 (Donald Ervin Knuth) 为了排版他的著作 『The Art of Computer Programming』(TAOCP) 编写的功能强大的排版软件。<br><strong>LaTeX：</strong>美国计算机科学家莱斯利·兰伯特为了准备他的著作 『The Great American Concurrency Book』基于 TeX 开发的宏，详见<a href="https://zh.wikipedia.org/wiki/LaTeX" target="_blank" rel="external">Wiki</a><br><strong>TeX Live：</strong>是由国际 TEX 用户组整理和发布的TEX软件发行套装，详见<a href="https://zh.wikipedia.org/wiki/TeX_Live" target="_blank" rel="external">wiki</a></p>
+<h4 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h4><h5 id="公式编辑"><a href="#公式编辑" class="headerlink" title="公式编辑"></a>公式编辑</h5><ul>
+<li>在线：<a href="https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn" target="_blank" rel="external">在线 LaTeX 公式编辑器</a></li>
+<li>Office套件：在 office 套件里，通过 <a href="http://www.dessci.com/en/products/mathtype/" target="_blank" rel="external">MathType</a> 可以很方便地编辑公式</li>
+<li>LaTeX：通过 LaTeX 语法输入公式</li>
+</ul>
+<h5 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h5><p>公式编辑只是 LaTeX 功能中的一项，排版才能体现出它的强大的功能，具体效果可以参见下面的 demo。<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/public/16-11-24/95505961.jpg" alt=""></p>
+<h3 id="配置-LaTeX-编辑器"><a href="#配置-LaTeX-编辑器" class="headerlink" title="配置 LaTeX 编辑器"></a>配置 LaTeX 编辑器</h3><p>使用 LaTeX 进行排版的过程即，<strong>编辑完 TeX 文件，通过 TeX Live 将 LaTeX 文件编译成 PDF 文件</strong><br>为了操作方便，通过配置 Sublime 的插件 <code>LaTeXTools</code>，可快捷调用(快捷键：<code>Ctrl + B</code>) Tex Live 来编译文件，高效率编辑。 </p>
+<p><strong>可选：</strong>高效到底，通过配置 sumatraPDF ，可在 PDF 生成后 自动在 sumatraPDF 中打开，实现实时预览的效果。</p>
+<h4 id="安装-TeXlive"><a href="#安装-TeXlive" class="headerlink" title="安装 TeXlive"></a>安装 TeXlive</h4><p><strong>ISO 镜像下载地址：</strong><a href="http://mirror.hust.edu.cn/CTAN/systems/texlive/Images/" target="_blank" rel="external">TeX Live 2016</a><br>下载完成后，加载镜像，进入文件点击 <code>install-tl-windows.bat</code>(直接安装) 或者 <code>install-tl-advanced.bat</code>(提供可选项) 开始安装。</p>
+<p>等待中……</p>
+<p>安装完成后，还需要一步，<strong>将 LaTeX 执行文件的路径加入系统环境变量</strong><br>我在本机的路径为 <code>C:\texlive\2016\bin\win32</code>，加入系统环境变量后，可通过在 命令提示符(CMD) 执行 <code>latex</code> 命令检查，<strong>注：可能需要重启电脑</strong>。</p>
+<h4 id="安装-sumatraPDF-可选"><a href="#安装-sumatraPDF-可选" class="headerlink" title="安装 sumatraPDF (可选)"></a>安装 sumatraPDF (可选)</h4><p>关于 Sumatra PDF：Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</p>
+<p>下载地址：<a href="http://www.sumatrapdfreader.org/download-free-pdf-viewer.html" target="_blank" rel="external">Sumatra PDF </a></p>
+<p>添加路径到系统环境变量：同 TeX Live 一样，为了能在 CMD 中通过命令执行程序，需要将 Sumatra PDF 执行文件的路径添加到系统环境变量，通过在 CMD 中执行命令检测配置是否成功。<strong>注：可能需要重启电脑</strong></p>
+<h4 id="Sublime-安装-LaTeXtools-插件"><a href="#Sublime-安装-LaTeXtools-插件" class="headerlink" title="Sublime 安装 LaTeXtools 插件"></a>Sublime 安装 LaTeXtools 插件</h4><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p>如果对于 Sublime Text 不熟悉的同学，可以参见 <a href="http://jundong.coding.me/2016/03/17/SublimeText-extension-recommand/">SublimeText 插件推荐</a><br>通过 Package Control 安装插件 <code>LaTeXTools</code></p>
+<h5 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h5><p>配置文件路径：<br><code>Preference &gt; Package Setting &gt; LaTeXTools &gt; Setting-User</code></p>
+<p>配置以下参数<br><code>texpath</code>：TeX Live 可执行文件的路径(即添加到环境变量中的路径)<br><code>distro</code>：修改为 <code>texlive</code><br><code>sumtra</code>：sumatraPDF 可执行文件的路径(即添加到环境变量中的路径)</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"windows"</span>: &#123;</span><br><span class="line">    <span class="string">"texpath"</span> : <span class="string">"C:\\texlive\\2016\\bin\\win32"</span>,</span><br><span class="line">    <span class="string">"distro"</span> : <span class="string">"texlive"</span>,</span><br><span class="line">    <span class="string">"sumatra"</span>: <span class="string">"C:\\Program Files\\SumatraPDF"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="配置-sumatraPDF-反向搜索"><a href="#配置-sumatraPDF-反向搜索" class="headerlink" title="配置 sumatraPDF 反向搜索"></a>配置 sumatraPDF 反向搜索</h5><p>路径为 SublimeText 的可执行文件路劲，如下示例<br><code>sumatrapdf.exe -inverse-search &quot;\&quot;C:\Program Files\Sublime Text 3\sublime_text.exe\&quot; \&quot;%f:%l\&quot;&quot;</code></p>
+<h3 id="LaTeX-上手"><a href="#LaTeX-上手" class="headerlink" title="LaTeX 上手"></a>LaTeX 上手</h3><p>所有配置都完成了，下面可以测试成果了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\title&#123;SublimeText 配置 LaTeX 编辑器&#125;</span><br><span class="line">\author&#123;Leeon&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line">\usepackage&#123;graphicx&#125;</span><br><span class="line">\usepackage&#123;geometry&#125;</span><br><span class="line">\geometry&#123;papersize=&#123;21cm,29.7cm&#125;&#125;</span><br><span class="line">\geometry&#123;left=2.5cm,right=2.5cm,top=3cm,bottom=3cm&#125;</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line">\section&#123;系统 \&amp; 软件 版本&#125;</span><br><span class="line">\begin&#123;center&#125;</span><br><span class="line">\includegraphics[width = .4\textwidth]&#123;boat.jpg&#125;</span><br><span class="line">\end&#123;center&#125;</span><br><span class="line">\section&#123;名词解释&#125;</span><br><span class="line">专有名词，注意名词大小写</span><br><span class="line">TeX：美国计算机教授高德纳 (Donald Ervin Knuth) 为了排版他的著作 『The Art of Computer Programming』(TAOCP) 编写的功能强大的排版软件。</span><br><span class="line">LaTeX：美国计算机科学家莱斯利·兰伯特为了准备他的著作 『The Great American Concurrency Book』基于 TeX 开发的宏，详见Wiki</span><br><span class="line">TeX Live：是由国际 TEX 用户组整理和发布的TEX软件发行套装，详见wiki</span><br><span class="line">\section&#123;使用场景&#125;</span><br><span class="line">\subsection&#123;公式编辑&#125;</span><br><span class="line">\subsection&#123;排版&#125;</span><br><span class="line">\section&#123;配置 LaTeX 编辑器&#125;</span><br><span class="line">\subsection&#123;安装 TeXlive&#125;</span><br><span class="line">\subsection&#123;安装 sumatraPDF (可选)&#125;</span><br><span class="line">\subsection&#123;Sublime 安装 LaTeXtools 插件&#125;</span><br><span class="line">\subsubsection&#123;安装&#125;</span><br><span class="line">\subsubsection&#123;配置&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure></p>
+<p>编译效果：</p>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/public/16-11-24/95505961.jpg" alt=""></p>
+<hr>
+<p>知道 LaTeX 是大一高数课，林军老师的 PPT 的公式都是用 MathType 编辑，用过一段时间，高数结课后没再接触，之后在王垠的<a href="http://www.yinwang.org/blog-cn/2014/01/04/authority" target="_blank" rel="external">博客</a>里，看到他提到一些关于 TeX 的观点，最后却只记得他拿了 Donald Knuth 的支票，觉得此人厉害。再次和 TeX 擦肩而过……<br>还好这次花了时间去了解，让我看到一个新的维度世界，感觉很开心</p>
+<p>Better late than never</p>
+<hr>
+<p><em>参考：</em></p>
+<ul>
+<li><a href="https://th0.me/1737.html" target="_blank" rel="external">TeXLive + Sublime TeXt 3 + LaTeXTools 环境配置</a></li>
+<li><a href="http://liam0205.me/2014/09/08/LaTeX-introduction/" target="_blank" rel="external">一份其实很短的 LaTeX 入门文档</a></li>
+<li><a href="http://attach3.bdwm.net/attach/boards/MathTools/M.1364651898.A/TeX_intro_talk.pdf" target="_blank" rel="external">LaTeX 入门</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Node.js 实现简单小说爬虫]]></title>
       <url>http://jundong.coding.me/2016/11/17/novel-crawler-by-Nodejs/</url>
       <content type="html"><![CDATA[<p>最近因为剧荒，老大追了爱奇艺的一部网剧，由丁墨的同名小说《美人为馅》改编，目前已经放出两季，虽然整部剧槽点满满，但是老大看得不亦乐乎，并且在看完第二季之后跟我要小说资源，直接要奔原著去看结局……<br>随手搜了下，都是在线资源，下载的话需要登录，注册登录好麻烦，写个爬虫玩玩也好，于是动手用 node 写了一个，这里做下笔记<br><a id="more"></a></p>
