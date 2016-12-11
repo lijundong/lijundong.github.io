@@ -571,7 +571,7 @@
 <h3 id="编译-amp-amp-安装"><a href="#编译-amp-amp-安装" class="headerlink" title="编译 &amp;&amp; 安装"></a>编译 &amp;&amp; 安装</h3><p><code>./configure    //生成makefile</code></p>
 <p><strong>注：</strong>如果系统没有安装gcc，需要通过以下命令安装gcc<br><code>sudo yum install gcc gcc-c++</code></p>
 <p><code>make    //编译</code><br><code>sudo make install    //安装</code><br><code>node -v    //查看版本号</code><br><code>v4.5.0     //安装完成</code></p>
-<p>###结语<br>之前也想过使用源码安装，但是意识上认为解压、编译、安装过程会很复杂，然而真正操作一遍之后，完全不是那回事，我认为的困难只是我的大脑懒于接受新知识所找出来的借口，如果不突破这些障碍、懒惰，我会错过很多好玩的东西，光是想想都觉得可惜。</p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>之前也想过使用源码安装，但是意识上认为解压、编译、安装过程会很复杂，然而真正操作一遍之后，完全不是那回事，我认为的困难只是我的大脑懒于接受新知识所找出来的借口，如果不突破这些障碍、懒惰，我会错过很多好玩的东西，光是想想都觉得可惜。</p>
 ]]></content>
     </entry>
     

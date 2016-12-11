@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jundong.coding.me/2016/11/23/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    <loc>http://jundong.coding.me/about/index.html</loc>
     
-    <lastmod>2016-11-24T06:43:56.761Z</lastmod>
+    <lastmod>2016-12-11T06:36:14.453Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://jundong.coding.me/about/index.html</loc>
+    <loc>http://jundong.coding.me/2016/06/19/centos-install-node/</loc>
     
-    <lastmod>2016-11-18T13:45:36.265Z</lastmod>
+    <lastmod>2016-12-10T11:12:02.112Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jundong.coding.me/2016/11/23/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    
+    <lastmod>2016-11-24T06:43:56.761Z</lastmod>
     
   </url>
   
@@ -173,13 +180,6 @@
     <loc>http://jundong.coding.me/2016/01/11/Chrome-extension-one-clock/</loc>
     
     <lastmod>2016-11-17T14:21:46.683Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jundong.coding.me/2016/06/19/centos-install-node/</loc>
-    
-    <lastmod>2016-11-17T14:21:15.215Z</lastmod>
     
   </url>
   
