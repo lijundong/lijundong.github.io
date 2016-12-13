@@ -3,6 +3,30 @@
 
 
     
+  <url>
+    <loc>http://jundong.coding.me/2016/12/14/deploy-hexo-blog-on-server/</loc>
+    <lastmod>2016-12-13T19:05:45.788Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo 部署到阿里云 hook 测试</title>
+        <pubTime>2016-12-13T18:55:57.000Z</pubTime>
+        
+        <tag>服务器</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="问题解决" url="http://jundong.coding.me/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://jundong.coding.me/2016/06/19/centos-install-node/</loc>
@@ -764,13 +788,13 @@
         <title>常用速查表集合</title>
         <pubTime>2016-08-23T07:57:21.000Z</pubTime>
         
+        <tag>git</tag>
+         
         <tag>linux</tag>
          
         <tag>vim</tag>
          
         <tag>正则</tag>
-         
-        <tag>git</tag>
          
          
            
