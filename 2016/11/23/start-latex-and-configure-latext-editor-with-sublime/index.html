@@ -398,7 +398,7 @@
       
 
       
-        <p>上一篇 <a href="http://jundong.coding.me/2016/11/17/novel-crawler-by-Nodejs/">Node.js 实现简单小说爬虫</a>，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。<br>工欲善其事，必先利其器。这里笔记下 SublimeTeXt3 下用 TeXlive 配置 LaTeX 编辑环境。<br><a id="more"></a></p>
+        <p>上一篇 <a href="http://jundong.coding.me/2016/11/17/novel-crawler-by-Nodejs/" target="_blank" rel="external">Node.js 实现简单小说爬虫</a>，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。<br>工欲善其事，必先利其器。这里笔记下 SublimeTeXt3 下用 TeXlive 配置 LaTeX 编辑环境。<br><a id="more"></a></p>
 <h3 id="系统-amp-软件-版本"><a href="#系统-amp-软件-版本" class="headerlink" title="系统 &amp; 软件 版本"></a>系统 &amp; 软件 版本</h3><ul>
 <li>windows 10</li>
 <li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text3</a></li>
@@ -419,7 +419,7 @@
 <h4 id="安装-sumatraPDF-可选"><a href="#安装-sumatraPDF-可选" class="headerlink" title="安装 sumatraPDF (可选)"></a>安装 sumatraPDF (可选)</h4><p>关于 Sumatra PDF：Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</p>
 <p>下载地址：<a href="http://www.sumatrapdfreader.org/download-free-pdf-viewer.html" target="_blank" rel="external">Sumatra PDF </a></p>
 <p>添加路径到系统环境变量：同 TeX Live 一样，为了能在 CMD 中通过命令执行程序，需要将 Sumatra PDF 执行文件的路径添加到系统环境变量，通过在 CMD 中执行命令检测配置是否成功。<strong>注：可能需要重启电脑</strong></p>
-<h4 id="Sublime-安装-LaTeXtools-插件"><a href="#Sublime-安装-LaTeXtools-插件" class="headerlink" title="Sublime 安装 LaTeXtools 插件"></a>Sublime 安装 LaTeXtools 插件</h4><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p>如果对于 Sublime Text 不熟悉的同学，可以参见 <a href="http://jundong.coding.me/2016/03/17/SublimeText-extension-recommand/">SublimeText 插件推荐</a><br>通过 Package Control 安装插件 <code>LaTeXTools</code></p>
+<h4 id="Sublime-安装-LaTeXtools-插件"><a href="#Sublime-安装-LaTeXtools-插件" class="headerlink" title="Sublime 安装 LaTeXtools 插件"></a>Sublime 安装 LaTeXtools 插件</h4><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p>如果对于 Sublime Text 不熟悉的同学，可以参见 <a href="http://jundong.coding.me/2016/03/17/SublimeText-extension-recommand/" target="_blank" rel="external">SublimeText 插件推荐</a><br>通过 Package Control 安装插件 <code>LaTeXTools</code></p>
 <h5 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h5><p>配置文件路径：<br><code>Preference &gt; Package Setting &gt; LaTeXTools &gt; Setting-User</code></p>
 <p>配置以下参数<br><code>texpath</code>：TeX Live 可执行文件的路径(即添加到环境变量中的路径)<br><code>distro</code>：修改为 <code>texlive</code><br><code>sumtra</code>：sumatraPDF 可执行文件的路径(即添加到环境变量中的路径)</p>
 <figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"windows"</span>: &#123;</span><br><span class="line">    <span class="string">"texpath"</span> : <span class="string">"C:\\texlive\\2016\\bin\\win32"</span>,</span><br><span class="line">    <span class="string">"distro"</span> : <span class="string">"texlive"</span>,</span><br><span class="line">    <span class="string">"sumatra"</span>: <span class="string">"C:\\Program Files\\SumatraPDF"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
