@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lijundong.com/2016/12/16/git-hooks/</loc>
+    
+    <lastmod>2016-12-18T11:14:01.843Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lijundong.com/2016/12/14/deploy-hexo-blog-on-server/</loc>
     
     <lastmod>2016-12-14T02:20:44.465Z</lastmod>

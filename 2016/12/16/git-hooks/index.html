@@ -90,7 +90,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="centos,node," />
+  <meta name="keywords" content="git," />
 
 
 
@@ -106,16 +106,16 @@
 
 
 
-<meta name="description" content="之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。">
+<meta name="description" content="Git Hooks 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。之前迁移博客到阿里云，Git Hooks 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 post-receive，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CentOS源码安装NodeJS">
-<meta property="og:url" content="http://lijundong.com/2016/06/19/centos-install-node/index.html">
+<meta property="og:title" content="Git Hooks">
+<meta property="og:url" content="http://lijundong.com/2016/12/16/git-hooks/index.html">
 <meta property="og:site_name" content="Leeon Notes">
-<meta property="og:description" content="之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。">
-<meta property="og:updated_time" content="2016-12-10T11:12:02.112Z">
+<meta property="og:description" content="Git Hooks 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。之前迁移博客到阿里云，Git Hooks 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 post-receive，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。">
+<meta property="og:updated_time" content="2016-12-18T11:14:01.843Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS源码安装NodeJS">
-<meta name="twitter:description" content="之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。">
+<meta name="twitter:title" content="Git Hooks">
+<meta name="twitter:description" content="Git Hooks 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。之前迁移博客到阿里云，Git Hooks 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 post-receive，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。">
 
 
 
@@ -136,9 +136,9 @@
 
 
 
-  <link rel="canonical" href="http://lijundong.com/2016/06/19/centos-install-node/"/>
+  <link rel="canonical" href="http://lijundong.com/2016/12/16/git-hooks/"/>
 
-  <title> CentOS源码安装NodeJS | Leeon Notes </title>
+  <title> Git Hooks | Leeon Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -320,7 +320,7 @@
             
             
               
-                CentOS源码安装NodeJS
+                Git Hooks
               
             
           </h1>
@@ -332,8 +332,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2016-06-19T22:03:20+08:00" content="2016-06-19">
-              2016-06-19
+            <time itemprop="dateCreated" datetime="2016-12-16T19:25:34+08:00" content="2016-12-16">
+              2016-12-16
             </time>
           </span>
 
@@ -362,8 +362,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/06/19/centos-install-node/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/19/centos-install-node/" itemprop="commentsCount"></span>
+                <a href="/2016/12/16/git-hooks/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/16/git-hooks/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -373,7 +373,7 @@
 
           
           
-             <span id="/2016/06/19/centos-install-node/" class="leancloud_visitors" data-flag-title="CentOS源码安装NodeJS">
+             <span id="/2016/12/16/git-hooks/" class="leancloud_visitors" data-flag-title="Git Hooks">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -395,14 +395,34 @@
       
 
       
-        <p>之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。<br><a id="more"></a></p>
-<h3 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h3><p>在<a href="https://nodejs.org/en/download/" target="_blank" rel="external">NodeJS官网</a>下载源码，如果不需要体验最新特性，推荐下载LTS（long term support）版本，当前版本为4.5.0</p>
-<p><code>wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz</code></p>
-<h3 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h3><p>解压源码包并进入解压后文件夹<br><code>tar xzvf node-v* &amp;&amp; cd node-v*</code></p>
-<h3 id="编译-amp-amp-安装"><a href="#编译-amp-amp-安装" class="headerlink" title="编译 &amp;&amp; 安装"></a>编译 &amp;&amp; 安装</h3><p><code>./configure    //生成makefile</code></p>
-<p><strong>注：</strong>如果系统没有安装gcc，需要通过以下命令安装gcc<br><code>sudo yum install gcc gcc-c++</code></p>
-<p><code>make    //编译</code><br><code>sudo make install    //安装</code><br><code>node -v    //查看版本号</code><br><code>v4.5.0     //安装完成</code></p>
-<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>之前也想过使用源码安装，但是意识上认为解压、编译、安装过程会很复杂，然而真正操作一遍之后，完全不是那回事，我认为的困难只是我的大脑懒于接受新知识所找出来的借口，如果不突破这些障碍、懒惰，我会错过很多好玩的东西，光是想想都觉得可惜。</p>
+        <p><code>Git Hooks</code> 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。<br>之前迁移博客到阿里云，<code>Git Hooks</code> 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 <code>post-receive</code>，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。<br><a id="more"></a></p>
+<h3 id="安装-Hooks"><a href="#安装-Hooks" class="headerlink" title="安装 Hooks"></a>安装 Hooks</h3><p>多数情况下，所有的 hook 放在 <code>.git/hooks</code> 目录下，当我们执行 <code>git init</code> 时，Git 就会将一些示例脚本填充在 <code>.git/hooks</code> 目录下，这些示例脚本命名以 <code>.sample</code> 后缀，默认不执行，如果想执行这些脚本，可以重命名(去掉 <code>.sample</code> 后缀)，也可以自定义脚本，保存在 <code>.git/hooks</code> 目录下，<strong>并且给予脚本执行权限</strong>。</p>
+<p><strong>需要注意的是，Hook  不随项目的克隆而进行复制，也不受版本控制的影响。</strong></p>
+<p>Hook 根据使用场景可以分为 客户端(本地) Hooks 和服务端 Hooks。不同使用场景下，根据不同触发条件又分为若干类。</p>
+<h3 id="客户端-本地-Hook"><a href="#客户端-本地-Hook" class="headerlink" title="客户端(本地) Hook"></a>客户端(本地) Hook</h3><h4 id="pre-commit"><a href="#pre-commit" class="headerlink" title="pre-commit"></a>pre-commit</h4><p>在 <code>git commit</code> 命令之后，这个脚本会首先运行，用来检查提交的快照，检查有没有遗漏，或者检查一些自定义的选项(例如检查代码格式，检查空格等)，当脚本返回非 0 值时，则中断 <code>commit</code>。<br>你也可以通过 <code>git commit --no-verify</code> 命令提交来跳过这个过程。</p>
+<p>参数： 无</p>
+<h4 id="prepare-commit-msg"><a href="#prepare-commit-msg" class="headerlink" title="prepare-commit-msg"></a>prepare-commit-msg</h4><p>在 <code>commit</code> 过程中需要编辑 <code>commit message</code>，这个脚本会在默认 <code>commit message</code> 生成之后，在你看到编辑器之前运行，通过这个脚本可以修改默认的 <code>commit message</code>。</p>
+<p>参数：</p>
+<ul>
+<li>默认 <code>commit message</code> 文件路劲</li>
+<li>提交类型</li>
+<li>commit SHA-1(可选)</li>
+</ul>
+<h4 id="commit-msg"><a href="#commit-msg" class="headerlink" title="commit-msg"></a>commit-msg</h4><p>这个脚本可以用来检验用户编辑的 <code>commit message</code>。可以用来检查 <code>commit message</code> 是否合乎规范。</p>
+<p>参数：</p>
+<ul>
+<li>存放用户编写的 <code>commit message</code> 的临时文件的路劲</li>
+</ul>
+<h4 id="pre-rebase"><a href="#pre-rebase" class="headerlink" title="pre-rebase"></a>pre-rebase</h4><p>这个脚本会在 <code>git rebase</code> 命令之前运行，在返回非 0 值时，会中断操作。<br>你可以通过这个脚本来禁用 <code>rebase</code>，示例如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line"># disallow rebasing any commits</span><br><span class="line">echo &quot;pre-rebase: Rebasing is disallowed.&quot;</span><br><span class="line">exit 1</span><br></pre></td></tr></table></figure>
+<h3 id="服务端-Hook"><a href="#服务端-Hook" class="headerlink" title="服务端 Hook"></a>服务端 Hook</h3><p>服务端的 Hook 允许我们在 <code>git push</code> 的不同阶段进行操作。</p>
+<h4 id="pre-receive"><a href="#pre-receive" class="headerlink" title="pre-receive"></a>pre-receive</h4><p>客户端 push 过来的内容，必须通过这个脚本的检查来判断接受与否。</p>
+<h4 id="update"><a href="#update" class="headerlink" title="update"></a>update</h4><p>这个脚本在代码更新之前执行。<br><code>update</code> 和 <code>pre-receive</code> 很相似，不同的是，如果我们想把代码推到不同分支，那么 <code>pre-receive</code> 只会执行一次，而 <code>update</code> 在每个分支更新之前都会执行一次。</p>
+<h4 id="post-receive"><a href="#post-receive" class="headerlink" title="post-receive"></a>post-receive</h4><p><code>post-receive</code> 脚本在所有流程完成之后被触发，前几天迁移博客时才用到，服务器代码库合并了我的 <code>push</code> 后，通过 <code>post-receive</code> 脚本将仓库 <code>clone</code> 到我的博客目录下，以达到更新效果。</p>
+<p>参考:</p>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" target="_blank" rel="external">Customizing Git - Git Hooks</a></li>
+</ul>
 
       
     </div>
@@ -425,9 +445,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/centos/" rel="tag">#centos</a>
-          
-            <a href="/tags/node/" rel="tag">#node</a>
+            <a href="/tags/git/" rel="tag">#git</a>
           
         </div>
       
@@ -436,17 +454,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/06/19/wechat-node-0th/" rel="next" title="微信公号Node开发「零」之项目建立">
-                <i class="fa fa-chevron-left"></i> 微信公号Node开发「零」之项目建立
+              <a href="/2016/12/14/deploy-hexo-blog-on-server/" rel="next" title="Hexo 部署到阿里云 hook 测试">
+                <i class="fa fa-chevron-left"></i> Hexo 部署到阿里云 hook 测试
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/06/27/troubleyourself/" rel="prev" title="自寻烦恼">
-                自寻烦恼 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -498,8 +512,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/06/19/centos-install-node/"
-           data-title="CentOS源码安装NodeJS" data-url="http://lijundong.com/2016/06/19/centos-install-node/">
+      <div class="ds-thread" data-thread-key="2016/12/16/git-hooks/"
+           data-title="Git Hooks" data-url="http://lijundong.com/2016/12/16/git-hooks/">
       </div>
     
   </div>
@@ -637,7 +651,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#获取源码"><span class="nav-number">1.</span> <span class="nav-text">获取源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解压"><span class="nav-number">2.</span> <span class="nav-text">解压</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译-amp-amp-安装"><span class="nav-number">3.</span> <span class="nav-text">编译 && 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">4.</span> <span class="nav-text">结语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Hooks"><span class="nav-number">1.</span> <span class="nav-text">安装 Hooks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端-本地-Hook"><span class="nav-number">2.</span> <span class="nav-text">客户端(本地) Hook</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#pre-commit"><span class="nav-number">2.1.</span> <span class="nav-text">pre-commit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#prepare-commit-msg"><span class="nav-number">2.2.</span> <span class="nav-text">prepare-commit-msg</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#commit-msg"><span class="nav-number">2.3.</span> <span class="nav-text">commit-msg</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#pre-rebase"><span class="nav-number">2.4.</span> <span class="nav-text">pre-rebase</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务端-Hook"><span class="nav-number">3.</span> <span class="nav-text">服务端 Hook</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#pre-receive"><span class="nav-number">3.1.</span> <span class="nav-text">pre-receive</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#update"><span class="nav-number">3.2.</span> <span class="nav-text">update</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#post-receive"><span class="nav-number">3.3.</span> <span class="nav-text">post-receive</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
