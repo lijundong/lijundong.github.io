@@ -4,7 +4,31 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/12/18/note-hexo-deploy-on-server/</loc>
+    <loc>http://lijundong.com/deploy-hexo-blog-on-server/</loc>
+    <lastmod>2016-12-23T12:12:01.730Z</lastmod>
+    <data>
+        <display>
+        <title>测试 - Hexo 部署到阿里云</title>
+        <pubTime>2016-12-13T18:55:57.000Z</pubTime>
+        
+        <tag>服务器</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/note-hexo-deploy-on-server/</loc>
     <lastmod>2016-12-18T17:18:48.021Z</lastmod>
     <data>
         <display>
@@ -30,31 +54,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/12/14/deploy-hexo-blog-on-server/</loc>
-    <lastmod>2016-12-18T17:18:24.635Z</lastmod>
-    <data>
-        <display>
-        <title>测试 - Hexo 部署到阿里云</title>
-        <pubTime>2016-12-13T18:55:57.000Z</pubTime>
-        
-        <tag>服务器</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>git</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/2016/08/28/accept-in-input-and-mime-intro/</loc>
+    <loc>http://lijundong.com/accept-in-input-and-mime-intro/</loc>
     <lastmod>2016-12-18T15:55:42.268Z</lastmod>
     <data>
         <display>
@@ -80,7 +80,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/12/16/git-hooks/</loc>
+    <loc>http://lijundong.com/git-hooks/</loc>
     <lastmod>2016-12-18T11:14:01.843Z</lastmod>
     <data>
         <display>
@@ -101,7 +101,7 @@
     
     
   <url>
-    <loc>http://lijundong.com/2016/06/19/centos-install-node/</loc>
+    <loc>http://lijundong.com/centos-install-node/</loc>
     <lastmod>2016-12-10T11:12:02.112Z</lastmod>
     <data>
         <display>
@@ -123,7 +123,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/11/23/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    <loc>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</loc>
     <lastmod>2016-11-24T06:43:56.761Z</lastmod>
     <data>
         <display>
@@ -145,7 +145,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/11/17/novel-crawler-by-Nodejs/</loc>
+    <loc>http://lijundong.com/novel-crawler-by-Nodejs/</loc>
     <lastmod>2016-11-18T01:55:17.751Z</lastmod>
     <data>
         <display>
@@ -169,7 +169,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/08/22/xlsx-to-json-by-json/</loc>
+    <loc>http://lijundong.com/xlsx-to-json-by-json/</loc>
     <lastmod>2016-11-17T14:27:24.635Z</lastmod>
     <data>
         <display>
@@ -191,16 +191,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/14/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
+    <loc>http://lijundong.com/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
     <lastmod>2016-11-17T14:27:11.364Z</lastmod>
     <data>
         <display>
         <title>CentOS安装MongoDB3.2X</title>
         <pubTime>2016-06-14T11:30:37.000Z</pubTime>
         
-        <tag>mongodb</tag>
-         
         <tag>centos</tag>
+         
+        <tag>mongodb</tag>
          
          
            
@@ -213,7 +213,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/19/wechat-node-0th/</loc>
+    <loc>http://lijundong.com/wechat-node-0th/</loc>
     <lastmod>2016-11-17T14:26:15.523Z</lastmod>
     <data>
         <display>
@@ -235,7 +235,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/30/wechat-node-2th-express/</loc>
+    <loc>http://lijundong.com/wechat-node-2th-express/</loc>
     <lastmod>2016-11-17T14:26:08.144Z</lastmod>
     <data>
         <display>
@@ -257,16 +257,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/23/wechat-node-1th-MongoDB/</loc>
+    <loc>http://lijundong.com/wechat-node-1th-MongoDB/</loc>
     <lastmod>2016-11-17T14:26:00.247Z</lastmod>
     <data>
         <display>
         <title>微信公号Node开发「壹」之操作MongoDB(上)</title>
         <pubTime>2016-07-22T16:06:31.000Z</pubTime>
         
-        <tag>mongodb</tag>
-         
         <tag>node</tag>
+         
+        <tag>mongodb</tag>
          
         <tag>微信</tag>
          
@@ -281,7 +281,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/04/17/Windows-tips-you-may-ignore/</loc>
+    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
     <lastmod>2016-11-17T14:25:24.267Z</lastmod>
     <data>
         <display>
@@ -305,7 +305,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/15/talk-setTimeout-setInterval-2th/</loc>
+    <loc>http://lijundong.com/talk-setTimeout-setInterval-2th/</loc>
     <lastmod>2016-11-17T14:24:32.213Z</lastmod>
     <data>
         <display>
@@ -327,7 +327,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/06/12/Syntactic%20analysis/</loc>
+    <loc>http://lijundong.com/Syntactic%20analysis/</loc>
     <lastmod>2016-11-17T14:24:13.795Z</lastmod>
     <data>
         <display>
@@ -351,16 +351,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/17/SublimeText-extension-recommand/</loc>
+    <loc>http://lijundong.com/SublimeText-extension-recommand/</loc>
     <lastmod>2016-11-17T14:24:09.682Z</lastmod>
     <data>
         <display>
         <title>SublimeText 插件推荐</title>
         <pubTime>2016-03-17T01:43:02.000Z</pubTime>
         
-        <tag>工具使用</tag>
-         
         <tag>sublimetext</tag>
+         
+        <tag>工具使用</tag>
          
         <tag>插件</tag>
          
@@ -377,7 +377,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/01/21/Sublime-Text3-set-command-line/</loc>
+    <loc>http://lijundong.com/Sublime-Text3-set-command-line/</loc>
     <lastmod>2016-11-17T14:24:00.924Z</lastmod>
     <data>
         <display>
@@ -399,7 +399,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/13/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
+    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
     <lastmod>2016-11-17T14:23:46.177Z</lastmod>
     <data>
         <display>
@@ -421,7 +421,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/05/01/OpenCV-mouse-event/</loc>
+    <loc>http://lijundong.com/OpenCV-mouse-event/</loc>
     <lastmod>2016-11-17T14:23:36.626Z</lastmod>
     <data>
         <display>
@@ -445,7 +445,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/18/node-js-dirname-difference/</loc>
+    <loc>http://lijundong.com/node-js-dirname-difference/</loc>
     <lastmod>2016-11-17T14:23:21.973Z</lastmod>
     <data>
         <display>
@@ -467,7 +467,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/19/location-of-bom/</loc>
+    <loc>http://lijundong.com/location-of-bom/</loc>
     <lastmod>2016-11-17T14:23:14.149Z</lastmod>
     <data>
         <display>
@@ -489,7 +489,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/05/12/Lexical%20analysis/</loc>
+    <loc>http://lijundong.com/Lexical%20analysis/</loc>
     <lastmod>2016-11-17T14:23:04.009Z</lastmod>
     <data>
         <display>
@@ -513,7 +513,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/08/31/huawei-phone-browser-height-self-adapt/</loc>
+    <loc>http://lijundong.com/huawei-phone-browser-height-self-adapt/</loc>
     <lastmod>2016-11-17T14:22:49.592Z</lastmod>
     <data>
         <display>
@@ -535,7 +535,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/10/20/google-no-country-redirect-disabled/</loc>
+    <loc>http://lijundong.com/google-no-country-redirect-disabled/</loc>
     <lastmod>2016-11-17T14:22:28.449Z</lastmod>
     <data>
         <display>
@@ -555,7 +555,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/07/Dell-laptop-add-ssd/</loc>
+    <loc>http://lijundong.com/Dell-laptop-add-ssd/</loc>
     <lastmod>2016-11-17T14:22:19.856Z</lastmod>
     <data>
         <display>
@@ -579,7 +579,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/30/coding-page-github-page-deploy-dns/</loc>
+    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
     <lastmod>2016-11-17T14:21:59.203Z</lastmod>
     <data>
         <display>
@@ -601,7 +601,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/11/clear-float/</loc>
+    <loc>http://lijundong.com/clear-float/</loc>
     <lastmod>2016-11-17T14:21:52.739Z</lastmod>
     <data>
         <display>
@@ -627,7 +627,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/01/11/Chrome-extension-one-clock/</loc>
+    <loc>http://lijundong.com/Chrome-extension-one-clock/</loc>
     <lastmod>2016-11-17T14:21:46.683Z</lastmod>
     <data>
         <display>
@@ -651,7 +651,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/09/05/Canvas-animation-about-sort/</loc>
+    <loc>http://lijundong.com/Canvas-animation-about-sort/</loc>
     <lastmod>2016-11-17T14:21:06.109Z</lastmod>
     <data>
         <display>
@@ -675,7 +675,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/04/01/Bootstrap-hover-toggle-menu/</loc>
+    <loc>http://lijundong.com/Bootstrap-hover-toggle-menu/</loc>
     <lastmod>2016-11-17T14:20:47.106Z</lastmod>
     <data>
         <display>
@@ -695,7 +695,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/18/Batch%20Process-PPT-images/</loc>
+    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
     <lastmod>2016-11-17T14:20:36.824Z</lastmod>
     <data>
         <display>
@@ -717,7 +717,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/10/12/update-laptop-cpu/</loc>
+    <loc>http://lijundong.com/update-laptop-cpu/</loc>
     <lastmod>2016-11-12T08:39:09.622Z</lastmod>
     <data>
         <display>
@@ -739,7 +739,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/10/29/develop-automatic-gulp-set/</loc>
+    <loc>http://lijundong.com/develop-automatic-gulp-set/</loc>
     <lastmod>2016-10-29T09:03:46.197Z</lastmod>
     <data>
         <display>
@@ -761,7 +761,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/10/12/nginx-conficure-domains-to-servers/</loc>
+    <loc>http://lijundong.com/nginx-conficure-domains-to-servers/</loc>
     <lastmod>2016-10-11T18:17:30.097Z</lastmod>
     <data>
         <display>
@@ -785,7 +785,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/09/01/embeded-javascript-templates/</loc>
+    <loc>http://lijundong.com/embeded-javascript-templates/</loc>
     <lastmod>2016-10-11T18:09:59.259Z</lastmod>
     <data>
         <display>
@@ -805,7 +805,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/07/25/jquery-prevent-form-sbumit/</loc>
+    <loc>http://lijundong.com/jquery-prevent-form-sbumit/</loc>
     <lastmod>2016-08-25T11:48:34.984Z</lastmod>
     <data>
         <display>
@@ -827,7 +827,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/08/23/sheets-collections/</loc>
+    <loc>http://lijundong.com/sheets-collections/</loc>
     <lastmod>2016-08-23T08:51:56.616Z</lastmod>
     <data>
         <display>
@@ -853,7 +853,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/12/Centos7-install-nodejs-update/</loc>
+    <loc>http://lijundong.com/Centos7-install-nodejs-update/</loc>
     <lastmod>2016-08-20T16:55:24.806Z</lastmod>
     <data>
         <display>
@@ -877,7 +877,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/05/20/secure-copy/</loc>
+    <loc>http://lijundong.com/secure-copy/</loc>
     <lastmod>2016-08-20T16:49:54.552Z</lastmod>
     <data>
         <display>
@@ -899,7 +899,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/18/Tmux-common-comands-shortcuts/</loc>
+    <loc>http://lijundong.com/Tmux-common-comands-shortcuts/</loc>
     <lastmod>2016-08-19T14:01:55.410Z</lastmod>
     <data>
         <display>
@@ -921,7 +921,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/08/05/html-make-clock-select/</loc>
+    <loc>http://lijundong.com/html-make-clock-select/</loc>
     <lastmod>2016-08-05T08:21:38.852Z</lastmod>
     <data>
         <display>
@@ -943,7 +943,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/06/27/troubleyourself/</loc>
+    <loc>http://lijundong.com/troubleyourself/</loc>
     <lastmod>2016-06-27T12:29:03.272Z</lastmod>
     <data>
         <display>
@@ -961,7 +961,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/09/15/cycling-on-318/</loc>
+    <loc>http://lijundong.com/cycling-on-318/</loc>
     <lastmod>2016-06-07T14:20:38.216Z</lastmod>
     <data>
         <display>
@@ -983,7 +983,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/01/12/Kindle-content-manage/</loc>
+    <loc>http://lijundong.com/Kindle-content-manage/</loc>
     <lastmod>2016-06-07T14:09:25.843Z</lastmod>
     <data>
         <display>
@@ -1005,7 +1005,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/04/14/information-system-Wampserver/</loc>
+    <loc>http://lijundong.com/information-system-Wampserver/</loc>
     <lastmod>2016-06-07T14:09:16.398Z</lastmod>
     <data>
         <display>
@@ -1027,7 +1027,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/09/10/Hello%20World/</loc>
+    <loc>http://lijundong.com/Hello%20World/</loc>
     <lastmod>2016-06-07T14:08:04.961Z</lastmod>
     <data>
         <display>
@@ -1047,7 +1047,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/03/normal-flow/</loc>
+    <loc>http://lijundong.com/normal-flow/</loc>
     <lastmod>2016-06-07T14:03:55.604Z</lastmod>
     <data>
         <display>
@@ -1071,7 +1071,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/01/21/year-again/</loc>
+    <loc>http://lijundong.com/year-again/</loc>
     <lastmod>2016-06-07T14:03:20.035Z</lastmod>
     <data>
         <display>
@@ -1091,7 +1091,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2015/11/20/when-lixiaofeng-become-sky/</loc>
+    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
     <lastmod>2016-06-07T14:03:09.588Z</lastmod>
     <data>
         <display>
@@ -1113,7 +1113,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/03/27/just-do-good-thing/</loc>
+    <loc>http://lijundong.com/just-do-good-thing/</loc>
     <lastmod>2016-06-07T14:03:06.805Z</lastmod>
     <data>
         <display>
@@ -1133,7 +1133,7 @@
 
     
   <url>
-    <loc>http://lijundong.com/2016/04/15/information-system-PHP-Mysql/</loc>
+    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
     <lastmod>2016-06-07T13:47:03.370Z</lastmod>
     <data>
         <display>
