@@ -1031,6 +1031,21 @@ pre .javascript .function {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
+.post-footer .copyright {
+  font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  padding-left: 1em;
+  font-size: 14px;
+  border: 1px solid #84bc44;
+  border-radius: 1rem;
+}
+@media (max-width: 767px) {
+  .post-footer .copyright {
+    word-break: break-word;
+  }
+}
+.post-footer .copyright p {
+  margin-bottom: 10px;
+}
 .posts-expand {
   padding-top: 40px;
 }
@@ -1548,7 +1563,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #790e2b;
+  background: #0bff5c;
 }
 .links-of-blogroll {
   font-size: 13px;

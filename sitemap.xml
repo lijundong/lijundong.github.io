@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lijundong.com/hexo-blog-custom-log/</loc>
+    
+    <lastmod>2016-12-25T07:00:13.603Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/secure-copy/</loc>
+    
+    <lastmod>2016-12-25T02:33:42.431Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/404.html</loc>
+    
+    <lastmod>2016-12-25T02:28:13.428Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lijundong.com/deploy-hexo-blog-on-server/</loc>
     
     <lastmod>2016-12-23T12:12:01.730Z</lastmod>
@@ -275,13 +296,6 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/secure-copy/</loc>
-    
-    <lastmod>2016-08-20T16:49:54.552Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lijundong.com/Tmux-common-comands-shortcuts/</loc>
     
     <lastmod>2016-08-19T14:01:55.410Z</lastmod>
@@ -369,13 +383,6 @@
     <loc>http://lijundong.com/categories/index.html</loc>
     
     <lastmod>2016-03-18T03:05:25.900Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/404.html</loc>
-    
-    <lastmod>2015-12-20T12:49:04.380Z</lastmod>
     
   </url>
   
