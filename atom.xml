@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Leeon Notes</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://lijundong.com/"/>
+  <updated>2016-12-25T07:00:13.603Z</updated>
+  <id>http://lijundong.com/</id>
+  
+  <author>
+    <name>leeon</name>
+    <email>leeonfield@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo 自定义日志</title>
+    <link href="http://lijundong.com/hexo-blog-custom-log/"/>
+    <id>http://lijundong.com/hexo-blog-custom-log/</id>
+    <published>2016-12-25T06:23:11.000Z</published>
+    <updated>2016-12-25T07:00:13.603Z</updated>
+    
+    <content type="html"><![CDATA[<p>在这里记录下 Blog 基于 Hexo 和 Next 主题的一些自定义。</p>
+<ul>
+<li>自定义 url</li>
+<li>文末添加版权说明</li>
+<li>文末添加推荐文章列表</li>
+</ul>
+<a id="more"></a>
+<h3 id="自定义-url"><a href="#自定义-url" class="headerlink" title="自定义 url"></a>自定义 url</h3><p>关于 url 的格式，建议在博客刚上线的时候就确定好，因为多说评论以及访客数据都是和 url 绑定的，每一次换 url 都意味着之前的多说评论数据和访问数据都会清空，我的的数据已经被清空过两次了，第一次是把 url 从中文更换为 英文，第二次就是这次，我将 url 的格式从 <code>domain/year/month/title</code> 换成了 <code>domain/title</code>，更简洁，也更容易理解链接的内容。</p>
+<h4 id="更改方式"><a href="#更改方式" class="headerlink" title="更改方式"></a>更改方式</h4><p>在 Hexo 的配置文件 <code>_config.yml</code> 中<br>更改 <code>permalink:</code> 配置选项为 <code>permalink: :title/</code></p>
+<p>关于 Permalinks 更多参数 可以参考官方文档 <a href="https://hexo.io/zh-cn/docs/permalinks.html" target="_blank" rel="external">Permalinks(永久链接)</a></p>
+<h3 id="文末添加版权说明（Next-主题）"><a href="#文末添加版权说明（Next-主题）" class="headerlink" title="文末添加版权说明（Next  主题）"></a>文末添加版权说明（Next  主题）</h3><p>最近看后台数据的时候，发现一篇文章被 latex 社区收录了，挺高兴的，只是文章被修改了一些内容，于是想在每篇文末添加一个版权说明，方法很简单。</p>
+<h4 id="更改方式-1"><a href="#更改方式-1" class="headerlink" title="更改方式"></a>更改方式</h4><p>首先在 <code>/themes/layout/post.swig</code> 文件，修改 <code>&lt;footer class=&quot;post-footer&quot;&gt; &lt;/footer&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">&lt;footer class=&quot;post-footer&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &#123;# 添加版权信息 #&#125;</span><br><span class="line"></span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div class=&quot;copyright&quot; style=&quot;clear:both;&quot;&gt;</span><br><span class="line">           &lt;h3&gt;文档信息&lt;/h3&gt;</span><br><span class="line">           &lt;p&gt;&lt;span&gt;文章作者：&lt;/span&gt;&lt;a href=&quot;http://lijundong.com&quot; title=&quot;李俊冬的网络日志&quot;&gt;李俊冬&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">           &lt;p&gt;&lt;span&gt;发表时间：&lt;/span&gt;&#123;&#123; post.date.format(&quot;YYYY-M-D-HH:MM&quot;) &#125;&#125;&lt;/p&gt;</span><br><span class="line">           &lt;p&gt;&lt;span&gt;文章标题：&lt;/span&gt;&lt;a href=&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot;&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">           &lt;p&gt;&lt;span&gt;原文链接：&lt;/span&gt;&lt;a href=&quot;&#123;&#123; url_for(post.path) &#125;&#125;&quot; title=&quot;&#123;&#123; post.title &#125;&#125;&quot;&gt;&#123;&#123; post.permalink &#125;&#125;&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">           &lt;p&gt;&lt;span&gt;版权声明：&lt;/span&gt;&lt;i class=&quot;fa fa-creative-commons&quot;&gt;&lt;/i&gt; &lt;a rel=&quot;license&quot; href=&quot;https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh&quot; title=&quot;自由转载-非商用-非衍生-保持署名 (创意共享3.0许可证)&quot;&gt;自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">           &lt;p&gt;&lt;strong&gt;为方便溯源，避免陈旧错误知识的误导，转载请保留以上信息&lt;/strong&gt;&lt;/p&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">    &#123;# 文末的标签 #&#125;</span><br><span class="line"></span><br><span class="line">    &#123;% if post.tags and post.tags.length and not is_index %&#125;</span><br><span class="line">        &lt;div class=&quot;post-tags&quot;&gt;</span><br><span class="line">          &#123;% for tag in post.tags %&#125;</span><br><span class="line">            &lt;a href=&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel=&quot;tag&quot;&gt;#&#123;&#123; tag.name &#125;&#125;&lt;/a&gt;</span><br><span class="line">          &#123;% endfor %&#125;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">         &#123;# 使用 list_posts 添加了文章列表 #&#125;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;posts-recommend&quot;&gt;</span><br><span class="line">            &lt;h3&gt;更多文章&lt;/h3&gt;</span><br><span class="line">               &#123;&#123; list_posts() &#125;&#125;  </span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">    &#123;# 此处是前后文章导航，因为上面添加了推荐文章列表，我把这一块注释了 #&#125;</span><br><span class="line"></span><br><span class="line">    &#123;# &#123;% if not is_index and (post.prev or post.next) and not navlessPost %&#125;</span><br><span class="line">        &lt;div class=&quot;post-nav&quot;&gt;</span><br><span class="line">          &lt;div class=&quot;post-nav-next post-nav-item&quot;&gt;</span><br><span class="line">            &#123;% if post.next %&#125;</span><br><span class="line">              &lt;a href=&quot;&#123;&#123; url_for(post.next.path) &#125;&#125;&quot; rel=&quot;next&quot; title=&quot;&#123;&#123; post.next.title &#125;&#125;&quot;&gt;</span><br><span class="line">                &lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt; &#123;&#123; post.next.title &#125;&#125;</span><br><span class="line">              &lt;/a&gt;</span><br><span class="line">            &#123;% endif %&#125;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;post-nav-prev post-nav-item&quot;&gt;</span><br><span class="line">            &#123;% if post.prev %&#125;</span><br><span class="line">              &lt;a href=&quot;&#123;&#123; url_for(post.prev.path) &#125;&#125;&quot; rel=&quot;prev&quot; title=&quot;&#123;&#123; post.prev.title &#125;&#125;&quot;&gt;</span><br><span class="line">                &#123;&#123;post.prev.title&#125;&#125; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;</span><br><span class="line">              &lt;/a&gt;</span><br><span class="line">            &#123;% endif %&#125;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125; #&#125;</span><br><span class="line">  &#123;% set isLast = loop.index % page.per_page === 0 %&#125;</span><br><span class="line">  &#123;% if is_index and not isLast %&#125;</span><br><span class="line">    &lt;div class=&quot;post-eof&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/footer&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="文末添加推荐文章列表"><a href="#文末添加推荐文章列表" class="headerlink" title="文末添加推荐文章列表"></a>文末添加推荐文章列表</h3><p>我将文末的前后文章导航页去除，通过 <code>list_posts()</code> 方法添加了最近的文章列表</p>
+<p>具体代码如下，完整代码可参见上一条完整代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;posts-recommend&quot;&gt;</span><br><span class="line">    &lt;h3&gt;更多文章&lt;/h3&gt;</span><br><span class="line">    &#123;&#123; list_posts() &#125;&#125;  </span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>关于 <code>list_posts()</code> 的用法，更多用法可参照官方文档 <a href="https://hexo.io/zh-cn/docs/helpers.html#list-posts" target="_blank" rel="external">list_posts</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在这里记录下 Blog 基于 Hexo 和 Next 主题的一些自定义。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自定义 url&lt;/li&gt;
+&lt;li&gt;文末添加版权说明&lt;/li&gt;
+&lt;li&gt;文末添加推荐文章列表&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="hexo" scheme="http://lijundong.com/tags/hexo/"/>
+    
+      <category term="next" scheme="http://lijundong.com/tags/next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小记 - Hexo 部署到阿里云服务器</title>
+    <link href="http://lijundong.com/note-hexo-deploy-on-server/"/>
+    <id>http://lijundong.com/note-hexo-deploy-on-server/</id>
+    <published>2016-12-18T15:58:45.000Z</published>
+    <updated>2016-12-18T17:18:48.021Z</updated>
+    
+    <content type="html"><![CDATA[<p>前几天把 hexo blog 迁移到阿里云服务器，全程看别人的文章，每篇文章描述的方式不尽相同，加之软件环境的不同，再加之我的理解能力短板，中间走了好几次弯路，配完之后，对整体过程加深了理解，之后又重新看了 <code>git hook</code> 的文档，结合配置过程，这里做一次小记。<br><a id="more"></a></p>
+<blockquote>
+<p><strong>注：</strong></p>
+<ul>
+<li>因为是迁移，所以这篇笔记不会介绍 Hexo 相关用法。</li>
+<li>网上详细的教程非常多，这里细节不做详述，只会总结整体流程以及过程中遇到的坑</li>
+</ul>
+</blockquote>
+<p>之前使用 Hexo 部署静态博客到 Github 或者 coding，也没有细究实现原理，但是一直在折腾，后来看到了下面这张图，这是从 <code>hexo d -g</code> 命令一直到浏览器访问到博客页面的整个流程的架构图。<br>在部署之前看懂这张图，部署过程会十分流畅。</p>
+<p><img src="http://source.lijundong.com/16-12-19/68486025-file_1482077506840_3562.png" alt=""></p>
+<h3 id="流程架构"><a href="#流程架构" class="headerlink" title="流程架构"></a>流程架构</h3><ul>
+<li>Hexo 文件结构下，<code>\source</code> 存放所有 <code>markdown</code> 原文件，我们写的文章 存放在 <code>\source\_post</code> 目录下</li>
+<li><code>hexo generate</code> 命令将 <code>\source</code> 下的 <code>markdown</code> 文件编译为 <code>html</code> 文件存放到 <code>\public</code> 目录下，并且根据时间、tag、category 等生成了索引页面。</li>
+<li><code>hexo deploy</code> 命令将把 <code>\public</code> 目录下内容推到服务器。</li>
+<li>现在博文已经在服务器了，只不过是在仓库里，我们将内容 <code>checkout</code> 或者 <code>clone</code> 到某个可以通过 <code>nginx</code> 访问的目录下，例如 <code>\var\www</code>(如无 <code>www</code>，可以新建)，<strong>注意：不要放在用户文录下</strong></li>
+<li>通过 <code>nginx</code> 或者其他服务器，将静态站点暴露出去，到这里，所有的核心工作已经完成了</li>
+</ul>
+<h3 id="DIY"><a href="#DIY" class="headerlink" title="DIY"></a>DIY</h3><p>如果需要 DIY，可以分以下三步走</p>
+<ul>
+<li>搭建 Git 服务器：中英文链接在文末，可能需要花点时间</li>
+<li>编写 <code>post-receive</code> 脚本：中英文链接在文末，这一步，可以简单粗暴</li>
+<li>配置 <code>nginx</code>：配置 <code>nginx</code> 服务器，这个也很简单</li>
+</ul>
+<h3 id="仅供参考"><a href="#仅供参考" class="headerlink" title="仅供参考"></a>仅供参考</h3><p>关于 Git 服务器，可以参考 Git 官网文档，或者是廖雪峰先生的教程，做到正常推拉即可。</p>
+<p>关于 <code>git hooks</code>，昨天写的小记 <a href="http://lijundong.com/2016/12/16/git-hooks/">Git Hooks</a>，可以了解下<br>上面我说这一步可以简单粗暴，下面是我的服务器上的 <code>post-receive</code> 脚本，我把代码 从仓库直接 <code>clone</code> 到 <code>/var/www/hexo</code> 目录下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">unset GIT_DIR</span><br><span class="line">cd /var/www/hexo</span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<p>关于 <code>nginx</code> 配置</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">server</span>  &#123;</span><br><span class="line">    <span class="comment"># 指定端口</span></span><br><span class="line">    <span class="attribute">listen</span> <span class="number">80</span>;</span><br><span class="line">    <span class="comment"># 绑定域名</span></span><br><span class="line">    <span class="attribute">server_name</span> localhost www.lijundong.com lijundong.com;</span><br><span class="line">    <span class="attribute">access_log</span> /var/log/nginx/domain1.access.log;</span><br><span class="line">    <span class="comment"># 入口文件</span></span><br><span class="line">    <span class="attribute">index</span> index.html index.htm;</span><br><span class="line">    <span class="comment"># 博客路径</span></span><br><span class="line">    <span class="attribute">root</span>  /var/www/hexo;</span><br><span class="line">    <span class="attribute">error_page</span>   <span class="number">404</span>   /<span class="number">404</span>.html;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>教程虽好，且看且学习，知其然，更应知其所以然</p>
+<p>晚安！</p>
+<p>参考:</p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000005723321" target="_blank" rel="external">架构图</a></li>
+<li><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000" target="_blank" rel="external">搭建Git服务器 - 廖雪峰</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server" target="_blank" rel="external">Git on the Server - Setting Up the Server</a></li>
+<li><a href="https://github.com/geeeeeeeeek/git-recipes/wiki/5.4-Git%E9%92%A9%E5%AD%90%EF%BC%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BD%A0%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81" target="_blank" rel="external">5.4 Git钩子：自定义你的工作流</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" target="_blank" rel="external">8.3 Customizing Git - Git Hooks</a></li>
+<li><a href="http://lijundong.com/2016/12/16/git-hooks/">Git Hooks</a></li>
+<li><a href="http://lijundong.com/2016/10/12/nginx-conficure-domains-to-servers/">Nginx 配置多个Node服务的域名</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前几天把 hexo blog 迁移到阿里云服务器，全程看别人的文章，每篇文章描述的方式不尽相同，加之软件环境的不同，再加之我的理解能力短板，中间走了好几次弯路，配完之后，对整体过程加深了理解，之后又重新看了 &lt;code&gt;git hook&lt;/code&gt; 的文档，结合配置过程，这里做一次小记。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="问题解决" scheme="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+      <category term="服务器" scheme="http://lijundong.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="hexo" scheme="http://lijundong.com/tags/hexo/"/>
+    
+      <category term="阿里云" scheme="http://lijundong.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+      <category term="hook" scheme="http://lijundong.com/tags/hook/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Hooks</title>
+    <link href="http://lijundong.com/git-hooks/"/>
+    <id>http://lijundong.com/git-hooks/</id>
+    <published>2016-12-16T11:25:34.000Z</published>
+    <updated>2016-12-18T11:14:01.843Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>Git Hooks</code> 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。<br>之前迁移博客到阿里云，<code>Git Hooks</code> 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 <code>post-receive</code>，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。<br><a id="more"></a></p>
+<h3 id="安装-Hooks"><a href="#安装-Hooks" class="headerlink" title="安装 Hooks"></a>安装 Hooks</h3><p>多数情况下，所有的 hook 放在 <code>.git/hooks</code> 目录下，当我们执行 <code>git init</code> 时，Git 就会将一些示例脚本填充在 <code>.git/hooks</code> 目录下，这些示例脚本命名以 <code>.sample</code> 后缀，默认不执行，如果想执行这些脚本，可以重命名(去掉 <code>.sample</code> 后缀)，也可以自定义脚本，保存在 <code>.git/hooks</code> 目录下，<strong>并且给予脚本执行权限</strong>。</p>
+<p><strong>需要注意的是，Hook  不随项目的克隆而进行复制，也不受版本控制的影响。</strong></p>
+<p>Hook 根据使用场景可以分为 客户端(本地) Hooks 和服务端 Hooks。不同使用场景下，根据不同触发条件又分为若干类。</p>
+<h3 id="客户端-本地-Hook"><a href="#客户端-本地-Hook" class="headerlink" title="客户端(本地) Hook"></a>客户端(本地) Hook</h3><h4 id="pre-commit"><a href="#pre-commit" class="headerlink" title="pre-commit"></a>pre-commit</h4><p>在 <code>git commit</code> 命令之后，这个脚本会首先运行，用来检查提交的快照，检查有没有遗漏，或者检查一些自定义的选项(例如检查代码格式，检查空格等)，当脚本返回非 0 值时，则中断 <code>commit</code>。<br>你也可以通过 <code>git commit --no-verify</code> 命令提交来跳过这个过程。</p>
+<p>参数： 无</p>
+<h4 id="prepare-commit-msg"><a href="#prepare-commit-msg" class="headerlink" title="prepare-commit-msg"></a>prepare-commit-msg</h4><p>在 <code>commit</code> 过程中需要编辑 <code>commit message</code>，这个脚本会在默认 <code>commit message</code> 生成之后，在你看到编辑器之前运行，通过这个脚本可以修改默认的 <code>commit message</code>。</p>
+<p>参数：</p>
+<ul>
+<li>默认 <code>commit message</code> 文件路劲</li>
+<li>提交类型</li>
+<li>commit SHA-1(可选)</li>
+</ul>
+<h4 id="commit-msg"><a href="#commit-msg" class="headerlink" title="commit-msg"></a>commit-msg</h4><p>这个脚本可以用来检验用户编辑的 <code>commit message</code>。可以用来检查 <code>commit message</code> 是否合乎规范。</p>
+<p>参数：</p>
+<ul>
+<li>存放用户编写的 <code>commit message</code> 的临时文件的路劲</li>
+</ul>
+<h4 id="pre-rebase"><a href="#pre-rebase" class="headerlink" title="pre-rebase"></a>pre-rebase</h4><p>这个脚本会在 <code>git rebase</code> 命令之前运行，在返回非 0 值时，会中断操作。<br>你可以通过这个脚本来禁用 <code>rebase</code>，示例如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line"># disallow rebasing any commits</span><br><span class="line">echo &quot;pre-rebase: Rebasing is disallowed.&quot;</span><br><span class="line">exit 1</span><br></pre></td></tr></table></figure>
+<h3 id="服务端-Hook"><a href="#服务端-Hook" class="headerlink" title="服务端 Hook"></a>服务端 Hook</h3><p>服务端的 Hook 允许我们在 <code>git push</code> 的不同阶段进行操作。</p>
+<h4 id="pre-receive"><a href="#pre-receive" class="headerlink" title="pre-receive"></a>pre-receive</h4><p>客户端 push 过来的内容，必须通过这个脚本的检查来判断接受与否。</p>
+<h4 id="update"><a href="#update" class="headerlink" title="update"></a>update</h4><p>这个脚本在代码更新之前执行。<br><code>update</code> 和 <code>pre-receive</code> 很相似，不同的是，如果我们想把代码推到不同分支，那么 <code>pre-receive</code> 只会执行一次，而 <code>update</code> 在每个分支更新之前都会执行一次。</p>
+<h4 id="post-receive"><a href="#post-receive" class="headerlink" title="post-receive"></a>post-receive</h4><p><code>post-receive</code> 脚本在所有流程完成之后被触发，前几天迁移博客时才用到，服务器代码库合并了我的 <code>push</code> 后，通过 <code>post-receive</code> 脚本将仓库 <code>clone</code> 到我的博客目录下，以达到更新效果。</p>
+<p>参考:</p>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" target="_blank" rel="external">Customizing Git - Git Hooks</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;Git Hooks&lt;/code&gt; 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。&lt;br&gt;之前迁移博客到阿里云，&lt;code&gt;Git Hooks&lt;/code&gt; 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 &lt;code&gt;post-receive&lt;/code&gt;，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="git" scheme="http://lijundong.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试 - Hexo 部署到阿里云</title>
+    <link href="http://lijundong.com/deploy-hexo-blog-on-server/"/>
+    <id>http://lijundong.com/deploy-hexo-blog-on-server/</id>
+    <published>2016-12-13T18:55:57.000Z</published>
+    <updated>2016-12-23T12:12:01.730Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>测试 git push 之后 hook 触发没有</p>
+</blockquote>
+<p>Hexo 最开始部署在 Github，因为速度太慢，访问性太差，而且偶尔还被 DDOS，为了缩短加载时间，转到了 Coding 上，今天把它迁到了阿里云上。</p>
+<p>我是测试的分割线</p>
+<hr>
+<p>hook 生效，push 上去即可更新<br>生活又开始有希望起来</p>
+<a id="more"></a>
+<blockquote>
+<p>PS：Coding 正在变得越来越好，提供的服务也越来越强大，工程师八哥半夜还在回复 Bug，每一次更新都会带来惊喜。</p>
+</blockquote>
+<p>迁移到 Coding 之后，便捷提高了，只不过在给 <code>Coidng Page</code> 绑定自定义域名时出现了问题，绑定域名之后，通过自定义域名访问时，通过 <code>http</code> 方式，链接会被重置，必须手动 <code>https</code> 或者通过代理访问……这还怎么玩</p>
+<p>为了对比，我借了胜祥同学的二级域名绑定了一次，正常访问，只可能是域名的问题了</p>
+<p>问阿里云的工程师，得到的答复是服务器那边的问题，问 Coding 的工程师，他们也一头雾水，最后的结论是 <code>可能被墙了？</code></p>
+<p>买过域名之后一直没备案，后来被屏蔽了，备案之后屏蔽解除了，不知道这个问题跟那次屏蔽有无关联</p>
+<p>不想再被这样的问题困扰，自己动手，丰衣足食，思来想去还是直接放服务器上。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;测试 git push 之后 hook 触发没有&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hexo 最开始部署在 Github，因为速度太慢，访问性太差，而且偶尔还被 DDOS，为了缩短加载时间，转到了 Coding 上，今天把它迁到了阿里云上。&lt;/p&gt;
+&lt;p&gt;我是测试的分割线&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;hook 生效，push 上去即可更新&lt;br&gt;生活又开始有希望起来&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="问题解决" scheme="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+      <category term="服务器" scheme="http://lijundong.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="hexo" scheme="http://lijundong.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://lijundong.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SublimeText 配置 LaTeX 编辑器</title>
+    <link href="http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/"/>
+    <id>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</id>
+    <published>2016-11-23T13:15:40.000Z</published>
+    <updated>2016-11-24T06:43:56.761Z</updated>
+    
+    <content type="html"><![CDATA[<p>上一篇 <a href="http://jundong.coding.me/2016/11/17/novel-crawler-by-Nodejs/" target="_blank" rel="external">Node.js 实现简单小说爬虫</a>，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。<br>工欲善其事，必先利其器。这里笔记下 SublimeTeXt3 下用 TeXlive 配置 LaTeX 编辑环境。<br><a id="more"></a></p>
+<h3 id="系统-amp-软件-版本"><a href="#系统-amp-软件-版本" class="headerlink" title="系统 &amp; 软件 版本"></a>系统 &amp; 软件 版本</h3><ul>
+<li>windows 10</li>
+<li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text3</a></li>
+<li><a href="http://mirror.hust.edu.cn/CTAN/systems/texlive/Images/" target="_blank" rel="external">TeX Live 2016</a></li>
+</ul>
+<h3 id="关于-TeX、LaTeX、TeX-Live"><a href="#关于-TeX、LaTeX、TeX-Live" class="headerlink" title="关于 TeX、LaTeX、TeX Live"></a>关于 TeX、LaTeX、TeX Live</h3><h4 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h4><p><strong>专有名词，注意名词大小写</strong><br><strong>TeX：</strong>美国计算机教授高德纳 (Donald Ervin Knuth) 为了排版他的著作 『The Art of Computer Programming』(TAOCP) 编写的功能强大的排版软件。<br><strong>LaTeX：</strong>美国计算机科学家莱斯利·兰伯特为了准备他的著作 『The Great American Concurrency Book』基于 TeX 开发的宏，详见<a href="https://zh.wikipedia.org/wiki/LaTeX" target="_blank" rel="external">Wiki</a><br><strong>TeX Live：</strong>是由国际 TEX 用户组整理和发布的TEX软件发行套装，详见<a href="https://zh.wikipedia.org/wiki/TeX_Live" target="_blank" rel="external">wiki</a></p>
+<h4 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h4><h5 id="公式编辑"><a href="#公式编辑" class="headerlink" title="公式编辑"></a>公式编辑</h5><ul>
+<li>在线：<a href="https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn" target="_blank" rel="external">在线 LaTeX 公式编辑器</a></li>
+<li>Office套件：在 office 套件里，通过 <a href="http://www.dessci.com/en/products/mathtype/" target="_blank" rel="external">MathType</a> 可以很方便地编辑公式</li>
+<li>LaTeX：通过 LaTeX 语法输入公式</li>
+</ul>
+<h5 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h5><p>公式编辑只是 LaTeX 功能中的一项，排版才能体现出它的强大的功能，具体效果可以参见下面的 demo。<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/public/16-11-24/95505961.jpg" alt=""></p>
+<h3 id="配置-LaTeX-编辑器"><a href="#配置-LaTeX-编辑器" class="headerlink" title="配置 LaTeX 编辑器"></a>配置 LaTeX 编辑器</h3><p>使用 LaTeX 进行排版的过程即，<strong>编辑完 TeX 文件，通过 TeX Live 将 LaTeX 文件编译成 PDF 文件</strong><br>为了操作方便，通过配置 Sublime 的插件 <code>LaTeXTools</code>，可快捷调用(快捷键：<code>Ctrl + B</code>) Tex Live 来编译文件，高效率编辑。 </p>
+<p><strong>可选：</strong>高效到底，通过配置 sumatraPDF ，可在 PDF 生成后 自动在 sumatraPDF 中打开，实现实时预览的效果。</p>
+<h4 id="安装-TeXlive"><a href="#安装-TeXlive" class="headerlink" title="安装 TeXlive"></a>安装 TeXlive</h4><p><strong>ISO 镜像下载地址：</strong><a href="http://mirror.hust.edu.cn/CTAN/systems/texlive/Images/" target="_blank" rel="external">TeX Live 2016</a><br>下载完成后，加载镜像，进入文件点击 <code>install-tl-windows.bat</code>(直接安装) 或者 <code>install-tl-advanced.bat</code>(提供可选项) 开始安装。</p>
+<p>等待中……</p>
+<p>安装完成后，还需要一步，<strong>将 LaTeX 执行文件的路径加入系统环境变量</strong><br>我在本机的路径为 <code>C:\texlive\2016\bin\win32</code>，加入系统环境变量后，可通过在 命令提示符(CMD) 执行 <code>latex</code> 命令检查，<strong>注：可能需要重启电脑</strong>。</p>
+<h4 id="安装-sumatraPDF-可选"><a href="#安装-sumatraPDF-可选" class="headerlink" title="安装 sumatraPDF (可选)"></a>安装 sumatraPDF (可选)</h4><p>关于 Sumatra PDF：Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</p>
+<p>下载地址：<a href="http://www.sumatrapdfreader.org/download-free-pdf-viewer.html" target="_blank" rel="external">Sumatra PDF </a></p>
+<p>添加路径到系统环境变量：同 TeX Live 一样，为了能在 CMD 中通过命令执行程序，需要将 Sumatra PDF 执行文件的路径添加到系统环境变量，通过在 CMD 中执行命令检测配置是否成功。<strong>注：可能需要重启电脑</strong></p>
+<h4 id="Sublime-安装-LaTeXtools-插件"><a href="#Sublime-安装-LaTeXtools-插件" class="headerlink" title="Sublime 安装 LaTeXtools 插件"></a>Sublime 安装 LaTeXtools 插件</h4><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p>如果对于 Sublime Text 不熟悉的同学，可以参见 <a href="http://jundong.coding.me/2016/03/17/SublimeText-extension-recommand/" target="_blank" rel="external">SublimeText 插件推荐</a><br>通过 Package Control 安装插件 <code>LaTeXTools</code></p>
+<h5 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h5><p>配置文件路径：<br><code>Preference &gt; Package Setting &gt; LaTeXTools &gt; Setting-User</code></p>
+<p>配置以下参数<br><code>texpath</code>：TeX Live 可执行文件的路径(即添加到环境变量中的路径)<br><code>distro</code>：修改为 <code>texlive</code><br><code>sumtra</code>：sumatraPDF 可执行文件的路径(即添加到环境变量中的路径)</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"windows"</span>: &#123;</span><br><span class="line">    <span class="string">"texpath"</span> : <span class="string">"C:\\texlive\\2016\\bin\\win32"</span>,</span><br><span class="line">    <span class="string">"distro"</span> : <span class="string">"texlive"</span>,</span><br><span class="line">    <span class="string">"sumatra"</span>: <span class="string">"C:\\Program Files\\SumatraPDF"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="配置-sumatraPDF-反向搜索"><a href="#配置-sumatraPDF-反向搜索" class="headerlink" title="配置 sumatraPDF 反向搜索"></a>配置 sumatraPDF 反向搜索</h5><p>路径为 SublimeText 的可执行文件路劲，如下示例<br><code>sumatrapdf.exe -inverse-search &quot;\&quot;C:\Program Files\Sublime Text 3\sublime_text.exe\&quot; \&quot;%f:%l\&quot;&quot;</code></p>
+<h3 id="LaTeX-上手"><a href="#LaTeX-上手" class="headerlink" title="LaTeX 上手"></a>LaTeX 上手</h3><p>所有配置都完成了，下面可以测试成果了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\title&#123;SublimeText 配置 LaTeX 编辑器&#125;</span><br><span class="line">\author&#123;Leeon&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line">\usepackage&#123;graphicx&#125;</span><br><span class="line">\usepackage&#123;geometry&#125;</span><br><span class="line">\geometry&#123;papersize=&#123;21cm,29.7cm&#125;&#125;</span><br><span class="line">\geometry&#123;left=2.5cm,right=2.5cm,top=3cm,bottom=3cm&#125;</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line">\section&#123;系统 \&amp; 软件 版本&#125;</span><br><span class="line">\begin&#123;center&#125;</span><br><span class="line">\includegraphics[width = .4\textwidth]&#123;boat.jpg&#125;</span><br><span class="line">\end&#123;center&#125;</span><br><span class="line">\section&#123;名词解释&#125;</span><br><span class="line">专有名词，注意名词大小写</span><br><span class="line">TeX：美国计算机教授高德纳 (Donald Ervin Knuth) 为了排版他的著作 『The Art of Computer Programming』(TAOCP) 编写的功能强大的排版软件。</span><br><span class="line">LaTeX：美国计算机科学家莱斯利·兰伯特为了准备他的著作 『The Great American Concurrency Book』基于 TeX 开发的宏，详见Wiki</span><br><span class="line">TeX Live：是由国际 TEX 用户组整理和发布的TEX软件发行套装，详见wiki</span><br><span class="line">\section&#123;使用场景&#125;</span><br><span class="line">\subsection&#123;公式编辑&#125;</span><br><span class="line">\subsection&#123;排版&#125;</span><br><span class="line">\section&#123;配置 LaTeX 编辑器&#125;</span><br><span class="line">\subsection&#123;安装 TeXlive&#125;</span><br><span class="line">\subsection&#123;安装 sumatraPDF (可选)&#125;</span><br><span class="line">\subsection&#123;Sublime 安装 LaTeXtools 插件&#125;</span><br><span class="line">\subsubsection&#123;安装&#125;</span><br><span class="line">\subsubsection&#123;配置&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure></p>
+<p>编译效果：</p>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/public/16-11-24/95505961.jpg" alt=""></p>
+<hr>
+<p>知道 LaTeX 是大一高数课，林军老师的 PPT 的公式都是用 MathType 编辑，用过一段时间，高数结课后没再接触，之后在王垠的<a href="http://www.yinwang.org/blog-cn/2014/01/04/authority" target="_blank" rel="external">博客</a>里，看到他提到一些关于 TeX 的观点，最后却只记得他拿了 Donald Knuth 的支票，觉得此人厉害。再次和 TeX 擦肩而过……<br>还好这次花了时间去了解，让我看到一个新的维度世界，感觉很开心</p>
+<p>Better late than never</p>
+<hr>
+<p><em>参考：</em></p>
+<ul>
+<li><a href="https://th0.me/1737.html" target="_blank" rel="external">TeXLive + Sublime TeXt 3 + LaTeXTools 环境配置</a></li>
+<li><a href="http://liam0205.me/2014/09/08/LaTeX-introduction/" target="_blank" rel="external">一份其实很短的 LaTeX 入门文档</a></li>
+<li><a href="http://attach3.bdwm.net/attach/boards/MathTools/M.1364651898.A/TeX_intro_talk.pdf" target="_blank" rel="external">LaTeX 入门</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;上一篇 &lt;a href=&quot;http://jundong.coding.me/2016/11/17/novel-crawler-by-Nodejs/&quot;&gt;Node.js 实现简单小说爬虫&lt;/a&gt;，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。&lt;br&gt;工欲善其事，必先利其器。这里笔记下 SublimeTeXt3 下用 TeXlive 配置 LaTeX 编辑环境。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="LaTeX" scheme="http://lijundong.com/tags/LaTeX/"/>
+    
+      <category term="sublime" scheme="http://lijundong.com/tags/sublime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Node.js 实现简单小说爬虫</title>
+    <link href="http://lijundong.com/novel-crawler-by-Nodejs/"/>
+    <id>http://lijundong.com/novel-crawler-by-Nodejs/</id>
+    <published>2016-11-17T14:17:32.000Z</published>
+    <updated>2016-11-18T01:55:17.751Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近因为剧荒，老大追了爱奇艺的一部网剧，由丁墨的同名小说《美人为馅》改编，目前已经放出两季，虽然整部剧槽点满满，但是老大看得不亦乐乎，并且在看完第二季之后跟我要小说资源，直接要奔原著去看结局……<br>随手搜了下，都是在线资源，下载的话需要登录，注册登录好麻烦，写个爬虫玩玩也好，于是动手用 node 写了一个，这里做下笔记<br><a id="more"></a></p>
+<h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><ul>
+<li>获取 URLs 列表(请求资源 <code>request</code> 模块)</li>
+<li>根据 URLs 列表获取相关页面源码(可能遇到页面编码问题，<code>iconv-lite</code> 模块)</li>
+<li>源码解析，获取小说信息( <code>cheerio</code> 模块)</li>
+<li>保存小说信息到 Markdown 文件，并且加适当修饰以及章节信息(写文件 <code>fs</code>、同步请求资源 <code>sync-request</code> 模块)</li>
+<li>Markdown 转 PDF (使用 Pandoc 或者 Chrome 的打印功能)</li>
+</ul>
+<h3 id="获取-URLs"><a href="#获取-URLs" class="headerlink" title="获取 URLs"></a>获取 URLs</h3><p>根据小说的导航页，获取小说所有章节的 URL，并且以 JSON 数组的方式存储。</p>
+<ul>
+<li>首选通过 <code>http.get()</code> 方法获取页面源码</li>
+<li>获取到源码，打印发现中文乱码，查看发现 <code>charset = &#39;gbk&#39;</code>，需要进行转码</li>
+<li>使用 <code>iconv-lite</code> 模块进行转码，中文显示正常后开始解析源码，获取需要的 URL，为了更方便地解析，需要引进 <code>cheerio</code> 模块，<code>cheerio</code> 可以理解为运行在后台的 jQuery，用法与 jQuery 也十分相似，熟悉 jQuery 的同学可以很快的上手</li>
+<li>将源码加载进 <code>cheerio</code>，分析了源码后得知所有章节信息都存于被 <code>div</code> 包裹的 <code>a</code> 标签中，通过 <code>cheerio</code> 取出符合条件的 <code>a</code> 标签组，进行遍历，获取章节的 title 和 URL，保存为对象，存进数组，(<strong>因为链接中存储的  URL 不完整，所以存储时需要补齐</strong>)</li>
+<li>将对象数组序列化，写进 <code>list.json</code> 文件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>)</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>)</span><br><span class="line"><span class="keyword">var</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>)</span><br><span class="line"><span class="keyword">var</span> iconv = <span class="built_in">require</span>(<span class="string">"iconv-lite"</span>)</span><br><span class="line"><span class="keyword">var</span> url = <span class="string">'http://www.17fa.com/files/article/html/90/90747/index.html'</span></span><br><span class="line">http.get(url, <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;  <span class="comment">//资源请求</span></span><br><span class="line">    <span class="keyword">var</span> chunks = []</span><br><span class="line">    res.on(<span class="string">'data'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">chunk</span>) </span>&#123;</span><br><span class="line">        chunks.push(chunk)</span><br><span class="line">    &#125;)</span><br><span class="line">    res.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> html = iconv.decode(Buffer.concat(chunks), <span class="string">'gb2312'</span>) <span class="comment">//转码操作</span></span><br><span class="line">        <span class="keyword">var</span> $ = cheerio.load(html, &#123;</span><br><span class="line">            decodeEntities: <span class="literal">false</span></span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="keyword">var</span> content = $(<span class="string">"tbody"</span>)</span><br><span class="line">        <span class="keyword">var</span> links = []</span><br><span class="line">        $(<span class="string">'div'</span>).children(<span class="string">'a'</span>).each(<span class="function"><span class="keyword">function</span>(<span class="params">i, elem</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> link = <span class="keyword">new</span> <span class="built_in">Object</span>()</span><br><span class="line">            link.title = $(<span class="keyword">this</span>).text()</span><br><span class="line">            link.link = <span class="string">'http://www.17fa.com/files/article/html/90/90747/'</span> + $(<span class="keyword">this</span>).attr(<span class="string">'href'</span>) <span class="comment">//补齐 URL 信息</span></span><br><span class="line">            <span class="keyword">if</span> (i &gt; <span class="number">5</span>) &#123;</span><br><span class="line">                links.push(link)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">        fs.writeFile(<span class="string">"list.json"</span>, <span class="built_in">JSON</span>.stringify(links), <span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (!err) &#123;</span><br><span class="line">                <span class="built_in">console</span>.log(<span class="string">"写文件成功"</span>)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"网页访问出错"</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>获取的列表示例</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[&#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"3 法医司白"</span>,</span><br><span class="line">    <span class="attr">"link"</span>: <span class="string">"http://www.17fa.com/files/article/html/90/90747/16548771.html"</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"4 第1个梦 "</span>,</span><br><span class="line">    <span class="attr">"link"</span>: <span class="string">"http://www.17fa.com/files/article/html/90/90747/16548772.html"</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"5 刑警韩沉 "</span>,</span><br><span class="line">    <span class="attr">"link"</span>: <span class="string">"http://www.17fa.com/files/article/html/90/90747/16548773.html"</span></span><br><span class="line">&#125;, &#123;</span><br><span class="line">    <span class="attr">"title"</span>: <span class="string">"6 最初之战"</span>,</span><br><span class="line">    <span class="attr">"link"</span>: <span class="string">"http://www.17fa.com/files/article/html/90/90747/16548774.html "</span></span><br><span class="line">&#125;]</span><br></pre></td></tr></table></figure>
+<h3 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h3><p>有了 URLs 列表，接下来的工作就很机械了，遍历 URLs 列表请求资源，获取源码，解析源码，获取小说，写文件，<strong>但是</strong>，因为最终将所有的章节保存入一个文件，要保证章节的顺序，因此写文件需要 <strong>同步操作</strong>，实际上，我在编码的时候所有的操作都改成了同步方式</p>
+<h4 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h4><p>通过解析读取的 <code>list.json</code> 文件，获取到 URLs 列表，遍历列表获取资源，因为需要确保章节的顺序，所以这里引进 <code>sync-request</code> 模块进行同步 request 请求资源，请求资源后照例转码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>)</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>)</span><br><span class="line"><span class="keyword">var</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>)</span><br><span class="line"><span class="keyword">var</span> iconv = <span class="built_in">require</span>(<span class="string">"iconv-lite"</span>)</span><br><span class="line"><span class="keyword">var</span> request = <span class="built_in">require</span>(<span class="string">'sync-request'</span>)</span><br><span class="line"><span class="keyword">var</span> urlList = <span class="built_in">JSON</span>.parse(fs.readFileSync(<span class="string">'list.json'</span>, <span class="string">'utf8'</span>))</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getContent</span>(<span class="params">chapter</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> res = request(<span class="string">'GET'</span>,chapter.link)</span><br><span class="line">    <span class="keyword">var</span> html = iconv.decode(res.body, <span class="string">'gb2312'</span>) <span class="comment">//获取源码</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; urlList.length; i++) &#123;</span><br><span class="line">    getContent(urlList[i])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="解析源码，获取小说"><a href="#解析源码，获取小说" class="headerlink" title="解析源码，获取小说"></a>解析源码，获取小说</h4><p>还是通过 <code>cheerio</code> 模块获取小说内容，避免影响观感，写操作之前去除内容中的的 html 标签<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getContent</span>(<span class="params">chapter</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> res = request(<span class="string">'GET'</span>,chapter.link)</span><br><span class="line">    <span class="keyword">var</span> html = iconv.decode(res.body, <span class="string">'gb2312'</span>)</span><br><span class="line">    <span class="keyword">var</span> $ = cheerio.load(html, &#123;</span><br><span class="line">        decodeEntities: <span class="literal">false</span></span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">var</span> content = ($(<span class="string">"div#r1c"</span>).text()).replace(<span class="regexp">/\&amp;nbsp;/g</span>, <span class="string">''</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="保存小说"><a href="#保存小说" class="headerlink" title="保存小说"></a>保存小说</h4><p>写操作也需要同步操作，因此使用了同步写函数 <code>fs.writeFileSync()</code> 和 同步添加函数 <code>fs.appendFileSync()</code>，第一次写使用写函数，之后的内容都是进行 append 操作，<strong>为了改善阅读体验，每个章节前添加标题</strong><br><strong>也可以在内容前添加 拍 [TOC]，作为导航链接</strong></p>
+<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/public/16-11-18/1946587.jpg" style="border-radius: 0.5rem;border:0;"></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>)</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">"fs"</span>)</span><br><span class="line"><span class="keyword">var</span> cheerio = <span class="built_in">require</span>(<span class="string">"cheerio"</span>)</span><br><span class="line"><span class="keyword">var</span> iconv = <span class="built_in">require</span>(<span class="string">"iconv-lite"</span>)</span><br><span class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>)</span><br><span class="line"><span class="keyword">var</span> urlList = <span class="built_in">JSON</span>.parse(fs.readFileSync(<span class="string">'list.json'</span>, <span class="string">'utf8'</span>))</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getContent</span>(<span class="params">chapter</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(chapter.link)</span><br><span class="line">    http.get(chapter.link, <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> chunks = []</span><br><span class="line">        res.on(<span class="string">'data'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">chunk</span>) </span>&#123;</span><br><span class="line">            chunks.push(chunk)</span><br><span class="line">        &#125;)</span><br><span class="line">        res.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> html = iconv.decode(Buffer.concat(chunks), <span class="string">'gb2312'</span>)</span><br><span class="line">            <span class="keyword">var</span> $ = cheerio.load(html, &#123;</span><br><span class="line">                decodeEntities: <span class="literal">false</span></span><br><span class="line">            &#125;)</span><br><span class="line">            <span class="keyword">var</span> content = ($(<span class="string">"div#r1c"</span>).text()).replace(<span class="regexp">/\&amp;nbsp;/g</span>, <span class="string">''</span>)</span><br><span class="line">            <span class="keyword">if</span> (fs.existsSync(<span class="string">'美人为馅.md'</span>)) &#123;</span><br><span class="line">                fs.appendFileSync(<span class="string">'美人为馅.md'</span>, <span class="string">'### '</span> + chapter.title)</span><br><span class="line">                fs.appendFileSync(<span class="string">'美人为馅.md'</span>, content)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                fs.writeFileSync(<span class="string">'美人为馅.md'</span>, <span class="string">'### '</span> + chapter.title)</span><br><span class="line">                fs.appendFileSync(<span class="string">'美人为馅.md'</span>, content)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"爬取"</span> + chapter.link + <span class="string">"链接出错！"</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; urlList.length; i++) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(urlList[i])</span><br><span class="line">    getContent(urlList[i])</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Markdown-转-PDF"><a href="#Markdown-转-PDF" class="headerlink" title="Markdown 转 PDF"></a>Markdown 转 PDF</h3><p>我将小说保存在 Markdown 文件中，为了提升阅读体验，可以将 Markdown 文件转换成 PDF 文件，目前我较为喜欢的两种方式，通过 Chrome 的打印功能 以及 pandoc 转换</p>
+<h4 id="Chrome-打印"><a href="#Chrome-打印" class="headerlink" title="Chrome 打印"></a>Chrome 打印</h4><p>SublimeText 有个插件 <code>markdown preview</code> ，可通过 <code>Alt + m</code> 快捷键在 Chrome 中预览 Markdown，在 Chrome 页面中右键，选择打印，调整好参数后，选择另存为 PDF，简单，粗暴，深得我心<br><strong>打印效果：</strong><br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/public/16-11-18/97144351.jpg" alt=""></p>
+<h4 id="pandoc-转换"><a href="#pandoc-转换" class="headerlink" title="pandoc 转换"></a>pandoc 转换</h4><p>pandoc 是十分强大的文件格式转换工具，可以将 Markdown 文件转换成多种格式，今晚在 windows10 下折腾了半天，始终检索不到 pdflatex，关于 pandoc，后面会专门写一篇总结。 </p>
+<p>PDF 已经发给老大了，现在正在看</p>
+<h3 id="关于python、node、爬虫"><a href="#关于python、node、爬虫" class="headerlink" title="关于python、node、爬虫"></a>关于python、node、爬虫</h3><p>在之前很长的一段时间里，很想用 Python，很想写爬虫，更想用 Python 写爬虫，甚至成为了心里的一块执念，随着接触的知识更全面，执念也逐渐淡去，少了很多“想”，遇事想着多去动手，实践出真知。</p>
+<hr>
+<p><em>talk is cheap, show me your code</em></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近因为剧荒，老大追了爱奇艺的一部网剧，由丁墨的同名小说《美人为馅》改编，目前已经放出两季，虽然整部剧槽点满满，但是老大看得不亦乐乎，并且在看完第二季之后跟我要小说资源，直接要奔原著去看结局……&lt;br&gt;随手搜了下，都是在线资源，下载的话需要登录，注册登录好麻烦，写个爬虫玩玩也好，于是动手用 node 写了一个，这里做下笔记&lt;br&gt;
+    
+    </summary>
+    
+      <category term="node" scheme="http://lijundong.com/categories/node/"/>
+    
+    
+      <category term="node" scheme="http://lijundong.com/tags/node/"/>
+    
+      <category term="爬虫" scheme="http://lijundong.com/tags/%E7%88%AC%E8%99%AB/"/>
+    
+      <category term="小说" scheme="http://lijundong.com/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端开发自动化之 Gulp</title>
+    <link href="http://lijundong.com/develop-automatic-gulp-set/"/>
+    <id>http://lijundong.com/develop-automatic-gulp-set/</id>
+    <published>2016-10-29T07:05:36.000Z</published>
+    <updated>2016-10-29T09:03:46.197Z</updated>
+    
+    <content type="html"><![CDATA[<p>越来越意识到开发的规范化的重要性，以及自动化带来的高效，前端开发环境自动化构建的技能是必须要 get 的，于是最近用了一个 demo 完整的跑了一遍 Gulp 的前端开发自动化，体验很棒，这里记录下。<br>努力向规范看齐，向大牛看齐，多去了解，多去接触，视野开阔才能看到更远的风景，会有更多的可能。<br><a id="more"></a></p>
+<h3 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h3><p>技术的进击的过程相似于打怪升级买装备，初级拿把小米步枪就可以制霸方圆，升级之后遇到高手才发现没几把 AK 都不好意思跟人打招呼，再升级之后，发现二营长的意大利炮还是要有的，哈哈。<br>学习前端以来都是自己一个人折腾，学的不系统，做的项目也都是小打小闹，一直没接触到自动化，第一次看介绍 Grunt 的文章时，因为应用水平太低，反复看了三遍才稍微理解开发环境自动化，但是一直没机会应用，这次做个笔记先，关于使用 grunt、gulp还是 webpack，我的观点是，你在纠结的时候，我已经开始上代码了……</p>
+<h3 id="文件目录结构"><a href="#文件目录结构" class="headerlink" title="文件目录结构"></a>文件目录结构</h3><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">|-/dist</span></span><br><span class="line"><span class="string">|-/src</span></span><br><span class="line"><span class="string">|--`css</span></span><br><span class="line"><span class="string">|--`images</span></span><br><span class="line"><span class="string">|--`js</span></span><br><span class="line"><span class="string">|--`less</span></span><br><span class="line"><span class="string">|-gulpfile.js</span></span><br><span class="line"><span class="string">|-package.json</span></span><br></pre></td></tr></table></figure>
+<h3 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h3><p>技术选型的时候，不求最新最炫，我考虑的首要因素是合适，之所以选择 gulp，首先是上手较 grunt 简单，而且插件已经很丰富了，而且目前我应用的场景没必要使用 webpack。<br>Gulp 以及所用到的插件的安装都是通过 npm 。</p>
+<h3 id="gulpfile-js-配置"><a href="#gulpfile-js-配置" class="headerlink" title="gulpfile.js 配置"></a>gulpfile.js 配置</h3><p>类似于 package.json，gulpfile.js 是gulp的配置文件，在文件中引入插件，以及自定义指令。</p>
+<h4 id="gulp-插件"><a href="#gulp-插件" class="headerlink" title="gulp 插件"></a>gulp 插件</h4><p>gulp 丰富的插件可以满足目前开发环境中遇到的大部分需求，我这里列了几个插件，只是目前需要的，有新需求时再补充，如果你想找插件，直接去 <a href="http://npmjs.com/" target="_blank" rel="external">npm 官网</a><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">"gulp"</span>)</span><br><span class="line"><span class="comment">// 编译 less</span></span><br><span class="line"><span class="keyword">var</span> less = <span class="built_in">require</span>(<span class="string">"gulp-less"</span>)</span><br><span class="line"><span class="comment">// 压缩 css 代码</span></span><br><span class="line"><span class="keyword">var</span> minifycss = <span class="built_in">require</span>(<span class="string">"gulp-clean-css"</span>)</span><br><span class="line"><span class="comment">// 压缩 js 代码</span></span><br><span class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">"gulp-uglify"</span>)</span><br><span class="line"><span class="comment">// 合并文件</span></span><br><span class="line"><span class="keyword">var</span> concat = <span class="built_in">require</span>(<span class="string">"gulp-concat"</span>)</span><br><span class="line"><span class="comment">// 神器，浏览器自动刷新</span></span><br><span class="line"><span class="keyword">var</span> browserSync = <span class="built_in">require</span>(<span class="string">"browser-sync"</span>).create()</span><br><span class="line"><span class="keyword">var</span> reload = browserSync.reload;</span><br></pre></td></tr></table></figure></p>
+<h4 id="配置开发环境-dev"><a href="#配置开发环境-dev" class="headerlink" title="配置开发环境  dev"></a>配置开发环境  dev</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// css:dev 命令 将 /src 中的 css 移动到 /dist 并刷新页面</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'css:dev'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/css/*.css'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/css'</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(reload(&#123;</span><br><span class="line">            <span class="attribute">stream</span>: true</span><br><span class="line">        &#125;))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// less:dev 命令 编译 less，移动到 /dist 并刷新页面</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'less:dev'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/less/*.less'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(less())</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/css'</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(reload(&#123;</span><br><span class="line">            <span class="attribute">stream</span>: true</span><br><span class="line">        &#125;))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// js:dev 命令 移动 js 并刷新页面</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'js:dev'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/js/*.js'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/js'</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(reload(&#123;</span><br><span class="line">            <span class="attribute">stream</span>: true</span><br><span class="line">        &#125;))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// dev 命令，执行 js:dev less:dev css:dev 并启动 browserSync 监听 /src 下的 js、less、css代码</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'dev'</span>, [<span class="string">'js:dev'</span>, <span class="string">'less:dev'</span>, <span class="string">'css:dev'</span>], function() &#123;</span><br><span class="line">    <span class="selector-tag">browserSync</span><span class="selector-class">.init</span>(&#123;</span><br><span class="line">        <span class="attribute">server</span>: &#123;</span><br><span class="line">            <span class="attribute">baseDir</span>: <span class="string">'/'</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attribute">notify</span>: false</span><br><span class="line">    &#125;)</span><br><span class="line">    gulp<span class="selector-class">.watch</span>(<span class="string">'src/js/*.js'</span>, [<span class="string">'js:dev'</span>])</span><br><span class="line">    <span class="selector-tag">gulp</span><span class="selector-class">.watch</span>(<span class="string">'src/less/*.less'</span>, [<span class="string">'less:dev'</span>])</span><br><span class="line">    <span class="selector-tag">gulp</span><span class="selector-class">.watch</span>(<span class="string">'src/css/*.css'</span>, [<span class="string">'css:dev'</span>])</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="打包配置"><a href="#打包配置" class="headerlink" title="打包配置"></a>打包配置</h4><p>打包上线时，可以将多个文件压缩(模板、css、css)、合并(css、js)，减少请求</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// css 压缩合并</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'css'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/css/*.css'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(autoprefixer())</span><br><span class="line">        <span class="selector-class">.pipe</span>(minifycss())</span><br><span class="line">        <span class="selector-class">.pipe</span>(concat(<span class="string">"all.min.css"</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/css'</span>))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// less 编译、压缩</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'less'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/less/*.less'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(less())</span><br><span class="line">        <span class="selector-class">.pipe</span>(minifycss())</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/css'</span>))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// js 压缩 合并</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'js'</span>, function() &#123;</span><br><span class="line">    return gulp<span class="selector-class">.src</span>(<span class="string">'src/js/*.js'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(uglify())</span><br><span class="line">        <span class="selector-class">.pipe</span>(concat(<span class="string">"all.min.js"</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/js'</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(uglify())</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 一键打包</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'build'</span>, [<span class="string">'css'</span>, <span class="string">'less'</span>, <span class="string">'js'</span>])</span><br></pre></td></tr></table></figure>
+<h3 id="开发流程"><a href="#开发流程" class="headerlink" title="开发流程"></a>开发流程</h3><p><code>gulp dev</code> <strong>开发环境</strong>，gulp 监听 /src 下的修改，更新数据，刷新浏览器，查看预览<br>功能开发结束，<strong>打包</strong><br><code>gulp build</code> 打包，编译，压缩文件<br><strong>上线</strong></p>
+<p>参考:</p>
+<ul>
+<li><a href="http://www.jianshu.com/p/cc1cb9a5650c" target="_blank" rel="external">入门：十分钟自动化构建</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;越来越意识到开发的规范化的重要性，以及自动化带来的高效，前端开发环境自动化构建的技能是必须要 get 的，于是最近用了一个 demo 完整的跑了一遍 Gulp 的前端开发自动化，体验很棒，这里记录下。&lt;br&gt;努力向规范看齐，向大牛看齐，多去了解，多去接触，视野开阔才能看到更远的风景，会有更多的可能。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://lijundong.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="gulp" scheme="http://lijundong.com/tags/gulp/"/>
+    
+      <category term="前端开发" scheme="http://lijundong.com/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决 Google 重定向，体验 Google 本味</title>
+    <link href="http://lijundong.com/google-no-country-redirect-disabled/"/>
+    <id>http://lijundong.com/google-no-country-redirect-disabled/</id>
+    <published>2016-10-20T13:30:19.000Z</published>
+    <updated>2016-11-17T14:22:28.449Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于不可抗力的缘故，每过一段时间，Google 就会重新被拿出来说一次，上一次说的是入门之法，关于 VPN 和 Shadowsocks 的一些很基础的东西。<br>最近小飞机换了更快的香港的服务器，体验非常棒，但是在使用 Google 时，Google 为了提供更好的本地搜索体验，<code>google.com</code> 会自动重定向到 <code>google.com.hk</code> ，可惜这些体验只有身在香港的服务器才能体验，而身在天朝的我还需要去考虑 <code>google country redirect disable</code>。<br><a id="more"></a><br>想要体验原汁原味的 Google(google.com)，下面的方案是我用过的较方便的方案。<br><strong>欢迎更正及补充</strong></p>
+<h3 id="Chrome-扩展"><a href="#Chrome-扩展" class="headerlink" title="Chrome 扩展"></a>Chrome 扩展</h3><p>Chrone 商店有一款禁止重定向的扩展 <a href="https://chrome.google.com/webstore/detail/nocountryredirect-ncr/ciboebddidackjicoeoiigdnbmchkdll?hl=en" target="_blank" rel="external">NoCountryRedirect (NCR)</a><br>这款插件是将重定向后的 <code>google.com.hk</code> 再重定向到 <code>google.com</code>，虽然有效，但是多次重定向导致页面相应变慢，体验不太好，装完体验两分钟就卸了<br>优点：安装方便<br>缺点：导致 Google 访问速度变得很慢</p>
+<h3 id="手动-google-com-ncr"><a href="#手动-google-com-ncr" class="headerlink" title="手动 google.com/ncr"></a>手动 google.com/ncr</h3><p>可以通过手动 ncr(no country redirect) 来强制禁止重定向，我将这个 url 设置了书签。</p>
+<h3 id="设置默认搜索引擎"><a href="#设置默认搜索引擎" class="headerlink" title="设置默认搜索引擎"></a>设置默认搜索引擎</h3><p>Chrome –&gt; 设置 -&gt; 搜索 -&gt; 管理搜索引擎 –&gt; 其他搜索引擎<br>拉到最下，有一个“添加新的搜索引擎”，参数如下</p>
+<blockquote>
+<p>名字：google.com<br>关键字: Google-ncr<br>url: <a href="http://www.google.com/search?q=%s" target="_blank" rel="external">http://www.google.com/search?q=%s</a></p>
+</blockquote>
+<p>配置完设置为默认搜索引擎，完成</p>
+<p><em>人生苦短，我用 Google</em></p>
+<hr>
+<p>新的 MBP 一周后发布，等了大半年，终于等来了，下面的事情就是存钱了，Fighting！</p>
+<p><em>人生苦短，我用 Mac</em></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于不可抗力的缘故，每过一段时间，Google 就会重新被拿出来说一次，上一次说的是入门之法，关于 VPN 和 Shadowsocks 的一些很基础的东西。&lt;br&gt;最近小飞机换了更快的香港的服务器，体验非常棒，但是在使用 Google 时，Google 为了提供更好的本地搜索体验，&lt;code&gt;google.com&lt;/code&gt; 会自动重定向到 &lt;code&gt;google.com.hk&lt;/code&gt; ，可惜这些体验只有身在香港的服务器才能体验，而身在天朝的我还需要去考虑 &lt;code&gt;google country redirect disable&lt;/code&gt;。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="google" scheme="http://lijundong.com/tags/google/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>升级笔记本 CPU</title>
+    <link href="http://lijundong.com/update-laptop-cpu/"/>
+    <id>http://lijundong.com/update-laptop-cpu/</id>
+    <published>2016-10-12T06:18:44.000Z</published>
+    <updated>2016-11-12T08:39:09.622Z</updated>
+    
+    <content type="html"><![CDATA[<p>大二在小组的时候，身边几个伙伴相继换了固态，并且极力怂恿我也换，高呼固态大法好，时常拿十秒内的开机速度来做碾压，当时对于硬盘读写性能没有直观感受，觉得开机慢点也没所谓。<br>后面做的事多起来，任务开得多，Chrome 经常几十个 Tab 同时开，导致磁盘开机就爆红，鼠标动动都困难，更别提编码了，这时候才意识到笔记本需要升级，于是加装了固态，随即内存就成了瓶颈，又把内存加装到 8G，这之后相安无事过了很久。但该来的总是要来的，满频只有 1.8GHz 的赛扬终于满足不了正常的开发需要，这就换了它。<br><a id="more"></a></p>
+<h3 id="ThinkPad-E531-配置"><a href="#ThinkPad-E531-配置" class="headerlink" title="ThinkPad E531 配置"></a>ThinkPad E531 配置</h3><p>现在用的电脑的是 ThinkPad E531，是高考后暑假和跃峰在合肥电脑城入的，两个小白在那被坑了不少钱，跃峰比我惨一些，他买电脑的那家铺子在某个夜深人静时分，人去摊空……<br>我入的 E531 应该是低配版，处理器是<code>Celeron® Processor 1000M 
+(2M Cache, 1.80 GHz)</code>，500G 机械，4GB 内存，核显。这个配置决定了大学里的我跟游戏彻底绝缘。<br>升级过三次，加装了 <code>Samsung 850 EVO 120G</code> 的固态，加上支架，￥420 的开销，加装的内存是花 ￥80 从秦望那入的二手 4GB 三星。现在用的处理器因为是 <code>HM 77</code> 的主板，最多只能上三代的处理器，在淘宝上找了好几家才找到，考虑到散热的问题，最后选了 <code>i5-3320M @ 2.6GHz</code> 最高可以睿频到 3.2GHz，换上之后世界彻底变的和谐了，又可以愉快的编码了。<br>这里记录下过程中的一些<strong>需要提前考虑的事项</strong>。</p>
+<h3 id="笔记本的-CPU-是否支持升级？"><a href="#笔记本的-CPU-是否支持升级？" class="headerlink" title="笔记本的 CPU 是否支持升级？"></a>笔记本的 CPU 是否支持升级？</h3><blockquote>
+<p>可以确定的是封装方式为PGA方式的处理器是可以升级的，BGA封装是直接焊在主板上面的，所以不可更换。大部分超极本为了获得更可观的厚度和更优秀的散热表现都采用了BGA封装方式的低压处理器，所以是不可更换的。从命名方式上直观地来看，以字母M以及QM、MQ、MX等结尾的处理器是可更换的，以字母U、Y以及HQ结尾的处理器是不可更换的。</p>
+</blockquote>
+<h3 id="CPU-和主板的兼容性"><a href="#CPU-和主板的兼容性" class="headerlink" title="CPU 和主板的兼容性"></a>CPU 和主板的兼容性</h3><p>选择 CPU 之前需要确定现有主板兼容的 CPU 型号。</p>
+<h3 id="CPU-参数如何看"><a href="#CPU-参数如何看" class="headerlink" title="CPU 参数如何看"></a>CPU 参数如何看</h3><p>以 Intel 三代移动式处理器作例子<br><img src="http://www.intel.cn/content/dam/www/public/cn/zh/images/illustrations/RWD/processor-number-core-i7-3770k-3920xm-rwd.png/_jcr_content/renditions/intel.web.480.270.png" style="border:0"><br><strong>关于数字</strong>：<br>第一位代表第几代CPU，一般越大，架构更优。i7-4770K &gt; i7-3770K<br>第二位代表处理器等级，数字越大，性能越好。i7-4810mq &gt; i7-4710mq<br>第三位代表核显，可忽略不比<br>第四位代表功耗可忽略不比</p>
+<p><strong>关于后缀</strong>: </p>
+<table>
+<thead>
+<tr>
+<th>字母后缀</th>
+<th>描述</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M</td>
+<td>移动式</td>
+<td>i7-3520M</td>
+</tr>
+<tr>
+<td>QM</td>
+<td>四核移动式</td>
+<td>i7-3820QM</td>
+</tr>
+<tr>
+<td>U</td>
+<td>超低功耗</td>
+<td>i7-3667U</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>极低功耗</td>
+<td>i7-3689Y</td>
+</tr>
+</tbody>
+</table>
+<p>更详细内容可以去 <a href="http://www.intel.cn/content/www/cn/zh/processors/processor-numbers.html#" target="_blank" rel="external">Intel 官网</a> 获取</p>
+<h3 id="安装注意"><a href="#安装注意" class="headerlink" title="安装注意"></a>安装注意</h3><p>安装的时候除了手残带来的问题外，需要注意导热硅胶的选择与涂抹，这关乎 CPU 的散热，<strong>很重要</strong>，淘宝和京东上二十几可以淘一个靠谱的，如果自己上手不放心，可以花十块找维修人员，分分钟解决，快捷省心。</p>
+<hr>
+<p>开销不到 1K 来升级这台电脑很超值，提升了开发的幸福感。效率更高，这应该是最后一次升级这个笔记本，努力赚钱买 MBP 才是王道，讲真，ThinkPad 的键盘真心好用。</p>
+<p>参考:</p>
+<ul>
+<li><a href="http://www.pcpop.com/doc/1/1025/1025099_all.shtml" target="_blank" rel="external">繁琐但不困难 笔记本升级CPU实战教程</a></li>
+<li><a href="http://www.intel.cn/content/www/cn/zh/processors/processor-numbers.html" target="_blank" rel="external">关于英特尔® 处理器编号</a></li>
+<li><a href="https://www.zhihu.com/question/21366606" target="_blank" rel="external">intel处理器型号是怎么命名的？</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大二在小组的时候，身边几个伙伴相继换了固态，并且极力怂恿我也换，高呼固态大法好，时常拿十秒内的开机速度来做碾压，当时对于硬盘读写性能没有直观感受，觉得开机慢点也没所谓。&lt;br&gt;后面做的事多起来，任务开得多，Chrome 经常几十个 Tab 同时开，导致磁盘开机就爆红，鼠标动动都困难，更别提编码了，这时候才意识到笔记本需要升级，于是加装了固态，随即内存就成了瓶颈，又把内存加装到 8G，这之后相安无事过了很久。但该来的总是要来的，满频只有 1.8GHz 的赛扬终于满足不了正常的开发需要，这就换了它。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="cpu" scheme="http://lijundong.com/tags/cpu/"/>
+    
+      <category term="笔记本" scheme="http://lijundong.com/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx 配置多个Node服务的域名</title>
+    <link href="http://lijundong.com/nginx-conficure-domains-to-servers/"/>
+    <id>http://lijundong.com/nginx-conficure-domains-to-servers/</id>
+    <published>2016-10-11T16:15:48.000Z</published>
+    <updated>2016-10-11T18:17:30.097Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近用 Node 写的两个小项目都需要上线，项目跑在阿里云上，给了不同的端口，平时在各自的端口上，相安无事，但是要挂在微信公号上就需要域名，IP只有一个，两个域名势必要搭起来，我资历尚浅，肯定劝不动他俩，不看僧面看佛面，只好请来神器 Nginx 主持公道。这里做个笔记，欢迎补充指正。<br><a id="more"></a></p>
+<h3 id="Domains-2-Servers-？"><a href="#Domains-2-Servers-？" class="headerlink" title="Domains-2-Servers ？"></a>Domains-2-Servers ？</h3><p>多个 Domain 需要对应多个 Node 服务，然而只有一个 IP，这还怎么谈？矛盾尖锐到无法解决的时候就需要中间人介入，和气生财嘛，Nginx 在中间人这个位置做的得心应手，擅长的领域有以下几点</p>
+<ul>
+<li>页面服务器</li>
+<li>负载均衡</li>
+<li>web 缓存加速</li>
+<li>反向代理</li>
+</ul>
+<p>这起纠纷需要用到反向代理根据请求的 URL 将请求转到不同的服务器，以达到多个服务和谐共处的环境</p>
+<h3 id="Nginx-安装-amp-常用命令"><a href="#Nginx-安装-amp-常用命令" class="headerlink" title="Nginx 安装 &amp; 常用命令"></a>Nginx 安装 &amp; 常用命令</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>我比较懒，用 yum 安装，快捷方便</p>
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><blockquote>
+<ul>
+<li>nginx -s stop    快速关闭</li>
+<li>nginx -s quit     优雅地关闭</li>
+<li>nginx -s reopen   重新打开日志</li>
+<li>nginx -s reload   平滑重启</li>
+<li>nginx -t          启动前测试</li>
+</ul>
+</blockquote>
+<p>如果用包管理器进行的安装，也可以通过 service 来操作 Nginx </p>
+<blockquote>
+<ul>
+<li>service nginx start</li>
+<li>service nginx stop</li>
+<li>service nginx restart</li>
+<li>service nginx reload</li>
+</ul>
+</blockquote>
+<h3 id="Nginx-配置文件"><a href="#Nginx-配置文件" class="headerlink" title="Nginx 配置文件"></a>Nginx 配置文件</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">系统: <span class="selector-tag">CentOS</span> 7  </span><br><span class="line"><span class="selector-tag">Nginx</span>: 1<span class="selector-class">.10</span><span class="selector-class">.1</span></span><br></pre></td></tr></table></figure>
+<h4 id="检查-nginx-conf"><a href="#检查-nginx-conf" class="headerlink" title="检查 nginx.conf"></a>检查 nginx.conf</h4><p>进入 <code>/etc/nginx/</code> 路径下，路径下的 <code>nginx.conf</code> 是 Nginx 的配置文件，还有 <code>/conf.d</code> 文件夹存放的是 Server 的设置(<strong>注</strong>：这里的 <code>/conf.d</code> 在较早的版本里是 <code>/sites-available</code>)</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//nginx.conf 文件末尾对 /conf.d 中配置文件的应用，如果这一行被注释了，请把注释去除</span></span><br><span class="line"><span class="keyword">include</span> <span class="regexp">/etc/</span>nginx<span class="regexp">/conf.d/</span>*.conf</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果是 /sites-available</span></span><br><span class="line"><span class="keyword">include</span> <span class="regexp">/etc/</span>nginx<span class="regexp">/sites-available/</span>*.conf</span><br></pre></td></tr></table></figure>
+<h4 id="新建-Server-配置文件"><a href="#新建-Server-配置文件" class="headerlink" title="新建 Server 配置文件"></a>新建 Server 配置文件</h4><p>配置文件确认没有问题了，现在需要在 <code>/conf.d</code> 目录下配置服务器和对应的域名，我这里新建两个文件 <code>lushi.conf</code> 和 <code>mark.conf</code> (文件名随意，注意是 <code>.conf</code> 文件)以对应我需要配置的两个域名，分别的配置如下<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//lushi.conf</span></span><br><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name lushi.lijundong.com;</span><br><span class="line">    access_log /<span class="keyword">var</span>/<span class="keyword">log</span>/nginx/domain1.access.<span class="keyword">log</span>;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass    http:<span class="comment">//127.0.0.1:3000/;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//mark.conf</span></span><br><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name <span class="keyword">mark</span>.lijundong.com;</span><br><span class="line">    access_log /<span class="keyword">var</span>/<span class="keyword">log</span>/nginx/domain1.access.<span class="keyword">log</span>;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass    http:<span class="comment">//127.0.0.1:3100/;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="重载配置文件"><a href="#重载配置文件" class="headerlink" title="重载配置文件"></a>重载配置文件</h4><p>之前介绍的命令在这里就可以用了，<code>nginx -s reload</code> 重载配置文件，现在访问配置好的两个域名，又回到了相安无事的年代</p>
+<p>参考:</p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/5009324/node-js-nginx-what-now" target="_blank" rel="external">Node.js + Nginx - What now?</a></li>
+<li><a href="https://www.nginx.com/resources/wiki/start/topics/tutorials/commandline/" target="_blank" rel="external">Nginx</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近用 Node 写的两个小项目都需要上线，项目跑在阿里云上，给了不同的端口，平时在各自的端口上，相安无事，但是要挂在微信公号上就需要域名，IP只有一个，两个域名势必要搭起来，我资历尚浅，肯定劝不动他俩，不看僧面看佛面，只好请来神器 Nginx 主持公道。这里做个笔记，欢迎补充指正。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="服务器" scheme="http://lijundong.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="nginx" scheme="http://lijundong.com/tags/nginx/"/>
+    
+      <category term="域名" scheme="http://lijundong.com/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>EJS渲染模板</title>
+    <link href="http://lijundong.com/embeded-javascript-templates/"/>
+    <id>http://lijundong.com/embeded-javascript-templates/</id>
+    <published>2016-09-01T03:05:56.000Z</published>
+    <updated>2016-10-11T18:09:59.259Z</updated>
+    
+    <content type="html"><![CDATA[<p>这段时间一直在使用 Express 框架，虽然官方推荐 Pug 作为模板引擎，但我还是对 EJS 更感冒，官方也提供了 <code>Express -e</code> 的选择，由于之前没有认真看文档，导致了前段时间遇到的一个渲染问题，纠结了很久才得以解决，这里笔记下 EJS 的常用方法，算作一次梳理，欢迎补充指正。<br><a id="more"></a></p>
+<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><ul>
+<li><code>&lt;%=</code>: 转义输出</li>
+<li><code>&lt;%-</code>: 不转义输出(即输出源码)</li>
+<li><code>&lt;%#</code>: 评论注释</li>
+<li><code>&lt;%</code>: 输出 JS</li>
+<li><code>&lt;%_</code>: 输出 JS 并且删除标签之前所有的空格</li>
+<li><code>%&gt;</code>: 正常闭标签</li>
+<li><code>-%&gt;</code>: 移除标签后的换行符</li>
+<li><code>_%&gt;</code>: 移除便签后的所有的空格</li>
+</ul>
+<h3 id="实例对比"><a href="#实例对比" class="headerlink" title="实例对比"></a>实例对比</h3><p><strong>EJS</strong><br><figure class="highlight mojolicious"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, <span class="tag">&lt;<span class="name">%</span></span></span><span class="perl">- myHtml </span><span class="xml"><span class="tag">%&gt;</span>.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, <span class="tag">&lt;<span class="name">%=</span></span></span><span class="perl"> myHtml </span><span class="xml"><span class="tag">%&gt;</span>.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">%</span></span></span><span class="perl"><span class="comment"># comment </span></span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, <span class="tag">&lt;<span class="name">%</span></span></span><span class="perl">- myMaliciousHtml </span><span class="xml"><span class="tag">%&gt;</span>.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, <span class="tag">&lt;<span class="name">%=</span></span></span><span class="perl"> myMaliciousHtml </span><span class="xml"><span class="tag">%&gt;</span>.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p><strong>Locals</strong><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "myHtml": "<span class="tag">&lt;<span class="name">strong</span>&gt;</span>Leeon<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>"</span><br><span class="line">, "myMaliciousHtml": "<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write()</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>HTML</strong><br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">&lt;p&gt;</span>Hello, <span class="params">&lt;strong&gt;</span>Leeon<span class="params">&lt;/strong&gt;</span>.<span class="params">&lt;/p&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span>Hello, <span class="variable">&amp;lt</span>;strong<span class="variable">&amp;gt</span>;Leeon<span class="variable">&amp;lt</span>;/strong<span class="variable">&amp;gt</span>;.<span class="params">&lt;/p&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span><span class="params">&lt;/p&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span>Hello, <span class="params">&lt;/p&gt;</span><span class="params">&lt;script&gt;</span>document.write()<span class="params">&lt;/script&gt;</span><span class="params">&lt;p&gt;</span>.<span class="params">&lt;/p&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span>Hello, <span class="variable">&amp;lt</span>;/p<span class="variable">&amp;gt</span>;<span class="variable">&amp;lt</span>;script<span class="variable">&amp;gt</span>;document.write()<span class="variable">&amp;lt</span>;/script<span class="variable">&amp;gt</span>;<span class="variable">&amp;lt</span>;p<span class="variable">&amp;gt</span>;.<span class="params">&lt;/p&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>参考：</p>
+<ul>
+<li><a href="https://github.com/mde/ejs/blob/master/docs/syntax.md" target="_blank" rel="external">官方文档</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这段时间一直在使用 Express 框架，虽然官方推荐 Pug 作为模板引擎，但我还是对 EJS 更感冒，官方也提供了 &lt;code&gt;Express -e&lt;/code&gt; 的选择，由于之前没有认真看文档，导致了前段时间遇到的一个渲染问题，纠结了很久才得以解决，这里笔记下 EJS 的常用方法，算作一次梳理，欢迎补充指正。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="ejs" scheme="http://lijundong.com/tags/ejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>虚拟按键手机页面高度自适应</title>
+    <link href="http://lijundong.com/huawei-phone-browser-height-self-adapt/"/>
+    <id>http://lijundong.com/huawei-phone-browser-height-self-adapt/</id>
+    <published>2016-08-31T12:34:44.000Z</published>
+    <updated>2016-11-17T14:22:49.592Z</updated>
+    
+    <content type="html"><![CDATA[<p>华为系手机、谷歌亲儿子 Nexus 系列等配备的都是虚拟按键，虚拟按键唤出与隐藏会导致页面的高度变化，如果没有对内容高度进行适应，会出现页面内容被覆盖，或者页面空出一段留白，实验室用华为的同学挺多的，包括我，所以难免在调试页面的时候遇到这个问题，做个笔记先，欢迎补充指正。<br><a id="more"></a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">tab</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;华为系手机、谷歌亲儿子 Nexus 系列等配备的都是虚拟按键，虚拟按键唤出与隐藏会导致页面的高度变化，如果没有对内容高度进行适应，会出现页面内容被覆盖，或者页面空出一段留白，实验室用华为的同学挺多的，包括我，所以难免在调试页面的时候遇到这个问题，做个笔记先，欢迎补充指正。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="自适应" scheme="http://lijundong.com/tags/%E8%87%AA%E9%80%82%E5%BA%94/"/>
+    
+      <category term="移动开发" scheme="http://lijundong.com/tags/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Input 的 accept 属性以及 MIME 参考</title>
+    <link href="http://lijundong.com/accept-in-input-and-mime-intro/"/>
+    <id>http://lijundong.com/accept-in-input-and-mime-intro/</id>
+    <published>2016-08-28T07:03:11.000Z</published>
+    <updated>2016-12-18T15:55:42.268Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在做上传文件模块时，对 input 的 accept 属性做了些了解，以及与其关联的 MIME，之前也了解过，只是没做理解，导致如今再看到竟然没有半点印象，其实就是个因特网标准，这次做下笔记，欢迎指正。</p>
+<a id="more"></a>
+<h3 id="关于-accept"><a href="#关于-accept" class="headerlink" title="关于 accept"></a>关于 accept</h3><p>当 <code>input</code> 的 <code>type</code> 定义为 <code>file</code> 时，<code>accpet</code> 属性给客户端传递一种信息，哪些文件格式是可被接受的，在进行文件选择时，客户端只会匹配可接受格式的文件供选择，给用户提供了很大的方便。</p>
+<p>用法：<br><code>&lt;input accept=&quot;value&quot;&gt;</code><br>value 是逗号隔开的 MIME 类型列表。</p>
+<p>举例：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>匹配所有图片格式、视频格式、音频文件、文本格式<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">accept</span>=<span class="string">"image/*,video/*,audio/*,text/*"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>匹配 xls xlsx 两种表格文件<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">accept</span>=<span class="string">".xlsx,.xls"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="关于-MIME"><a href="#关于-MIME" class="headerlink" title="关于 MIME"></a>关于 MIME</h3><p>MIME 是什么？一句话描述，MIME (Multipurpose Internet Mail Extensions) 是描述消息内容类型的因特网标准。</p>
+<p>没了？没了。</p>
+<p>类型包括 application(pdf\doc\xls\ppt……)、image(jpg\png\gif……)、audio(mp3\mid\wav\bom……)、video(avi\movie\mpg……)、text(css\html\c\h……)、x-world(flr\wrl\wrz……)等</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在做上传文件模块时，对 input 的 accept 属性做了些了解，以及与其关联的 MIME，之前也了解过，只是没做理解，导致如今再看到竟然没有半点印象，其实就是个因特网标准，这次做下笔记，欢迎指正。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="html" scheme="http://lijundong.com/tags/html/"/>
+    
+      <category term="mime" scheme="http://lijundong.com/tags/mime/"/>
+    
+      <category term="input" scheme="http://lijundong.com/tags/input/"/>
+    
+      <category term="accept" scheme="http://lijundong.com/tags/accept/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用速查表集合</title>
+    <link href="http://lijundong.com/sheets-collections/"/>
+    <id>http://lijundong.com/sheets-collections/</id>
+    <published>2016-08-23T07:57:21.000Z</published>
+    <updated>2016-08-23T08:51:56.616Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center">这个资源合集包含的是我用着不错的常用速查表<br>方便有需要的同学查找<br>持续更新<br>以后可能会有更多的集合<br>Chrome 扩展？<br>开发小工具？<br>你说呢？</blockquote>
+
+<a id="more"></a>
+<h3 id="Linux-命令速查"><a href="#Linux-命令速查" class="headerlink" title="Linux 命令速查"></a>Linux 命令速查</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-23/3279812.jpg" alt=""><br><a href="http://i.linuxtoy.org/files/pdf/fwunixref.pdf" target="_blank" rel="external">PDF 下载</a></p>
+<h3 id="Vim-命令速查"><a href="#Vim-命令速查" class="headerlink" title="Vim 命令速查"></a>Vim 命令速查</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-23/89959675.jpg" alt=""><br><a href="http://jrmiii.com/attachments/Vim.pdf" target="_blank" rel="external">PDF 下载</a></p>
+<h3 id="Git-命令速查"><a href="#Git-命令速查" class="headerlink" title="Git 命令速查"></a>Git 命令速查</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-23/44995875.jpg" alt=""><br><a href="https://www.git-tower.com/blog/git-cheat-sheet-cn" target="_blank" rel="external">PDF 下载</a></p>
+<h3 id="正则速查"><a href="#正则速查" class="headerlink" title="正则速查"></a>正则速查</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-23/94278931.jpg" alt=""><br><a href="http://plcdn.qiniudn.com/wp-content/uploads/2011/12/regular-expressions-cheat-sheet-v2.pdf" target="_blank" rel="external">PDF 下载</a></p>
+<blockquote class="blockquote-center">欢迎补充！</blockquote>
+
+
+
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;这个资源合集包含的是我用着不错的常用速查表&lt;br&gt;方便有需要的同学查找&lt;br&gt;持续更新&lt;br&gt;以后可能会有更多的集合&lt;br&gt;Chrome 扩展？&lt;br&gt;开发小工具？&lt;br&gt;你说呢？&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="git" scheme="http://lijundong.com/tags/git/"/>
+    
+      <category term="linux" scheme="http://lijundong.com/tags/linux/"/>
+    
+      <category term="vim" scheme="http://lijundong.com/tags/vim/"/>
+    
+      <category term="正则" scheme="http://lijundong.com/tags/%E6%AD%A3%E5%88%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Node将Excel数据解析为Json</title>
+    <link href="http://lijundong.com/xlsx-to-json-by-json/"/>
+    <id>http://lijundong.com/xlsx-to-json-by-json/</id>
+    <published>2016-08-22T07:00:50.000Z</published>
+    <updated>2016-11-17T14:27:24.635Z</updated>
+    
+    <content type="html"><![CDATA[<p>试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。<br>在 Java 环境下，可以用 <code>Apache POI</code> 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。<br><a id="more"></a></p>
+<h3 id="node-xlsx"><a href="#node-xlsx" class="headerlink" title="node-xlsx"></a>node-xlsx</h3><p>这篇文章是建立在 <code>node-xlsx</code> 的基础上的，你可以在 <a href="https://github.com/mgcrea/node-xlsx" target="_blank" rel="external">github</a> 以及 <a href="https://www.npmjs.com/package/node-xlsx" target="_blank" rel="external">npm</a> 获取到包。<br>用法如下：</p>
+<h4 id="xlsx-gt-Json"><a href="#xlsx-gt-Json" class="headerlink" title="xlsx -&gt; Json"></a>xlsx -&gt; Json</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xlsx = <span class="built_in">require</span>(<span class="string">'node-xlsx'</span>).default; </span><br><span class="line"><span class="comment">//Or import xlsx from 'node-xlsx';</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Parse a buffer</span></span><br><span class="line"><span class="keyword">const</span> workSheetsFromBuffer = xlsx.parse(fs.readFileSync(<span class="string">`<span class="subst">$&#123;__dirname&#125;</span>/myFile.xlsx`</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">// Parse a file</span></span><br><span class="line"><span class="keyword">const</span> workSheetsFromFile = xlsx.parse(<span class="string">`<span class="subst">$&#123;__dirname&#125;</span>/myFile.xlsx`</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="Json-gt-xlsx"><a href="#Json-gt-xlsx" class="headerlink" title="Json -&gt; xlsx"></a>Json -&gt; xlsx</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xlsx = <span class="built_in">require</span>(<span class="string">'node-xlsx'</span>).default;</span><br><span class="line"><span class="comment">// Or import xlsx from 'node-xlsx';</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> data = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="literal">true</span>, <span class="literal">false</span>, <span class="literal">null</span>, <span class="string">'sheetjs'</span>], [<span class="string">'foo'</span>, <span class="string">'bar'</span>, <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">'2014-02-19T14:30Z'</span>), <span class="string">'0.3'</span>], [<span class="string">'baz'</span>, <span class="literal">null</span>, <span class="string">'qux'</span>]];</span><br><span class="line"><span class="keyword">var</span> buffer = xlsx.build([&#123;name: <span class="string">"mySheetName"</span>, data: data&#125;]); <span class="comment">// Returns a buffer</span></span><br></pre></td></tr></table></figure>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><h4 id="Excel-转-Json"><a href="#Excel-转-Json" class="headerlink" title="Excel 转 Json"></a>Excel 转 Json</h4><figure class="highlight qml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">var</span> xlsx = <span class="built_in">require</span>(<span class="string">"node-xlsx"</span>); </span><br><span class="line"><span class="built_in">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>); </span><br><span class="line"><span class="built_in">var</span> <span class="built_in">list</span> = xlsx.parse(<span class="string">"demo.xlsx"</span>); </span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">JSON</span>.stringify(<span class="built_in">list</span>)); </span><br><span class="line"><span class="comment">//console.log(list); </span></span><br><span class="line">writeFile(<span class="string">"xlsx2json.json"</span>,<span class="built_in">JSON</span>.stringify(<span class="built_in">list</span>)); </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">writeFile</span>(<span class="params">fileName,data</span>) </span>&#123; </span><br><span class="line">  fs.writeFile(fileName,data,<span class="string">'utf-8'</span>,complete);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">complete</span>(<span class="params">err</span>) </span>&#123; </span><br><span class="line">      <span class="keyword">if</span>(!err) &#123; </span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"文件生成成功"</span>); </span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>demo.xlsx 内容如下<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/88488524.jpg" alt="demo.xlsx"><br>生成的 Json 格式如下<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/74481753.jpg" alt="xlsx2json"></p>
+<h4 id="Json-转-Excel"><a href="#Json-转-Excel" class="headerlink" title="Json 转 Excel"></a>Json 转 Excel</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> xlsx = <span class="built_in">require</span>(<span class="string">'node-xlsx'</span>);</span><br><span class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">'fs'</span>);</span><br><span class="line"><span class="keyword">const</span> data = [[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="literal">true</span>, <span class="literal">false</span>, <span class="literal">null</span>, <span class="string">'sheetjs'</span>], [<span class="string">'foo'</span>, <span class="string">'bar'</span>, <span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">'2014-02-19T14:30Z'</span>), <span class="string">'0.3'</span>], [<span class="string">'baz'</span>, <span class="literal">null</span>, <span class="string">'qux'</span>]];</span><br><span class="line"><span class="keyword">var</span> buffer = xlsx.build([&#123;name:<span class="string">"mySheetName"</span>, data: data&#125;]); <span class="comment">// Returns a buffer</span></span><br><span class="line">writeFile(<span class="string">"all.xlsx"</span>,buffer); </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">writeFile</span>(<span class="params">fileName,data</span>) </span>&#123; </span><br><span class="line">  fs.writeFile(fileName,data,<span class="string">'utf-8'</span>,complete);</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">complete</span>(<span class="params">err</span>) </span>&#123; </span><br><span class="line">      <span class="keyword">if</span>(!err) &#123; </span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"文件生成成功"</span>); </span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>demo.json 格式如下<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/31515580.jpg" alt="xlsx2json"><br>json2xlsx.xlsx 内容如下<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-22/44196162.jpg" alt="demo.xlsx"></p>
+<p>通过上面的例子可以看出，Excel 的一行对应着一条 Json 数据，然而这种方式并不适合数据库与 Excel 之间的转换，所以需要对 Json 内容作转换。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。&lt;br&gt;在 Java 环境下，可以用 &lt;code&gt;Apache POI&lt;/code&gt; 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="node" scheme="http://lijundong.com/categories/node/"/>
+    
+    
+      <category term="node" scheme="http://lijundong.com/tags/node/"/>
+    
+      <category term="excel" scheme="http://lijundong.com/tags/excel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Html仿手机时钟选项框</title>
+    <link href="http://lijundong.com/html-make-clock-select/"/>
+    <id>http://lijundong.com/html-make-clock-select/</id>
+    <published>2016-08-05T00:15:49.000Z</published>
+    <updated>2016-08-05T08:21:38.852Z</updated>
+    
+    <content type="html"><![CDATA[<p>手机里的闹钟设置时会让选择具体在星期几工作，选择的方式因机而异，今天要聊的是手机提供七个点，点亮你需要的时间。如果用前端的方法实现，怎么做简洁，如何对复选框变形，看了很多别人的demo，都没有达到我的预期，我需要将选项内容作为点选的按钮，这就需要让两者“合二为一”，内容的样式随着<code>checkbox</code>的状态改变，这里应该有思路了。<br><a id="more"></a></p>
+<h3 id="页面框架"><a href="#页面框架" class="headerlink" title="页面框架"></a>页面框架</h3><p>对列表稍加修改，li元素横向排列，列表中加入<code>checkbox</code>以及<code>label</code>，出来的效果就是最常见的复选框。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"day-select"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    </span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"box"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"sun"</span>  /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"sun"</span>&gt;</span>日<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    </span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"box"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"mon"</span>  /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"mon"</span>&gt;</span>一<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    </span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"box"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"tue"</span>  /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"tue"</span>&gt;</span>二<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    </span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"box"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"wed"</span>  /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"wed"</span>&gt;</span>三<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    </span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"box"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"thu"</span>  /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"thu"</span>&gt;</span>四<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    </span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"box"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"fri"</span>  /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"fri"</span>&gt;</span>五<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    </span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"box"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">id</span>=<span class="string">"sat"</span>  /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"sat"</span>&gt;</span>六<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">    <span class="attribute">font-family</span>: 微软雅黑;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.day-select</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">1rem</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">4rem</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.day-select</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">    <span class="attribute">list-style</span>: none;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">margin-right</span>: <span class="number">2rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>出来的效果<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-5/78915169.jpg" alt=""></p>
+<h3 id="复选框整容"><a href="#复选框整容" class="headerlink" title="复选框整容"></a>复选框整容</h3><h4 id="消除checkbox默认样式"><a href="#消除checkbox默认样式" class="headerlink" title="消除checkbox默认样式"></a>消除<code>checkbox</code>默认样式</h4><p><code>checkbox</code>在浏览器的默认样式对我们会造成干扰，所以首先就是去除<code>checkbox</code>默认样式。<br>这里需要用到CSS3中的appearance属性，通过赋值<code>none</code>去除默认样式。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="checkbox"]</span>&#123;</span><br><span class="line">    <span class="attribute">-webkit-appearance</span>: none; </span><br><span class="line">    <span class="attribute">-moz-appearance</span>: none;</span><br><span class="line">    <span class="attribute">appearance</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样看起来就清爽很多的嘛<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-5/41302294.jpg" alt=""></p>
+<h4 id="添加按钮样式"><a href="#添加按钮样式" class="headerlink" title="添加按钮样式"></a>添加按钮样式</h4><p>在<code>checkbox</code>状态改变时，改变<code>label</code>样式，这里我在<code>checkbox</code>状态为<code>checked</code>时给<code>label</code>外加一圆边，没选定时，不设样式。<br>这里需要用到CSS选择器的兄弟节点，<code>input</code>和<code>label</code>是相邻的兄弟元素，用<code>+</code>连接。<br><strong>注：因为字体长宽不等，我加了padding进行调整，使出来的圆效果更好些。</strong><br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="checkbox"]</span><span class="selector-pseudo">:checked</span> + <span class="selector-tag">label</span> ,</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="checkbox"]</span><span class="selector-pseudo">:active</span> + <span class="selector-tag">label</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">3px</span> solid <span class="number">#EEE</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">5px</span> <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border-color</span>: <span class="number">#2AC9DE</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>很好，现在预想的效果已经出来了<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-5/18725183.jpg" alt=""><br>只不过因为<code>padding</code>变化，元素之间会挤压，可以在元素未选定时将边框画好，颜色设为背景色，选定时只需要更改边框颜色，如下。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span>[type=<span class="string">"checkbox"</span>] + <span class="selector-tag">label</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">3px</span> solid <span class="number">#EEE</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">5px</span> <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span>[type=<span class="string">"checkbox"</span>]:checked + <span class="selector-tag">label</span> ,</span><br><span class="line"><span class="selector-tag">input</span>[type=<span class="string">"checkbox"</span>]:active + <span class="selector-tag">label</span> &#123;</span><br><span class="line">    <span class="attribute">border-color</span>: <span class="number">#2AC9DE</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>完工！<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-8-5/54383466.jpg" alt=""></p>
+<h3 id="详情显示"><a href="#详情显示" class="headerlink" title="详情显示"></a>详情显示</h3><p>上一幅图中，点选日期，页面会出现相应的日期，这个也很简单，预设一个日期详情列表，并且设置为不可见，jquery监听所有的<code>checkbox</code>状态，给相应的详情设置为可见，完工。<br>html<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"day-info"</span> <span class="attr">id</span>=<span class="string">"dayInfo"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>周日<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>周一<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>周二<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>周三<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>周四<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>周五<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>周六<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>css<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.day-info</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>: .<span class="number">8rem</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">8rem</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.day-info</span> <span class="selector-tag">li</span>&#123;</span><br><span class="line">    <span class="attribute">list-style</span>: none;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">    <span class="attribute">margin-right</span>: <span class="number">2rem</span>;</span><br><span class="line">    <span class="attribute">visibility</span>:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>javascript<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'input[name^="box"]'</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> checklist=<span class="built_in">document</span>.getElementsByName(<span class="string">"box"</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(checklist);</span><br><span class="line">    <span class="keyword">var</span> infolist=<span class="built_in">document</span>.getElementById(<span class="string">"dayInfo"</span>).children;</span><br><span class="line">    <span class="built_in">console</span>.log(infolist);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;checklist.length;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(checklist[i].checked==<span class="literal">true</span>)&#123;</span><br><span class="line">            infolist[i].style.visibility=<span class="string">"visible"</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            infolist[i].style.visibility=<span class="string">"hidden"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>参考:</p>
+<ul>
+<li><a href="http://www.w3cplus.com/css3/css-secrets/custom-checkboxes.html" target="_blank" rel="external">CSS秘密花园： 自定义复选框</a> </li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;手机里的闹钟设置时会让选择具体在星期几工作，选择的方式因机而异，今天要聊的是手机提供七个点，点亮你需要的时间。如果用前端的方法实现，怎么做简洁，如何对复选框变形，看了很多别人的demo，都没有达到我的预期，我需要将选项内容作为点选的按钮，这就需要让两者“合二为一”，内容的样式随着&lt;code&gt;checkbox&lt;/code&gt;的状态改变，这里应该有思路了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学习" scheme="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="html" scheme="http://lijundong.com/tags/html/"/>
+    
+      <category term="css" scheme="http://lijundong.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信公号Node开发「贰」之express</title>
+    <link href="http://lijundong.com/wechat-node-2th-express/"/>
+    <id>http://lijundong.com/wechat-node-2th-express/</id>
+    <published>2016-07-30T14:07:07.000Z</published>
+    <updated>2016-11-17T14:26:08.144Z</updated>
+    
+    <content type="html"><![CDATA[<p>笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。<br><a id="more"></a></p>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-——bin   //存放www文件，包含着项目启动命令</span><br><span class="line"></span>|<span class="string">-——node_modules   //存放npm安装到本地的依赖项，依赖包声明在package.json</span><br><span class="line"></span>|<span class="string">-——public         //存放静态资源，图片、js文件、样式文件</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——images</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——javascripts</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——stylesheets</span><br><span class="line"></span>|<span class="string">-——routes //存放路由文件</span><br><span class="line"></span>|<span class="string">-——views  //模板文件，默认使用jade，如果用ejs，则用`express -e &lt;项目名&gt;`初始化</span><br><span class="line"></span>|<span class="string">-——app.js //入口文件</span><br><span class="line"></span>|<span class="string">-——package.json //npm依赖配置文件，`npm install`命令安装</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="node" scheme="http://lijundong.com/categories/node/"/>
+    
+    
+      <category term="node" scheme="http://lijundong.com/tags/node/"/>
+    
+      <category term="微信" scheme="http://lijundong.com/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding page与Github page博客部署及域名绑定</title>
+    <link href="http://lijundong.com/coding-page-github-page-deploy-dns/"/>
+    <id>http://lijundong.com/coding-page-github-page-deploy-dns/</id>
+    <published>2016-07-30T05:29:13.000Z</published>
+    <updated>2016-11-17T14:21:59.203Z</updated>
+    
+    <content type="html"><![CDATA[<p>从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……</p>
+<p>2016/8/28更新</p>
+<p>域名被屏蔽，可能是没有备案的原因……，最近正在办备案。</p>
+<p>哎！好好说话，你别打我啊，WOC，别打脸……</p>
+<a id="more"></a>
+<p>去<a href="http://www.checkgfw.com/" target="_blank" rel="external">checkgfw</a>查了下，就出现了这篇文章的题图，不管测的权威性多大，反正挺郁闷的。唉，苦闷！<br>之前一直用的DNSPod做DNS解析，前端时间转到了阿里云，域名是万网买的，心想自家孩子速度可能快些，谁曾想没过多久就出了这档子事(虽然没有多大关联性)，非常不爽，又转回DNSPod，添加解析后等待是最痛苦的，最痛苦的是等来的是继续无法连接，折腾了一晚上还是选择把博客放在国内，在Coding上创建项目，添加公钥，上传项目，开启Page服务，部署，熟悉的界面再次出现异常亲切，好了，现在只要添加一条DNS解析就齐活。</p>
+<h3 id="Coding-Page部署博客"><a href="#Coding-Page部署博客" class="headerlink" title="Coding Page部署博客"></a>Coding Page部署博客</h3><p>无论是在Github还是在Coding上部署博客，过程都类似(<strong>注:以下统一用yourname代表项目名</strong>)</p>
+<ul>
+<li>注册Coding/Github </li>
+<li>建立项目，项目名与用户名相同</li>
+<li>如果使用SSH，请将本地公钥添加到Coding/Github(可使用<code>ssh -T git@github.com</code>检测是否添加成功)</li>
+<li><p>本地建立Hexo项目(hexo init)，在根目录下配置文件_config.yml中配置远程仓库地址以及分支(注意属性与值之间的空格)，下面是我的配置(我同时推到Github和Coding上，同时部署，这样做之前需要在项目的source目录下添加<code>staticfile</code>文件)</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>: </span><br><span class="line">      <span class="attribute">coding</span>: git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:jundong/jundong.git,master</span><br><span class="line">      <span class="attribute">github</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:lijundong/lijundong.github.io.git,master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>hexo g -d</code>生成博客并推到远程仓库，稍等片刻，访问<code>yourname.coding.me</code>/<code>yourname.github.io</code>，可以看到部署成功</p>
+</li>
+<li>博客部署完，绑定自定义域名，通过DNS解析，将自定义域名指向<code>yourname.coding.me</code>/<code>yourname.github.io</code>，区别在于添加CNAMe的方式，<ul>
+<li>Github需要在项目根目录下添加<code>CNAME</code>文件，文件中加上需要绑定的域名如<code>lijundong.com</code></li>
+<li>Coding绑定的方式是在项目的Pages服务下添加域名绑定</li>
+</ul>
+</li>
+<li>添加DNS解析，这里两者仍有区别<ul>
+<li>Github绑定<code>yourname.github.io</code>，访问<code>yourname.github.io</code>会定向到自定义域名</li>
+<li>Coding绑定<code>pages.coding.me</code>(<strong>此处踩过坑</strong>)，访问<code>yourname.coding.me</code>不会重定向<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-7-30/77087768.jpg" alt=""></li>
+</ul>
+</li>
+<li><strong>更换DNS解析服务器时，别忘了在域名提供商出更改DNS服务器(此处踩过坑)</strong></li>
+</ul>
+<hr>
+<p>那么，我的域名到底被墙了没？</p>
+<p>2016/8/28更新</p>
+<p>域名被屏蔽，可能是没有备案的原因……，最近正在办备案。</p>
+<p>哎！好好说话，你别打我啊，WOC，别打脸……</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……&lt;/p&gt;
+&lt;p&gt;2016/8/28更新&lt;/p&gt;
+&lt;p&gt;域名被屏蔽，可能是没有备案的原因……，最近正在办备案。&lt;/p&gt;
+&lt;p&gt;哎！好好说话，你别打我啊，WOC，别打脸……&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="博客" scheme="http://lijundong.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="dns" scheme="http://lijundong.com/tags/dns/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>表单提交</title>
+    <link href="http://lijundong.com/jquery-prevent-form-sbumit/"/>
+    <id>http://lijundong.com/jquery-prevent-form-sbumit/</id>
+    <published>2016-07-25T11:19:42.000Z</published>
+    <updated>2016-08-25T11:48:34.984Z</updated>
+    
+    <content type="html"><![CDATA[<p>用户在填写表单时，常出现遗漏或者不符合规范的填写，解决这些问题需要在 <code>input</code> 处添加筛选条件，例如 email 或者password，或者是在提交前进行信息确认，如不符合提交条件，应该组织表单的提交，今天正好遇到了这个问题，借机会做一个关于表单的笔记。<br><a id="more"></a></p>
+<h3 id="阻止表单提交"><a href="#阻止表单提交" class="headerlink" title="阻止表单提交"></a>阻止表单提交</h3><p>在表单提交之前，对信息进行校验，判断是否符合提交条件，如果不符合，及时阻止表单的默认提交行为。<br>表单代码如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"usrname"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"passwd"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="通过jQuery"><a href="#通过jQuery" class="headerlink" title="通过jQuery"></a>通过jQuery</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"form"</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>( error )&#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">    alert(<span class="string">"请检查表单"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用户在填写表单时，常出现遗漏或者不符合规范的填写，解决这些问题需要在 &lt;code&gt;input&lt;/code&gt; 处添加筛选条件，例如 email 或者password，或者是在提交前进行信息确认，如不符合提交条件，应该组织表单的提交，今天正好遇到了这个问题，借机会做一个关于表单的笔记。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="javascript" scheme="http://lijundong.com/tags/javascript/"/>
+    
+      <category term="表单" scheme="http://lijundong.com/tags/%E8%A1%A8%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信公号Node开发「壹」之操作MongoDB(上)</title>
+    <link href="http://lijundong.com/wechat-node-1th-MongoDB/"/>
+    <id>http://lijundong.com/wechat-node-1th-MongoDB/</id>
+    <published>2016-07-22T16:06:31.000Z</published>
+    <updated>2016-11-17T14:26:00.247Z</updated>
+    
+    <content type="html"><![CDATA[<p>项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。<br><a id="more"></a></p>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>关于MongoDB的结构，官方文档给出了下面的参考</p>
+<table>
+<thead>
+<tr>
+<th>SQL</th>
+<th>MongoDB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>database</td>
+<td>database</td>
+</tr>
+<tr>
+<td>table</td>
+<td>collection</td>
+</tr>
+<tr>
+<td>row</td>
+<td>document or BSON document</td>
+</tr>
+<tr>
+<td>column</td>
+<td>field</td>
+</tr>
+<tr>
+<td>index</td>
+<td>index</td>
+</tr>
+<tr>
+<td>primary key</td>
+<td>primary key(默认自动设置为<code>_id</code>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注：</strong><code>_id</code>是在插入一条新的document时，系统自动生成的一个由时间、主机名、PID(进程ID)、INC(自增计数器)组合转换而成的24位字符串。</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>现MongoDB内容如下<br><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-- info         //dbs</span><br><span class="line"></span>|<span class="string">   </span>|<span class="string">-- users    //collection</span><br><span class="line"></span>|<span class="string">   </span>|<span class="string">-- logs</span><br><span class="line"></span>|</span><br><span class="line">|<span class="string">-- test</span></span><br></pre></td></tr></table></figure></p>
+<p>进入MongoDB操作界面，默认进入test数据库。<br>操作及数据库<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//显示所有数据库</span></span><br><span class="line">show dbs             </span><br><span class="line"><span class="comment">//显示操作数据库的帮助</span></span><br><span class="line"><span class="keyword">db</span>.<span class="keyword">help</span>()            </span><br><span class="line"><span class="comment">//进入info数据库，如果没有则创建一个info数据库，所以这也是创建命令</span></span><br><span class="line"><span class="keyword">use</span> infos</span><br><span class="line"><span class="comment">//显示当前所在的数据库，默认是test数据库           </span></span><br><span class="line"><span class="keyword">db</span>       </span><br><span class="line"><span class="comment">//删除当前数据库的所有记录，如果没有选定，默认删除test</span></span><br><span class="line"><span class="keyword">db</span>.dropDatabase()</span><br></pre></td></tr></table></figure></p>
+<p>操作集合<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//显示当前数据库中所有集合</span></span><br><span class="line">show collections     </span><br><span class="line"></span><br><span class="line"><span class="comment">//创建新集合records</span></span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.insert</span>(&#123;name:<span class="string">"leeon"</span>,<span class="selector-tag">time</span>:new Date(),age:<span class="number">12</span>&#125;)</span><br><span class="line">db.createCollection(<span class="string">"records"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//插入记录</span></span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.insert</span>(&#123;name:<span class="string">"pine"</span>,<span class="selector-tag">time</span>:new Date(),age:<span class="number">12</span>&#125;)</span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.save</span>(&#123;name:<span class="string">"pine"</span>,<span class="selector-tag">time</span>:new Date(),age:<span class="number">12</span>&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//删除集合records的所有记录</span></span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.remove</span>(&#123;&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//更新，name为leeon的记录age更新为20</span></span><br><span class="line">db<span class="selector-class">.records</span><span class="selector-class">.update</span>(&#123;name:<span class="string">"leeon"</span>&#125;,&#123;<span class="variable">$set</span>:&#123;age:<span class="number">20</span>&#125;&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//查询所有记录</span></span><br><span class="line">db<span class="selector-class">.users</span><span class="selector-class">.find</span>()</span><br></pre></td></tr></table></figure></p>
+<h3 id="常用操作符"><a href="#常用操作符" class="headerlink" title="常用操作符"></a>常用操作符</h3><p><strong>$ne</strong><br>语法：{field: {$ne: value} }<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查找users集合中，age!=20的记录</span></span><br><span class="line">db<span class="selector-class">.users</span><span class="selector-class">.find</span>(&#123;age:&#123;<span class="variable">$ne</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>$and</strong><br>语法：{ $and: [{ <expression1> }, { <expression2> } , … , {<expressionn> } ]}<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下name!=leeon&amp;&amp;age=20的记录</span></span><br><span class="line">db<span class="selector-class">.users</span><span class="selector-class">.find</span>(&#123;<span class="variable">$and</span>:[&#123;name:&#123;<span class="variable">$ne</span>:<span class="string">"leeon"</span>&#125;&#125;,&#123;age:<span class="number">20</span>&#125;]&#125;)</span><br></pre></td></tr></table></figure></expressionn></expression2></expression1></p>
+<p><strong>$or</strong><br>语法：{ $or: [{ <expression1> }, { <expression2> }, … , { <expressionn> }]}<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下name!=leeon||age=20的记录</span></span><br><span class="line">db<span class="selector-class">.users</span><span class="selector-class">.find</span>(&#123;<span class="variable">$or</span>:[&#123;name:&#123;<span class="variable">$ne</span>:<span class="string">"leeon"</span>&#125;&#125;,&#123;age:<span class="number">20</span>&#125;]&#125;)</span><br></pre></td></tr></table></figure></expressionn></expression2></expression1></p>
+<p><strong>$lt</strong><br>语法：{field: {$lt: value} }<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&lt;20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">lt</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>$lte</strong><br>语法：{ field: { $lte: value} }<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&lt;=20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">lte</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>$gt</strong><br>语法：{field: {$gt: value} }<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&gt;20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">gt</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>$gte</strong><br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&gt;=20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">gte</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong>注：save和insert的区别主要在于，新记录中指定的<code>_id</code>在集合中已存在，save会对原纪录进行覆盖，而insert不会操作，如果<code>_id</code>没有指定，则没有区别，都是进行插入</strong><br>例子:<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">db.users.find()</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.<span class="keyword">insert</span>(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.save(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"li"</span>,<span class="string">"age"</span>:<span class="number">12</span>&#125;</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="node" scheme="http://lijundong.com/categories/node/"/>
+    
+    
+      <category term="mongodb" scheme="http://lijundong.com/tags/mongodb/"/>
+    
+      <category term="node" scheme="http://lijundong.com/tags/node/"/>
+    
+      <category term="微信" scheme="http://lijundong.com/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+  </entry>
+  
+</feed>
