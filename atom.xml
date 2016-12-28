@@ -691,9 +691,9 @@
     
       <category term="git" scheme="http://lijundong.com/tags/git/"/>
     
-      <category term="linux" scheme="http://lijundong.com/tags/linux/"/>
-    
       <category term="vim" scheme="http://lijundong.com/tags/vim/"/>
+    
+      <category term="linux" scheme="http://lijundong.com/tags/linux/"/>
     
       <category term="正则" scheme="http://lijundong.com/tags/%E6%AD%A3%E5%88%99/"/>
     
@@ -951,9 +951,9 @@
       <category term="node" scheme="http://lijundong.com/categories/node/"/>
     
     
-      <category term="mongodb" scheme="http://lijundong.com/tags/mongodb/"/>
-    
       <category term="node" scheme="http://lijundong.com/tags/node/"/>
+    
+      <category term="mongodb" scheme="http://lijundong.com/tags/mongodb/"/>
     
       <category term="微信" scheme="http://lijundong.com/tags/%E5%BE%AE%E4%BF%A1/"/>
     
