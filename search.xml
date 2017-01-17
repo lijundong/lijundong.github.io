@@ -4,6 +4,75 @@
   
     
     <entry>
+      <title><![CDATA[inline「一」：从 image 底部白边初识 line-height]]></title>
+      <url>http://lijundong.com/image-and-line-height/</url>
+      <content type="html"><![CDATA[<p>今天在做一个静态页面时，图片底部出现一条 3px 高度的白边，既不是 margin 也不是 padding，找了好久没能解决，后来才发现与 line-height 相关，问题解决后查缺补漏。<br>这里作下笔记。</p>
+<a id="more"></a>
+<p>解决问题之前需要理清楚几个概念，基线、line-height、vertical-align、inline 元素。</p>
+<h3 id="基线-baseline"><a href="#基线-baseline" class="headerlink" title="基线(baseline)"></a>基线(baseline)</h3><p>基线(Baseline) 是字体排印学中的概念，指的是多数字母排列的基准线，大多字母都沿着红色基线排列，举个例子辅助理解<br><img src="http://source.lijundong.com/17-1-17/23484364-file_1484619667824_4a0a.png" alt=""><br>图中 xHh 字母的下边缘红线就是基线的所在，那么有没有一个特定的条件来定义基线呢？这里有个概念可供参考</p>
+<blockquote>
+<p>字母x的下边缘(线)就是基线的所在。</p>
+</blockquote>
+<p><img src="http://source.lijundong.com/17-1-17/82294663-file_1484620885555_15872.png" alt=""></p>
+<p>这里又引出了 <a href="https://en.wikipedia.org/wiki/X-height" target="_blank" rel="external">x-height</a> 的概念，此处不表。</p>
+<h3 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h3><p>关于 line-height 如何定义的讨论，有说法是两条基线之间的距离，看到这个结论我首先想到第一行的行高如何处理，后来去找了资料，发现两条基线之间的距离即是 line-height 这样的结论并不准确。<br>关于 line-height 的定义，<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" target="_blank" rel="external">MDN</a> 阐述如下：</p>
+<blockquote>
+<p>On block level elements, the line-height property specifies the minimum height of line boxes within the element.<br>On non-replaced inline elements, line-height specifies the height that is used to calculate line box height.</p>
+</blockquote>
+<p>即</p>
+<blockquote>
+<p>block 元素中， line-height 的值等于元素中高度最低的行框(line box) 的高度值。<br>在 non-replaced inline 元素中，line-height 的值等于行框(line box) 的高度值。</p>
+</blockquote>
+<p><img src="http://source.lijundong.com/17-1-18/72801786-file_1484669613097_12675.png" alt=""></p>
+<p><strong>注：</strong></p>
+<blockquote>
+<p><strong>replaced element VS non-replaced element</strong></p>
+<ul>
+<li>replaced element: 例如 img、video、canvas 此类渲染出的内容引用外部的元素</li>
+<li>non-replaced element: 渲染自身的 content，<br>例如 <code>&lt;a href=&quot;lijundong.com&quot;&gt;Leeon Blog&lt;/a&gt;</code> 此类，渲染出的内容来自自身。</li>
+</ul>
+</blockquote>
+<h3 id="inline-内联-元素"><a href="#inline-内联-元素" class="headerlink" title="inline(内联) 元素"></a>inline(内联) 元素</h3><p>HTML5 中的常见 inline 元素如下：</p>
+<ul>
+<li>inline：span、strong、em</li>
+<li>inline-block：input、button、textarea、select、img</li>
+</ul>
+<h3 id="vertical-align"><a href="#vertical-align" class="headerlink" title="vertical-align"></a>vertical-align</h3><p>vertical-align 作用于 inline 元素 以及 table-cell 元素，还有 <code>::first-letter</code> 和 <code>::first-line</code>，更多内容可以参见 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align" target="_blank" rel="external">MDN</a></p>
+<p>属性分类：</p>
+<p>适用于 inline 元素的属性：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* keyword values */</span></span><br><span class="line"><span class="attribute">vertical-align</span>: baseline;  <span class="comment">/*基于基线对齐*/</span></span><br><span class="line"><span class="attribute">vertical-align</span>: sub;</span><br><span class="line"><span class="attribute">vertical-align</span>: super;</span><br><span class="line"><span class="attribute">vertical-align</span>: text-top;</span><br><span class="line"><span class="attribute">vertical-align</span>: text-bottom;</span><br><span class="line"><span class="attribute">vertical-align</span>: middle;</span><br><span class="line"><span class="attribute">vertical-align</span>: top;</span><br><span class="line"><span class="attribute">vertical-align</span>: bottom;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* &lt;length&gt; values */</span></span><br><span class="line"><span class="attribute">vertical-align</span>: <span class="number">10em</span>;</span><br><span class="line"><span class="attribute">vertical-align</span>: <span class="number">4px</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* &lt;percentage&gt; values */</span></span><br><span class="line"><span class="attribute">vertical-align</span>: <span class="number">20%</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Global values */</span></span><br><span class="line"><span class="attribute">vertical-align</span>: inherit;</span><br><span class="line"><span class="attribute">vertical-align</span>: initial;</span><br><span class="line"><span class="attribute">vertical-align</span>: unset;</span><br></pre></td></tr></table></figure></p>
+<p>适用于 table-cell 的属性：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vertical-align</span>: top;</span><br><span class="line"><span class="attribute">vertical-align</span>: bottom;</span><br><span class="line"><span class="attribute">vertical-align</span>: middle;</span><br></pre></td></tr></table></figure></p>
+<h3 id="回到问题"><a href="#回到问题" class="headerlink" title="回到问题"></a>回到问题</h3><p>问题代码示例如下，<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> &gt;</span><span class="css"></span><br><span class="line">    * &#123;</span><br><span class="line">        <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">        <span class="attribute">margin</span>:  <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">body</span> &#123;</span><br><span class="line">        <span class="attribute">background-color</span>: <span class="number">#ccc</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">img</span> &#123;</span><br><span class="line">        <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="selector-tag">div</span> ,<span class="selector-tag">p</span> &#123;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">100px</span>;</span><br><span class="line">        <span class="attribute">background-color</span>: <span class="number">#fff</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> &gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"headpic.png"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>代码效果图如下，红框圈出部分为出现的白条<br><img src="http://source.lijundong.com/17-1-18/21458514-file_1484670835947_1531c.jpg" alt=""></p>
+<p>通过对代码稍作修改可以轻松看出问题所在，实图如下</p>
+<p><img src="http://source.lijundong.com/17-1-18/83589094-file_1484670475410_3d83.jpg" alt=""></p>
+<p>有了上面的铺垫，现在回头看遇到的问题，就很简单了，究其原委，首先 img 元素默认对齐方式为 <code>vertical-align: baseline;</code>，这就导致了，baseline 以下的部分被空了出来，显示了背景的白色。</p>
+<p>问题找到了，对症下药可得出下面的解决方案：</p>
+<ul>
+<li><p>根本上消除 img 的对齐方式 —— 块状化：</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123; </span><br><span class="line">    <span class="attribute">display</span>: block; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更改 img 对齐方式，以下三种均可</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;</span><br><span class="line">    <span class="attribute">vertical-align</span>: top;</span><br><span class="line">    <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">    <span class="attribute">vertical-align</span>: bottom;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更改行高，行高是两条 baseline 之间的距离，因此可以暴力的让行高消失</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123; </span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="comment">/* font-size: 0; 当 line-height 使用数值、百分比或者 rem 定义时也可用这种方式，因为 line-height 参照的是 font-size 的值*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>遇到问题多多求证，即便是很常见的问题也会挖出大学问，在求证的过程中也不能尽用拿来主义，多参考 w3c 和 MDN 的文档。<br>写的过程中，修修补补了好几回，关于 vertical-align 的内容讲的很仓促，后面会补上，如果文中表达有误，烦请指出，感谢。</p>
+<hr>
+<p><em>参考：</em></p>
+<ul>
+<li><a href="http://www.imooc.com/learn/542" target="_blank" rel="external">CSS深入理解之vertical-align</a></li>
+<li><a href="https://www.smashingmagazine.com/2012/12/css-baseline-the-good-the-bad-and-the-ugly/" target="_blank" rel="external">CSS Baseline: The Good, The Bad And The Ugly</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%9F%BA%E7%B7%9A" target="_blank" rel="external">基线 wiki</a></li>
+<li><a href="http://stackoverflow.com/questions/23247467/how-css-line-height-is-measured" target="_blank" rel="external">How CSS line-height is measured?</a></li>
+<li><a href="https://www.w3.org/Talks/2008/0911-CSS-Amsterdam/" target="_blank" rel="external">Understanding the CSS box model</a></li>
+<li><a href="http://stackoverflow.com/questions/28363186/inline-elements-and-line-height" target="_blank" rel="external">Inline elements and line-height</a></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[可能是写了篇假的年终总结]]></title>
       <url>http://lijundong.com/year-again-2017/</url>
       <content type="html"><![CDATA[<p>2017 年的第一个月已经过了一半，一篇文章都没憋出来，先拿这篇凑数吧<br><a id="more"></a></p>
