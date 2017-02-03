@@ -6,6 +6,9 @@ Sitemap: http://www.lijundong.com/baidusitemap.xml
 User-agent: *
 Allow: /
 Allow: /archives/
+Allow: /tags/
+Allow: /categories/
+Allow: /about/
 
 Disallow: /vendors/
 Disallow: /js/

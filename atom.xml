@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-01-17T16:50:52.657Z</updated>
+  <updated>2017-02-03T13:18:16.542Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -14,6 +14,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chrome 插件推荐</title>
+    <link href="http://lijundong.com/chrome-extensions-recommend/"/>
+    <id>http://lijundong.com/chrome-extensions-recommend/</id>
+    <published>2017-02-03T12:52:51.000Z</published>
+    <updated>2017-02-03T13:18:16.542Z</updated>
+    
+    <content type="html"><![CDATA[<p>本来今天准备写刚看完的 「HTTP 权威指南」 的笔记，写了一会不满意，删了。还有三十分钟坐车下班，今天总结一下我用的 Chrome 插件吧。</p>
+<a id="more"></a>
+<p><a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei" target="_blank" rel="external">live reload</a>：配合编辑器可达到所码即所得的效果</p>
+<p><a href="https://chrome.google.com/webstore/detail/%E4%BA%8C%E7%BB%B4%E7%A0%81qr%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8qr-code-generato/pflgjjogbmmcmfhfcnlohagkablhbpmg" target="_blank" rel="external">二维码(QR码)生成器(QR Code Generator)</a>：为当前页面地址生成二维码</p>
+<p><a href="http://www.editthiscookie.com/" target="_blank" rel="external">EditThisCookie</a>：编辑站点 cookie</p>
+<p><a href="https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg" target="_blank" rel="external">Take Webpage Screenshots Entirely</a>：功能强大的网页截图，可以存储为 PDF 或者 图片</p>
+<p><a href="https://chrome.google.com/webstore/detail/%E6%9E%81%E7%AE%80%E5%9B%BE%E5%BA%8A/heebflcbemenefckkgfnnklbhdbdkagg" target="_blank" rel="external">极简图床</a>：配合七牛账号，操作方便，Markdown 爱好者福音</p>
+<p><a href="https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj" target="_blank" rel="external">Save to Pocket</a>：稍后阅读，方便快捷</p>
+<p><a href="https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc" target="_blank" rel="external">Evernote Web Clipper</a>：印象笔记剪藏</p>
+<p><a href="https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd" target="_blank" rel="external">IE Tab</a>：一键模拟 IE 内核</p>
+<p><a href="https://wappalyzer.com/?pk_campaign=chrome&amp;pk_kwd=context" target="_blank" rel="external">Wappalyzer</a>：查看当前网站所用技术栈</p>
+<p><a href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall" target="_blank" rel="external">OneTab</a>：一键保存并关闭当前窗口的所有 TAB，如果你想保留当前窗口的所有 TAB 下次再打开，这无疑是最好的选择</p>
+<p><a href="https://jasonsavard.com/?ref=homepage_url&amp;ext=gmail" target="_blank" rel="external">Checker Plus for Gmail </a>：Gmail 最佳伴侣</p>
+<p><a href="https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom" target="_blank" rel="external">Ad Block</a>：过滤广告，地表最强</p>
+<p><a href="http://www.alexa.com/" target="_blank" rel="external">Alexa Rank</a>：查看当前站点的全球 Alexa 排名</p>
+<p><a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" target="_blank" rel="external">Vimium</a>：你试过用 Vim 命令操纵 Chrome 吗，你想试试吗</p>
+<p><a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="external">Proxy SwitchyOmega</a>：轻松管理代理，推荐配合 SS 使用</p>
+<p>Better History: 下线</p>
+<p>印象笔记·悦读: 下线</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本来今天准备写刚看完的 「HTTP 权威指南」 的笔记，写了一会不满意，删了。还有三十分钟坐车下班，今天总结一下我用的 Chrome 插件吧。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="chrome" scheme="http://lijundong.com/tags/chrome/"/>
+    
+      <category term="extension" scheme="http://lijundong.com/tags/extension/"/>
+    
+  </entry>
   
   <entry>
     <title>inline「一」：从 image 底部白边初识 line-height</title>
@@ -925,66 +968,6 @@
       <category term="node" scheme="http://lijundong.com/tags/node/"/>
     
       <category term="微信" scheme="http://lijundong.com/tags/%E5%BE%AE%E4%BF%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding page与Github page博客部署及域名绑定</title>
-    <link href="http://lijundong.com/coding-page-github-page-deploy-dns/"/>
-    <id>http://lijundong.com/coding-page-github-page-deploy-dns/</id>
-    <published>2016-07-30T05:29:13.000Z</published>
-    <updated>2016-11-17T14:21:59.203Z</updated>
-    
-    <content type="html"><![CDATA[<p>从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……</p>
-<p>2016/8/28更新</p>
-<p>域名被屏蔽，可能是没有备案的原因……，最近正在办备案。</p>
-<p>哎！好好说话，你别打我啊，WOC，别打脸……</p>
-<a id="more"></a>
-<p>去<a href="http://www.checkgfw.com/" target="_blank" rel="external">checkgfw</a>查了下，就出现了这篇文章的题图，不管测的权威性多大，反正挺郁闷的。唉，苦闷！<br>之前一直用的DNSPod做DNS解析，前端时间转到了阿里云，域名是万网买的，心想自家孩子速度可能快些，谁曾想没过多久就出了这档子事(虽然没有多大关联性)，非常不爽，又转回DNSPod，添加解析后等待是最痛苦的，最痛苦的是等来的是继续无法连接，折腾了一晚上还是选择把博客放在国内，在Coding上创建项目，添加公钥，上传项目，开启Page服务，部署，熟悉的界面再次出现异常亲切，好了，现在只要添加一条DNS解析就齐活。</p>
-<h3 id="Coding-Page部署博客"><a href="#Coding-Page部署博客" class="headerlink" title="Coding Page部署博客"></a>Coding Page部署博客</h3><p>无论是在Github还是在Coding上部署博客，过程都类似(<strong>注:以下统一用yourname代表项目名</strong>)</p>
-<ul>
-<li>注册Coding/Github </li>
-<li>建立项目，项目名与用户名相同</li>
-<li>如果使用SSH，请将本地公钥添加到Coding/Github(可使用<code>ssh -T git@github.com</code>检测是否添加成功)</li>
-<li><p>本地建立Hexo项目(hexo init)，在根目录下配置文件_config.yml中配置远程仓库地址以及分支(注意属性与值之间的空格)，下面是我的配置(我同时推到Github和Coding上，同时部署，这样做之前需要在项目的source目录下添加<code>staticfile</code>文件)</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>: </span><br><span class="line">      <span class="attribute">coding</span>: git<span class="variable">@git</span>.coding.<span class="attribute">net</span>:jundong/jundong.git,master</span><br><span class="line">      <span class="attribute">github</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:lijundong/lijundong.github.io.git,master</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>hexo g -d</code>生成博客并推到远程仓库，稍等片刻，访问<code>yourname.coding.me</code>/<code>yourname.github.io</code>，可以看到部署成功</p>
-</li>
-<li>博客部署完，绑定自定义域名，通过DNS解析，将自定义域名指向<code>yourname.coding.me</code>/<code>yourname.github.io</code>，区别在于添加CNAMe的方式，<ul>
-<li>Github需要在项目根目录下添加<code>CNAME</code>文件，文件中加上需要绑定的域名如<code>lijundong.com</code></li>
-<li>Coding绑定的方式是在项目的Pages服务下添加域名绑定</li>
-</ul>
-</li>
-<li>添加DNS解析，这里两者仍有区别<ul>
-<li>Github绑定<code>yourname.github.io</code>，访问<code>yourname.github.io</code>会定向到自定义域名</li>
-<li>Coding绑定<code>pages.coding.me</code>(<strong>此处踩过坑</strong>)，访问<code>yourname.coding.me</code>不会重定向<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-7-30/77087768.jpg" alt=""></li>
-</ul>
-</li>
-<li><strong>更换DNS解析服务器时，别忘了在域名提供商出更改DNS服务器(此处踩过坑)</strong></li>
-</ul>
-<hr>
-<p>那么，我的域名到底被墙了没？</p>
-<p>2016/8/28更新</p>
-<p>域名被屏蔽，可能是没有备案的原因……，最近正在办备案。</p>
-<p>哎！好好说话，你别打我啊，WOC，别打脸……</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;从前天开始，博客访问不了，以为是Github又抽风了，但周围托管在Github上的博客都正常访问，遂把代理开全局，竟然正常访问，有种不祥的预感，域名不会别墙了吧……&lt;/p&gt;
-&lt;p&gt;2016/8/28更新&lt;/p&gt;
-&lt;p&gt;域名被屏蔽，可能是没有备案的原因……，最近正在办备案。&lt;/p&gt;
-&lt;p&gt;哎！好好说话，你别打我啊，WOC，别打脸……&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="博客" scheme="http://lijundong.com/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="dns" scheme="http://lijundong.com/tags/dns/"/>
     
   </entry>
   
