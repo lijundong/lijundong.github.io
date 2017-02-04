@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-02-03T13:18:16.542Z</updated>
+  <updated>2017-02-04T02:37:13.695Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -16,36 +16,40 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Chrome 插件推荐</title>
+    <title>【建议收藏】Chrome 插件推荐</title>
     <link href="http://lijundong.com/chrome-extensions-recommend/"/>
     <id>http://lijundong.com/chrome-extensions-recommend/</id>
     <published>2017-02-03T12:52:51.000Z</published>
-    <updated>2017-02-03T13:18:16.542Z</updated>
+    <updated>2017-02-04T02:37:13.695Z</updated>
     
-    <content type="html"><![CDATA[<p>本来今天准备写刚看完的 「HTTP 权威指南」 的笔记，写了一会不满意，删了。还有三十分钟坐车下班，今天总结一下我用的 Chrome 插件吧。</p>
+    <content type="html"><![CDATA[<p>今天总结一下你可能还不知道的 Chrome 插件，可能会解决你长久以来的痛点，欢迎补充。</p>
 <a id="more"></a>
-<p><a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei" target="_blank" rel="external">live reload</a>：配合编辑器可达到所码即所得的效果</p>
-<p><a href="https://chrome.google.com/webstore/detail/%E4%BA%8C%E7%BB%B4%E7%A0%81qr%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8qr-code-generato/pflgjjogbmmcmfhfcnlohagkablhbpmg" target="_blank" rel="external">二维码(QR码)生成器(QR Code Generator)</a>：为当前页面地址生成二维码</p>
-<p><a href="http://www.editthiscookie.com/" target="_blank" rel="external">EditThisCookie</a>：编辑站点 cookie</p>
-<p><a href="https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg" target="_blank" rel="external">Take Webpage Screenshots Entirely</a>：功能强大的网页截图，可以存储为 PDF 或者 图片</p>
-<p><a href="https://chrome.google.com/webstore/detail/%E6%9E%81%E7%AE%80%E5%9B%BE%E5%BA%8A/heebflcbemenefckkgfnnklbhdbdkagg" target="_blank" rel="external">极简图床</a>：配合七牛账号，操作方便，Markdown 爱好者福音</p>
-<p><a href="https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj" target="_blank" rel="external">Save to Pocket</a>：稍后阅读，方便快捷</p>
-<p><a href="https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc" target="_blank" rel="external">Evernote Web Clipper</a>：印象笔记剪藏</p>
-<p><a href="https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd" target="_blank" rel="external">IE Tab</a>：一键模拟 IE 内核</p>
-<p><a href="https://wappalyzer.com/?pk_campaign=chrome&amp;pk_kwd=context" target="_blank" rel="external">Wappalyzer</a>：查看当前网站所用技术栈</p>
-<p><a href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall" target="_blank" rel="external">OneTab</a>：一键保存并关闭当前窗口的所有 TAB，如果你想保留当前窗口的所有 TAB 下次再打开，这无疑是最好的选择</p>
-<p><a href="https://jasonsavard.com/?ref=homepage_url&amp;ext=gmail" target="_blank" rel="external">Checker Plus for Gmail </a>：Gmail 最佳伴侣</p>
-<p><a href="https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom" target="_blank" rel="external">Ad Block</a>：过滤广告，地表最强</p>
-<p><a href="http://www.alexa.com/" target="_blank" rel="external">Alexa Rank</a>：查看当前站点的全球 Alexa 排名</p>
-<p><a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" target="_blank" rel="external">Vimium</a>：你试过用 Vim 命令操纵 Chrome 吗，你想试试吗</p>
-<p><a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="external">Proxy SwitchyOmega</a>：轻松管理代理，推荐配合 SS 使用</p>
-<p>Better History: 下线</p>
-<p>印象笔记·悦读: 下线</p>
+<h3 id="关于-Chrome"><a href="#关于-Chrome" class="headerlink" title="关于 Chrome"></a>关于 Chrome</h3><p>在一次重装系统之后，安装完 Chrome 之后登陆 Google 账号，亲眼见证了扩展挨个恢复，从来没有一个产品给我这样深刻的记忆，那样的感动难以言表。Chrome 会同步所有正在使用的扩展，包括商城里已经下线的扩展！<br>在 <a href="http://www.lijundong.com/SublimeText-extension-recommend/" target="_blank" rel="external">SublimeText 插件推荐</a> 中提过，我喜欢使用生态更完整的产品，不过在云服务时代 Sublime 的插件无法同步，这就比较尴尬了(曾有个插件试图解决这个痛点，后不了了之)。相比于 Sublime，Chrome 是一个更趋于完美的产品。</p>
+<p><strong>当然，你还需要解决墙的问题</strong></p>
+<h3 id="扩展推荐"><a href="#扩展推荐" class="headerlink" title="扩展推荐"></a>扩展推荐</h3><p>本想给这些插件分类，但是这样似乎会把简单的事情变得复杂，所以，数量不多，按需所取（排名不分先后）。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei" target="_blank" rel="external">live reload</a></strong><br>应用场景：在你的编辑器中安装 livereload 插件（例如 SublimeText），在编辑文件时预览到 Chrome 中，你的编辑器和 Chrome 即可通讯，达到所见即所得的境界。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="external">Proxy SwitchyOmega</a></strong><br>应用场景：轻松管理网络代理，推荐配合 SS 使用。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/%E4%BA%8C%E7%BB%B4%E7%A0%81qr%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8qr-code-generato/pflgjjogbmmcmfhfcnlohagkablhbpmg" target="_blank" rel="external">二维码(QR码)生成器(QR Code Generator)</a></strong><br>应用场景：为当前页面地址生成二维码。</p>
+<p><strong><a href="http://www.editthiscookie.com/" target="_blank" rel="external">EditThisCookie</a></strong><br>应用场景：编辑站点 cookie。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/ie-tab/hehijbfgiekmjfkfjpbkbammjbdenadd" target="_blank" rel="external">IE Tab</a></strong><br>应用场景：一键模拟 IE 内核，在一些比较特殊的场景下比较使用，不用特意再去打开 IE。</p>
+<p><strong><a href="https://wappalyzer.com/?pk_campaign=chrome&amp;pk_kwd=context" target="_blank" rel="external">Wappalyzer</a></strong><br>应用场景：查看当前网站所用技术栈</p>
+<p><strong><a href="http://www.alexa.com/" target="_blank" rel="external">Alexa Rank</a></strong><br>应用场景：查看当前站点的全球 Alexa 排名</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/take-webpage-screenshots/mcbpblocgmgfnpjjppndjkmgjaogfceg" target="_blank" rel="external">Take Webpage Screenshots Entirely</a></strong><br>应用场景：功能强大的网页截图，并且提供 Pro 选项，截图可以存储为 PDF 或者 图片。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/%E6%9E%81%E7%AE%80%E5%9B%BE%E5%BA%8A/heebflcbemenefckkgfnnklbhdbdkagg" target="_blank" rel="external">极简图床</a></strong><br>应用场景：配合七牛账号，轻松上传文件到七牛，管理方便，如果你喜欢使用 Markdown，那么你可以尝试一下。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj" target="_blank" rel="external">Save to Pocket</a></strong><br>应用场景：稍后阅读，登录 Pocket 账户，全平台同步，方便快捷。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc" target="_blank" rel="external">Evernote Web Clipper</a></strong><br>应用场景：使用体验和 Pocket 异曲同工，登录印象笔记，全平台同步剪藏。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall" target="_blank" rel="external">OneTab</a></strong><br>应用场景：一键保存并关闭当前窗口的所有 TAB，如果你想关闭当前窗口的所有 TAB，但又想保存下来下次再打开，这无疑是最好的选择，在遇到这个插件之前我都是用书签功能，导致最后留下大量书签。</p>
+<p><strong><a href="https://jasonsavard.com/?ref=homepage_url&amp;ext=gmail" target="_blank" rel="external">Checker Plus for Gmail </a></strong><br>应用场景：Gmail 最佳伴侣，登陆 Gmail 账户就可以轻松管理邮件了。</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom" target="_blank" rel="external">Ad Block</a></strong><br>应用场景：过滤广告，地表最强</p>
+<p><strong><a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" target="_blank" rel="external">Vimium</a></strong><br>应用场景：你试过用 Vim 命令操纵 Chrome 吗，你想试试吗</p>
+<p><strong>Better History</strong>：已下线<br>应用场景：给你更好的浏览历史体验，前段时间开始用的，昨天看却下线了</p>
+<p><strong>印象笔记·悦读</strong>：已下线<br>应用场景：将网页内容重新排版，给你更舒适的阅读体验，配合印象笔记使用，体验更佳，不知为何也下线了。</p>
+<p><strong>欢迎补充！</strong></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;本来今天准备写刚看完的 「HTTP 权威指南」 的笔记，写了一会不满意，删了。还有三十分钟坐车下班，今天总结一下我用的 Chrome 插件吧。&lt;/p&gt;
+      &lt;p&gt;今天总结一下你可能还不知道的 Chrome 插件，可能会解决你长久以来的痛点，欢迎补充。&lt;/p&gt;
     
     </summary>
     
