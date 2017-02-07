@@ -4,6 +4,208 @@
 
     
   <url>
+    <loc>http://lijundong.com/javascript-variable-lift/</loc>
+    <lastmod>2017-02-07T07:14:59.498Z</lastmod>
+    <data>
+        <display>
+        <title>Javascript 变量提升原理解析</title>
+        <pubTime>2017-02-07T05:49:49.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>scope</tag>
+         
+         
+           
+             
+              <breadCrumb title="javascript" url="http://lijundong.com/categories/javascript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/normal-flow/</loc>
+    <lastmod>2017-02-06T06:48:18.375Z</lastmod>
+    <data>
+        <display>
+        <title>CSS 定位 & 文档流</title>
+        <pubTime>2016-03-03T02:08:01.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>css</tag>
+         
+        <tag>文档流</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/node-js-dirname-difference/</loc>
+    <lastmod>2017-02-06T06:48:09.881Z</lastmod>
+    <data>
+        <display>
+        <title>node.js 中 __dirname 与 ./ 的区别</title>
+        <pubTime>2016-06-18T08:40:44.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>path</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/nginx-conficure-domains-to-servers/</loc>
+    <lastmod>2017-02-06T06:47:52.444Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx 配置多个 Node 服务的域名</title>
+        <pubTime>2016-10-11T16:15:48.000Z</pubTime>
+        
+        <tag>服务器</tag>
+         
+        <tag>nginx</tag>
+         
+        <tag>域名</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/location-of-bom/</loc>
+    <lastmod>2017-02-06T06:47:44.552Z</lastmod>
+    <data>
+        <display>
+        <title>BOM 之 location 对象</title>
+        <pubTime>2016-07-19T03:01:52.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>bom</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/jquery-prevent-form-sbumit/</loc>
+    <lastmod>2017-02-06T06:47:10.466Z</lastmod>
+    <data>
+        <display>
+        <title>表单提交</title>
+        <pubTime>2016-07-25T11:19:42.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>表单</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/huawei-phone-browser-height-self-adapt/</loc>
+    <lastmod>2017-02-06T06:46:44.951Z</lastmod>
+    <data>
+        <display>
+        <title>虚拟按键手机页面高度自适应</title>
+        <pubTime>2016-08-31T12:34:44.000Z</pubTime>
+        
+        <tag>自适应</tag>
+         
+        <tag>移动开发</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Hello%20World/</loc>
+    <lastmod>2017-02-06T06:43:27.688Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2015-09-10T15:54:36.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Dell-laptop-add-ssd/</loc>
+    <lastmod>2017-02-06T06:41:09.874Z</lastmod>
+    <data>
+        <display>
+        <title>Dell笔记本加装固态</title>
+        <pubTime>2016-03-07T00:01:07.000Z</pubTime>
+        
+        <tag>tips</tag>
+         
+        <tag>ssd</tag>
+         
+        <tag>dell</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/chrome-extensions-recommend/</loc>
     <lastmod>2017-02-04T13:21:40.451Z</lastmod>
     <data>
@@ -33,13 +235,13 @@
         <title>SublimeText 插件推荐</title>
         <pubTime>2016-03-17T01:43:02.000Z</pubTime>
         
+        <tag>工具使用</tag>
+         
         <tag>sublimetext</tag>
          
         <tag>插件</tag>
          
         <tag>力所能及的分享</tag>
-         
-        <tag>工具使用</tag>
          
          
            
@@ -560,50 +762,6 @@
 
     
   <url>
-    <loc>http://lijundong.com/node-js-dirname-difference/</loc>
-    <lastmod>2016-11-17T14:23:21.973Z</lastmod>
-    <data>
-        <display>
-        <title>node.js中__dirname与./的区别</title>
-        <pubTime>2016-06-18T08:40:44.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-        <tag>path</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/location-of-bom/</loc>
-    <lastmod>2016-11-17T14:23:14.149Z</lastmod>
-    <data>
-        <display>
-        <title>BOM之location对象</title>
-        <pubTime>2016-07-19T03:01:52.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>bom</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://lijundong.com/Lexical%20analysis/</loc>
     <lastmod>2016-11-17T14:23:04.009Z</lastmod>
     <data>
@@ -628,28 +786,6 @@
 
     
   <url>
-    <loc>http://lijundong.com/huawei-phone-browser-height-self-adapt/</loc>
-    <lastmod>2016-11-17T14:22:49.592Z</lastmod>
-    <data>
-        <display>
-        <title>虚拟按键手机页面高度自适应</title>
-        <pubTime>2016-08-31T12:34:44.000Z</pubTime>
-        
-        <tag>自适应</tag>
-         
-        <tag>移动开发</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://lijundong.com/google-no-country-redirect-disabled/</loc>
     <lastmod>2016-11-17T14:22:28.449Z</lastmod>
     <data>
@@ -663,30 +799,6 @@
            
              
               <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Dell-laptop-add-ssd/</loc>
-    <lastmod>2016-11-17T14:22:19.856Z</lastmod>
-    <data>
-        <display>
-        <title>Dell笔记本加装固态</title>
-        <pubTime>2016-03-07T00:01:07.000Z</pubTime>
-        
-        <tag>tips</tag>
-         
-        <tag>ssd</tag>
-         
-        <tag>dell</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -876,30 +988,6 @@
 
     
   <url>
-    <loc>http://lijundong.com/nginx-conficure-domains-to-servers/</loc>
-    <lastmod>2016-10-11T18:17:30.097Z</lastmod>
-    <data>
-        <display>
-        <title>Nginx 配置多个Node服务的域名</title>
-        <pubTime>2016-10-11T16:15:48.000Z</pubTime>
-        
-        <tag>服务器</tag>
-         
-        <tag>nginx</tag>
-         
-        <tag>域名</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://lijundong.com/embeded-javascript-templates/</loc>
     <lastmod>2016-10-11T18:09:59.259Z</lastmod>
     <data>
@@ -908,28 +996,6 @@
         <pubTime>2016-09-01T03:05:56.000Z</pubTime>
         
         <tag>ejs</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/jquery-prevent-form-sbumit/</loc>
-    <lastmod>2016-08-25T11:48:34.984Z</lastmod>
-    <data>
-        <display>
-        <title>表单提交</title>
-        <pubTime>2016-07-25T11:19:42.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>表单</tag>
          
          
            
@@ -1083,9 +1149,9 @@
         <title>管理你的Kindle</title>
         <pubTime>2016-01-12T12:55:33.000Z</pubTime>
         
-        <tag>工具使用</tag>
-         
         <tag>kindle</tag>
+         
+        <tag>工具使用</tag>
          
          
            
@@ -1108,50 +1174,6 @@
         <tag>信息系统开发</tag>
          
         <tag>wampserver</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Hello%20World/</loc>
-    <lastmod>2016-06-07T14:08:04.961Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2015-09-10T15:54:36.000Z</pubTime>
-        
-        <tag>life</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/normal-flow/</loc>
-    <lastmod>2016-06-07T14:03:55.604Z</lastmod>
-    <data>
-        <display>
-        <title>CSS定位 & 文档流</title>
-        <pubTime>2016-03-03T02:08:01.000Z</pubTime>
-        
-        <tag>html</tag>
-         
-        <tag>css</tag>
-         
-        <tag>文档流</tag>
          
          
            

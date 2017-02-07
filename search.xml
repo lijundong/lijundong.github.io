@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title><![CDATA[Javascript 变量提升原理解析]]></title>
+      <url>http://lijundong.com/javascript-variable-lift/</url>
+      <content type="html"><![CDATA[<p>很多 Javascript 教程或者书籍中都会介绍 Javascript 的变量提升，但是你了解其中的原因吗？</p>
+<a id="more"></a>
+<h3 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h3><p>首先来看两个经典的案例 （<strong>案例均处于严格模式</strong>）</p>
+<p>案例一：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="keyword">var</span> a;</span><br></pre></td></tr></table></figure></p>
+<p>这个很简单，变量提升最直接的体现，输出的结果是 <code>1</code>，实际的执行顺序如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line">a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br></pre></td></tr></table></figure></p>
+<p>案例二：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
+<p>这段代码执行会报错，不过错误是 a 是 <code>undefined</code>，而不是 <code>ReferenceError</code>，因为这段代码的实际执行顺序如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line">a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
+<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>要弄清楚 Javascript 变量提升，还得回到 Javascript 的编译阶段。</p>
+<blockquote>
+<p>Part of the compilation phase was to find and associate all declarations with their appropriate scopes.</p>
+</blockquote>
+<p>编译阶段的其中一个工作就是找到所有的声明，并用合适的作用域将它们关联起来，所有的变量声明以及函数声明都会在代码执行之前首先被处理。所以，分析 Javascript 代码的时候需要先关注声明。<br>这样就导致了 <code>var a = 1;</code> 被分解成了 <code>var a; a = 1;</code>，所以案例二的结果就很明显了。</p>
+<h4 id="函数优先"><a href="#函数优先" class="headerlink" title="函数优先"></a>函数优先</h4><p>值得注意的是，变量提升时，<strong>函数声明优先</strong>，函数声明会被首先提升，其次才是变量，具体效果如下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">foo();</span><br><span class="line"><span class="keyword">var</span> foo;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;;</span><br><span class="line">foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>执行的结果是 <code>1</code>，实际执行流程如下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//var foo; //重复声明，被忽略</span></span><br><span class="line">foo();</span><br><span class="line">foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><strong>参考：</strong></p>
+<ul>
+<li><em><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch4.md" target="_blank" rel="external">You Don’t Know JS: Scope &amp; Closures</a></em></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[【建议收藏】Chrome 插件推荐]]></title>
       <url>http://lijundong.com/chrome-extensions-recommend/</url>
       <content type="html"><![CDATA[<p>今天总结一下你可能还不知道的 Chrome 插件，可能会解决你长久以来的痛点，欢迎补充。</p>
@@ -428,7 +454,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Nginx 配置多个Node服务的域名]]></title>
+      <title><![CDATA[Nginx 配置多个 Node 服务的域名]]></title>
       <url>http://lijundong.com/nginx-conficure-domains-to-servers/</url>
       <content type="html"><![CDATA[<p>最近用 Node 写的两个小项目都需要上线，项目跑在阿里云上，给了不同的端口，平时在各自的端口上，相安无事，但是要挂在微信公号上就需要域名，IP只有一个，两个域名势必要搭起来，我资历尚浅，肯定劝不动他俩，不看僧面看佛面，只好请来神器 Nginx 主持公道。这里做个笔记，欢迎补充指正。<br><a id="more"></a></p>
 <h3 id="Domains-2-Servers-？"><a href="#Domains-2-Servers-？" class="headerlink" title="Domains-2-Servers ？"></a>Domains-2-Servers ？</h3><p>多个 Domain 需要对应多个 Node 服务，然而只有一个 IP，这还怎么谈？矛盾尖锐到无法解决的时候就需要中间人介入，和气生财嘛，Nginx 在中间人这个位置做的得心应手，擅长的领域有以下几点</p>
@@ -499,6 +525,7 @@
       <title><![CDATA[虚拟按键手机页面高度自适应]]></title>
       <url>http://lijundong.com/huawei-phone-browser-height-self-adapt/</url>
       <content type="html"><![CDATA[<p>华为系手机、谷歌亲儿子 Nexus 系列等配备的都是虚拟按键，虚拟按键唤出与隐藏会导致页面的高度变化，如果没有对内容高度进行适应，会出现页面内容被覆盖，或者页面空出一段留白，实验室用华为的同学挺多的，包括我，所以难免在调试页面的时候遇到这个问题，做个笔记先，欢迎补充指正。<br><a id="more"></a></p>
+<p>其实原理很简单，要达到的效果是底部 Tab 随着虚拟按键的变化而适应。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">tab</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
     </entry>
@@ -682,7 +709,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[BOM之location对象]]></title>
+      <title><![CDATA[BOM 之 location 对象]]></title>
       <url>http://lijundong.com/location-of-bom/</url>
       <content type="html"><![CDATA[<p>再次看到BOM的location，涉及到URL的组成，做个总结，记个笔记先。<br><a id="more"></a></p>
 <h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>举个栗子：<br>现有一url：<code>https://lijundong.com:80/blog?name=bom#function</code><br>对应属性如下：</p>
@@ -861,7 +888,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[node.js中__dirname与./的区别]]></title>
+      <title><![CDATA[node.js 中 __dirname 与 ./ 的区别]]></title>
       <url>http://lijundong.com/node-js-dirname-difference/</url>
       <content type="html"><![CDATA[<p>‘./‘指向的目录是执行脚本时所在的当前目录，’__dirname’指向的目录是执行的脚本所保存的目录。<br><a id="more"></a><br>举个例子：<br>现在我的文件目录结构是<br><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/dir1</span><br><span class="line">    /dir2</span><br><span class="line">        <span class="built_in">path</span>.js</span><br></pre></td></tr></table></figure></p>
 <p>path.js的内容是<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> path=<span class="built_in">require</span>(<span class="string">"path"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" . ="</span>+path.resolve(<span class="string">"."</span>));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" __dirname ="</span>+path.resolve(__dirname));</span><br></pre></td></tr></table></figure></p>
@@ -1381,7 +1408,7 @@
     <entry>
       <title><![CDATA[Dell笔记本加装固态]]></title>
       <url>http://lijundong.com/Dell-laptop-add-ssd/</url>
-      <content type="html"><![CDATA[<h2 id="加装SSD"><a href="#加装SSD" class="headerlink" title="加装SSD"></a>加装SSD</h2><p>老大这学期的课程需要装很多测试软件，那台32位系统的Dell inspiron 14本来就卡的不行，再装软件恐怕连开机都困难，想到此处，拍案而起，大呼道“我要加装SSD！”，加之最近发现用的是64位的i3，换系统更是刻不容缓了。昨天用了半个下午装完，因为第一次拆Dell，这里总结几个需要注意的地方。<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<h2 id="加装SSD"><a href="#加装SSD" class="headerlink" title="加装SSD"></a>加装SSD</h2><p>老大这学期的课程需要装很多测试软件，那台32位系统的Dell inspiron 14本来就卡的不行，再装软件恐怕连开机都困难，想到此处，拍案而起，大呼道“我要加装SSD！”，加之最近发现用的是64位的i3，换系统更是刻不容缓了。昨天用了半个下午装完，因为第一次拆 Dell，这里总结几个需要注意的地方。<br><a id="more"></a></p>
 <h2 id="主料"><a href="#主料" class="headerlink" title="主料"></a>主料</h2><ul>
 <li>Dell inspiron 14:光驱、64位i3处理器</li>
 <li>SSD、9.5mm硬盘托盘（笔记本一般用的都是9.5mm，以实际型号为考量）</li>
@@ -1409,7 +1436,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[CSS定位 & 文档流]]></title>
+      <title><![CDATA[CSS 定位 & 文档流]]></title>
       <url>http://lijundong.com/normal-flow/</url>
       <content type="html"><![CDATA[<h2 id="文档流小计"><a href="#文档流小计" class="headerlink" title="文档流小计"></a>文档流小计</h2><p>页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。<br><em>欢迎指正！</em><br><a id="more"></a></p>
 <h2 id="定位方式"><a href="#定位方式" class="headerlink" title="定位方式"></a>定位方式</h2><ul>
@@ -1593,6 +1620,7 @@
 <h3 id="技术支持"><a href="#技术支持" class="headerlink" title="技术支持"></a>技术支持</h3><blockquote>
 <p>博客由<a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>支撑，部署在<a href="">Github</a>上，使用的主题是<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next</a>，评论系统由<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>强力驱动，DNS解析由<a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod</a>支持。</p>
 </blockquote>
+<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>目前站点放在阿里云，DNS 服务提供商从 Cloudflare 转到了阿里云解析。</p>
 <p><em>生活，最重要的就是要开心嘛！</em></p>
 ]]></content>
     </entry>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-02-04T13:21:40.451Z</updated>
+  <updated>2017-02-07T07:14:59.498Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Javascript 变量提升原理解析</title>
+    <link href="http://lijundong.com/javascript-variable-lift/"/>
+    <id>http://lijundong.com/javascript-variable-lift/</id>
+    <published>2017-02-07T05:49:49.000Z</published>
+    <updated>2017-02-07T07:14:59.498Z</updated>
+    
+    <content type="html"><![CDATA[<p>很多 Javascript 教程或者书籍中都会介绍 Javascript 的变量提升，但是你了解其中的原因吗？</p>
+<a id="more"></a>
+<h3 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h3><p>首先来看两个经典的案例 （<strong>案例均处于严格模式</strong>）</p>
+<p>案例一：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="keyword">var</span> a;</span><br></pre></td></tr></table></figure></p>
+<p>这个很简单，变量提升最直接的体现，输出的结果是 <code>1</code>，实际的执行顺序如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line">a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br></pre></td></tr></table></figure></p>
+<p>案例二：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
+<p>这段代码执行会报错，不过错误是 a 是 <code>undefined</code>，而不是 <code>ReferenceError</code>，因为这段代码的实际执行顺序如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line">a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure></p>
+<h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>要弄清楚 Javascript 变量提升，还得回到 Javascript 的编译阶段。</p>
+<blockquote>
+<p>Part of the compilation phase was to find and associate all declarations with their appropriate scopes.</p>
+</blockquote>
+<p>编译阶段的其中一个工作就是找到所有的声明，并用合适的作用域将它们关联起来，所有的变量声明以及函数声明都会在代码执行之前首先被处理。所以，分析 Javascript 代码的时候需要先关注声明。<br>这样就导致了 <code>var a = 1;</code> 被分解成了 <code>var a; a = 1;</code>，所以案例二的结果就很明显了。</p>
+<h4 id="函数优先"><a href="#函数优先" class="headerlink" title="函数优先"></a>函数优先</h4><p>值得注意的是，变量提升时，<strong>函数声明优先</strong>，函数声明会被首先提升，其次才是变量，具体效果如下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">foo();</span><br><span class="line"><span class="keyword">var</span> foo;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;;</span><br><span class="line">foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>执行的结果是 <code>1</code>，实际执行流程如下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">1</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//var foo; //重复声明，被忽略</span></span><br><span class="line">foo();</span><br><span class="line">foo = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="number">2</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><strong>参考：</strong></p>
+<ul>
+<li><em><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch4.md" target="_blank" rel="external">You Don’t Know JS: Scope &amp; Closures</a></em></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很多 Javascript 教程或者书籍中都会介绍 Javascript 的变量提升，但是你了解其中的原因吗？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://lijundong.com/categories/javascript/"/>
+    
+    
+      <category term="javascript" scheme="http://lijundong.com/tags/javascript/"/>
+    
+      <category term="scope" scheme="http://lijundong.com/tags/scope/"/>
+    
+  </entry>
   
   <entry>
     <title>【建议收藏】Chrome 插件推荐</title>
@@ -675,11 +719,11 @@
   </entry>
   
   <entry>
-    <title>Nginx 配置多个Node服务的域名</title>
+    <title>Nginx 配置多个 Node 服务的域名</title>
     <link href="http://lijundong.com/nginx-conficure-domains-to-servers/"/>
     <id>http://lijundong.com/nginx-conficure-domains-to-servers/</id>
     <published>2016-10-11T16:15:48.000Z</published>
-    <updated>2016-10-11T18:17:30.097Z</updated>
+    <updated>2017-02-06T06:47:52.444Z</updated>
     
     <content type="html"><![CDATA[<p>最近用 Node 写的两个小项目都需要上线，项目跑在阿里云上，给了不同的端口，平时在各自的端口上，相安无事，但是要挂在微信公号上就需要域名，IP只有一个，两个域名势必要搭起来，我资历尚浅，肯定劝不动他俩，不看僧面看佛面，只好请来神器 Nginx 主持公道。这里做个笔记，欢迎补充指正。<br><a id="more"></a></p>
 <h3 id="Domains-2-Servers-？"><a href="#Domains-2-Servers-？" class="headerlink" title="Domains-2-Servers ？"></a>Domains-2-Servers ？</h3><p>多个 Domain 需要对应多个 Node 服务，然而只有一个 IP，这还怎么谈？矛盾尖锐到无法解决的时候就需要中间人介入，和气生财嘛，Nginx 在中间人这个位置做的得心应手，擅长的领域有以下几点</p>
@@ -783,9 +827,10 @@
     <link href="http://lijundong.com/huawei-phone-browser-height-self-adapt/"/>
     <id>http://lijundong.com/huawei-phone-browser-height-self-adapt/</id>
     <published>2016-08-31T12:34:44.000Z</published>
-    <updated>2016-11-17T14:22:49.592Z</updated>
+    <updated>2017-02-06T06:46:44.951Z</updated>
     
     <content type="html"><![CDATA[<p>华为系手机、谷歌亲儿子 Nexus 系列等配备的都是虚拟按键，虚拟按键唤出与隐藏会导致页面的高度变化，如果没有对内容高度进行适应，会出现页面内容被覆盖，或者页面空出一段留白，实验室用华为的同学挺多的，包括我，所以难免在调试页面的时候遇到这个问题，做个笔记先，欢迎补充指正。<br><a id="more"></a></p>
+<p>其实原理很简单，要达到的效果是底部 Tab 随着虚拟按键的变化而适应。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">tab</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
     
@@ -950,31 +995,6 @@
       <category term="html" scheme="http://lijundong.com/tags/html/"/>
     
       <category term="css" scheme="http://lijundong.com/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信公号Node开发「贰」之express</title>
-    <link href="http://lijundong.com/wechat-node-2th-express/"/>
-    <id>http://lijundong.com/wechat-node-2th-express/</id>
-    <published>2016-07-30T14:07:07.000Z</published>
-    <updated>2016-11-17T14:26:08.144Z</updated>
-    
-    <content type="html"><![CDATA[<p>笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。<br><a id="more"></a></p>
-<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-——bin   //存放www文件，包含着项目启动命令</span><br><span class="line"></span>|<span class="string">-——node_modules   //存放npm安装到本地的依赖项，依赖包声明在package.json</span><br><span class="line"></span>|<span class="string">-——public         //存放静态资源，图片、js文件、样式文件</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——images</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——javascripts</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——stylesheets</span><br><span class="line"></span>|<span class="string">-——routes //存放路由文件</span><br><span class="line"></span>|<span class="string">-——views  //模板文件，默认使用jade，如果用ejs，则用`express -e &lt;项目名&gt;`初始化</span><br><span class="line"></span>|<span class="string">-——app.js //入口文件</span><br><span class="line"></span>|<span class="string">-——package.json //npm依赖配置文件，`npm install`命令安装</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="node" scheme="http://lijundong.com/categories/node/"/>
-    
-    
-      <category term="node" scheme="http://lijundong.com/tags/node/"/>
-    
-      <category term="微信" scheme="http://lijundong.com/tags/%E5%BE%AE%E4%BF%A1/"/>
     
   </entry>
   
