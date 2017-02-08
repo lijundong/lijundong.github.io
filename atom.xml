@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-02-07T07:14:59.498Z</updated>
+  <updated>2017-02-07T07:15:00.000Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lijundong.com/javascript-variable-lift/"/>
     <id>http://lijundong.com/javascript-variable-lift/</id>
     <published>2017-02-07T05:49:49.000Z</published>
-    <updated>2017-02-07T07:14:59.498Z</updated>
+    <updated>2017-02-07T07:15:00.000Z</updated>
     
     <content type="html"><![CDATA[<p>很多 Javascript 教程或者书籍中都会介绍 Javascript 的变量提升，但是你了解其中的原因吗？</p>
 <a id="more"></a>
@@ -64,7 +64,7 @@
     <link href="http://lijundong.com/chrome-extensions-recommend/"/>
     <id>http://lijundong.com/chrome-extensions-recommend/</id>
     <published>2017-02-03T12:52:51.000Z</published>
-    <updated>2017-02-04T13:21:40.451Z</updated>
+    <updated>2017-02-04T13:21:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>今天总结一下你可能还不知道的 Chrome 插件，可能会解决你长久以来的痛点，欢迎补充。</p>
 <a id="more"></a>
@@ -114,7 +114,7 @@
     <link href="http://lijundong.com/image-and-line-height/"/>
     <id>http://lijundong.com/image-and-line-height/</id>
     <published>2017-01-16T13:25:28.000Z</published>
-    <updated>2017-01-17T16:50:52.657Z</updated>
+    <updated>2017-01-17T16:50:54.000Z</updated>
     
     <content type="html"><![CDATA[<p>今天在做一个静态页面时，图片底部出现一条 3px 高度的白边，既不是 margin 也不是 padding，找了好久没能解决，后来才发现与 line-height 相关，问题解决后查缺补漏。<br>这里作下笔记。</p>
 <a id="more"></a>
@@ -205,7 +205,7 @@
     <link href="http://lijundong.com/year-again-2017/"/>
     <id>http://lijundong.com/year-again-2017/</id>
     <published>2017-01-15T12:35:05.000Z</published>
-    <updated>2017-01-15T15:05:13.529Z</updated>
+    <updated>2017-01-15T15:05:14.000Z</updated>
     
     <content type="html"><![CDATA[<p>2017 年的第一个月已经过了一半，一篇文章都没憋出来，先拿这篇凑数吧<br><a id="more"></a></p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=29393038&auto=0&height=66"></iframe>
@@ -244,7 +244,7 @@
     <link href="http://lijundong.com/hexo-blog-custom-log/"/>
     <id>http://lijundong.com/hexo-blog-custom-log/</id>
     <published>2016-12-25T06:23:11.000Z</published>
-    <updated>2016-12-25T07:00:13.603Z</updated>
+    <updated>2016-12-25T07:00:14.000Z</updated>
     
     <content type="html"><![CDATA[<p>在这里记录下 Blog 基于 Hexo 和 Next 主题的一些自定义。</p>
 <ul>
@@ -289,7 +289,7 @@
     <link href="http://lijundong.com/note-hexo-deploy-on-server/"/>
     <id>http://lijundong.com/note-hexo-deploy-on-server/</id>
     <published>2016-12-18T15:58:45.000Z</published>
-    <updated>2016-12-18T17:18:48.021Z</updated>
+    <updated>2016-12-18T17:18:50.000Z</updated>
     
     <content type="html"><![CDATA[<p>前几天把 hexo blog 迁移到阿里云服务器，全程看别人的文章，每篇文章描述的方式不尽相同，加之软件环境的不同，再加之我的理解能力短板，中间走了好几次弯路，配完之后，对整体过程加深了理解，之后又重新看了 <code>git hook</code> 的文档，结合配置过程，这里做一次小记。<br><a id="more"></a></p>
 <blockquote>
@@ -358,7 +358,7 @@
     <link href="http://lijundong.com/git-hooks/"/>
     <id>http://lijundong.com/git-hooks/</id>
     <published>2016-12-16T11:25:34.000Z</published>
-    <updated>2016-12-18T11:14:01.843Z</updated>
+    <updated>2016-12-18T11:14:02.000Z</updated>
     
     <content type="html"><![CDATA[<p><code>Git Hooks</code> 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。<br>之前迁移博客到阿里云，<code>Git Hooks</code> 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 <code>post-receive</code>，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。<br><a id="more"></a></p>
 <h3 id="安装-Hooks"><a href="#安装-Hooks" class="headerlink" title="安装 Hooks"></a>安装 Hooks</h3><p>多数情况下，所有的 hook 放在 <code>.git/hooks</code> 目录下，当我们执行 <code>git init</code> 时，Git 就会将一些示例脚本填充在 <code>.git/hooks</code> 目录下，这些示例脚本命名以 <code>.sample</code> 后缀，默认不执行，如果想执行这些脚本，可以重命名(去掉 <code>.sample</code> 后缀)，也可以自定义脚本，保存在 <code>.git/hooks</code> 目录下，<strong>并且给予脚本执行权限</strong>。</p>
@@ -408,7 +408,7 @@
     <link href="http://lijundong.com/deploy-hexo-blog-on-server/"/>
     <id>http://lijundong.com/deploy-hexo-blog-on-server/</id>
     <published>2016-12-13T18:55:57.000Z</published>
-    <updated>2016-12-23T12:12:01.730Z</updated>
+    <updated>2016-12-23T12:12:02.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>测试 git push 之后 hook 触发没有</p>
@@ -456,7 +456,7 @@
     <link href="http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/"/>
     <id>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</id>
     <published>2016-11-23T13:15:40.000Z</published>
-    <updated>2016-11-24T06:43:56.761Z</updated>
+    <updated>2016-11-24T06:43:58.000Z</updated>
     
     <content type="html"><![CDATA[<p>上一篇 <a href="http://jundong.coding.me/2016/11/17/novel-crawler-by-Nodejs/" target="_blank" rel="external">Node.js 实现简单小说爬虫</a>，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。<br>工欲善其事，必先利其器。这里笔记下 SublimeTeXt3 下用 TeXlive 配置 LaTeX 编辑环境。<br><a id="more"></a></p>
 <h3 id="系统-amp-软件-版本"><a href="#系统-amp-软件-版本" class="headerlink" title="系统 &amp; 软件 版本"></a>系统 &amp; 软件 版本</h3><ul>
@@ -519,7 +519,7 @@
     <link href="http://lijundong.com/novel-crawler-by-Nodejs/"/>
     <id>http://lijundong.com/novel-crawler-by-Nodejs/</id>
     <published>2016-11-17T14:17:32.000Z</published>
-    <updated>2016-11-18T01:55:17.751Z</updated>
+    <updated>2016-11-18T01:55:18.000Z</updated>
     
     <content type="html"><![CDATA[<p>最近因为剧荒，老大追了爱奇艺的一部网剧，由丁墨的同名小说《美人为馅》改编，目前已经放出两季，虽然整部剧槽点满满，但是老大看得不亦乐乎，并且在看完第二季之后跟我要小说资源，直接要奔原著去看结局……<br>随手搜了下，都是在线资源，下载的话需要登录，注册登录好麻烦，写个爬虫玩玩也好，于是动手用 node 写了一个，这里做下笔记<br><a id="more"></a></p>
 <h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><ul>
@@ -577,7 +577,7 @@
     <link href="http://lijundong.com/develop-automatic-gulp-set/"/>
     <id>http://lijundong.com/develop-automatic-gulp-set/</id>
     <published>2016-10-29T07:05:36.000Z</published>
-    <updated>2016-10-29T09:03:46.197Z</updated>
+    <updated>2016-10-29T09:03:48.000Z</updated>
     
     <content type="html"><![CDATA[<p>越来越意识到开发的规范化的重要性，以及自动化带来的高效，前端开发环境自动化构建的技能是必须要 get 的，于是最近用了一个 demo 完整的跑了一遍 Gulp 的前端开发自动化，体验很棒，这里记录下。<br>努力向规范看齐，向大牛看齐，多去了解，多去接触，视野开阔才能看到更远的风景，会有更多的可能。<br><a id="more"></a></p>
 <h3 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h3><p>技术的进击的过程相似于打怪升级买装备，初级拿把小米步枪就可以制霸方圆，升级之后遇到高手才发现没几把 AK 都不好意思跟人打招呼，再升级之后，发现二营长的意大利炮还是要有的，哈哈。<br>学习前端以来都是自己一个人折腾，学的不系统，做的项目也都是小打小闹，一直没接触到自动化，第一次看介绍 Grunt 的文章时，因为应用水平太低，反复看了三遍才稍微理解开发环境自动化，但是一直没机会应用，这次做个笔记先，关于使用 grunt、gulp还是 webpack，我的观点是，你在纠结的时候，我已经开始上代码了……</p>
@@ -615,7 +615,7 @@
     <link href="http://lijundong.com/google-no-country-redirect-disabled/"/>
     <id>http://lijundong.com/google-no-country-redirect-disabled/</id>
     <published>2016-10-20T13:30:19.000Z</published>
-    <updated>2016-11-17T14:22:28.449Z</updated>
+    <updated>2016-11-17T14:22:30.000Z</updated>
     
     <content type="html"><![CDATA[<p>由于不可抗力的缘故，每过一段时间，Google 就会重新被拿出来说一次，上一次说的是入门之法，关于 VPN 和 Shadowsocks 的一些很基础的东西。<br>最近小飞机换了更快的香港的服务器，体验非常棒，但是在使用 Google 时，Google 为了提供更好的本地搜索体验，<code>google.com</code> 会自动重定向到 <code>google.com.hk</code> ，可惜这些体验只有身在香港的服务器才能体验，而身在天朝的我还需要去考虑 <code>google country redirect disable</code>。<br><a id="more"></a><br>想要体验原汁原味的 Google(google.com)，下面的方案是我用过的较方便的方案。<br><strong>欢迎更正及补充</strong></p>
 <h3 id="Chrome-扩展"><a href="#Chrome-扩展" class="headerlink" title="Chrome 扩展"></a>Chrome 扩展</h3><p>Chrone 商店有一款禁止重定向的扩展 <a href="https://chrome.google.com/webstore/detail/nocountryredirect-ncr/ciboebddidackjicoeoiigdnbmchkdll?hl=en" target="_blank" rel="external">NoCountryRedirect (NCR)</a><br>这款插件是将重定向后的 <code>google.com.hk</code> 再重定向到 <code>google.com</code>，虽然有效，但是多次重定向导致页面相应变慢，体验不太好，装完体验两分钟就卸了<br>优点：安装方便<br>缺点：导致 Google 访问速度变得很慢</p>
@@ -649,7 +649,7 @@
     <link href="http://lijundong.com/update-laptop-cpu/"/>
     <id>http://lijundong.com/update-laptop-cpu/</id>
     <published>2016-10-12T06:18:44.000Z</published>
-    <updated>2016-11-12T08:39:09.622Z</updated>
+    <updated>2016-11-12T08:39:10.000Z</updated>
     
     <content type="html"><![CDATA[<p>大二在小组的时候，身边几个伙伴相继换了固态，并且极力怂恿我也换，高呼固态大法好，时常拿十秒内的开机速度来做碾压，当时对于硬盘读写性能没有直观感受，觉得开机慢点也没所谓。<br>后面做的事多起来，任务开得多，Chrome 经常几十个 Tab 同时开，导致磁盘开机就爆红，鼠标动动都困难，更别提编码了，这时候才意识到笔记本需要升级，于是加装了固态，随即内存就成了瓶颈，又把内存加装到 8G，这之后相安无事过了很久。但该来的总是要来的，满频只有 1.8GHz 的赛扬终于满足不了正常的开发需要，这就换了它。<br><a id="more"></a></p>
 <h3 id="ThinkPad-E531-配置"><a href="#ThinkPad-E531-配置" class="headerlink" title="ThinkPad E531 配置"></a>ThinkPad E531 配置</h3><p>现在用的电脑的是 ThinkPad E531，是高考后暑假和跃峰在合肥电脑城入的，两个小白在那被坑了不少钱，跃峰比我惨一些，他买电脑的那家铺子在某个夜深人静时分，人去摊空……<br>我入的 E531 应该是低配版，处理器是<code>Celeron® Processor 1000M 
@@ -723,7 +723,7 @@
     <link href="http://lijundong.com/nginx-conficure-domains-to-servers/"/>
     <id>http://lijundong.com/nginx-conficure-domains-to-servers/</id>
     <published>2016-10-11T16:15:48.000Z</published>
-    <updated>2017-02-06T06:47:52.444Z</updated>
+    <updated>2017-02-06T06:47:54.000Z</updated>
     
     <content type="html"><![CDATA[<p>最近用 Node 写的两个小项目都需要上线，项目跑在阿里云上，给了不同的端口，平时在各自的端口上，相安无事，但是要挂在微信公号上就需要域名，IP只有一个，两个域名势必要搭起来，我资历尚浅，肯定劝不动他俩，不看僧面看佛面，只好请来神器 Nginx 主持公道。这里做个笔记，欢迎补充指正。<br><a id="more"></a></p>
 <h3 id="Domains-2-Servers-？"><a href="#Domains-2-Servers-？" class="headerlink" title="Domains-2-Servers ？"></a>Domains-2-Servers ？</h3><p>多个 Domain 需要对应多个 Node 服务，然而只有一个 IP，这还怎么谈？矛盾尖锐到无法解决的时候就需要中间人介入，和气生财嘛，Nginx 在中间人这个位置做的得心应手，擅长的领域有以下几点</p>
@@ -787,7 +787,7 @@
     <link href="http://lijundong.com/embeded-javascript-templates/"/>
     <id>http://lijundong.com/embeded-javascript-templates/</id>
     <published>2016-09-01T03:05:56.000Z</published>
-    <updated>2016-10-11T18:09:59.259Z</updated>
+    <updated>2016-10-11T18:10:00.000Z</updated>
     
     <content type="html"><![CDATA[<p>这段时间一直在使用 Express 框架，虽然官方推荐 Pug 作为模板引擎，但我还是对 EJS 更感冒，官方也提供了 <code>Express -e</code> 的选择，由于之前没有认真看文档，导致了前段时间遇到的一个渲染问题，纠结了很久才得以解决，这里笔记下 EJS 的常用方法，算作一次梳理，欢迎补充指正。<br><a id="more"></a></p>
 <h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><ul>
@@ -827,7 +827,7 @@
     <link href="http://lijundong.com/huawei-phone-browser-height-self-adapt/"/>
     <id>http://lijundong.com/huawei-phone-browser-height-self-adapt/</id>
     <published>2016-08-31T12:34:44.000Z</published>
-    <updated>2017-02-06T06:46:44.951Z</updated>
+    <updated>2017-02-06T06:46:46.000Z</updated>
     
     <content type="html"><![CDATA[<p>华为系手机、谷歌亲儿子 Nexus 系列等配备的都是虚拟按键，虚拟按键唤出与隐藏会导致页面的高度变化，如果没有对内容高度进行适应，会出现页面内容被覆盖，或者页面空出一段留白，实验室用华为的同学挺多的，包括我，所以难免在调试页面的时候遇到这个问题，做个笔记先，欢迎补充指正。<br><a id="more"></a></p>
 <p>其实原理很简单，要达到的效果是底部 Tab 随着虚拟按键的变化而适应。</p>
@@ -854,7 +854,7 @@
     <link href="http://lijundong.com/accept-in-input-and-mime-intro/"/>
     <id>http://lijundong.com/accept-in-input-and-mime-intro/</id>
     <published>2016-08-28T07:03:11.000Z</published>
-    <updated>2016-12-18T15:55:42.268Z</updated>
+    <updated>2016-12-18T15:55:44.000Z</updated>
     
     <content type="html"><![CDATA[<p>最近在做上传文件模块时，对 input 的 accept 属性做了些了解，以及与其关联的 MIME，之前也了解过，只是没做理解，导致如今再看到竟然没有半点印象，其实就是个因特网标准，这次做下笔记，欢迎指正。</p>
 <a id="more"></a>
@@ -890,7 +890,7 @@
     <link href="http://lijundong.com/sheets-collections/"/>
     <id>http://lijundong.com/sheets-collections/</id>
     <published>2016-08-23T07:57:21.000Z</published>
-    <updated>2016-08-23T08:51:56.616Z</updated>
+    <updated>2016-08-23T08:51:58.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center">这个资源合集包含的是我用着不错的常用速查表<br>方便有需要的同学查找<br>持续更新<br>以后可能会有更多的集合<br>Chrome 扩展？<br>开发小工具？<br>你说呢？</blockquote>
 
@@ -929,7 +929,7 @@
     <link href="http://lijundong.com/xlsx-to-json-by-json/"/>
     <id>http://lijundong.com/xlsx-to-json-by-json/</id>
     <published>2016-08-22T07:00:50.000Z</published>
-    <updated>2016-11-17T14:27:24.635Z</updated>
+    <updated>2016-11-17T14:27:26.000Z</updated>
     
     <content type="html"><![CDATA[<p>试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。<br>在 Java 环境下，可以用 <code>Apache POI</code> 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。<br><a id="more"></a></p>
 <h3 id="node-xlsx"><a href="#node-xlsx" class="headerlink" title="node-xlsx"></a>node-xlsx</h3><p>这篇文章是建立在 <code>node-xlsx</code> 的基础上的，你可以在 <a href="https://github.com/mgcrea/node-xlsx" target="_blank" rel="external">github</a> 以及 <a href="https://www.npmjs.com/package/node-xlsx" target="_blank" rel="external">npm</a> 获取到包。<br>用法如下：</p>
@@ -962,7 +962,7 @@
     <link href="http://lijundong.com/html-make-clock-select/"/>
     <id>http://lijundong.com/html-make-clock-select/</id>
     <published>2016-08-05T00:15:49.000Z</published>
-    <updated>2016-08-05T08:21:38.852Z</updated>
+    <updated>2016-08-05T08:21:40.000Z</updated>
     
     <content type="html"><![CDATA[<p>手机里的闹钟设置时会让选择具体在星期几工作，选择的方式因机而异，今天要聊的是手机提供七个点，点亮你需要的时间。如果用前端的方法实现，怎么做简洁，如何对复选框变形，看了很多别人的demo，都没有达到我的预期，我需要将选项内容作为点选的按钮，这就需要让两者“合二为一”，内容的样式随着<code>checkbox</code>的状态改变，这里应该有思路了。<br><a id="more"></a></p>
 <h3 id="页面框架"><a href="#页面框架" class="headerlink" title="页面框架"></a>页面框架</h3><p>对列表稍加修改，li元素横向排列，列表中加入<code>checkbox</code>以及<code>label</code>，出来的效果就是最常见的复选框。</p>
