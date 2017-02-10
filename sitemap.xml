@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lijundong.com/hexo-blog-custom-log/</loc>
+    
+    <lastmod>2017-02-10T02:41:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/this-note/</loc>
+    
+    <lastmod>2017-02-09T11:15:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lijundong.com/javascript-variable-lift/</loc>
     
     <lastmod>2017-02-07T07:15:00.000Z</lastmod>
@@ -96,13 +110,6 @@
     <loc>http://lijundong.com/404.html</loc>
     
     <lastmod>2016-12-28T07:49:42.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/hexo-blog-custom-log/</loc>
-    
-    <lastmod>2016-12-25T07:00:14.000Z</lastmod>
     
   </url>
   

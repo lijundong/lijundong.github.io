@@ -4,6 +4,13 @@
   
     
     <entry>
+      <title><![CDATA[重新认识 this]]></title>
+      <url>http://lijundong.com/this-note/</url>
+      <content type="html"><![CDATA[<a id="more"></a>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Javascript 变量提升原理解析]]></title>
       <url>http://lijundong.com/javascript-variable-lift/</url>
       <content type="html"><![CDATA[<p>很多 Javascript 教程或者书籍中都会介绍 Javascript 的变量提升，但是你了解其中的原因吗？</p>
@@ -159,6 +166,7 @@
 <li>自定义 url</li>
 <li>文末添加版权说明</li>
 <li>文末添加推荐文章列表</li>
+<li>博客迁移</li>
 </ul>
 <a id="more"></a>
 <h3 id="自定义-url"><a href="#自定义-url" class="headerlink" title="自定义 url"></a>自定义 url</h3><p>关于 url 的格式，建议在博客刚上线的时候就确定好，因为多说评论以及访客数据都是和 url 绑定的，每一次换 url 都意味着之前的多说评论数据和访问数据都会清空，我的的数据已经被清空过两次了，第一次是把 url 从中文更换为 英文，第二次就是这次，我将 url 的格式从 <code>domain/year/month/title</code> 换成了 <code>domain/title</code>，更简洁，也更容易理解链接的内容。</p>
@@ -170,6 +178,9 @@
 <h3 id="文末添加推荐文章列表"><a href="#文末添加推荐文章列表" class="headerlink" title="文末添加推荐文章列表"></a>文末添加推荐文章列表</h3><p>我将文末的前后文章导航页去除，通过 <code>list_posts()</code> 方法添加了最近的文章列表</p>
 <p>具体代码如下，完整代码可参见上一条完整代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;posts-recommend&quot;&gt;</span><br><span class="line">    &lt;h3&gt;更多文章&lt;/h3&gt;</span><br><span class="line">    &#123;&#123; list_posts() &#125;&#125;  </span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
 <p>关于 <code>list_posts()</code> 的用法，更多用法可参照官方文档 <a href="https://hexo.io/zh-cn/docs/helpers.html#list-posts" target="_blank" rel="external">list_posts</a></p>
+<h3 id="博客迁移"><a href="#博客迁移" class="headerlink" title="博客迁移"></a>博客迁移</h3><h4 id="粗暴复制"><a href="#粗暴复制" class="headerlink" title="粗暴复制"></a>粗暴复制</h4><p>如果你更滑了新的电脑，迁移 hexo 的博客很简单，我的方式是直接复制 hexo 博客目录(不包含 node_modules 和 public 目录)，在新的电脑中执行 <code>npm install hexo-cli -g</code> 安装 hexo，在博客目录下执行 <code>npm install</code> （package.json 中包含所有的依赖信息），如果 node 版本不一致执行 <code>npm rebuild</code> 命令重新编译。git 的相关操作在这里不再赘述。</p>
+<h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
+<p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 ]]></content>
     </entry>
     
