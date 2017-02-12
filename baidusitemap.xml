@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://lijundong.com/think-about-learning/</loc>
+    <lastmod>2017-02-12T06:11:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>关于学习的反思</title>
+        <pubTime>2017-02-10T07:48:11.000Z</pubTime>
+        
+        <tag>学习</tag>
+         
+        <tag>web</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="http://lijundong.com/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/hexo-blog-custom-log/</loc>
     <lastmod>2017-02-10T02:41:31.000Z</lastmod>
     <data>
@@ -19,28 +41,6 @@
            
              
               <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/this-note/</loc>
-    <lastmod>2017-02-09T11:15:00.000Z</lastmod>
-    <data>
-        <display>
-        <title>重新认识 this</title>
-        <pubTime>2017-02-09T11:11:50.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>this</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端" url="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
           
         </display>
     </data>
