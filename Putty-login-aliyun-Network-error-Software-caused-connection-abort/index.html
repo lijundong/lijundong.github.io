@@ -114,13 +114,13 @@
 <meta property="og:url" content="http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="问题描述使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”。Google了很多方式都没能解决，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”云盾！拦截了……囧">
-<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-17/26600917.jpg">
-<meta property="og:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-17/72508725.jpg">
-<meta property="og:updated_time" content="2016-11-17T14:23:48.000Z">
+<meta property="og:image" content="http://source.lijundong.com/16-6-17/26600917.jpg">
+<meta property="og:image" content="http://source.lijundong.com/16-6-17/72508725.jpg">
+<meta property="og:updated_time" content="2017-02-12T07:45:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Putty登陆阿里云 Network error: Software caused connection abort">
 <meta name="twitter:description" content="问题描述使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”。Google了很多方式都没能解决，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”云盾！拦截了……囧">
-<meta name="twitter:image" content="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-17/26600917.jpg">
+<meta name="twitter:image" content="http://source.lijundong.com/16-6-17/26600917.jpg">
 
 
 
@@ -400,14 +400,14 @@
       
 
       
-        <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-17/26600917.jpg" alt=""><br>使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”。Google了很多方式都没能解决，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”<strong>云盾！拦截了……囧</strong><br><a id="more"></a></p>
+        <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p><img src="http://source.lijundong.com/16-6-17/26600917.jpg" alt=""><br>使用Putty登陆阿里云主机时出现”Network error: Software caused connection abort”。Google了很多方式都没能解决，Putty依旧不想跟我连接，并傲娇的扔回了”connection abort”，逼得我差点重置了系统。这时候，学长出现了，缓缓说道“可能是云盾给你拦截了”<strong>云盾！拦截了……囧</strong><br><a id="more"></a></p>
 <h3 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h3><h4 id="Google的方案"><a href="#Google的方案" class="headerlink" title="Google的方案"></a>Google的方案</h4><p>Google上多半的解决方案是通过修改<code>/etc/ssh/sshd_config</code>文件。</p>
 <ul>
 <li>添加参数<code>TCPKeepAlive yes</code></li>
 <li><code>ClientAliveInterval 0</code>中修改0为60</li>
 </ul>
 <p>然而这个方法并没能奏效。</p>
-<h4 id="云盾设置登陆IP白名单"><a href="#云盾设置登陆IP白名单" class="headerlink" title="云盾设置登陆IP白名单:"></a>云盾设置登陆IP白名单:</h4><p>侧边栏&gt;产品与服务&gt;服务器安全(安骑士)&gt;<br>设置&gt;安全配置&gt;登陆安全&gt;登陆IP白名单&gt;<br>添加白名单生效的服务器&gt;白名单IP设置为<code>0.0.0.0</code>(防止IP改变)<br><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-6-17/72508725.jpg" alt=""><br>使用Putty再次连接，成功。</p>
+<h4 id="云盾设置登陆IP白名单"><a href="#云盾设置登陆IP白名单" class="headerlink" title="云盾设置登陆IP白名单:"></a>云盾设置登陆IP白名单:</h4><p>侧边栏&gt;产品与服务&gt;服务器安全(安骑士)&gt;<br>设置&gt;安全配置&gt;登陆安全&gt;登陆IP白名单&gt;<br>添加白名单生效的服务器&gt;白名单IP设置为<code>0.0.0.0</code>(防止IP改变)<br><img src="http://source.lijundong.com/16-6-17/72508725.jpg" alt=""><br>使用Putty再次连接，成功。</p>
 
       
     </div>

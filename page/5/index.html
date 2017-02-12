@@ -823,7 +823,7 @@
           <h2 id="为什么清除浮动"><a href="#为什么清除浮动" class="headerlink" title="为什么清除浮动"></a>为什么清除浮动</h2><p>因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.outer</span>&#123;<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;<span class="attribute">background-color</span>:<span class="number">#fc9</span>;<span class="attribute">color</span>:<span class="number">#f5f</span>;<span class="attribute">margin</span>:<span class="number">50px</span> auto;<span class="attribute">padding</span>:<span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-class">.div1</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:red;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div2</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:blue;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div3</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:green;<span class="attribute">float</span>:left;&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span>float1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span>float2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div3"</span>&gt;</span>float3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-3-11/66642323.jpg" alt="浮动未清除"><br>途中三个浮动上面的那条白线是整个outer的内容，height值为0，造成这样的原因是float已经脱离了文档流，这显然不是我们想要的，可能上面的内容不能很清楚的描述问题，下面在三个浮动元素后添加非浮动的div。<br>
+<p><img src="http://source.lijundong.com/16-3-11/66642323.jpg" alt="浮动未清除"><br>途中三个浮动上面的那条白线是整个outer的内容，height值为0，造成这样的原因是float已经脱离了文档流，这显然不是我们想要的，可能上面的内容不能很清楚的描述问题，下面在三个浮动元素后添加非浮动的div。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/clear-float/#more" rel="contents">
               Read more &raquo;
@@ -1522,9 +1522,9 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" rel="gallery_ciz2avj96000lrks61vsol6fw"
+                 href="http://source.lijundong.com/16-1-14/55714461.jpg" rel="gallery_ciz2dfu2x000j8ls6i2h8yg9x"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-14/55714461.jpg" itemprop="contentUrl"/>
+                <img src="http://source.lijundong.com/16-1-14/55714461.jpg" itemprop="contentUrl"/>
               </a>
             
           
@@ -1678,9 +1678,9 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" rel="gallery_ciz2avj8u000crks6bug1g7xa"
+                 href="http://source.lijundong.com/16-1-11/87841702.jpg" rel="gallery_ciz2dfu2q000d8ls6pn5xcet4"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://7xlkdt.com1.z0.glb.clouddn.com/16-1-11/87841702.jpg" itemprop="contentUrl"/>
+                <img src="http://source.lijundong.com/16-1-11/87841702.jpg" itemprop="contentUrl"/>
               </a>
             
           
