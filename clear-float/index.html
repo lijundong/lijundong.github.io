@@ -96,7 +96,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="李俊冬" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Leeon Notes" type="application/atom+xml" />
 
 
 
@@ -113,7 +113,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="清除浮动">
 <meta property="og:url" content="http://lijundong.com/clear-float/index.html">
-<meta property="og:site_name" content="李俊冬">
+<meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="为什么清除浮动因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。
 1234.outer&amp;#123;border:1px solid #ccc;background-color:#fc9;color:#f5f;margin:50px auto;padding:50px;&amp;#125;.div1&amp;#123;width:80px;height:80px;background:r">
 <meta property="og:image" content="http://source.lijundong.com/16-3-11/66642323.jpg">
@@ -142,7 +142,7 @@
     motion: true,
     duoshuo: {
       userId: 12489538,
-      author: '博主'
+      author: 'Author'
     }
   };
 </script>
@@ -152,10 +152,10 @@
 
   <link rel="canonical" href="http://lijundong.com/clear-float/"/>
 
-  <title> 清除浮动 | 李俊冬 </title>
+  <title> 清除浮动 | Leeon Notes </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -202,7 +202,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">李俊冬</span>
+      <span class="site-title">Leeon Notes</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -229,7 +229,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -239,7 +239,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -249,7 +249,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            About
           </a>
         </li>
       
@@ -259,7 +259,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -269,7 +269,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -282,7 +282,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -345,7 +345,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-03-11T10:37:38+08:00" content="2016-03-11">
               2016-03-11
             </time>
@@ -357,7 +357,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/学习/" itemprop="url" rel="index">
@@ -392,7 +392,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -420,10 +420,10 @@
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://source.lijundong.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://source.lijundong.com/16-3-11/22540140.jpg" alt=""></li>
@@ -518,7 +518,7 @@
 
         <div class="posts-recommend">
             <h3>更多文章</h3>
-               <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/think-about-learning/">关于学习的反思</a></li><li class="post-list-item"><a class="post-list-link" href="/javascript-variable-lift/">Javascript 变量提升原理解析</a></li><li class="post-list-item"><a class="post-list-link" href="/chrome-extensions-recommend/">【建议收藏】Chrome 插件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/image-and-line-height/">inline「一」：从 image 底部白边初识 line-height</a></li><li class="post-list-item"><a class="post-list-link" href="/year-again-2017/">可能是写了篇假的年终总结</a></li><li class="post-list-item"><a class="post-list-link" href="/hexo-blog-custom-log/">Hexo 自定义日志</a></li></ul>  
+               <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/this-in-javascript/">Javascript 中 this 的指向</a></li><li class="post-list-item"><a class="post-list-link" href="/think-about-learning/">关于学习的反思</a></li><li class="post-list-item"><a class="post-list-link" href="/javascript-variable-lift/">Javascript 变量提升原理解析</a></li><li class="post-list-item"><a class="post-list-link" href="/chrome-extensions-recommend/">【建议收藏】Chrome 插件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/image-and-line-height/">inline「一」：从 image 底部白边初识 line-height</a></li><li class="post-list-item"><a class="post-list-link" href="/year-again-2017/">可能是写了篇假的年终总结</a></li></ul>  
             </div>
       
 
@@ -600,10 +600,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
+            Overview
           </li>
         </ul>
       
@@ -614,13 +614,13 @@
                src="http://source.lijundong.com/16-3-18/59657432.jpg"
                alt="leeon" />
           <p class="site-author-name" itemprop="name">leeon</p>
-          <p class="site-description motion-element" itemprop="description">leeon notes</p>
+          <p class="site-description motion-element" itemprop="description">李俊冬的独立博客</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">57</span>
-              <span class="site-state-item-name">日志</span>
+              <span class="site-state-item-count">58</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -628,7 +628,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories">
                 <span class="site-state-item-count">11</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-name">categories</span>
               </a>
             </div>
           
@@ -636,8 +636,8 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">88</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-count">89</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -746,11 +746,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>

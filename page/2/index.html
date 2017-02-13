@@ -96,7 +96,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="李俊冬" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Leeon Notes" type="application/atom+xml" />
 
 
 
@@ -108,15 +108,15 @@
 
 
 
-<meta name="description" content="leeon notes">
+<meta name="description" content="李俊冬的独立博客">
 <meta property="og:type" content="website">
-<meta property="og:title" content="李俊冬">
+<meta property="og:title" content="Leeon Notes">
 <meta property="og:url" content="http://lijundong.com/page/2/index.html">
-<meta property="og:site_name" content="李俊冬">
-<meta property="og:description" content="leeon notes">
+<meta property="og:site_name" content="Leeon Notes">
+<meta property="og:description" content="李俊冬的独立博客">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="李俊冬">
-<meta name="twitter:description" content="leeon notes">
+<meta name="twitter:title" content="Leeon Notes">
+<meta name="twitter:description" content="李俊冬的独立博客">
 
 
 
@@ -129,7 +129,7 @@
     motion: true,
     duoshuo: {
       userId: 12489538,
-      author: '博主'
+      author: 'Author'
     }
   };
 </script>
@@ -139,10 +139,10 @@
 
   <link rel="canonical" href="http://lijundong.com/page/2/"/>
 
-  <title> 李俊冬 </title>
+  <title> Leeon Notes </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -191,7 +191,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">李俊冬</span>
+      <span class="site-title">Leeon Notes</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -218,7 +218,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -228,7 +228,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -238,7 +238,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            About
           </a>
         </li>
       
@@ -248,7 +248,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -258,7 +258,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -271,7 +271,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -324,6 +324,144 @@
             
               
                 
+                <a class="post-title-link" href="/start-latex-and-configure-latext-editor-with-sublime/" itemprop="url">
+                  SublimeText 配置 LaTeX 编辑器
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-11-23T21:15:40+08:00" content="2016-11-23">
+              2016-11-23
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/工具使用/" itemprop="url" rel="index">
+                    <span itemprop="name">工具使用</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/start-latex-and-configure-latext-editor-with-sublime/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="start-latex-and-configure-latext-editor-with-sublime/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/start-latex-and-configure-latext-editor-with-sublime/" class="leancloud_visitors" data-flag-title="SublimeText 配置 LaTeX 编辑器">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>上一篇 <a href="http://jundong.coding.me/2016/11/17/novel-crawler-by-Nodejs/">Node.js 实现简单小说爬虫</a>，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。<br>工欲善其事，必先利其器。这里笔记下 SublimeTeXt3 下用 TeXlive 配置 LaTeX 编辑环境。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/start-latex-and-configure-latext-editor-with-sublime/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+    
+        
+
+
+      
+
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/novel-crawler-by-Nodejs/" itemprop="url">
                   Node.js 实现简单小说爬虫
                 </a>
@@ -337,7 +475,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-11-17T22:17:32+08:00" content="2016-11-17">
               2016-11-17
             </time>
@@ -349,7 +487,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/node/" itemprop="url" rel="index">
@@ -384,7 +522,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -405,7 +543,7 @@
           <p>最近因为剧荒，老大追了爱奇艺的一部网剧，由丁墨的同名小说《美人为馅》改编，目前已经放出两季，虽然整部剧槽点满满，但是老大看得不亦乐乎，并且在看完第二季之后跟我要小说资源，直接要奔原著去看结局……<br>随手搜了下，都是在线资源，下载的话需要登录，注册登录好麻烦，写个爬虫玩玩也好，于是动手用 node 写了一个，这里做下笔记<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/novel-crawler-by-Nodejs/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -475,7 +613,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-10-29T15:05:36+08:00" content="2016-10-29">
               2016-10-29
             </time>
@@ -487,7 +625,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/开发工具/" itemprop="url" rel="index">
@@ -522,7 +660,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -543,7 +681,7 @@
           <p>越来越意识到开发的规范化的重要性，以及自动化带来的高效，前端开发环境自动化构建的技能是必须要 get 的，于是最近用了一个 demo 完整的跑了一遍 Gulp 的前端开发自动化，体验很棒，这里记录下。<br>努力向规范看齐，向大牛看齐，多去了解，多去接触，视野开阔才能看到更远的风景，会有更多的可能。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/develop-automatic-gulp-set/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -613,7 +751,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-10-20T21:30:19+08:00" content="2016-10-20">
               2016-10-20
             </time>
@@ -625,7 +763,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/工具使用/" itemprop="url" rel="index">
@@ -660,7 +798,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -681,7 +819,7 @@
           <p>由于不可抗力的缘故，每过一段时间，Google 就会重新被拿出来说一次，上一次说的是入门之法，关于 VPN 和 Shadowsocks 的一些很基础的东西。<br>最近小飞机换了更快的香港的服务器，体验非常棒，但是在使用 Google 时，Google 为了提供更好的本地搜索体验，<code>google.com</code> 会自动重定向到 <code>google.com.hk</code> ，可惜这些体验只有身在香港的服务器才能体验，而身在天朝的我还需要去考虑 <code>google country redirect disable</code>。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/google-no-country-redirect-disabled/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -751,7 +889,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-10-12T14:18:44+08:00" content="2016-10-12">
               2016-10-12
             </time>
@@ -763,7 +901,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/生活/" itemprop="url" rel="index">
@@ -798,7 +936,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -819,7 +957,7 @@
           <p>大二在小组的时候，身边几个伙伴相继换了固态，并且极力怂恿我也换，高呼固态大法好，时常拿十秒内的开机速度来做碾压，当时对于硬盘读写性能没有直观感受，觉得开机慢点也没所谓。<br>后面做的事多起来，任务开得多，Chrome 经常几十个 Tab 同时开，导致磁盘开机就爆红，鼠标动动都困难，更别提编码了，这时候才意识到笔记本需要升级，于是加装了固态，随即内存就成了瓶颈，又把内存加装到 8G，这之后相安无事过了很久。但该来的总是要来的，满频只有 1.8GHz 的赛扬终于满足不了正常的开发需要，这就换了它。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/update-laptop-cpu/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -889,7 +1027,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-10-12T00:15:48+08:00" content="2016-10-12">
               2016-10-12
             </time>
@@ -901,7 +1039,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/工具使用/" itemprop="url" rel="index">
@@ -936,7 +1074,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -957,7 +1095,7 @@
           <p>最近用 Node 写的两个小项目都需要上线，项目跑在阿里云上，给了不同的端口，平时在各自的端口上，相安无事，但是要挂在微信公号上就需要域名，IP只有一个，两个域名势必要搭起来，我资历尚浅，肯定劝不动他俩，不看僧面看佛面，只好请来神器 Nginx 主持公道。这里做个笔记，欢迎补充指正。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/nginx-conficure-domains-to-servers/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -1027,7 +1165,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-09-01T11:05:56+08:00" content="2016-09-01">
               2016-09-01
             </time>
@@ -1039,7 +1177,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/前端/" itemprop="url" rel="index">
@@ -1074,7 +1212,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -1095,7 +1233,7 @@
           <p>这段时间一直在使用 Express 框架，虽然官方推荐 Pug 作为模板引擎，但我还是对 EJS 更感冒，官方也提供了 <code>Express -e</code> 的选择，由于之前没有认真看文档，导致了前段时间遇到的一个渲染问题，纠结了很久才得以解决，这里笔记下 EJS 的常用方法，算作一次梳理，欢迎补充指正。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/embeded-javascript-templates/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -1165,7 +1303,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-08-31T20:34:44+08:00" content="2016-08-31">
               2016-08-31
             </time>
@@ -1177,7 +1315,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/前端/" itemprop="url" rel="index">
@@ -1212,7 +1350,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -1233,7 +1371,7 @@
           <p>华为系手机、谷歌亲儿子 Nexus 系列等配备的都是虚拟按键，虚拟按键唤出与隐藏会导致页面的高度变化，如果没有对内容高度进行适应，会出现页面内容被覆盖，或者页面空出一段留白，实验室用华为的同学挺多的，包括我，所以难免在调试页面的时候遇到这个问题，做个笔记先，欢迎补充指正。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/huawei-phone-browser-height-self-adapt/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -1303,7 +1441,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-08-28T15:03:11+08:00" content="2016-08-28">
               2016-08-28
             </time>
@@ -1315,7 +1453,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/前端/" itemprop="url" rel="index">
@@ -1350,7 +1488,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -1371,7 +1509,7 @@
           <p>最近在做上传文件模块时，对 input 的 accept 属性做了些了解，以及与其关联的 MIME，之前也了解过，只是没做理解，导致如今再看到竟然没有半点印象，其实就是个因特网标准，这次做下笔记，欢迎指正。</p>
           <div class="post-more-link text-center">
             <a class="btn" href="/accept-in-input-and-mime-intro/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -1441,7 +1579,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">发表于</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-08-23T15:57:21+08:00" content="2016-08-23">
               2016-08-23
             </time>
@@ -1453,7 +1591,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
+              <span class="post-meta-item-text">In</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/工具使用/" itemprop="url" rel="index">
@@ -1488,7 +1626,7 @@
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
                </span>
-               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="post-meta-item-text">visitors </span>
                <span class="leancloud-visitors-count"></span>
               </span>
           
@@ -1509,145 +1647,7 @@
           <blockquote class="blockquote-center">这个资源合集包含的是我用着不错的常用速查表<br>方便有需要的同学查找<br>持续更新<br>以后可能会有更多的集合<br>Chrome 扩展？<br>开发小工具？<br>你说呢？</blockquote>
           <div class="post-more-link text-center">
             <a class="btn" href="/sheets-collections/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-    
-        
-
-
-      
-
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/xlsx-to-json-by-json/" itemprop="url">
-                  Node将Excel数据解析为Json
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-22T15:00:50+08:00" content="2016-08-22">
-              2016-08-22
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/node/" itemprop="url" rel="index">
-                    <span itemprop="name">node</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/xlsx-to-json-by-json/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="xlsx-to-json-by-json/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/xlsx-to-json-by-json/" class="leancloud_visitors" data-flag-title="Node将Excel数据解析为Json">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>试想这样一种情况，一个不熟悉技术的人需要在网站中展示他存在 Excel 里的数据，数据量很大，人工操作很繁琐，且容易出错，如果要做到用户友好，程序的任务是读入 Excel，解析，以正确的格式存入数据库。<br>在 Java 环境下，可以用 <code>Apache POI</code> 来操作 office 全家桶的读写，我不熟悉Java，所以这篇文章就记录下用 NodeJS 解析 Excel(xlsx 格式)数据为Json格式。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/xlsx-to-json-by-json/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
         
@@ -1723,13 +1723,13 @@
                src="http://source.lijundong.com/16-3-18/59657432.jpg"
                alt="leeon" />
           <p class="site-author-name" itemprop="name">leeon</p>
-          <p class="site-description motion-element" itemprop="description">leeon notes</p>
+          <p class="site-description motion-element" itemprop="description">李俊冬的独立博客</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">57</span>
-              <span class="site-state-item-name">日志</span>
+              <span class="site-state-item-count">58</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -1737,7 +1737,7 @@
             <div class="site-state-item site-state-categories">
               <a href="/categories">
                 <span class="site-state-item-count">11</span>
-                <span class="site-state-item-name">分类</span>
+                <span class="site-state-item-name">categories</span>
               </a>
             </div>
           
@@ -1745,8 +1745,8 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">88</span>
-                <span class="site-state-item-name">标签</span>
+                <span class="site-state-item-count">89</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -1844,11 +1844,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Muse
   </a>
