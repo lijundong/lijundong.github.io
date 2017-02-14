@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-02-13T18:19:10.000Z</updated>
+  <updated>2017-02-14T06:50:47.000Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac 备份方案</title>
+    <link href="http://lijundong.com/backup-in-mac/"/>
+    <id>http://lijundong.com/backup-in-mac/</id>
+    <published>2017-02-14T09:23:36.000Z</published>
+    <updated>2017-02-14T06:50:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>行走江湖，讲的是一个稳字。</p>
+<a id="more"></a>
+<p>在狗东买的硬盘下午到了，折腾了下，格式化、分区、备份。这里记录下我的方案。</p>
+<h3 id="关于硬盘"><a href="#关于硬盘" class="headerlink" title="关于硬盘"></a>关于硬盘</h3><p>硬盘、耳机一类带有玄学色彩的电子产品，我选购的经验是预算之内跟着群众走，排除你有情怀或者是行家里手的情况。作为普通消费者，我们的需求也很简单，因此不必考虑那些极端环境,只要不犯错就达到我们的基本诉求了，毕竟群众的眼睛是雪亮的。<br>所以，我买了希捷的 <a href="http://detail.zol.com.cn/move_disk/index364131.shtml" target="_blank" rel="external">Backup-Plus-Slim-1TB(STDR1000300)</a>。</p>
+<p>我是跟着群众走的，所以不要问我为什么……</p>
+<h3 id="关于用途"><a href="#关于用途" class="headerlink" title="关于用途"></a>关于用途</h3><p>我买的容量是 1T，计划分区出 250G 作为 timeMachine 的备份空间 A，剩下的用做日常文件存储 B。</p>
+<h3 id="关于文件格式"><a href="#关于文件格式" class="headerlink" title="关于文件格式"></a>关于文件格式</h3><p>先抛出结论，硬盘分为两个区，250G 备份分区 A 格式化为 <code>Mac OS Extended</code> 格式，另一分区 B 格式化为 <code>exfat</code> 格式，将硬盘转插在 windows 上，将 B 分区格式化为 <code>NTFS</code> 文件格式。</p>
+<p>为适配 Windows，故将大分区 B 设置成 <code>NTFS</code> 格式，<code>NTFS</code> 在 Mac 下可读不可写，但是希捷官方提供了适用于 MacOS(10.9. 及以上)的 <a href="http://www.seagate.com/cn/zh/support/downloads/item/ntfs-driver-for-mac-os-master-dl/" target="_blank" rel="external">Paragon</a>，所以唯一的问题也被解决了。</p>
+<h3 id="timeMachine"><a href="#timeMachine" class="headerlink" title="timeMachine"></a>timeMachine</h3><p>关于 timeMachine 的使用，极其简单，打开 timeMachine，选择备份盘，备份。</p>
+<p><strong>建议每次升级之前先备份一次。</strong></p>
+<h3 id="关于恢复"><a href="#关于恢复" class="headerlink" title="关于恢复"></a>关于恢复</h3><p>目前我还没用到恢复，希望永远也用不到，哈哈。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;行走江湖，讲的是一个稳字。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="备份" scheme="http://lijundong.com/tags/%E5%A4%87%E4%BB%BD/"/>
+    
+      <category term="timemachine" scheme="http://lijundong.com/tags/timemachine/"/>
+    
+      <category term="mac" scheme="http://lijundong.com/tags/mac/"/>
+    
+  </entry>
   
   <entry>
     <title>Javascript 中 this 的指向</title>
@@ -373,7 +410,7 @@
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -999,45 +1036,6 @@
       <category term="input" scheme="http://lijundong.com/tags/input/"/>
     
       <category term="accept" scheme="http://lijundong.com/tags/accept/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用速查表集合</title>
-    <link href="http://lijundong.com/sheets-collections/"/>
-    <id>http://lijundong.com/sheets-collections/</id>
-    <published>2016-08-23T07:57:21.000Z</published>
-    <updated>2017-02-12T07:45:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center">这个资源合集包含的是我用着不错的常用速查表<br>方便有需要的同学查找<br>持续更新<br>以后可能会有更多的集合<br>Chrome 扩展？<br>开发小工具？<br>你说呢？</blockquote>
-
-<a id="more"></a>
-<h3 id="Linux-命令速查"><a href="#Linux-命令速查" class="headerlink" title="Linux 命令速查"></a>Linux 命令速查</h3><p><img src="http://source.lijundong.com/16-8-23/3279812.jpg" alt=""><br><a href="http://i.linuxtoy.org/files/pdf/fwunixref.pdf" target="_blank" rel="external">PDF 下载</a></p>
-<h3 id="Vim-命令速查"><a href="#Vim-命令速查" class="headerlink" title="Vim 命令速查"></a>Vim 命令速查</h3><p><img src="http://source.lijundong.com/16-8-23/89959675.jpg" alt=""><br><a href="http://jrmiii.com/attachments/Vim.pdf" target="_blank" rel="external">PDF 下载</a></p>
-<h3 id="Git-命令速查"><a href="#Git-命令速查" class="headerlink" title="Git 命令速查"></a>Git 命令速查</h3><p><img src="http://source.lijundong.com/16-8-23/44995875.jpg" alt=""><br><a href="https://www.git-tower.com/blog/git-cheat-sheet-cn" target="_blank" rel="external">PDF 下载</a></p>
-<h3 id="正则速查"><a href="#正则速查" class="headerlink" title="正则速查"></a>正则速查</h3><p><img src="http://source.lijundong.com/16-8-23/94278931.jpg" alt=""><br><a href="http://plcdn.qiniudn.com/wp-content/uploads/2011/12/regular-expressions-cheat-sheet-v2.pdf" target="_blank" rel="external">PDF 下载</a></p>
-<blockquote class="blockquote-center">欢迎补充！</blockquote>
-
-
-
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;这个资源合集包含的是我用着不错的常用速查表&lt;br&gt;方便有需要的同学查找&lt;br&gt;持续更新&lt;br&gt;以后可能会有更多的集合&lt;br&gt;Chrome 扩展？&lt;br&gt;开发小工具？&lt;br&gt;你说呢？&lt;/blockquote&gt;
-    
-    </summary>
-    
-      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="git" scheme="http://lijundong.com/tags/git/"/>
-    
-      <category term="linux" scheme="http://lijundong.com/tags/linux/"/>
-    
-      <category term="vim" scheme="http://lijundong.com/tags/vim/"/>
-    
-      <category term="正则" scheme="http://lijundong.com/tags/%E6%AD%A3%E5%88%99/"/>
     
   </entry>
   
