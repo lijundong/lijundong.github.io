@@ -4,6 +4,30 @@
   
     
     <entry>
+      <title><![CDATA[Chrome 下合并不同 Google 账号数据]]></title>
+      <url>http://lijundong.com/synchronize-data-between-google-accounts/</url>
+      <content type="html"><![CDATA[<p>如果你在 Chrome 上同时拥有了两个 Google 账号，并深受其扰，开始想着合并两个账户的数据到某一个账户，我想告诉你，这真的远比的想象的简单。</p>
+<a id="more"></a>
+<p>在今天之前一直使用的是两个 google 账号，主要的数据在于 Chrome 上存储的扩展、书签以及密码，新号用于邮件管理，两个账号的使用随着时间的延续会让事情变得复杂，之前没找到合适的方式，今天在官方的帮助文档里找到了解决方案：</p>
+<blockquote>
+<ol>
+<li>打开 Chrome。</li>
+<li>点击右上角的“更多”图标 更多。</li>
+<li>点击设置。</li>
+<li>在“登录”下方，点击取消与您的 Google 帐户的关联。</li>
+<li>点击断开帐户连接。</li>
+<li><strong>提示是否保留数据，选择保留</strong></li>
+<li>点击登录 Chrome。</li>
+<li>使用新账户进行登陆</li>
+<li><strong>提示是否同步数据，选择同步</strong></li>
+</ol>
+</blockquote>
+<p>Alphabet 的产品才是真的感动人心。</p>
+<p>来源：<a href="https://support.google.com/chrome/answer/6386684?hl=zh-Hans" target="_blank" rel="external">在 Chrome 中切换同步帐户</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Javascript 的赋值、引用以及深拷贝、浅拷贝]]></title>
       <url>http://lijundong.com/deep-clone-vs-shallow-clone/</url>
       <content type="html"><![CDATA[<p>在之前总结 <a href="http://www.lijundong.com/this-in-javascript/" target="_blank" rel="external">This 用法</a> 的时候,遇到了传参问题，由此意识到了复制与引用的问题，说得高端些，引申出了深拷贝与浅拷贝的问题，后来在链家面试的时候，和一面也讨论到这个问题，当时的理解比较乱，涉及到深拷贝实现的方面都不熟悉，现在试着总结一下。</p>

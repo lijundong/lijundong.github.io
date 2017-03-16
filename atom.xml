@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-02-28T16:58:55.000Z</updated>
+  <updated>2017-03-16T11:11:40.000Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Chrome 下合并不同 Google 账号数据</title>
+    <link href="http://lijundong.com/synchronize-data-between-google-accounts/"/>
+    <id>http://lijundong.com/synchronize-data-between-google-accounts/</id>
+    <published>2017-03-16T10:34:11.000Z</published>
+    <updated>2017-03-16T11:11:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果你在 Chrome 上同时拥有了两个 Google 账号，并深受其扰，开始想着合并两个账户的数据到某一个账户，我想告诉你，这真的远比的想象的简单。</p>
+<a id="more"></a>
+<p>在今天之前一直使用的是两个 google 账号，主要的数据在于 Chrome 上存储的扩展、书签以及密码，新号用于邮件管理，两个账号的使用随着时间的延续会让事情变得复杂，之前没找到合适的方式，今天在官方的帮助文档里找到了解决方案：</p>
+<blockquote>
+<ol>
+<li>打开 Chrome。</li>
+<li>点击右上角的“更多”图标 更多。</li>
+<li>点击设置。</li>
+<li>在“登录”下方，点击取消与您的 Google 帐户的关联。</li>
+<li>点击断开帐户连接。</li>
+<li><strong>提示是否保留数据，选择保留</strong></li>
+<li>点击登录 Chrome。</li>
+<li>使用新账户进行登陆</li>
+<li><strong>提示是否同步数据，选择同步</strong></li>
+</ol>
+</blockquote>
+<p>Alphabet 的产品才是真的感动人心。</p>
+<p>来源：<a href="https://support.google.com/chrome/answer/6386684?hl=zh-Hans" target="_blank" rel="external">在 Chrome 中切换同步帐户</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果你在 Chrome 上同时拥有了两个 Google 账号，并深受其扰，开始想着合并两个账户的数据到某一个账户，我想告诉你，这真的远比的想象的简单。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="google" scheme="http://lijundong.com/tags/google/"/>
+    
+      <category term="数据" scheme="http://lijundong.com/tags/%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>Javascript 的赋值、引用以及深拷贝、浅拷贝</title>
@@ -1027,46 +1069,6 @@
       <category term="nginx" scheme="http://lijundong.com/tags/nginx/"/>
     
       <category term="域名" scheme="http://lijundong.com/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EJS渲染模板</title>
-    <link href="http://lijundong.com/embeded-javascript-templates/"/>
-    <id>http://lijundong.com/embeded-javascript-templates/</id>
-    <published>2016-09-01T03:05:56.000Z</published>
-    <updated>2016-10-11T18:10:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>这段时间一直在使用 Express 框架，虽然官方推荐 Pug 作为模板引擎，但我还是对 EJS 更感冒，官方也提供了 <code>Express -e</code> 的选择，由于之前没有认真看文档，导致了前段时间遇到的一个渲染问题，纠结了很久才得以解决，这里笔记下 EJS 的常用方法，算作一次梳理，欢迎补充指正。<br><a id="more"></a></p>
-<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><ul>
-<li><code>&lt;%=</code>: 转义输出</li>
-<li><code>&lt;%-</code>: 不转义输出(即输出源码)</li>
-<li><code>&lt;%#</code>: 评论注释</li>
-<li><code>&lt;%</code>: 输出 JS</li>
-<li><code>&lt;%_</code>: 输出 JS 并且删除标签之前所有的空格</li>
-<li><code>%&gt;</code>: 正常闭标签</li>
-<li><code>-%&gt;</code>: 移除标签后的换行符</li>
-<li><code>_%&gt;</code>: 移除便签后的所有的空格</li>
-</ul>
-<h3 id="实例对比"><a href="#实例对比" class="headerlink" title="实例对比"></a>实例对比</h3><p><strong>EJS</strong><br><figure class="highlight mojolicious"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, <span class="tag">&lt;<span class="name">%</span></span></span><span class="perl">- myHtml </span><span class="xml"><span class="tag">%&gt;</span>.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, <span class="tag">&lt;<span class="name">%=</span></span></span><span class="perl"> myHtml </span><span class="xml"><span class="tag">%&gt;</span>.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">%</span></span></span><span class="perl"><span class="comment"># comment </span></span><span class="xml"><span class="tag">%&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, <span class="tag">&lt;<span class="name">%</span></span></span><span class="perl">- myMaliciousHtml </span><span class="xml"><span class="tag">%&gt;</span>.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello, <span class="tag">&lt;<span class="name">%=</span></span></span><span class="perl"> myMaliciousHtml </span><span class="xml"><span class="tag">%&gt;</span>.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<p><strong>Locals</strong><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "myHtml": "<span class="tag">&lt;<span class="name">strong</span>&gt;</span>Leeon<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>"</span><br><span class="line">, "myMaliciousHtml": "<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write()</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>HTML</strong><br><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">&lt;p&gt;</span>Hello, <span class="params">&lt;strong&gt;</span>Leeon<span class="params">&lt;/strong&gt;</span>.<span class="params">&lt;/p&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span>Hello, <span class="variable">&amp;lt</span>;strong<span class="variable">&amp;gt</span>;Leeon<span class="variable">&amp;lt</span>;/strong<span class="variable">&amp;gt</span>;.<span class="params">&lt;/p&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span><span class="params">&lt;/p&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span>Hello, <span class="params">&lt;/p&gt;</span><span class="params">&lt;script&gt;</span>document.write()<span class="params">&lt;/script&gt;</span><span class="params">&lt;p&gt;</span>.<span class="params">&lt;/p&gt;</span></span><br><span class="line"><span class="params">&lt;p&gt;</span>Hello, <span class="variable">&amp;lt</span>;/p<span class="variable">&amp;gt</span>;<span class="variable">&amp;lt</span>;script<span class="variable">&amp;gt</span>;document.write()<span class="variable">&amp;lt</span>;/script<span class="variable">&amp;gt</span>;<span class="variable">&amp;lt</span>;p<span class="variable">&amp;gt</span>;.<span class="params">&lt;/p&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>参考：</p>
-<ul>
-<li><a href="https://github.com/mde/ejs/blob/master/docs/syntax.md" target="_blank" rel="external">官方文档</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这段时间一直在使用 Express 框架，虽然官方推荐 Pug 作为模板引擎，但我还是对 EJS 更感冒，官方也提供了 &lt;code&gt;Express -e&lt;/code&gt; 的选择，由于之前没有认真看文档，导致了前段时间遇到的一个渲染问题，纠结了很久才得以解决，这里笔记下 EJS 的常用方法，算作一次梳理，欢迎补充指正。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="前端" scheme="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="ejs" scheme="http://lijundong.com/tags/ejs/"/>
     
   </entry>
   
