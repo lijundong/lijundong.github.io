@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[Chrome 下合并不同 Google 账号数据]]></title>
       <url>http://lijundong.com/synchronize-data-between-google-accounts/</url>
-      <content type="html"><![CDATA[<p>如果你在 Chrome 上同时拥有了两个 Google 账号，并深受其扰，开始想着合并两个账户的数据到某一个账户，我想告诉你，这真的远比的想象的简单。</p>
+      <content type="html"><![CDATA[<p>如果你在 Chrome 上同时拥有了两个 Google 账号，并深受其扰，开始想着合并两个账户的数据到某一个账户，我想告诉你，这真的远比想象的简单。</p>
 <a id="more"></a>
 <p>在今天之前一直使用的是两个 google 账号，主要的数据在于 Chrome 上存储的扩展、书签以及密码，新号用于邮件管理，两个账号的使用随着时间的延续会让事情变得复杂，之前没找到合适的方式，今天在官方的帮助文档里找到了解决方案：</p>
 <blockquote>
