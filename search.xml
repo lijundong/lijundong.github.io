@@ -105,7 +105,7 @@
     <entry>
       <title><![CDATA[早班车乱谈]]></title>
       <url>http://lijundong.com/think-in-early-bus/</url>
-      <content type="html"><![CDATA[<p>我们处在一个巨大的变革之中。</p>
+      <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/17-2-17/76947115-file_1487296922174_f558.jpg" alt=""><br>我们处在一个巨大的变革之中。</p>
 <a id="more"></a>
 <p>最近在看 「天才在左，疯子在右」，没看之前一直以为是描述疯狂的天才，看了才知道是一本精神病患者访谈录，每篇文章，作者记录和一位患者的交流过程，书中每一个病例，没有病因，没有结论，作者只是在记录这些奇怪的病例以及现象。这让我想起了初中看的「故事会」里面描述的鬼怪之说，所以书中内容我已经不关心，继续看是因为某些患者的想法十分有趣，每看完一篇，我甚至都会想好一会，我可能是下一位患者。</p>
 <p>这就是早班车乱谈的来由，坐上公司的班车，我开始胡思乱想。</p>
@@ -1130,9 +1130,9 @@
             
             <tag> git </tag>
             
-            <tag> vim </tag>
-            
             <tag> linux </tag>
+            
+            <tag> vim </tag>
             
             <tag> 正则 </tag>
             
@@ -1375,9 +1375,9 @@
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -1916,9 +1916,9 @@
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
         
@@ -2032,9 +2032,9 @@
         
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
         
