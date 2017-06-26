@@ -311,7 +311,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[【建议收藏】Chrome 插件推荐]]></title>
+      <title><![CDATA[Chrome 插件推荐]]></title>
       <url>http://lijundong.com/chrome-extensions-recommend/</url>
       <content type="html"><![CDATA[<p>今天总结一下你可能还不知道的 Chrome 插件，可能会解决你长久以来的痛点，欢迎补充。</p>
 <a id="more"></a>
@@ -679,9 +679,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> git </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> git </tag>
             
         </tags>
         
@@ -1130,9 +1130,9 @@
             
             <tag> git </tag>
             
-            <tag> linux </tag>
-            
             <tag> vim </tag>
+            
+            <tag> linux </tag>
             
             <tag> 正则 </tag>
             
@@ -2032,9 +2032,9 @@
         
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
         
