@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     
 <meta charset="UTF-8"/>
@@ -27,7 +27,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.4.x" />
+  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x" />
 
 
 
@@ -162,7 +162,7 @@
           <a class="menu-item-link" href="/">
             
             
-              Home
+              首页
             
           </a>
         </li>
@@ -171,7 +171,7 @@
           <a class="menu-item-link" href="/archives/">
             
             
-              Archives
+              归档
             
           </a>
         </li>
@@ -180,7 +180,7 @@
           <a class="menu-item-link" href="/tags">
             
             
-              Tags
+              标签
             
           </a>
         </li>
@@ -189,7 +189,7 @@
           <a class="menu-item-link" href="/categories">
             
             
-              Categories
+              分类
             
           </a>
         </li>
@@ -198,7 +198,7 @@
           <a class="menu-item-link" href="/about">
             
             
-              About
+              关于
             
           </a>
         </li>
@@ -233,7 +233,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Mar 11, 2016
+          2016年3月11日
         </span>
       </div>
     </header>
@@ -241,7 +241,7 @@
     
     
   <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">Contents</h2>
+    <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
       <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么清除浮动"><span class="toc-text">为什么清除浮动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法小结"><span class="toc-text">方法小结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#overflow-auto-hidden"><span class="toc-text">overflow:auto/hidden</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear"><span class="toc-text">clear</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#认识clear"><span class="toc-text">认识clear</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#clear清除浮动"><span class="toc-text">clear清除浮动</span></a></li></ol></li></ol>
     </div>
@@ -261,10 +261,10 @@
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p><img src="http://source.lijundong.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://source.lijundong.com/16-3-11/22540140.jpg" alt=""></li>
@@ -300,15 +300,15 @@
 
   <div class="post-copyright">
     <p class="copyright-item">
-      <span>Author: </span>
+      <span>作者: </span>
       <span>leeon</span>
     </p>
     <p class="copyright-item">
-      <span>Origin: </span>
+      <span>来源: </span>
       <a href="http://lijundong.com">http://lijundong.com</a>
     </p>
     <p class="copyright-item">
-      <span>Link: </span>
+      <span>链接: </span>
       <a href="http://lijundong.com/clear-float/">http://lijundong.com/clear-float/</a>
     </p>
 
@@ -324,7 +324,7 @@
       
   <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden />
-    <label class="reward-button" for="reward">Reward</label>
+    <label class="reward-button" for="reward">赞赏支持</label>
     <div class="qr-code">
       
       
@@ -364,13 +364,13 @@
       <a class="prev" href="/SublimeText-extension-recommend/">
         <i class="iconfont icon-left"></i>
         <span class="prev-text nav-default">SublimeText 插件推荐</span>
-        <span class="prev-text nav-mobile">Prev</span>
+        <span class="prev-text nav-mobile">上一篇</span>
       </a>
     
     
       <a class="next" href="/Dell-laptop-add-ssd/">
         <span class="next-text nav-default">Dell笔记本加装固态</span>
-        <span class="prev-text nav-mobile">Next</span>
+        <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
     
@@ -429,11 +429,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
   </span>
   
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
@@ -504,7 +504,7 @@
         $content$
         <div class="read-more">
           <a href="$url$" class="read-more-link">
-            Read more..
+            阅读更多
           </a>
         </div>
       </div>
