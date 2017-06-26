@@ -679,9 +679,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> git </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> git </tag>
             
         </tags>
         
@@ -1130,9 +1130,9 @@
             
             <tag> git </tag>
             
-            <tag> vim </tag>
-            
             <tag> linux </tag>
+            
+            <tag> vim </tag>
             
             <tag> 正则 </tag>
             
@@ -1375,9 +1375,9 @@
         
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -1916,9 +1916,9 @@
         
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
         
@@ -2032,9 +2032,9 @@
         
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
         

@@ -735,9 +735,9 @@
     
       <category term="服务器" scheme="http://lijundong.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="git" scheme="http://lijundong.com/tags/git/"/>
-    
       <category term="hexo" scheme="http://lijundong.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://lijundong.com/tags/git/"/>
     
   </entry>
   
