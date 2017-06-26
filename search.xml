@@ -25,6 +25,22 @@
 <p>Alphabet 的产品才是真的感动人心。</p>
 <p>来源：<a href="https://support.google.com/chrome/answer/6386684?hl=zh-Hans" target="_blank" rel="external">在 Chrome 中切换同步帐户</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> google </tag>
+            
+            <tag> 数据 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -66,6 +82,24 @@
 <li><a href="https://segmentfault.com/a/1190000002789651" target="_blank" rel="external">JS 进阶基本类型 引用类型 简单赋值 对象引用</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> javascript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> 深拷贝 </tag>
+            
+            <tag> 浅拷贝 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -81,6 +115,22 @@
 <p>VR 的技术日臻成熟，不消几年，VR 会和智能手机一样普及，VR 欺骗了我们的眼睛，那么，VR 之后呢？直接欺骗我们的神经系统如何 ？技术足够成熟，给大脑接一根数据线，我们获得了与现实一样的感受，在那里，你长得帅，娶了一位漂亮的姑娘，生活没有烦恼，没有顾虑，你还愿意回来吗？那些生活痛苦的人，现实生活不如意的人，选择了把自己托管到主机上，只需要低成本就可以开始一段多彩缤纷的生活。最后的结果会不会是 matrix ？</p>
 <p>我们坐上了一趟停不下来的火车，不知道下一个隧道之后是美景还是深渊。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 随笔 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> matrix </tag>
+            
+            <tag> 早班车 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -98,6 +148,24 @@
 <p><strong>建议每次升级之前先备份一次。</strong></p>
 <h3 id="关于恢复"><a href="#关于恢复" class="headerlink" title="关于恢复"></a>关于恢复</h3><p>目前我还没用到恢复，希望永远也用不到，哈哈。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 备份 </tag>
+            
+            <tag> timemachine </tag>
+            
+            <tag> mac </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -150,6 +218,22 @@
 </li>
 </ol>
 ]]></content>
+      
+        <categories>
+            
+            <category> 前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> this </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -166,6 +250,22 @@
 <p>知识付费一直存在，我前文提到的 amoBBS 也可以算是付费社群，只是市场环境更好了，产品的形态更多样化，本质不分轩轾，只不过目前的市场，职业割韭菜的人越来越多，这是必经的过程，被收割的群体本着学习的目的前去，交了学费，学了一招防骗术。</p>
 <p>交再多的钱，也不可能变得更有思想，这条路上没有捷径。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 随笔 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> web </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -192,6 +292,22 @@
 <li><em><a href="https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20%26%20closures/ch4.md" target="_blank" rel="external">You Don’t Know JS: Scope &amp; Closures</a></em></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> javascript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> scope </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -224,6 +340,22 @@
 <p><strong>印象笔记·悦读</strong>：已下线<br>应用场景：将网页内容重新排版，给你更舒适的阅读体验，配合印象笔记使用，体验更佳，不知为何也下线了。</p>
 <p><strong>欢迎补充！</strong></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> chrome </tag>
+            
+            <tag> extension </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -293,6 +425,26 @@
 <li><a href="http://stackoverflow.com/questions/28363186/inline-elements-and-line-height" target="_blank" rel="external">Inline elements and line-height</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> css </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> css </tag>
+            
+            <tag> inline </tag>
+            
+            <tag> line-height </tag>
+            
+            <tag> baseline </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -314,6 +466,22 @@
 <p>这是 17 年的第一篇，之前很多时候想写，认为内容太过简单或是对于那些知识的认知还不够细致，只好作罢，摄入和产出是成正比的，希望 17 年多多学习，多多产出，更多地考虑原理性问题，而不是一直停留在应用层面。学习一些酷酷的东西，对，就是拿来吹牛的，哈哈。</p>
 <p>今年开始，不确定性越来越多，介于好奇与恐惧之间的感觉真是奇妙。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 游记 </tag>
+            
+            <tag> 总结 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -342,10 +510,26 @@
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> next </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -393,6 +577,26 @@
 <li><a href="http://lijundong.com/2016/10/12/nginx-conficure-domains-to-servers/">Nginx 配置多个Node服务的域名</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 问题解决 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> 阿里云 </tag>
+            
+            <tag> hook </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -427,6 +631,20 @@
 <li><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" target="_blank" rel="external">Customizing Git - Git Hooks</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -449,6 +667,24 @@
 <p>买过域名之后一直没备案，后来被屏蔽了，备案之后屏蔽解除了，不知道这个问题跟那次屏蔽有无关联</p>
 <p>不想再被这样的问题困扰，自己动手，丰衣足食，思来想去还是直接放服务器上。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 问题解决 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -494,6 +730,22 @@
 <li><a href="http://attach3.bdwm.net/attach/boards/MathTools/M.1364651898.A/TeX_intro_talk.pdf" target="_blank" rel="external">LaTeX 入门</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> LaTeX </tag>
+            
+            <tag> sublime </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -532,6 +784,24 @@
 <hr>
 <p><em>talk is cheap, show me your code</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> node </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> 爬虫 </tag>
+            
+            <tag> 小说 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -552,6 +822,22 @@
 <li><a href="http://www.jianshu.com/p/cc1cb9a5650c" target="_blank" rel="external">入门：十分钟自动化构建</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 开发工具 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> gulp </tag>
+            
+            <tag> 前端开发 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -570,6 +856,20 @@
 <p>新的 MBP 一周后发布，等了大半年，终于等来了，下面的事情就是存钱了，Fighting！</p>
 <p><em>人生苦短，我用 Mac</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> google </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -626,6 +926,22 @@
 <li><a href="https://www.zhihu.com/question/21366606" target="_blank" rel="external">intel处理器型号是怎么命名的？</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> cpu </tag>
+            
+            <tag> 笔记本 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -670,6 +986,24 @@
 <li><a href="https://www.nginx.com/resources/wiki/start/topics/tutorials/commandline/" target="_blank" rel="external">Nginx</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 服务器 </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> 域名 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -694,6 +1028,20 @@
 <li><a href="https://github.com/mde/ejs/blob/master/docs/syntax.md" target="_blank" rel="external">官方文档</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ejs </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -703,6 +1051,22 @@
 <p>其实原理很简单，要达到的效果是底部 Tab 随着虚拟按键的变化而适应。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">tab</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> 前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 自适应 </tag>
+            
+            <tag> 移动开发 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -717,6 +1081,26 @@
 <p>没了？没了。</p>
 <p>类型包括 application(pdf\doc\xls\ppt……)、image(jpg\png\gif……)、audio(mp3\mid\wav\bom……)、video(avi\movie\mpg……)、text(css\html\c\h……)、x-world(flr\wrl\wrz……)等</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> html </tag>
+            
+            <tag> mime </tag>
+            
+            <tag> input </tag>
+            
+            <tag> accept </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -734,6 +1118,26 @@
 
 
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> linux </tag>
+            
+            <tag> vim </tag>
+            
+            <tag> 正则 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -749,6 +1153,22 @@
 <p>demo.json 格式如下<br><img src="http://source.lijundong.com/16-8-22/31515580.jpg" alt="xlsx2json"><br>json2xlsx.xlsx 内容如下<br><img src="http://source.lijundong.com/16-8-22/44196162.jpg" alt="demo.xlsx"></p>
 <p>通过上面的例子可以看出，Excel 的一行对应着一条 Json 数据，然而这种方式并不适合数据库与 Excel 之间的转换，所以需要对 Json 内容作转换。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> node </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> excel </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -772,6 +1192,22 @@
 <li><a href="http://www.w3cplus.com/css3/css-secrets/custom-checkboxes.html" target="_blank" rel="external">CSS秘密花园： 自定义复选框</a> </li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> html </tag>
+            
+            <tag> css </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -779,6 +1215,22 @@
       <url>http://lijundong.com/wechat-node-2th-express/</url>
       <content type="html"><![CDATA[<p>笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。<br><a id="more"></a></p>
 <h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-——bin   //存放www文件，包含着项目启动命令</span><br><span class="line"></span>|<span class="string">-——node_modules   //存放npm安装到本地的依赖项，依赖包声明在package.json</span><br><span class="line"></span>|<span class="string">-——public         //存放静态资源，图片、js文件、样式文件</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——images</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——javascripts</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——stylesheets</span><br><span class="line"></span>|<span class="string">-——routes //存放路由文件</span><br><span class="line"></span>|<span class="string">-——views  //模板文件，默认使用jade，如果用ejs，则用`express -e &lt;项目名&gt;`初始化</span><br><span class="line"></span>|<span class="string">-——app.js //入口文件</span><br><span class="line"></span>|<span class="string">-——package.json //npm依赖配置文件，`npm install`命令安装</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> node </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> 微信 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -818,6 +1270,22 @@
 <p>域名被屏蔽，可能是没有备案的原因……，最近正在办备案。</p>
 <p>哎！好好说话，你别打我啊，WOC，别打脸……</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> dns </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -827,6 +1295,22 @@
 <h3 id="阻止表单提交"><a href="#阻止表单提交" class="headerlink" title="阻止表单提交"></a>阻止表单提交</h3><p>在表单提交之前，对信息进行校验，判断是否符合提交条件，如果不符合，及时阻止表单的默认提交行为。<br>表单代码如下:<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"usrname"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"passwd"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <h4 id="通过jQuery"><a href="#通过jQuery" class="headerlink" title="通过jQuery"></a>通过jQuery</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"form"</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>( error )&#123;</span><br><span class="line">    e.preventDefault();</span><br><span class="line">    alert(<span class="string">"请检查表单"</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> 前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> 表单 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -881,6 +1365,24 @@
 <p><strong>$gte</strong><br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&gt;=20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">gte</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
 <p><strong>注：save和insert的区别主要在于，新记录中指定的<code>_id</code>在集合中已存在，save会对原纪录进行覆盖，而insert不会操作，如果<code>_id</code>没有指定，则没有区别，都是进行插入</strong><br>例子:<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">db.users.find()</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.<span class="keyword">insert</span>(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.save(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"li"</span>,<span class="string">"age"</span>:<span class="number">12</span>&#125;</span><br></pre></td></tr></table></figure></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> node </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> mongodb </tag>
+            
+            <tag> node </tag>
+            
+            <tag> 微信 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -949,6 +1451,22 @@
 </ul>
 <p>以上。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> bom </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -984,6 +1502,22 @@
 </blockquote>
 <p>晚饭后，老大看到打印好的讲义，很满意，“小李啊，很好！来来来，我这里还有几十章讲义”，我“……”</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 问题解决 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ppt </tag>
+            
+            <tag> photoshop </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1001,6 +1535,22 @@
 <p>听说最近这个结尾很高冷。</p>
 <p>以上。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+            <tag> 定时器 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1008,6 +1558,14 @@
       <url>http://lijundong.com/troubleyourself/</url>
       <content type="html"><![CDATA[<p>正文之前，我在想，该把这篇文章分类在哪？当然，自寻烦恼本就是生活的一部分，或者于我而言生活本就是在自寻烦恼。<br><a id="more"></a><br>心情的状态只有两种，常态是傻大条的穷开心，非常态是长时间的压抑，外在表现为不说话。现在的状态是后种。开心的原因很简单，没有遇到问题或是遇到有解的问题，不说话的原因也简单，遇到自己无解的问题。<br>这两种状态一直伴随着我，从十三四岁的年纪，什么都不懂的年纪总是有很多烦恼，三天两头的压抑，那时的常态是压抑，紧张也是常态，作业没写完，紧张。考试成绩不理想，压抑。不被老师关注，压抑。常常将一些小事无限放大，吓唬自己，像一根快崩断的弦，最严重的一次是初二暑假，暑假作业一字没写，开学吓得都不敢去学校，开学测验那三天几乎没吃东西竟然还没倒，没崩断的原因大概是那时学会了写字发牢骚，压抑了就写出自己的感受，写完两页纸，通体清透，初三毕业时，已经写完了两大本。偶尔回家翻到那些笔记本，书壳都压不住满满的怨念，现在我希望少点，至少隔着屏幕不会闻到。<br>接着，初中毕了业，心理上对自己的认同感已经升到了高中生的状态，少了很多鸡毛蒜皮的小事，压抑的状态改成自习时看不下去书，压抑怎么办，写！写什么？我怎么知道，想写什么写什么，高中能清楚回忆的事情很少，唯一记得的是当时对于爱情思考了很多，毕业时，一天要发五条状态，并且乐此不疲，那样的状态一直延续到大一。<br>后来状态变成了五天发一条，接着是一个月一条，两个月……情绪的表达不再那么频繁，即便想表达，担心自己落入了矫情的行列，欲言又止。后来和朋友通电话，接着通电话的次数也越来越少了，于是彻底不说话了。<br>一直以来，我都是自寻烦恼，那些无解的问题并非外界的问题，只是我的问题，无解源于我十分在乎，我在意成绩，于是我每考不好就得压抑一下，我在意别人的眼光，于是我花心思去吸引别人的目光，暑假作业没写，那全是咎由自取，拖延症作祟，我曾认为没写作业这样羞耻的事情从此直接就烂在我的肚子里好了，但是现在看看，那又能算什么，我还是在六七年后自己把它写在了博客上。生活用六七年的时间教我厚着脸皮，TM到现在我都还只是学艺不精。现在想想，那些我在意的事基本都没有完整的结局，像极了流沙，太用力反而握不下。<br>那些因为十分在乎而用力过猛的事情，终究会变成无人在意的笑谈。<br>当然，我是在扯淡，我智商不够，处理不好手头的事情，却还自作聪明的一个人蒙头捣鼓，情商低也让身边的朋友越来越少。<br>我一直都是在自寻烦恼，我是个自私愚笨的人，烦恼却是，我不愿意承认这是事实。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
     </entry>
     
     <entry>
@@ -1022,6 +1580,22 @@
 <p><code>make    //编译</code><br><code>sudo make install    //安装</code><br><code>node -v    //查看版本号</code><br><code>v4.5.0     //安装完成</code></p>
 <h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>之前也想过使用源码安装，但是意识上认为解压、编译、安装过程会很复杂，然而真正操作一遍之后，完全不是那回事，我认为的困难只是我的大脑懒于接受新知识所找出来的借口，如果不突破这些障碍、懒惰，我会错过很多好玩的东西，光是想想都觉得可惜。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> centos </tag>
+            
+            <tag> node </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1060,6 +1634,22 @@
 <li></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> node </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> 微信 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1074,6 +1664,22 @@
 <li><a href="http://stackoverflow.com/questions/8131344/what-is-the-difference-between-dirname-and-in-node-js" target="_blank" rel="external">What is the difference between __dirname and ./ in node.js(stackoverflow)</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> path </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1257,6 +1863,22 @@
 <li><a href="http://www.kancloud.cn/kancloud/tmux" target="_blank" rel="external">tmux: Productive Mouse-Free Development 中文版</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> putty </tag>
+            
+            <tag> tmux </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1284,6 +1906,22 @@
 <li><a href="http://www.canway.net/Original/shujuku/050310M2016.html" target="_blank" rel="external">MongoDB的客户端工具mongo</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> mongodb </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> mongodb </tag>
+            
+            <tag> centos </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1298,6 +1936,22 @@
 <p>然而这个方法并没能奏效。</p>
 <h4 id="云盾设置登陆IP白名单"><a href="#云盾设置登陆IP白名单" class="headerlink" title="云盾设置登陆IP白名单:"></a>云盾设置登陆IP白名单:</h4><p>侧边栏&gt;产品与服务&gt;服务器安全(安骑士)&gt;<br>设置&gt;安全配置&gt;登陆安全&gt;登陆IP白名单&gt;<br>添加白名单生效的服务器&gt;白名单IP设置为<code>0.0.0.0</code>(防止IP改变)<br><img src="http://source.lijundong.com/16-6-17/72508725.jpg" alt=""><br>使用Putty再次连接，成功。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 问题解决 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ssh </tag>
+            
+            <tag> 服务器 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1320,6 +1974,24 @@
 <li><a href="http://cnbin.github.io/blog/2015/06/12/geng-xin-node-ban-ben/" target="_blank" rel="external">更新 Node 版本</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> centos </tag>
+            
+            <tag> node </tag>
+            
+            <tag> npm </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1350,6 +2022,22 @@
 <li><a href="https://www.zhihu.com/question/22137175" target="_blank" rel="external">Cygwin 和MinGW 的区别与联系</a></li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> scp </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1368,6 +2056,24 @@
 <p>总结了下便签常用快捷键<br><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+N：新建一张便笺</span><br><span class="line">Ctrl+D：删除当前便笺</span><br><span class="line">Ctrl+E：居中对齐</span><br><span class="line">Ctrl+R：右对齐</span><br><span class="line">Ctrl+<span class="keyword">J：左对齐</span><br><span class="line"></span>Ctrl+I：斜体</span><br><span class="line">Ctrl+<span class="keyword">B：粗体</span><br><span class="line"></span>Ctrl+U：下划线</span><br><span class="line">Ctrl+T：删除线</span><br><span class="line">Ctrl+<span class="keyword">Shift+&gt;：加大选中文字的字号</span><br><span class="line"></span>Ctrl+<span class="keyword">Shift+&lt;：缩小选中文字的字号</span><br><span class="line"></span>Ctrl+<span class="keyword">Shift+L：在文字前添加项目符号和编号(反复按可循环切换)。编号包括数字、大小写字母、大小写罗马数字几种形式。</span><br><span class="line"></span>Ctrl+=：下标</span><br><span class="line">Ctrl+<span class="keyword">Shift+=：上标</span></span><br></pre></td></tr></table></figure></p>
 <p>效果:<br><img src="http://source.lijundong.com/16-4-17/63457553.jpg" alt=""></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 工具使用 </tag>
+            
+            <tag> 便签 </tag>
+            
+            <tag> windows </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1424,6 +2130,22 @@
 </ul>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mysqli_query(connection,query,resultmode);</span><br><span class="line"></span><br><span class="line">参数：</span><br><span class="line">connection      <span class="comment">//必需。要使用的 MySQL 连接。即之前连库时传回的连接标识符</span></span><br><span class="line">query           <span class="comment">//必需，需要查询字符串。</span></span><br><span class="line">resultmode     </span><br><span class="line"><span class="comment">//可选，这里没填。一个常量。可以是下列值中的任意一个：</span></span><br><span class="line"> MYSQLI_USE_RESULT      <span class="comment">//如果需要检索大量数据，请使用这个</span></span><br><span class="line"> MYSQLI_STORE_RESULT    <span class="comment">//默认</span></span><br></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 信息系统开发 </tag>
+            
+            <tag> wampserver </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1446,6 +2168,22 @@
 <li>下面的Apache、PHP、Mysql是相关的配置，以及版本的选取。</li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 信息系统开发 </tag>
+            
+            <tag> wampserver </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1457,6 +2195,20 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    $(<span class="string">'li.dropdown'</span>).mouseover(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> ($(<span class="built_in">document</span>).width() &gt; <span class="number">767</span>)</span><br><span class="line">            $(<span class="keyword">this</span>).addClass(<span class="string">'open'</span>);</span><br><span class="line">    &#125;).mouseout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> ($(<span class="built_in">document</span>).width() &gt; <span class="number">767</span>)</span><br><span class="line">            $(<span class="keyword">this</span>).removeClass(<span class="string">'open'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="xml"><span class="tag">&lt;//<span class="attr">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="http://source.lijundong.com/16-4-1/38411741.jpg" alt="演示"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> bootstrap </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1468,6 +2220,20 @@
 <p>最近的生活过的好快，和室友聊天时经常把前天的事记成昨天，细想好久才能纠正，但大脑缓存就这么点大，光凭回忆不是长久之计，还得存进硬盘，拾起每天记事的习惯，五到十分钟记录这一天的收获或者流水账，上个学期连续写了三个月，现在偶尔翻看，挺好玩。<br><a id="more"></a></p>
 <p>进入大学之后有三次选择，一次在大一暑假，一次在大二暑假，还有一次，仍在考虑的眼前，生活是一次次的选择，回望过去的两年，有得有失，有难忘和欢乐，难免的遗憾和悲伤。<br>一直很喜欢一句话“但求好事，莫问前程”，私以为这句话的境界该是，摒弃利益驱动，把一件事自己想做的事，做完整，做完美。好事求成，前程自来。<br>过去很长一段时间一直在挖坑，挖了这么久，也该填一填，把那些我想学的，想做的，着手去学，去做，跳出自己的<code>confort zone</code>。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> life </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1532,6 +2298,26 @@
 <h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p><strong>Setting</strong><br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"caret_extra_width"</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">"font_options"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"no_round"</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"font_size"</span>: <span class="number">12</span>,</span><br><span class="line">    <span class="attr">"highlight_line"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"ignored_packages"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"Markdown"</span>,</span><br><span class="line">        <span class="string">"Vintage"</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"itg_sidebar_tree_large"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"itg_small_tabs"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"original_color_scheme"</span>: <span class="string">"Packages/Color Scheme - Default/Monokai.tmTheme"</span>,</span><br><span class="line">    <span class="attr">"sidebar_large"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"tabs_small"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"theme"</span>: <span class="string">"itg.flat.dark.sublime-theme"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p><strong>Key Bindings</strong><br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123; <span class="attr">"keys"</span>: [<span class="string">"ctrl+shift+enter"</span>], <span class="attr">"command"</span>: <span class="string">"open_in_browser"</span> &#125;,</span><br><span class="line">    &#123; <span class="attr">"keys"</span>: [<span class="string">"ctrl+shift+s"</span>], <span class="attr">"command"</span>: <span class="string">"save_all"</span> &#125;,</span><br><span class="line">    &#123;<span class="attr">"keys"</span>: [<span class="string">"ctrl+shift+o"</span>], <span class="attr">"command"</span>: <span class="string">"reindent"</span> , <span class="attr">"args"</span>: &#123;<span class="attr">"single_line"</span>: <span class="literal">false</span>&#125;&#125;,</span><br><span class="line">    &#123;<span class="attr">"keys"</span>:[<span class="string">"alt+m"</span>],<span class="attr">"command"</span>:<span class="string">"markdown_preview"</span>&#125;</span><br><span class="line"></span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 工具使用 </tag>
+            
+            <tag> sublimetext </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> 力所能及的分享 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1548,10 +2334,10 @@
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://source.lijundong.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://source.lijundong.com/16-3-11/22540140.jpg" alt=""></li>
@@ -1578,6 +2364,26 @@
 <p><em>写完去上课!</em></p>
 <p>参考：<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> html </tag>
+            
+            <tag> css </tag>
+            
+            <tag> float </tag>
+            
+            <tag> clear </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1608,6 +2414,24 @@
 </li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> tips </tag>
+            
+            <tag> ssd </tag>
+            
+            <tag> dell </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1641,17 +2465,35 @@
 </ul>
 </li>
 <li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;</span>水平居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/58206411.jpg" alt="水平居中"></p>
 <ul>
-<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;</span>垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/29762873.jpg" alt="垂直居中"></p>
 <h4 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h4><p>固定定位虽然与绝对定位很相似，只不过其包含块是视窗，元素进行固定定位之后，会从文档流中完全去除，不会有相对于文档中任何部分的位置，即定位之后完全保持不动。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> html </tag>
+            
+            <tag> css </tag>
+            
+            <tag> 文档流 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1665,6 +2507,22 @@
 </li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> sublimetext </tag>
+            
+            <tag> 命令行 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1683,6 +2541,20 @@
 <p>今年的节奏会加快，会有挫折坎坷，相信也会有惊喜，加油。</p>
 <p><em>生活嘛，最重要的是要开心！</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> life </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1714,6 +2586,22 @@
 </ul>
 <h2 id="kindle也可谈情说爱"><a href="#kindle也可谈情说爱" class="headerlink" title="kindle也可谈情说爱"></a>kindle也可谈情说爱</h2><p>曾在知乎上看过一个故事，主人公和女票跨国恋，女主在海外读书，男主在国内复读考研，住在地下室，因为地下室没有信号，写给她的信不能立即发出去，随即想到了一个方法，在地下室写好信放手机里用邮件发出去，回到地面有信号时，邮件自动发送，她的kindle便会同步内容，他们俩就这样互相写信度过了最困难的时光。<a href="http://zhihu.com/question/28468835/answer/41341142?utm_campaign=webshare&amp;utm_source=weibo&amp;utm_medium=zhihu" target="_blank" rel="external">原版在这里</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> kindle </tag>
+            
+            <tag> 工具使用 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1728,6 +2616,24 @@
 <h3 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h3><p>进入chrome://extensions/，右上角打开开发者模式<br>查看效果：选择已解压的扩展程序，选择写好的文件夹即可。<br>程序打包：选择打包扩展程序，选择写好的文件夹，打包后得到一个crx文件。<br><a href="http://source.lijundong.com/16-1-11/97227943.jpg" target="_blank" rel="external"></a></p>
 <h2 id="扩展推荐"><a href="#扩展推荐" class="headerlink" title="扩展推荐"></a>扩展推荐</h2><p>livereload：可以与sublimeText通信，实时刷新页面。<br>pocket：标记没有读完或者将要阅读的网页<br>悦读：增强阅读体验同时可以绑定Evernote<br>ADBlock:强大的广告拦截<br>极简图床：可以绑定七牛云，方便快捷的存储图片，麻麻再也不用担心我Markdown写的博客图片存哪了（其实百度云也可以）<br>anydo：多平台同步的GTD</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> chrome </tag>
+            
+            <tag> 扩展 </tag>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1748,6 +2654,22 @@
 <h3 id="100"><a href="#100" class="headerlink" title="100%"></a>100%</h3><p>今天把『当李晓峰成为Sky』看完了，像是陪着一个朋友走了好久，历经了所有的荣耀与苦难，终于要分别了，结局像是彼此告别，他说他会一直坚持下去，一直努力下去，互相道声珍重，江湖再见！</p>
 <p>值得一提的是看这本书的同时，我脑海里不断显现出绝影的身影，『疯狂的程序员』的作者，这本书算是他的自传，一个疯狂的人，成就了一段传说，让我们这些后来的学弟时常瞻仰，只是疯狂到几近癫狂的状态时，辉煌戛然而止，让人唏嘘不已。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 读书 </tag>
+            
+            <tag> 电竞 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1783,6 +2705,22 @@
 <p>那些吹过的牛，在我忘记之前一头头把它们送上天！</p>
 <p><em>ps:长久不说话，就成了哑巴，很久不写字，写了删，删了又删，这两天的状态就像个哑巴支支吾吾忘了怎么表达！</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> life </tag>
+            
+            <tag> 骑行 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1798,6 +2736,20 @@
 <h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>目前站点放在阿里云，DNS 服务提供商从 Cloudflare 转到了阿里云解析。</p>
 <p><em>生活，最重要的就是要开心嘛！</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> life </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1826,6 +2778,24 @@
 <h4 id="js"><a href="#js" class="headerlink" title=".js"></a>.js</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> S;</span><br><span class="line"><span class="keyword">var</span> Coordinate_y = <span class="number">40</span>;</span><br><span class="line"><span class="keyword">var</span> Rect = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line"><span class="keyword">var</span> track_insert = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line"><span class="keyword">var</span> cons = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> cnt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="comment">//获取字符串，存入数组</span></span><br><span class="line">    S = <span class="built_in">document</span>.getElementsByName(<span class="string">"string"</span>)[<span class="number">0</span>].value.split(<span class="string">""</span>);</span><br><span class="line"><span class="comment">//依据数组元素，完成对象数组</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; S.length; i++) &#123;</span><br><span class="line">        <span class="keyword">var</span> rect = &#123;</span><br><span class="line">            x: <span class="number">30</span> * i,</span><br><span class="line">            y: Coordinate_y,</span><br><span class="line">            target_x: <span class="number">30</span> * i,</span><br><span class="line">            target_y: Coordinate_y,</span><br><span class="line">            text: S[i]</span><br><span class="line">        &#125;</span><br><span class="line">        Rect.push(rect);</span><br><span class="line">    &#125;</span><br><span class="line">    insertSort(S);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">insertSort</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> i = <span class="number">1</span>,</span><br><span class="line">    j, key, temp;</span><br><span class="line">    <span class="keyword">for</span> (; i &lt; arr.length; i++) &#123;</span><br><span class="line">        j = i;</span><br><span class="line">        key = arr[i];</span><br><span class="line">        <span class="keyword">while</span> (--j &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[j] &gt; key) &#123;</span><br><span class="line">                arr[j + <span class="number">1</span>] = arr[j];</span><br><span class="line">                arr[j] = key;</span><br><span class="line"><span class="comment">//当数据有交换时，记录下标</span></span><br><span class="line">                track_insert.push(j);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//坐标更新</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">update</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (cons &gt; track_insert.length) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (cons == <span class="number">0</span>) &#123;</span><br><span class="line">        cnt = track_insert[cons];</span><br><span class="line">        Rect[cnt].target_x = Rect[cnt + <span class="number">1</span>].x;</span><br><span class="line">        Rect[cnt + <span class="number">1</span>].target_x = Rect[cnt].x;</span><br><span class="line">        cons += <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(cnt);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (Rect[cnt].x == Rect[cnt].target_x) &#123;</span><br><span class="line">        <span class="keyword">if</span> (cons == track_insert.length) &#123;</span><br><span class="line">            cons += <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> tem = Rect[cnt];</span><br><span class="line">        Rect[cnt] = Rect[cnt + <span class="number">1</span>];</span><br><span class="line">        Rect[cnt + <span class="number">1</span>] = tem;</span><br><span class="line">        cnt = track_insert[cons];</span><br><span class="line">        Rect[cnt].target_x = Rect[cnt + <span class="number">1</span>].x;</span><br><span class="line">        Rect[cnt + <span class="number">1</span>].target_x = Rect[cnt].x;</span><br><span class="line">        cons += <span class="number">1</span>;</span><br><span class="line">        <span class="built_in">console</span>.log(cnt);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        Rect[cnt].x += <span class="number">1</span>;</span><br><span class="line">        Rect[cnt + <span class="number">1</span>].x -= <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//绘制图像</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">draw</span>(<span class="params">context</span>) </span>&#123;</span><br><span class="line">    context.clearRect(<span class="number">0</span>, <span class="number">0</span>, context.canvas.width, context.canvas.height);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; Rect.length; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> ((Rect[i].x - Rect[i].target_x) &gt;= <span class="number">2</span> || (Rect[i].x - Rect[i].target_x) &lt; <span class="number">-2</span>) &#123;</span><br><span class="line">            context.fillStyle = <span class="string">"yellow"</span>;</span><br><span class="line">            context.fillRect(Rect[i].x, Rect[i].y, <span class="number">25</span>, <span class="number">25</span>);</span><br><span class="line">            context.fillStyle = <span class="string">"blue"</span>;</span><br><span class="line">            context.fillText(Rect[i].text, Rect[i].x + <span class="number">10</span>, Rect[i].y + <span class="number">15</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            context.strokeStyle = <span class="string">"blue"</span>;</span><br><span class="line">            context.strokeRect(Rect[i].x, Rect[i].y, <span class="number">25</span>, <span class="number">25</span>);</span><br><span class="line">            context.fillStyle = <span class="string">"blue"</span>;</span><br><span class="line">            context.fillText(Rect[i].text, Rect[i].x + <span class="number">10</span>, Rect[i].y + <span class="number">15</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    context.fillText(<span class="string">"插入排序"</span>, <span class="number">40</span>, <span class="number">80</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">showDemo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    func();</span><br><span class="line">    <span class="keyword">var</span> c = <span class="built_in">document</span>.getElementById(<span class="string">"mycanvas"</span>);</span><br><span class="line">    c.width = <span class="number">600</span>;</span><br><span class="line">    c.height = <span class="number">300</span>;</span><br><span class="line">    <span class="keyword">var</span> context = c.getContext(<span class="string">"2d"</span>);</span><br><span class="line"><span class="comment">//40ms调用一次函数</span></span><br><span class="line">    setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        draw(context);</span><br><span class="line">        update();</span><br><span class="line">    &#125;, <span class="number">40</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="css"><a href="#css" class="headerlink" title=".css"></a>.css</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">input#tin&#123;</span><br><span class="line">    margin-bottom: 5px;</span><br><span class="line">    background-color: #fff;opacity:0.85;8</span><br><span class="line">    width:20px;</span><br><span class="line">    height:25px; </span><br><span class="line">    border-width: 1;</span><br><span class="line">    font-size: 17px; </span><br><span class="line">    color: #000; </span><br><span class="line">    font-weight: 500; </span><br><span class="line">    border-radius: 5px;</span><br><span class="line">    cursor:pointer; </span><br><span class="line">&#125;</span><br><span class="line">input#bin&#123;</span><br><span class="line">    background-color: gray;</span><br><span class="line">    width:80; </span><br><span class="line">    height:25; </span><br><span class="line">    border-width: 2; </span><br><span class="line">    font-size: 20px; </span><br><span class="line">    color: #FFFFFF; </span><br><span class="line">    font-weight: 500;</span><br><span class="line">    cursor:pointer; </span><br><span class="line">    border-radius: 5px;</span><br><span class="line">&#125;</span><br><span class="line">canvas#mycanvas&#123;</span><br><span class="line">    border:1px solid;</span><br><span class="line">    width: 600px;</span><br><span class="line">    height: 300px;</span><br><span class="line">    margin-top: 5px;</span><br><span class="line">    border-radius: 5px;</span><br><span class="line">&#125;</span><br><span class="line">div#container&#123;</span><br><span class="line">    margin-left: 70px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> canvas </tag>
+            
+            <tag> 排序 </tag>
+            
+            <tag> 动画 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1846,6 +2816,24 @@
 <h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><h4 id="1-测试代码"><a href="#1-测试代码" class="headerlink" title="1.测试代码"></a>1.测试代码</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="keyword">int</span> a;</span><br><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">int</span> bc;</span><br><span class="line"><span class="keyword">for</span> (i=<span class="number">1</span>; i &lt;= <span class="number">10</span>; i=i+<span class="number">1</span>)</span><br><span class="line">&#123;</span><br><span class="line">;</span><br><span class="line">a=a+i</span><br><span class="line">b=b*i;</span><br><span class="line">&#123;</span><br><span class="line">c=a+b;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> (a&gt;b) </span><br><span class="line">&#123;</span><br><span class="line">write a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> </span><br><span class="line">&#123;</span><br><span class="line">write b;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">write c</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="2-实现代码"><a href="#2-实现代码" class="headerlink" title="2.实现代码"></a>2.实现代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br><span class="line">477</span><br><span class="line">478</span><br><span class="line">479</span><br><span class="line">480</span><br><span class="line">481</span><br><span class="line">482</span><br><span class="line">483</span><br><span class="line">484</span><br><span class="line">485</span><br><span class="line">486</span><br><span class="line">487</span><br><span class="line">488</span><br><span class="line">489</span><br><span class="line">490</span><br><span class="line">491</span><br><span class="line">492</span><br><span class="line">493</span><br><span class="line">494</span><br><span class="line">495</span><br><span class="line">496</span><br><span class="line">497</span><br><span class="line">498</span><br><span class="line">499</span><br><span class="line">500</span><br><span class="line">501</span><br><span class="line">502</span><br><span class="line">503</span><br><span class="line">504</span><br><span class="line">505</span><br><span class="line">506</span><br><span class="line">507</span><br><span class="line">508</span><br><span class="line">509</span><br><span class="line">510</span><br><span class="line">511</span><br><span class="line">512</span><br><span class="line">513</span><br><span class="line">514</span><br><span class="line">515</span><br><span class="line">516</span><br><span class="line">517</span><br><span class="line">518</span><br><span class="line">519</span><br><span class="line">520</span><br><span class="line">521</span><br><span class="line">522</span><br><span class="line">523</span><br><span class="line">524</span><br><span class="line">525</span><br><span class="line">526</span><br><span class="line">527</span><br><span class="line">528</span><br><span class="line">529</span><br><span class="line">530</span><br><span class="line">531</span><br><span class="line">532</span><br><span class="line">533</span><br><span class="line">534</span><br><span class="line">535</span><br><span class="line">536</span><br><span class="line">537</span><br><span class="line">538</span><br><span class="line">539</span><br><span class="line">540</span><br><span class="line">541</span><br><span class="line">542</span><br><span class="line">543</span><br><span class="line">544</span><br><span class="line">545</span><br><span class="line">546</span><br><span class="line">547</span><br><span class="line">548</span><br><span class="line">549</span><br><span class="line">550</span><br><span class="line">551</span><br><span class="line">552</span><br><span class="line">553</span><br><span class="line">554</span><br><span class="line">555</span><br><span class="line">556</span><br><span class="line">557</span><br><span class="line">558</span><br><span class="line">559</span><br><span class="line">560</span><br><span class="line">561</span><br><span class="line">562</span><br><span class="line">563</span><br><span class="line">564</span><br><span class="line">565</span><br><span class="line">566</span><br><span class="line">567</span><br><span class="line">568</span><br><span class="line">569</span><br><span class="line">570</span><br><span class="line">571</span><br><span class="line">572</span><br><span class="line">573</span><br><span class="line">574</span><br><span class="line">575</span><br><span class="line">576</span><br><span class="line">577</span><br><span class="line">578</span><br><span class="line">579</span><br><span class="line">580</span><br><span class="line">581</span><br><span class="line">582</span><br><span class="line">583</span><br><span class="line">584</span><br><span class="line">585</span><br><span class="line">586</span><br><span class="line">587</span><br><span class="line">588</span><br><span class="line">589</span><br><span class="line">590</span><br><span class="line">591</span><br><span class="line">592</span><br><span class="line">593</span><br><span class="line">594</span><br><span class="line">595</span><br><span class="line">596</span><br><span class="line">597</span><br><span class="line">598</span><br><span class="line">599</span><br><span class="line">600</span><br><span class="line">601</span><br><span class="line">602</span><br><span class="line">603</span><br><span class="line">604</span><br><span class="line">605</span><br><span class="line">606</span><br><span class="line">607</span><br><span class="line">608</span><br><span class="line">609</span><br><span class="line">610</span><br><span class="line">611</span><br><span class="line">612</span><br><span class="line">613</span><br><span class="line">614</span><br><span class="line">615</span><br><span class="line">616</span><br><span class="line">617</span><br><span class="line">618</span><br><span class="line">619</span><br><span class="line">620</span><br><span class="line">621</span><br><span class="line">622</span><br><span class="line">623</span><br><span class="line">624</span><br><span class="line">625</span><br><span class="line">626</span><br><span class="line">627</span><br><span class="line">628</span><br><span class="line">629</span><br><span class="line">630</span><br><span class="line">631</span><br><span class="line">632</span><br><span class="line">633</span><br><span class="line">634</span><br><span class="line">635</span><br><span class="line">636</span><br><span class="line">637</span><br><span class="line">638</span><br><span class="line">639</span><br><span class="line">640</span><br><span class="line">641</span><br><span class="line">642</span><br><span class="line">643</span><br><span class="line">644</span><br><span class="line">645</span><br><span class="line">646</span><br><span class="line">647</span><br><span class="line">648</span><br><span class="line">649</span><br><span class="line">650</span><br><span class="line">651</span><br><span class="line">652</span><br><span class="line">653</span><br><span class="line">654</span><br><span class="line">655</span><br><span class="line">656</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;ctype.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;conio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">A</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">B</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">C</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">D</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">E</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">TESTparse</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">program</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">statement</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">statement_list</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">expression</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">expression_stat</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">declaration_stat</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">declaration_list</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">if_stat</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">for_stat</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">read_stat</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">write_stat</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">while_stat</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">compound_stat</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">term</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">factor</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">bool_expr</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">additive_expr</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">int</span> line;</span><br><span class="line"><span class="keyword">char</span> ch;</span><br><span class="line">FILE *fp;<span class="comment">//用于指向输入文件的指针</span></span><br><span class="line"><span class="keyword">extern</span> <span class="keyword">char</span> Scanout[<span class="number">300</span>];<span class="comment">//保存词法分析输出文件名</span></span><br><span class="line"><span class="keyword">char</span> token[<span class="number">20</span>], token1[<span class="number">40</span>];<span class="comment">//token保存单词符号，token1保存单词值</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">TESTparse</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> ((fp = fopen(Scanout, <span class="string">"r"</span>)) == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\n Open %s error !\n"</span>, Scanout);</span><br><span class="line">        es = <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"=========Result!=========\n\n"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (es == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = program();</span><br><span class="line">    &#125;</span><br><span class="line">    fclose(fp);</span><br><span class="line">    <span class="keyword">return</span> (es);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">program</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"&#123;"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  &#123;    \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = declaration_list();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    es = statement_list();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"&#125;"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  &#125;    \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ch = getc(fp);</span><br><span class="line">    <span class="keyword">while</span> (ch != EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (ch != <span class="string">' '</span>&amp;&amp;ch != <span class="string">'\n'</span>&amp;&amp;ch != <span class="string">'\t'</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Programma error!!   \n"</span>, line);</span><br><span class="line">            <span class="keyword">return</span> (es = <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        ch = getc(fp);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> (es);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">declaration_list</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token1, <span class="string">"int"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        es = A();</span><br><span class="line">        <span class="keyword">return</span> es;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack int \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">A</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token1, <span class="string">"int"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        es = declaration_stat();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        es = A();</span><br><span class="line">        <span class="keyword">return</span> (es);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span></span><br><span class="line">        (</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"if"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"while"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"for"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"read"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"write"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"&#123;"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">";"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"ID"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"("</span>) == <span class="number">0</span>||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"NUM"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token1, <span class="string">"&#125;"</span>) == <span class="number">0</span></span><br><span class="line">        )</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack int||if||while||for||read||write||&#123;||;||ID||(||NUM||&#125; \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span>  <span class="title">declaration_stat</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"int"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   int    \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ID    \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">";"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ;   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span>  <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">statement_list</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"if"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"while"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"for"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"read"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"write"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&#123;"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">";"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"NUM"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"("</span>) == <span class="number">0</span> </span><br><span class="line">        )</span><br><span class="line">    &#123;</span><br><span class="line">        es = B();</span><br><span class="line">        <span class="keyword">return</span> es;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  if||while||for||read||write||&#123;||;||ID||NUM||(   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">B</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"if"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"while"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"for"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"read"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"write"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&#123;"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">";"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"NUM"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"("</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        es = statement();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        es = B();</span><br><span class="line">        <span class="keyword">return</span> (es);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"&#125;"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  if||while||for||read||write||&#123;||;||ID||NUM||( ||&#125;  \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">statement</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (es == <span class="number">0</span> &amp;&amp; <span class="built_in">strcmp</span>(token, <span class="string">"if"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = if_stat();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (es == <span class="number">0</span> &amp;&amp; <span class="built_in">strcmp</span>(token, <span class="string">"while"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = while_stat();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (es == <span class="number">0</span> &amp;&amp; <span class="built_in">strcmp</span>(token, <span class="string">"for"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = for_stat();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (es == <span class="number">0</span> &amp;&amp; <span class="built_in">strcmp</span>(token, <span class="string">"read"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = read_stat();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (es == <span class="number">0</span> &amp;&amp; <span class="built_in">strcmp</span>(token, <span class="string">"write"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = write_stat();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (es == <span class="number">0</span> &amp;&amp; <span class="built_in">strcmp</span>(token, <span class="string">"&#123;"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = compound_stat();                       </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (es == <span class="number">0</span> &amp;&amp; <span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"NUM"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"("</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">";"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        es = expression_stat();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  if||while||for||read||write||&#123;||;||ID||NUM||(   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> (es);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">if_stat</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"("</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  ( \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = expression();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">")"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  ) \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = statement();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"else"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = statement();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> (es);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">while_stat</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"("</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   (   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = expression();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">")"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   )   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = statement();</span><br><span class="line">    <span class="keyword">return</span> (es);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">for_stat</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"("</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   (   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = expression();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">";"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ;   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = expression();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">";"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ;  \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = expression();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">")"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   )  \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    es = statement();</span><br><span class="line">    <span class="keyword">return</span> (es);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">write_stat</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    es = expression();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">";"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ;  \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">read_stat</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ID  \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">";"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ;   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">compound_stat</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    es = statement_list();</span><br><span class="line">    <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"&#125;"</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">expression_stat</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">";"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"NUM"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"("</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        es = expression();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">";"</span>) == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ;   \n"</span>, line);</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   ;||ID||NUM||(   \n"</span>, line);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">expression</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>, fileadd;</span><br><span class="line">    <span class="keyword">char</span> token2[<span class="number">20</span>], token3[<span class="number">40</span>];</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        fileadd = ftell(fp);<span class="comment">//记住当前文件位置</span></span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token2, &amp;token3, &amp;line);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token2, <span class="string">"="</span>) == <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">            es = bool_expr();</span><br><span class="line">            <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            fseek(fp, fileadd, <span class="number">0</span>);<span class="comment">//若非‘=’，则文件指针回到'='前的标识符</span></span><br><span class="line">            es = bool_expr();</span><br><span class="line">            <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        es = bool_expr();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">bool_expr</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"NUM"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"("</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        es = additive_expr();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        es = C();</span><br><span class="line">        <span class="keyword">return</span> (es);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  ID||NUM||(    \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">C</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&gt;"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&gt;="</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&lt;"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&lt;="</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"=="</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"!="</span>) == <span class="number">0</span></span><br><span class="line">        )</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = additive_expr();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">";"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">")"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack )||&gt;||&lt;||&gt;=||&lt;==||==||!=||;    \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">additive_expr</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"NUM"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"("</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        es = term();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        es = D();</span><br><span class="line">        <span class="keyword">return</span> (es);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  ID||NUM||(   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">D</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"+"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"-"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = term();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        es = D();</span><br><span class="line">        <span class="keyword">return</span> (es);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span></span><br><span class="line">        (</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">";"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">")"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&gt;"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"&gt;="</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&lt;"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"&lt;="</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"=="</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"!="</span>) == <span class="number">0</span></span><br><span class="line">        )</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   +||-||;||)||&lt;||&gt;||&lt;=||&gt;=||==||!=    \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">term</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"NUM"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"("</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        es = factor();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        es = E();</span><br><span class="line">        <span class="keyword">return</span> (es);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack  ID||NUM||(   \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">E</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"*"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"/"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = factor();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        es = E();</span><br><span class="line">        <span class="keyword">return</span> (es);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span></span><br><span class="line">        (</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">";"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">")"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"+"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"-"</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&gt;"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"&gt;="</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"&lt;"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"&lt;="</span>) == <span class="number">0</span> ||</span><br><span class="line">        <span class="built_in">strcmp</span>(token, <span class="string">"=="</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"!="</span>) == <span class="number">0</span></span><br><span class="line">        )</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   Lack   *||/||;||)||&gt;||&lt;||==||!=||&gt;=||&lt;=  \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">factor</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> es = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"("</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        es = expression();</span><br><span class="line">        <span class="keyword">if</span> (es &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">")"</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   )   \n"</span>, line);</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">strcmp</span>(token, <span class="string">"ID"</span>) == <span class="number">0</span> || <span class="built_in">strcmp</span>(token, <span class="string">"NUM"</span>) == <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">fscanf</span>(fp, <span class="string">"%s%s%d\n"</span>, &amp;token, &amp;token1, &amp;line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"ERROR: Line %d   ( || ID || NUM    \n"</span>, line);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> c++ </tag>
+            
+            <tag> 编译原理 </tag>
+            
+            <tag> 语法分析 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1907,6 +2895,24 @@
 </ul>
 <hr>
 <h4 id="SourceCode"><a href="#SourceCode" class="headerlink" title="SourceCode"></a>SourceCode</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;ctype.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> sum 8</span></span><br><span class="line">FILE *fin, *fout;</span><br><span class="line"><span class="keyword">char</span> Dword[<span class="number">10</span>] = <span class="string">"!&gt;&lt;="</span>;</span><br><span class="line"><span class="keyword">char</span> Infile[<span class="number">300</span>], Outfile[<span class="number">300</span>];</span><br><span class="line"><span class="keyword">char</span> Sword[<span class="number">50</span>] = <span class="string">"+-*()&#123;&#125;;"</span>;</span><br><span class="line"><span class="keyword">char</span> *keyword[sum] = &#123; <span class="string">"if"</span>, <span class="string">"else"</span>, <span class="string">"for"</span>, <span class="string">"while"</span>, <span class="string">"do"</span>, <span class="string">"int"</span>, <span class="string">"read"</span>, <span class="string">"write"</span> &#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">test</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> ch, Buff[<span class="number">40</span>];</span><br><span class="line">    <span class="keyword">int</span> flag = <span class="number">0</span>, n, line = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> m = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Name of Pro:"</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>, Infile);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Name of Outfile:"</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%s"</span>, Outfile);</span><br><span class="line">    <span class="keyword">if</span> ((fin = fopen(Infile, <span class="string">"r"</span>)) == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\nPro file open error！\n"</span>);</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> ((fout = fopen(Outfile, <span class="string">"w"</span>)) == <span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"\nOutfile open error！\n"</span>);</span><br><span class="line">        <span class="keyword">return</span> (<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    ch = getc(fin);</span><br><span class="line">    <span class="keyword">while</span> (ch != EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        m = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">memset</span>(Buff, <span class="number">0</span>, <span class="number">40</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (ch == <span class="string">' '</span> || ch == <span class="string">'\n'</span> || ch == <span class="string">'\t'</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (ch == <span class="string">'\n'</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                line++;</span><br><span class="line">            &#125;</span><br><span class="line">            ch = getc(fin);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">isalpha</span>(ch))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="built_in">isalpha</span>(ch) || <span class="built_in">isdigit</span>(ch))</span><br><span class="line">            &#123;</span><br><span class="line">                Buff[m] = ch;</span><br><span class="line">                m++;</span><br><span class="line">                ch = getc(fin);</span><br><span class="line">            &#125;</span><br><span class="line">            n = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span> ((n &lt; sum) &amp;&amp; <span class="built_in">strcmp</span>(Buff, keyword[n]))</span><br><span class="line">            &#123;</span><br><span class="line">                n++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (n &lt; sum)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">fprintf</span>(fout, <span class="string">"%s\t%s\n"</span>, <span class="string">"ID"</span>, Buff);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">fprintf</span>(fout, <span class="string">"%s\t%s\n"</span>, Buff, Buff);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; </span><br><span class="line">         <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">isdigit</span>(ch))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (ch == <span class="string">'0'</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                Buff[<span class="number">0</span>] = <span class="string">'0'</span>;</span><br><span class="line">                Buff[<span class="number">1</span>] = <span class="string">'\0'</span>;</span><br><span class="line">                <span class="built_in">fprintf</span>(fout, <span class="string">"%s\t%s\n"</span>, <span class="string">"NUM"</span>, Buff);</span><br><span class="line">                ch = getc(fin);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">while</span> (<span class="built_in">isdigit</span>(ch))</span><br><span class="line">                &#123;</span><br><span class="line">                    Buff[m] = ch;</span><br><span class="line">                    m++;</span><br><span class="line">                    ch = getc(fin);</span><br><span class="line">                &#125;</span><br><span class="line">                Buff[m] = <span class="string">'\0'</span>;</span><br><span class="line">                <span class="built_in">fprintf</span>(fout, <span class="string">"%s\t%s\n"</span>, <span class="string">"NUM"</span>, Buff);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">strchr</span>(Sword, ch) &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            Buff[<span class="number">0</span>] = ch;</span><br><span class="line">            Buff[<span class="number">1</span>] = <span class="string">'\0'</span>;</span><br><span class="line">            ch = getc(fin);</span><br><span class="line">            <span class="built_in">fprintf</span>(fout, <span class="string">"%s\t%s\n"</span>, Buff, Buff);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">strchr</span>(Dword, ch) &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            Buff[<span class="number">0</span>] = ch;</span><br><span class="line">            ch = getc(fin);</span><br><span class="line">            <span class="keyword">if</span> (ch == <span class="string">'='</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                Buff[<span class="number">1</span>] = ch;</span><br><span class="line">                Buff[<span class="number">2</span>] = <span class="string">'\0'</span>;</span><br><span class="line">                ch = getc(fin);</span><br><span class="line">                <span class="built_in">fprintf</span>(fout, <span class="string">"%s\t%s\n"</span>, Buff, Buff);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                Buff[<span class="number">1</span>] = <span class="string">'\0'</span>;</span><br><span class="line">                <span class="keyword">if</span> (Buff[<span class="number">0</span>] == <span class="string">'!'</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">"Line %d\t%s\t%s\n"</span>, line, <span class="string">"ERROR:"</span>, Buff);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="built_in">fprintf</span>(fout, <span class="string">"%s\t%s\n"</span>, Buff, Buff);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (ch == <span class="string">'/'</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            ch = getc(fin);</span><br><span class="line">            <span class="keyword">if</span> (ch == <span class="string">'*'</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">char</span> ch1;</span><br><span class="line">                ch1 = getc(fin);</span><br><span class="line">                <span class="keyword">while</span> (<span class="literal">true</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">if</span> (ch1 == EOF)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="built_in">printf</span>(<span class="string">"Line %d\t%s\tNote does't match!\n"</span>, line,<span class="string">"ERROR:"</span> );</span><br><span class="line">                        </span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    ch = ch1;</span><br><span class="line">                    ch1 = getc(fin);</span><br><span class="line">                    <span class="keyword">if</span> (ch == <span class="string">'*'</span>&amp;&amp;ch1 == <span class="string">'/'</span>)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                ch = getc(fin);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                Buff[<span class="number">0</span>] = <span class="string">'/'</span>;</span><br><span class="line">                Buff[<span class="number">1</span>] = <span class="string">'\0'</span>;</span><br><span class="line">                <span class="built_in">fprintf</span>(fout, <span class="string">"%s\t%s\n"</span>, Buff, Buff);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            Buff[<span class="number">0</span>] = ch;</span><br><span class="line">            Buff[<span class="number">1</span>] = <span class="string">'\0'</span>;</span><br><span class="line">            ch = getc(fin);</span><br><span class="line">            flag = <span class="number">3</span>;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Line %d\t%s\t%s\n"</span>, line, <span class="string">"ERROR:"</span>, Buff);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    fclose(fin);</span><br><span class="line">    fclose(fout);</span><br><span class="line">    <span class="keyword">return</span>(flag);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> flag = <span class="number">0</span>;</span><br><span class="line">    flag = test();</span><br><span class="line">    <span class="keyword">if</span> (flag &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Compile Error\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"No Error\n"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> c++ </tag>
+            
+            <tag> 词法分析 </tag>
+            
+            <tag> 编译原理 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -1928,6 +2934,24 @@
 <h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a><strong>注意事项</strong></h4><p>之前用opencv显示窗口时，习惯直接用<code>imshow( winname, mat);</code>，少了先命名一个窗口的过程，没有用到鼠标事件之前并没出现问题，但，当我开始向代码里面加鼠标事件后，运行时却没有响应<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">onMouse</span><span class="params">(<span class="keyword">int</span> event, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> flags, <span class="keyword">void</span>* param)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    cvSetMouseCallback(<span class="string">"ok"</span>, onMouse, <span class="literal">NULL</span>);</span><br><span class="line">    imshow(<span class="string">"ok"</span>,window_image);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">onMouse</span><span class="params">(<span class="keyword">int</span> event, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> flags, <span class="keyword">void</span>* param)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (event == <span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"heelo"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (event == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"world"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;x&lt;&lt;<span class="string">"   "</span>&lt;&lt;y&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>因为缺少窗口声明，所以上面这段代码并没有实现响应，所以需要加一行声明。<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">onMouse</span><span class="params">(<span class="keyword">int</span> event, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> flags, <span class="keyword">void</span>* param)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    namedWindow(<span class="string">"ok"</span>, <span class="number">1</span>);<span class="comment">//命名一个窗口</span></span><br><span class="line">    cvSetMouseCallback(<span class="string">"ok"</span>, onMouse, <span class="literal">NULL</span>);</span><br><span class="line">    imshow(<span class="string">"ok"</span>,window_image);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">onMouse</span><span class="params">(<span class="keyword">int</span> event, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> flags, <span class="keyword">void</span>* param)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (event == <span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"heelo"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (event == <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"world"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;x&lt;&lt;<span class="string">"   "</span>&lt;&lt;y&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 学习 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> c++ </tag>
+            
+            <tag> opencv </tag>
+            
+            <tag> 鼠标事件 </tag>
+            
+        </tags>
+        
     </entry>
     
   
