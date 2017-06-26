@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://lijundong.com/think-in-early-bus/</loc>
-    <lastmod>2017-06-26T12:55:56.000Z</lastmod>
+    <lastmod>2017-06-26T12:59:05.000Z</lastmod>
     <data>
         <display>
         <title>早班车乱谈</title>
@@ -142,21 +142,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/information-system-Wampserver/</loc>
+    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>IS开发(一):Wampserver</title>
-        <pubTime>2016-04-14T12:53:19.000Z</pubTime>
+        <title>批量处理PPT图片</title>
+        <pubTime>2016-07-18T10:29:12.000Z</pubTime>
         
-        <tag>信息系统开发</tag>
+        <tag>ppt</tag>
          
-        <tag>wampserver</tag>
+        <tag>photoshop</tag>
          
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
           
         </display>
     </data>
@@ -164,21 +164,45 @@
 
     
   <url>
-    <loc>http://lijundong.com/Kindle-content-manage/</loc>
+    <loc>http://lijundong.com/wechat-node-0th/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>管理你的Kindle</title>
-        <pubTime>2016-01-12T12:55:33.000Z</pubTime>
+        <title>微信公号Node开发「零」之项目建立</title>
+        <pubTime>2016-06-19T03:04:34.000Z</pubTime>
         
-        <tag>kindle</tag>
+        <tag>node</tag>
          
-        <tag>工具使用</tag>
+        <tag>微信</tag>
          
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="node" url="http://lijundong.com/categories/node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Canvas-animation-about-sort/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Canvas制作排序算法演示动画</title>
+        <pubTime>2015-09-05T14:18:12.000Z</pubTime>
+        
+        <tag>canvas</tag>
+         
+        <tag>排序</tag>
+         
+        <tag>动画</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -208,67 +232,19 @@
 
     
   <url>
-    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
+    <loc>http://lijundong.com/Bootstrap-hover-toggle-menu/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>『当李晓峰成为Sky』</title>
-        <pubTime>2015-11-20T10:00:03.000Z</pubTime>
+        <title>Bootstrap初体验:鼠标hover时自动下拉菜单</title>
+        <pubTime>2016-03-31T16:00:15.000Z</pubTime>
         
-        <tag>读书</tag>
-         
-        <tag>电竞</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Chrome-extension-one-clock/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Chrome扩展[一]:简易时钟</title>
-        <pubTime>2016-01-11T01:31:14.000Z</pubTime>
-        
-        <tag>chrome</tag>
-         
-        <tag>扩展</tag>
-         
-        <tag>javascript</tag>
+        <tag>bootstrap</tag>
          
          
            
              
               <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>SublimeText 配置 LaTeX 编辑器</title>
-        <pubTime>2016-11-23T13:15:40.000Z</pubTime>
-        
-        <tag>LaTeX</tag>
-         
-        <tag>sublime</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -302,30 +278,6 @@
 
     
   <url>
-    <loc>http://lijundong.com/novel-crawler-by-Nodejs/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Node.js 实现简单小说爬虫</title>
-        <pubTime>2016-11-17T14:17:32.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-        <tag>爬虫</tag>
-         
-        <tag>小说</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="http://lijundong.com/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
@@ -338,6 +290,28 @@
         <tag>便签</tag>
          
         <tag>windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>SublimeText 配置 LaTeX 编辑器</title>
+        <pubTime>2016-11-23T13:15:40.000Z</pubTime>
+        
+        <tag>LaTeX</tag>
+         
+        <tag>sublime</tag>
          
          
            
@@ -376,6 +350,74 @@
 
     
   <url>
+    <loc>http://lijundong.com/information-system-Wampserver/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>IS开发(一):Wampserver</title>
+        <pubTime>2016-04-14T12:53:19.000Z</pubTime>
+        
+        <tag>信息系统开发</tag>
+         
+        <tag>wampserver</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/novel-crawler-by-Nodejs/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Node.js 实现简单小说爬虫</title>
+        <pubTime>2016-11-17T14:17:32.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>爬虫</tag>
+         
+        <tag>小说</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="http://lijundong.com/categories/node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>『当李晓峰成为Sky』</title>
+        <pubTime>2015-11-20T10:00:03.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+        <tag>电竞</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/normal-flow/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
@@ -400,50 +442,6 @@
 
     
   <url>
-    <loc>http://lijundong.com/node-js-dirname-difference/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>node.js 中 __dirname 与 ./ 的区别</title>
-        <pubTime>2016-06-18T08:40:44.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-        <tag>path</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/wechat-node-0th/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>微信公号Node开发「零」之项目建立</title>
-        <pubTime>2016-06-19T03:04:34.000Z</pubTime>
-        
-        <tag>node</tag>
-         
-        <tag>微信</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="http://lijundong.com/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://lijundong.com/clear-float/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
@@ -458,74 +456,6 @@
         <tag>float</tag>
          
         <tag>clear</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>IS开发(二):PHP&Mysql基础</title>
-        <pubTime>2016-04-15T14:09:05.000Z</pubTime>
-        
-        <tag>信息系统开发</tag>
-         
-        <tag>wampserver</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Coding page与Github page博客部署及域名绑定</title>
-        <pubTime>2016-07-30T05:29:13.000Z</pubTime>
-        
-        <tag>博客</tag>
-         
-        <tag>dns</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Canvas-animation-about-sort/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Canvas制作排序算法演示动画</title>
-        <pubTime>2015-09-05T14:18:12.000Z</pubTime>
-        
-        <tag>canvas</tag>
-         
-        <tag>排序</tag>
-         
-        <tag>动画</tag>
          
          
            
@@ -560,19 +490,111 @@
 
     
   <url>
-    <loc>http://lijundong.com/Bootstrap-hover-toggle-menu/</loc>
+    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>Bootstrap初体验:鼠标hover时自动下拉菜单</title>
-        <pubTime>2016-03-31T16:00:15.000Z</pubTime>
+        <title>Coding page与Github page博客部署及域名绑定</title>
+        <pubTime>2016-07-30T05:29:13.000Z</pubTime>
         
-        <tag>bootstrap</tag>
+        <tag>博客</tag>
+         
+        <tag>dns</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Chrome-extension-one-clock/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Chrome扩展[一]:简易时钟</title>
+        <pubTime>2016-01-11T01:31:14.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>扩展</tag>
+         
+        <tag>javascript</tag>
          
          
            
              
               <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/node-js-dirname-difference/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>node.js 中 __dirname 与 ./ 的区别</title>
+        <pubTime>2016-06-18T08:40:44.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>path</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>IS开发(二):PHP&Mysql基础</title>
+        <pubTime>2016-04-15T14:09:05.000Z</pubTime>
+        
+        <tag>信息系统开发</tag>
+         
+        <tag>wampserver</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Kindle-content-manage/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>管理你的Kindle</title>
+        <pubTime>2016-01-12T12:55:33.000Z</pubTime>
+        
+        <tag>kindle</tag>
+         
+        <tag>工具使用</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -595,28 +617,6 @@
            
              
               <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>批量处理PPT图片</title>
-        <pubTime>2016-07-18T10:29:12.000Z</pubTime>
-        
-        <tag>ppt</tag>
-         
-        <tag>photoshop</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
           
         </display>
     </data>
@@ -926,9 +926,9 @@
         
         <tag>服务器</tag>
          
-        <tag>hexo</tag>
-         
         <tag>git</tag>
+         
+        <tag>hexo</tag>
          
          
            

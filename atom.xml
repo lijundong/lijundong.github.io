@@ -123,9 +123,9 @@
     <link href="http://lijundong.com/think-in-early-bus/"/>
     <id>http://lijundong.com/think-in-early-bus/</id>
     <published>2017-02-17T01:34:10.000Z</published>
-    <updated>2017-06-26T12:55:56.000Z</updated>
+    <updated>2017-06-26T12:59:05.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/17-2-17/76947115-file_1487296922174_f558.jpg" alt=""><br>我们处在一个巨大的变革之中。</p>
+    <content type="html"><![CDATA[<p>我们处在一个巨大的变革之中。</p>
 <a id="more"></a>
 <p>最近在看 「天才在左，疯子在右」，没看之前一直以为是描述疯狂的天才，看了才知道是一本精神病患者访谈录，每篇文章，作者记录和一位患者的交流过程，书中每一个病例，没有病因，没有结论，作者只是在记录这些奇怪的病例以及现象。这让我想起了初中看的「故事会」里面描述的鬼怪之说，所以书中内容我已经不关心，继续看是因为某些患者的想法十分有趣，每看完一篇，我甚至都会想好一会，我可能是下一位患者。</p>
 <p>这就是早班车乱谈的来由，坐上公司的班车，我开始胡思乱想。</p>
@@ -138,7 +138,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/17-2-17/76947115-file_1487296922174_f558.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;我们处在一个巨大的变革之中。&lt;/p&gt;
+      &lt;p&gt;我们处在一个巨大的变革之中。&lt;/p&gt;
     
     </summary>
     
@@ -546,7 +546,7 @@
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -735,9 +735,9 @@
     
       <category term="服务器" scheme="http://lijundong.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="hexo" scheme="http://lijundong.com/tags/hexo/"/>
-    
       <category term="git" scheme="http://lijundong.com/tags/git/"/>
+    
+      <category term="hexo" scheme="http://lijundong.com/tags/hexo/"/>
     
   </entry>
   
