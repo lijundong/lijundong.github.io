@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title><![CDATA[给生活一个规范]]></title>
+      <url>http://lijundong.com/normalize-life-with-tools/</url>
+      <content type="html"><![CDATA[<p>生活中的高频问题都应有一个相对最优解，如果没有，你应该有一个。</p>
+<a id="more"></a>
+<p>生活中有很多易用并能极大提高效率的工具，借助这些工具，可以让过程事半功倍，我喜欢搜寻可以解决生活痛点的工具，搜寻到的工具，有些成了生活工作必不可缺的一部分，有些，则只是好工具，我并没有高频使用，主要原因是因为在生活与工作时，没能形成一个体系，没有一个成型的规则。</p>
+<p>做事没有规则的结果，就是在多次处理同一问题时，可能会选择多种解决方式，每次选了新的解决方式都可能会出现新的问题，无形中增加了处理成本，再者，每次解决问题后，都会获得已知的相对最优解，再次遇到相同问题时，抛弃最优解的处理方式无疑是对之前投入成本的浪费，长此以往，就陷入了高投入低产出的低效局面。</p>
+<p>我一直想解决这个问题，试图给遇到的高频问题一个普世方案，在处理问题时高效果断，例如最基本 GTD（get things done），市面上存在的优秀的 GTD 工具已经非常多了，我试过很多款，都是拥有庞大用户基数的工具，体验很棒，然而具体也只是试用而已，我一直没能生成一个 GTD 规范，待处理事项仍旧依靠大脑缓存，处于这样的状态，一是我待处理的事物数量不大，大脑可以应付，这种状态的改变不是必须，二是我没有提高效率的意识。这样的状态虽然很少出错，但是有弊端，我需要通过高频率的回忆来加深记忆，这样回忆的过程可能发生在任何时候，在我工作之余放松的时候，在我专注思考问题的时候，这个提醒会突然蹦出来打断我，这种隐形成本的消耗是巨大的。另一个例子是关于写博客，我用 sublime 或者 vim（比如这篇）编写 markdown，通过 hexo 将生成的文件推到服务器，偶尔一篇文章会在多个平台发布，我需要在每个站点贴一遍，中间消耗的成本可以看得见。还有一个例子，我这个人不善交际，情商很低，在大街上遇到同一个人（认识但不熟），我可能一次会选择热情打招呼，另一次，选择装作没看见，是不是很奇葩？我自己也觉得奇葩，这样的结果就是我与那些人形同陌路。在遇到一些二选一的情况时，我没有一个完整的规则体系，最后的结果往往带来很多苦恼。以上三个问题只是一部分，但已经说明了很多问题。</p>
+<p>我今天在用 google calendar 制定日程，未来的一段时间里，它应该会被高频使用，iOS 原生的提醒也开始用，需要查看待处理事项时，大脑告诉我打开工具去看，不需要高频率的让大脑高频 check 事项。生活中还有很多低效的地方，我意识到的以及没能意识到的，都待被改进。</p>
+<p>两年前开始折腾 shadowsocks，之后开始用 Chrome 和 Google 账户，从那之后就很少使用国内的搜索引擎，我的设备上再也没出现国内的浏览器，这就是我的规则，这些工具和模式已经成为默认选项，一个稳态，即便环境变化，经过调整后，又进入另一个稳态，这就是我想达到的效果。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> life </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> life </tag>
+            
+            <tag> 规范 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Chrome 下合并不同 Google 账号数据]]></title>
       <url>http://lijundong.com/synchronize-data-between-google-accounts/</url>
       <content type="html"><![CDATA[<p>如果你在 Chrome 上同时拥有了两个 Google 账号，并深受其扰，开始想着合并两个账户的数据到某一个账户，我想告诉你，这真的远比想象的简单。</p>
@@ -510,7 +539,7 @@
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -2334,10 +2363,10 @@
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p><img src="http://source.lijundong.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://source.lijundong.com/16-3-11/22540140.jpg" alt=""></li>
@@ -2465,12 +2494,12 @@
 </ul>
 </li>
 <li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;</span>水平居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/58206411.jpg" alt="水平居中"></p>
 <ul>
-<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;</span>垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/29762873.jpg" alt="垂直居中"></p>
