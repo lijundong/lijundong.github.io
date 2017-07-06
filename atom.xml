@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-06-29T12:06:37.000Z</updated>
+  <updated>2017-07-06T10:07:43.000Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -14,6 +14,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>用户体验之 localStorage</title>
+    <link href="http://lijundong.com/improve-UE-by-localStorage/"/>
+    <id>http://lijundong.com/improve-UE-by-localStorage/</id>
+    <published>2017-07-05T12:10:38.000Z</published>
+    <updated>2017-07-06T10:07:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过在页面应用使用 localStorage 提升用户使用体验。 </p>
+<a id="more"></a>
+<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>首先，来说两个关于用户体验的经历。<br>大学在校期间，经常被安排在教学系统上填写各种信息采集表，教学系统是学校找外面外包公司做的，给的钱多，出的活却很烂，信息采集的表单是很老旧的 table 布局，一页一个表单，一个表单有几十个项，当你辛辛苦苦填完了整个表单，点击提交按钮页面却没有响应，系统卡了？你抱着试一试的心态刷新了页面，恭喜你，之前填的数据全部丢失，像是卷入了一个黑洞，你又从第一项开始填。这样的系统毫无用户体验可言，不是强制要求，没人愿意打开这样的网站。<br>到了大三找实习，投简历到阿里，需要在系统上填一些信息，对应的也是一个表单很多项，巧的是，提交时页面卡住了，虽然脑海中重现了被学校系统支配的恐惧，但除了刷新页面别无选择，刷新之后，页面回来了，之前填写的数据竟然原封不动的回来了，当时很菜，不知道是怎么实现，就觉得背后的技术肯定很厉害，后面才去了解这方面的知识。<br>后来了解了 localStorage 之后，才意识到表单数据保存背后的技术很简单，但是用在了相应的场景，给用户带来的是非常棒的用户体验，从那之后，我对阿里校招页面一直很有好感。</p>
+<h3 id="关于-localStorage"><a href="#关于-localStorage" class="headerlink" title="关于 localStorage"></a>关于 localStorage</h3><h4 id="容量"><a href="#容量" class="headerlink" title="容量"></a>容量</h4><p>localStorage 的容量是相对其作用域而言，而 localStorage 的作用域是 <code>协议 + 主机名 + 端口</code>，目前业界默认同一作用域下拥有 5M 的容量，手机端和 PC 端标准略有不同。<br>数据以键值对方式存储，同一作用域下的数据可以被相互访问，并且不允许跨域。</p>
+<h4 id="API"><a href="#API" class="headerlink" title="API"></a>API</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">localStorage.setItem(<span class="string">"name"</span>,<span class="string">"leeon"</span>);	<span class="comment">//设置 name 值 为 leeon</span></span><br><span class="line">localStorage.getItem(<span class="string">"name"</span>);	<span class="comment">//获取 name 的值</span></span><br><span class="line">localStorage.key(<span class="number">0</span>); 	<span class="comment">//获取第 0 个数据项的 key 名</span></span><br><span class="line">localStorage.removeItem(<span class="string">"name"</span>);	<span class="comment">//移除 name 对应的键值对</span></span><br><span class="line">localStorage.clear();	<span class="comment">//清除当前作用域下的所有localstorage数据</span></span><br></pre></td></tr></table></figure>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>上面提到的表单数据保存是最常见的场景，避免信息的丢失，实现方式是在 <code>input</code> 标签 <code>blur</code>（失焦) 后，触发 localStorage 存储，页面加载之后，从 localStorage 读取已存储的数据，表单提交成功后，移除存储的数据。</p>
+<p>还有一种情况，类似于博客系统内置的评论功能，页面可以参见下图，这样的场景，没有登陆，用户信息不能持久化保存，每次评论都需要再次填写基础信息<br><img src="http://source.lijundong.com/17-7-6/47641822.jpg" alt=""></p>
+<p>应用 localStorage 保存用户基础信息，我用 React 写了一个评论框输入组件，包含的 <code>_saveUsername</code> 和 <code>_loadUsername</code> 方法对应着用户信息的存储以及获取，分别会在输入框失焦以及页面渲染时被调用，体验更好的方式则是提供一个保存基本信息的选项，用户在勾选后，信息被保存。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CommentInput</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">        <span class="keyword">super</span>(props);</span><br><span class="line">        <span class="keyword">this</span>.state = &#123;</span><br><span class="line">            username: <span class="string">''</span>,</span><br><span class="line">            content: <span class="string">''</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> PropType = &#123;</span><br><span class="line">        onSubmit: PropType.func</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    componentDidMount() &#123;</span><br><span class="line">        <span class="keyword">this</span>.textarea.focus()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    componentWillMount() &#123;</span><br><span class="line">        <span class="keyword">this</span>._loadUsername()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    _saveUsername (username) &#123;</span><br><span class="line">        localStorage.setItem(<span class="string">'username'</span>, username)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    _loadUsername () &#123;</span><br><span class="line">        <span class="keyword">const</span> username = localStorage.getItem(<span class="string">'username'</span>)</span><br><span class="line">        <span class="keyword">if</span>(username) &#123;</span><br><span class="line">            <span class="keyword">this</span>.setState(&#123;username&#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    handleUserNameBlur (event) &#123;</span><br><span class="line">        <span class="keyword">this</span>._saveUsername(event.target.value)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    handleUsernameChange (event) &#123;</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            username: event.target.value</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    handleContentChange (event) &#123;</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            content: event.target.value</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    handleSubmit () &#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.props.onSubmit) &#123;</span><br><span class="line">            <span class="keyword">const</span> &#123;username, content&#125; = <span class="keyword">this</span>.state</span><br><span class="line">            <span class="keyword">this</span>.props.onSubmit(&#123;</span><br><span class="line">                username: <span class="keyword">this</span>.state.username, </span><br><span class="line">                content: <span class="keyword">this</span>.state.content,</span><br><span class="line">                createdTime: +<span class="keyword">new</span> <span class="built_in">Date</span>()</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;content: <span class="string">''</span>&#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    render () &#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"comment-input"</span>&gt;</span> </span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"comment-field"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">className</span>=<span class="string">"comment-field-name"</span>&gt;</span>userName:<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"comment-field-input"</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">input</span></span><br><span class="line">                        <span class="attr">onBlur</span>=<span class="string">&#123;this.handleUserNameBlur.bind(this)&#125;</span></span><br><span class="line">                        <span class="attr">value</span>=<span class="string">&#123;this.state.username&#125;</span></span><br><span class="line">                        <span class="attr">onChange</span>=<span class="string">&#123;this.handleUsernameChange.bind(this)&#125;</span> /&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"comment-field"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">span</span> <span class="attr">className</span>=<span class="string">"comment-field-name"</span>&gt;</span>Comment:<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"comment-field-input"</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">textarea</span></span><br><span class="line">                        <span class="attr">ref</span>=<span class="string">&#123;(textarea)</span> =&gt;</span> &#123;this.textarea = textarea&#125;&#125;</span><br><span class="line">                         value=&#123;this.state.content&#125; </span><br><span class="line">                         onChange=&#123;this.handleContentChange.bind(this)&#125;</span><br><span class="line">                        &gt;<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"comment-field-button"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onClick</span>=<span class="string">&#123;this.handleSubmit.bind(this)&#125;</span> &gt;</span>comment<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">            )</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="关于用户体验"><a href="#关于用户体验" class="headerlink" title="关于用户体验"></a>关于用户体验</h3><p>因为做的工作的原因，遇到一些很棒的网站第一反应是打开控制台看代码，每每看到那些巧妙的代码都赞叹不已，少量的代码带来用户体验的大幅度提升，这是具有很高性价比的一件事。遇到一些烂糟糟的设计，会考虑烂的原因，以及如何去改进，比如渣浪的微博。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通过在页面应用使用 localStorage 提升用户使用体验。 &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://lijundong.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="UE" scheme="http://lijundong.com/tags/UE/"/>
+    
+      <category term="localstorage" scheme="http://lijundong.com/tags/localstorage/"/>
+    
+  </entry>
   
   <entry>
     <title>给生活一个规范</title>
@@ -962,80 +996,6 @@
     
     
       <category term="google" scheme="http://lijundong.com/tags/google/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>升级笔记本 CPU</title>
-    <link href="http://lijundong.com/update-laptop-cpu/"/>
-    <id>http://lijundong.com/update-laptop-cpu/</id>
-    <published>2016-10-12T06:18:44.000Z</published>
-    <updated>2016-11-12T08:39:10.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>大二在小组的时候，身边几个伙伴相继换了固态，并且极力怂恿我也换，高呼固态大法好，时常拿十秒内的开机速度来做碾压，当时对于硬盘读写性能没有直观感受，觉得开机慢点也没所谓。<br>后面做的事多起来，任务开得多，Chrome 经常几十个 Tab 同时开，导致磁盘开机就爆红，鼠标动动都困难，更别提编码了，这时候才意识到笔记本需要升级，于是加装了固态，随即内存就成了瓶颈，又把内存加装到 8G，这之后相安无事过了很久。但该来的总是要来的，满频只有 1.8GHz 的赛扬终于满足不了正常的开发需要，这就换了它。<br><a id="more"></a></p>
-<h3 id="ThinkPad-E531-配置"><a href="#ThinkPad-E531-配置" class="headerlink" title="ThinkPad E531 配置"></a>ThinkPad E531 配置</h3><p>现在用的电脑的是 ThinkPad E531，是高考后暑假和跃峰在合肥电脑城入的，两个小白在那被坑了不少钱，跃峰比我惨一些，他买电脑的那家铺子在某个夜深人静时分，人去摊空……<br>我入的 E531 应该是低配版，处理器是<code>Celeron® Processor 1000M 
-(2M Cache, 1.80 GHz)</code>，500G 机械，4GB 内存，核显。这个配置决定了大学里的我跟游戏彻底绝缘。<br>升级过三次，加装了 <code>Samsung 850 EVO 120G</code> 的固态，加上支架，￥420 的开销，加装的内存是花 ￥80 从秦望那入的二手 4GB 三星。现在用的处理器因为是 <code>HM 77</code> 的主板，最多只能上三代的处理器，在淘宝上找了好几家才找到，考虑到散热的问题，最后选了 <code>i5-3320M @ 2.6GHz</code> 最高可以睿频到 3.2GHz，换上之后世界彻底变的和谐了，又可以愉快的编码了。<br>这里记录下过程中的一些<strong>需要提前考虑的事项</strong>。</p>
-<h3 id="笔记本的-CPU-是否支持升级？"><a href="#笔记本的-CPU-是否支持升级？" class="headerlink" title="笔记本的 CPU 是否支持升级？"></a>笔记本的 CPU 是否支持升级？</h3><blockquote>
-<p>可以确定的是封装方式为PGA方式的处理器是可以升级的，BGA封装是直接焊在主板上面的，所以不可更换。大部分超极本为了获得更可观的厚度和更优秀的散热表现都采用了BGA封装方式的低压处理器，所以是不可更换的。从命名方式上直观地来看，以字母M以及QM、MQ、MX等结尾的处理器是可更换的，以字母U、Y以及HQ结尾的处理器是不可更换的。</p>
-</blockquote>
-<h3 id="CPU-和主板的兼容性"><a href="#CPU-和主板的兼容性" class="headerlink" title="CPU 和主板的兼容性"></a>CPU 和主板的兼容性</h3><p>选择 CPU 之前需要确定现有主板兼容的 CPU 型号。</p>
-<h3 id="CPU-参数如何看"><a href="#CPU-参数如何看" class="headerlink" title="CPU 参数如何看"></a>CPU 参数如何看</h3><p>以 Intel 三代移动式处理器作例子<br><img src="http://www.intel.cn/content/dam/www/public/cn/zh/images/illustrations/RWD/processor-number-core-i7-3770k-3920xm-rwd.png/_jcr_content/renditions/intel.web.480.270.png" style="border:0"><br><strong>关于数字</strong>：<br>第一位代表第几代CPU，一般越大，架构更优。i7-4770K &gt; i7-3770K<br>第二位代表处理器等级，数字越大，性能越好。i7-4810mq &gt; i7-4710mq<br>第三位代表核显，可忽略不比<br>第四位代表功耗可忽略不比</p>
-<p><strong>关于后缀</strong>: </p>
-<table>
-<thead>
-<tr>
-<th>字母后缀</th>
-<th>描述</th>
-<th>举例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>M</td>
-<td>移动式</td>
-<td>i7-3520M</td>
-</tr>
-<tr>
-<td>QM</td>
-<td>四核移动式</td>
-<td>i7-3820QM</td>
-</tr>
-<tr>
-<td>U</td>
-<td>超低功耗</td>
-<td>i7-3667U</td>
-</tr>
-<tr>
-<td>Y</td>
-<td>极低功耗</td>
-<td>i7-3689Y</td>
-</tr>
-</tbody>
-</table>
-<p>更详细内容可以去 <a href="http://www.intel.cn/content/www/cn/zh/processors/processor-numbers.html#" target="_blank" rel="external">Intel 官网</a> 获取</p>
-<h3 id="安装注意"><a href="#安装注意" class="headerlink" title="安装注意"></a>安装注意</h3><p>安装的时候除了手残带来的问题外，需要注意导热硅胶的选择与涂抹，这关乎 CPU 的散热，<strong>很重要</strong>，淘宝和京东上二十几可以淘一个靠谱的，如果自己上手不放心，可以花十块找维修人员，分分钟解决，快捷省心。</p>
-<hr>
-<p>开销不到 1K 来升级这台电脑很超值，提升了开发的幸福感。效率更高，这应该是最后一次升级这个笔记本，努力赚钱买 MBP 才是王道，讲真，ThinkPad 的键盘真心好用。</p>
-<p>参考:</p>
-<ul>
-<li><a href="http://www.pcpop.com/doc/1/1025/1025099_all.shtml" target="_blank" rel="external">繁琐但不困难 笔记本升级CPU实战教程</a></li>
-<li><a href="http://www.intel.cn/content/www/cn/zh/processors/processor-numbers.html" target="_blank" rel="external">关于英特尔® 处理器编号</a></li>
-<li><a href="https://www.zhihu.com/question/21366606" target="_blank" rel="external">intel处理器型号是怎么命名的？</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;大二在小组的时候，身边几个伙伴相继换了固态，并且极力怂恿我也换，高呼固态大法好，时常拿十秒内的开机速度来做碾压，当时对于硬盘读写性能没有直观感受，觉得开机慢点也没所谓。&lt;br&gt;后面做的事多起来，任务开得多，Chrome 经常几十个 Tab 同时开，导致磁盘开机就爆红，鼠标动动都困难，更别提编码了，这时候才意识到笔记本需要升级，于是加装了固态，随即内存就成了瓶颈，又把内存加装到 8G，这之后相安无事过了很久。但该来的总是要来的，满频只有 1.8GHz 的赛扬终于满足不了正常的开发需要，这就换了它。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="生活" scheme="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="cpu" scheme="http://lijundong.com/tags/cpu/"/>
-    
-      <category term="笔记本" scheme="http://lijundong.com/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
     
   </entry>
   
