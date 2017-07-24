@@ -4,6 +4,94 @@
   
     
     <entry>
+      <title><![CDATA[网上高效阅读]]></title>
+      <url>http://lijundong.com/surf-the-Internet-efficiently/</url>
+      <content type="html"><![CDATA[<p>网络信息多且繁杂，利用工具提高阅读效率，你如何过滤信息 ？你如何使用 Pocket 和 Evernote ？</p>
+<a id="more"></a>
+<h3 id="序言：现状"><a href="#序言：现状" class="headerlink" title="序言：现状"></a>序言：现状</h3><p>在<a href="http://www.lijundong.com/normalize-life-with-tools/" target="_blank" rel="external">「给生活一个规范」</a>一文里，我提到要给一个高频事件添加一个相对最优的方案，比如使用工具。<br>我日常会使用 Pocket 和各种笔记应用（Evernote、oneNote、有道云笔记等）保存看到的文章，只不过没有明确两种工具的使用场景，使用的方式混乱，没有形成规范，导致文章保存后打开率非常低，也没能形成有效的价值积累。今天来给一个目前认为最佳的解决方案。</p>
+<h3 id="工具场景"><a href="#工具场景" class="headerlink" title="工具场景"></a>工具场景</h3><p>Pocket 和笔记类产品的应用场景完全不同，Pocket 的功能主打 Mark 功能，即标记，标记方便稍后阅读（read it later），标记的是文章的链接，如果文章链接失效了，这个标记也就无意义了。</p>
+<p>以 Evernote 为代表的笔记应用主打笔记和剪藏的功能，即将文章内容复制到我的笔记账户中，这个副本记录的是内容，不再受原链接内容影响，完全独立，我们可以在原内容之上进行笔记、二次创作等。</p>
+<h3 id="流程规范"><a href="#流程规范" class="headerlink" title="流程规范"></a>流程规范</h3><p>此规范来源于万维刚先生的<a href="https://book.douban.com/subject/25986341/" target="_blank" rel="external">「万万没想到：用理工科思维理解世界」</a>中的“高效冲浪的办法”一节。</p>
+<h4 id="只点不看"><a href="#只点不看" class="headerlink" title="只点不看"></a>只点不看</h4><p>在浏览信息过程中，一篇文章或者是一个页面中会附有很多链接，推荐的方法是将遇到的新链接在新 Tab 中打开（PC 端按住 Ctrl/ Cmmand 点选链接），保证本页的阅读不被打断。只点链接不看。</p>
+<h4 id="略读"><a href="#略读" class="headerlink" title="略读"></a>略读</h4><p>接下来速读每条信息，迅速过滤低质量信息，面对质量尚可的文章，使用 Chrome 的 Pocket 插件将链接添加到 Pocket 列表中。</p>
+<h4 id="精读"><a href="#精读" class="headerlink" title="精读"></a>精读</h4><p>以两天或三天为一个周期，对 Pocket 中的精选文章精读，一旦发现文章质量好到了永久保存的程度，使用笔记应用的剪藏插件剪藏内容到笔记本中，方便后期处理。</p>
+<h4 id="价值积累"><a href="#价值积累" class="headerlink" title="价值积累"></a>价值积累</h4><p>对剪藏的内容进行整理，归类，方便后期进行检索，同时可以在此文之上进行二次总结，进行笔记。</p>
+<h3 id="跋"><a href="#跋" class="headerlink" title="跋"></a>跋</h3><p>使用宽框架过滤信息，可以保证信息的相对高质量。</p>
+<blockquote>
+<p>诺贝尔经济学奖得主丹尼尔·卡尼曼在《思考，快与慢》一书中介绍了两个著名的心理学概念：“窄框架”（narrow framing）和“宽框架”（broad framing）。所谓窄框架，就是遇到一个东西做一次决策，一事一议；而宽框架则是把所有东西都摆在桌面上集中选择。</p>
+</blockquote>
+<p>好的信息来源是好文章的保证，每一个好作家肯定都会有一个收集信息的体系，我一直想试图建立这样的体系，希望本文对你有益。</p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li>万维钢(同人于野). 万万没想到:用理工科思维理解世界 (Kindle 位置 2312-2314). 电子工业出版社. Kindle 版本.</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 规范 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 规范 </tag>
+            
+            <tag> 阅读 </tag>
+            
+            <tag> pocket </tag>
+            
+            <tag> evernote </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Charles 使用小记]]></title>
+      <url>http://lijundong.com/use-charles-up-to-debug/</url>
+      <content type="html"><![CDATA[<p>脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。</p>
+<a id="more"></a>
+<h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h3><p>电脑系统：MacOS 10.12.6<br>Charles 版本：4.1.4</p>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>当下的移动应用开发广泛应用了 Hybrid 模式，将 H5 页面嵌入原生应用中，以手机 QQ 为例，<a href="http://mp.weixin.qq.com/s/evzDnTsHrAr2b9jcevwBzA" target="_blank" rel="external">70% 以上业务是由 H5 开发</a>，由此可见一斑。<br>常规的开发流程是 FE 在本地开发环境中写好 H5 页面，开发完成后，后台 RD 将项目部署到测试版本中，手机下次测试版 APP，在 APP 内对页面进行测试。</p>
+<p>FE 在开发环境中可以通过浏览器调试，部署到测试环境后，遇到新的 bug 或是需求的改动，需要在本地改动代码，重新部署到测试包，打开 APP 进行验证。这个过程太复杂，后台 RD 也会很烦。</p>
+<p>这时候就需要 Charles 辅助开发。</p>
+<h3 id="关于-Charles"><a href="#关于-Charles" class="headerlink" title="关于 Charles"></a>关于 Charles</h3><p>Charles 常用于截取网络封存包，可以设想一下，你的手机与服务器之间存在一个代理服务器，手机所有的请求都会经过这个代理服务器，如下示意图<br><img src="" alt=""><br>设想你是一个负责收发信件的信使，当一位客户将书信交予你递送时，你可以按常规流程去递送，也可以在非常规状态下更改信件的内容、收信人等，你还可以决定这封信递送的速度，甚至直接将这封信拦截不送，知道收信人地址的你，可以反复递送信件考研收件人的耐心。收信人的回信，你可以将其修改，调包。长此以往，作为信使，你可能会被投诉，开除。但作为工具，你可以成为 Charles，受到大批开发者的拥趸。</p>
+<h3 id="监听设备"><a href="#监听设备" class="headerlink" title="监听设备"></a>监听设备</h3><p>为了 Charles 能监听到你的移动设备的所有请求，你需要做一点配置</p>
+<ul>
+<li>你的移动设备与电脑处于同一局域网下，查看你电脑在此局域网下的 IP</li>
+<li>打开 Charles，Proxy &gt; MacOS proxy，在 Proxy setting 下设置监听端口，默认 8888</li>
+<li>关闭移动端的所有代理工具，VPN、Shadowsocks 等</li>
+<li>在移动设备 WLAN 设置中，添加代理，IP 和 端口分别时电脑的 IP 以及 Charles 设置的端口</li>
+<li>退出 WLAN 设置，进入浏览器，访问网络，Charles 会显示设备连接请求，点击同意，可以看到在 session 窗口中迅速显示监听到的请求，配置结束。</li>
+</ul>
+<h3 id="常用-feature"><a href="#常用-feature" class="headerlink" title="常用 feature"></a>常用 feature</h3><p>前面都是介绍以及配置，下面介绍几个常用的 feature。</p>
+<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p>点选 session 窗口中的请求，右键查看选项，选项的最后两项即是 map 选项，提供了 <code>map remote/map local</code> 选项，可以将请求的资源映射到本地或者远程的资源，举个例子。<br>你需要调试页面中的 JS 代码，你可以将页面的 JS 请求映射到本地开发环境中的 JS 文件，刷新页面后，页面请求到的是本地 JS 文件，如此一来，修改本地 JS 后，刷新页面就可以在 APP 内查看到效果。<br>map 是这次开发中主要使用的功能，大幅度提高了我的开发效率。</p>
+<h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><ul>
+<li><a href="http://blog.devtang.com/2015/11/14/charles-introduction/" target="_blank" rel="external">Charles 从入门到精通</a></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 工具使用 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> hybrid </tag>
+            
+            <tag> debug </tag>
+            
+            <tag> charles </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[用户体验之 localStorage]]></title>
       <url>http://lijundong.com/improve-UE-by-localStorage/</url>
       <content type="html"><![CDATA[<p>通过在页面应用使用 localStorage 提升用户使用体验。 </p>
@@ -571,7 +659,7 @@
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -1191,9 +1279,9 @@
             
             <tag> git </tag>
             
-            <tag> linux </tag>
-            
             <tag> vim </tag>
+            
+            <tag> linux </tag>
             
             <tag> 正则 </tag>
             
@@ -2093,9 +2181,9 @@
         
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
         
@@ -2395,10 +2483,10 @@
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://source.lijundong.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://source.lijundong.com/16-3-11/22540140.jpg" alt=""></li>
@@ -2526,12 +2614,12 @@
 </ul>
 </li>
 <li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;</span>水平居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/58206411.jpg" alt="水平居中"></p>
 <ul>
-<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;</span>垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/29762873.jpg" alt="垂直居中"></p>

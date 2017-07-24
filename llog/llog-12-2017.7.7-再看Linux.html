@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="Write down,Mark it."/>
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Leeon Notes">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x" />
+
+
+
+<link rel="canonical" href="http://lijundong.com/llog/llog-12-2017.7.7-再看Linux.html"/>
+
+
+<meta name="description" content="时间：2017-7-7坐标：北京天气：晴
+
+昨天提到了这两天在换服务器，看 shell 脚本的过程中重新把「鸟哥的 Linux 私房菜」翻出来看，之前也只是简略的翻阅，每次准备认真系统的学习，最后都不了了之，所以我对 Linux 并不了解，只记得一些使用频率非常高的命令，一直以来，连个半吊子都算不上，今天再看这部经典教程，仅仅文件系统一个模块就解决了长久以来一直困扰我的很多问题，看了半个下午，收">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Leeon Notes">
+<meta property="og:url" content="http://lijundong.com/llog/llog-12-2017.7.7-再看Linux.html">
+<meta property="og:site_name" content="Leeon Notes">
+<meta property="og:description" content="时间：2017-7-7坐标：北京天气：晴
+
+昨天提到了这两天在换服务器，看 shell 脚本的过程中重新把「鸟哥的 Linux 私房菜」翻出来看，之前也只是简略的翻阅，每次准备认真系统的学习，最后都不了了之，所以我对 Linux 并不了解，只记得一些使用频率非常高的命令，一直以来，连个半吊子都算不上，今天再看这部经典教程，仅仅文件系统一个模块就解决了长久以来一直困扰我的很多问题，看了半个下午，收">
+<meta property="og:updated_time" content="2017-07-07T15:50:29.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Leeon Notes">
+<meta name="twitter:description" content="时间：2017-7-7坐标：北京天气：晴
+
+昨天提到了这两天在换服务器，看 shell 脚本的过程中重新把「鸟哥的 Linux 私房菜」翻出来看，之前也只是简略的翻阅，每次准备认真系统的学习，最后都不了了之，所以我对 Linux 并不了解，只记得一些使用频率非常高的命令，一直以来，连个半吊子都算不上，今天再看这部经典教程，仅仅文件系统一个模块就解决了长久以来一直困扰我的很多问题，看了半个下午，收">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+
+<script>
+  var CONFIG = {
+    search: true,
+    searchPath: "/search.xml",
+    fancybox: true,
+    toc: true,
+  }
+</script>
+
+
+
+
+  
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c6907c4f3552baba34e8ee2c5980996d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+    <title>  · Leeon Notes </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">Leeon Notes</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Leeon Notes</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              Home
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              Archives
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              Tags
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              About
+            
+          </a>
+        </li>
+      
+      
+        <li class="menu-search">
+          <form>
+            <i class="iconfont icon-search" id="open-search"></i>
+            <input type="text" class="search-input" id="search-input" />
+            <i class="iconfont icon-close" id="close-search"></i>
+          </form>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  <article class="post">
+    <div class="post-content">
+      <blockquote>
+<p>时间：2017-7-7<br>坐标：北京<br>天气：晴</p>
+</blockquote>
+<p>昨天提到了这两天在换服务器，看 shell 脚本的过程中重新把「<a href="http://cn.linux.vbird.org/" target="_blank" rel="external">鸟哥的 Linux 私房菜</a>」翻出来看，之前也只是简略的翻阅，每次准备认真系统的学习，最后都不了了之，所以我对 Linux 并不了解，只记得一些使用频率非常高的命令，一直以来，连个半吊子都算不上，今天再看这部经典教程，仅仅文件系统一个模块就解决了长久以来一直困扰我的很多问题，看了半个下午，收获满满。技术的价值在于应用，如果没有应用价值，技术也不能称之为技术，而一个人技术精进最快的阶段则是业务需求最紧密的阶段。只有在实践中应用才能明白个中原委，理解更为透彻。我曾经一段时间很喜欢 Python，跟着廖雪峰的教程后面学了一段时间，但是只是喜欢，日常开发中并没有相关应用，这就导致了廖雪峰的教程我前后看了多次，但是我现在对相关的知识点记忆所剩无几，再去翻看教程也只是时间的迟早。Linux 的学习也是类似，在电脑上开 CentOS 虚拟机那段时间，我还没开始用服务器，只是以了解另外一套系统的目的去了解，还有个原因就是 Linux 桌面下的 terminal 比 Windows 下的 bash 洁面不知道美到哪里去。学 Python 也好，Linux 也罢，没有应用，文档看得再熟，到头来也只是纸上谈兵，技术还是需要动手实践，形成肌肉记忆。</p>
+<p>昨天说了说到服务器，肯定要提到一个人，黄彪。我们俩都是大二加入的校机器人小组，面试成绩他第一，我第二，后面焊板子那个阶段他就狠狠的甩开了我们，独拿了一个 98 分，除去两分的象征性扣分，妥妥的满分，敲的一手好程序，满分实至名归。那时候的我，还特别矫情，知道这是个厉害的角色，也没有主动去请教，只是暗中观察，暗暗赞叹他的技术，猥琐得很。那时候对他的印象是，喜欢单打独斗，一个人坐在教室的最后一排，隔段时间就能弄出点动静，学长们布置的程序，总是第一个完成，不得不服。</p>
+<p>培训结束，我俩被分到视觉组，开始张钧也在我们组，后来觉得一直没进展，就转到另外一组负责其他模块了，我俩就相邻着坐着，彼此也不说话，这样维持了一个星期左右，后来慢慢说上话，开始熟络起来，然后一起做项目。后又因视觉组长期得不到支持，始终没有实质进展，两人决定一起退组，退组那晚，他帮我一起把家当从实验室搬回了寝室，接下来的一段日子改变了我今后的人生方向。</p>
+<p>我大学之前一直对机器人情有独钟，所以报考了是自动化相关的一切专业，包括计算机和机械，但是为了求稳，选择了服从调配，然后就被学校自作主张的调到了计算机学院，后面也一直在往嵌入式方向努力，包括加入校机器人小组，我的大学规划是在机器人小组里待到毕业，真正接触了这一行，才发现自己并不适合，推出小组之后的很长一段时间，我不知道该做什么，正常上课吃饭睡觉，完全没了方向，直到黄彪告诉我他在学网站开发……</p>
+<p>在那之前，一直觉得网站开发是件很 low 的活，哈哈，现在我却靠着我鄙视的技术吃饭。毕竟那时候太无知，无知者无罪，原谅我。得知黄彪在学网站开发之后，出于“闲着也是闲着”的心态，我也开始学 HTML，从此一发不可收拾，走上了一条和我预想完全不同的路。我一直说，他是我技术之路上的榜样，他总是走在我前面，接触到最新的技术，并且学习之后立刻会动手去实践，实际出来的效果总是能惊到我，有段时间真会有嫉妒他的想法，一路开挂似的往前奔，很难望其项背。学了前端之后，我也开始接触服务器，Linux 的学习正是他对我的建议，只不过我辜负他的期望，不过这次再看，应该会有很大的效果。</p>
+<p>后面两个人凑钱在淘宝上买了个服务号，后期我参与的少了，他一个人用 Python 写了整个后台，并把服务号上线，效果不仅惊到了我，也让我感到羞愧，每次在技术上遇到新的难题，我首先会想如果是他，会怎么处理，这种激励常常鞭笞着我，虽然语言较为矫情，但却是我最真实的想法。相处到现在，我已经把他视如兄弟，友谊地久天长。</p>
+<p>熟络之后不久，才发现，我审视他时，他也在审视我，我俩都是闷骚，哈哈</p>
+
+    </div>
+  </article>
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:leeonfield@gmail.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/lijundong" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+  </span>
+  
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2017
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">leeon</span>
+  </span>
+</div>
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+
+  
+  <script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://lijundong.com/llog/llog-12-2017.7.7-再看Linux.html';
+        this.page.identifier = 'llog/llog-12-2017.7.7-再看Linux.html';
+        this.page.title = '';
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+
+    s.src = '//http-www-lijundong-com.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();  
+  </script>
+
+  
+
+
+
+
+    
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.4.x"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.4.x"></script>
+
+    
+  <script type="text/html" id="search-result">
+    <article class="post">
+      <header class="post-header">
+        <h1 class="post-title">
+          <a href="$url$" class="post-link">
+            $title$
+          </a>
+        </h1>
+      </header>
+      <div class="post-content">
+        $content$
+        <div class="read-more">
+          <a href="$url$" class="read-more-link">
+            Read more..
+          </a>
+        </div>
+      </div>
+    </article>
+  </script>
+  <script type="text/html" id="no-search-result">
+    <div class="no-result">
+      <h2>No result found!</h2>
+    </div>
+  </script>
+  <script type="text/javascript" src="/js/src/search.js?v=2.4.x"></script>
+
+  </body>
+</html>

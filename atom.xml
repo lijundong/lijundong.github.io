@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-07-06T10:11:15.000Z</updated>
+  <updated>2017-07-24T06:07:46.000Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -14,6 +14,98 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网上高效阅读</title>
+    <link href="http://lijundong.com/surf-the-Internet-efficiently/"/>
+    <id>http://lijundong.com/surf-the-Internet-efficiently/</id>
+    <published>2017-07-24T04:08:03.000Z</published>
+    <updated>2017-07-24T06:07:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>网络信息多且繁杂，利用工具提高阅读效率，你如何过滤信息 ？你如何使用 Pocket 和 Evernote ？</p>
+<a id="more"></a>
+<h3 id="序言：现状"><a href="#序言：现状" class="headerlink" title="序言：现状"></a>序言：现状</h3><p>在<a href="http://www.lijundong.com/normalize-life-with-tools/" target="_blank" rel="external">「给生活一个规范」</a>一文里，我提到要给一个高频事件添加一个相对最优的方案，比如使用工具。<br>我日常会使用 Pocket 和各种笔记应用（Evernote、oneNote、有道云笔记等）保存看到的文章，只不过没有明确两种工具的使用场景，使用的方式混乱，没有形成规范，导致文章保存后打开率非常低，也没能形成有效的价值积累。今天来给一个目前认为最佳的解决方案。</p>
+<h3 id="工具场景"><a href="#工具场景" class="headerlink" title="工具场景"></a>工具场景</h3><p>Pocket 和笔记类产品的应用场景完全不同，Pocket 的功能主打 Mark 功能，即标记，标记方便稍后阅读（read it later），标记的是文章的链接，如果文章链接失效了，这个标记也就无意义了。</p>
+<p>以 Evernote 为代表的笔记应用主打笔记和剪藏的功能，即将文章内容复制到我的笔记账户中，这个副本记录的是内容，不再受原链接内容影响，完全独立，我们可以在原内容之上进行笔记、二次创作等。</p>
+<h3 id="流程规范"><a href="#流程规范" class="headerlink" title="流程规范"></a>流程规范</h3><p>此规范来源于万维刚先生的<a href="https://book.douban.com/subject/25986341/" target="_blank" rel="external">「万万没想到：用理工科思维理解世界」</a>中的“高效冲浪的办法”一节。</p>
+<h4 id="只点不看"><a href="#只点不看" class="headerlink" title="只点不看"></a>只点不看</h4><p>在浏览信息过程中，一篇文章或者是一个页面中会附有很多链接，推荐的方法是将遇到的新链接在新 Tab 中打开（PC 端按住 Ctrl/ Cmmand 点选链接），保证本页的阅读不被打断。只点链接不看。</p>
+<h4 id="略读"><a href="#略读" class="headerlink" title="略读"></a>略读</h4><p>接下来速读每条信息，迅速过滤低质量信息，面对质量尚可的文章，使用 Chrome 的 Pocket 插件将链接添加到 Pocket 列表中。</p>
+<h4 id="精读"><a href="#精读" class="headerlink" title="精读"></a>精读</h4><p>以两天或三天为一个周期，对 Pocket 中的精选文章精读，一旦发现文章质量好到了永久保存的程度，使用笔记应用的剪藏插件剪藏内容到笔记本中，方便后期处理。</p>
+<h4 id="价值积累"><a href="#价值积累" class="headerlink" title="价值积累"></a>价值积累</h4><p>对剪藏的内容进行整理，归类，方便后期进行检索，同时可以在此文之上进行二次总结，进行笔记。</p>
+<h3 id="跋"><a href="#跋" class="headerlink" title="跋"></a>跋</h3><p>使用宽框架过滤信息，可以保证信息的相对高质量。</p>
+<blockquote>
+<p>诺贝尔经济学奖得主丹尼尔·卡尼曼在《思考，快与慢》一书中介绍了两个著名的心理学概念：“窄框架”（narrow framing）和“宽框架”（broad framing）。所谓窄框架，就是遇到一个东西做一次决策，一事一议；而宽框架则是把所有东西都摆在桌面上集中选择。</p>
+</blockquote>
+<p>好的信息来源是好文章的保证，每一个好作家肯定都会有一个收集信息的体系，我一直想试图建立这样的体系，希望本文对你有益。</p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li>万维钢(同人于野). 万万没想到:用理工科思维理解世界 (Kindle 位置 2312-2314). 电子工业出版社. Kindle 版本.</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;网络信息多且繁杂，利用工具提高阅读效率，你如何过滤信息 ？你如何使用 Pocket 和 Evernote ？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="规范" scheme="http://lijundong.com/categories/%E8%A7%84%E8%8C%83/"/>
+    
+    
+      <category term="规范" scheme="http://lijundong.com/tags/%E8%A7%84%E8%8C%83/"/>
+    
+      <category term="阅读" scheme="http://lijundong.com/tags/%E9%98%85%E8%AF%BB/"/>
+    
+      <category term="pocket" scheme="http://lijundong.com/tags/pocket/"/>
+    
+      <category term="evernote" scheme="http://lijundong.com/tags/evernote/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Charles 使用小记</title>
+    <link href="http://lijundong.com/use-charles-up-to-debug/"/>
+    <id>http://lijundong.com/use-charles-up-to-debug/</id>
+    <published>2017-07-20T08:34:44.000Z</published>
+    <updated>2017-07-24T07:24:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。</p>
+<a id="more"></a>
+<h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h3><p>电脑系统：MacOS 10.12.6<br>Charles 版本：4.1.4</p>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>当下的移动应用开发广泛应用了 Hybrid 模式，将 H5 页面嵌入原生应用中，以手机 QQ 为例，<a href="http://mp.weixin.qq.com/s/evzDnTsHrAr2b9jcevwBzA" target="_blank" rel="external">70% 以上业务是由 H5 开发</a>，由此可见一斑。<br>常规的开发流程是 FE 在本地开发环境中写好 H5 页面，开发完成后，后台 RD 将项目部署到测试版本中，手机下次测试版 APP，在 APP 内对页面进行测试。</p>
+<p>FE 在开发环境中可以通过浏览器调试，部署到测试环境后，遇到新的 bug 或是需求的改动，需要在本地改动代码，重新部署到测试包，打开 APP 进行验证。这个过程太复杂，后台 RD 也会很烦。</p>
+<p>这时候就需要 Charles 辅助开发。</p>
+<h3 id="关于-Charles"><a href="#关于-Charles" class="headerlink" title="关于 Charles"></a>关于 Charles</h3><p>Charles 常用于截取网络封存包，可以设想一下，你的手机与服务器之间存在一个代理服务器，手机所有的请求都会经过这个代理服务器，如下示意图<br><img src="" alt=""><br>设想你是一个负责收发信件的信使，当一位客户将书信交予你递送时，你可以按常规流程去递送，也可以在非常规状态下更改信件的内容、收信人等，你还可以决定这封信递送的速度，甚至直接将这封信拦截不送，知道收信人地址的你，可以反复递送信件考研收件人的耐心。收信人的回信，你可以将其修改，调包。长此以往，作为信使，你可能会被投诉，开除。但作为工具，你可以成为 Charles，受到大批开发者的拥趸。</p>
+<h3 id="监听设备"><a href="#监听设备" class="headerlink" title="监听设备"></a>监听设备</h3><p>为了 Charles 能监听到你的移动设备的所有请求，你需要做一点配置</p>
+<ul>
+<li>你的移动设备与电脑处于同一局域网下，查看你电脑在此局域网下的 IP</li>
+<li>打开 Charles，Proxy &gt; MacOS proxy，在 Proxy setting 下设置监听端口，默认 8888</li>
+<li>关闭移动端的所有代理工具，VPN、Shadowsocks 等</li>
+<li>在移动设备 WLAN 设置中，添加代理，IP 和 端口分别时电脑的 IP 以及 Charles 设置的端口</li>
+<li>退出 WLAN 设置，进入浏览器，访问网络，Charles 会显示设备连接请求，点击同意，可以看到在 session 窗口中迅速显示监听到的请求，配置结束。</li>
+</ul>
+<h3 id="常用-feature"><a href="#常用-feature" class="headerlink" title="常用 feature"></a>常用 feature</h3><p>前面都是介绍以及配置，下面介绍几个常用的 feature。</p>
+<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p>点选 session 窗口中的请求，右键查看选项，选项的最后两项即是 map 选项，提供了 <code>map remote/map local</code> 选项，可以将请求的资源映射到本地或者远程的资源，举个例子。<br>你需要调试页面中的 JS 代码，你可以将页面的 JS 请求映射到本地开发环境中的 JS 文件，刷新页面后，页面请求到的是本地 JS 文件，如此一来，修改本地 JS 后，刷新页面就可以在 APP 内查看到效果。<br>map 是这次开发中主要使用的功能，大幅度提高了我的开发效率。</p>
+<h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><ul>
+<li><a href="http://blog.devtang.com/2015/11/14/charles-introduction/" target="_blank" rel="external">Charles 从入门到精通</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="hybrid" scheme="http://lijundong.com/tags/hybrid/"/>
+    
+      <category term="debug" scheme="http://lijundong.com/tags/debug/"/>
+    
+      <category term="charles" scheme="http://lijundong.com/tags/charles/"/>
+    
+  </entry>
   
   <entry>
     <title>用户体验之 localStorage</title>
@@ -611,7 +703,7 @@
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -924,78 +1016,6 @@
       <category term="爬虫" scheme="http://lijundong.com/tags/%E7%88%AC%E8%99%AB/"/>
     
       <category term="小说" scheme="http://lijundong.com/tags/%E5%B0%8F%E8%AF%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端开发自动化之 Gulp</title>
-    <link href="http://lijundong.com/develop-automatic-gulp-set/"/>
-    <id>http://lijundong.com/develop-automatic-gulp-set/</id>
-    <published>2016-10-29T07:05:36.000Z</published>
-    <updated>2016-10-29T09:03:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>越来越意识到开发的规范化的重要性，以及自动化带来的高效，前端开发环境自动化构建的技能是必须要 get 的，于是最近用了一个 demo 完整的跑了一遍 Gulp 的前端开发自动化，体验很棒，这里记录下。<br>努力向规范看齐，向大牛看齐，多去了解，多去接触，视野开阔才能看到更远的风景，会有更多的可能。<br><a id="more"></a></p>
-<h3 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h3><p>技术的进击的过程相似于打怪升级买装备，初级拿把小米步枪就可以制霸方圆，升级之后遇到高手才发现没几把 AK 都不好意思跟人打招呼，再升级之后，发现二营长的意大利炮还是要有的，哈哈。<br>学习前端以来都是自己一个人折腾，学的不系统，做的项目也都是小打小闹，一直没接触到自动化，第一次看介绍 Grunt 的文章时，因为应用水平太低，反复看了三遍才稍微理解开发环境自动化，但是一直没机会应用，这次做个笔记先，关于使用 grunt、gulp还是 webpack，我的观点是，你在纠结的时候，我已经开始上代码了……</p>
-<h3 id="文件目录结构"><a href="#文件目录结构" class="headerlink" title="文件目录结构"></a>文件目录结构</h3><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">|-/dist</span></span><br><span class="line"><span class="string">|-/src</span></span><br><span class="line"><span class="string">|--`css</span></span><br><span class="line"><span class="string">|--`images</span></span><br><span class="line"><span class="string">|--`js</span></span><br><span class="line"><span class="string">|--`less</span></span><br><span class="line"><span class="string">|-gulpfile.js</span></span><br><span class="line"><span class="string">|-package.json</span></span><br></pre></td></tr></table></figure>
-<h3 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h3><p>技术选型的时候，不求最新最炫，我考虑的首要因素是合适，之所以选择 gulp，首先是上手较 grunt 简单，而且插件已经很丰富了，而且目前我应用的场景没必要使用 webpack。<br>Gulp 以及所用到的插件的安装都是通过 npm 。</p>
-<h3 id="gulpfile-js-配置"><a href="#gulpfile-js-配置" class="headerlink" title="gulpfile.js 配置"></a>gulpfile.js 配置</h3><p>类似于 package.json，gulpfile.js 是gulp的配置文件，在文件中引入插件，以及自定义指令。</p>
-<h4 id="gulp-插件"><a href="#gulp-插件" class="headerlink" title="gulp 插件"></a>gulp 插件</h4><p>gulp 丰富的插件可以满足目前开发环境中遇到的大部分需求，我这里列了几个插件，只是目前需要的，有新需求时再补充，如果你想找插件，直接去 <a href="http://npmjs.com/" target="_blank" rel="external">npm 官网</a><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> gulp = <span class="built_in">require</span>(<span class="string">"gulp"</span>)</span><br><span class="line"><span class="comment">// 编译 less</span></span><br><span class="line"><span class="keyword">var</span> less = <span class="built_in">require</span>(<span class="string">"gulp-less"</span>)</span><br><span class="line"><span class="comment">// 压缩 css 代码</span></span><br><span class="line"><span class="keyword">var</span> minifycss = <span class="built_in">require</span>(<span class="string">"gulp-clean-css"</span>)</span><br><span class="line"><span class="comment">// 压缩 js 代码</span></span><br><span class="line"><span class="keyword">var</span> uglify = <span class="built_in">require</span>(<span class="string">"gulp-uglify"</span>)</span><br><span class="line"><span class="comment">// 合并文件</span></span><br><span class="line"><span class="keyword">var</span> concat = <span class="built_in">require</span>(<span class="string">"gulp-concat"</span>)</span><br><span class="line"><span class="comment">// 神器，浏览器自动刷新</span></span><br><span class="line"><span class="keyword">var</span> browserSync = <span class="built_in">require</span>(<span class="string">"browser-sync"</span>).create()</span><br><span class="line"><span class="keyword">var</span> reload = browserSync.reload;</span><br></pre></td></tr></table></figure></p>
-<h4 id="配置开发环境-dev"><a href="#配置开发环境-dev" class="headerlink" title="配置开发环境  dev"></a>配置开发环境  dev</h4><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// css:dev 命令 将 /src 中的 css 移动到 /dist 并刷新页面</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'css:dev'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/css/*.css'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/css'</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(reload(&#123;</span><br><span class="line">            <span class="attribute">stream</span>: true</span><br><span class="line">        &#125;))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// less:dev 命令 编译 less，移动到 /dist 并刷新页面</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'less:dev'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/less/*.less'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(less())</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/css'</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(reload(&#123;</span><br><span class="line">            <span class="attribute">stream</span>: true</span><br><span class="line">        &#125;))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// js:dev 命令 移动 js 并刷新页面</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'js:dev'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/js/*.js'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/js'</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(reload(&#123;</span><br><span class="line">            <span class="attribute">stream</span>: true</span><br><span class="line">        &#125;))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// dev 命令，执行 js:dev less:dev css:dev 并启动 browserSync 监听 /src 下的 js、less、css代码</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'dev'</span>, [<span class="string">'js:dev'</span>, <span class="string">'less:dev'</span>, <span class="string">'css:dev'</span>], function() &#123;</span><br><span class="line">    <span class="selector-tag">browserSync</span><span class="selector-class">.init</span>(&#123;</span><br><span class="line">        <span class="attribute">server</span>: &#123;</span><br><span class="line">            <span class="attribute">baseDir</span>: <span class="string">'/'</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attribute">notify</span>: false</span><br><span class="line">    &#125;)</span><br><span class="line">    gulp<span class="selector-class">.watch</span>(<span class="string">'src/js/*.js'</span>, [<span class="string">'js:dev'</span>])</span><br><span class="line">    <span class="selector-tag">gulp</span><span class="selector-class">.watch</span>(<span class="string">'src/less/*.less'</span>, [<span class="string">'less:dev'</span>])</span><br><span class="line">    <span class="selector-tag">gulp</span><span class="selector-class">.watch</span>(<span class="string">'src/css/*.css'</span>, [<span class="string">'css:dev'</span>])</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="打包配置"><a href="#打包配置" class="headerlink" title="打包配置"></a>打包配置</h4><p>打包上线时，可以将多个文件压缩(模板、css、css)、合并(css、js)，减少请求</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// css 压缩合并</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'css'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/css/*.css'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(autoprefixer())</span><br><span class="line">        <span class="selector-class">.pipe</span>(minifycss())</span><br><span class="line">        <span class="selector-class">.pipe</span>(concat(<span class="string">"all.min.css"</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/css'</span>))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// less 编译、压缩</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'less'</span>, function() &#123;</span><br><span class="line">    <span class="selector-tag">return</span> <span class="selector-tag">gulp</span><span class="selector-class">.src</span>(<span class="string">'src/less/*.less'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(less())</span><br><span class="line">        <span class="selector-class">.pipe</span>(minifycss())</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/css'</span>))</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// js 压缩 合并</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'js'</span>, function() &#123;</span><br><span class="line">    return gulp<span class="selector-class">.src</span>(<span class="string">'src/js/*.js'</span>)</span><br><span class="line">        <span class="selector-class">.pipe</span>(uglify())</span><br><span class="line">        <span class="selector-class">.pipe</span>(concat(<span class="string">"all.min.js"</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(gulp.dest(<span class="string">'dist/static/js'</span>))</span><br><span class="line">        <span class="selector-class">.pipe</span>(uglify())</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 一键打包</span></span><br><span class="line"><span class="selector-tag">gulp</span><span class="selector-class">.task</span>(<span class="string">'build'</span>, [<span class="string">'css'</span>, <span class="string">'less'</span>, <span class="string">'js'</span>])</span><br></pre></td></tr></table></figure>
-<h3 id="开发流程"><a href="#开发流程" class="headerlink" title="开发流程"></a>开发流程</h3><p><code>gulp dev</code> <strong>开发环境</strong>，gulp 监听 /src 下的修改，更新数据，刷新浏览器，查看预览<br>功能开发结束，<strong>打包</strong><br><code>gulp build</code> 打包，编译，压缩文件<br><strong>上线</strong></p>
-<p>参考:</p>
-<ul>
-<li><a href="http://www.jianshu.com/p/cc1cb9a5650c" target="_blank" rel="external">入门：十分钟自动化构建</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;越来越意识到开发的规范化的重要性，以及自动化带来的高效，前端开发环境自动化构建的技能是必须要 get 的，于是最近用了一个 demo 完整的跑了一遍 Gulp 的前端开发自动化，体验很棒，这里记录下。&lt;br&gt;努力向规范看齐，向大牛看齐，多去了解，多去接触，视野开阔才能看到更远的风景，会有更多的可能。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="开发工具" scheme="http://lijundong.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-    
-      <category term="gulp" scheme="http://lijundong.com/tags/gulp/"/>
-    
-      <category term="前端开发" scheme="http://lijundong.com/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决 Google 重定向，体验 Google 本味</title>
-    <link href="http://lijundong.com/google-no-country-redirect-disabled/"/>
-    <id>http://lijundong.com/google-no-country-redirect-disabled/</id>
-    <published>2016-10-20T13:30:19.000Z</published>
-    <updated>2016-11-17T14:22:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>由于不可抗力的缘故，每过一段时间，Google 就会重新被拿出来说一次，上一次说的是入门之法，关于 VPN 和 Shadowsocks 的一些很基础的东西。<br>最近小飞机换了更快的香港的服务器，体验非常棒，但是在使用 Google 时，Google 为了提供更好的本地搜索体验，<code>google.com</code> 会自动重定向到 <code>google.com.hk</code> ，可惜这些体验只有身在香港的服务器才能体验，而身在天朝的我还需要去考虑 <code>google country redirect disable</code>。<br><a id="more"></a><br>想要体验原汁原味的 Google(google.com)，下面的方案是我用过的较方便的方案。<br><strong>欢迎更正及补充</strong></p>
-<h3 id="Chrome-扩展"><a href="#Chrome-扩展" class="headerlink" title="Chrome 扩展"></a>Chrome 扩展</h3><p>Chrone 商店有一款禁止重定向的扩展 <a href="https://chrome.google.com/webstore/detail/nocountryredirect-ncr/ciboebddidackjicoeoiigdnbmchkdll?hl=en" target="_blank" rel="external">NoCountryRedirect (NCR)</a><br>这款插件是将重定向后的 <code>google.com.hk</code> 再重定向到 <code>google.com</code>，虽然有效，但是多次重定向导致页面相应变慢，体验不太好，装完体验两分钟就卸了<br>优点：安装方便<br>缺点：导致 Google 访问速度变得很慢</p>
-<h3 id="手动-google-com-ncr"><a href="#手动-google-com-ncr" class="headerlink" title="手动 google.com/ncr"></a>手动 google.com/ncr</h3><p>可以通过手动 ncr(no country redirect) 来强制禁止重定向，我将这个 url 设置了书签。</p>
-<h3 id="设置默认搜索引擎"><a href="#设置默认搜索引擎" class="headerlink" title="设置默认搜索引擎"></a>设置默认搜索引擎</h3><p>Chrome –&gt; 设置 -&gt; 搜索 -&gt; 管理搜索引擎 –&gt; 其他搜索引擎<br>拉到最下，有一个“添加新的搜索引擎”，参数如下</p>
-<blockquote>
-<p>名字：google.com<br>关键字: Google-ncr<br>url: <a href="http://www.google.com/search?q=%s" target="_blank" rel="external">http://www.google.com/search?q=%s</a></p>
-</blockquote>
-<p>配置完设置为默认搜索引擎，完成</p>
-<p><em>人生苦短，我用 Google</em></p>
-<hr>
-<p>新的 MBP 一周后发布，等了大半年，终于等来了，下面的事情就是存钱了，Fighting！</p>
-<p><em>人生苦短，我用 Mac</em></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;由于不可抗力的缘故，每过一段时间，Google 就会重新被拿出来说一次，上一次说的是入门之法，关于 VPN 和 Shadowsocks 的一些很基础的东西。&lt;br&gt;最近小飞机换了更快的香港的服务器，体验非常棒，但是在使用 Google 时，Google 为了提供更好的本地搜索体验，&lt;code&gt;google.com&lt;/code&gt; 会自动重定向到 &lt;code&gt;google.com.hk&lt;/code&gt; ，可惜这些体验只有身在香港的服务器才能体验，而身在天朝的我还需要去考虑 &lt;code&gt;google country redirect disable&lt;/code&gt;。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="google" scheme="http://lijundong.com/tags/google/"/>
     
   </entry>
   
