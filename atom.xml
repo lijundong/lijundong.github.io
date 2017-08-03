@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-08-03T14:25:30.000Z</updated>
+  <updated>2017-08-03T15:44:32.000Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -20,16 +20,18 @@
     <link href="http://lijundong.com/translation-10-mini-react-patterns/"/>
     <id>http://lijundong.com/translation-10-mini-react-patterns/</id>
     <published>2017-07-30T08:18:22.000Z</published>
-    <updated>2017-08-03T14:25:30.000Z</updated>
+    <updated>2017-08-03T15:44:32.000Z</updated>
     
-    <content type="html"><![CDATA[<p>原文地址：<a href="https://hackernoon.com/10-react-mini-patterns-c1da92f068c5" target="_blank" rel="external">10 React mini-patterns</a><br>对于 React 初学者的一些经验之谈，初次翻译，望多指教。</p>
+    <content type="html"><![CDATA[<blockquote>
+<p>原文地址：<a href="https://hackernoon.com/10-react-mini-patterns-c1da92f068c5" target="_blank" rel="external">10 React mini-patterns</a><br>对于 React 初学者的一些经验之谈，初次翻译，望多指教。</p>
+</blockquote>
 <a id="more"></a>
 <p>过去几年里，我参与了几个较大的 <code>React</code> 项目，也做了非常多的小项目，在这过程中，我总结了一些 React 常用的开发模式。<br>这些模式是我在 React 入门阶段非常希望看到的，如果你是 <code>React</code> 新手，那你今天算是赚到了，如果你已经是 <code>React</code> 老鸟，不妨看看有哪些模式。本文较长，如果觉得一些介绍比较枯燥（比如 3、6、8、10），可以选择跳过。</p>
-<h3 id="1-数据传输"><a href="#1-数据传输" class="headerlink" title="1. 数据传输"></a>1. 数据传输</h3><p>我建议每个 React 初学者都去了解 React 组件向下传递数据（对象、字符串等）的模式，以及传递让子组件传回数据的方法的模式。可以联想救援队将食物与对讲机送抵井底被困矿工。<br>举个例子：<br><img src="https://cdn-images-1.medium.com/max/2000/1*J5XOQh2WKIl0NFTAMvcVbQ.png" alt="" title="Sending data down and up"></p>
+<h3 id="1-数据传输"><a href="#1-数据传输" class="headerlink" title="1. 数据传输"></a>1. 数据传输</h3><p>我建议每个 React 初学者都去了解 React 组件向下传递数据（对象、字符串等）的模式，以及传递让子组件传回数据的方法的模式。可以联想救援队将食物与对讲机送抵井底被困矿工。<br>举个例子：<br><img src="http://source.lijundong.com/17-8-3/97066388.jpg" alt="" title="Sending data down and up"></p>
 <p>图中左右分别是父组件和子组件，你可以想象连接父子组件的这两个属性允许了数据的双向流通。</p>
 <p>其实这一条不算真正意义上的开发模式，下面才是。</p>
 <h3 id="2-修复-HTML-原生-input"><a href="#2-修复-HTML-原生-input" class="headerlink" title="2. 修复 HTML 原生 input"></a>2. 修复 HTML 原生 input</h3><p>React 和 web 组件的一大好处是，当页面出现 bug，你可以很快定位到问题所在。<br>如果你在考虑页面中使用不同的输入标签，你会发现这些标签的命名大多是无意义，因此，如果我在处理一个包含多个输入的页面时，我首先会处理这个问题。</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*WTUJjlFOOnetc5NpbykN0w.png" alt=""></p>
+<p><img src="http://source.lijundong.com/17-8-3/93024380.jpg" alt=""></p>
 <p>这些输入标签虽然不是纯粹的花架子，但是仍有很多地方可以改进：</p>
 <ul>
 <li>输入应该通过 <code>onChange</code> 方法返回值，而不是通过 <code>Javascript</code> 事件绑定</li>
@@ -73,7 +75,7 @@ export const getNextId = () =&gt; {
 <h4 id="使用标记"><a href="#使用标记" class="headerlink" title="使用标记"></a>使用标记</h4><p>也许你的页面中会有一些圆角 <code>button</code>，但这样的风格不符合你已经定义的主题，遇到这种情况，你可能要去找 UI 商量一个统一的方案，或是在元素中添加一个布尔属性，像这样：<br><code>&lt;Button theme=&quot;secondary&quot; rounded&gt;Hello&lt;/Button&gt;</code><br>等同于这种写法：<br><code>&lt;Button theme=&quot;secondary&quot; rounded={true}&gt;Hello&lt;/Button&gt;</code></p>
 <h4 id="设置值"><a href="#设置值" class="headerlink" title="设置值"></a>设置值</h4><p>当然，你肯定会遇到直接在组建中写 CSS 样式的情况，像这样：<br><code>&lt;Icon width=&quot;25&quot; height=&quot;25&quot; type=&quot;search&quot; /&gt;</code></p>
 <h4 id="举个例子"><a href="#举个例子" class="headerlink" title="举个例子"></a>举个例子</h4><p>设想你现在需要实现一个链接，但现在有三种截然不同的主题，一些链接有下划线，一些没有，就像这样：</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*Kx1jOQONhFZPnGe72Fd4tQ.png" alt=""></p>
+<p><img src="http://source.lijundong.com/17-8-3/67133232.jpg" alt=""></p>
 <p>下面给出我的处理方式：</p>
 <pre><code>// demo.jsx
 const Link = (props) =&gt; {
@@ -131,7 +133,7 @@ Link.defaultProps = {
 <p>译者注：所说的元素包含在原文站点中</p>
 </blockquote>
 <p>共有二十三条规则，还不包括从其他十一条规则下集成的规则，其中 <code>line-height</code> 被复写了九次……即便 <code>line-height</code> 是一只猫，也未能幸免于难。</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*lQzlIf8PPqeLUS5VOvTH4Q.png" alt=""></p>
+<p><img src="http://source.lijundong.com/17-8-3/7528192.jpg" alt=""></p>
 <blockquote>
 <p>译者注：猫有九命的梗</p>
 </blockquote>
@@ -155,7 +157,7 @@ return (
 }
 </code></pre><p>需要注意的是，当你对组件使用 <code>ref</code> 时，是对组件的引用（而不是底层元素），所以你可以访问其方法。</p>
 <h3 id="7-almost-component"><a href="#7-almost-component" class="headerlink" title="7. almost component"></a>7. almost component</h3><p>设想你正在写一个搜索用户的组件，当你输入的时候，你会看到一列潜在匹配的用户名和头像，就像这样。</p>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*AH_RjXx3xldF651qvef7cQ.png" alt=""></p>
+<p><img src="http://source.lijundong.com/17-8-3/79573493.jpg" alt=""></p>
 <p>当你在设计这个组件时，你可能会犹豫，列表中的每一项都属于 <code>SearchSuggestion</code> 组件吗 ？只有几行 HTML 和 CSS 代码，也许不是 ？但我曾经告诉自己：“如果感到疑惑，那就再建一个新组件”。</p>
 <p>我如果这样做，就一个单独的组件都没了。相反，只有一个给每个入口返回对应 DOM 的 <code>renderSearchSuggestion</code> 方法，我就生成了如下的结果：</p>
 <pre><code>const SearchSuggestions = (props) =&gt; {
@@ -228,13 +230,15 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <li>因为组件不在 <code>node_modules</code> 里，所以这算是一个 <code>eslint</code> 错误</li>
 <li>如果你有一个好的 IDE，那么它会知道项目里的所有组件，如果你忘了加一些属性值，它会温馨地提示你添加，你可以通过 <code>cmd</code>/<code>Ctrl</code> + 点击就可以打开这些组件所在的文件。如果用我之前的方式引用组件，那么 IDE 将找不到我的组件的位置，我就失去了这些温馨智能的功能。</li>
 </ol>
-<p><img src="https://cdn-images-1.medium.com/max/800/1*iYAef1TLM3P9HHCuPHp1QQ.png" alt=""></p>
+<p><img src="http://source.lijundong.com/17-8-3/72770435.jpg" alt=""></p>
 <p>标注：<a href="https://medium.com/@hsiungmatt" target="_blank" rel="external">matthew hsiung</a> 在关于 eslint 和 WebStorm 的 issue 回复下面提供了一个<a href="https://medium.com/@hsiungmatt/great-article-917a2f6b718e#.w66jk94ao" target="_blank" rel="external">解决方案</a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;原文地址：&lt;a href=&quot;https://hackernoon.com/10-react-mini-patterns-c1da92f068c5&quot;&gt;10 React mini-patterns&lt;/a&gt;&lt;br&gt;对于 React 初学者的一些经验之谈，初次翻译，望多指教。&lt;/p&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;原文地址：&lt;a href=&quot;https://hackernoon.com/10-react-mini-patterns-c1da92f068c5&quot;&gt;10 React mini-patterns&lt;/a&gt;&lt;br&gt;对于 React 初学者的一些经验之谈，初次翻译，望多指教。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
