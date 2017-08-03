@@ -122,7 +122,24 @@ Link.defaultProps = {
 <p>译者注：猫有九命的梗</p>
 </blockquote>
 <p>使用 React 之后，我们更好地处理页面样式，更周到地决定设计哪些类应用在我们的组件中，将全局设置迁移到 <code>Button.scss</code> 文件中，移除所有对于特异性以及文件顺序的依赖。<br>边注：我梦想有一天，我们再也不需要浏览器对于样式使用的建议。<code>::user-agent-styles: none-whatsoever;</code> 让这样的梦想成为现实。</p>
-<h3 id="5-开关组件"><a href="#5-开关组件" class="headerlink" title="5. 开关组件"></a>5. 开关组件</h3><p>开关组件是呈现众多组件之一的组件。可以是用来展示页面的 <code>&lt;Page&gt;</code> 组件或者是 tab 集合中的 tab，也可以是模态组件中的不同模式。<br>我过去习惯使用 switch 语句处理，实际传递到我想要渲染的组件，再从组件本身导出对组件的引用（作为命名导出，作为组件的属性）。<br>现在看来这些都是可怕的方式，我已经解决的一个潜在危险方法是我用一个对象将 prop 值映射到组件中。<br>    import HomePage from ‘./HomePage.jsx’;<br>    import AboutPage from ‘./AboutPage.jsx’;<br>    import UserPage from ‘./UserPage.jsx’;<br>    import FourOhFourPage from ‘./FourOhFourPage.jsx’;<br>    const PAGES = {<br>    home: HomePage,<br>    about: AboutPage,<br>    user: UserPage,<br>    };<br>    const Page = (props) =&gt; {<br>    const Handler = PAGES[props.page] || FourOhFourPage;<br>    return <handler {...props}=""><br>    };<br>    Page.propTypes = {<br>    page: PropTypes.oneOf(Object.keys(PAGES)).isRequired,<br>    };<br><code>PAGE</code> 对象中的值可以在 prop 类型中用来捕获开发时错误。当然，我们可以像这样使用 <code>&lt;Page page=&quot;home&quot; /&gt;</code>，如果你将 <code>home</code>、<code>about</code> 和 <code>user</code> 分别提换成 <code>/</code>、<code>/about</code> 以及 <code>／user</code>，那么你就有了半个路由啦。<br>（下一步想法：移除 react-router）</handler></p>
+<h3 id="5-开关组件"><a href="#5-开关组件" class="headerlink" title="5. 开关组件"></a>5. 开关组件</h3><p>开关组件是呈现众多组件之一的组件。可以是用来展示页面的 <code>&lt;Page&gt;</code> 组件或者是 tab 集合中的 tab，也可以是模态组件中的不同模式。<br>我过去习惯使用 switch 语句处理，实际传递到我想要渲染的组件，再从组件本身导出对组件的引用（作为命名导出，作为组件的属性）。<br>现在看来这些都是可怕的方式，我已经解决的一个潜在危险方法是我用一个对象将 prop 值映射到组件中。</p>
+<pre><code>import HomePage from &apos;./HomePage.jsx&apos;;
+import AboutPage from &apos;./AboutPage.jsx&apos;;
+import UserPage from &apos;./UserPage.jsx&apos;;
+import FourOhFourPage from &apos;./FourOhFourPage.jsx&apos;;
+const PAGES = {
+home: HomePage,
+about: AboutPage,
+user: UserPage,
+};
+const Page = (props) =&gt; {
+const Handler = PAGES[props.page] || FourOhFourPage;
+return &lt;Handler {...props} /&gt;
+};
+Page.propTypes = {
+page: PropTypes.oneOf(Object.keys(PAGES)).isRequired,
+};
+</code></pre><p><code>PAGE</code> 对象中的值可以在 prop 类型中用来捕获开发时错误。当然，我们可以像这样使用 <code>&lt;Page page=&quot;home&quot; /&gt;</code>，如果你将 <code>home</code>、<code>about</code> 和 <code>user</code> 分别提换成 <code>/</code>、<code>/about</code> 以及 <code>／user</code>，那么你就有了半个路由啦。<br>（下一步想法：移除 react-router）</p>
 <h3 id="6-进入组件内部"><a href="#6-进入组件内部" class="headerlink" title="6. 进入组件内部"></a>6. 进入组件内部</h3><p>如果你想提高用户体验，不妨试试在页面输入较频繁的输入框添加 <code>autofocus</code>，非常简单，但却可以大大提高用户的使用体验。<br>设想页面中有一个登陆表单，而作为“用户体验高级设计师”的你想在表单的“用户名”输入框中添加一个闪烁的光标，但发现登陆表单显示在模态框中，而 <code>autofocus</code> 属性只能应用在页面加载。<br>现在你该怎么办 ？<br>你可能会用 Javascript 实现，给 <code>input</code> 标签一个 <code>id</code>，再用 <code>document.getElementById(&#39;user-name-input&#39;).focus()</code> 让输入框聚焦。这种方法虽然有效，但不够优雅，你的程序中对字符串匹配的依赖应该越少越好。<br>比较幸运的是，有一种非常简单的方法可以实现这个效果：</p>
 <pre><code>class SignInModal extends Component {
   componentDidMount() {
@@ -923,7 +940,7 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -1543,9 +1560,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> vim </tag>
-            
             <tag> linux </tag>
+            
+            <tag> vim </tag>
             
             <tag> 正则 </tag>
             
@@ -2445,9 +2462,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
         
@@ -2479,11 +2496,11 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
+            <tag> 工具使用 </tag>
+            
             <tag> 便签 </tag>
             
             <tag> windows </tag>
-            
-            <tag> 工具使用 </tag>
             
         </tags>
         
@@ -2721,9 +2738,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> sublimetext </tag>
-            
             <tag> 工具使用 </tag>
+            
+            <tag> sublimetext </tag>
             
             <tag> 插件 </tag>
             
@@ -2747,10 +2764,10 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p><img src="http://source.lijundong.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://source.lijundong.com/16-3-11/22540140.jpg" alt=""></li>
@@ -2878,12 +2895,12 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 </ul>
 </li>
 <li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;</span>水平居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/58206411.jpg" alt="水平居中"></p>
 <ul>
-<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;</span>垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/29762873.jpg" alt="垂直居中"></p>
@@ -3009,9 +3026,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> 工具使用 </tag>
-            
             <tag> kindle </tag>
+            
+            <tag> 工具使用 </tag>
             
         </tags>
         

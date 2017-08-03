@@ -46,7 +46,7 @@
 <meta property="og:image" content="http://source.lijundong.com/17-8-3/72770435.jpg">
 <meta property="og:image" content="http://source.lijundong.com/17-8-3/79573493.jpg">
 <meta property="og:image" content="http://source.lijundong.com/17-8-3/7528192.jpg">
-<meta property="og:updated_time" content="2017-08-03T15:47:26.000Z">
+<meta property="og:updated_time" content="2017-08-03T15:50:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【译】React 的 10 种迷你开发模式">
 <meta name="twitter:description" content="原文地址：10 React mini-patterns对于 React 初学者的一些经验之谈，初次翻译，望多指教。">
@@ -353,7 +353,24 @@ Link.defaultProps = {
 <p>译者注：猫有九命的梗</p>
 </blockquote>
 <p>使用 React 之后，我们更好地处理页面样式，更周到地决定设计哪些类应用在我们的组件中，将全局设置迁移到 <code>Button.scss</code> 文件中，移除所有对于特异性以及文件顺序的依赖。<br>边注：我梦想有一天，我们再也不需要浏览器对于样式使用的建议。<code>::user-agent-styles: none-whatsoever;</code> 让这样的梦想成为现实。</p>
-<h3 id="5-开关组件"><a href="#5-开关组件" class="headerlink" title="5. 开关组件"></a>5. 开关组件</h3><p>开关组件是呈现众多组件之一的组件。可以是用来展示页面的 <code>&lt;Page&gt;</code> 组件或者是 tab 集合中的 tab，也可以是模态组件中的不同模式。<br>我过去习惯使用 switch 语句处理，实际传递到我想要渲染的组件，再从组件本身导出对组件的引用（作为命名导出，作为组件的属性）。<br>现在看来这些都是可怕的方式，我已经解决的一个潜在危险方法是我用一个对象将 prop 值映射到组件中。<br>    import HomePage from ‘./HomePage.jsx’;<br>    import AboutPage from ‘./AboutPage.jsx’;<br>    import UserPage from ‘./UserPage.jsx’;<br>    import FourOhFourPage from ‘./FourOhFourPage.jsx’;<br>    const PAGES = {<br>    home: HomePage,<br>    about: AboutPage,<br>    user: UserPage,<br>    };<br>    const Page = (props) =&gt; {<br>    const Handler = PAGES[props.page] || FourOhFourPage;<br>    return <handler {...props}=""><br>    };<br>    Page.propTypes = {<br>    page: PropTypes.oneOf(Object.keys(PAGES)).isRequired,<br>    };<br><code>PAGE</code> 对象中的值可以在 prop 类型中用来捕获开发时错误。当然，我们可以像这样使用 <code>&lt;Page page=&quot;home&quot; /&gt;</code>，如果你将 <code>home</code>、<code>about</code> 和 <code>user</code> 分别提换成 <code>/</code>、<code>/about</code> 以及 <code>／user</code>，那么你就有了半个路由啦。<br>（下一步想法：移除 react-router）</handler></p>
+<h3 id="5-开关组件"><a href="#5-开关组件" class="headerlink" title="5. 开关组件"></a>5. 开关组件</h3><p>开关组件是呈现众多组件之一的组件。可以是用来展示页面的 <code>&lt;Page&gt;</code> 组件或者是 tab 集合中的 tab，也可以是模态组件中的不同模式。<br>我过去习惯使用 switch 语句处理，实际传递到我想要渲染的组件，再从组件本身导出对组件的引用（作为命名导出，作为组件的属性）。<br>现在看来这些都是可怕的方式，我已经解决的一个潜在危险方法是我用一个对象将 prop 值映射到组件中。</p>
+<pre><code>import HomePage from &apos;./HomePage.jsx&apos;;
+import AboutPage from &apos;./AboutPage.jsx&apos;;
+import UserPage from &apos;./UserPage.jsx&apos;;
+import FourOhFourPage from &apos;./FourOhFourPage.jsx&apos;;
+const PAGES = {
+home: HomePage,
+about: AboutPage,
+user: UserPage,
+};
+const Page = (props) =&gt; {
+const Handler = PAGES[props.page] || FourOhFourPage;
+return &lt;Handler {...props} /&gt;
+};
+Page.propTypes = {
+page: PropTypes.oneOf(Object.keys(PAGES)).isRequired,
+};
+</code></pre><p><code>PAGE</code> 对象中的值可以在 prop 类型中用来捕获开发时错误。当然，我们可以像这样使用 <code>&lt;Page page=&quot;home&quot; /&gt;</code>，如果你将 <code>home</code>、<code>about</code> 和 <code>user</code> 分别提换成 <code>/</code>、<code>/about</code> 以及 <code>／user</code>，那么你就有了半个路由啦。<br>（下一步想法：移除 react-router）</p>
 <h3 id="6-进入组件内部"><a href="#6-进入组件内部" class="headerlink" title="6. 进入组件内部"></a>6. 进入组件内部</h3><p>如果你想提高用户体验，不妨试试在页面输入较频繁的输入框添加 <code>autofocus</code>，非常简单，但却可以大大提高用户的使用体验。<br>设想页面中有一个登陆表单，而作为“用户体验高级设计师”的你想在表单的“用户名”输入框中添加一个闪烁的光标，但发现登陆表单显示在模态框中，而 <code>autofocus</code> 属性只能应用在页面加载。<br>现在你该怎么办 ？<br>你可能会用 Javascript 实现，给 <code>input</code> 标签一个 <code>id</code>，再用 <code>document.getElementById(&#39;user-name-input&#39;).focus()</code> 让输入框聚焦。这种方法虽然有效，但不够优雅，你的程序中对字符串匹配的依赖应该越少越好。<br>比较幸运的是，有一种非常简单的方法可以实现这个效果：</p>
 <pre><code>class SignInModal extends Component {
   componentDidMount() {
