@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[【译】10 种 React 的迷你开发模式]]></title>
+      <title><![CDATA[【译】React 的 10 种迷你开发模式]]></title>
       <url>http://lijundong.com/translation-10-mini-react-patterns/</url>
       <content type="html"><![CDATA[<p>原文地址：<a href="https://hackernoon.com/10-react-mini-patterns-c1da92f068c5" target="_blank" rel="external">10 React mini-patterns</a><br>对于 React 初学者的一些经验之谈，初次翻译，望多指教。</p>
 <a id="more"></a>
@@ -1541,9 +1541,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> linux </tag>
-            
             <tag> vim </tag>
+            
+            <tag> linux </tag>
             
             <tag> 正则 </tag>
             
@@ -1786,9 +1786,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -2327,9 +2327,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
         
@@ -2443,9 +2443,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
         
@@ -2719,13 +2719,13 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> 工具使用 </tag>
-            
             <tag> sublimetext </tag>
             
             <tag> 插件 </tag>
             
             <tag> 力所能及的分享 </tag>
+            
+            <tag> 工具使用 </tag>
             
         </tags>
         
@@ -3007,9 +3007,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> kindle </tag>
-            
             <tag> 工具使用 </tag>
+            
+            <tag> kindle </tag>
             
         </tags>
         
