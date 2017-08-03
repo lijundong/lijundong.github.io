@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-08-03T15:44:32.000Z</updated>
+  <updated>2017-08-03T15:47:26.000Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lijundong.com/translation-10-mini-react-patterns/"/>
     <id>http://lijundong.com/translation-10-mini-react-patterns/</id>
     <published>2017-07-30T08:18:22.000Z</published>
-    <updated>2017-08-03T15:44:32.000Z</updated>
+    <updated>2017-08-03T15:47:26.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>原文地址：<a href="https://hackernoon.com/10-react-mini-patterns-c1da92f068c5" target="_blank" rel="external">10 React mini-patterns</a><br>对于 React 初学者的一些经验之谈，初次翻译，望多指教。</p>
@@ -133,7 +133,7 @@ Link.defaultProps = {
 <p>译者注：所说的元素包含在原文站点中</p>
 </blockquote>
 <p>共有二十三条规则，还不包括从其他十一条规则下集成的规则，其中 <code>line-height</code> 被复写了九次……即便 <code>line-height</code> 是一只猫，也未能幸免于难。</p>
-<p><img src="http://source.lijundong.com/17-8-3/7528192.jpg" alt=""></p>
+<p><img src="http://source.lijundong.com/17-8-3/72770435.jpg" alt=""></p>
 <blockquote>
 <p>译者注：猫有九命的梗</p>
 </blockquote>
@@ -230,7 +230,7 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <li>因为组件不在 <code>node_modules</code> 里，所以这算是一个 <code>eslint</code> 错误</li>
 <li>如果你有一个好的 IDE，那么它会知道项目里的所有组件，如果你忘了加一些属性值，它会温馨地提示你添加，你可以通过 <code>cmd</code>/<code>Ctrl</code> + 点击就可以打开这些组件所在的文件。如果用我之前的方式引用组件，那么 IDE 将找不到我的组件的位置，我就失去了这些温馨智能的功能。</li>
 </ol>
-<p><img src="http://source.lijundong.com/17-8-3/72770435.jpg" alt=""></p>
+<p><img src="http://source.lijundong.com/17-8-3/7528192.jpg" alt=""></p>
 <p>标注：<a href="https://medium.com/@hsiungmatt" target="_blank" rel="external">matthew hsiung</a> 在关于 eslint 和 WebStorm 的 issue 回复下面提供了一个<a href="https://medium.com/@hsiungmatt/great-article-917a2f6b718e#.w66jk94ao" target="_blank" rel="external">解决方案</a></p>
 ]]></content>
     
@@ -975,7 +975,7 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
