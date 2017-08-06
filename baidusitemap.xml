@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
+    <lastmod>2017-08-06T15:54:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>【译】高性能 React：提高性能的 3 个开发工具</title>
+        <pubTime>2017-08-06T12:31:49.000Z</pubTime>
+        
+        <tag>react</tag>
+         
+        <tag>译文</tag>
+         
+         
+           
+             
+              <breadCrumb title="译文" url="http://lijundong.com/categories/%E8%AF%91%E6%96%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/translation-10-mini-react-patterns/</loc>
-    <lastmod>2017-08-03T15:50:15.000Z</lastmod>
+    <lastmod>2017-08-06T08:48:43.000Z</lastmod>
     <data>
         <display>
         <title>【译】React 的 10 种迷你开发模式</title>
@@ -322,23 +344,67 @@
 
     
   <url>
-    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
+    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>可能错过的Windows便签</title>
-        <pubTime>2016-04-17T11:49:22.000Z</pubTime>
+        <title>『当李晓峰成为Sky』</title>
+        <pubTime>2015-11-20T10:00:03.000Z</pubTime>
         
+        <tag>读书</tag>
+         
+        <tag>电竞</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Kindle-content-manage/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>管理你的Kindle</title>
+        <pubTime>2016-01-12T12:55:33.000Z</pubTime>
+        
+        <tag>kindle</tag>
+         
         <tag>工具使用</tag>
-         
-        <tag>便签</tag>
-         
-        <tag>windows</tag>
          
          
            
              
               <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Canvas-animation-about-sort/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Canvas制作排序算法演示动画</title>
+        <pubTime>2015-09-05T14:18:12.000Z</pubTime>
+        
+        <tag>canvas</tag>
+         
+        <tag>排序</tag>
+         
+        <tag>动画</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -368,42 +434,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/sheets-collections/</loc>
+    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>常用速查表集合</title>
-        <pubTime>2016-08-23T07:57:21.000Z</pubTime>
+        <title>Coding page与Github page博客部署及域名绑定</title>
+        <pubTime>2016-07-30T05:29:13.000Z</pubTime>
         
-        <tag>git</tag>
+        <tag>博客</tag>
          
-        <tag>linux</tag>
-         
-        <tag>vim</tag>
-         
-        <tag>正则</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Kindle-content-manage/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>管理你的Kindle</title>
-        <pubTime>2016-01-12T12:55:33.000Z</pubTime>
-        
-        <tag>kindle</tag>
-         
-        <tag>工具使用</tag>
+        <tag>dns</tag>
          
          
            
@@ -442,67 +482,25 @@
 
     
   <url>
-    <loc>http://lijundong.com/Canvas-animation-about-sort/</loc>
+    <loc>http://lijundong.com/sheets-collections/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>Canvas制作排序算法演示动画</title>
-        <pubTime>2015-09-05T14:18:12.000Z</pubTime>
+        <title>常用速查表集合</title>
+        <pubTime>2016-08-23T07:57:21.000Z</pubTime>
         
-        <tag>canvas</tag>
+        <tag>git</tag>
          
-        <tag>排序</tag>
+        <tag>linux</tag>
          
-        <tag>动画</tag>
+        <tag>vim</tag>
          
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Coding page与Github page博客部署及域名绑定</title>
-        <pubTime>2016-07-30T05:29:13.000Z</pubTime>
-        
-        <tag>博客</tag>
-         
-        <tag>dns</tag>
+        <tag>正则</tag>
          
          
            
              
               <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Putty登陆阿里云 Network error: Software caused connection abort</title>
-        <pubTime>2016-06-13T13:52:18.000Z</pubTime>
-        
-        <tag>ssh</tag>
-         
-        <tag>服务器</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
           
         </display>
     </data>
@@ -584,6 +582,28 @@
 
     
   <url>
+    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Putty登陆阿里云 Network error: Software caused connection abort</title>
+        <pubTime>2016-06-13T13:52:18.000Z</pubTime>
+        
+        <tag>ssh</tag>
+         
+        <tag>服务器</tag>
+         
+         
+           
+             
+              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/normal-flow/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
@@ -630,16 +650,14 @@
 
     
   <url>
-    <loc>http://lijundong.com/information-system-Wampserver/</loc>
+    <loc>http://lijundong.com/Bootstrap-hover-toggle-menu/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>IS开发(一):Wampserver</title>
-        <pubTime>2016-04-14T12:53:19.000Z</pubTime>
+        <title>Bootstrap初体验:鼠标hover时自动下拉菜单</title>
+        <pubTime>2016-03-31T16:00:15.000Z</pubTime>
         
-        <tag>信息系统开发</tag>
-         
-        <tag>wampserver</tag>
+        <tag>bootstrap</tag>
          
          
            
@@ -652,87 +670,23 @@
 
     
   <url>
-    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
+    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>『当李晓峰成为Sky』</title>
-        <pubTime>2015-11-20T10:00:03.000Z</pubTime>
+        <title>可能错过的Windows便签</title>
+        <pubTime>2016-04-17T11:49:22.000Z</pubTime>
         
-        <tag>读书</tag>
+        <tag>工具使用</tag>
          
-        <tag>电竞</tag>
+        <tag>便签</tag>
+         
+        <tag>windows</tag>
          
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>批量处理PPT图片</title>
-        <pubTime>2016-07-18T10:29:12.000Z</pubTime>
-        
-        <tag>ppt</tag>
-         
-        <tag>photoshop</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/html-make-clock-select/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>Html仿手机时钟选项框</title>
-        <pubTime>2016-08-05T00:15:49.000Z</pubTime>
-        
-        <tag>html</tag>
-         
-        <tag>css</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>IS开发(二):PHP&Mysql基础</title>
-        <pubTime>2016-04-15T14:09:05.000Z</pubTime>
-        
-        <tag>信息系统开发</tag>
-         
-        <tag>wampserver</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -762,14 +716,82 @@
 
     
   <url>
-    <loc>http://lijundong.com/Bootstrap-hover-toggle-menu/</loc>
+    <loc>http://lijundong.com/information-system-Wampserver/</loc>
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     <data>
         <display>
-        <title>Bootstrap初体验:鼠标hover时自动下拉菜单</title>
-        <pubTime>2016-03-31T16:00:15.000Z</pubTime>
+        <title>IS开发(一):Wampserver</title>
+        <pubTime>2016-04-14T12:53:19.000Z</pubTime>
         
-        <tag>bootstrap</tag>
+        <tag>信息系统开发</tag>
+         
+        <tag>wampserver</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/html-make-clock-select/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Html仿手机时钟选项框</title>
+        <pubTime>2016-08-05T00:15:49.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>批量处理PPT图片</title>
+        <pubTime>2016-07-18T10:29:12.000Z</pubTime>
+        
+        <tag>ppt</tag>
+         
+        <tag>photoshop</tag>
+         
+         
+           
+             
+              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>IS开发(二):PHP&Mysql基础</title>
+        <pubTime>2016-04-15T14:09:05.000Z</pubTime>
+        
+        <tag>信息系统开发</tag>
+         
+        <tag>wampserver</tag>
          
          
            

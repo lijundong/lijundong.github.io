@@ -46,7 +46,7 @@
 <meta property="og:image" content="http://source.lijundong.com/17-8-3/72770435.jpg">
 <meta property="og:image" content="http://source.lijundong.com/17-8-3/79573493.jpg">
 <meta property="og:image" content="http://source.lijundong.com/17-8-3/7528192.jpg">
-<meta property="og:updated_time" content="2017-08-03T15:50:15.000Z">
+<meta property="og:updated_time" content="2017-08-06T08:48:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【译】React 的 10 种迷你开发模式">
 <meta name="twitter:description" content="原文地址：10 React mini-patterns对于 React 初学者的一些经验之谈，初次翻译，望多指教。">
@@ -230,7 +230,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">Contents</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-数据传输"><span class="toc-text">1. 数据传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-修复-HTML-原生-input"><span class="toc-text">2. 修复 HTML 原生 input</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-给-input-绑定唯一-ID-的标签"><span class="toc-text">3. 给 input 绑定唯一 ID 的标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-通过-props-控制-CSS"><span class="toc-text">4. 通过 props 控制 CSS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用主题"><span class="toc-text">使用主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用标记"><span class="toc-text">使用标记</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置值"><span class="toc-text">设置值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#举个例子"><span class="toc-text">举个例子</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-开关组件"><span class="toc-text">5. 开关组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-进入组件内部"><span class="toc-text">6. 进入组件内部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-almost-component"><span class="toc-text">7. almost component</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-用于格式化文字的组件"><span class="toc-text">8. 用于格式化文字的组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-Store-服务于组件"><span class="toc-text">9. Store 服务于组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-不要通过相对路径引入组件"><span class="toc-text">10. 不要通过相对路径引入组件</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-数据传输"><span class="toc-text">1. 数据传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-修复-HTML-原生-input"><span class="toc-text">2. 修复 HTML 原生 input</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-给-input-绑定唯一-ID-的标签"><span class="toc-text">3. 给 input 绑定唯一 ID 的标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-通过-props-控制-CSS"><span class="toc-text">4. 通过 props 控制 CSS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用主题"><span class="toc-text">使用主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用标记"><span class="toc-text">使用标记</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设置值"><span class="toc-text">设置值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#举个例子"><span class="toc-text">举个例子</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-开关组件"><span class="toc-text">5. 开关组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-进入组件内部"><span class="toc-text">6. 进入组件内部</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-组件的边界"><span class="toc-text">7. 组件的边界</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-用于格式化文字的组件"><span class="toc-text">8. 用于格式化文字的组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-Store-服务于组件"><span class="toc-text">9. Store 服务于组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-不要通过相对路径引入组件"><span class="toc-text">10. 不要通过相对路径引入组件</span></a></li></ol>
     </div>
   </div>
 
@@ -388,7 +388,7 @@ return (
   }
 }
 </code></pre><p>需要注意的是，当你对组件使用 <code>ref</code> 时，是对组件的引用（而不是底层元素），所以你可以访问其方法。</p>
-<h3 id="7-almost-component"><a href="#7-almost-component" class="headerlink" title="7. almost component"></a>7. almost component</h3><p>设想你正在写一个搜索用户的组件，当你输入的时候，你会看到一列潜在匹配的用户名和头像，就像这样。</p>
+<h3 id="7-组件的边界"><a href="#7-组件的边界" class="headerlink" title="7. 组件的边界"></a>7. 组件的边界</h3><p>设想你正在写一个搜索用户的组件，当你输入的时候，你会看到一列潜在匹配的用户名和头像，就像这样。</p>
 <p><img src="http://source.lijundong.com/17-8-3/79573493.jpg" alt=""></p>
 <p>当你在设计这个组件时，你可能会犹豫，列表中的每一项都属于 <code>SearchSuggestion</code> 组件吗 ？只有几行 HTML 和 CSS 代码，也许不是 ？但我曾经告诉自己：“如果感到疑惑，那就再建一个新组件”。</p>
 <p>我如果这样做，就一个单独的组件都没了。相反，只有一个给每个入口返回对应 DOM 的 <code>renderSearchSuggestion</code> 方法，我就生成了如下的结果：</p>
@@ -530,6 +530,12 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         
   <nav class="post-nav">
+    
+      <a class="prev" href="/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">【译】高性能 React：提高性能的 3 个开发工具</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
     
     
       <a class="next" href="/good-coder-not-equal-to-good-developer/">
