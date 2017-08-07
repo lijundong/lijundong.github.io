@@ -651,11 +651,12 @@ h6 {
       margin: 0; }
   .post .post-content img {
     display: block;
-    max-width: 100%;
+    max-width: 98%;
     margin: 0 auto;
-    border: 1px solid;
+    border: 1px solid #ebeef2;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
     border-radius: 5px;
-    padding: 15px; }
+    padding: 10px; }
   .post .post-content > table {
     max-width: 100%;
     margin: 10px 0;
