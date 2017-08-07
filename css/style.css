@@ -650,8 +650,12 @@ h6 {
     .post .post-content blockquote p {
       margin: 0; }
   .post .post-content img {
-    display: inline-block;
-    max-width: 100%; }
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 15px; }
   .post .post-content > table {
     max-width: 100%;
     margin: 10px 0;
