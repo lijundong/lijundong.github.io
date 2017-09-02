@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lijundong.com/"/>
-  <updated>2017-08-07T02:56:14.000Z</updated>
+  <updated>2017-09-02T11:37:23.000Z</updated>
   <id>http://lijundong.com/</id>
   
   <author>
@@ -14,6 +14,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 Dash 管理代码段</title>
+    <link href="http://lijundong.com/manage-code-snippets/"/>
+    <id>http://lijundong.com/manage-code-snippets/</id>
+    <published>2017-09-02T10:04:22.000Z</published>
+    <updated>2017-09-02T11:37:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>要想成为一名合格的泥瓦匠，我们理应管理好手上的工具，对于趁手的工具需要即用即拿，这在工作中会带来事半功倍的效果。</p>
+<p>所以，今天我们讨论一下如何用 Dash 管理以及<strong>同步</strong>代码段（code snippets）。</p>
+<a id="more"></a>
+<h3 id="泥瓦匠和作家的工具"><a href="#泥瓦匠和作家的工具" class="headerlink" title="泥瓦匠和作家的工具"></a>泥瓦匠和作家的工具</h3><p>在之前的开发经历中，我并没有代码段的意识，一是项目做的少，需要复用的少，二是我那时认为一个优秀的开发者应该记住实现的原理而不是实现的代码，all is in mind。随着工作的规范以及工作量的增加，才开始意识到，好记性不如烂笔头。</p>
+<p>一些优秀的文字作品里，我们往往能发现作者援引很多精彩的段落，这些句子关键时刻给文章增色不少，认知比较浅薄阶段，我会感叹这位作者的记性真是好啊，直到看过作家的写作过程才意识到，好文好句的使用不是因为作家的记性好，而是因为他们的笔记做的好，在需要时，可以快速找到相关的内容，进行参考，前期花费时间精力进行整理，使得后期可以高效复用，一劳永逸。</p>
+<p>开发者的代码段就是作家的笔记，在开发量比较大的情况下，会出现很多高频场景，每个场景对应一个实现方式，我们不妨尝试记下这种方式，并在后面再次遇到时进行复用，并且对这种方式进行完善，形成<strong>最佳实践</strong>。</p>
+<h3 id="关于-Dash"><a href="#关于-Dash" class="headerlink" title="关于 Dash"></a>关于 Dash</h3><p>Dash 作为体验极佳的 API 文档浏览器的同时，也拥有优秀的代码段管理功能。通过添加代码段，进行命名，打 tag， 让代码段可以快速被检索到，配合 Alfred 体验更佳。</p>
+<h3 id="Dash-Snippets"><a href="#Dash-Snippets" class="headerlink" title="Dash Snippets"></a>Dash Snippets</h3><h4 id="为什么选-Dash"><a href="#为什么选-Dash" class="headerlink" title="为什么选 Dash"></a>为什么选 Dash</h4><p>在选择工具时，首先考虑是否满足基本需求，首先代码段检索速度必须快，即用即拿，其次必须是可以同步、备份。</p>
+<p>Github 和 国内的 Coding 的都提供了 Gist 服务，这个服务首先解决的是同步问题，线上保存，方便同步和分享，但检索功能受制于网络和客户端，Github Gist 虽有信仰充值，还有体验优秀的开源的客户端 Lepton 支持，无奈 DNS 被污染，间歇性 timeout，导致体验很差，Coding Gist 虽然速度快，但没有客户端支持。</p>
+<p>随后搜到 Dash 早<a href="https://twitter.com/kapeli/status/446340673005187072" target="_blank" rel="external">在 2014 年</a>就实现同步功能，不过方式是通过用户自己同步库文件的方式进行同步，聊胜于无。</p>
+<h4 id="同步配置"><a href="#同步配置" class="headerlink" title="同步配置"></a>同步配置</h4><p>在 <code>preference &gt; Snippets &gt; Snippet library location</code> 中设置库文件（dash 后缀的文件）的路径，如果已经有库文件了，直接指向即可，下面我们介绍还没有库文件该怎么做。<br>可以看到 <code>Save as…</code> 按钮前面有一行提示 <code>To sync, save your library into Dropbox</code>。</p>
+<ul>
+<li>首先保存现有的库文件到你的自动同步文件夹，自动同步的网盘可以选择 DropBox、Google Driver 或者国内的坚果云。（我用的是 Google Driver）</li>
+<li>保存后，再看库文件的配置路径已经自动指向保存的目录</li>
+<li>库文件所做的任何更改都会通过 云盘同步</li>
+<li>在新设备中，只需要将云盘中的库文件拉下拉，Dash 指向目录即可同步</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>工具只是辅助作用，内容有积累，所做的工作才会有意义，不可本末倒置。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;要想成为一名合格的泥瓦匠，我们理应管理好手上的工具，对于趁手的工具需要即用即拿，这在工作中会带来事半功倍的效果。&lt;/p&gt;
+&lt;p&gt;所以，今天我们讨论一下如何用 Dash 管理以及&lt;strong&gt;同步&lt;/strong&gt;代码段（code snippets）。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="规范" scheme="http://lijundong.com/categories/%E8%A7%84%E8%8C%83/"/>
+    
+    
+      <category term="code snippets" scheme="http://lijundong.com/tags/code-snippets/"/>
+    
+      <category term="dash" scheme="http://lijundong.com/tags/dash/"/>
+    
+      <category term="规范" scheme="http://lijundong.com/tags/%E8%A7%84%E8%8C%83/"/>
+    
+      <category term="Google Driver" scheme="http://lijundong.com/tags/Google-Driver/"/>
+    
+  </entry>
   
   <entry>
     <title>【译】高性能 React：提高性能的 3 个开发工具</title>
@@ -1197,56 +1244,6 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
       <category term="阿里云" scheme="http://lijundong.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
     
       <category term="hook" scheme="http://lijundong.com/tags/hook/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git Hooks</title>
-    <link href="http://lijundong.com/git-hooks/"/>
-    <id>http://lijundong.com/git-hooks/</id>
-    <published>2016-12-16T11:25:34.000Z</published>
-    <updated>2016-12-18T11:14:02.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>Git Hooks</code> 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。<br>之前迁移博客到阿里云，<code>Git Hooks</code> 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 <code>post-receive</code>，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。<br><a id="more"></a></p>
-<h3 id="安装-Hooks"><a href="#安装-Hooks" class="headerlink" title="安装 Hooks"></a>安装 Hooks</h3><p>多数情况下，所有的 hook 放在 <code>.git/hooks</code> 目录下，当我们执行 <code>git init</code> 时，Git 就会将一些示例脚本填充在 <code>.git/hooks</code> 目录下，这些示例脚本命名以 <code>.sample</code> 后缀，默认不执行，如果想执行这些脚本，可以重命名(去掉 <code>.sample</code> 后缀)，也可以自定义脚本，保存在 <code>.git/hooks</code> 目录下，<strong>并且给予脚本执行权限</strong>。</p>
-<p><strong>需要注意的是，Hook  不随项目的克隆而进行复制，也不受版本控制的影响。</strong></p>
-<p>Hook 根据使用场景可以分为 客户端(本地) Hooks 和服务端 Hooks。不同使用场景下，根据不同触发条件又分为若干类。</p>
-<h3 id="客户端-本地-Hook"><a href="#客户端-本地-Hook" class="headerlink" title="客户端(本地) Hook"></a>客户端(本地) Hook</h3><h4 id="pre-commit"><a href="#pre-commit" class="headerlink" title="pre-commit"></a>pre-commit</h4><p>在 <code>git commit</code> 命令之后，这个脚本会首先运行，用来检查提交的快照，检查有没有遗漏，或者检查一些自定义的选项(例如检查代码格式，检查空格等)，当脚本返回非 0 值时，则中断 <code>commit</code>。<br>你也可以通过 <code>git commit --no-verify</code> 命令提交来跳过这个过程。</p>
-<p>参数： 无</p>
-<h4 id="prepare-commit-msg"><a href="#prepare-commit-msg" class="headerlink" title="prepare-commit-msg"></a>prepare-commit-msg</h4><p>在 <code>commit</code> 过程中需要编辑 <code>commit message</code>，这个脚本会在默认 <code>commit message</code> 生成之后，在你看到编辑器之前运行，通过这个脚本可以修改默认的 <code>commit message</code>。</p>
-<p>参数：</p>
-<ul>
-<li>默认 <code>commit message</code> 文件路劲</li>
-<li>提交类型</li>
-<li>commit SHA-1(可选)</li>
-</ul>
-<h4 id="commit-msg"><a href="#commit-msg" class="headerlink" title="commit-msg"></a>commit-msg</h4><p>这个脚本可以用来检验用户编辑的 <code>commit message</code>。可以用来检查 <code>commit message</code> 是否合乎规范。</p>
-<p>参数：</p>
-<ul>
-<li>存放用户编写的 <code>commit message</code> 的临时文件的路劲</li>
-</ul>
-<h4 id="pre-rebase"><a href="#pre-rebase" class="headerlink" title="pre-rebase"></a>pre-rebase</h4><p>这个脚本会在 <code>git rebase</code> 命令之前运行，在返回非 0 值时，会中断操作。<br>你可以通过这个脚本来禁用 <code>rebase</code>，示例如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line"># disallow rebasing any commits</span><br><span class="line">echo &quot;pre-rebase: Rebasing is disallowed.&quot;</span><br><span class="line">exit 1</span><br></pre></td></tr></table></figure>
-<h3 id="服务端-Hook"><a href="#服务端-Hook" class="headerlink" title="服务端 Hook"></a>服务端 Hook</h3><p>服务端的 Hook 允许我们在 <code>git push</code> 的不同阶段进行操作。</p>
-<h4 id="pre-receive"><a href="#pre-receive" class="headerlink" title="pre-receive"></a>pre-receive</h4><p>客户端 push 过来的内容，必须通过这个脚本的检查来判断接受与否。</p>
-<h4 id="update"><a href="#update" class="headerlink" title="update"></a>update</h4><p>这个脚本在代码更新之前执行。<br><code>update</code> 和 <code>pre-receive</code> 很相似，不同的是，如果我们想把代码推到不同分支，那么 <code>pre-receive</code> 只会执行一次，而 <code>update</code> 在每个分支更新之前都会执行一次。</p>
-<h4 id="post-receive"><a href="#post-receive" class="headerlink" title="post-receive"></a>post-receive</h4><p><code>post-receive</code> 脚本在所有流程完成之后被触发，前几天迁移博客时才用到，服务器代码库合并了我的 <code>push</code> 后，通过 <code>post-receive</code> 脚本将仓库 <code>clone</code> 到我的博客目录下，以达到更新效果。</p>
-<p>参考:</p>
-<ul>
-<li><a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" target="_blank" rel="external">Customizing Git - Git Hooks</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;code&gt;Git Hooks&lt;/code&gt; 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。&lt;br&gt;之前迁移博客到阿里云，&lt;code&gt;Git Hooks&lt;/code&gt; 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 &lt;code&gt;post-receive&lt;/code&gt;，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="工具使用" scheme="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="git" scheme="http://lijundong.com/tags/git/"/>
     
   </entry>
   
