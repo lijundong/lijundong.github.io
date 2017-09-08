@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Leeon Notes</title>
+    <link>http://lijundong.com/</link>
+    <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>Write down,Mark it.</description>
+    <pubDate>Sat, 02 Sep 2017 11:37:23 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>使用 Dash 管理代码段</title>
+      <link>http://lijundong.com/manage-code-snippets/</link>
+      <guid>http://lijundong.com/manage-code-snippets/</guid>
+      <pubDate>Sat, 02 Sep 2017 10:04:22 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;要想成为一名合格的泥瓦匠，我们理应管理好手上的工具，对于趁手的工具需要即用即拿，这在工作中会带来事半功倍的效果。&lt;/p&gt;
+&lt;p&gt;所以，今天我们讨论一下如何用 Dash 管理以及&lt;strong&gt;同步&lt;/strong&gt;代码段（code snippets）。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/manage-code-snippets/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>【译】高性能 React：提高性能的 3 个开发工具</title>
+      <link>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</link>
+      <guid>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</guid>
+      <pubDate>Sun, 06 Aug 2017 12:31:49 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;原文地址：&lt;a href=&quot;https://medium.freecodecamp.org/make-react-fast-again-tools-and-techniques-for-speeding-up-your-react-app-7ad39d3c1b82&quot;&gt;High Performance React: 3 New Tools to Speed Up Your Apps&lt;/a&gt;&lt;br&gt;文中介绍了几种 React 应用性能检测工具，并且提供了几条关于应用性能提升的解决方案。&lt;/p&gt;
+&lt;/blockquote&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>【译】React 的 10 种迷你开发模式</title>
+      <link>http://lijundong.com/translation-10-mini-react-patterns/</link>
+      <guid>http://lijundong.com/translation-10-mini-react-patterns/</guid>
+      <pubDate>Sun, 30 Jul 2017 08:18:22 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;原文地址：&lt;a href=&quot;https://hackernoon.com/10-react-mini-patterns-c1da92f068c5&quot;&gt;10 React mini-patterns&lt;/a&gt;&lt;br&gt;对于 React 初学者的一些经验之谈，初次翻译，望多指教。&lt;/p&gt;
+&lt;/blockquote&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/translation-10-mini-react-patterns/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>llog-32</title>
+      <link>http://lijundong.com/good-coder-not-equal-to-good-developer/</link>
+      <guid>http://lijundong.com/good-coder-not-equal-to-good-developer/</guid>
+      <pubDate>Thu, 27 Jul 2017 13:15:51 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;时间：2017-7-27&lt;br&gt;坐标：北京&lt;br&gt;天气：阴&lt;/p&gt;
+&lt;/blockquote&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/good-coder-not-equal-to-good-developer/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>网上高效阅读</title>
+      <link>http://lijundong.com/surf-the-Internet-efficiently/</link>
+      <guid>http://lijundong.com/surf-the-Internet-efficiently/</guid>
+      <pubDate>Mon, 24 Jul 2017 04:08:03 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;网络信息多且繁杂，利用工具提高阅读效率，你如何过滤信息 ？你如何使用 Pocket 和 Evernote ？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/surf-the-Internet-efficiently/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Charles 使用小记</title>
+      <link>http://lijundong.com/use-charles-up-to-debug/</link>
+      <guid>http://lijundong.com/use-charles-up-to-debug/</guid>
+      <pubDate>Thu, 20 Jul 2017 08:34:44 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/use-charles-up-to-debug/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>用户体验之 localStorage</title>
+      <link>http://lijundong.com/improve-UE-by-localStorage/</link>
+      <guid>http://lijundong.com/improve-UE-by-localStorage/</guid>
+      <pubDate>Wed, 05 Jul 2017 12:10:38 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;通过在页面应用使用 localStorage 提升用户使用体验。 &lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/improve-UE-by-localStorage/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>给生活一个规范</title>
+      <link>http://lijundong.com/normalize-life-with-tools/</link>
+      <guid>http://lijundong.com/normalize-life-with-tools/</guid>
+      <pubDate>Thu, 29 Jun 2017 12:03:35 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;生活中的高频问题都应有一个相对最优解，如果没有，你应该有一个。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/normalize-life-with-tools/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Chrome 下合并不同 Google 账号数据</title>
+      <link>http://lijundong.com/synchronize-data-between-google-accounts/</link>
+      <guid>http://lijundong.com/synchronize-data-between-google-accounts/</guid>
+      <pubDate>Thu, 16 Mar 2017 10:34:11 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;如果你在 Chrome 上同时拥有了两个 Google 账号，并深受其扰，开始想着合并两个账户的数据到某一个账户，我想告诉你，这真的远比想象的简单。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/synchronize-data-between-google-accounts/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Javascript 的赋值、引用以及深拷贝、浅拷贝</title>
+      <link>http://lijundong.com/deep-clone-vs-shallow-clone/</link>
+      <guid>http://lijundong.com/deep-clone-vs-shallow-clone/</guid>
+      <pubDate>Mon, 27 Feb 2017 13:04:43 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;在之前总结 &lt;a href=&quot;http://www.lijundong.com/this-in-javascript/&quot;&gt;This 用法&lt;/a&gt; 的时候,遇到了传参问题，由此意识到了复制与引用的问题，说得高端些，引申出了深拷贝与浅拷贝的问题，后来在链家面试的时候，和一面也讨论到这个问题，当时的理解比较乱，涉及到深拷贝实现的方面都不熟悉，现在试着总结一下。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/deep-clone-vs-shallow-clone/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>早班车乱谈</title>
+      <link>http://lijundong.com/think-in-early-bus/</link>
+      <guid>http://lijundong.com/think-in-early-bus/</guid>
+      <pubDate>Fri, 17 Feb 2017 01:34:10 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;我们处在一个巨大的变革之中。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/think-in-early-bus/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Mac 备份方案</title>
+      <link>http://lijundong.com/backup-in-mac/</link>
+      <guid>http://lijundong.com/backup-in-mac/</guid>
+      <pubDate>Tue, 14 Feb 2017 09:23:36 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;行走江湖，讲求的是一个稳字。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/backup-in-mac/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Javascript 中 this 的指向</title>
+      <link>http://lijundong.com/this-in-javascript/</link>
+      <guid>http://lijundong.com/this-in-javascript/</guid>
+      <pubDate>Mon, 13 Feb 2017 11:11:50 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;关于 javascript 中 this 用法的笔记，来自 &lt;a href=&quot;https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md&quot;&gt;You Don’t Know JS: this &amp;amp; Object Prototypes&lt;/a&gt; 的读书笔记。内容包括 this 绑定规则的总结，以及遇到具体问题时，判断 this 指向的方法。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/this-in-javascript/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>关于学习的反思</title>
+      <link>http://lijundong.com/think-about-learning/</link>
+      <guid>http://lijundong.com/think-about-learning/</guid>
+      <pubDate>Fri, 10 Feb 2017 07:48:11 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;请告诉我，你的想法 ？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/think-about-learning/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Javascript 变量提升原理解析</title>
+      <link>http://lijundong.com/javascript-variable-lift/</link>
+      <guid>http://lijundong.com/javascript-variable-lift/</guid>
+      <pubDate>Tue, 07 Feb 2017 05:49:49 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;很多 Javascript 教程或者书籍中都会介绍 Javascript 的变量提升，但是你了解其中的原因吗？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/javascript-variable-lift/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Chrome 插件推荐</title>
+      <link>http://lijundong.com/chrome-extensions-recommend/</link>
+      <guid>http://lijundong.com/chrome-extensions-recommend/</guid>
+      <pubDate>Fri, 03 Feb 2017 12:52:51 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;今天总结一下你可能还不知道的 Chrome 插件，可能会解决你长久以来的痛点，欢迎补充。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/chrome-extensions-recommend/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>inline「一」：从 image 底部白边初识 line-height</title>
+      <link>http://lijundong.com/image-and-line-height/</link>
+      <guid>http://lijundong.com/image-and-line-height/</guid>
+      <pubDate>Mon, 16 Jan 2017 13:25:28 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;今天在做一个静态页面时，图片底部出现一条 3px 高度的白边，既不是 margin 也不是 padding，找了好久没能解决，后来才发现与 line-height 相关，问题解决后查缺补漏。&lt;br&gt;这里作下笔记。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/image-and-line-height/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>可能是写了篇假的年终总结</title>
+      <link>http://lijundong.com/year-again-2017/</link>
+      <guid>http://lijundong.com/year-again-2017/</guid>
+      <pubDate>Sun, 15 Jan 2017 12:35:05 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;2017 年的第一个月已经过了一半，一篇文章都没憋出来，先拿这篇凑数吧&lt;br&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/year-again-2017/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Hexo 自定义日志</title>
+      <link>http://lijundong.com/hexo-blog-custom-log/</link>
+      <guid>http://lijundong.com/hexo-blog-custom-log/</guid>
+      <pubDate>Sun, 25 Dec 2016 06:23:11 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;在这里记录下 Blog 基于 Hexo 和 Next 主题的一些自定义。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自定义 url&lt;/li&gt;
+&lt;li&gt;文末添加版权说明&lt;/li&gt;
+&lt;li&gt;文末添加推荐文章列表&lt;/li&gt;
+&lt;li&gt;博客迁移&lt;/li&gt;
+&lt;li&gt;添加备案信息&lt;/li&gt;
+&lt;li&gt;添加打赏功能&lt;/li&gt;
+&lt;/ul&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/hexo-blog-custom-log/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>小记 - Hexo 部署到阿里云服务器</title>
+      <link>http://lijundong.com/note-hexo-deploy-on-server/</link>
+      <guid>http://lijundong.com/note-hexo-deploy-on-server/</guid>
+      <pubDate>Sun, 18 Dec 2016 15:58:45 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;前几天把 hexo blog 迁移到阿里云服务器，全程看别人的文章，每篇文章描述的方式不尽相同，加之软件环境的不同，再加之我的理解能力短板，中间走了好几次弯路，配完之后，对整体过程加深了理解，之后又重新看了 &lt;code&gt;git hook&lt;/code&gt; 的文档，结合配置过程，这里做一次小记。&lt;br&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/note-hexo-deploy-on-server/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
