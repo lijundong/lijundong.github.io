@@ -4,6 +4,73 @@
   
     
     <entry>
+      <title><![CDATA[zepto 添加 slideDown 和 slideUp]]></title>
+      <url>http://lijundong.com/add-slide-in-zepto/</url>
+      <content type="html"><![CDATA[<p>之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。</p>
+<a id="more"></a>
+<p>主要思路是通过 <code>animate</code> 控制元素的高度，<code>overflow: hidden</code>，动画结束时清空临时样式，在 <code>callback</code> 中操作元素的类或者进行其他操作。</p>
+<pre><code>(function ($) {
+$.fn.slideDown = function (duration, callback) {
+var position = this.css(&apos;position&apos;);
+this.show();
+this.css({
+  position: &apos;absolute&apos;,
+  visibility: &apos;hidden&apos;
+});
+var height = this.height();
+this.css({
+  position: position,
+  visibility: &apos;visible&apos;,
+  overflow: &apos;hidden&apos;,
+  height: 0
+});
+var that = this;
+this.animate({
+  height: height
+}, duration, &quot;linear&quot;, function() {
+that.removeAttr(&quot;style&quot;);
+callback();
+});
+};
+$.fn.slideUp = function (duration, callback) {
+var that = this;
+var height = this.height();
+this.css({
+overflow: &apos;hidden&apos;,
+height: height
+});
+this.animate({
+height: 0
+},duration, &apos;linear&apos;, function () {
+that.removeAttr(&quot;style&quot;);
+callback();
+});
+};
+})(Zepto);
+</code></pre><p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/12274766/how-to-implement-jquery-like-slidedown-in-zepto" target="_blank" rel="external">How to implement jquery like slideDown() in zepto</a></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> zepto </tag>
+            
+            <tag> slide </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[使用 Dash 管理代码段]]></title>
       <url>http://lijundong.com/manage-code-snippets/</url>
       <content type="html"><![CDATA[<p>要想成为一名合格的泥瓦匠，我们理应管理好手上的工具，对于趁手的工具需要即用即拿，这在工作中会带来事半功倍的效果。</p>
@@ -529,8 +596,8 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
       <content type="html"><![CDATA[<p>通过在页面应用使用 localStorage 提升用户使用体验。 </p>
 <a id="more"></a>
 <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>首先，来说两个关于用户体验的经历。<br>大学在校期间，经常被安排在教学系统上填写各种信息采集表，教学系统是学校找外面外包公司做的，给的钱多，出的活却很烂，信息采集的表单是很老旧的 table 布局，一页一个表单，一个表单有几十个项，当你辛辛苦苦填完了整个表单，点击提交按钮页面却没有响应，系统卡了？你抱着试一试的心态刷新了页面，恭喜你，之前填的数据全部丢失，像是卷入了一个黑洞，你又从第一项开始填。这样的系统毫无用户体验可言，不是强制要求，没人愿意打开这样的网站。<br>到了大三找实习，投简历到阿里，需要在系统上填一些信息，对应的也是一个表单很多项，巧的是，提交时页面卡住了，虽然脑海中重现了被学校系统支配的恐惧，但除了刷新页面别无选择，刷新之后，页面回来了，之前填写的数据竟然原封不动的回来了，当时很菜，不知道是怎么实现，就觉得背后的技术肯定很厉害，后面才去了解这方面的知识。<br>后来了解了 localStorage 之后，才意识到表单数据保存背后的技术很简单，但是用在了相应的场景，给用户带来的是非常棒的用户体验，从那之后，我对阿里校招页面一直很有好感。</p>
-<h3 id="关于-localStorage"><a href="#关于-localStorage" class="headerlink" title="关于 localStorage"></a>关于 localStorage</h3><h4 id="容量"><a href="#容量" class="headerlink" title="容量"></a>容量</h4><p>localStorage 的容量是相对其作用域而言，而 localStorage 的作用域是 <code>协议 + 主机名 + 端口</code>，目前业界默认同一作用域下拥有 5M 的容量，手机端和 PC 端标准略有不同。<br>数据以键值对方式存储，同一作用域下的数据可以被相互访问，并且不允许跨域。</p>
-<h4 id="API"><a href="#API" class="headerlink" title="API"></a>API</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">localStorage.setItem(<span class="string">"name"</span>,<span class="string">"leeon"</span>);	<span class="comment">//设置 name 值 为 leeon</span></span><br><span class="line">localStorage.getItem(<span class="string">"name"</span>);	<span class="comment">//获取 name 的值</span></span><br><span class="line">localStorage.key(<span class="number">0</span>); 	<span class="comment">//获取第 0 个数据项的 key 名</span></span><br><span class="line">localStorage.removeItem(<span class="string">"name"</span>);	<span class="comment">//移除 name 对应的键值对</span></span><br><span class="line">localStorage.clear();	<span class="comment">//清除当前作用域下的所有localstorage数据</span></span><br></pre></td></tr></table></figure>
+<h3 id="关于-localStorage"><a href="#关于-localStorage" class="headerlink" title="关于 localStorage"></a>关于 localStorage</h3><h4 id="容量"><a href="#容量" class="headerlink" title="容量"></a>容量</h4><p>localStorage 的容量是相对其作用域而言，而 localStorage 的作用域是 <code>协议 + 主机名 + 端口</code>，目前业界默认同一作用域下拥有 5M 的容量，手机端和 PC 端标准略有不同。<br>数据以键值对方式存储，同一作用域下的数据可以被相互访问，并且不允许跨域。<br><strong>注意：</strong> localStorage 存储只支持存储字符串，因此在存储对象时需要使用 <code>JSON.stringify()</code> 以及 <code>JSON.parse()</code> 进行序列化以及解析。</p>
+<h4 id="API"><a href="#API" class="headerlink" title="API"></a>API</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">localStorage.setItem(<span class="string">"name"</span>,<span class="string">"leeon"</span>);   <span class="comment">//设置 name 值 为 leeon</span></span><br><span class="line">localStorage.getItem(<span class="string">"name"</span>);   <span class="comment">//获取 name 的值</span></span><br><span class="line">localStorage.key(<span class="number">0</span>);    <span class="comment">//获取第 0 个数据项的 key 名</span></span><br><span class="line">localStorage.removeItem(<span class="string">"name"</span>);    <span class="comment">//移除 name 对应的键值对</span></span><br><span class="line">localStorage.clear();   <span class="comment">//清除当前作用域下的所有localstorage数据</span></span><br></pre></td></tr></table></figure>
 <h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>上面提到的表单数据保存是最常见的场景，避免信息的丢失，实现方式是在 <code>input</code> 标签 <code>blur</code>（失焦) 后，触发 localStorage 存储，页面加载之后，从 localStorage 读取已存储的数据，表单提交成功后，移除存储的数据。</p>
 <p>还有一种情况，类似于博客系统内置的评论功能，页面可以参见下图，这样的场景，没有登陆，用户信息不能持久化保存，每次评论都需要再次填写基础信息<br><img src="http://source.lijundong.com/17-7-6/47641822.jpg" alt=""></p>
 <p>应用 localStorage 保存用户基础信息，我用 React 写了一个评论框输入组件，包含的 <code>_saveUsername</code> 和 <code>_loadUsername</code> 方法对应着用户信息的存储以及获取，分别会在输入框失焦以及页面渲染时被调用，体验更好的方式则是提供一个保存基本信息的选项，用户在勾选后，信息被保存。</p>
@@ -1091,7 +1158,7 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -1711,9 +1778,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> vim </tag>
-            
             <tag> linux </tag>
+            
+            <tag> vim </tag>
             
             <tag> 正则 </tag>
             
@@ -2613,9 +2680,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
         
@@ -2915,10 +2982,10 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://source.lijundong.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://source.lijundong.com/16-3-11/22540140.jpg" alt=""></li>
@@ -3046,12 +3113,12 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 </ul>
 </li>
 <li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;</span>水平居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/58206411.jpg" alt="水平居中"></p>
 <ul>
-<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;</span>垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/29762873.jpg" alt="垂直居中"></p>

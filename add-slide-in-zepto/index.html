@@ -12,10 +12,12 @@
 
 
 
-  <meta name="description" content="Write down,Mark it."/>
+  <meta name="description" content="zepto 添加 slideDown 和 slideUp"/>
 
 
 
+
+  <meta name="keywords" content="zepto,slide," />
 
 
 
@@ -29,18 +31,19 @@
 
 
 
-<link rel="canonical" href="http://lijundong.com/archives/2016/11/"/>
+<link rel="canonical" href="http://lijundong.com/add-slide-in-zepto/"/>
 
 
-<meta name="description" content="Write down,Mark it.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leeon Notes">
-<meta property="og:url" content="http://lijundong.com/archives/2016/11/index.html">
+<meta name="description" content="之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="zepto 添加 slideDown 和 slideUp">
+<meta property="og:url" content="http://lijundong.com/add-slide-in-zepto/index.html">
 <meta property="og:site_name" content="Leeon Notes">
-<meta property="og:description" content="Write down,Mark it.">
+<meta property="og:description" content="之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。">
+<meta property="og:updated_time" content="2017-09-26T12:53:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leeon Notes">
-<meta name="twitter:description" content="Write down,Mark it.">
+<meta name="twitter:title" content="zepto 添加 slideDown 和 slideUp">
+<meta name="twitter:description" content="之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -79,11 +82,7 @@
 
 
 
-    <title>
-  
-    Archives · Leeon Notes
-  
-</title>
+    <title> zepto 添加 slideDown 和 slideUp · Leeon Notes </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -204,76 +203,166 @@
           <div id="content" class="content">
             
   
-  <section id="archive" class="archive">
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          zepto 添加 slideDown 和 slideUp
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          Sep 26, 2017
+        </span>
+      </div>
+    </header>
+
     
-      
-        <div class="archive-title">
-          <h2 class="archive-name"> All </h2>
-          <span class="archive-post-counter">
-            71 Posts In Total
-          </span>
-        </div>
-      
     
+
+    <div class="post-content">
+      
+        <p>之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。</p>
+<a id="more"></a>
+<p>主要思路是通过 <code>animate</code> 控制元素的高度，<code>overflow: hidden</code>，动画结束时清空临时样式，在 <code>callback</code> 中操作元素的类或者进行其他操作。</p>
+<pre><code>(function ($) {
+$.fn.slideDown = function (duration, callback) {
+var position = this.css(&apos;position&apos;);
+this.show();
+this.css({
+  position: &apos;absolute&apos;,
+  visibility: &apos;hidden&apos;
+});
+var height = this.height();
+this.css({
+  position: position,
+  visibility: &apos;visible&apos;,
+  overflow: &apos;hidden&apos;,
+  height: 0
+});
+var that = this;
+this.animate({
+  height: height
+}, duration, &quot;linear&quot;, function() {
+that.removeAttr(&quot;style&quot;);
+callback();
+});
+};
+$.fn.slideUp = function (duration, callback) {
+var that = this;
+var height = this.height();
+this.css({
+overflow: &apos;hidden&apos;,
+height: height
+});
+this.animate({
+height: 0
+},duration, &apos;linear&apos;, function () {
+that.removeAttr(&quot;style&quot;);
+callback();
+});
+};
+})(Zepto);
+</code></pre><p>参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/12274766/how-to-implement-jquery-like-slidedown-in-zepto" target="_blank" rel="external">How to implement jquery like slideDown() in zepto</a></li>
+</ul>
+
+      
+    </div>
 
     
       
-        
-        
+      
 
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>Author: </span>
+      <span>leeon</span>
+    </p>
+    <p class="copyright-item">
+      <span>Origin: </span>
+      <a href="http://lijundong.com">http://lijundong.com</a>
+    </p>
+    <p class="copyright-item">
+      <span>Link: </span>
+      <a href="http://lijundong.com/add-slide-in-zepto/">http://lijundong.com/add-slide-in-zepto/</a>
+    </p>
+
+    <p class="copyright-item lincese">
+      
+      本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+    </p>
+  </div>
+
+
+
+      
+      
+  <div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden />
+    <label class="reward-button" for="reward">Reward</label>
+    <div class="qr-code">
+      
+      
+        <label class="qr-code-image" for="reward">
+          <img class="image" src="/image/reward/wechat.png" title="wechat">
+        </label>
+      
+      
+        <label class="qr-code-image" for="reward">
+          <img class="image" src="/image/reward/alipay.png" title="alipay">
+        </label>
+      
+    </div>
+  </div>
+
+    
+
+    
+      <footer class="post-footer">
         
-          
-          <div class="collection-title">
-            <h2 class="archive-year">2016</h2>
+          <div class="post-tags">
+            
+              <a href="/tags/zepto/">zepto</a>
+            
+              <a href="/tags/slide/">slide</a>
+            
           </div>
         
-      
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            11-23
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/start-latex-and-configure-latext-editor-with-sublime/" class="archive-post-link">
-            SublimeText 配置 LaTeX 编辑器
-          </a>
-        </span>
-      </div>
-    
-      
         
         
-
-        
-      
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            11-17
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/novel-crawler-by-Nodejs/" class="archive-post-link">
-            Node.js 实现简单小说爬虫
-          </a>
-        </span>
-      </div>
+  <nav class="post-nav">
     
-  </section>
-
-  
-  <nav class="pagination">
     
+      <a class="next" href="/manage-code-snippets/">
+        <span class="next-text nav-default">使用 Dash 管理代码段</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
+      </footer>
+    
+
+  </article>
 
 
           </div>
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>  
       </main>
@@ -350,6 +439,28 @@
     </div>
 
     
+  
+
+  
+  <script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://lijundong.com/add-slide-in-zepto/';
+        this.page.identifier = 'add-slide-in-zepto/';
+        this.page.title = 'zepto 添加 slideDown 和 slideUp';
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+
+    s.src = '//http-www-lijundong-com.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();  
+  </script>
+
+  
+
+
 
 
     

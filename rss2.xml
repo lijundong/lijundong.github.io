@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 02 Sep 2017 11:37:23 GMT</pubDate>
+    <pubDate>Tue, 26 Sep 2017 12:53:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>zepto 添加 slideDown 和 slideUp</title>
+      <link>http://lijundong.com/add-slide-in-zepto/</link>
+      <guid>http://lijundong.com/add-slide-in-zepto/</guid>
+      <pubDate>Tue, 26 Sep 2017 12:37:08 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/add-slide-in-zepto/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>使用 Dash 管理代码段</title>
@@ -290,20 +304,6 @@
       </description>
       
       <comments>http://lijundong.com/hexo-blog-custom-log/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>小记 - Hexo 部署到阿里云服务器</title>
-      <link>http://lijundong.com/note-hexo-deploy-on-server/</link>
-      <guid>http://lijundong.com/note-hexo-deploy-on-server/</guid>
-      <pubDate>Sun, 18 Dec 2016 15:58:45 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;前几天把 hexo blog 迁移到阿里云服务器，全程看别人的文章，每篇文章描述的方式不尽相同，加之软件环境的不同，再加之我的理解能力短板，中间走了好几次弯路，配完之后，对整体过程加深了理解，之后又重新看了 &lt;code&gt;git hook&lt;/code&gt; 的文档，结合配置过程，这里做一次小记。&lt;br&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/note-hexo-deploy-on-server/#disqus_thread</comments>
     </item>
     
   </channel>

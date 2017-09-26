@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lijundong.com/add-slide-in-zepto/</loc>
+    
+    <lastmod>2017-09-26T12:53:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/improve-UE-by-localStorage/</loc>
+    
+    <lastmod>2017-09-26T11:01:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lijundong.com/manage-code-snippets/</loc>
     
     <lastmod>2017-09-02T11:37:23.000Z</lastmod>
@@ -40,13 +54,6 @@
     <loc>http://lijundong.com/surf-the-Internet-efficiently/</loc>
     
     <lastmod>2017-07-24T06:07:46.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/improve-UE-by-localStorage/</loc>
-    
-    <lastmod>2017-07-06T10:11:15.000Z</lastmod>
     
   </url>
   
@@ -128,7 +135,7 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
+    <loc>http://lijundong.com/Kindle-content-manage/</loc>
     
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     
@@ -142,83 +149,6 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/Chrome-extension-one-clock/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/wechat-node-0th/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/sheets-collections/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/SublimeText-extension-recommend/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/novel-crawler-by-Nodejs/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Kindle-content-manage/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lijundong.com/Canvas-animation-about-sort/</loc>
     
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
@@ -226,28 +156,7 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/normal-flow/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/html-make-clock-select/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/node-js-dirname-difference/</loc>
-    
-    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/information-system-Wampserver/</loc>
+    <loc>http://lijundong.com/wechat-node-0th/</loc>
     
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     
@@ -262,6 +171,104 @@
   
   <url>
     <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/SublimeText-extension-recommend/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/novel-crawler-by-Nodejs/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/normal-flow/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/sheets-collections/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/html-make-clock-select/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Chrome-extension-one-clock/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/node-js-dirname-difference/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
+    
+    <lastmod>2017-02-12T07:45:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/information-system-Wampserver/</loc>
     
     <lastmod>2017-02-12T07:45:02.000Z</lastmod>
     
