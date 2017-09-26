@@ -9,47 +9,10 @@
       <content type="html"><![CDATA[<p>之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。</p>
 <a id="more"></a>
 <p>主要思路是通过 <code>animate</code> 控制元素的高度，<code>overflow: hidden</code>，动画结束时清空临时样式，在 <code>callback</code> 中操作元素的类或者进行其他操作。</p>
-<pre><code>(function ($) {
-$.fn.slideDown = function (duration, callback) {
-var position = this.css(&apos;position&apos;);
-this.show();
-this.css({
-  position: &apos;absolute&apos;,
-  visibility: &apos;hidden&apos;
-});
-var height = this.height();
-this.css({
-  position: position,
-  visibility: &apos;visible&apos;,
-  overflow: &apos;hidden&apos;,
-  height: 0
-});
-var that = this;
-this.animate({
-  height: height
-}, duration, &quot;linear&quot;, function() {
-that.removeAttr(&quot;style&quot;);
-callback();
-});
-};
-$.fn.slideUp = function (duration, callback) {
-var that = this;
-var height = this.height();
-this.css({
-overflow: &apos;hidden&apos;,
-height: height
-});
-this.animate({
-height: 0
-},duration, &apos;linear&apos;, function () {
-that.removeAttr(&quot;style&quot;);
-callback();
-});
-};
-})(Zepto);
-</code></pre><p>参考：</p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">`<span class="javascript">(<span class="function"><span class="keyword">function</span> (<span class="params">$</span>) </span>&#123;</span><br><span class="line">$.fn.slideDown = <span class="function"><span class="keyword">function</span> (<span class="params">duration, callback</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> position = <span class="keyword">this</span>.css(<span class="string">'position'</span>);</span><br><span class="line"><span class="keyword">this</span>.show();</span><br><span class="line"><span class="keyword">this</span>.css(&#123;</span><br><span class="line">  position: <span class="string">'absolute'</span>,</span><br><span class="line">  visibility: <span class="string">'hidden'</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> height = <span class="keyword">this</span>.height();</span><br><span class="line"><span class="keyword">this</span>.css(&#123;</span><br><span class="line">  position: position,</span><br><span class="line">  visibility: <span class="string">'visible'</span>,</span><br><span class="line">  overflow: <span class="string">'hidden'</span>,</span><br><span class="line">  height: <span class="number">0</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">var</span> that = <span class="keyword">this</span>;</span><br><span class="line"><span class="keyword">this</span>.animate(&#123;</span><br><span class="line">  height: height</span><br><span class="line">&#125;, duration, <span class="string">"linear"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">that.removeAttr(<span class="string">"style"</span>);</span><br><span class="line">callback();</span><br><span class="line">&#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">$.fn.slideUp = <span class="function"><span class="keyword">function</span> (<span class="params">duration, callback</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> that = <span class="keyword">this</span>;</span><br><span class="line"><span class="keyword">var</span> height = <span class="keyword">this</span>.height();</span><br><span class="line"><span class="keyword">this</span>.css(&#123;</span><br><span class="line">overflow: <span class="string">'hidden'</span>,</span><br><span class="line">height: height</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">this</span>.animate(&#123;</span><br><span class="line">height: <span class="number">0</span></span><br><span class="line">&#125;,duration, <span class="string">'linear'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">that.removeAttr(<span class="string">"style"</span>);</span><br><span class="line">callback();</span><br><span class="line">&#125;);</span><br><span class="line">&#125;;</span><br><span class="line">&#125;)(Zepto);</span></span><br></pre></td></tr></table></figure>
+<p>`参考：</p>
 <ul>
-<li><a href="https://stackoverflow.com/questions/12274766/how-to-implement-jquery-like-slidedown-in-zepto" target="_blank" rel="external">How to implement jquery like slideDown() in zepto</a></li>
+<li><a href="">How to implement jquery like slideDown() in zepto</a></li>
 </ul>
 ]]></content>
       
@@ -1158,7 +1121,7 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <h4 id="优雅的云备份"><a href="#优雅的云备份" class="headerlink" title="优雅的云备份"></a>优雅的云备份</h4><p>复制太过简单粗暴，有更优雅的方式，就是当作 git 项目托管在平台上，如果不想作为 public 项目托管的话，可以选择 github 的付费托管或者国内的 coding 平台进行托管。</p>
 <p>如果你的主题是 clone 的平台上的开源项目，主题本身就存在版本控制，那么需要知道知道 <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97" target="_blank" rel="external">Git 工具-子模块</a>。</p>
 <h3 id="添加备案信息"><a href="#添加备案信息" class="headerlink" title="添加备案信息"></a>添加备案信息</h3><p>我用的是 NEXT 的主题，直接选择修改 <code>themes&gt;next&gt;layout &gt;_partials&gt;footer.swig</code>，追加以下信息，div 中包裹的是备案信息。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span><br><span class="line">蜀ICP备<span class="number">16024716</span>号<span class="number">-1</span></span><br><span class="line">&lt;<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;width:100%;height:50"</span>&gt;</span></span><br><span class="line">蜀ICP备16024716号-1</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h3><p>在 NEXT 主题配置文件中，添加打赏配置，分别是微信和支付宝的支付二维码</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">reward_comment:</span> 鸡腿还是可乐 ？</span><br><span class="line"><span class="string">wechatpay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/59734441-file_1486916997049_2842.png</span></span><br><span class="line"><span class="string">alipay:</span> <span class="string">http:</span><span class="comment">//source.lijundong.com/17-2-13/74686190-file_1486916997175_15cd8.png</span></span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -1778,9 +1741,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> linux </tag>
-            
             <tag> vim </tag>
+            
+            <tag> linux </tag>
             
             <tag> 正则 </tag>
             
@@ -2680,9 +2643,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
         
@@ -2982,10 +2945,10 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <h3 id="clear"><a href="#clear" class="headerlink" title="clear"></a>clear</h3><p>clear生来就是为了清除浮动的。</p>
 <h4 id="认识clear"><a href="#认识clear" class="headerlink" title="认识clear"></a>认识clear</h4><p>今早看到这节内容时，心想clear就这几个参数，还需要注意什么？后来看了篇<a href="http://www.cnblogs.com/iyangyuan/archive/2013/03/27/2983813.html" target="_blank" rel="external">文章</a>,才意识很多重要的细节我从未接触过，细思恐极。<br>盲点：</p>
 <ul>
-<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<li>clear是作用于元素自己，对两边的元素并没有影响，甲乙两个div左浮动，现在想让乙浮动到下一行。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;甲&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;乙&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://source.lijundong.com/16-3-11/62991421.jpg" alt="甲乙并列"><br>这时候在甲上用clear:right;是无用的，因为clear作用在甲上，甲右边有浮动元素，而甲却根本无法移动。效果是没效果。<br>但是乙说:“我可以动呀”<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#1abc9c;"</span>&gt;</span>甲<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"height:80px;width:80px;float:left;background:#3498db;clear:left;"</span>&gt;</span>乙<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p><img src="http://source.lijundong.com/16-3-11/70003120.jpg" alt=""></p>
 <ul>
 <li>第二个盲点是： div的顺序是HTML代码中div的顺序决定的。<strong>靠近页面边缘的一端是前，远离页面边缘的一端是后。</strong><br>即：<br><img src="http://source.lijundong.com/16-3-11/22540140.jpg" alt=""></li>
@@ -3113,12 +3076,12 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 </ul>
 </li>
 <li><p>水平居中<br>元素水平居中：左右外边距设置为auto，left、width、right不是auto，此时左右外边距会设置成相等的值。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;水平居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;right:1em;left:1em;width:5em;height:100%;background:#aff;  margin:0 auto;"</span>&gt;</span>水平居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/58206411.jpg" alt="水平居中"></p>
 <ul>
-<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">div</span> style=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span><br><span class="line">        &lt;<span class="keyword">div</span> style=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;垂直居中&lt;/<span class="keyword">div</span>&gt;</span><br><span class="line">&lt;/<span class="keyword">div</span>&gt;</span><br></pre></td></tr></table></figure>
+<li>垂直居中<br>元素垂直居中：上下外边距设置为auto，top、height、bottom不是auto，此时上下外边距设置成相等的值。<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position:relative;width:10em;height:10em; border:1px solid;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"position :absolute;left:0;width:100%;background:#aff; height:5em; bottom :0;top:0;margin:auto 0;"</span>&gt;</span>垂直居中<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><img src="http://source.lijundong.com/16-3-8/29762873.jpg" alt="垂直居中"></p>
