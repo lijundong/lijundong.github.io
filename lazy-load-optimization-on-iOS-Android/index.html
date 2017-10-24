@@ -12,12 +12,12 @@
 
 
 
-  <meta name="description" content="zepto 添加 slideDown 和 slideUp"/>
+  <meta name="description" content="移动端 H5 页面滚动加载优化"/>
 
 
 
 
-  <meta name="keywords" content="zepto,slide," />
+  <meta name="keywords" content="scroll,touchevent,移动端,滚动加载," />
 
 
 
@@ -31,19 +31,25 @@
 
 
 
-<link rel="canonical" href="http://lijundong.com/add-slide-in-zepto/"/>
+<link rel="canonical" href="http://lijundong.com/lazy-load-optimization-on-iOS-Android/"/>
 
 
-<meta name="description" content="之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。">
+<meta name="description" content="当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。
+PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。
+而在移动端，我们更想让用户无感知地浏">
 <meta property="og:type" content="article">
-<meta property="og:title" content="zepto 添加 slideDown 和 slideUp">
-<meta property="og:url" content="http://lijundong.com/add-slide-in-zepto/index.html">
+<meta property="og:title" content="移动端 H5 页面滚动加载优化">
+<meta property="og:url" content="http://lijundong.com/lazy-load-optimization-on-iOS-Android/index.html">
 <meta property="og:site_name" content="Leeon Notes">
-<meta property="og:description" content="之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。">
-<meta property="og:updated_time" content="2017-09-26T13:02:15.000Z">
+<meta property="og:description" content="当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。
+PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。
+而在移动端，我们更想让用户无感知地浏">
+<meta property="og:updated_time" content="2017-10-15T14:05:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="zepto 添加 slideDown 和 slideUp">
-<meta name="twitter:description" content="之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。">
+<meta name="twitter:title" content="移动端 H5 页面滚动加载优化">
+<meta name="twitter:description" content="当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。
+PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。
+而在移动端，我们更想让用户无感知地浏">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -82,7 +88,7 @@
 
 
 
-    <title> zepto 添加 slideDown 和 slideUp · Leeon Notes </title>
+    <title> 移动端 H5 页面滚动加载优化 · Leeon Notes </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -207,31 +213,35 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          zepto 添加 slideDown 和 slideUp
+          移动端 H5 页面滚动加载优化
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          Sep 26, 2017
+          Oct 15, 2017
         </span>
       </div>
     </header>
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#监听-Scroll"><span class="toc-text">监听 Scroll</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scroll-兼容问题"><span class="toc-text">scroll 兼容问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#监听-touchevent"><span class="toc-text">监听 touchevent</span></a></li></ol>
+    </div>
+  </div>
+
 
     <div class="post-content">
       
-        <p>之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。</p>
+        <p>当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。</p>
+<p>PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。</p>
+<p>而在移动端，我们更想让用户无感知地浏览到页面最后一页，保证了信息阅读的连续、流畅，既然这样，自然选择监听 scroll 懒加载的方式进行分页。</p>
 <a id="more"></a>
-<p>主要思路是通过 <code>animate</code> 控制元素的高度，<code>overflow: hidden</code>，动画结束时清空临时样式，在 <code>callback</code> 中操作元素的类或者进行其他操作。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params">$</span>) </span>&#123;</span><br><span class="line">    $.fn.slideDown = <span class="function"><span class="keyword">function</span> (<span class="params">duration, callback</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> position = <span class="keyword">this</span>.css(<span class="string">'position'</span>);</span><br><span class="line">        <span class="keyword">this</span>.show();</span><br><span class="line">        <span class="keyword">this</span>.css(&#123;</span><br><span class="line">          position: <span class="string">'absolute'</span>,</span><br><span class="line">          visibility: <span class="string">'hidden'</span></span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">var</span> height = <span class="keyword">this</span>.height();</span><br><span class="line">        <span class="keyword">this</span>.css(&#123;</span><br><span class="line">          position: position,</span><br><span class="line">          visibility: <span class="string">'visible'</span>,</span><br><span class="line">          overflow: <span class="string">'hidden'</span>,</span><br><span class="line">          height: <span class="number">0</span></span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">var</span> that = <span class="keyword">this</span>;</span><br><span class="line">        <span class="keyword">this</span>.animate(&#123;</span><br><span class="line">          height: height</span><br><span class="line">        &#125;, duration, <span class="string">"linear"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            that.removeAttr(<span class="string">"style"</span>);</span><br><span class="line">            callback();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $.fn.slideUp = <span class="function"><span class="keyword">function</span> (<span class="params">duration, callback</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> that = <span class="keyword">this</span>;</span><br><span class="line">        <span class="keyword">var</span> height = <span class="keyword">this</span>.height();</span><br><span class="line">        <span class="keyword">this</span>.css(&#123;</span><br><span class="line">            overflow: <span class="string">'hidden'</span>,</span><br><span class="line">            height: height</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">this</span>.animate(&#123;</span><br><span class="line">            height: <span class="number">0</span></span><br><span class="line">        &#125;,duration, <span class="string">'linear'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            that.removeAttr(<span class="string">"style"</span>);</span><br><span class="line">            callback();</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;)(Zepto);</span><br></pre></td></tr></table></figure>
-<p>参考：</p>
-<ul>
-<li><a href="">How to implement jquery like slideDown() in zepto</a></li>
-</ul>
-
+<h3 id="监听-Scroll"><a href="#监听-Scroll" class="headerlink" title="监听 Scroll"></a>监听 Scroll</h3><p>为了方便演示，我们引入 jQuery／zepto，</p>
+<h3 id="scroll-兼容问题"><a href="#scroll-兼容问题" class="headerlink" title="scroll 兼容问题"></a>scroll 兼容问题</h3><h3 id="监听-touchevent"><a href="#监听-touchevent" class="headerlink" title="监听 touchevent"></a>监听 touchevent</h3>
       
     </div>
 
@@ -250,7 +260,7 @@
     </p>
     <p class="copyright-item">
       <span>Link: </span>
-      <a href="http://lijundong.com/add-slide-in-zepto/">http://lijundong.com/add-slide-in-zepto/</a>
+      <a href="http://lijundong.com/lazy-load-optimization-on-iOS-Android/">http://lijundong.com/lazy-load-optimization-on-iOS-Android/</a>
     </p>
 
     <p class="copyright-item lincese">
@@ -288,9 +298,13 @@
         
           <div class="post-tags">
             
-              <a href="/tags/zepto/">zepto</a>
+              <a href="/tags/scroll/">scroll</a>
             
-              <a href="/tags/slide/">slide</a>
+              <a href="/tags/touchevent/">touchevent</a>
+            
+              <a href="/tags/移动端/">移动端</a>
+            
+              <a href="/tags/滚动加载/">滚动加载</a>
             
           </div>
         
@@ -298,15 +312,9 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/lazy-load-optimization-on-iOS-Android/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">移动端 H5 页面滚动加载优化</span>
-        <span class="prev-text nav-mobile">Prev</span>
-      </a>
     
-    
-      <a class="next" href="/manage-code-snippets/">
-        <span class="next-text nav-default">使用 Dash 管理代码段</span>
+      <a class="next" href="/add-slide-in-zepto/">
+        <span class="next-text nav-default">zepto 添加 slideDown 和 slideUp</span>
         <span class="prev-text nav-mobile">Next</span>
         <i class="iconfont icon-right"></i>
       </a>
@@ -413,9 +421,9 @@
   
   <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://lijundong.com/add-slide-in-zepto/';
-        this.page.identifier = 'add-slide-in-zepto/';
-        this.page.title = 'zepto 添加 slideDown 和 slideUp';
+        this.page.url = 'http://lijundong.com/lazy-load-optimization-on-iOS-Android/';
+        this.page.identifier = 'lazy-load-optimization-on-iOS-Android/';
+        this.page.title = '移动端 H5 页面滚动加载优化';
     };
     (function() {
     var d = document, s = d.createElement('script');

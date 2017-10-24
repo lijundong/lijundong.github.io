@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title><![CDATA[移动端 H5 页面滚动加载优化]]></title>
+      <url>http://lijundong.com/lazy-load-optimization-on-iOS-Android/</url>
+      <content type="html"><![CDATA[<p>当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。</p>
+<p>PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。</p>
+<p>而在移动端，我们更想让用户无感知地浏览到页面最后一页，保证了信息阅读的连续、流畅，既然这样，自然选择监听 scroll 懒加载的方式进行分页。</p>
+<a id="more"></a>
+<h3 id="监听-Scroll"><a href="#监听-Scroll" class="headerlink" title="监听 Scroll"></a>监听 Scroll</h3><p>为了方便演示，我们引入 jQuery／zepto，</p>
+<h3 id="scroll-兼容问题"><a href="#scroll-兼容问题" class="headerlink" title="scroll 兼容问题"></a>scroll 兼容问题</h3><h3 id="监听-touchevent"><a href="#监听-touchevent" class="headerlink" title="监听 touchevent"></a>监听 touchevent</h3>]]></content>
+      
+        <categories>
+            
+            <category> 前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> scroll </tag>
+            
+            <tag> touchevent </tag>
+            
+            <tag> 移动端 </tag>
+            
+            <tag> 滚动加载 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[zepto 添加 slideDown 和 slideUp]]></title>
       <url>http://lijundong.com/add-slide-in-zepto/</url>
       <content type="html"><![CDATA[<p>之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。</p>
@@ -1741,9 +1772,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> linux </tag>
-            
             <tag> vim </tag>
+            
+            <tag> linux </tag>
             
             <tag> 正则 </tag>
             
@@ -2643,9 +2674,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
         
