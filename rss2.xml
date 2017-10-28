@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 15 Oct 2017 14:05:18 GMT</pubDate>
+    <pubDate>Sat, 28 Oct 2017 04:40:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>配置 SSH 快捷登陆</title>
+      <link>http://lijundong.com/ssh-login-directly/</link>
+      <guid>http://lijundong.com/ssh-login-directly/</guid>
+      <pubDate>Sat, 28 Oct 2017 02:54:38 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， &lt;code&gt;ssh root@xxx.xxx.xxx.xxx&lt;/code&gt;，接着输入 &lt;code&gt;password&lt;/code&gt;，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 优化前&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 公司机器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh root@xxx.xxx.xxx.xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;password: ******&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 私人机器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh root@xxx.xxx.xxx.xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;password: ******&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#优化后&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#公司机器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh dev-server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 私人机器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh leeon-server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/ssh-login-directly/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>移动端 H5 页面滚动加载优化</title>
@@ -284,20 +298,6 @@
       </description>
       
       <comments>http://lijundong.com/image-and-line-height/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>可能是写了篇假的年终总结</title>
-      <link>http://lijundong.com/year-again-2017/</link>
-      <guid>http://lijundong.com/year-again-2017/</guid>
-      <pubDate>Sun, 15 Jan 2017 12:35:05 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;2017 年的第一个月已经过了一半，一篇文章都没憋出来，先拿这篇凑数吧&lt;br&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/year-again-2017/#disqus_thread</comments>
     </item>
     
   </channel>
