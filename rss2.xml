@@ -8,11 +8,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 28 Oct 2017 04:40:44 GMT</pubDate>
+    <pubDate>Mon, 30 Oct 2017 01:29:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>配置 SSH 快捷登陆</title>
+      <title>配置 SSH 快捷登录</title>
       <link>http://lijundong.com/ssh-login-directly/</link>
       <guid>http://lijundong.com/ssh-login-directly/</guid>
       <pubDate>Sat, 28 Oct 2017 02:54:38 GMT</pubDate>
