@@ -62,6 +62,35 @@
     </entry>
     
     <entry>
+      <title><![CDATA[React + Node.js 前后分离应用搭建「一」]]></title>
+      <url>http://lijundong.com/application-with-react-and-node-1th/</url>
+      <content type="html"><![CDATA[<p>React ：react router 使用，前端路由</p>
+<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+<a id="more"></a>
+]]></content>
+      
+        <categories>
+            
+            <category> 前端 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> react </tag>
+            
+            <tag> node.js </tag>
+            
+            <tag> github </tag>
+            
+            <tag> 前后分离 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[配置 SSH 快捷登录]]></title>
       <url>http://lijundong.com/ssh-login-directly/</url>
       <content type="html"><![CDATA[<p>目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， <code>ssh root@xxx.xxx.xxx.xxx</code>，接着输入 <code>password</code>，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 优化前</span><br><span class="line"># 公司机器</span><br><span class="line">ssh root@xxx.xxx.xxx.xxx</span><br><span class="line">password: ******</span><br><span class="line"># 私人机器</span><br><span class="line">ssh root@xxx.xxx.xxx.xxx</span><br><span class="line">password: ******</span><br><span class="line"></span><br><span class="line">#优化后</span><br><span class="line">#公司机器</span><br><span class="line">ssh dev-server</span><br><span class="line"># 私人机器</span><br><span class="line">ssh leeon-server</span><br></pre></td></tr></table></figure></p>
@@ -112,35 +141,6 @@
             <tag> ssh </tag>
             
             <tag> 服务器 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[React + Node.js 前后分离应用搭建「一」]]></title>
-      <url>http://lijundong.com/application-with-react-and-node-1th/</url>
-      <content type="html"><![CDATA[<p>React ：react router 使用，前端路由</p>
-<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
-<a id="more"></a>
-]]></content>
-      
-        <categories>
-            
-            <category> 前端 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> react </tag>
-            
-            <tag> node.js </tag>
-            
-            <tag> github </tag>
-            
-            <tag> 前后分离 </tag>
             
         </tags>
         
@@ -258,11 +258,11 @@
         
         <tags>
             
-            <tag> 规范 </tag>
-            
             <tag> code snippets </tag>
             
             <tag> dash </tag>
+            
+            <tag> 规范 </tag>
             
             <tag> Google Driver </tag>
             
