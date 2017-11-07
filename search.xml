@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[React + Node.js 前后分离应用搭建「三」]]></title>
+      <title><![CDATA[React + Node「三」API 设计 & 项目部署]]></title>
       <url>http://lijundong.com/application-with-react-and-node-3th/</url>
       <content type="html"><![CDATA[<p>nginx 配置，前后端分离</p>
 <p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
@@ -33,11 +33,11 @@
     </entry>
     
     <entry>
-      <title><![CDATA[React + Node.js 前后分离应用搭建「二」]]></title>
+      <title><![CDATA[React + Node「二」Github 授权]]></title>
       <url>http://lijundong.com/application-with-react-and-node-2th/</url>
       <content type="html"><![CDATA[<p>node：server + 授权</p>
 <p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
-<a id="more"></a>
+<p>第二篇，介绍下 <code>oAuth 2.0</code> 授权机制，以及 Github App 授权过程，通过获取授权使用 Github API。<br><a id="more"></a></p>
 ]]></content>
       
         <categories>
@@ -62,12 +62,20 @@
     </entry>
     
     <entry>
-      <title><![CDATA[React + Node.js 前后分离应用搭建「一」]]></title>
+      <title><![CDATA[React + Node「一」前端搭建]]></title>
       <url>http://lijundong.com/application-with-react-and-node-1th/</url>
-      <content type="html"><![CDATA[<p>React ：react router 使用，前端路由</p>
-<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+      <content type="html"><![CDATA[<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+<p>介绍一下最近做的一个试水 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
+<p>第一篇介绍下前端代码的构建、<code>React router</code> 使用中遇到问题，以及开发完成后部署相关工作。</p>
 <a id="more"></a>
-]]></content>
+<h3 id="依赖版本"><a href="#依赖版本" class="headerlink" title="依赖版本"></a>依赖版本</h3><ul>
+<li>构建工具: create-react-app</li>
+<li>react: 16.0.0</li>
+<li>react-router: 4.2.2</li>
+<li>网络请求: axios</li>
+<li>UI: material-ui</li>
+</ul>
+<h3 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h3><h3 id="前端路由"><a href="#前端路由" class="headerlink" title="前端路由"></a>前端路由</h3><h3 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h3><h3 id="项目构建部署"><a href="#项目构建部署" class="headerlink" title="项目构建部署"></a>项目构建部署</h3>]]></content>
       
         <categories>
             
@@ -83,6 +91,8 @@
             <tag> node.js </tag>
             
             <tag> github </tag>
+            
+            <tag> react router4 </tag>
             
             <tag> 前后分离 </tag>
             
