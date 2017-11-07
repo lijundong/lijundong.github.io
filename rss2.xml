@@ -8,8 +8,38 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 30 Oct 2017 01:29:35 GMT</pubDate>
+    <pubDate>Tue, 07 Nov 2017 15:13:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>React + Node.js 前后分离应用搭建「三」</title>
+      <link>http://lijundong.com/application-with-react-and-node-3th/</link>
+      <guid>http://lijundong.com/application-with-react-and-node-3th/</guid>
+      <pubDate>Sun, 05 Nov 2017 06:43:34 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;nginx 配置，前后端分离&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lijundong/gitcard&quot;&gt;项目地址&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://github.lijundong.com/&quot;&gt;预览地址&lt;/a&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/application-with-react-and-node-3th/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>React + Node.js 前后分离应用搭建「二」</title>
+      <link>http://lijundong.com/application-with-react-and-node-2th/</link>
+      <guid>http://lijundong.com/application-with-react-and-node-2th/</guid>
+      <pubDate>Sat, 04 Nov 2017 02:52:19 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;node：server + 授权&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lijundong/gitcard&quot;&gt;项目地址&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://github.lijundong.com/&quot;&gt;预览地址&lt;/a&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/application-with-react-and-node-2th/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>配置 SSH 快捷登录</title>
@@ -26,6 +56,21 @@
     </item>
     
     <item>
+      <title>React + Node.js 前后分离应用搭建「一」</title>
+      <link>http://lijundong.com/application-with-react-and-node-1th/</link>
+      <guid>http://lijundong.com/application-with-react-and-node-1th/</guid>
+      <pubDate>Fri, 27 Oct 2017 02:51:40 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;React ：react router 使用，前端路由&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lijundong/gitcard&quot;&gt;项目地址&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://github.lijundong.com/&quot;&gt;预览地址&lt;/a&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/application-with-react-and-node-1th/#disqus_thread</comments>
+    </item>
+    
+    <item>
       <title>移动端 H5 页面滚动加载优化</title>
       <link>http://lijundong.com/lazy-load-optimization-on-iOS-Android/</link>
       <guid>http://lijundong.com/lazy-load-optimization-on-iOS-Android/</guid>
@@ -34,7 +79,7 @@
       
         &lt;p&gt;当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。&lt;/p&gt;
 &lt;p&gt;PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。&lt;/p&gt;
-&lt;p&gt;而在移动端，我们更想让用户无感知地浏览到页面最后一页，保证了信息阅读的连续、流畅，既然这样，自然选择监听 scroll 懒加载的方式进行分页。&lt;/p&gt;
+&lt;p&gt;而在移动端，我们更想让用户无感知地浏览到页面最后一页，保证了信息阅读的连续、流畅，既然这样，滚动懒加载的方式处理分页就成了不二之选。&lt;/p&gt;
       
       </description>
       
@@ -256,48 +301,6 @@
       </description>
       
       <comments>http://lijundong.com/think-about-learning/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Javascript 变量提升原理解析</title>
-      <link>http://lijundong.com/javascript-variable-lift/</link>
-      <guid>http://lijundong.com/javascript-variable-lift/</guid>
-      <pubDate>Tue, 07 Feb 2017 05:49:49 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;很多 Javascript 教程或者书籍中都会介绍 Javascript 的变量提升，但是你了解其中的原因吗？&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/javascript-variable-lift/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Chrome 插件推荐</title>
-      <link>http://lijundong.com/chrome-extensions-recommend/</link>
-      <guid>http://lijundong.com/chrome-extensions-recommend/</guid>
-      <pubDate>Fri, 03 Feb 2017 12:52:51 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;今天总结一下你可能还不知道的 Chrome 插件，可能会解决你长久以来的痛点，欢迎补充。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/chrome-extensions-recommend/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>inline「一」：从 image 底部白边初识 line-height</title>
-      <link>http://lijundong.com/image-and-line-height/</link>
-      <guid>http://lijundong.com/image-and-line-height/</guid>
-      <pubDate>Mon, 16 Jan 2017 13:25:28 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;今天在做一个静态页面时，图片底部出现一条 3px 高度的白边，既不是 margin 也不是 padding，找了好久没能解决，后来才发现与 line-height 相关，问题解决后查缺补漏。&lt;br&gt;这里作下笔记。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/image-and-line-height/#disqus_thread</comments>
     </item>
     
   </channel>

@@ -206,6 +206,138 @@
     <header class="post-header">
       <h1 class="post-title">
         
+          <a class="post-link" href="/just-do-good-thing/">但求好事</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          Mar 27, 2016
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <p>这首歌很棒，我更喜欢谭维维的版本</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=420 height=86 src="http://music.163.com/outchain/player?type=2&id=28935312&auto=0&height=66"></iframe>
+
+<p>最近的生活过的好快，和室友聊天时经常把前天的事记成昨天，细想好久才能纠正，但大脑缓存就这么点大，光凭回忆不是长久之计，还得存进硬盘，拾起每天记事的习惯，五到十分钟记录这一天的收获或者流水账，上个学期连续写了三个月，现在偶尔翻看，挺好玩。<br>
+          <div class="read-more">
+            <a href="/just-do-good-thing/" class="read-more-link">Read more..</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/SublimeText-extension-recommend/">SublimeText 插件推荐</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          Mar 17, 2016
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <p>SublimeText3是我最喜欢的编辑器，如果你跟我争Vim或者Emacs，来来来，先出门打一架……<br>喜欢归因于它丰富的插件，ST2插件装多了启动会变得很慢，而ST3完全解决了这个问题，无论装多少插件，一律秒开，因为有朋友想装插件，在这里列举一些我个人很喜欢的，权当做分享。</p>
+          <div class="read-more">
+            <a href="/SublimeText-extension-recommend/" class="read-more-link">Read more..</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/clear-float/">清除浮动</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          Mar 11, 2016
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <h2 id="为什么清除浮动"><a href="#为什么清除浮动" class="headerlink" title="为什么清除浮动"></a>为什么清除浮动</h2><p>因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.outer</span>&#123;<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;<span class="attribute">background-color</span>:<span class="number">#fc9</span>;<span class="attribute">color</span>:<span class="number">#f5f</span>;<span class="attribute">margin</span>:<span class="number">50px</span> auto;<span class="attribute">padding</span>:<span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-class">.div1</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:red;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div2</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:blue;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div3</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:green;<span class="attribute">float</span>:left;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span>float1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span>float2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div3"</span>&gt;</span>float3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://source.lijundong.com/16-3-11/66642323.jpg" alt="浮动未清除"><br>途中三个浮动上面的那条白线是整个outer的内容，height值为0，造成这样的原因是float已经脱离了文档流，这显然不是我们想要的，可能上面的内容不能很清楚的描述问题，下面在三个浮动元素后添加非浮动的div。<br>
+          <div class="read-more">
+            <a href="/clear-float/" class="read-more-link">Read more..</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
           <a class="post-link" href="/Dell-laptop-add-ssd/">Dell笔记本加装固态</a>
         
       </h1>
@@ -495,140 +627,6 @@
 <h3 id="0"><a href="#0" class="headerlink" title="0%"></a>0%</h3><p>细想应该是高三接触到这本书，偶然翻到跃峰买的一本电子杂志，sky在杂志里开了一篇专栏，连载的是他的一本自传『当李晓峰成为Sky』，那一刊记载的正是sky从郑州回家，再次上路后彻底转型为魔兽玩家的那段时光，光阴如梭，白云苍狗，没想到三四年过去了我一直念念不忘，很久之前就已经入手了电子版，只是重度拖延症一直延期到Kindle到手的第二天，利用一节科技英语课，开始看这本执念了三四年的书。<br>
           <div class="read-more">
             <a href="/when-lixiaofeng-become-sky/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/cycling-on-318/">记暑假骑行川藏</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          Sep 15, 2015
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=500 height=86 src="http://music.163.com/outchain/player?type=2&id=439034&auto=0&height=66"></iframe>
-
-
-
-<p>暑假的骑行本该以这篇总结结束的，一直拖到现在。</p>
-<p>7.15成都出发，8.5到达拉萨，历时二十一天，行程2100+km，翻了13座山（两座5000+，9座4000+，两座4000-），爆了一个外胎和一个内胎，都是后胎，同时爆的……，一行四人，路上结识三位，七人布达拉宫广场举车，喝拉萨啤酒，这些事情我会记得很久。<br>
-          <div class="read-more">
-            <a href="/cycling-on-318/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/Hello World/">Hello World</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          Sep 10, 2015
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <h3 id="About"><a href="#About" class="headerlink" title="About"></a>About</h3><p>写博客的习惯源于想哥，最初在CSDN上写，后转到cnBlogs上，最近给自己搭了一个空间，记录自己的思考，技术学习、生活五味。</p>
-<blockquote>
-<p>借刘未鹏前辈语：<br>一行字被你写下来之后，你就不用在将其费力的保持在大脑的临时记忆中，因为这行黑底白字会不断地通过视觉刺激来提醒你它的存在，于是你就可以将空出来的思维精力用于反思你自己的观点<br>
-          <div class="read-more">
-            <a href="/Hello World/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/Canvas-animation-about-sort/">Canvas制作排序算法演示动画</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          Sep 5, 2015
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>Tips:<br>形象化演示排序算法可以让初学者快速理解，最近在看canvas，试着用js+canvas自己做了一个。<br>已有比较好的demo：<a href="http://jun-lu.github.io/SortAnimate/index.html">jun-lu的SortAnimate</a>，<a href="http://www.webhek.com/misc/comparison-sort">旧金山大学的David Galles教授的算法演示课件</a>。</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a>
-          <div class="read-more">
-            <a href="/Canvas-animation-about-sort/" class="read-more-link">Read more..</a>
           </div>
         
       
