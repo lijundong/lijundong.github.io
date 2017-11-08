@@ -12,7 +12,7 @@
 
 
 
-  <meta name="description" content="React + Node「三」API 设计 & 项目部署"/>
+  <meta name="description" content="React + Node 单页应用「三」API 设计 & 项目部署"/>
 
 
 
@@ -34,19 +34,19 @@
 <link rel="canonical" href="http://lijundong.com/application-with-react-and-node-3th/"/>
 
 
-<meta name="description" content="nginx 配置，前后端分离
-项目地址预览地址">
+<meta name="description" content="项目地址预览地址
+记录最近做的一个 demo，前端使用 React，用 React Router 实现前端路由，Koa 2 搭建 API Server， 最后通过 Nginx 做请求转发。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="React + Node「三」API 设计 & 项目部署">
+<meta property="og:title" content="React + Node 单页应用「三」API 设计 & 项目部署">
 <meta property="og:url" content="http://lijundong.com/application-with-react-and-node-3th/index.html">
 <meta property="og:site_name" content="Leeon Notes">
-<meta property="og:description" content="nginx 配置，前后端分离
-项目地址预览地址">
-<meta property="og:updated_time" content="2017-11-07T15:42:20.000Z">
+<meta property="og:description" content="项目地址预览地址
+记录最近做的一个 demo，前端使用 React，用 React Router 实现前端路由，Koa 2 搭建 API Server， 最后通过 Nginx 做请求转发。">
+<meta property="og:updated_time" content="2017-11-08T02:28:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="React + Node「三」API 设计 & 项目部署">
-<meta name="twitter:description" content="nginx 配置，前后端分离
-项目地址预览地址">
+<meta name="twitter:title" content="React + Node 单页应用「三」API 设计 & 项目部署">
+<meta name="twitter:description" content="项目地址预览地址
+记录最近做的一个 demo，前端使用 React，用 React Router 实现前端路由，Koa 2 搭建 API Server， 最后通过 Nginx 做请求转发。">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -85,7 +85,7 @@
 
 
 
-    <title> React + Node「三」API 设计 & 项目部署 · Leeon Notes </title>
+    <title> React + Node 单页应用「三」API 设计 & 项目部署 · Leeon Notes </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -210,7 +210,7 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          React + Node「三」API 设计 & 项目部署
+          React + Node 单页应用「三」API 设计 & 项目部署
         
       </h1>
 
@@ -226,8 +226,8 @@
 
     <div class="post-content">
       
-        <p>nginx 配置，前后端分离</p>
-<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+        <p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+<p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
 <a id="more"></a>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name github.lijundong.com;</span><br><span class="line">    access_log /var/log/nginx/github.log;</span><br><span class="line">    location /api/ &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:3300/;</span><br><span class="line">    &#125;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:3000/;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -300,9 +300,15 @@
         
   <nav class="post-nav">
     
+      <a class="prev" href="/application-with-react-and-node-1th/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default"></span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
     
       <a class="next" href="/application-with-react-and-node-2th/">
-        <span class="next-text nav-default">React + Node「二」Github 授权</span>
+        <span class="next-text nav-default">React + Node 单页应用「二」Github 授权</span>
         <span class="prev-text nav-mobile">Next</span>
         <i class="iconfont icon-right"></i>
       </a>
@@ -411,7 +417,7 @@
     var disqus_config = function () {
         this.page.url = 'http://lijundong.com/application-with-react-and-node-3th/';
         this.page.identifier = 'application-with-react-and-node-3th/';
-        this.page.title = 'React + Node「三」API 设计 & 项目部署';
+        this.page.title = 'React + Node 单页应用「三」API 设计 & 项目部署';
     };
     (function() {
     var d = document, s = d.createElement('script');

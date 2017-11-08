@@ -4,10 +4,1206 @@
   
     
     <entry>
-      <title><![CDATA[React + Node「三」API 设计 & 项目部署]]></title>
+      <title></title>
+      <url>http://lijundong.com/application-with-react-and-node-1th/</url>
+      <content type="html"><![CDATA[<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="tags" content="">
+<meta name="date" content="2017-11-03 10:51:40"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>React + Node 单页应用「一」前端搭建</title></head><body><article class="markdown-body"><ul>
+<li>react</li>
+<li>node.js</li>
+<li>github</li>
+<li>react router4</li>
+<li>前后分离<br>
+categories:</li>
+<li>前端</li>
+</ul>
+<hr>
+<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br>
+<a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+<p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
+<p>这是第一篇，主要介绍下前端代码的构建、<code>React router</code> 使用中遇到问题，以及前端开发完成后部署相关工作。</p>
+<a id="more"></a>
+
+<h3 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>功能介绍</h3>
+<p>GitCard 可以通过 GitHub 授权获取用户基本信息<br>
+- 在首页模块，可以查看最近登录的用户，并点击头像查看该用户的详细信息<br>
+- 在 <code>/Comment</code> 模块中可以发表评论，并删除自己的评论<br>
+- 在 <code>/Detail</code> 模块中可以查看用户在 Github 上的基本信息（代码库，Follower、Following 以及更多开发的信息），你可以在这个基础上做更多有意思的事情，支持 Follow 和 Unfollow 操作，当然，你可以加上 Star 和 Unstar 操作，异曲同工。🈳️</p>
+<h3 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>依赖版本</h3>
+<ul>
+<li>构建工具: create-react-app</li>
+<li>react: 16.0.0</li>
+<li>react-router: 4.2.2</li>
+<li>网络请求: axios</li>
+<li>UI: material-ui</li>
+</ul>
+<h3 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>项目搭建</h3>
+<p>前端构建工具使用 React 官方的 <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">create-react-app</a>，快速生成可执行的项目结构。下面是快速上手流程，详细的内容可以参见 <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">官方文档</a>。</p>
+<pre><code class="javascript">// 全局安装 create-react-app
+npm install -g create-react-app
+
+//生成项目，项目名 my-app（自定义）
+create-react-app my-app
+cd my-app
+
+// 安装依赖
+npm install
+// 开发环境
+npm start
+// 打包
+npm run build
+</code></pre>
+
+<p>生成项目后，项目文件结构如下，<code>npm run build</code> 执行后，目录下会出现 <code>/build/</code> 目录，存放构建后的文件。</p>
+<pre><code class="javascript">/**
+ * my-app 目录结构
+ */
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public 
+│   └── favicon.ico
+│   └── index.html
+│   └── manifest.json
+└── src
+    └── App.css
+    └── App.js //项目入口
+    └── App.test.js
+    └── index.css
+    └── index.js
+    └── logo.svg
+    └── registerServiceWorker.js
+
+</code></pre>
+
+<p>我们在 <code>/src/</code> 目录下新建 <code>/components/</code> 目录，用于存放本次项目中的所有自定义组件，最终的目录如下</p>
+<pre><code>.
+├── README.md
+├── build
+├── package.json
+├── public
+├── src
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── components
+│   │   ├── Comments
+│   │   │   ├── comment.css
+│   │   │   └── index.jsx
+│   │   ├── Events
+│   │   │   └── index.jsx
+│   │   ├── HomePage
+│   │   │   └── index.jsx
+│   │   ├── UserDetail
+│   │   │   └── index.jsx
+│   │   └── layouts
+│   │       ├── Header.jsx
+│   │       └── SideMenu.jsx
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── registerServiceWorker.js
+│   └── utils
+│       ├── api.jsx
+│       ├── fetch.jsx
+│       └── keygen.js
+└── yarn.lock
+</code></pre>
+
+<h3 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>前端路由</h3>
+<p>这次做的项目是单页应用，通过 <code>React router</code> 实现前端路由，<code>Container</code> 通过路由选择显示的模块内容，在 <code>Header</code> 显示路由切换入口，页面结构图如下。 </p>
+<p><img alt="" src="http://source.lijundong.com/17-11-8/9420557.jpg"></p>
+<p>在 <code>/src/App.js</code> 布局并设置路由，将 <code>Header</code> 和 <code>Container</code> 包在 <code>Router</code> 下，在 <code>Header</code> 的 Menu 组件中设置路由链接，并在 <code>Container</code> 中设置路由指向对应组件。</p>
+<p>Menu 中 Detail 链接在用户授权登录后就指向登录用户信息，否则跳转到授权登录页面。</p>
+<pre><code class="javascript">// 引入 React router
+import {
+  BrowserRouter as Router,
+  Link,
+  Route
+} from &quot;react-router-dom&quot;
+
+// 在 layout-content 中设置路由对应的组件
+&lt;Router&gt;
+    &lt;div className=&quot;App&quot;&gt;
+        &lt;Header loginInfo={this.state.loginInfo}&gt;&lt;/Header&gt;
+        &lt;div className=&quot;layout-container&quot;&gt;
+            &lt;div className=&quot;layout-content&quot;&gt;
+                &lt;Route exact path=&quot;/&quot; component={ HomePage } &gt;&lt;/Route&gt;
+                &lt;Route path=&quot;/user/:userid&quot; component={ UserDetail } &gt;&lt;/Route&gt;
+                &lt;Route path=&quot;/events&quot; component={Events}&gt;&lt;/Route&gt;
+                &lt;Route path=&quot;/comments&quot; render={ ()=&gt;&lt;Comments loginInfo={this.state.loginInfo} /&gt; }&gt;&lt;/Route&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/Router&gt;
+
+// 在 Header 中设置 Link 
+&lt;Menu&gt;
+    &lt;Link to=&quot;/&quot;&gt;
+        &lt;MenuItem primaryText=&quot;Home&quot; /&gt;
+    &lt;/Link&gt;
+    &lt;Link to=&quot;/comments&quot;&gt;
+        &lt;MenuItem primaryText=&quot;Comments&quot;/&gt;
+    &lt;/Link&gt;
+    {
+    this.props.loginInfo.login ?
+      (&lt;Link to={  '/user/' + this.props.loginInfo.login }&gt;
+            &lt;MenuItem primaryText=&quot;Detail&quot; /&gt;
+      &lt;/Link&gt;)
+      : (&lt;MenuItem primaryText=&quot;Login&quot; onClick={this.login} /&gt;)
+    }
+&lt;/Menu&gt;
+
+</code></pre>
+
+<h3 id="_5"><a name="user-content-_5" href="#_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>数据操作</h3>
+<h4 id="_6"><a name="user-content-_6" href="#_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>路由下发数据</h4>
+<p>上面的代码的路由中，我们通过两种方式下发数据到组件中，通过路由参数将用户 ID 下发到 <code>Detail</code> 组件，以及通过 <code>props</code> 讲用户基本信息下发到 <code>Comment</code> 组件中。</p>
+<pre><code class="javascript">// 通过路由参数下发的 Link 以及对应的 Route
+&lt;Link to={  '/user/' + this.props.loginInfo.login }&gt;&lt;MenuItem primaryText=&quot;Detail&quot; /&gt;&lt;/Link&gt;
+&lt;Route path=&quot;/user/:userid&quot; component={ UserDetail } &gt;&lt;/Route&gt;
+
+// 通过 props 下发
+&lt;Route path=&quot;/comments&quot; render={ ()=&gt;&lt;Comments loginInfo={this.state.loginInfo} /&gt; }&gt;&lt;/Route&gt;
+</code></pre>
+
+<p>通过路由参数获取下发数据，如果在 <code>/user/lijundong</code> 跳转到 <code>/user/free-free</code> 会出现路由改变，数据不刷新的情况，这里需要用 <code>componentWillReceiveProps(nextProps)</code> 处理。</p>
+<p>在 <code>Detail</code> 组件中获取 ID，<br>
+<pre><code class="javascript">const userId = this.props.match.params.userid;
+</code></pre></p>
+<p>以及在 <code>Comment</code> 中获取用户信息<br>
+<pre><code class="javascript">const loginInfo = this.props.loginInfo;
+</code></pre></p>
+<h4 id="_7"><a name="user-content-_7" href="#_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>数据请求</h4>
+<p>我们在这里选择用 axios 网络请求，为了方便管理，将所有的 API 统一放在 <code>/src/utils/api.jsx</code> 中，利于后期维护。没有使用 Fetch 是因为 Github API 只支持 XHR 跨域请求</p>
+<h4 id="_8"><a name="user-content-_8" href="#_8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>数据更新</h4>
+<p>setState 更新</p>
+<h3 id="_9"><a name="user-content-_9" href="#_9" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>项目构建部署</h3></article></body></html>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[React + Node 单页应用「三」API 设计 & 项目部署]]></title>
       <url>http://lijundong.com/application-with-react-and-node-3th/</url>
-      <content type="html"><![CDATA[<p>nginx 配置，前后端分离</p>
-<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+      <content type="html"><![CDATA[<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+<p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
 <a id="more"></a>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name github.lijundong.com;</span><br><span class="line">    access_log /var/log/nginx/github.log;</span><br><span class="line">    location /api/ &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:3300/;</span><br><span class="line">    &#125;</span><br><span class="line">    location / &#123;</span><br><span class="line">        proxy_pass http://127.0.0.1:3000/;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
@@ -33,11 +1229,14 @@
     </entry>
     
     <entry>
-      <title><![CDATA[React + Node「二」Github 授权]]></title>
+      <title><![CDATA[React + Node 单页应用「二」Github 授权]]></title>
       <url>http://lijundong.com/application-with-react-and-node-2th/</url>
       <content type="html"><![CDATA[<p>node：server + 授权</p>
 <p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
-<p>第二篇，介绍下 <code>oAuth 2.0</code> 授权机制，以及 Github App 授权过程，通过获取授权使用 Github API。<br><a id="more"></a></p>
+<p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
+<p>第二篇，介绍下 <code>OAuth 2.0</code> 授权机制，以及 Github App 授权过程，通过获取授权使用 Github API。</p>
+<a id="more"></a>
+<p>### </p>
 ]]></content>
       
         <categories>
@@ -62,20 +1261,54 @@
     </entry>
     
     <entry>
-      <title><![CDATA[React + Node「一」前端搭建]]></title>
+      <title><![CDATA[React + Node 单页应用「一」前端搭建]]></title>
       <url>http://lijundong.com/application-with-react-and-node-1th/</url>
       <content type="html"><![CDATA[<p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
-<p>介绍一下最近做的一个试水 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
-<p>第一篇介绍下前端代码的构建、<code>React router</code> 使用中遇到问题，以及开发完成后部署相关工作。</p>
+<p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
+<p>这是第一篇，主要介绍下前端代码的构建、<code>React router</code> 使用中遇到问题，以及前端开发完成后部署相关工作。</p>
 <a id="more"></a>
-<h3 id="依赖版本"><a href="#依赖版本" class="headerlink" title="依赖版本"></a>依赖版本</h3><ul>
+<h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><p>GitCard 可以通过 GitHub 授权获取用户基本信息</p>
+<ul>
+<li>在首页模块，可以查看最近登录的用户，并点击头像查看该用户的详细信息</li>
+<li>在 <code>/Comment</code> 模块中可以发表评论，并删除自己的评论</li>
+<li>在 <code>/Detail</code> 模块中可以查看用户在 Github 上的基本信息（代码库，Follower、Following 以及更多开发的信息），你可以在这个基础上做更多有意思的事情，支持 Follow 和 Unfollow 操作，当然，你可以加上 Star 和 Unstar 操作，异曲同工。🈳️</li>
+</ul>
+<h2 id="依赖版本"><a href="#依赖版本" class="headerlink" title="依赖版本"></a>依赖版本</h2><ul>
 <li>构建工具: create-react-app</li>
 <li>react: 16.0.0</li>
 <li>react-router: 4.2.2</li>
 <li>网络请求: axios</li>
 <li>UI: material-ui</li>
 </ul>
-<h3 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h3><h3 id="前端路由"><a href="#前端路由" class="headerlink" title="前端路由"></a>前端路由</h3><h3 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h3><h3 id="项目构建部署"><a href="#项目构建部署" class="headerlink" title="项目构建部署"></a>项目构建部署</h3>]]></content>
+<h2 id="项目搭建"><a href="#项目搭建" class="headerlink" title="项目搭建"></a>项目搭建</h2><p>前端构建工具使用 React 官方的 <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">create-react-app</a>，快速生成可执行的项目结构。下面是快速上手流程，详细的内容可以参见 <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">官方文档</a>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 全局安装 create-react-app</span></span><br><span class="line">npm install -g create-react-app</span><br><span class="line"></span><br><span class="line"><span class="comment">//生成项目，项目名 my-app（自定义）</span></span><br><span class="line">create-react-app my-app</span><br><span class="line">cd my-app</span><br><span class="line"></span><br><span class="line"><span class="comment">// 安装依赖</span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment">// 开发环境</span></span><br><span class="line">npm start</span><br><span class="line"><span class="comment">// 打包</span></span><br><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+<p>生成项目后，项目文件结构如下，<code>npm run build</code> 执行后，目录下会出现 <code>/build/</code> 目录，存放构建后的文件。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * my-app 目录结构</span><br><span class="line"> */</span></span><br><span class="line">├── README.md</span><br><span class="line">├── node_modules</span><br><span class="line">├── package.json</span><br><span class="line">├── .gitignore</span><br><span class="line">├── public </span><br><span class="line">│   └── favicon.ico</span><br><span class="line">│   └── index.html</span><br><span class="line">│   └── manifest.json</span><br><span class="line">└── src</span><br><span class="line">    └── App.css</span><br><span class="line">    └── App.js <span class="comment">//项目入口</span></span><br><span class="line">    └── App.test.js</span><br><span class="line">    └── index.css</span><br><span class="line">    └── index.js</span><br><span class="line">    └── logo.svg</span><br><span class="line">    └── registerServiceWorker.js</span><br></pre></td></tr></table></figure>
+<p>我们在 <code>/src/</code> 目录下新建 <code>/components/</code> 目录，用于存放本次项目中的所有自定义组件，最终的目录如下</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── README<span class="selector-class">.md</span></span><br><span class="line">├── build</span><br><span class="line">├── package<span class="selector-class">.json</span></span><br><span class="line">├── public</span><br><span class="line">├── src</span><br><span class="line">│   ├── App<span class="selector-class">.css</span></span><br><span class="line">│   ├── App<span class="selector-class">.js</span></span><br><span class="line">│   ├── App<span class="selector-class">.test</span><span class="selector-class">.js</span></span><br><span class="line">│   ├── components</span><br><span class="line">│   │   ├── Comments</span><br><span class="line">│   │   │   ├── comment<span class="selector-class">.css</span></span><br><span class="line">│   │   │   └── index<span class="selector-class">.jsx</span></span><br><span class="line">│   │   ├── Events</span><br><span class="line">│   │   │   └── index<span class="selector-class">.jsx</span></span><br><span class="line">│   │   ├── HomePage</span><br><span class="line">│   │   │   └── index<span class="selector-class">.jsx</span></span><br><span class="line">│   │   ├── UserDetail</span><br><span class="line">│   │   │   └── index<span class="selector-class">.jsx</span></span><br><span class="line">│   │   └── layouts</span><br><span class="line">│   │       ├── Header<span class="selector-class">.jsx</span></span><br><span class="line">│   │       └── SideMenu<span class="selector-class">.jsx</span></span><br><span class="line">│   ├── index<span class="selector-class">.css</span></span><br><span class="line">│   ├── index<span class="selector-class">.js</span></span><br><span class="line">│   ├── logo<span class="selector-class">.svg</span></span><br><span class="line">│   ├── registerServiceWorker<span class="selector-class">.js</span></span><br><span class="line">│   └── utils</span><br><span class="line">│       ├── api<span class="selector-class">.jsx</span></span><br><span class="line">│       ├── fetch<span class="selector-class">.jsx</span></span><br><span class="line">│       └── keygen<span class="selector-class">.js</span></span><br><span class="line">└── yarn.lock</span><br></pre></td></tr></table></figure>
+<h2 id="前端路由"><a href="#前端路由" class="headerlink" title="前端路由"></a>前端路由</h2><p>这次做的项目是单页应用，通过 <code>React router</code> 实现前端路由，<code>Container</code> 通过路由选择显示的模块内容，在 <code>Header</code> 显示路由切换入口，页面结构图如下。 </p>
+<p><img src="http://source.lijundong.com/17-11-8/9420557.jpg" alt=""></p>
+<p>在 <code>/src/App.js</code> 布局并设置路由，将 <code>Header</code> 和 <code>Container</code> 包在 <code>Router</code> 下，在 <code>Header</code> 的 Menu 组件中设置路由链接，并在 <code>Container</code> 中设置路由指向对应组件。</p>
+<p>Menu 中 Detail 链接在用户授权登录后就指向登录用户信息，否则跳转到授权登录页面。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 引入 React router</span></span><br><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">  BrowserRouter <span class="keyword">as</span> Router,</span><br><span class="line">  Link,</span><br><span class="line">  Route</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">"react-router-dom"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在 layout-content 中设置路由对应的组件</span></span><br><span class="line">&lt;Router&gt;</span><br><span class="line">    <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"App"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">Header</span> <span class="attr">loginInfo</span>=<span class="string">&#123;this.state.loginInfo&#125;</span>&gt;</span><span class="tag">&lt;/<span class="name">Header</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"layout-container"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">className</span>=<span class="string">"layout-content"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Route</span> <span class="attr">exact</span> <span class="attr">path</span>=<span class="string">"/"</span> <span class="attr">component</span>=<span class="string">&#123;</span> <span class="attr">HomePage</span> &#125; &gt;</span><span class="tag">&lt;/<span class="name">Route</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">"/user/:userid"</span> <span class="attr">component</span>=<span class="string">&#123;</span> <span class="attr">UserDetail</span> &#125; &gt;</span><span class="tag">&lt;/<span class="name">Route</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">"/events"</span> <span class="attr">component</span>=<span class="string">&#123;Events&#125;</span>&gt;</span><span class="tag">&lt;/<span class="name">Route</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">Route</span> <span class="attr">path</span>=<span class="string">"/comments"</span> <span class="attr">render</span>=<span class="string">&#123;</span> ()=&gt;</span><span class="tag">&lt;<span class="name">Comments</span> <span class="attr">loginInfo</span>=<span class="string">&#123;this.state.loginInfo&#125;</span> /&gt;</span> &#125;&gt;<span class="tag">&lt;/<span class="name">Route</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">Router</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在 Header 中设置 Link </span></span><br><span class="line">&lt;Menu&gt;</span><br><span class="line">    &lt;Link to="/"&gt;</span><br><span class="line">        &lt;MenuItem primaryText="Home" /&gt;</span><br><span class="line">    &lt;/Link&gt;</span><br><span class="line">    &lt;Link to="/comments"&gt;</span><br><span class="line">        &lt;MenuItem primaryText="Comments"/&gt;</span><br><span class="line">    &lt;/Link&gt;</span><br><span class="line">    &#123;</span><br><span class="line">    this.props.loginInfo.login ?</span><br><span class="line">      (&lt;Link to=&#123;  '/user/' + this.props.loginInfo.login &#125;&gt;</span><br><span class="line">            &lt;MenuItem primaryText="Detail" /&gt;</span><br><span class="line">      &lt;/Link&gt;)</span><br><span class="line">      : (&lt;MenuItem primaryText="Login" onClick=&#123;this.login&#125; /&gt;)</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/Menu&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="数据操作"><a href="#数据操作" class="headerlink" title="数据操作"></a>数据操作</h2><h3 id="路由下发数据"><a href="#路由下发数据" class="headerlink" title="路由下发数据"></a>路由下发数据</h3><p>上面的代码的路由中，我们通过两种方式下发数据到组件中，通过路由参数将用户 ID 下发到 <code>Detail</code> 组件，以及通过 <code>props</code> 讲用户基本信息下发到 <code>Comment</code> 组件中。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 通过路由参数下发的 Link 以及对应的 Route</span></span><br><span class="line">&lt;Link to=&#123;  <span class="string">'/user/'</span> + <span class="keyword">this</span>.props.loginInfo.login &#125;&gt;<span class="xml"><span class="tag">&lt;<span class="name">MenuItem</span> <span class="attr">primaryText</span>=<span class="string">"Detail"</span> /&gt;</span><span class="tag">&lt;/<span class="name">Link</span>&gt;</span></span></span><br><span class="line">&lt;Route path=<span class="string">"/user/:userid"</span> component=&#123; UserDetail &#125; &gt;<span class="xml"><span class="tag">&lt;/<span class="name">Route</span>&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过 props 下发</span></span><br><span class="line">&lt;Route path=<span class="string">"/comments"</span> render=&#123; ()=&gt;<span class="xml"><span class="tag">&lt;<span class="name">Comments</span> <span class="attr">loginInfo</span>=<span class="string">&#123;this.state.loginInfo&#125;</span> /&gt;</span> &#125;&gt;<span class="tag">&lt;/<span class="name">Route</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>通过路由参数获取下发数据，如果在 <code>/user/lijundong</code> 跳转到 <code>/user/free-free</code> 会出现路由改变，数据不刷新的情况，这里需要用 <code>componentWillReceiveProps(nextProps)</code> 处理。</p>
+<p>在 <code>Detail</code> 组件中获取 ID，<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> userId = <span class="keyword">this</span>.props.match.params.userid;</span><br></pre></td></tr></table></figure></p>
+<p>以及在 <code>Comment</code> 中获取用户信息<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> loginInfo = <span class="keyword">this</span>.props.loginInfo;</span><br></pre></td></tr></table></figure></p>
+<h3 id="数据请求"><a href="#数据请求" class="headerlink" title="数据请求"></a>数据请求</h3><p>我们在这里选择用 axios 网络请求，为了方便管理，将所有的 API 统一放在 <code>/src/utils/api.jsx</code> 中，利于后期维护。<br>没有使用 Fetch 是因为 <strong><a href="https://developer.github.com/v3/#cross-origin-resource-sharing" target="_blank" rel="external">Github API 只支持 XHR 跨域请求</a></strong>，Fetch 跨域请求会导致请求 request type 变成 <code>option</code> 。</p>
+<h3 id="数据更新"><a href="#数据更新" class="headerlink" title="数据更新"></a>数据更新</h3><h4 id="setState"><a href="#setState" class="headerlink" title="setState"></a>setState</h4><p>因为这次的数据并不复杂，所以没有引入 MobX 或者 Redux 处理，数据更新全程使用 <code>setState</code>，不过由于 <code>setState</code> 是异步操作，所以，某些情况下，需要用到回调函数，如下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">setState(</span><br><span class="line">  &#123; name: <span class="string">"Michael"</span> &#125;,</span><br><span class="line">  () =&gt; <span class="built_in">console</span>.log(<span class="keyword">this</span>.state.name)</span><br><span class="line">);</span><br><span class="line"><span class="comment">// Michael</span></span><br></pre></td></tr></table></figure>
+<h4 id="componentWillReceiveProps"><a href="#componentWillReceiveProps" class="headerlink" title="componentWillReceiveProps"></a>componentWillReceiveProps</h4><p>上面提到过，通过路由参数获取下发数据，如果在 <code>/user/lijundong</code> 跳转到 <code>/user/free-free</code> 会出现路由改变，数据不刷新的情况，这是因为 <code>componentDidMount()</code> 只会执行一次，<code>props</code> 更新不会触发重新获取数据，这里可通过 <code>componentWillReceiveProps()</code> 解决。</p>
+<p><code>componentWillReceiveProps()</code> 会在每次 <code>props</code> 更新时触发，通过新参数重新获取数据列表。</p>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">componentWillReceiveProps(nextProps)&#123;</span><br><span class="line">    <span class="keyword">const</span> userId = nextProps.match.<span class="keyword">params</span>.userid;</span><br><span class="line"><span class="comment">// 通过新参数获取数据</span></span><br><span class="line">    Axios.<span class="keyword">get</span>(url)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="项目构建部署"><a href="#项目构建部署" class="headerlink" title="项目构建部署"></a>项目构建部署</h3><p>项目开发结束，通过 <code>npm run build</code> 进行打包，打包完成后，生成的 <code>/build/</code> 即我们最终上线的版本，因为是前后端分离的项目，前端需要自起 Server，可以通过这两种方案进行部署</p>
+<ul>
+<li>使用 create-react-app 自带的 <code>serve -s build</code> 命令起 Server（我当前使用的方式）</li>
+<li>或者通过第三方工具 <code>http-server</code>、<code>anywhere</code> 等起 Server</li>
+</ul>
+<p>服务开启后，可以正常访问就代表前端部分已经完成，暴露的端口供最后 Nginx 配置使用。</p>
+]]></content>
       
         <categories>
             
@@ -2189,9 +3422,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -2730,9 +3963,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
         
