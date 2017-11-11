@@ -35,12 +35,12 @@
     <entry>
       <title><![CDATA[React + Node 单页应用「二」OAuth 2.0 协议 & GitHub 授权实践]]></title>
       <url>http://lijundong.com/application-with-react-and-node-2th/</url>
-      <content type="html"><![CDATA[<h2 id="关于项目"><a href="#关于项目" class="headerlink" title="关于项目"></a>关于项目</h2><p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
+      <content type="html"><![CDATA[<h3 id="关于项目"><a href="#关于项目" class="headerlink" title="关于项目"></a>关于项目</h3><p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
 <p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
-<h2 id="文章列表"><a href="#文章列表" class="headerlink" title="文章列表"></a>文章列表</h2><p><a href="http://www.lijundong.com/application-with-react-and-node-1th/" target="_blank" rel="external">第一篇：React + Node 单页应用「一」前端搭建</a><br><a href="http://www.lijundong.com/application-with-react-and-node-2th/" target="_blank" rel="external">第二篇：React + Node 单页应用「二」OAuth 2.0 授权认证 &amp; GitHub 授权实践</a></p>
+<h3 id="文章列表"><a href="#文章列表" class="headerlink" title="文章列表"></a>文章列表</h3><p><a href="http://www.lijundong.com/application-with-react-and-node-1th/" target="_blank" rel="external">第一篇：React + Node 单页应用「一」前端搭建</a><br><a href="http://www.lijundong.com/application-with-react-and-node-2th/" target="_blank" rel="external">第二篇：React + Node 单页应用「二」OAuth 2.0 授权认证 &amp; GitHub 授权实践</a></p>
 <p>这是第二篇，介绍下 <code>OAuth 2.0</code> 授权机制，以及 Github App 授权过程，通过获取授权使用 Github API。</p>
 <a id="more"></a>
-<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>传统的 CS(Client-Server) 授权模式下，请求访问受保护资源(用户信息)时，客户端需要向服务器提供资源所属用户的证书，为了让第三方拿到资源，用户就得将证书共享给第三方应用。这种方式会导致以下几个问题：</p>
+<h2 id="OAuth-2-0-协议"><a href="#OAuth-2-0-协议" class="headerlink" title="OAuth 2.0 协议"></a>OAuth 2.0 协议</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>传统的 CS(Client-Server) 授权模式下，请求访问受保护资源(用户信息)时，客户端需要向服务器提供资源所属用户的证书，为了让第三方拿到资源，用户就得将证书共享给第三方应用。这种方式会导致以下几个问题：</p>
 <ul>
 <li>第三方应用为了长久使用，需要存储用户凭证，特别是明文密码。</li>
 <li>服务器需要支持密码验证，虽然密码存在固有的安全缺陷。</li>
@@ -128,9 +128,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> OAuth 2.0 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
         
@@ -208,9 +208,9 @@
             
             <tag> github </tag>
             
-            <tag> react router4 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> react router4 </tag>
             
         </tags>
         

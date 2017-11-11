@@ -33,9 +33,9 @@
       <pubDate>Sat, 04 Nov 2017 02:52:19 GMT</pubDate>
       <description>
       
-        &lt;h2 id=&quot;关于项目&quot;&gt;&lt;a href=&quot;#关于项目&quot; class=&quot;headerlink&quot; title=&quot;关于项目&quot;&gt;&lt;/a&gt;关于项目&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lijundong/gitcard&quot;&gt;项目地址&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://github.lijundong.com/&quot;&gt;预览地址&lt;/a&gt;&lt;/p&gt;
+        &lt;h3 id=&quot;关于项目&quot;&gt;&lt;a href=&quot;#关于项目&quot; class=&quot;headerlink&quot; title=&quot;关于项目&quot;&gt;&lt;/a&gt;关于项目&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/lijundong/gitcard&quot;&gt;项目地址&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://github.lijundong.com/&quot;&gt;预览地址&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;记录最近做的一个 demo，前端使用 &lt;code&gt;React&lt;/code&gt;，用 &lt;code&gt;React Router&lt;/code&gt; 实现前端路由，&lt;code&gt;Koa 2&lt;/code&gt; 搭建 API Server， 最后通过 &lt;code&gt;Nginx&lt;/code&gt; 做请求转发。 &lt;/p&gt;
-&lt;h2 id=&quot;文章列表&quot;&gt;&lt;a href=&quot;#文章列表&quot; class=&quot;headerlink&quot; title=&quot;文章列表&quot;&gt;&lt;/a&gt;文章列表&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://www.lijundong.com/application-with-react-and-node-1th/&quot;&gt;第一篇：React + Node 单页应用「一」前端搭建&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.lijundong.com/application-with-react-and-node-2th/&quot;&gt;第二篇：React + Node 单页应用「二」OAuth 2.0 授权认证 &amp;amp; GitHub 授权实践&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;文章列表&quot;&gt;&lt;a href=&quot;#文章列表&quot; class=&quot;headerlink&quot; title=&quot;文章列表&quot;&gt;&lt;/a&gt;文章列表&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.lijundong.com/application-with-react-and-node-1th/&quot;&gt;第一篇：React + Node 单页应用「一」前端搭建&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.lijundong.com/application-with-react-and-node-2th/&quot;&gt;第二篇：React + Node 单页应用「二」OAuth 2.0 授权认证 &amp;amp; GitHub 授权实践&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这是第二篇，介绍下 &lt;code&gt;OAuth 2.0&lt;/code&gt; 授权机制，以及 Github App 授权过程，通过获取授权使用 Github API。&lt;/p&gt;
       
       </description>
