@@ -40,7 +40,7 @@
 <h2 id="文章列表"><a href="#文章列表" class="headerlink" title="文章列表"></a>文章列表</h2><p><a href="http://www.lijundong.com/application-with-react-and-node-1th/" target="_blank" rel="external">第一篇：React + Node 单页应用「一」前端搭建</a><br><a href="http://www.lijundong.com/application-with-react-and-node-2th/" target="_blank" rel="external">第二篇：React + Node 单页应用「二」OAuth 2.0 授权认证 &amp; GitHub 授权实践</a></p>
 <p>这是第二篇，介绍下 <code>OAuth 2.0</code> 授权机制，以及 Github App 授权过程，通过获取授权使用 Github API。</p>
 <a id="more"></a>
-<h2 id="OAuth-2-0"><a href="#OAuth-2-0" class="headerlink" title="OAuth 2.0"></a>OAuth 2.0</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>传统的 CS(Client-Server) 授权模式下，请求访问受保护资源(用户信息)时，客户端需要向服务器提供资源所属用户的证书，为了让第三方拿到资源，用户就得将证书共享给第三方应用。这种方式会导致以下几个问题：</p>
+<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>传统的 CS(Client-Server) 授权模式下，请求访问受保护资源(用户信息)时，客户端需要向服务器提供资源所属用户的证书，为了让第三方拿到资源，用户就得将证书共享给第三方应用。这种方式会导致以下几个问题：</p>
 <ul>
 <li>第三方应用为了长久使用，需要存储用户凭证，特别是明文密码。</li>
 <li>服务器需要支持密码验证，虽然密码存在固有的安全缺陷。</li>
@@ -48,7 +48,7 @@
 <li>用户不能单独撤销某一个第三方应用的访问权限，必须修改密码来撤销所有授权应用的权限。</li>
 <li>任何第三方应用的漏洞都可能会威胁到用户的密码，以及对应密码权限下的用户数据。</li>
 </ul>
-<p>为了解决这个问题，OAuth 协议引入了授权层，并将客户端与服务端的角色区分开，在 OAuth 协议中，客户端请求的 <code>Access_token</code> ，被托管在资源服务器，但受用户控制，并且与用户凭证完全不同。</p>
+<h3 id="OAuth-2-0"><a href="#OAuth-2-0" class="headerlink" title="OAuth 2.0"></a>OAuth 2.0</h3><p>为了解决这个问题，<code>OAuth</code> 协议引入了授权层，并将客户端与服务端的角色区分开，在 <code>OAuth</code> 协议中，客户端请求的 <code>Access_token</code> ，被托管在资源服务器，但受用户控制，并且与用户凭证完全不同。</p>
 <p>举个例子，现在有一家档案馆，档案馆中有很多资料，这些资料有些涉及到机密，有些只是常规资料，<br>研究员<strong>小李</strong>需要进入档案馆查找<strong>常规资料</strong>，于是就跑去找<strong>罗馆长</strong>批条子</p>
 <blockquote>
 <p>“馆长馆长，我要看一些常规资料，请给我批个条子吧”</p>
@@ -66,7 +66,7 @@
 <p>“嗯，既然馆长同意了，来，这是常规文件的<strong>钥匙</strong>”，</p>
 </blockquote>
 <p>于是小李就拿着钥匙进入馆内开始找资料，馆内每道房门都有一把锁，如果房间里存放的是常规资料，小李只需要出示钥匙就可以进入，但存放涉密资料的房间，小李的钥匙打不开，必须找馆长批一份查看涉密资料的条子，再拿着条子去大壮那儿换一把新的钥匙。</p>
-<h3 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h3><ul>
+<h3 id="流程中的角色"><a href="#流程中的角色" class="headerlink" title="流程中的角色"></a>流程中的角色</h3><ul>
 <li><p>资源所有者<br>可以授权获取受保护资源的实体，如果这个所有者是人，即常规意义的用户，即档案馆的馆长。</p>
 </li>
 <li><p>资源服务器<br>资源服务器用于存储资源，接收请求，并将资源返回给携带合法 <code>Access_token</code> 的请求，在我们的例子中，档案馆就充当着资源服务器的角色。</p>
@@ -76,7 +76,7 @@
 <li><p>授权服务器<br>授权服务器在成功认证资源拥有者并获取到授权后，发放 <code>Access_token</code> 给客户端，故事中大壮的主要工作内容就是发放访问钥匙。</p>
 </li>
 </ul>
-<h3 id="授权流程"><a href="#授权流程" class="headerlink" title="授权流程"></a>授权流程</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">/<span class="symbol">*</span><span class="symbol">*</span></span><br><span class="line"> <span class="symbol">*</span> 协议流程</span><br><span class="line"> <span class="symbol">*</span> 引自 RFC6749</span><br><span class="line"> <span class="symbol">*</span>/</span><br><span class="line"> +--------+                               +---------------+</span><br><span class="line"> |<span class="string">        </span>|<span class="string">--(A)- Authorization Request -&gt;</span>|<span class="string">   Resource    </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">                               </span>|<span class="string">     Owner     </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">&lt;-(B)-- Authorization Grant ---</span>|<span class="string">               </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">                               +---------------+</span><br><span class="line"> </span>|<span class="string">        </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">                               +---------------+</span><br><span class="line"> </span>|<span class="string">        </span>|<span class="string">--(C)-- Authorization Grant --&gt;</span>|<span class="string"> Authorization </span>|</span><br><span class="line"> |<span class="string"> Client </span>|<span class="string">                               </span>|<span class="string">     Server    </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">&lt;-(D)----- Access Token -------</span>|<span class="string">               </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">                               +---------------+</span><br><span class="line"> </span>|<span class="string">        </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">                               +---------------+</span><br><span class="line"> </span>|<span class="string">        </span>|<span class="string">--(E)----- Access Token ------&gt;</span>|<span class="string">    Resource   </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">                               </span>|<span class="string">     Server    </span>|</span><br><span class="line"> |<span class="string">        </span>|<span class="string">&lt;-(F)--- Protected Resource ---</span>|<span class="string">               </span>|</span><br><span class="line"> +--------+                               +---------------+</span><br></pre></td></tr></table></figure>
+<h3 id="授权流程"><a href="#授权流程" class="headerlink" title="授权流程"></a>授权流程</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">+--------+                               +---------------+</span><br><span class="line">|<span class="string">        </span>|<span class="string">--(A)- Authorization Request -&gt;</span>|<span class="string">   Resource    </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">                               </span>|<span class="string">     Owner     </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">&lt;-(B)-- Authorization Grant ---</span>|<span class="string">               </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">                               +---------------+</span><br><span class="line"></span>|<span class="string">        </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">                               +---------------+</span><br><span class="line"></span>|<span class="string">        </span>|<span class="string">--(C)-- Authorization Grant --&gt;</span>|<span class="string"> Authorization </span>|</span><br><span class="line">|<span class="string"> Client </span>|<span class="string">                               </span>|<span class="string">     Server    </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">&lt;-(D)----- Access Token -------</span>|<span class="string">               </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">                               +---------------+</span><br><span class="line"></span>|<span class="string">        </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">                               +---------------+</span><br><span class="line"></span>|<span class="string">        </span>|<span class="string">--(E)----- Access Token ------&gt;</span>|<span class="string">    Resource   </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">                               </span>|<span class="string">     Server    </span>|</span><br><span class="line">|<span class="string">        </span>|<span class="string">&lt;-(F)--- Protected Resource ---</span>|<span class="string">               </span>|</span><br><span class="line">+--------+                               +---------------+</span><br></pre></td></tr></table></figure>
 <p>上面这张图是引自 RFC6749 的 OAuth 2.0 授权流程，概括如下</p>
 <ul>
 <li>第三方应用向用户请求授权，用户同意，第三方拿到授权许可</li>
@@ -104,7 +104,8 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * code：第二步获取到的 code 必填</span><br><span class="line"> * client_secret：注册应用 client_secret 必填</span><br><span class="line"> * client_id：注册应用的 client_id 必填</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">const</span> rp = <span class="built_in">require</span>(<span class="string">'request-promise'</span>)</span><br><span class="line"><span class="keyword">let</span> option = &#123;</span><br><span class="line">    uri: <span class="string">'https://github.com/login/oauth/access_token?client_id='</span> + clientId + <span class="string">'&amp;client_secret='</span> + clientSecret + <span class="string">'&amp;code='</span> + code,</span><br><span class="line">    json: <span class="literal">true</span></span><br><span class="line">&#125; </span><br><span class="line"><span class="keyword">let</span> tokenResp = <span class="keyword">await</span> rp(option);</span><br></pre></td></tr></table></figure>
 <p><strong>第四步</strong>：将获得的 <code>Access_token</code> 写入页面的 cookie 中。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ctx.cookies.set(<span class="string">'access_token'</span>, tokenResp.access_token, &#123;</span><br><span class="line">    <span class="string">'httpOnly'</span>: <span class="literal">false</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <h3 id="获取用户数据"><a href="#获取用户数据" class="headerlink" title="获取用户数据"></a>获取用户数据</h3><p>因为第三方应用请求 GitHub API 涉及到跨域，第一篇文章已经提到了<a href="https://developer.github.com/v3/#cross-origin-resource-sharing" target="_blank" rel="external">Github API 只支持 XHR 跨域请求</a>，一些同学如果用 Fetch 跨域请求 API 会导致请求 <code>request type</code> 变成 <code>option</code> ，所以项目中改用 <code>axios</code> 进行网络请求。</p>
-<p>这里以获取登陆用户基本信息为例，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Axios <span class="keyword">from</span> <span class="string">'axios'</span></span><br><span class="line"><span class="keyword">import</span> Cookie <span class="keyword">from</span> <span class="string">'js-cookie'</span></span><br><span class="line"><span class="keyword">const</span> access_token = Cookie.get(<span class="string">'access_token'</span>);</span><br><span class="line"></span><br><span class="line">getLoginInfo() &#123;</span><br><span class="line">    <span class="keyword">let</span> that = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">let</span> url = API.GITHUB.GET_LOGIN_INFO;</span><br><span class="line">    Axios.get(url, &#123;</span><br><span class="line">        params: &#123;</span><br><span class="line">            access_token: access_token</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</span><br><span class="line">        that.setState(&#123;</span><br><span class="line">            loginInfo: res.data,</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;).catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.error(error);</span><br><span class="line">      &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这里以获取登陆用户基本信息为例，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Axios <span class="keyword">from</span> <span class="string">'axios'</span></span><br><span class="line"><span class="keyword">import</span> Cookie <span class="keyword">from</span> <span class="string">'js-cookie'</span></span><br><span class="line"><span class="keyword">const</span> access_token = Cookie.get(<span class="string">'access_token'</span>);</span><br><span class="line"></span><br><span class="line">getLoginInfo() &#123;</span><br><span class="line">    <span class="keyword">let</span> that = <span class="keyword">this</span>;</span><br><span class="line">    <span class="keyword">let</span> url = API.GITHUB.GET_LOGIN_INFO;</span><br><span class="line">    Axios.get(url, &#123;</span><br><span class="line">        params: &#123;</span><br><span class="line">            access_token: access_token</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</span><br><span class="line"><span class="comment">/**</span><br><span class="line"> * 拿到用户信息</span><br><span class="line"> */</span></span><br><span class="line">        that.setState(&#123;</span><br><span class="line">            loginInfo: res.data,</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;).catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.error(error);</span><br><span class="line">      &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>以上就是 Github APP 获取 <code>Access_token</code> 的全部过程，接下来的最后一篇文章，记录下 API 的设计以及最后的项目部署。</p>
 <p>参考：</p>
 <ul>
 <li><a href="https://tools.ietf.org/html/rfc6749" target="_blank" rel="external">RFC6749-The OAuth 2.0 Authorization Framework</a></li>
@@ -127,9 +128,9 @@
             
             <tag> github </tag>
             
-            <tag> OAuth 2.0 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> OAuth 2.0 </tag>
             
         </tags>
         
@@ -207,9 +208,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> react router4 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
         
@@ -2304,9 +2305,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -2845,9 +2846,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
         
