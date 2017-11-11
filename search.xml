@@ -33,7 +33,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[React + Node 单页应用「二」OAuth 2.0 授权认证 & GitHub 授权实践]]></title>
+      <title><![CDATA[React + Node 单页应用「二」OAuth 2.0 协议 & GitHub 授权实践]]></title>
       <url>http://lijundong.com/application-with-react-and-node-2th/</url>
       <content type="html"><![CDATA[<h2 id="关于项目"><a href="#关于项目" class="headerlink" title="关于项目"></a>关于项目</h2><p><a href="https://github.com/lijundong/gitcard" target="_blank" rel="external">项目地址</a><br><a href="http://github.lijundong.com/" target="_blank" rel="external">预览地址</a></p>
 <p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
@@ -49,7 +49,6 @@
 <li>任何第三方应用的漏洞都可能会威胁到用户的密码，以及对应密码权限下的用户数据。</li>
 </ul>
 <p>为了解决这个问题，OAuth 协议引入了授权层，并将客户端与服务端的角色区分开，在 OAuth 协议中，客户端请求的 <code>Access_token</code> ，被托管在资源服务器，但受用户控制，并且与用户凭证完全不同。</p>
-<p>举个例子，罗老师(resource owner)想通过不使用 username 与 password 的方式授权打印机(client)打印她存储在 Google Photo(resource server)中的私人照片，那么她可以直接授权一个 Google Photo 信任的服务器(authorization server)下发一条允许打印机打印照片的凭证(access token)。</p>
 <p>举个例子，现在有一家档案馆，档案馆中有很多资料，这些资料有些涉及到机密，有些只是常规资料，<br>研究员<strong>小李</strong>需要进入档案馆查找<strong>常规资料</strong>，于是就跑去找<strong>罗馆长</strong>批条子</p>
 <blockquote>
 <p>“馆长馆长，我要看一些常规资料，请给我批个条子吧”</p>
@@ -128,9 +127,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> OAuth 2.0 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
         
@@ -146,7 +145,7 @@
 <p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
 <h2 id="文章列表"><a href="#文章列表" class="headerlink" title="文章列表"></a>文章列表</h2><ul>
 <li><a href="http://www.lijundong.com/application-with-react-and-node-1th/" target="_blank" rel="external">第一篇：React + Node 单页应用「一」前端搭建</a></li>
-<li><a href="http://www.lijundong.com/application-with-react-and-node-2th/" target="_blank" rel="external">第二篇：React + Node 单页应用「二」OAuth 2.0 授权认证 &amp; GitHub 授权实践</a></li>
+<li><a href="http://www.lijundong.com/application-with-react-and-node-2th/" target="_blank" rel="external">第二篇：React + Node 单页应用「二」OAuth 2.0 协议 &amp; GitHub 授权实践</a></li>
 </ul>
 <p>这是第一篇，主要介绍下前端代码的构建、<code>React router</code> 使用中遇到问题，以及前端开发完成后部署相关工作。</p>
 <a id="more"></a>
@@ -2060,9 +2059,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> vim </tag>
-            
             <tag> linux </tag>
+            
+            <tag> vim </tag>
             
             <tag> 正则 </tag>
             
@@ -2305,9 +2304,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -2846,9 +2845,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
         
@@ -2962,9 +2961,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
         
