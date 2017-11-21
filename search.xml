@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[IKBC Poker 2 键盘常见功能]]></title>
       <url>http://lijundong.com/poker-shortcut/</url>
-      <content type="html"><![CDATA[<p>一个半月前，夏部长的青轴出现了 P 键间歇失灵的问题，忍了一段时间就下单了 Poker 茶轴，用着很舒服，不过由于组合键太多，导致经常出现按键锁定的情况，每到这个时候，我就像个猴子在电脑前，按哪错哪。</p>
+      <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/17-11-21/64023066.jpg" alt=""><br>一个半月前，夏部长的青轴出现了 P 键间歇失灵的问题，忍了一段时间就下单了 Poker 茶轴，用着很舒服，不过由于组合键太多，导致经常出现按键锁定的情况，每到这个时候，我就像个猴子在电脑前，按哪错哪。</p>
 <p>据我研究表明，使用工具前先看<strong>说明书</strong>是一件非常重要的事情。</p>
 <a id="more"></a>
 <h3 id="太长不看版本"><a href="#太长不看版本" class="headerlink" title="太长不看版本"></a>太长不看版本</h3><blockquote>
@@ -276,9 +276,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> react router4 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
         
@@ -1677,9 +1677,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> 服务器 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
         
