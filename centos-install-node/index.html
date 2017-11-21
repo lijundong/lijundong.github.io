@@ -40,7 +40,7 @@
 <meta property="og:url" content="http://lijundong.com/centos-install-node/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。">
-<meta property="og:updated_time" content="2016-12-10T11:12:04.000Z">
+<meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS源码安装NodeJS">
 <meta name="twitter:description" content="之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。">
@@ -231,8 +231,8 @@
     <div class="post-content">
       
         <p>之前在Linux服务器上安装程序都是用的包管理器，但由于这种方式处在鄙视链末端，常遭黄彪的诟病，遂记录一篇在 CentOS 上源码安装 NodeJS。<br><a id="more"></a></p>
-<h3 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h3><p>在<a href="https://nodejs.org/en/download/" target="_blank" rel="external">NodeJS官网</a>下载源码，如果不需要体验最新特性，推荐下载LTS（long term support）版本，当前版本为4.5.0</p>
-<p><code>wget https://nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz</code></p>
+<h3 id="获取源码"><a href="#获取源码" class="headerlink" title="获取源码"></a>获取源码</h3><p>在<a href="//nodejs.org/en/download/">NodeJS官网</a>下载源码，如果不需要体验最新特性，推荐下载LTS（long term support）版本，当前版本为4.5.0</p>
+<p><code>wget //nodejs.org/dist/v4.5.0/node-v4.5.0.tar.gz</code></p>
 <h3 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h3><p>解压源码包并进入解压后文件夹<br><code>tar xzvf node-v* &amp;&amp; cd node-v*</code></p>
 <h3 id="编译-amp-amp-安装"><a href="#编译-amp-amp-安装" class="headerlink" title="编译 &amp;&amp; 安装"></a>编译 &amp;&amp; 安装</h3><p><code>./configure    //生成makefile</code></p>
 <p><strong>注：</strong>如果系统没有安装gcc，需要通过以下命令安装gcc<br><code>sudo yum install gcc gcc-c++</code></p>

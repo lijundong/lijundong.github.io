@@ -40,7 +40,7 @@
 <meta property="og:url" content="http://lijundong.com/location-of-bom/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="再次看到BOM的location，涉及到URL的组成，做个总结，记个笔记先。">
-<meta property="og:updated_time" content="2017-02-06T06:47:46.000Z">
+<meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BOM 之 location 对象">
 <meta name="twitter:description" content="再次看到BOM的location，涉及到URL的组成，做个总结，记个笔记先。">
@@ -231,7 +231,7 @@
     <div class="post-content">
       
         <p>再次看到BOM的location，涉及到URL的组成，做个总结，记个笔记先。<br><a id="more"></a></p>
-<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>举个栗子：<br>现有一url：<code>https://lijundong.com:80/blog?name=bom#function</code><br>对应属性如下：</p>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>举个栗子：<br>现有一url：<code>//lijundong.com:80/blog?name=bom#function</code><br>对应属性如下：</p>
 <table>
 <thead>
 <tr>
@@ -259,7 +259,7 @@
 <tr>
 <td>href</td>
 <td>返回当前页面的完整URL</td>
-<td>“<a href="https://lijundong.com:80/blog?name=bom#function">https://lijundong.com:80/blog?name=bom#function</a>“</td>
+<td>“//lijundong.com:80/blog?name=bom#function”</td>
 </tr>
 <tr>
 <td>pathname</td>
@@ -283,8 +283,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="位置操作"><a href="#位置操作" class="headerlink" title="位置操作"></a>位置操作</h3><h4 id="assign"><a href="#assign" class="headerlink" title="assign()"></a>assign()</h4><p>通过传递新的URL打开页面<br><code>location.assign(&quot;http://www.lijundong.com&quot;);</code><br>值得一提的是通过修改<code>location.href</code>或<code>window.location</code>为新的URL，也会调用<code>assign()</code>，所以下面的三种方式效果是完全相同的。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location.assign(<span class="string">"http://www.lijundong.com"</span>);</span><br><span class="line"><span class="built_in">window</span>.location=<span class="string">"http://www.lijundong.com"</span>;</span><br><span class="line">location.href=<span class="string">"http://www.lijundong.com"</span>;</span><br></pre></td></tr></table></figure></p>
-<p><code>location.href</code>可以被修改，同理可以通过修改上面介绍的其他属性改变URL<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//对"https://lijundong.com:80/blog?name=bom#function"修改</span></span><br><span class="line">location.hash=<span class="string">"#dom"</span>;</span><br><span class="line">location.search=<span class="string">"?name=dom"</span>;</span><br><span class="line">loaction.hostname=<span class="string">"www.leeon.com"</span>;</span><br><span class="line">location.pathname=<span class="string">"/web"</span>;</span><br><span class="line">location.port=<span class="string">"8080"</span>;</span><br></pre></td></tr></table></figure></p>
+<h3 id="位置操作"><a href="#位置操作" class="headerlink" title="位置操作"></a>位置操作</h3><h4 id="assign"><a href="#assign" class="headerlink" title="assign()"></a>assign()</h4><p>通过传递新的URL打开页面<br><code>location.assign(&quot;//www.lijundong.com&quot;);</code><br>值得一提的是通过修改<code>location.href</code>或<code>window.location</code>为新的URL，也会调用<code>assign()</code>，所以下面的三种方式效果是完全相同的。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location.assign(<span class="string">"//www.lijundong.com"</span>);</span><br><span class="line"><span class="built_in">window</span>.location=<span class="string">"//www.lijundong.com"</span>;</span><br><span class="line">location.href=<span class="string">"//www.lijundong.com"</span>;</span><br></pre></td></tr></table></figure></p>
+<p><code>location.href</code>可以被修改，同理可以通过修改上面介绍的其他属性改变URL<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//对"//lijundong.com:80/blog?name=bom#function"修改</span></span><br><span class="line">location.hash=<span class="string">"#dom"</span>;</span><br><span class="line">location.search=<span class="string">"?name=dom"</span>;</span><br><span class="line">loaction.hostname=<span class="string">"www.leeon.com"</span>;</span><br><span class="line">location.pathname=<span class="string">"/web"</span>;</span><br><span class="line">location.port=<span class="string">"8080"</span>;</span><br></pre></td></tr></table></figure></p>
 <h4 id="replace"><a href="#replace" class="headerlink" title="replace()"></a>replace()</h4><p>通过上面的方式修改URL，浏览器的历史记录中会生成一条记录，用户可通过浏览器的back按钮回退，<code>replace()</code>方式可禁止这种情况。<br><code>location.replace(&quot;www.google.com&quot;);//用户回退不到www.lijundong.com</code></p>
 <h4 id="reload"><a href="#reload" class="headerlink" title="reload()"></a>reload()</h4><p><code>reload()</code>可能是我们最熟悉的功能，重新加载，这个方法调用时是有参数的。</p>
 <ul>

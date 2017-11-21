@@ -40,7 +40,7 @@
 <meta property="og:url" content="http://lijundong.com/use-charles-up-to-debug/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。">
-<meta property="og:updated_time" content="2017-07-24T07:24:10.000Z">
+<meta property="og:updated_time" content="2017-11-21T08:03:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Charles 使用小记">
 <meta name="twitter:description" content="脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。">
@@ -233,7 +233,7 @@
         <p>脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。</p>
 <a id="more"></a>
 <h3 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h3><p>电脑系统：MacOS 10.12.6<br>Charles 版本：4.1.4</p>
-<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>当下的移动应用开发广泛应用了 Hybrid 模式，将 H5 页面嵌入原生应用中，以手机 QQ 为例，<a href="http://mp.weixin.qq.com/s/evzDnTsHrAr2b9jcevwBzA" target="_blank" rel="external">70% 以上业务是由 H5 开发</a>，由此可见一斑。<br>常规的开发流程是 FE 在本地开发环境中写好 H5 页面，开发完成后，后台 RD 将项目部署到测试版本中，手机下次测试版 APP，在 APP 内对页面进行测试。</p>
+<h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>当下的移动应用开发广泛应用了 Hybrid 模式，将 H5 页面嵌入原生应用中，以手机 QQ 为例，<a href="//mp.weixin.qq.com/s/evzDnTsHrAr2b9jcevwBzA">70% 以上业务是由 H5 开发</a>，由此可见一斑。<br>常规的开发流程是 FE 在本地开发环境中写好 H5 页面，开发完成后，后台 RD 将项目部署到测试版本中，手机下次测试版 APP，在 APP 内对页面进行测试。</p>
 <p>FE 在开发环境中可以通过浏览器调试，部署到测试环境后，遇到新的 bug 或是需求的改动，需要在本地改动代码，重新部署到测试包，打开 APP 进行验证。这个过程太复杂，后台 RD 也会很烦。</p>
 <p>这时候就需要 Charles 辅助开发。</p>
 <h3 id="关于-Charles"><a href="#关于-Charles" class="headerlink" title="关于 Charles"></a>关于 Charles</h3><p>Charles 常用于截取网络封存包，可以设想一下，你的手机与服务器之间存在一个代理服务器，手机所有的请求都会经过这个代理服务器，如下示意图<br><img src="" alt=""><br>设想你是一个负责收发信件的信使，当一位客户将书信交予你递送时，你可以按常规流程去递送，也可以在非常规状态下更改信件的内容、收信人等，你还可以决定这封信递送的速度，甚至直接将这封信拦截不送，知道收信人地址的你，可以反复递送信件考研收件人的耐心。收信人的回信，你可以将其修改，调包。长此以往，作为信使，你可能会被投诉，开除。但作为工具，你可以成为 Charles，受到大批开发者的拥趸。</p>
@@ -248,7 +248,7 @@
 <h3 id="常用-feature"><a href="#常用-feature" class="headerlink" title="常用 feature"></a>常用 feature</h3><p>前面都是介绍以及配置，下面介绍几个常用的 feature。</p>
 <h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><p>点选 session 窗口中的请求，右键查看选项，选项的最后两项即是 map 选项，提供了 <code>map remote/map local</code> 选项，可以将请求的资源映射到本地或者远程的资源，举个例子。<br>你需要调试页面中的 JS 代码，你可以将页面的 JS 请求映射到本地开发环境中的 JS 文件，刷新页面后，页面请求到的是本地 JS 文件，如此一来，修改本地 JS 后，刷新页面就可以在 APP 内查看到效果。<br>map 是这次开发中主要使用的功能，大幅度提高了我的开发效率。</p>
 <h3 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h3><ul>
-<li><a href="http://blog.devtang.com/2015/11/14/charles-introduction/" target="_blank" rel="external">Charles 从入门到精通</a></li>
+<li><a href="//blog.devtang.com/2015/11/14/charles-introduction/">Charles 从入门到精通</a></li>
 </ul>
 
       

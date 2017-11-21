@@ -40,12 +40,12 @@
 <meta property="og:url" content="http://lijundong.com/wechat-node-0th/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="前段时间帮忙做一个微信后台开发，并且用了Node + Mongo，做一次实践，后面又添加了一些功能，整个项目开始变得系统，做了一段时间，对于整个系统的把握变得清晰，Node的使用也有了些思路，过程中遇到很多问题，虽然最后项目作废了，但是笔记还是要做的，这里就记录下开发中遇到的问题。">
-<meta property="og:image" content="http://source.lijundong.com/16-7-22/12502005-Bt5ywJrIEAAKJQt.jpg-large">
-<meta property="og:updated_time" content="2017-02-12T07:45:02.000Z">
+<meta property="og:image" content="http://lijundong.com//source.lijundong.com/16-7-22/12502005-Bt5ywJrIEAAKJQt.jpg-large">
+<meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信公号Node开发「零」之项目建立">
 <meta name="twitter:description" content="前段时间帮忙做一个微信后台开发，并且用了Node + Mongo，做一次实践，后面又添加了一些功能，整个项目开始变得系统，做了一段时间，对于整个系统的把握变得清晰，Node的使用也有了些思路，过程中遇到很多问题，虽然最后项目作废了，但是笔记还是要做的，这里就记录下开发中遇到的问题。">
-<meta name="twitter:image" content="http://source.lijundong.com/16-7-22/12502005-Bt5ywJrIEAAKJQt.jpg-large">
+<meta name="twitter:image" content="http://lijundong.com//source.lijundong.com/16-7-22/12502005-Bt5ywJrIEAAKJQt.jpg-large">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -233,8 +233,8 @@
     <div class="post-content">
       
         <p>前段时间帮忙做一个微信后台开发，并且用了Node + Mongo，做一次实践，后面又添加了一些功能，整个项目开始变得系统，做了一段时间，对于整个系统的把握变得清晰，Node的使用也有了些思路，过程中遇到很多问题，虽然最后项目作废了，但是笔记还是要做的，这里就记录下开发中遇到的问题。<br><a id="more"></a></p>
-<h3 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h3><p>首先需要理清楚，Node不是一门新的语言，使用的语法是JavaScript的核心语法，而Node只是JS代码运行环境。<br>参考下图(作者<a href="https://twitter.com/BusyRich/status/494959181871316992" target="_blank" rel="external">@BusyRich</a>)可以更清晰的理解Node的运行过程。</p>
-<p><img src="http://source.lijundong.com/16-7-22/12502005-Bt5ywJrIEAAKJQt.jpg-large" alt="Node运行"></p>
+<h3 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h3><p>首先需要理清楚，Node不是一门新的语言，使用的语法是JavaScript的核心语法，而Node只是JS代码运行环境。<br>参考下图(作者<a href="//twitter.com/BusyRich/status/494959181871316992">@BusyRich</a>)可以更清晰的理解Node的运行过程。</p>
+<p><img src="//source.lijundong.com/16-7-22/12502005-Bt5ywJrIEAAKJQt.jpg-large" alt="Node运行"></p>
 <p>运行过程如下:</p>
 <blockquote>
 <ul>
@@ -244,7 +244,7 @@
 <li>v8引擎再将结果返回给用户。</li>
 </ul>
 </blockquote>
-<p>之前在<a href="http://www.lijundong.com/2016/07/15/%E5%86%8D%E8%B0%88setTimeout%E4%B8%8EsetInterval/" target="_blank" rel="external">再谈setTimeout与setInterval</a>中讨论过JavaScript中的Event Loop，Node中的Event Loop机制有机会可以看下。</p>
+<p>之前在<a href="//www.lijundong.com/2016/07/15/%E5%86%8D%E8%B0%88setTimeout%E4%B8%8EsetInterval/">再谈setTimeout与setInterval</a>中讨论过JavaScript中的Event Loop，Node中的Event Loop机制有机会可以看下。</p>
 <p>所以对于前端开发者来说，上手NodeJS会比较容易些，运行方式也简单</p>
 <ul>
 <li>一是在终端下打开Node运行环境<code>node</code>命令，输入<code>console.log(&quot;hello node&quot;);</code>回车即可看到<code>hello node</code>，</li>
@@ -260,7 +260,7 @@
 <p>觉得不能把理解的东西讲得透彻，面面俱到，迟迟不敢下手，写了删，删了写，关于写作还有很多东西需要学习，行文思路清晰，文字表达精炼，这些都是需要不断的写来锻炼的。<br>Anyway,done is better than perfect!</p>
 <p>参考：</p>
 <ul>
-<li><p><a href="http://www.ruanyifeng.com/blog/2014/10/event-loop.html" target="_blank" rel="external">JavaScript 运行机制详解：再谈Event Loop</a></p>
+<li><p><a href="//www.ruanyifeng.com/blog/2014/10/event-loop.html">JavaScript 运行机制详解：再谈Event Loop</a></p>
 </li>
 <li></li>
 </ul>

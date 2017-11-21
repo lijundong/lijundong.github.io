@@ -40,12 +40,12 @@
 <meta property="og:url" content="http://lijundong.com/backup-in-mac/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="行走江湖，讲求的是一个稳字。">
-<meta property="og:image" content="http://source.lijundong.com/17-2-14/27103555-file_1487052307219_6e23.jpg">
-<meta property="og:updated_time" content="2017-02-14T06:54:38.000Z">
+<meta property="og:image" content="http://lijundong.com//source.lijundong.com/17-2-14/27103555-file_1487052307219_6e23.jpg">
+<meta property="og:updated_time" content="2017-11-21T08:03:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac 备份方案">
 <meta name="twitter:description" content="行走江湖，讲求的是一个稳字。">
-<meta name="twitter:image" content="http://source.lijundong.com/17-2-14/27103555-file_1487052307219_6e23.jpg">
+<meta name="twitter:image" content="http://lijundong.com//source.lijundong.com/17-2-14/27103555-file_1487052307219_6e23.jpg">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -235,11 +235,11 @@
         <p>行走江湖，讲求的是一个稳字。</p>
 <a id="more"></a>
 <p>在狗东买的硬盘下午到了，折腾了下，格式化、分区、备份。这里记录下我的方案。</p>
-<h3 id="关于硬盘"><a href="#关于硬盘" class="headerlink" title="关于硬盘"></a>关于硬盘</h3><p>硬盘、耳机一类带有玄学色彩的电子产品，我选购的经验是预算之内跟着群众走，排除你有情怀或者是行家里手的情况。作为普通消费者，我们的需求也很简单，因此不必考虑那些极端环境,只要不犯错就达到我们的基本诉求了，毕竟群众的眼睛是雪亮的。<br>所以，我买了希捷的 <a href="http://detail.zol.com.cn/move_disk/index364131.shtml" target="_blank" rel="external">Backup-Plus-Slim-1TB(STDR1000300)</a>。</p>
+<h3 id="关于硬盘"><a href="#关于硬盘" class="headerlink" title="关于硬盘"></a>关于硬盘</h3><p>硬盘、耳机一类带有玄学色彩的电子产品，我选购的经验是预算之内跟着群众走，排除你有情怀或者是行家里手的情况。作为普通消费者，我们的需求也很简单，因此不必考虑那些极端环境,只要不犯错就达到我们的基本诉求了，毕竟群众的眼睛是雪亮的。<br>所以，我买了希捷的 <a href="//detail.zol.com.cn/move_disk/index364131.shtml">Backup-Plus-Slim-1TB(STDR1000300)</a>。</p>
 <p>我是跟着群众走的，所以不要问我为什么……</p>
 <h3 id="关于用途"><a href="#关于用途" class="headerlink" title="关于用途"></a>关于用途</h3><p>我买的容量是 1T，计划分区出 250G 作为 timeMachine 的备份空间 A，剩下的用做日常文件存储 B。</p>
 <h3 id="关于文件格式"><a href="#关于文件格式" class="headerlink" title="关于文件格式"></a>关于文件格式</h3><p>先抛出结论，硬盘分为两个区，250G 备份分区 A 格式化为 <code>Mac OS Extended</code> 格式，另一分区 B 格式化为 <code>exfat</code> 格式，将硬盘转插在 windows 上，将 B 分区格式化为 <code>NTFS</code> 文件格式。</p>
-<p>为适配 Windows，故将大分区 B 设置成 <code>NTFS</code> 格式，<code>NTFS</code> 在 Mac 下可读不可写，但是希捷官方提供了适用于 MacOS(10.9. 及以上)的 <a href="http://www.seagate.com/cn/zh/support/downloads/item/ntfs-driver-for-mac-os-master-dl/" target="_blank" rel="external">Paragon</a>，所以唯一的问题也被解决了。</p>
+<p>为适配 Windows，故将大分区 B 设置成 <code>NTFS</code> 格式，<code>NTFS</code> 在 Mac 下可读不可写，但是希捷官方提供了适用于 MacOS(10.9. 及以上)的 <a href="//www.seagate.com/cn/zh/support/downloads/item/ntfs-driver-for-mac-os-master-dl/">Paragon</a>，所以唯一的问题也被解决了。</p>
 <h3 id="timeMachine"><a href="#timeMachine" class="headerlink" title="timeMachine"></a>timeMachine</h3><p>关于 timeMachine 的使用，极其简单，打开 timeMachine，选择备份盘，备份。</p>
 <p><strong>建议每次升级之前先备份一次。</strong></p>
 <h3 id="关于恢复"><a href="#关于恢复" class="headerlink" title="关于恢复"></a>关于恢复</h3><p>目前我还没用到恢复，希望永远也用不到，哈哈。</p>
