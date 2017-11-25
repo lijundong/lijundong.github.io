@@ -200,9 +200,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> OAuth 2.0 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
         
@@ -276,9 +276,9 @@
             
             <tag> github </tag>
             
-            <tag> react router4 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> react router4 </tag>
             
         </tags>
         
@@ -1677,9 +1677,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> 服务器 </tag>
             
-            <tag> git </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> git </tag>
             
         </tags>
         
@@ -2128,9 +2128,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> linux </tag>
-            
             <tag> vim </tag>
+            
+            <tag> linux </tag>
             
             <tag> 正则 </tag>
             
@@ -3030,9 +3030,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
         
