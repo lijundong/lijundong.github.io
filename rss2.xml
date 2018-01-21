@@ -8,11 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Tue, 21 Nov 2017 14:25:30 GMT</pubDate>
+    <pubDate>Sun, 21 Jan 2018 08:29:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>IKBC Poker 2 键盘常见功能</title>
+      <title>火车驶向云外，梦安魂于九霄</title>
+      <link>http://lijundong.com/year-again-2018/</link>
+      <guid>http://lijundong.com/year-again-2018/</guid>
+      <pubDate>Sun, 21 Jan 2018 05:52:34 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;黑色的不是夜晚 是漫长的孤单&lt;br&gt;看脚下一片黑暗 望头顶星光璀璨&lt;br&gt;叹世万物皆可盼 唯真爱最短暂&lt;br&gt;失去的永不复返 世守恒而今倍还&lt;br&gt;摇旗呐喊的热情 携光阴渐远去&lt;br&gt;人世间悲喜烂剧 昼夜轮播不停&lt;br&gt;纷飞的滥情男女 情仇爱恨别离&lt;br&gt;一代人终将老去 但总有人正年轻&lt;/p&gt;
+&lt;/blockquote&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/year-again-2018/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>IKBC Poker 2 使用报告</title>
       <link>http://lijundong.com/poker-shortcut/</link>
       <guid>http://lijundong.com/poker-shortcut/</guid>
       <pubDate>Sun, 12 Nov 2017 06:06:09 GMT</pubDate>
@@ -294,20 +310,6 @@
       </description>
       
       <comments>http://lijundong.com/backup-in-mac/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Javascript 中 this 的指向</title>
-      <link>http://lijundong.com/this-in-javascript/</link>
-      <guid>http://lijundong.com/this-in-javascript/</guid>
-      <pubDate>Mon, 13 Feb 2017 11:11:50 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;关于 javascript 中 this 用法的笔记，来自 &lt;a href=&quot;//github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch1.md&quot;&gt;You Don’t Know JS: this &amp;amp; Object Prototypes&lt;/a&gt; 的读书笔记。内容包括 this 绑定规则的总结，以及遇到具体问题时，判断 this 指向的方法。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/this-in-javascript/#disqus_thread</comments>
     </item>
     
   </channel>
