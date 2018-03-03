@@ -41,7 +41,7 @@
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="无用但有趣的冷知识，通过[ ] ( ) ! + 构建 Javascript 世界，hope you enjoy it！">
 <meta property="og:image" content="http://source.lijundong.com/18-3-2/27593533.jpg">
-<meta property="og:updated_time" content="2018-03-03T07:20:55.033Z">
+<meta property="og:updated_time" content="2018-03-03T07:23:26.450Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【译】六个字符构建 Javascript 世界">
 <meta name="twitter:description" content="无用但有趣的冷知识，通过[ ] ( ) ! + 构建 Javascript 世界，hope you enjoy it！">
@@ -239,7 +239,9 @@
 <p>如果将参数加上 <code>+</code> 或 <code>-</code> 前缀，它会知道我们想要一个数值，如果类型转换合法，紧接着就会将字符串转换成数值类型。</p>
 <p>如果将参数取反，它会把类型转换成布尔值。</p>
 <p>让我们从最基础的开始，这里有几条黄金法则：</p>
+<blockquote>
 <p>1.通过 <code>!</code> 转换为布尔（Boolean）类型<br>2.通过 <code>+</code> 转换为数值（Number）类型<br>3.与 <code>[]</code> 相加转换为字符（String）类型</p>
+</blockquote>
 <p>让我们实践几个例子：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![] === <span class="literal">false</span></span><br><span class="line">+[] === <span class="number">0</span></span><br><span class="line">[]+[] === <span class="string">""</span></span><br></pre></td></tr></table></figure>
 <p>当然，你肯定知道可以通过中括号加索引的方式从字符串中获取对应的字符：</p>
