@@ -8,8 +8,36 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 21 Jan 2018 08:29:02 GMT</pubDate>
+    <pubDate>Sat, 03 Mar 2018 07:20:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>【译】六个字符构建 Javascript 世界</title>
+      <link>http://lijundong.com/A-Javascript-journey-with-only-six-characters/</link>
+      <guid>http://lijundong.com/A-Javascript-journey-with-only-six-characters/</guid>
+      <pubDate>Thu, 01 Mar 2018 08:46:25 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/18-3-2/27593533.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;无用但有趣的冷知识，通过&lt;code&gt;[ ] ( ) ! +&lt;/code&gt; 构建 Javascript 世界，hope you enjoy it！ &lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/A-Javascript-journey-with-only-six-characters/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Javascript ASI 机制</title>
+      <link>http://lijundong.com/javascript-asi/</link>
+      <guid>http://lijundong.com/javascript-asi/</guid>
+      <pubDate>Thu, 01 Mar 2018 02:01:03 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;automatic semicolon insertion (ASI)&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/javascript-asi/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>火车驶向云外，梦安魂于九霄</title>
@@ -282,34 +310,6 @@
       </description>
       
       <comments>http://lijundong.com/deep-clone-vs-shallow-clone/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>早班车乱谈</title>
-      <link>http://lijundong.com/think-in-early-bus/</link>
-      <guid>http://lijundong.com/think-in-early-bus/</guid>
-      <pubDate>Fri, 17 Feb 2017 01:34:10 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;我们处在一个巨大的变革之中。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/think-in-early-bus/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Mac 备份方案</title>
-      <link>http://lijundong.com/backup-in-mac/</link>
-      <guid>http://lijundong.com/backup-in-mac/</guid>
-      <pubDate>Tue, 14 Feb 2017 09:23:36 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;行走江湖，讲求的是一个稳字。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/backup-in-mac/#disqus_thread</comments>
     </item>
     
   </channel>
