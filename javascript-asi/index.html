@@ -12,12 +12,12 @@
 
 
 
-  <meta name="description" content="Javascript ASI 机制"/>
+  <meta name="description" content="Javascript 分号自动插入机制"/>
 
 
 
 
-  <meta name="keywords" content="javascript," />
+  <meta name="keywords" content="javascript,ASI,semicolon," />
 
 
 
@@ -34,16 +34,18 @@
 <link rel="canonical" href="http://lijundong.com/javascript-asi/"/>
 
 
-<meta name="description" content="automatic semicolon insertion (ASI)">
+<meta name="description" content="最近彻底从分号党变节为无分号群众，分号党的日子对 Javascript 分号的原理不求甚解，这几天仔细了解了下，这篇文章总结下 ASI（automatic semicolon insertion， 分号自动插入机制）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Javascript ASI 机制">
+<meta property="og:title" content="Javascript 分号自动插入机制">
 <meta property="og:url" content="http://lijundong.com/javascript-asi/index.html">
 <meta property="og:site_name" content="Leeon Notes">
-<meta property="og:description" content="automatic semicolon insertion (ASI)">
-<meta property="og:updated_time" content="2018-03-02T09:47:21.829Z">
+<meta property="og:description" content="最近彻底从分号党变节为无分号群众，分号党的日子对 Javascript 分号的原理不求甚解，这几天仔细了解了下，这篇文章总结下 ASI（automatic semicolon insertion， 分号自动插入机制）">
+<meta property="og:image" content="http://source.lijundong.com/18-3-5/17920261.jpg">
+<meta property="og:updated_time" content="2018-03-05T17:24:05.444Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript ASI 机制">
-<meta name="twitter:description" content="automatic semicolon insertion (ASI)">
+<meta name="twitter:title" content="Javascript 分号自动插入机制">
+<meta name="twitter:description" content="最近彻底从分号党变节为无分号群众，分号党的日子对 Javascript 分号的原理不求甚解，这几天仔细了解了下，这篇文章总结下 ASI（automatic semicolon insertion， 分号自动插入机制）">
+<meta name="twitter:image" content="http://source.lijundong.com/18-3-5/17920261.jpg">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -82,7 +84,7 @@
 
 
 
-    <title> Javascript ASI 机制 · Leeon Notes </title>
+    <title> Javascript 分号自动插入机制 · Leeon Notes </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -207,7 +209,7 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          Javascript ASI 机制
+          Javascript 分号自动插入机制
         
       </h1>
 
@@ -220,12 +222,91 @@
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#不能省略的分号"><span class="toc-text">不能省略的分号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于-ASI"><span class="toc-text">关于 ASI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ASI-机制"><span class="toc-text">ASI 机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#规则"><span class="toc-text">规则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#例外"><span class="toc-text">例外</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#restricted-production"><span class="toc-text">restricted production</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#例子"><span class="toc-text">例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开发应用"><span class="toc-text">开发应用</span></a></li></ol>
+    </div>
+  </div>
+
 
     <div class="post-content">
       
-        <p>automatic semicolon insertion (ASI)</p>
+        <p><img src="http://source.lijundong.com/18-3-5/17920261.jpg" alt=""></p>
+<p>最近彻底从分号党变节为无分号群众，分号党的日子对 Javascript 分号的原理不求甚解，这几天仔细了解了下，这篇文章总结下 ASI（automatic semicolon insertion， 分号自动插入机制）</p>
 <a id="more"></a>
-<p>coming soon</p>
+<h3 id="不能省略的分号"><a href="#不能省略的分号" class="headerlink" title="不能省略的分号"></a>不能省略的分号</h3><p>我在初学 Javascript 时，也搜过一些代码是否要加分号的资料，很多文章提到 「Javascript 权威指南」中的一段话</p>
+<blockquote>
+<p>如果一条语句以<code>（</code>、<code>[</code>、<code>/</code>、<code>+</code>、或<code>-</code>开始，那么它极有可能和前一条语句合在一起解释。</p>
+</blockquote>
+<p>并奉若圭臬，仅是这几个字符的相关例子就占据了文章的大半篇幅。</p>
+<p>看完这些文章，我对于 Javascript 分号的认知时，除了这几个字符前面需要特殊加分号外，其余的分号均可以省略，而日常开发中，以这几个字符开始的语句很少遇到，最常见的只有以 <code>(</code> 开始的立即执行函数（IIFE），随着时间的推移，我只记得在立即执行函数前需要特殊加分号。</p>
+<p>这种不求甚解的思维让我在技术学习的道路上始终踟蹰不前，其实稍微考虑深一点，就应该意识到，<code>/</code>、<code>+</code>、<code>-</code> 都在，那 <code>*</code> 呢？花点时间理解 IIFE 的原理就应该知道，只需要把函数声明转换成表达式直接执行就可以，除了 <code>()</code> 还可以用 <code>!</code>、<code>+</code>、<code>-</code>……</p>
+<h3 id="关于-ASI"><a href="#关于-ASI" class="headerlink" title="关于 ASI"></a>关于 ASI</h3><p>虽然被称为分号自动插入，但在代码实际的解析中，并没有分号插入，这个机制用于判断输入流（<code>input stream</code>）的终止。下文中，我们以插入分号代称这种终止。</p>
+<h3 id="ASI-机制"><a href="#ASI-机制" class="headerlink" title="ASI 机制"></a>ASI 机制</h3><p>ECMAScript 标准定义了三条规则和两种例外情况：</p>
+<blockquote>
+<p><em>from <a href="http://www.ecma-international.org/ecma-262/7.0/index.html#sec-rules-of-automatic-semicolon-insertion" target="_blank" rel="external">§11.9.1 Rules of Automatic Semicolon Insertion</a></em></p>
+</blockquote>
+<h4 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h4><blockquote>
+<p>1.Javascript 代码在从左往右被解析的过程中，当碰到一个不能构成合法语句的 token 时，下面几个条件至少一条成立，解析器就在在这个 token 前插入分号：</p>
+<ul>
+<li>如果这个 token 与上一个 token 之间至少有一个换行</li>
+<li>如果这个 token 是 <code>}</code></li>
+<li>如果上一个 token 是 <code>)</code>，那么解析器会尝试将前面的 token 解析为 <code>do...while</code> 语句，并插入分号<br>2.如果已经读到输入流的结尾了，解析器仍旧判定语法不合法，那么会在输入流的结尾插入分号<br>3.如果解析过程中遇到 <code>restricted production</code>，当在 <code>restricted production</code> 语法中禁止换行的位置（<code>[no LineTerminator here]</code>）出现换行时，解析器会在换行的位置插入分号</li>
+</ul>
+</blockquote>
+<h4 id="例外"><a href="#例外" class="headerlink" title="例外"></a>例外</h4><p>以下情况，将不会被插入分号：</p>
+<blockquote>
+<ul>
+<li>插入的分号被解析为空语句</li>
+<li><code>for</code> 循环中</li>
+</ul>
+</blockquote>
+<h4 id="restricted-production"><a href="#restricted-production" class="headerlink" title="restricted production"></a>restricted production</h4><p><code>Update</code> 表达式：</p>
+<ul>
+<li><code>LeftHandSideExpression [no LineTerminator here]</code> <code>++</code></li>
+<li><code>LeftHandSideExpression [no LineTerminator here]</code> <code>--</code></li>
+</ul>
+<p><code>Continue</code> 语句：</p>
+<ul>
+<li><code>continue;</code></li>
+<li><code>continue</code> <code>[no LineTerminator here]</code> <code>LabelIdentifier;</code></li>
+</ul>
+<p><code>Break</code> 语句：</p>
+<ul>
+<li><code>break;</code></li>
+<li><code>break</code> <code>[no LineTerminator here]</code> <code>LabelIdentifier;</code></li>
+</ul>
+<p><code>Return</code> 语句：</p>
+<ul>
+<li><code>return;</code></li>
+<li><code>return</code> <code>[no LineTerminator here]</code> <code>LabelIdentifier;</code></li>
+</ul>
+<p><code>Throw</code> 语句：</p>
+<ul>
+<li><code>throw;</code></li>
+<li><code>throw</code> <code>[no LineTerminator here]</code> <code>LabelIdentifier;</code></li>
+</ul>
+<p>箭头函数：</p>
+<ul>
+<li>Parameter <code>[no LineTerminator here]</code> <code>=&gt;</code> <code>函数体</code>;</li>
+</ul>
+<p><code>Yield</code> 表达式：</p>
+<ul>
+<li><code>Yield</code> <code>[no LineTerminator here]</code> <code>*</code> <code>AssignmentExpression</code>;</li>
+<li><code>Yield</code> <code>[no LineTerminator here]</code> <code>AssignmentExpression</code>;</li>
+</ul>
+<h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="number">1</span></span><br><span class="line"><span class="number">2</span> &#125; <span class="number">3</span></span><br><span class="line"><span class="comment">// 依据规则一和二，解析结果</span></span><br><span class="line">&#123; <span class="number">1</span></span><br><span class="line">;<span class="number">2</span> ;&#125; <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span></span><br><span class="line">a + b</span><br><span class="line"><span class="comment">// 依据规则三，解析结果</span></span><br><span class="line"><span class="keyword">return</span>;</span><br><span class="line">a + b;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(a &gt; b)</span><br><span class="line"><span class="keyword">else</span> c = d</span><br><span class="line"><span class="comment">// 如果在 else 前插入分号，这个分号将被解析为</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(a; b</span><br><span class="line">  )</span><br><span class="line"><span class="comment">// 依据例外情况二，不会插入分号，代码报错</span></span><br></pre></td></tr></table></figure>
+<h3 id="开发应用"><a href="#开发应用" class="headerlink" title="开发应用"></a>开发应用</h3><p>现在我已经完全适应了没有分号的开发，之前存在的不确定因素，只需花点时间制定一个可以长期沿用的规范就能解决，例如好的开发习惯可以让我们避免使用 <code>[].forEach()</code> 之类的写法，同时立即执行函数也有多种写法让我们避免 <code>(function(){})()</code> 这种情况的出现。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000004548664" target="_blank" rel="external">JavaScript ASI 机制详解</a></li>
+<li><a href="http://www.ecma-international.org/ecma-262/7.0/index.html#sec-rules-of-automatic-semicolon-insertion" target="_blank" rel="external">ECMAScript</a></li>
+<li><a href="https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi#comment39279596_2846298" target="_blank" rel="external">What are the rules for JavaScript’s automatic semicolon insertion (ASI)?</a></li>
+</ul>
 
       
     </div>
@@ -284,6 +365,10 @@
           <div class="post-tags">
             
               <a href="/tags/javascript/">javascript</a>
+            
+              <a href="/tags/ASI/">ASI</a>
+            
+              <a href="/tags/semicolon/">semicolon</a>
             
           </div>
         
@@ -408,7 +493,7 @@
     var disqus_config = function () {
         this.page.url = 'http://lijundong.com/javascript-asi/';
         this.page.identifier = 'javascript-asi/';
-        this.page.title = 'Javascript ASI 机制';
+        this.page.title = 'Javascript 分号自动插入机制';
     };
     (function() {
     var d = document, s = d.createElement('script');
