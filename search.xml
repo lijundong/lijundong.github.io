@@ -8,7 +8,6 @@
       <url>http://lijundong.com/A-Javascript-journey-with-only-six-characters/</url>
       <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/18-3-2/27593533.jpg" alt=""><br>无用但有趣的冷知识，通过<code>[ ] ( ) ! +</code> 构建 Javascript 世界，hope you enjoy it！ </p>
 <a id="more"></a>
-<hr>
 <p>Javascript 是一门非常奇怪，同时也非常棒的语言，我们可以用它写出非常疯狂但却奏效的代码，同时，它也能根据我们使用的方式进行类型转换从而辅助开发。</p>
 <p>如果将字符串（<code>string</code>）和其他类型参数相加，它会猜测我们需要文本格式，最后结果将返回 <code>string</code> 类型。</p>
 <p>如果将其他类型参数加上 <code>+</code> 或 <code>-</code> 前缀，它知道我们需要一个数值类型(<code>Number</code>)，如果类型转换合法，紧接着就会将参数转换成数值类型。</p>
