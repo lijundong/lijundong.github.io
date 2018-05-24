@@ -35,11 +35,13 @@
 
 
 <meta name="description" content="无用但有趣的冷知识，通过[ ] ( ) ! + 构建 Javascript 世界，hope you enjoy it！">
+<meta name="keywords" content="jsfuck,奇技淫巧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【译】六个字符构建 Javascript 世界">
 <meta property="og:url" content="http://lijundong.com/A-Javascript-journey-with-only-six-characters/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="无用但有趣的冷知识，通过[ ] ( ) ! + 构建 Javascript 世界，hope you enjoy it！">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="http://source.lijundong.com/18-3-2/27593533.jpg">
 <meta property="og:updated_time" content="2018-03-05T02:58:43.642Z">
 <meta name="twitter:card" content="summary">
@@ -259,7 +261,7 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[][<span class="string">"fill"</span>]</span><br></pre></td></tr></table></figure>
 <p>上面的代码最终会产生 <code>function fill() { [native code] }</code>，通过黄金法则，我们将结果再次转换为 <code>String</code> 类型：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[][<span class="string">"fill"</span>]+[] === <span class="string">"function fill() &#123; [native code] &#125;"</span></span><br></pre></td></tr></table></figure>
-<p>现在，我们又获得了 <code>c</code>、<code>o</code>、<code>v</code>、<code>(</code>、<code>)</code>、<code>{</code>、<code>}</code>、<code> </code>（空格）。</p>
+<p>现在，我们又获得了 <code>c</code>、<code>o</code>、<code>v</code>、<code>(</code>、<code>)</code>、<code>{</code>、<code>}</code>、<code></code>（空格）。</p>
 <p>通过新获取的 <code>c</code> 和 <code>o</code>，现在可以组合单词 <code>constructor</code>，<code>constructor</code> 是 JS 对象中返回构造函数的方法，下面就让我们通过 <code>constructor</code> 从已有对象类型中获取对应字符串形式的构造函数：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">true</span>[<span class="string">"constructor"</span>] + [] === <span class="string">"function Boolean() &#123; [native code] &#125;"</span></span><br><span class="line"><span class="number">0</span>[<span class="string">"constructor"</span>] + []    === <span class="string">"function Number() &#123; [native code] &#125;"</span></span><br><span class="line"><span class="string">""</span>[<span class="string">"constructor"</span>] + []   === <span class="string">"function String() &#123; [native code] &#125;"</span></span><br><span class="line">[][<span class="string">"constructor"</span>] + []   === <span class="string">"function Array() &#123; [native code] &#125;"</span></span><br></pre></td></tr></table></figure>
 <p>通过这些构造函数，字母集合中增添了 <code>B</code>、<code>N</code>、<code>S</code>、<code>A</code>、<code>m</code>、<code>g</code>、<code>y</code></p>
@@ -288,17 +290,17 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[][<span class="string">"fill"</span>][<span class="string">"constructor"</span>](<span class="string">"return escape('&lt;')"</span>)()[<span class="number">2</span>] === <span class="string">"C"</span></span><br></pre></td></tr></table></figure>
 <p>通过 <code>C</code>，我们可以得到 <code>fromCharCode</code> 函数，通过给定的十进制参数，可以得到对应的 Unicode 字符，它属于字符对象，因此调用方式可以参照前文：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">""</span>[<span class="string">"constructor"</span>][<span class="string">"fromCharCode"</span>](<span class="number">65</span>) === <span class="string">"A"</span></span><br><span class="line"><span class="string">""</span>[<span class="string">"constructor"</span>][<span class="string">"fromCharCode"</span>](<span class="number">46</span>) === <span class="string">"."</span></span><br></pre></td></tr></table></figure>
-<p>通过 <a href="https://unicodelookup.com/" target="_blank" rel="external">Unicode 速查</a>可以快速找到任何字符对应的数值。</p>
-<p>到这里，Javascript 世界的构建元素已经全部找齐！我们已经能拿到我们需要的任何参数，并将它们连接到一起形成代码并执行，这意味，我们仅通过 <code>[</code>、<code>]</code>、<code>(</code>、<code>)</code>、<code>+</code>、<code>!</code> 实现了 Javascript 的<a href="https://en.wikipedia.org/wiki/Turing_completeness" target="_blank" rel="external">图灵完备</a>。</p>
+<p>通过 <a href="https://unicodelookup.com/" target="_blank" rel="noopener">Unicode 速查</a>可以快速找到任何字符对应的数值。</p>
+<p>到这里，Javascript 世界的构建元素已经全部找齐！我们已经能拿到我们需要的任何参数，并将它们连接到一起形成代码并执行，这意味，我们仅通过 <code>[</code>、<code>]</code>、<code>(</code>、<code>)</code>、<code>+</code>、<code>!</code> 实现了 Javascript 的<a href="https://en.wikipedia.org/wiki/Turing_completeness" target="_blank" rel="noopener">图灵完备</a>。</p>
 <p>想证明一下？不妨在浏览器控制台里执行下面的代码：</p>
 <p><iframe src="https://pastebin.com/embed_iframe/F7QYajdu" style="border:none;width:100%"></iframe></p>
 <blockquote>
 <p><em>如果你是在手机上看的，可以告诉你，上面执行的是 <code>alert(&quot;wtf&quot;)</code></em></p>
 </blockquote>
-<p><a href="http://www.jsfuck.com/" target="_blank" rel="external">jsFuck</a> 可以自动转换你的代码，<a href="https://raw.githubusercontent.com/aemkei/jsfuck/master/jsfuck.js" target="_blank" rel="external">这里</a>是过程介绍。</p>
-<h3 id="你说了这么多，有用吗？"><a href="#你说了这么多，有用吗？" class="headerlink" title="你说了这么多，有用吗？"></a>你说了这么多，有用吗？</h3><p>如果你非要问我有没有用，我只能说点儿用也没，不过 eBay 前段时间出了个 <a href="https://arstechnica.com/information-technology/2016/02/ebay-has-no-plans-to-fix-severe-bug-that-allows-malware-distribution/" target="_blank" rel="external">Bug</a>，网站里允许卖家在页面中插入这些字符构成的 JS 代码，但这种攻击媒介不是很常见。有人说可以用来进行代码混淆，实际上，有更好的混淆方式。</p>
+<p><a href="http://www.jsfuck.com/" target="_blank" rel="noopener">jsFuck</a> 可以自动转换你的代码，<a href="https://raw.githubusercontent.com/aemkei/jsfuck/master/jsfuck.js" target="_blank" rel="noopener">这里</a>是过程介绍。</p>
+<h3 id="你说了这么多，有用吗？"><a href="#你说了这么多，有用吗？" class="headerlink" title="你说了这么多，有用吗？"></a>你说了这么多，有用吗？</h3><p>如果你非要问我有没有用，我只能说点儿用也没，不过 eBay 前段时间出了个 <a href="https://arstechnica.com/information-technology/2016/02/ebay-has-no-plans-to-fix-severe-bug-that-allows-malware-distribution/" target="_blank" rel="noopener">Bug</a>，网站里允许卖家在页面中插入这些字符构成的 JS 代码，但这种攻击媒介不是很常见。有人说可以用来进行代码混淆，实际上，有更好的混淆方式。</p>
 <p>所以，开心就好～～</p>
-<p>原文：<a href="http://www.jazcash.com/a-javascript-journey-with-only-six-characters/?utm_campaign=Front%2BEnd%2BNewsletter&amp;utm_medium=email&amp;utm_source=Front_End_Newsletter_32" target="_blank" rel="external">A Javascript journey with only six characters</a></p>
+<p>原文：<a href="http://www.jazcash.com/a-javascript-journey-with-only-six-characters/?utm_campaign=Front%2BEnd%2BNewsletter&amp;utm_medium=email&amp;utm_source=Front_End_Newsletter_32" target="_blank" rel="noopener">A Javascript journey with only six characters</a></p>
 
       
     </div>
@@ -365,6 +367,12 @@
         
         
   <nav class="post-nav">
+    
+      <a class="prev" href="/coder-setting/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">开发配置相关</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
     
     
       <a class="next" href="/javascript-asi/">

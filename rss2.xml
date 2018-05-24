@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 05 Mar 2018 02:58:43 GMT</pubDate>
+    <pubDate>Thu, 24 May 2018 02:30:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>开发配置相关</title>
+      <link>http://lijundong.com/coder-setting/</link>
+      <guid>http://lijundong.com/coder-setting/</guid>
+      <pubDate>Thu, 24 May 2018 02:25:08 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;开发环境配置贴集中&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/coder-setting/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>【译】六个字符构建 Javascript 世界</title>
@@ -129,7 +143,7 @@
       <pubDate>Sat, 28 Oct 2017 02:54:38 GMT</pubDate>
       <description>
       
-        &lt;p&gt;目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， &lt;code&gt;ssh root@xxx.xxx.xxx.xxx&lt;/code&gt;，接着输入 &lt;code&gt;password&lt;/code&gt;，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 优化前&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 公司机器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh root@xxx.xxx.xxx.xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;password: ******&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 私人机器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh root@xxx.xxx.xxx.xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;password: ******&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#优化后&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#公司机器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh dev-server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 私人机器&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh leeon-server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+        &lt;p&gt;目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， &lt;code&gt;ssh root@xxx.xxx.xxx.xxx&lt;/code&gt;，接着输入 &lt;code&gt;password&lt;/code&gt;，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 优化前&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 公司机器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh root@xxx.xxx.xxx.xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;password: ******&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 私人机器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh root@xxx.xxx.xxx.xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;password: ******&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;优化后&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;公司机器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh dev-server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 私人机器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh leeon-server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
       
       </description>
       
@@ -297,20 +311,6 @@
       </description>
       
       <comments>http://lijundong.com/synchronize-data-between-google-accounts/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Javascript 的赋值、引用以及深拷贝、浅拷贝</title>
-      <link>http://lijundong.com/deep-clone-vs-shallow-clone/</link>
-      <guid>http://lijundong.com/deep-clone-vs-shallow-clone/</guid>
-      <pubDate>Mon, 27 Feb 2017 13:04:43 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;在之前总结 &lt;a href=&quot;//www.lijundong.com/this-in-javascript/&quot;&gt;This 用法&lt;/a&gt; 的时候,遇到了传参问题，由此意识到了复制与引用的问题，说得高端些，引申出了深拷贝与浅拷贝的问题，后来在链家面试的时候，和一面也讨论到这个问题，当时的理解比较乱，涉及到深拷贝实现的方面都不熟悉，现在试着总结一下。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/deep-clone-vs-shallow-clone/#disqus_thread</comments>
     </item>
     
   </channel>

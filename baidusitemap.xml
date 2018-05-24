@@ -3,6 +3,29 @@
 
 
     
+  <url>
+    <loc>http://lijundong.com/coder-setting/</loc>
+    <lastmod>2018-05-24T02:30:09.725Z</lastmod>
+    <data>
+        <display>
+        <title>开发配置相关</title>
+        <pubTime>2018-05-24T02:25:08.000Z</pubTime>
+        
+        <tag>chrome</tag>
+         
+        <tag>mac</tag>
+         
+        <tag>开发机</tag>
+         
+        <tag>开发环境</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://lijundong.com/javascript-asi/</loc>
@@ -52,7 +75,7 @@
     
   <url>
     <loc>http://lijundong.com/year-again-2018/</loc>
-    <lastmod>2018-01-21T08:29:02.849Z</lastmod>
+    <lastmod>2018-01-21T08:29:02.850Z</lastmod>
     <data>
         <display>
         <title>火车驶向云外，梦安魂于九霄</title>
@@ -132,9 +155,9 @@
          
         <tag>github</tag>
          
-        <tag>OAuth 2.0</tag>
-         
         <tag>前后分离</tag>
+         
+        <tag>OAuth 2.0</tag>
          
          
            
@@ -160,9 +183,9 @@
          
         <tag>github</tag>
          
-        <tag>前后分离</tag>
-         
         <tag>react router4</tag>
+         
+        <tag>前后分离</tag>
          
          
            
@@ -175,25 +198,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/image-and-line-height/</loc>
+    <loc>http://lijundong.com/translation-10-mini-react-patterns/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
         <display>
-        <title>inline「一」：从 image 底部白边初识 line-height</title>
-        <pubTime>2017-01-16T13:25:28.000Z</pubTime>
+        <title>【译】React 的 10 种迷你开发模式</title>
+        <pubTime>2017-07-30T08:18:22.000Z</pubTime>
         
-        <tag>css</tag>
+        <tag>react</tag>
          
-        <tag>inline</tag>
-         
-        <tag>line-height</tag>
-         
-        <tag>baseline</tag>
+        <tag>译文</tag>
          
          
            
              
-              <breadCrumb title="css" url="http://lijundong.com/categories/css/"/>
+              <breadCrumb title="译文" url="http://lijundong.com/categories/%E8%AF%91%E6%96%87/"/>
           
         </display>
     </data>
@@ -201,19 +220,25 @@
 
     
   <url>
-    <loc>http://lijundong.com/Hello%20World/</loc>
+    <loc>http://lijundong.com/SublimeText-extension-recommend/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2015-09-10T15:54:36.000Z</pubTime>
+        <title>SublimeText 插件推荐</title>
+        <pubTime>2016-03-17T01:43:02.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>工具使用</tag>
+         
+        <tag>sublimetext</tag>
+         
+        <tag>插件</tag>
+         
+        <tag>力所能及的分享</tag>
          
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -258,6 +283,30 @@
            
              
               <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Syntactic%20analysis/</loc>
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>编写语法分析程序</title>
+        <pubTime>2015-06-12T03:22:07.000Z</pubTime>
+        
+        <tag>c++</tag>
+         
+        <tag>编译原理</tag>
+         
+        <tag>语法分析</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -329,23 +378,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/Lexical%20analysis/</loc>
+    <loc>http://lijundong.com/xlsx-to-json-by-json/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
         <display>
-        <title>编写词法分析程序</title>
-        <pubTime>2015-05-12T13:11:51.000Z</pubTime>
+        <title>Node将Excel数据解析为Json</title>
+        <pubTime>2016-08-22T07:00:50.000Z</pubTime>
         
-        <tag>c++</tag>
+        <tag>node</tag>
          
-        <tag>词法分析</tag>
-         
-        <tag>编译原理</tag>
+        <tag>excel</tag>
          
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="node" url="http://lijundong.com/categories/node/"/>
           
         </display>
     </data>
@@ -361,28 +408,6 @@
         <pubTime>2016-10-20T13:30:19.000Z</pubTime>
         
         <tag>google</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/hexo-blog-custom-log/</loc>
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo 自定义日志</title>
-        <pubTime>2016-12-25T06:23:11.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>next</tag>
          
          
            
@@ -419,6 +444,52 @@
 
     
   <url>
+    <loc>http://lijundong.com/image-and-line-height/</loc>
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>inline「一」：从 image 底部白边初识 line-height</title>
+        <pubTime>2017-01-16T13:25:28.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>inline</tag>
+         
+        <tag>line-height</tag>
+         
+        <tag>baseline</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="http://lijundong.com/categories/css/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Hello%20World/</loc>
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2015-09-10T15:54:36.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/javascript-variable-lift/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
@@ -441,16 +512,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/xlsx-to-json-by-json/</loc>
+    <loc>http://lijundong.com/wechat-node-0th/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
         <display>
-        <title>Node将Excel数据解析为Json</title>
-        <pubTime>2016-08-22T07:00:50.000Z</pubTime>
+        <title>微信公号Node开发「零」之项目建立</title>
+        <pubTime>2016-06-19T03:04:34.000Z</pubTime>
         
         <tag>node</tag>
          
-        <tag>excel</tag>
+        <tag>微信</tag>
          
          
            
@@ -561,21 +632,23 @@
 
     
   <url>
-    <loc>http://lijundong.com/translation-10-mini-react-patterns/</loc>
+    <loc>http://lijundong.com/Lexical%20analysis/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
         <display>
-        <title>【译】React 的 10 种迷你开发模式</title>
-        <pubTime>2017-07-30T08:18:22.000Z</pubTime>
+        <title>编写词法分析程序</title>
+        <pubTime>2015-05-12T13:11:51.000Z</pubTime>
         
-        <tag>react</tag>
+        <tag>c++</tag>
          
-        <tag>译文</tag>
+        <tag>词法分析</tag>
+         
+        <tag>编译原理</tag>
          
          
            
              
-              <breadCrumb title="译文" url="http://lijundong.com/categories/%E8%AF%91%E6%96%87/"/>
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -631,21 +704,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/wechat-node-0th/</loc>
+    <loc>http://lijundong.com/update-laptop-cpu/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
         <display>
-        <title>微信公号Node开发「零」之项目建立</title>
-        <pubTime>2016-06-19T03:04:34.000Z</pubTime>
+        <title>升级笔记本 CPU</title>
+        <pubTime>2016-10-12T06:18:44.000Z</pubTime>
         
-        <tag>node</tag>
+        <tag>cpu</tag>
          
-        <tag>微信</tag>
+        <tag>笔记本</tag>
          
          
            
              
-              <breadCrumb title="node" url="http://lijundong.com/categories/node/"/>
+              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>
@@ -723,49 +796,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/SublimeText-extension-recommend/</loc>
+    <loc>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
         <display>
-        <title>SublimeText 插件推荐</title>
-        <pubTime>2016-03-17T01:43:02.000Z</pubTime>
+        <title>【译】高性能 React：提高性能的 3 个开发工具</title>
+        <pubTime>2017-08-06T12:31:49.000Z</pubTime>
         
-        <tag>sublimetext</tag>
+        <tag>react</tag>
          
-        <tag>插件</tag>
-         
-        <tag>力所能及的分享</tag>
-         
-        <tag>工具使用</tag>
+        <tag>译文</tag>
          
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Syntactic%20analysis/</loc>
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    <data>
-        <display>
-        <title>编写语法分析程序</title>
-        <pubTime>2015-06-12T03:22:07.000Z</pubTime>
-        
-        <tag>c++</tag>
-         
-        <tag>编译原理</tag>
-         
-        <tag>语法分析</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="译文" url="http://lijundong.com/categories/%E8%AF%91%E6%96%87/"/>
           
         </display>
     </data>
@@ -795,16 +840,60 @@
 
     
   <url>
-    <loc>http://lijundong.com/update-laptop-cpu/</loc>
+    <loc>http://lijundong.com/hexo-blog-custom-log/</loc>
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     <data>
         <display>
-        <title>升级笔记本 CPU</title>
-        <pubTime>2016-10-12T06:18:44.000Z</pubTime>
+        <title>Hexo 自定义日志</title>
+        <pubTime>2016-12-25T06:23:11.000Z</pubTime>
         
-        <tag>cpu</tag>
+        <tag>hexo</tag>
          
-        <tag>笔记本</tag>
+        <tag>next</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/html-make-clock-select/</loc>
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>Html仿手机时钟选项框</title>
+        <pubTime>2016-08-05T00:15:49.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>css</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>『当李晓峰成为Sky』</title>
+        <pubTime>2015-11-20T10:00:03.000Z</pubTime>
+        
+        <tag>读书</tag>
+         
+        <tag>电竞</tag>
          
          
            
@@ -817,21 +906,19 @@
 
     
   <url>
-    <loc>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    <loc>http://lijundong.com/Bootstrap-hover-toggle-menu/</loc>
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>【译】高性能 React：提高性能的 3 个开发工具</title>
-        <pubTime>2017-08-06T12:31:49.000Z</pubTime>
+        <title>Bootstrap初体验:鼠标hover时自动下拉菜单</title>
+        <pubTime>2016-03-31T16:00:15.000Z</pubTime>
         
-        <tag>react</tag>
-         
-        <tag>译文</tag>
+        <tag>bootstrap</tag>
          
          
            
              
-              <breadCrumb title="译文" url="http://lijundong.com/categories/%E8%AF%91%E6%96%87/"/>
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -861,21 +948,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
+    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>IS开发(二):PHP&Mysql基础</title>
-        <pubTime>2016-04-15T14:09:05.000Z</pubTime>
+        <title>批量处理PPT图片</title>
+        <pubTime>2016-07-18T10:29:12.000Z</pubTime>
         
-        <tag>信息系统开发</tag>
+        <tag>ppt</tag>
          
-        <tag>wampserver</tag>
+        <tag>photoshop</tag>
          
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
           
         </display>
     </data>
@@ -883,67 +970,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/information-system-Wampserver/</loc>
+    <loc>http://lijundong.com/Kindle-content-manage/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>IS开发(一):Wampserver</title>
-        <pubTime>2016-04-14T12:53:19.000Z</pubTime>
+        <title>管理你的Kindle</title>
+        <pubTime>2016-01-12T12:55:33.000Z</pubTime>
         
-        <tag>信息系统开发</tag>
+        <tag>kindle</tag>
          
-        <tag>wampserver</tag>
+        <tag>工具使用</tag>
          
          
            
              
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Dell-laptop-add-ssd/</loc>
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>Dell笔记本加装固态</title>
-        <pubTime>2016-03-07T00:01:07.000Z</pubTime>
-        
-        <tag>tips</tag>
-         
-        <tag>ssd</tag>
-         
-        <tag>dell</tag>
-         
-         
-           
-             
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>CentOS安装MongoDB3.2X</title>
-        <pubTime>2016-06-14T11:30:37.000Z</pubTime>
-        
-        <tag>mongodb</tag>
-         
-        <tag>centos</tag>
-         
-         
-           
-             
-              <breadCrumb title="mongodb" url="http://lijundong.com/categories/mongodb/"/>
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -968,6 +1009,30 @@
            
              
               <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/backup-in-mac/</loc>
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>Mac 备份方案</title>
+        <pubTime>2017-02-14T09:23:36.000Z</pubTime>
+        
+        <tag>备份</tag>
+         
+        <tag>timemachine</tag>
+         
+        <tag>mac</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -1021,6 +1086,50 @@
 
     
   <url>
+    <loc>http://lijundong.com/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>CentOS安装MongoDB3.2X</title>
+        <pubTime>2016-06-14T11:30:37.000Z</pubTime>
+        
+        <tag>mongodb</tag>
+         
+        <tag>centos</tag>
+         
+         
+           
+             
+              <breadCrumb title="mongodb" url="http://lijundong.com/categories/mongodb/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>Putty登陆阿里云 Network error: Software caused connection abort</title>
+        <pubTime>2016-06-13T13:52:18.000Z</pubTime>
+        
+        <tag>ssh</tag>
+         
+        <tag>服务器</tag>
+         
+         
+           
+             
+              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://lijundong.com/clear-float/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
@@ -1040,50 +1149,6 @@
            
              
               <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/think-in-early-bus/</loc>
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>早班车乱谈</title>
-        <pubTime>2017-02-17T01:34:10.000Z</pubTime>
-        
-        <tag>matrix</tag>
-         
-        <tag>早班车</tag>
-         
-         
-           
-             
-              <breadCrumb title="随笔" url="http://lijundong.com/categories/%E9%9A%8F%E7%AC%94/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>Coding page与Github page博客部署及域名绑定</title>
-        <pubTime>2016-07-30T05:29:13.000Z</pubTime>
-        
-        <tag>博客</tag>
-         
-        <tag>dns</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -1137,21 +1202,45 @@
 
     
   <url>
-    <loc>http://lijundong.com/cycling-on-318/</loc>
+    <loc>http://lijundong.com/use-charles-up-to-debug/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>记暑假骑行川藏</title>
-        <pubTime>2015-09-15T01:11:35.000Z</pubTime>
+        <title>Charles 使用小记</title>
+        <pubTime>2017-07-20T08:34:44.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>hybrid</tag>
          
-        <tag>骑行</tag>
+        <tag>debug</tag>
+         
+        <tag>charles</tag>
          
          
            
              
-              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/information-system-Wampserver/</loc>
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>IS开发(一):Wampserver</title>
+        <pubTime>2016-04-14T12:53:19.000Z</pubTime>
+        
+        <tag>信息系统开发</tag>
+         
+        <tag>wampserver</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
           
         </display>
     </data>
@@ -1183,16 +1272,38 @@
 
     
   <url>
-    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
+    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>『当李晓峰成为Sky』</title>
-        <pubTime>2015-11-20T10:00:03.000Z</pubTime>
+        <title>Coding page与Github page博客部署及域名绑定</title>
+        <pubTime>2016-07-30T05:29:13.000Z</pubTime>
         
-        <tag>读书</tag>
+        <tag>博客</tag>
          
-        <tag>电竞</tag>
+        <tag>dns</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://lijundong.com/cycling-on-318/</loc>
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    <data>
+        <display>
+        <title>记暑假骑行川藏</title>
+        <pubTime>2015-09-15T01:11:35.000Z</pubTime>
+        
+        <tag>life</tag>
+         
+        <tag>骑行</tag>
          
          
            
@@ -1205,21 +1316,23 @@
 
     
   <url>
-    <loc>http://lijundong.com/Batch%20Process-PPT-images/</loc>
+    <loc>http://lijundong.com/Centos7-install-nodejs-update/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>批量处理PPT图片</title>
-        <pubTime>2016-07-18T10:29:12.000Z</pubTime>
+        <title>Centos7安装Node以及更新</title>
+        <pubTime>2016-06-12T09:23:09.000Z</pubTime>
         
-        <tag>ppt</tag>
+        <tag>centos</tag>
          
-        <tag>photoshop</tag>
+        <tag>node</tag>
+         
+        <tag>npm</tag>
          
          
            
              
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
           
         </display>
     </data>
@@ -1227,14 +1340,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/year-again/</loc>
+    <loc>http://lijundong.com/year-again-2017/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>又是一年</title>
-        <pubTime>2016-01-21T12:30:42.000Z</pubTime>
+        <title>可能是写了篇假的年终总结</title>
+        <pubTime>2017-01-15T12:35:05.000Z</pubTime>
         
-        <tag>life</tag>
+        <tag>游记</tag>
+         
+        <tag>总结</tag>
          
          
            
@@ -1269,38 +1384,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
+    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>可能错过的Windows便签</title>
-        <pubTime>2016-04-17T11:49:22.000Z</pubTime>
+        <title>IS开发(二):PHP&Mysql基础</title>
+        <pubTime>2016-04-15T14:09:05.000Z</pubTime>
         
-        <tag>工具使用</tag>
+        <tag>信息系统开发</tag>
          
-        <tag>便签</tag>
-         
-        <tag>windows</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Bootstrap-hover-toggle-menu/</loc>
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>Bootstrap初体验:鼠标hover时自动下拉菜单</title>
-        <pubTime>2016-03-31T16:00:15.000Z</pubTime>
-        
-        <tag>bootstrap</tag>
+        <tag>wampserver</tag>
          
          
            
@@ -1313,40 +1406,16 @@
 
     
   <url>
-    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
+    <loc>http://lijundong.com/Tmux-common-comands-shortcuts/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>Putty登陆阿里云 Network error: Software caused connection abort</title>
-        <pubTime>2016-06-13T13:52:18.000Z</pubTime>
+        <title>Tmux常用命令及快捷键</title>
+        <pubTime>2016-06-18T04:47:28.000Z</pubTime>
         
-        <tag>ssh</tag>
+        <tag>putty</tag>
          
-        <tag>服务器</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题解决" url="http://lijundong.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Centos7-install-nodejs-update/</loc>
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>Centos7安装Node以及更新</title>
-        <pubTime>2016-06-12T09:23:09.000Z</pubTime>
-        
-        <tag>centos</tag>
-         
-        <tag>node</tag>
-         
-        <tag>npm</tag>
+        <tag>tmux</tag>
          
          
            
@@ -1359,18 +1428,18 @@
 
     
   <url>
-    <loc>http://lijundong.com/use-charles-up-to-debug/</loc>
+    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>Charles 使用小记</title>
-        <pubTime>2017-07-20T08:34:44.000Z</pubTime>
+        <title>可能错过的Windows便签</title>
+        <pubTime>2016-04-17T11:49:22.000Z</pubTime>
         
-        <tag>hybrid</tag>
+        <tag>工具使用</tag>
          
-        <tag>debug</tag>
+        <tag>便签</tag>
          
-        <tag>charles</tag>
+        <tag>windows</tag>
          
          
            
@@ -1405,21 +1474,21 @@
 
     
   <url>
-    <loc>http://lijundong.com/Tmux-common-comands-shortcuts/</loc>
+    <loc>http://lijundong.com/think-in-early-bus/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>Tmux常用命令及快捷键</title>
-        <pubTime>2016-06-18T04:47:28.000Z</pubTime>
+        <title>早班车乱谈</title>
+        <pubTime>2017-02-17T01:34:10.000Z</pubTime>
         
-        <tag>putty</tag>
+        <tag>matrix</tag>
          
-        <tag>tmux</tag>
+        <tag>早班车</tag>
          
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="随笔" url="http://lijundong.com/categories/%E9%9A%8F%E7%AC%94/"/>
           
         </display>
     </data>
@@ -1427,38 +1496,14 @@
 
     
   <url>
-    <loc>http://lijundong.com/html-make-clock-select/</loc>
+    <loc>http://lijundong.com/year-again/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>Html仿手机时钟选项框</title>
-        <pubTime>2016-08-05T00:15:49.000Z</pubTime>
+        <title>又是一年</title>
+        <pubTime>2016-01-21T12:30:42.000Z</pubTime>
         
-        <tag>html</tag>
-         
-        <tag>css</tag>
-         
-         
-           
-             
-              <breadCrumb title="学习" url="http://lijundong.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/year-again-2017/</loc>
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>可能是写了篇假的年终总结</title>
-        <pubTime>2017-01-15T12:35:05.000Z</pubTime>
-        
-        <tag>游记</tag>
-         
-        <tag>总结</tag>
+        <tag>life</tag>
          
          
            
@@ -1471,45 +1516,23 @@
 
     
   <url>
-    <loc>http://lijundong.com/backup-in-mac/</loc>
+    <loc>http://lijundong.com/Dell-laptop-add-ssd/</loc>
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     <data>
         <display>
-        <title>Mac 备份方案</title>
-        <pubTime>2017-02-14T09:23:36.000Z</pubTime>
+        <title>Dell笔记本加装固态</title>
+        <pubTime>2016-03-07T00:01:07.000Z</pubTime>
         
-        <tag>备份</tag>
+        <tag>tips</tag>
          
-        <tag>timemachine</tag>
+        <tag>ssd</tag>
          
-        <tag>mac</tag>
+        <tag>dell</tag>
          
          
            
              
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://lijundong.com/Kindle-content-manage/</loc>
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>管理你的Kindle</title>
-        <pubTime>2016-01-12T12:55:33.000Z</pubTime>
-        
-        <tag>工具使用</tag>
-         
-        <tag>kindle</tag>
-         
-         
-           
-             
-              <breadCrumb title="工具使用" url="http://lijundong.com/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+              <breadCrumb title="生活" url="http://lijundong.com/categories/%E7%94%9F%E6%B4%BB/"/>
           
         </display>
     </data>

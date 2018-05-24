@@ -35,11 +35,13 @@
 
 
 <meta name="description" content="最近彻底从分号党变节为无分号群众，分号党的日子对 Javascript 分号的原理不求甚解，这几天仔细了解了下，这篇文章总结下 ASI（automatic semicolon insertion， 分号自动插入机制）">
+<meta name="keywords" content="javascript,ASI,semicolon">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javascript 分号自动插入机制">
 <meta property="og:url" content="http://lijundong.com/javascript-asi/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="最近彻底从分号党变节为无分号群众，分号党的日子对 Javascript 分号的原理不求甚解，这几天仔细了解了下，这篇文章总结下 ASI（automatic semicolon insertion， 分号自动插入机制）">
+<meta property="og:locale" content="en">
 <meta property="og:image" content="http://source.lijundong.com/18-3-5/17920261.jpg">
 <meta property="og:updated_time" content="2018-03-05T17:29:54.230Z">
 <meta name="twitter:card" content="summary">
@@ -245,7 +247,7 @@
 <h3 id="关于-ASI"><a href="#关于-ASI" class="headerlink" title="关于 ASI"></a>关于 ASI</h3><p>虽然被称为分号自动插入，但在代码实际的解析中，并没有分号插入，这个机制用于判断输入流（<code>input stream</code>）的终止。下文中，我们以插入分号代称这种终止。</p>
 <h3 id="ASI-机制"><a href="#ASI-机制" class="headerlink" title="ASI 机制"></a>ASI 机制</h3><p>ECMAScript 标准定义了三条规则和两种例外情况：</p>
 <blockquote>
-<p><em>from <a href="http://www.ecma-international.org/ecma-262/7.0/index.html#sec-rules-of-automatic-semicolon-insertion" target="_blank" rel="external">§11.9.1 Rules of Automatic Semicolon Insertion</a></em></p>
+<p><em>from <a href="http://www.ecma-international.org/ecma-262/7.0/index.html#sec-rules-of-automatic-semicolon-insertion" target="_blank" rel="noopener">§11.9.1 Rules of Automatic Semicolon Insertion</a></em></p>
 </blockquote>
 <h4 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h4><blockquote>
 <p>1.Javascript 代码在从左往右被解析的过程中，当碰到一个不能构成合法语句的 token 时，下面几个条件至少一条成立，解析器就在在这个 token 前插入分号：</p>
@@ -303,9 +305,9 @@
 <h3 id="开发应用"><a href="#开发应用" class="headerlink" title="开发应用"></a>开发应用</h3><p>现在我已经完全适应了没有分号的开发，之前存在的不确定因素，只需花点时间制定一个可以长期沿用的规范就能解决，例如好的开发习惯可以让我们避免使用 <code>[].forEach()</code> 之类的写法，同时立即执行函数也有多种写法让我们避免 <code>(function(){})()</code> 这种情况的出现。</p>
 <p>参考：</p>
 <ul>
-<li><a href="https://segmentfault.com/a/1190000004548664" target="_blank" rel="external">JavaScript ASI 机制详解</a></li>
-<li><a href="http://www.ecma-international.org/ecma-262/7.0/index.html#sec-rules-of-automatic-semicolon-insertion" target="_blank" rel="external">ECMAScript</a></li>
-<li><a href="https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi#comment39279596_2846298" target="_blank" rel="external">What are the rules for JavaScript’s automatic semicolon insertion (ASI)?</a></li>
+<li><a href="https://segmentfault.com/a/1190000004548664" target="_blank" rel="noopener">JavaScript ASI 机制详解</a></li>
+<li><a href="http://www.ecma-international.org/ecma-262/7.0/index.html#sec-rules-of-automatic-semicolon-insertion" target="_blank" rel="noopener">ECMAScript</a></li>
+<li><a href="https://stackoverflow.com/questions/2846283/what-are-the-rules-for-javascripts-automatic-semicolon-insertion-asi#comment39279596_2846298" target="_blank" rel="noopener">What are the rules for JavaScript’s automatic semicolon insertion (ASI)?</a></li>
 </ul>
 
       

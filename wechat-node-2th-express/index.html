@@ -35,11 +35,13 @@
 
 
 <meta name="description" content="笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。">
+<meta name="keywords" content="node,微信">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信公号Node开发「贰」之express">
 <meta property="og:url" content="http://lijundong.com/wechat-node-2th-express/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2016-11-17T14:26:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信公号Node开发「贰」之express">
@@ -231,7 +233,7 @@
     <div class="post-content">
       
         <p>笔记下关于express项目文件结构与对应的功能，以及初始化的app.js的结构注释。<br><a id="more"></a></p>
-<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-——bin   //存放www文件，包含着项目启动命令</span><br><span class="line"></span>|<span class="string">-——node_modules   //存放npm安装到本地的依赖项，依赖包声明在package.json</span><br><span class="line"></span>|<span class="string">-——public         //存放静态资源，图片、js文件、样式文件</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——images</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——javascripts</span><br><span class="line"></span>|<span class="string">    </span>|<span class="string">-——stylesheets</span><br><span class="line"></span>|<span class="string">-——routes //存放路由文件</span><br><span class="line"></span>|<span class="string">-——views  //模板文件，默认使用jade，如果用ejs，则用`express -e &lt;项目名&gt;`初始化</span><br><span class="line"></span>|<span class="string">-——app.js //入口文件</span><br><span class="line"></span>|<span class="string">-——package.json //npm依赖配置文件，`npm install`命令安装</span></span><br></pre></td></tr></table></figure>
+<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string">-——bin   //存放www文件，包含着项目启动命令</span></span><br><span class="line">|<span class="string">-——node_modules   //存放npm安装到本地的依赖项，依赖包声明在package.json</span></span><br><span class="line">|<span class="string">-——public         //存放静态资源，图片、js文件、样式文件</span></span><br><span class="line">|<span class="string">    </span>|<span class="string">-——images</span></span><br><span class="line">|<span class="string">    </span>|<span class="string">-——javascripts</span></span><br><span class="line">|<span class="string">    </span>|<span class="string">-——stylesheets</span></span><br><span class="line">|<span class="string">-——routes //存放路由文件</span></span><br><span class="line">|<span class="string">-——views  //模板文件，默认使用jade，如果用ejs，则用`express -e &lt;项目名&gt;`初始化</span></span><br><span class="line">|<span class="string">-——app.js //入口文件</span></span><br><span class="line">|<span class="string">-——package.json //npm依赖配置文件，`npm install`命令安装</span></span><br></pre></td></tr></table></figure>
       
     </div>
 

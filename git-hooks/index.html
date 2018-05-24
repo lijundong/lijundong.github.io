@@ -35,11 +35,13 @@
 
 
 <meta name="description" content="Git Hooks 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。之前迁移博客到阿里云，Git Hooks 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 post-receive，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。">
+<meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git Hooks">
 <meta property="og:url" content="http://lijundong.com/git-hooks/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="Git Hooks 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。之前迁移博客到阿里云，Git Hooks 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 post-receive，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git Hooks">
@@ -249,7 +251,7 @@
 <li>存放用户编写的 <code>commit message</code> 的临时文件的路劲</li>
 </ul>
 <h4 id="pre-rebase"><a href="#pre-rebase" class="headerlink" title="pre-rebase"></a>pre-rebase</h4><p>这个脚本会在 <code>git rebase</code> 命令之前运行，在返回非 0 值时，会中断操作。<br>你可以通过这个脚本来禁用 <code>rebase</code>，示例如下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line"># disallow rebasing any commits</span><br><span class="line">echo &quot;pre-rebase: Rebasing is disallowed.&quot;</span><br><span class="line">exit 1</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> disallow rebasing any commits</span></span><br><span class="line">echo "pre-rebase: Rebasing is disallowed."</span><br><span class="line">exit 1</span><br></pre></td></tr></table></figure>
 <h3 id="服务端-Hook"><a href="#服务端-Hook" class="headerlink" title="服务端 Hook"></a>服务端 Hook</h3><p>服务端的 Hook 允许我们在 <code>git push</code> 的不同阶段进行操作。</p>
 <h4 id="pre-receive"><a href="#pre-receive" class="headerlink" title="pre-receive"></a>pre-receive</h4><p>客户端 push 过来的内容，必须通过这个脚本的检查来判断接受与否。</p>
 <h4 id="update"><a href="#update" class="headerlink" title="update"></a>update</h4><p>这个脚本在代码更新之前执行。<br><code>update</code> 和 <code>pre-receive</code> 很相似，不同的是，如果我们想把代码推到不同分支，那么 <code>pre-receive</code> 只会执行一次，而 <code>update</code> 在每个分支更新之前都会执行一次。</p>

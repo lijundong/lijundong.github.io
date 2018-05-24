@@ -38,6 +38,7 @@
 <meta property="og:url" content="http://lijundong.com/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="Write down,Mark it.">
+<meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leeon Notes">
 <meta name="twitter:description" content="Write down,Mark it.">
@@ -200,6 +201,48 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts">
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/coder-setting/">开发配置相关</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          May 24, 2018
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <p>开发环境配置贴集中</p>
+          <div class="read-more">
+            <a href="/coder-setting/" class="read-more-link">Read more..</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
     
       
   <article class="post">
@@ -535,7 +578,7 @@
         
 
         
-          <p>目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， <code>ssh root@xxx.xxx.xxx.xxx</code>，接着输入 <code>password</code>，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 优化前</span><br><span class="line"># 公司机器</span><br><span class="line">ssh root@xxx.xxx.xxx.xxx</span><br><span class="line">password: ******</span><br><span class="line"># 私人机器</span><br><span class="line">ssh root@xxx.xxx.xxx.xxx</span><br><span class="line">password: ******</span><br><span class="line"></span><br><span class="line">#优化后</span><br><span class="line">#公司机器</span><br><span class="line">ssh dev-server</span><br><span class="line"># 私人机器</span><br><span class="line">ssh leeon-server</span><br></pre></td></tr></table></figure></p>
+          <p>目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， <code>ssh root@xxx.xxx.xxx.xxx</code>，接着输入 <code>password</code>，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 优化前</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 公司机器</span></span><br><span class="line">ssh root@xxx.xxx.xxx.xxx</span><br><span class="line">password: ******</span><br><span class="line"><span class="meta">#</span><span class="bash"> 私人机器</span></span><br><span class="line">ssh root@xxx.xxx.xxx.xxx</span><br><span class="line">password: ******</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">优化后</span></span><br><span class="line"><span class="meta">#</span><span class="bash">公司机器</span></span><br><span class="line">ssh dev-server</span><br><span class="line"><span class="meta">#</span><span class="bash"> 私人机器</span></span><br><span class="line">ssh leeon-server</span><br></pre></td></tr></table></figure></p>
           <div class="read-more">
             <a href="/ssh-login-directly/" class="read-more-link">Read more..</a>
           </div>
@@ -582,48 +625,6 @@
 <p>而在移动端，我们更想让用户无感知地浏览到页面最后一页，保证了信息阅读的连续、流畅，既然这样，滚动懒加载的方式处理分页就成了不二之选。</p>
           <div class="read-more">
             <a href="/lazy-load-optimization-on-iOS-Android/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/add-slide-in-zepto/">zepto 添加 slideDown 和 slideUp</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          Sep 26, 2017
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。</p>
-          <div class="read-more">
-            <a href="/add-slide-in-zepto/" class="read-more-link">Read more..</a>
           </div>
         
       

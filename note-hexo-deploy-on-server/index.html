@@ -35,17 +35,19 @@
 
 
 <meta name="description" content="前几天把 hexo blog 迁移到阿里云服务器，全程看别人的文章，每篇文章描述的方式不尽相同，加之软件环境的不同，再加之我的理解能力短板，中间走了好几次弯路，配完之后，对整体过程加深了理解，之后又重新看了 git hook 的文档，结合配置过程，这里做一次小记。">
+<meta name="keywords" content="服务器,hexo,阿里云,hook">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小记 - Hexo 部署到阿里云服务器">
 <meta property="og:url" content="http://lijundong.com/note-hexo-deploy-on-server/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="前几天把 hexo blog 迁移到阿里云服务器，全程看别人的文章，每篇文章描述的方式不尽相同，加之软件环境的不同，再加之我的理解能力短板，中间走了好几次弯路，配完之后，对整体过程加深了理解，之后又重新看了 git hook 的文档，结合配置过程，这里做一次小记。">
-<meta property="og:image" content="http://lijundong.com//source.lijundong.com/16-12-19/68486025-file_1482077506840_3562.png">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://source.lijundong.com/16-12-19/68486025-file_1482077506840_3562.png">
 <meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小记 - Hexo 部署到阿里云服务器">
 <meta name="twitter:description" content="前几天把 hexo blog 迁移到阿里云服务器，全程看别人的文章，每篇文章描述的方式不尽相同，加之软件环境的不同，再加之我的理解能力短板，中间走了好几次弯路，配完之后，对整体过程加深了理解，之后又重新看了 git hook 的文档，结合配置过程，这里做一次小记。">
-<meta name="twitter:image" content="http://lijundong.com//source.lijundong.com/16-12-19/68486025-file_1482077506840_3562.png">
+<meta name="twitter:image" content="http://source.lijundong.com/16-12-19/68486025-file_1482077506840_3562.png">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -257,7 +259,7 @@
 </ul>
 <h3 id="仅供参考"><a href="#仅供参考" class="headerlink" title="仅供参考"></a>仅供参考</h3><p>关于 Git 服务器，可以参考 Git 官网文档，或者是廖雪峰先生的教程，做到正常推拉即可。</p>
 <p>关于 <code>git hooks</code>，昨天写的小记 <a href="//lijundong.com/2016/12/16/git-hooks/">Git Hooks</a>，可以了解下<br>上面我说这一步可以简单粗暴，下面是我的服务器上的 <code>post-receive</code> 脚本，我把代码 从仓库直接 <code>clone</code> 到 <code>/var/www/hexo</code> 目录下</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">unset GIT_DIR</span><br><span class="line">cd /var/www/hexo</span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line">unset GIT_DIR</span><br><span class="line">cd /var/www/hexo</span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
 <p>关于 <code>nginx</code> 配置</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">server</span>  &#123;</span><br><span class="line">    <span class="comment"># 指定端口</span></span><br><span class="line">    <span class="attribute">listen</span> <span class="number">80</span>;</span><br><span class="line">    <span class="comment"># 绑定域名</span></span><br><span class="line">    <span class="attribute">server_name</span> localhost www.lijundong.com lijundong.com;</span><br><span class="line">    <span class="attribute">access_log</span> /var/log/nginx/domain1.access.log;</span><br><span class="line">    <span class="comment"># 入口文件</span></span><br><span class="line">    <span class="attribute">index</span> index.html index.htm;</span><br><span class="line">    <span class="comment"># 博客路径</span></span><br><span class="line">    <span class="attribute">root</span>  /var/www/hexo;</span><br><span class="line">    <span class="attribute">error_page</span>   <span class="number">404</span>   /<span class="number">404</span>.html;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>

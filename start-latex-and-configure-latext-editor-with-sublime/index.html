@@ -35,18 +35,20 @@
 
 
 <meta name="description" content="上一篇 Node.js 实现简单小说爬虫，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。工欲善其事，必先利其">
+<meta name="keywords" content="LaTeX,sublime">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SublimeText 配置 LaTeX 编辑器">
 <meta property="og:url" content="http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="上一篇 Node.js 实现简单小说爬虫，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。工欲善其事，必先利其">
-<meta property="og:image" content="http://lijundong.com//source.lijundong.com/public/16-11-24/95505961.jpg">
-<meta property="og:image" content="http://lijundong.com//source.lijundong.com/public/16-11-24/95505961.jpg">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://source.lijundong.com/public/16-11-24/95505961.jpg">
+<meta property="og:image" content="http://source.lijundong.com/public/16-11-24/95505961.jpg">
 <meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SublimeText 配置 LaTeX 编辑器">
 <meta name="twitter:description" content="上一篇 Node.js 实现简单小说爬虫，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。工欲善其事，必先利其">
-<meta name="twitter:image" content="http://lijundong.com//source.lijundong.com/public/16-11-24/95505961.jpg">
+<meta name="twitter:image" content="http://source.lijundong.com/public/16-11-24/95505961.jpg">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -226,7 +228,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">Contents</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#系统-amp-软件-版本"><span class="toc-text">系统 & 软件 版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于-TeX、LaTeX、TeX-Live"><span class="toc-text">关于 TeX、LaTeX、TeX Live</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#名词解释"><span class="toc-text">名词解释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用场景"><span class="toc-text">使用场景</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#公式编辑"><span class="toc-text">公式编辑</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#排版"><span class="toc-text">排版</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-LaTeX-编辑器"><span class="toc-text">配置 LaTeX 编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装-TeXlive"><span class="toc-text">安装 TeXlive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装-sumatraPDF-可选"><span class="toc-text">安装 sumatraPDF (可选)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sublime-安装-LaTeXtools-插件"><span class="toc-text">Sublime 安装 LaTeXtools 插件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#配置"><span class="toc-text">配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#配置-sumatraPDF-反向搜索"><span class="toc-text">配置 sumatraPDF 反向搜索</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LaTeX-上手"><span class="toc-text">LaTeX 上手</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#系统-amp-软件-版本"><span class="toc-text">系统 &amp; 软件 版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于-TeX、LaTeX、TeX-Live"><span class="toc-text">关于 TeX、LaTeX、TeX Live</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#名词解释"><span class="toc-text">名词解释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用场景"><span class="toc-text">使用场景</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#公式编辑"><span class="toc-text">公式编辑</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#排版"><span class="toc-text">排版</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-LaTeX-编辑器"><span class="toc-text">配置 LaTeX 编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装-TeXlive"><span class="toc-text">安装 TeXlive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装-sumatraPDF-可选"><span class="toc-text">安装 sumatraPDF (可选)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Sublime-安装-LaTeXtools-插件"><span class="toc-text">Sublime 安装 LaTeXtools 插件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#配置"><span class="toc-text">配置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#配置-sumatraPDF-反向搜索"><span class="toc-text">配置 sumatraPDF 反向搜索</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#LaTeX-上手"><span class="toc-text">LaTeX 上手</span></a></li></ol>
     </div>
   </div>
 

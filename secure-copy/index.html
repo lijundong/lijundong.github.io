@@ -35,11 +35,13 @@
 
 
 <meta name="description" content="在 windows 本地操作服务器，最初使用 putty + FileZilla，之后使用 Xshell + Xftp，之后看到黄彪同学直接在命令行( Linux 下)用 ssh 命令登陆服务器，vim 下操作，手指在键盘上下翻飞，好不潇洒，十分羡慕，无奈电脑性能太差，开虚拟机太卡，双系统并不想折腾，生产力太低，硬件跟不上，软件来凑，不得不赞叹git for windows功能之强大，让我在 wi">
+<meta name="keywords" content="scp,linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SCP跨机远程拷贝">
 <meta property="og:url" content="http://lijundong.com/secure-copy/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="在 windows 本地操作服务器，最初使用 putty + FileZilla，之后使用 Xshell + Xftp，之后看到黄彪同学直接在命令行( Linux 下)用 ssh 命令登陆服务器，vim 下操作，手指在键盘上下翻飞，好不潇洒，十分羡慕，无奈电脑性能太差，开虚拟机太卡，双系统并不想折腾，生产力太低，硬件跟不上，软件来凑，不得不赞叹git for windows功能之强大，让我在 wi">
+<meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SCP跨机远程拷贝">
@@ -235,14 +237,14 @@
 <h3 id="ssh登陆"><a href="#ssh登陆" class="headerlink" title="ssh登陆"></a>ssh登陆</h3><p>ssh登陆远程服务器<br><code>ssh username@serverip    //在提示后输入密码</code><br>例如:<br><code>ssh root@121.42.194.214</code><br>输入密码成功登陆服务器，可以尽情操作了。</p>
 <h3 id="scp跨机拷贝"><a href="#scp跨机拷贝" class="headerlink" title="scp跨机拷贝"></a>scp跨机拷贝</h3><blockquote>
 <p>scp是secure copy的简写，用于在Linux下进行远程拷贝文件的命令，和它类似的命令有cp，不过cp只是在本机进行拷贝不能跨服务器，而且scp传输是加密的。当你服务器硬盘变为只读 read only system时，用scp可以帮你把文件移出来。</p>
+</blockquote>
 <h4 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h4><p>scp [参数] [原路径] [目标路径]</p>
 <h4 id="常见用法"><a href="#常见用法" class="headerlink" title="常见用法"></a>常见用法</h4><ol>
 <li>上传本地文件(夹)到服务器</li>
 </ol>
-</blockquote>
 <p>文件上传：<br><code>scp /path/filename username@serverip:path</code></p>
 <p>文件夹上传:<br><code>scp -r /path/local_dir username@serverip:path</code></p>
-<ol>
+<ol start="2">
 <li>服务器文件(文件)下载到本地</li>
 </ol>
 <p>文件下载:<br><code>scp username@serverip:path/file /path/local_dir</code></p>
