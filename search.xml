@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title><![CDATA[Node 环境配置]]></title>
+      <url>http://lijundong.com/node-dev-config/</url>
+      <content type="html"><![CDATA[<p>FE ，包含 node、nrm、 nvm </p>
+<a id="more"></a>
+<p>这里介绍的是日常开发中使用频率较高的工具，欢迎补充</p>
+<h2 id="nrm"><a href="#nrm" class="headerlink" title="nrm"></a>nrm</h2><h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><blockquote>
+<p>当你需要在不同 NPM 源之间切换时。举个例子，NPM 官方的源是 <code>https://registry.npmjs.org/</code>，但偶尔会出现网络异常慢的情况，你换成了淘宝的 CNPM 源 <a href="https://npm.taobao.org/" target="_blank" rel="noopener"><code>https://registry.npm.taobao.org</code></a>，如果公司搭建了内部的 CNPM，用于存储团队内部的包，使用到内部源时，就需要再次切换。</p>
+</blockquote>
+<p>这种场景是不是似曾相识，过程很像我们编辑 <code>host</code> 文件，管理 <code>host</code> 我们常用 <code>switchhost</code>，管理 NPM 源我们可以使用 <code>nrm</code>(node resource manager)</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i nrm -g</span><br></pre></td></tr></table></figure>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Usage: nrm [options] [<span class="built_in">command</span>]</span><br><span class="line"></span><br><span class="line">  Commands:</span><br><span class="line"></span><br><span class="line">    ls                           列举所有源</span><br><span class="line">    use &lt;registry&gt;               使用指定源</span><br><span class="line">    add &lt;registry&gt; &lt;url&gt; [home]  在列表中增加新源地址</span><br><span class="line">    del &lt;registry&gt;               删除</span><br><span class="line">    home &lt;registry&gt; [browser]    打开对应源的主页</span><br><span class="line">    <span class="built_in">test</span> [registry]              测试源响应时间</span><br><span class="line">    <span class="built_in">help</span>                         Print this <span class="built_in">help</span></span><br><span class="line"></span><br><span class="line">  Options:</span><br><span class="line"></span><br><span class="line">    -h, --<span class="built_in">help</span>     output usage information</span><br><span class="line">    -V, --version  output the version number</span><br></pre></td></tr></table></figure>
+<h2 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h2><h3 id="场景-1"><a href="#场景-1" class="headerlink" title="场景"></a>场景</h3><p>Node 目前的版本已经到了 10，为了体验最新版本的 feature，你装了 node v10 但目前大部分线上的服务还是 6，开发时，你又得切换回去，这使得日常开发需要在不同版本中切换。</p>
+<p><a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">nvm(node version manager)</a> 适用这个场景。</p>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>安装过程很简单，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># curl 安装脚本</span></span><br><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</span><br><span class="line"><span class="comment"># 或者用 wget 安装</span></span><br><span class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash</span><br></pre></td></tr></table></figure></p>
+<p>安装结束，试试 <code>nvm ls</code> 试试是否安装成功，如果安装过程出了问题，可以参考 <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">GitHub 文档</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">╭─leeon@MBP </span><br><span class="line">╰─$ nvm ls</span><br><span class="line">         v6.9.5</span><br><span class="line">         v7.9.0</span><br><span class="line">-&gt;       v8.6.0</span><br><span class="line">        v10.0.0</span><br><span class="line">         system</span><br><span class="line">default -&gt; 8 (-&gt; v8.6.0)</span><br><span class="line">node -&gt; stable (-&gt; v10.0.0) (default)</span><br><span class="line">stable -&gt; 10.0 (-&gt; v10.0.0) (default)</span><br><span class="line">iojs -&gt; N/A (default)</span><br><span class="line">lts/* -&gt; lts/carbon (-&gt; N/A)</span><br><span class="line">lts/argon -&gt; v4.9.1 (-&gt; N/A)</span><br><span class="line">lts/boron -&gt; v6.14.1 (-&gt; N/A)</span><br><span class="line">lts/carbon -&gt; v8.11.1 (-&gt; N/A)</span><br></pre></td></tr></table></figure>
+<h3 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h3><p>下面是常见使用方式，我这里只是起一个引子，详细可参照 <code>nvm help</code>，</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载安装对应 node 版本</span></span><br><span class="line">nvm install [-s] &lt;version&gt;</span><br><span class="line"><span class="comment"># 卸载 指定版本</span></span><br><span class="line">nvm uninstall &lt;version&gt;</span><br><span class="line"><span class="comment"># 切换 Node 到指定版本</span></span><br><span class="line">nvm use [--silent] &lt;version&gt;</span><br><span class="line"><span class="comment"># 在指定 Node 版本运行命令</span></span><br><span class="line">nvm <span class="built_in">exec</span> [--silent] &lt;version&gt; [&lt;<span class="built_in">command</span>&gt;]</span><br><span class="line"><span class="comment"># 在指定 Node 版本运行 node，可携带参数</span></span><br><span class="line">nvm run [--silent] &lt;version&gt; [&lt;args&gt;]</span><br><span class="line"><span class="comment"># 显示当前 node 版本</span></span><br><span class="line">nvm current</span><br><span class="line"><span class="comment"># 列举所有安装的 node 版本</span></span><br><span class="line">nvm ls</span><br></pre></td></tr></table></figure>
+<p>举个例子</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装 v10</span></span><br><span class="line">nvm install 10</span><br><span class="line"><span class="comment"># 使用 v10</span></span><br><span class="line">nvm use 0.10</span><br><span class="line"><span class="comment"># 使用 node v0.10.32 执行 app.js</span></span><br><span class="line">nvm run 0.10.32 app.js</span><br><span class="line"><span class="comment"># 使用 0.10.32 执行 `node app.js`</span></span><br><span class="line">nvm <span class="built_in">exec</span> 0.10.32 node app.js</span><br></pre></td></tr></table></figure>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> 工具使用 </tag>
+            
+            <tag> mac </tag>
+            
+            <tag> nvm </tag>
+            
+            <tag> nrm </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[开发配置相关]]></title>
       <url>http://lijundong.com/coder-setting/</url>
       <content type="html"><![CDATA[<p>开发环境配置贴集中</p>
@@ -1418,11 +1458,11 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
+            <tag> mac </tag>
+            
             <tag> 备份 </tag>
             
             <tag> timemachine </tag>
-            
-            <tag> mac </tag>
             
         </tags>
         
