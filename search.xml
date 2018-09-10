@@ -8,7 +8,7 @@
       <url>http://lijundong.com/headless-browser/</url>
       <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/18-9-10/19197120.jpg" alt=""><br>之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome</p>
 <a id="more"></a>
-<p>受 Puppeteer 启发，我在这里造了一个词，“木偶”浏览器，指通过调用 API 来操控浏览器行为，我们可以在此基础上构建一套自动化系统，以此解放开发人员的双手，目前主要应用在下面几个场景中：</p>
+<h2 id="“木偶”浏览器"><a href="#“木偶”浏览器" class="headerlink" title="“木偶”浏览器"></a>“木偶”浏览器</h2><p>受 Puppeteer 启发，我在这里造了一个词，“木偶”浏览器，指通过调用 API 来操控浏览器行为，我们可以在此基础上构建一套自动化系统，以此解放开发人员的双手，目前主要应用在下面几个场景中：</p>
 <ul>
 <li>页面自动化测试，产品上线前，进行一些重要路径的自动化测试</li>
 <li>Javascript 库自动化自测，提供 JS 运行环境</li>
@@ -706,9 +706,9 @@
             
             <tag> github </tag>
             
-            <tag> react router4 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> react router4 </tag>
             
         </tags>
         
@@ -2809,9 +2809,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -3350,9 +3350,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
         

@@ -46,7 +46,7 @@
 <meta property="og:image" content="http://source.lijundong.com/18-9-10/69990616.jpg">
 <meta property="og:image" content="http://source.lijundong.com/18-9-10/44337548.jpg">
 <meta property="og:image" content="http://source.lijundong.com/18-9-10/11854417.jpg">
-<meta property="og:updated_time" content="2018-09-10T10:51:08.886Z">
+<meta property="og:updated_time" content="2018-09-10T10:52:32.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“木偶”浏览器简简史">
 <meta name="twitter:description" content="之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome">
@@ -230,7 +230,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#两种木偶"><span class="toc-text">两种木偶</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Selenium"><span class="toc-text">Selenium</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Selenium-IDE"><span class="toc-text">Selenium IDE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Selenium-Client-API"><span class="toc-text">Selenium Client API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Selenium-Grid"><span class="toc-text">Selenium Grid</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WebDriver-amp-Selenium-RC"><span class="toc-text">WebDriver &amp; Selenium-RC</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Headles-Browser"><span class="toc-text">Headles Browser</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#PhantomJS"><span class="toc-text">PhantomJS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Headless-Chrome"><span class="toc-text">Headless Chrome</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#木偶提线"><span class="toc-text">木偶提线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PhantomJS-1"><span class="toc-text">PhantomJS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Puppeteer"><span class="toc-text">Puppeteer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Selenium-WebDriver-VS-Puppeteer"><span class="toc-text">Selenium WebDriver VS Puppeteer</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#“木偶”浏览器"><span class="toc-text">“木偶”浏览器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#两种木偶"><span class="toc-text">两种木偶</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Selenium"><span class="toc-text">Selenium</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Selenium-IDE"><span class="toc-text">Selenium IDE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Selenium-Client-API"><span class="toc-text">Selenium Client API</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Selenium-Grid"><span class="toc-text">Selenium Grid</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WebDriver-amp-Selenium-RC"><span class="toc-text">WebDriver &amp; Selenium-RC</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Headles-Browser"><span class="toc-text">Headles Browser</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#PhantomJS"><span class="toc-text">PhantomJS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Headless-Chrome"><span class="toc-text">Headless Chrome</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#木偶提线"><span class="toc-text">木偶提线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PhantomJS-1"><span class="toc-text">PhantomJS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Puppeteer"><span class="toc-text">Puppeteer</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Selenium-WebDriver-VS-Puppeteer"><span class="toc-text">Selenium WebDriver VS Puppeteer</span></a></li></ol></li></ol>
     </div>
   </div>
 
@@ -239,7 +239,7 @@
       
         <p><img src="http://source.lijundong.com/18-9-10/19197120.jpg" alt=""><br>之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome</p>
 <a id="more"></a>
-<p>受 Puppeteer 启发，我在这里造了一个词，“木偶”浏览器，指通过调用 API 来操控浏览器行为，我们可以在此基础上构建一套自动化系统，以此解放开发人员的双手，目前主要应用在下面几个场景中：</p>
+<h2 id="“木偶”浏览器"><a href="#“木偶”浏览器" class="headerlink" title="“木偶”浏览器"></a>“木偶”浏览器</h2><p>受 Puppeteer 启发，我在这里造了一个词，“木偶”浏览器，指通过调用 API 来操控浏览器行为，我们可以在此基础上构建一套自动化系统，以此解放开发人员的双手，目前主要应用在下面几个场景中：</p>
 <ul>
 <li>页面自动化测试，产品上线前，进行一些重要路径的自动化测试</li>
 <li>Javascript 库自动化自测，提供 JS 运行环境</li>
