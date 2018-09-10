@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 10 Sep 2018 10:20:47 GMT</pubDate>
+    <pubDate>Mon, 10 Sep 2018 10:51:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,7 @@
       <pubDate>Sat, 28 Jul 2018 09:09:39 GMT</pubDate>
       <description>
       
-        &lt;p&gt;之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/18-9-10/19197120.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome&lt;/p&gt;
       
       </description>
       
