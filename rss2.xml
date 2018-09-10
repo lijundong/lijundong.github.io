@@ -8,8 +8,36 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 17 Jun 2018 04:54:31 GMT</pubDate>
+    <pubDate>Mon, 10 Sep 2018 10:20:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>“木偶”浏览器简简史</title>
+      <link>http://lijundong.com/headless-browser/</link>
+      <guid>http://lijundong.com/headless-browser/</guid>
+      <pubDate>Sat, 28 Jul 2018 09:09:39 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/headless-browser/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>代理二三事</title>
+      <link>http://lijundong.com/proxy-in-dev/</link>
+      <guid>http://lijundong.com/proxy-in-dev/</guid>
+      <pubDate>Sun, 17 Jun 2018 07:13:23 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;日常开发中，关于代理的一些总结，重点聊聊 &lt;a href=&quot;https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Proxy SwitchyOmega&lt;/a&gt;，&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/proxy-in-dev/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Node 环境配置</title>
@@ -283,34 +311,6 @@
       </description>
       
       <comments>http://lijundong.com/use-charles-up-to-debug/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>用户体验之 localStorage</title>
-      <link>http://lijundong.com/improve-UE-by-localStorage/</link>
-      <guid>http://lijundong.com/improve-UE-by-localStorage/</guid>
-      <pubDate>Wed, 05 Jul 2017 12:10:38 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;通过在页面应用使用 localStorage 提升用户使用体验。 &lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/improve-UE-by-localStorage/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>给生活一个规范</title>
-      <link>http://lijundong.com/normalize-life-with-tools/</link>
-      <guid>http://lijundong.com/normalize-life-with-tools/</guid>
-      <pubDate>Thu, 29 Jun 2017 12:03:35 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;生活中的高频问题都应有一个相对最优解，如果没有，你应该有一个。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/normalize-life-with-tools/#disqus_thread</comments>
     </item>
     
   </channel>

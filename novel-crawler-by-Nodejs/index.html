@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     
 <meta charset="UTF-8"/>
@@ -41,7 +41,7 @@
 <meta property="og:url" content="http://lijundong.com/novel-crawler-by-Nodejs/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="最近因为剧荒，老大追了爱奇艺的一部网剧，由丁墨的同名小说《美人为馅》改编，目前已经放出两季，虽然整部剧槽点满满，但是老大看得不亦乐乎，并且在看完第二季之后跟我要小说资源，直接要奔原著去看结局……随手搜了下，都是在线资源，下载的话需要登录，注册登录好麻烦，写个爬虫玩玩也好，于是动手用 node 写了一个，这里做下笔记">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://source.lijundong.com/public/16-11-18/1946587.jpg">
 <meta property="og:image" content="http://source.lijundong.com/public/16-11-18/97144351.jpg">
 <meta property="og:updated_time" content="2017-11-21T08:03:11.000Z">
@@ -156,7 +156,7 @@
           <a class="menu-item-link" href="/">
             
             
-              Home
+              首页
             
           </a>
         </li>
@@ -165,7 +165,7 @@
           <a class="menu-item-link" href="/archives/">
             
             
-              Archives
+              归档
             
           </a>
         </li>
@@ -174,7 +174,7 @@
           <a class="menu-item-link" href="/tags">
             
             
-              Tags
+              标签
             
           </a>
         </li>
@@ -183,7 +183,7 @@
           <a class="menu-item-link" href="/about">
             
             
-              About
+              关于
             
           </a>
         </li>
@@ -218,7 +218,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Nov 17, 2016
+          2016年11月17日
         </span>
       </div>
     </header>
@@ -226,7 +226,7 @@
     
     
   <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">Contents</h2>
+    <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
       <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#工作流程"><span class="toc-text">工作流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取-URLs"><span class="toc-text">获取 URLs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取数据"><span class="toc-text">获取数据</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#获取源码"><span class="toc-text">获取源码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#解析源码，获取小说"><span class="toc-text">解析源码，获取小说</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#保存小说"><span class="toc-text">保存小说</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Markdown-转-PDF"><span class="toc-text">Markdown 转 PDF</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Chrome-打印"><span class="toc-text">Chrome 打印</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pandoc-转换"><span class="toc-text">pandoc 转换</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于python、node、爬虫"><span class="toc-text">关于python、node、爬虫</span></a></li></ol>
     </div>
@@ -277,15 +277,15 @@
 
   <div class="post-copyright">
     <p class="copyright-item">
-      <span>Author: </span>
+      <span>作者: </span>
       <span>leeon</span>
     </p>
     <p class="copyright-item">
-      <span>Origin: </span>
+      <span>来源: </span>
       <a href="http://lijundong.com">http://lijundong.com</a>
     </p>
     <p class="copyright-item">
-      <span>Link: </span>
+      <span>链接: </span>
       <a href="http://lijundong.com/novel-crawler-by-Nodejs/">http://lijundong.com/novel-crawler-by-Nodejs/</a>
     </p>
 
@@ -301,7 +301,7 @@
       
   <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden />
-    <label class="reward-button" for="reward">Reward</label>
+    <label class="reward-button" for="reward">赞赏支持</label>
     <div class="qr-code">
       
       
@@ -339,13 +339,13 @@
       <a class="prev" href="/start-latex-and-configure-latext-editor-with-sublime/">
         <i class="iconfont icon-left"></i>
         <span class="prev-text nav-default">SublimeText 配置 LaTeX 编辑器</span>
-        <span class="prev-text nav-mobile">Prev</span>
+        <span class="prev-text nav-mobile">上一篇</span>
       </a>
     
     
       <a class="next" href="/develop-automatic-gulp-set/">
         <span class="next-text nav-default">前端开发自动化之 Gulp</span>
-        <span class="prev-text nav-mobile">Next</span>
+        <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
     
@@ -416,11 +416,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
   </span>
   
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
@@ -507,7 +507,7 @@
         $content$
         <div class="read-more">
           <a href="$url$" class="read-more-link">
-            Read more..
+            阅读更多
           </a>
         </div>
       </div>

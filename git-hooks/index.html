@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     
 <meta charset="UTF-8"/>
@@ -41,7 +41,7 @@
 <meta property="og:url" content="http://lijundong.com/git-hooks/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="Git Hooks 是 Git 提供的允许用户自定义的脚本，这些脚本会在特定条件下被触发，我们可以通过自定义脚本来定制 Git。之前迁移博客到阿里云，Git Hooks 就是非常重要的一部分，我在服务器上使用的 Hook 类型是 post-receive，今天把相关部分官方的文档重新看了下，这篇笔记是在官方文档的基础上进行演绎的。">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-cn">
 <meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git Hooks">
@@ -153,7 +153,7 @@
           <a class="menu-item-link" href="/">
             
             
-              Home
+              首页
             
           </a>
         </li>
@@ -162,7 +162,7 @@
           <a class="menu-item-link" href="/archives/">
             
             
-              Archives
+              归档
             
           </a>
         </li>
@@ -171,7 +171,7 @@
           <a class="menu-item-link" href="/tags">
             
             
-              Tags
+              标签
             
           </a>
         </li>
@@ -180,7 +180,7 @@
           <a class="menu-item-link" href="/about">
             
             
-              About
+              关于
             
           </a>
         </li>
@@ -215,7 +215,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Dec 16, 2016
+          2016年12月16日
         </span>
       </div>
     </header>
@@ -223,7 +223,7 @@
     
     
   <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">Contents</h2>
+    <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
       <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装-Hooks"><span class="toc-text">安装 Hooks</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#客户端-本地-Hook"><span class="toc-text">客户端(本地) Hook</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#pre-commit"><span class="toc-text">pre-commit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#prepare-commit-msg"><span class="toc-text">prepare-commit-msg</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#commit-msg"><span class="toc-text">commit-msg</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#pre-rebase"><span class="toc-text">pre-rebase</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#服务端-Hook"><span class="toc-text">服务端 Hook</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#pre-receive"><span class="toc-text">pre-receive</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#update"><span class="toc-text">update</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#post-receive"><span class="toc-text">post-receive</span></a></li></ol></li></ol>
     </div>
@@ -270,15 +270,15 @@
 
   <div class="post-copyright">
     <p class="copyright-item">
-      <span>Author: </span>
+      <span>作者: </span>
       <span>leeon</span>
     </p>
     <p class="copyright-item">
-      <span>Origin: </span>
+      <span>来源: </span>
       <a href="http://lijundong.com">http://lijundong.com</a>
     </p>
     <p class="copyright-item">
-      <span>Link: </span>
+      <span>链接: </span>
       <a href="http://lijundong.com/git-hooks/">http://lijundong.com/git-hooks/</a>
     </p>
 
@@ -294,7 +294,7 @@
       
   <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden />
-    <label class="reward-button" for="reward">Reward</label>
+    <label class="reward-button" for="reward">赞赏支持</label>
     <div class="qr-code">
       
       
@@ -328,13 +328,13 @@
       <a class="prev" href="/note-hexo-deploy-on-server/">
         <i class="iconfont icon-left"></i>
         <span class="prev-text nav-default">小记 - Hexo 部署到阿里云服务器</span>
-        <span class="prev-text nav-mobile">Prev</span>
+        <span class="prev-text nav-mobile">上一篇</span>
       </a>
     
     
       <a class="next" href="/deploy-hexo-blog-on-server/">
         <span class="next-text nav-default">测试 - Hexo 部署到阿里云</span>
-        <span class="prev-text nav-mobile">Next</span>
+        <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
     
@@ -405,11 +405,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
   </span>
   
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
@@ -496,7 +496,7 @@
         $content$
         <div class="read-more">
           <a href="$url$" class="read-more-link">
-            Read more..
+            阅读更多
           </a>
         </div>
       </div>

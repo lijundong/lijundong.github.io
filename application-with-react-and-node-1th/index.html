@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     
 <meta charset="UTF-8"/>
@@ -17,7 +17,7 @@
 
 
 
-  <meta name="keywords" content="react,node.js,github,react router4,前后分离," />
+  <meta name="keywords" content="react,node.js,github,前后分离,react router4," />
 
 
 
@@ -35,13 +35,13 @@
 
 
 <meta name="description" content="关于项目 项目地址 预览地址  记录最近做的一个 demo，前端使用 React，用 React Router 实现前端路由，Koa 2 搭建 API Server， 最后通过 Nginx 做请求转发。  这是第一篇，主要介绍下前端代码的构建、React router 使用中遇到问题，以及前端开发完成后部署相关工作。">
-<meta name="keywords" content="react,node.js,github,react router4,前后分离">
+<meta name="keywords" content="react,node.js,github,前后分离,react router4">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React + Node 单页应用「一」前端搭建">
 <meta property="og:url" content="http://lijundong.com/application-with-react-and-node-1th/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="关于项目 项目地址 预览地址  记录最近做的一个 demo，前端使用 React，用 React Router 实现前端路由，Koa 2 搭建 API Server， 最后通过 Nginx 做请求转发。  这是第一篇，主要介绍下前端代码的构建、React router 使用中遇到问题，以及前端开发完成后部署相关工作。">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://source.lijundong.com/17-11-8/9420557.jpg">
 <meta property="og:updated_time" content="2017-11-21T08:05:51.000Z">
 <meta name="twitter:card" content="summary">
@@ -155,7 +155,7 @@
           <a class="menu-item-link" href="/">
             
             
-              Home
+              首页
             
           </a>
         </li>
@@ -164,7 +164,7 @@
           <a class="menu-item-link" href="/archives/">
             
             
-              Archives
+              归档
             
           </a>
         </li>
@@ -173,7 +173,7 @@
           <a class="menu-item-link" href="/tags">
             
             
-              Tags
+              标签
             
           </a>
         </li>
@@ -182,7 +182,7 @@
           <a class="menu-item-link" href="/about">
             
             
-              About
+              关于
             
           </a>
         </li>
@@ -217,7 +217,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Nov 3, 2017
+          2017年11月3日
         </span>
       </div>
     </header>
@@ -225,7 +225,7 @@
     
     
   <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">Contents</h2>
+    <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
       <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#关于项目"><span class="toc-text">关于项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#功能介绍"><span class="toc-text">功能介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#依赖版本"><span class="toc-text">依赖版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目搭建"><span class="toc-text">项目搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前端路由"><span class="toc-text">前端路由</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据操作"><span class="toc-text">数据操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#路由下发数据"><span class="toc-text">路由下发数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据请求"><span class="toc-text">数据请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据更新"><span class="toc-text">数据更新</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#setState"><span class="toc-text">setState</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#componentWillReceiveProps"><span class="toc-text">componentWillReceiveProps</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目构建部署"><span class="toc-text">项目构建部署</span></a></li></ol></li></ol>
     </div>
@@ -292,15 +292,15 @@
 
   <div class="post-copyright">
     <p class="copyright-item">
-      <span>Author: </span>
+      <span>作者: </span>
       <span>leeon</span>
     </p>
     <p class="copyright-item">
-      <span>Origin: </span>
+      <span>来源: </span>
       <a href="http://lijundong.com">http://lijundong.com</a>
     </p>
     <p class="copyright-item">
-      <span>Link: </span>
+      <span>链接: </span>
       <a href="http://lijundong.com/application-with-react-and-node-1th/">http://lijundong.com/application-with-react-and-node-1th/</a>
     </p>
 
@@ -316,7 +316,7 @@
       
   <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden />
-    <label class="reward-button" for="reward">Reward</label>
+    <label class="reward-button" for="reward">赞赏支持</label>
     <div class="qr-code">
       
       
@@ -345,9 +345,9 @@
             
               <a href="/tags/github/">github</a>
             
-              <a href="/tags/react-router4/">react router4</a>
-            
               <a href="/tags/前后分离/">前后分离</a>
+            
+              <a href="/tags/react-router4/">react router4</a>
             
           </div>
         
@@ -358,13 +358,13 @@
       <a class="prev" href="/application-with-react-and-node-2th/">
         <i class="iconfont icon-left"></i>
         <span class="prev-text nav-default">React + Node 单页应用「二」OAuth 2.0 协议 & GitHub 授权实践</span>
-        <span class="prev-text nav-mobile">Prev</span>
+        <span class="prev-text nav-mobile">上一篇</span>
       </a>
     
     
       <a class="next" href="/ssh-login-directly/">
         <span class="next-text nav-default">配置 SSH 快捷登录</span>
-        <span class="prev-text nav-mobile">Next</span>
+        <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
     
@@ -435,11 +435,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
   </span>
   
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
@@ -526,7 +526,7 @@
         $content$
         <div class="read-more">
           <a href="$url$" class="read-more-link">
-            Read more..
+            阅读更多
           </a>
         </div>
       </div>

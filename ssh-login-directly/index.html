@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     
 <meta charset="UTF-8"/>
@@ -41,7 +41,7 @@
 <meta property="og:url" content="http://lijundong.com/ssh-login-directly/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， ssh root@xxx.xxx.xxx.xxx，接着输入 password，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。12345678910111213# 优化前# 公司机器ssh root@xxx.xxx.xxx.xxxpassword: ****">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-cn">
 <meta property="og:updated_time" content="2017-10-30T01:29:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置 SSH 快捷登录">
@@ -153,7 +153,7 @@
           <a class="menu-item-link" href="/">
             
             
-              Home
+              首页
             
           </a>
         </li>
@@ -162,7 +162,7 @@
           <a class="menu-item-link" href="/archives/">
             
             
-              Archives
+              归档
             
           </a>
         </li>
@@ -171,7 +171,7 @@
           <a class="menu-item-link" href="/tags">
             
             
-              Tags
+              标签
             
           </a>
         </li>
@@ -180,7 +180,7 @@
           <a class="menu-item-link" href="/about">
             
             
-              About
+              关于
             
           </a>
         </li>
@@ -215,7 +215,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Oct 28, 2017
+          2017年10月28日
         </span>
       </div>
     </header>
@@ -223,7 +223,7 @@
     
     
   <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">Contents</h2>
+    <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
       <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置主机别名"><span class="toc-text">设置主机别名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置公钥登录"><span class="toc-text">设置公钥登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#生成公钥"><span class="toc-text">生成公钥</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-SSH-公钥登录"><span class="toc-text">配置 SSH 公钥登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一步"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二步"><span class="toc-text">第二步</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#免密码登录"><span class="toc-text">免密码登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#提示错误-？"><span class="toc-text">提示错误 ？</span></a></li></ol></li></ol>
     </div>
@@ -276,15 +276,15 @@
 
   <div class="post-copyright">
     <p class="copyright-item">
-      <span>Author: </span>
+      <span>作者: </span>
       <span>leeon</span>
     </p>
     <p class="copyright-item">
-      <span>Origin: </span>
+      <span>来源: </span>
       <a href="http://lijundong.com">http://lijundong.com</a>
     </p>
     <p class="copyright-item">
-      <span>Link: </span>
+      <span>链接: </span>
       <a href="http://lijundong.com/ssh-login-directly/">http://lijundong.com/ssh-login-directly/</a>
     </p>
 
@@ -300,7 +300,7 @@
       
   <div class="post-reward">
     <input type="checkbox" name="reward" id="reward" hidden />
-    <label class="reward-button" for="reward">Reward</label>
+    <label class="reward-button" for="reward">赞赏支持</label>
     <div class="qr-code">
       
       
@@ -336,13 +336,13 @@
       <a class="prev" href="/application-with-react-and-node-1th/">
         <i class="iconfont icon-left"></i>
         <span class="prev-text nav-default">React + Node 单页应用「一」前端搭建</span>
-        <span class="prev-text nav-mobile">Prev</span>
+        <span class="prev-text nav-mobile">上一篇</span>
       </a>
     
     
       <a class="next" href="/lazy-load-optimization-on-iOS-Android/">
         <span class="next-text nav-default">移动端 H5 页面滚动加载优化</span>
-        <span class="prev-text nav-mobile">Next</span>
+        <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
     
@@ -413,11 +413,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
   </span>
   
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
@@ -504,7 +504,7 @@
         $content$
         <div class="read-more">
           <a href="$url$" class="read-more-link">
-            Read more..
+            阅读更多
           </a>
         </div>
       </div>

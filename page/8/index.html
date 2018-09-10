@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
   <head>
     
 <meta charset="UTF-8"/>
@@ -38,7 +38,7 @@
 <meta property="og:url" content="http://lijundong.com/page/8/index.html">
 <meta property="og:site_name" content="Leeon Notes">
 <meta property="og:description" content="Write down,Mark it.">
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="zh-cn">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leeon Notes">
 <meta name="twitter:description" content="Write down,Mark it.">
@@ -149,7 +149,7 @@
           <a class="menu-item-link" href="/">
             
             
-              Home
+              首页
             
           </a>
         </li>
@@ -158,7 +158,7 @@
           <a class="menu-item-link" href="/archives/">
             
             
-              Archives
+              归档
             
           </a>
         </li>
@@ -167,7 +167,7 @@
           <a class="menu-item-link" href="/tags">
             
             
-              Tags
+              标签
             
           </a>
         </li>
@@ -176,7 +176,7 @@
           <a class="menu-item-link" href="/about">
             
             
-              About
+              关于
             
           </a>
         </li>
@@ -207,13 +207,100 @@
     <header class="post-header">
       <h1 class="post-title">
         
+          <a class="post-link" href="/clear-float/">清除浮动</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2016年3月11日
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <h2 id="为什么清除浮动"><a href="#为什么清除浮动" class="headerlink" title="为什么清除浮动"></a>为什么清除浮动</h2><p>因为float会脱离Normal_flow,布局是会出现问题，下面给一个例子。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.outer</span>&#123;<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#ccc</span>;<span class="attribute">background-color</span>:<span class="number">#fc9</span>;<span class="attribute">color</span>:<span class="number">#f5f</span>;<span class="attribute">margin</span>:<span class="number">50px</span> auto;<span class="attribute">padding</span>:<span class="number">50px</span>;&#125;</span><br><span class="line"><span class="selector-class">.div1</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:red;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div2</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:blue;<span class="attribute">float</span>:left;&#125;</span><br><span class="line"><span class="selector-class">.div3</span>&#123;<span class="attribute">width</span>:<span class="number">80px</span>;<span class="attribute">height</span>:<span class="number">80px</span>;<span class="attribute">background</span>:green;<span class="attribute">float</span>:left;&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span>float1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span>float2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div3"</span>&gt;</span>float3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="//source.lijundong.com/16-3-11/66642323.jpg" alt="浮动未清除"><br>途中三个浮动上面的那条白线是整个outer的内容，height值为0，造成这样的原因是float已经脱离了文档流，这显然不是我们想要的，可能上面的内容不能很清楚的描述问题，下面在三个浮动元素后添加非浮动的div。<br>
+          <div class="read-more">
+            <a href="/clear-float/" class="read-more-link">阅读更多</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/Dell-laptop-add-ssd/">Dell笔记本加装固态</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2016年3月7日
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <h2 id="加装SSD"><a href="#加装SSD" class="headerlink" title="加装SSD"></a>加装SSD</h2><p>老大这学期的课程需要装很多测试软件，那台32位系统的Dell inspiron 14本来就卡的不行，再装软件恐怕连开机都困难，想到此处，拍案而起，大呼道“我要加装SSD！”，加之最近发现用的是64位的i3，换系统更是刻不容缓了。昨天用了半个下午装完，因为第一次拆 Dell，这里总结几个需要注意的地方。<br>
+          <div class="read-more">
+            <a href="/Dell-laptop-add-ssd/" class="read-more-link">阅读更多</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
           <a class="post-link" href="/normal-flow/">CSS 定位 & 文档流</a>
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          Mar 3, 2016
+          2016年3月3日
         </span>
       </div>
     </header>
@@ -231,7 +318,7 @@
         
           <h2 id="文档流小计"><a href="#文档流小计" class="headerlink" title="文档流小计"></a>文档流小计</h2><p>页面CSS布局虽然写了很多，但多为无章法的拼凑，对这方面的知识掌握的不系统，导致遇到问题发虚，最近看JS权威指南时多次遇到文档流，所以在此做一个总结。<br><em>欢迎指正！</em><br>
           <div class="read-more">
-            <a href="/normal-flow/" class="read-more-link">Read more..</a>
+            <a href="/normal-flow/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -255,7 +342,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Jan 21, 2016
+          2016年1月21日
         </span>
       </div>
     </header>
@@ -273,7 +360,7 @@
         
           <h2 id="命令行启动"><a href="#命令行启动" class="headerlink" title="命令行启动"></a>命令行启动</h2><p>每次用命令行new一个新文件都得在文件夹里打开，很不方便，一直都在用Sublime，想在命令行里启动Sublime。<br>
           <div class="read-more">
-            <a href="/Sublime-Text3-set-command-line/" class="read-more-link">Read more..</a>
+            <a href="/Sublime-Text3-set-command-line/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -297,7 +384,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Jan 21, 2016
+          2016年1月21日
         </span>
       </div>
     </header>
@@ -322,7 +409,7 @@
 <p>一年的时间，结识了HB，从硬件转到Web，完成了一次骑行，找到了一个很棒的实验室，一群有趣的人，跟了一位靠谱的boss。回顾这一年，大概就这些了。</p>
 </blockquote>
           <div class="read-more">
-            <a href="/year-again/" class="read-more-link">Read more..</a>
+            <a href="/year-again/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -346,7 +433,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Jan 12, 2016
+          2016年1月12日
         </span>
       </div>
     </header>
@@ -366,7 +453,7 @@
 
 <h2 id="关于kindle"><a href="#关于kindle" class="headerlink" title="关于kindle"></a>关于kindle</h2><p>常说的kindle默认指代kindle电子书阅读器，但亚马逊除了硬件阅读器，也做了全平台的软件应用，我可以用我的kindle阅读器看书，同时也可以在手机（Android、iOS）和电脑（MacOS、windows）上阅读本地文件，看我在Amazon商城买的书，有没有觉得很方便，与此同时，问题也出现了，如此多的设备和文件，该怎么管理？<br>
           <div class="read-more">
-            <a href="/Kindle-content-manage/" class="read-more-link">Read more..</a>
+            <a href="/Kindle-content-manage/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -390,7 +477,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Jan 11, 2016
+          2016年1月11日
         </span>
       </div>
     </header>
@@ -408,7 +495,7 @@
         
           <h2 id="Chrome插件"><a href="#Chrome插件" class="headerlink" title="Chrome插件"></a>Chrome插件</h2><p>喜欢Chrome，简洁的设计，强悍的内核只是一方面，应用商店里丰富的扩展和插件才是让我对Chrome爱不释手的根本原因。这些扩展增强了Chrome的使用体验，同时也提高了开发人员的效率，最近用了一个很方便的便签应用，可惜字体只支持英文，看着让人恼火的中文，索性决定自己写一个。一个扩展很容易实现，Chrome可以直接编译JS代码，需要界面时可添加html文件，方式与网页相差无几。<br><strong>官方资源:</strong><br><a href="//developer.chrome.com/extensions/api_index">API文档</a><br><a href="//developer.chrome.com/extensions/samples#search:">Samples</a><br><a href="//open.chrome.360.cn/extension_dev/overview.html">中文API</a><br>
           <div class="read-more">
-            <a href="/Chrome-extension-one-clock/" class="read-more-link">Read more..</a>
+            <a href="/Chrome-extension-one-clock/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -432,7 +519,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Nov 20, 2015
+          2015年11月20日
         </span>
       </div>
     </header>
@@ -453,7 +540,7 @@
 
 <h3 id="0"><a href="#0" class="headerlink" title="0%"></a>0%</h3><p>细想应该是高三接触到这本书，偶然翻到跃峰买的一本电子杂志，sky在杂志里开了一篇专栏，连载的是他的一本自传『当李晓峰成为Sky』，那一刊记载的正是sky从郑州回家，再次上路后彻底转型为魔兽玩家的那段时光，光阴如梭，白云苍狗，没想到三四年过去了我一直念念不忘，很久之前就已经入手了电子版，只是重度拖延症一直延期到Kindle到手的第二天，利用一节科技英语课，开始看这本执念了三四年的书。<br>
           <div class="read-more">
-            <a href="/when-lixiaofeng-become-sky/" class="read-more-link">Read more..</a>
+            <a href="/when-lixiaofeng-become-sky/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -477,7 +564,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Sep 15, 2015
+          2015年9月15日
         </span>
       </div>
     </header>
@@ -500,7 +587,7 @@
 <p>暑假的骑行本该以这篇总结结束的，一直拖到现在。</p>
 <p>7.15成都出发，8.5到达拉萨，历时二十一天，行程2100+km，翻了13座山（两座5000+，9座4000+，两座4000-），爆了一个外胎和一个内胎，都是后胎，同时爆的……，一行四人，路上结识三位，七人布达拉宫广场举车，喝拉萨啤酒，这些事情我会记得很久。<br>
           <div class="read-more">
-            <a href="/cycling-on-318/" class="read-more-link">Read more..</a>
+            <a href="/cycling-on-318/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -524,7 +611,7 @@
 
       <div class="post-meta">
         <span class="post-time">
-          Sep 10, 2015
+          2015年9月10日
         </span>
       </div>
     </header>
@@ -544,97 +631,7 @@
 <blockquote>
 <p>借刘未鹏前辈语：<br>一行字被你写下来之后，你就不用在将其费力的保持在大脑的临时记忆中，因为这行黑底白字会不断地通过视觉刺激来提醒你它的存在，于是你就可以将空出来的思维精力用于反思你自己的观点<br>
           <div class="read-more">
-            <a href="/Hello World/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/Canvas-animation-about-sort/">Canvas制作排序算法演示动画</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          Sep 5, 2015
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>Tips:<br>形象化演示排序算法可以让初学者快速理解，最近在看canvas，试着用js+canvas自己做了一个。<br>已有比较好的demo：<a href="//jun-lu.github.io/SortAnimate/index.html">jun-lu的SortAnimate</a>，<a href="//www.webhek.com/misc/comparison-sort">旧金山大学的David Galles教授的算法演示课件</a>。</p>
-          <div class="read-more">
-            <a href="/Canvas-animation-about-sort/" class="read-more-link">Read more..</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/Syntactic analysis/">编写语法分析程序</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          Jun 12, 2015
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <h3 id="Note："><a href="#Note：" class="headerlink" title="Note："></a>Note：</h3><p>这学期修了严厉的Mr.J的编译原理，不定期更新笔记！<br>欢迎指正！</p>
-<h3 id="Github"><a href="#Github" class="headerlink" title="Github:"></a>Github:</h3><ul>
-<li><a href="//github.com/lijundong/lexi">词法分析</a></li>
-<li><a href="//github.com/lijundong/syntax">语法分析</a></li>
-<li><a href="//github.com/lijundong/semantic">语义分析</a></li>
-</ul>
-<hr>
-          <div class="read-more">
-            <a href="/Syntactic analysis/" class="read-more-link">Read more..</a>
+            <a href="/Hello World/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -654,12 +651,12 @@
     
       <a class="prev" href="/page/7/">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text">Prev</span>
+        <span class="prev-text">上一页</span>
       </a>
     
     
       <a class="next" href="/page/9/">
-        <span class="next-text">Next</span>
+        <span class="next-text">下一页</span>
         <i class="iconfont icon-right"></i>
       </a>
     
@@ -714,11 +711,11 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a>
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
   </span>
   
   <span class="theme-info">
-    Theme - 
+    主题 - 
     <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
   </span>
 
@@ -783,7 +780,7 @@
         $content$
         <div class="read-more">
           <a href="$url$" class="read-more-link">
-            Read more..
+            阅读更多
           </a>
         </div>
       </div>
