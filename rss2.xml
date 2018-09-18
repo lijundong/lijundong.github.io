@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 10 Sep 2018 10:52:32 GMT</pubDate>
+    <pubDate>Tue, 18 Sep 2018 04:04:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Centos7 部署 Puppeteer 服务</title>
+      <link>http://lijundong.com/deply-puppeteer-on-production/</link>
+      <guid>http://lijundong.com/deply-puppeteer-on-production/</guid>
+      <pubDate>Mon, 17 Sep 2018 14:42:56 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;之前的文章中介绍了「&lt;a href=&quot;//lijundong.com/headless-browser/&quot;&gt;“木偶”浏览器简简史&lt;/a&gt;」，文中介绍了 Google 的 Puppetter，这一篇介绍下如何在 Centos7 环境下部署 Puppeteer 服务环境。&lt;br&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/deply-puppeteer-on-production/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>“木偶”浏览器简简史</title>
@@ -297,20 +311,6 @@
       </description>
       
       <comments>http://lijundong.com/surf-the-Internet-efficiently/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Charles 使用小记</title>
-      <link>http://lijundong.com/use-charles-up-to-debug/</link>
-      <guid>http://lijundong.com/use-charles-up-to-debug/</guid>
-      <pubDate>Thu, 20 Jul 2017 08:34:44 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/use-charles-up-to-debug/#disqus_thread</comments>
     </item>
     
   </channel>

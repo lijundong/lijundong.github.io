@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title><![CDATA[Centos7 部署 Puppeteer 服务]]></title>
+      <url>http://lijundong.com/deply-puppeteer-on-production/</url>
+      <content type="html"><![CDATA[<p>之前的文章中介绍了「<a href="//lijundong.com/headless-browser/">“木偶”浏览器简简史</a>」，文中介绍了 Google 的 Puppetter，这一篇介绍下如何在 Centos7 环境下部署 Puppeteer 服务环境。<br><a id="more"></a></p>
+<p>上一篇文章的示例代码的环境是我本地的 MacOS，但实际在服务器上运行时，会出现问题，这也是我写这篇文章的原因。</p>
+<h2 id="MacOS-环境"><a href="#MacOS-环境" class="headerlink" title="MacOS 环境"></a>MacOS 环境</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>通过 NPM 安装：<code>npm install puppetter</code><br>Puppeteer 包安装完成后会执行 <code>node install.js</code>，将最新版本的 Chromium 下载到 <code>node_module</code> 目录的 <code>puppetter</code> 目录下。</p>
+<p>安装完成就可以直接调用了。</p>
+<h3 id="CentOS-7"><a href="#CentOS-7" class="headerlink" title="CentOS 7"></a>CentOS 7</h3><p>CentOS 下如果使用上述的方式安装，安装时没问题，但真实调用时，会出现 Chromium 缺少依赖项的报错，通过安装以下依赖可以解决。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">依赖库</span></span><br><span class="line">yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y</span><br></pre></td></tr></table></figure>
+<p>解决了依赖问题，我们继续，调用截图，发现中文乱码，机器上没有对应的中文字体，需要安装中文字体，可以通过安装以下字体解决。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">字体</span></span><br><span class="line">yum install ipa-gothic-fonts xorg-x11-fonts-100dpi xorg-x11-fonts-75dpi xorg-x11-utils xorg-x11-fonts-cyrillic xorg-x11-fonts-Type1 xorg-x11-fonts-misc -y</span><br></pre></td></tr></table></figure>
+<p>不过这些字体显示仍然非常“粗糙”，不过还好能正常显示。</p>
+<h3 id="问题-amp-解决"><a href="#问题-amp-解决" class="headerlink" title="问题 &amp; 解决"></a>问题 &amp; 解决</h3><p>通过上面的层层努力，我们终于艰难地把项目部署到了 CentOS 上，现在整理下过程中的问题。</p>
+<h4 id="问题一：Chromium-包太大-amp-Chromium-依赖"><a href="#问题一：Chromium-包太大-amp-Chromium-依赖" class="headerlink" title="问题一：Chromium 包太大 &amp; Chromium 依赖"></a>问题一：Chromium 包太大 &amp; Chromium 依赖</h4><p>不论是 MacOS 环境还是 CentOS 下，Chromium 69 的包的 Size 大概 <strong>100M</strong>左右，安装过程可能因为网络问题失败，并且每次重新构建都需要重复这个过程，这种项目部署方式是非常糟糕，并且还需要在环境中解决依赖问题。</p>
+<p>当然，可以选择使用增加 <code>ignore-scripts</code> 参数忽略安装时的脚本执行，安装结束后手动安装，</p>
+<p><code>npm install --ignore-scripts</code> </p>
+<p>但这可能会影响到同一个项目中其他依赖的安装，耦合不是我们希望看到的，不过上一篇提到，Puppeteer 从 <code>1.7</code> 版本后，单独出了 <code>puppetter-core</code>， 选择直接安装 <code>puppetter-core</code> 将不会安装浏览器。</p>
+<p>不过两种方案都需要手动安装 Chromium，这反而让过程变得更复杂，我们的原则是能使用 auto 模式绝不用 manual 模式。</p>
+<h4 id="解决一：系统安装-Chrome-amp-选用puppeteer-core"><a href="#解决一：系统安装-Chrome-amp-选用puppeteer-core" class="headerlink" title="解决一：系统安装 Chrome &amp; 选用puppeteer-core"></a>解决一：系统安装 Chrome &amp; 选用puppeteer-core</h4><p>先说结论，选择 <code>系统安装 Chrome（version &gt;= 68） + puppetter-core</code> 方案</p>
+<p>解决手动安装以及避免依赖问题，选择将 Chrome 安装在系统全局中，通过 rpm 安装方式如下：</p>
+<p><code>yum install https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm</code></p>
+<p>调用时，传入 Chrome 安装的可执行路径即可，例如 CentOS，<br><code>const browser = await puppeteer.launch({executablePath: &#39;/usr/bin/google-chrome&#39;})</code></p>
+<h4 id="解决二：字体"><a href="#解决二：字体" class="headerlink" title="解决二：字体"></a>解决二：字体</h4><p>字体推荐在系统中安装微软雅黑等字体。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> node </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> centos </tag>
+            
+            <tag> puppetter </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[“木偶”浏览器简简史]]></title>
       <url>http://lijundong.com/headless-browser/</url>
       <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/18-9-10/19197120.jpg" alt=""><br>之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome</p>
@@ -630,9 +672,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> OAuth 2.0 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
         
@@ -1590,11 +1632,11 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
+            <tag> mac </tag>
+            
             <tag> 备份 </tag>
             
             <tag> timemachine </tag>
-            
-            <tag> mac </tag>
             
         </tags>
         
@@ -2564,9 +2606,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> linux </tag>
-            
             <tag> vim </tag>
+            
+            <tag> linux </tag>
             
             <tag> 正则 </tag>
             
@@ -2809,9 +2851,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -3350,9 +3392,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
         
@@ -3466,9 +3508,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
         
