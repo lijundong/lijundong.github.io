@@ -12,7 +12,7 @@
 
 
 
-  <meta name="description" content="代理二三事"/>
+  <meta name="description" content="开发中的网络代理"/>
 
 
 
@@ -34,18 +34,18 @@
 <link rel="canonical" href="http://lijundong.com/proxy-in-dev/"/>
 
 
-<meta name="description" content="日常开发中，关于代理的一些总结，重点聊聊 Proxy SwitchyOmega，">
+<meta name="description" content="日常开发中，关于代理的一些总结，重点聊聊 Proxy SwitchyOmega">
 <meta name="keywords" content="chrome,charles,proxy,shadow socks,switchy omega">
 <meta property="og:type" content="article">
-<meta property="og:title" content="代理二三事">
+<meta property="og:title" content="开发中的网络代理">
 <meta property="og:url" content="http://lijundong.com/proxy-in-dev/index.html">
 <meta property="og:site_name" content="Leeon Notes">
-<meta property="og:description" content="日常开发中，关于代理的一些总结，重点聊聊 Proxy SwitchyOmega，">
+<meta property="og:description" content="日常开发中，关于代理的一些总结，重点聊聊 Proxy SwitchyOmega">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2018-07-28T10:54:11.320Z">
+<meta property="og:updated_time" content="2018-09-25T02:04:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="代理二三事">
-<meta name="twitter:description" content="日常开发中，关于代理的一些总结，重点聊聊 Proxy SwitchyOmega，">
+<meta name="twitter:title" content="开发中的网络代理">
+<meta name="twitter:description" content="日常开发中，关于代理的一些总结，重点聊聊 Proxy SwitchyOmega">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -84,7 +84,7 @@
 
 
 
-    <title> 代理二三事 · Leeon Notes </title>
+    <title> 开发中的网络代理 · Leeon Notes </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -209,7 +209,7 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          代理二三事
+          开发中的网络代理
         
       </h1>
 
@@ -225,20 +225,21 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#代理场景"><span class="toc-text">代理场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Proxy-SwitchyOmega"><span class="toc-text">Proxy SwitchyOmega</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Proxy-SwitchyOmega"><span class="toc-text">Proxy SwitchyOmega</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模式"><span class="toc-text">模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Proxy-Profile"><span class="toc-text">Proxy Profile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Switch-Profile"><span class="toc-text">Switch Profile</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#PAC-Profile"><span class="toc-text">PAC Profile</span></a></li></ol></li></ol>
     </div>
   </div>
 
 
     <div class="post-content">
       
-        <p>日常开发中，关于代理的一些总结，重点聊聊 <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif" target="_blank" rel="noopener">Proxy SwitchyOmega</a>，</p>
+        <p>日常开发中，关于代理的一些总结，重点聊聊 <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif" target="_blank" rel="noopener">Proxy SwitchyOmega</a></p>
 <a id="more"></a>
-<p>日常工作生活中，我都非常推崇效率工具的使用，好的工具可以带来事半功倍的效果，当然，在使用之前，需要明确应用场景。</p>
-<h2 id="代理场景"><a href="#代理场景" class="headerlink" title="代理场景"></a>代理场景</h2><p>接触网络代理工具是从 Shadowsocks 科学上网开始，主要场景仍然是浏览器（Chrome），在沉迷 Chrome 扩展工具时期，接触了 <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="noopener">Proxy SwitchyOmega</a>，在<a href="http://lijundong.com/chrome-extensions-recommend/"><br>Chrome 插件推荐</a> 也做过简短的介绍，开发中遇到需要抓包处理的场景时，开始使用 windows 下的 fiddler、mac 的 Charles（目前）等网络代理工具，之前也写过<a href="http://lijundong.com/use-charles-up-to-debug/">Charles 使用小记</a>。</p>
-<p>今天我们聊聊 SwitchyOmega。</p>
-<h2 id="Proxy-SwitchyOmega"><a href="#Proxy-SwitchyOmega" class="headerlink" title="Proxy SwitchyOmega"></a>Proxy SwitchyOmega</h2><p>在介绍 SwitchyOmega 之前，需要提一下它的 1.0 版本，<a href="https://github.com/FelisCatus/switchysharp" target="_blank" rel="noopener">switchysharp</a>，项目作者在 2014 年三月停止了 1.0 的开发，将全部精力投入到了 2.0 即现在的 SwitchyOmega。</p>
-
+<p>接触网络代理工具是从 Shadowsocks 科学上网开始，主要场景仍然是浏览器（Chrome），在沉迷 Chrome 扩展工具时期，接触了 <a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="noopener">Proxy SwitchyOmega</a>，在<a href="//lijundong.com/chrome-extensions-recommend/"><br>Chrome 插件推荐</a> 也做过简短的介绍，开发中遇到需要抓包处理的场景时，开始使用 windows 下的 fiddler、mac 的 Charles（目前）等网络代理工具，之前也写过<a href="//lijundong.com/use-charles-up-to-debug/">Charles 使用小记</a>。</p>
+<p>今天我们主要聊聊 SwitchyOmega。</p>
+<h2 id="Proxy-SwitchyOmega"><a href="#Proxy-SwitchyOmega" class="headerlink" title="Proxy SwitchyOmega"></a>Proxy SwitchyOmega</h2><p>在介绍 SwitchyOmega 之前，需要提一下它的 1.0 版本，<a href="https://github.com/FelisCatus/switchysharp" target="_blank" rel="noopener">SwitchySharp</a>，项目作者在 2014 年三月停止了 1.0 的开发，将全部精力投入到了 2.0 即现在的 SwitchyOmega，扩展的主要功能是接管浏览器(Chrome/Firefox) 的代理。</p>
+<h2 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h2><h3 id="Proxy-Profile"><a href="#Proxy-Profile" class="headerlink" title="Proxy Profile"></a>Proxy Profile</h3><p>服务器代理模式，通过 <code>协议 + 域名 + 端口</code> 配置代理服务器，选择配置 <code>Bypass List</code> 可以跳过忽略的服务。<br>我新建了两个代理服务，一个是 Charles 的 <code>http://127.0.0.1:8888</code>，用于开发时抓包使用，一个是本地 ShadowSocks 起的代理服务 <code>socks5://127.0.0.1:1086</code>，用于跨越“局域网”。</p>
+<p>这两种模式不借助 SwitchOmega 也可以正常工作</p>
+<h3 id="Switch-Profile"><a href="#Switch-Profile" class="headerlink" title="Switch Profile"></a>Switch Profile</h3><h3 id="PAC-Profile"><a href="#PAC-Profile" class="headerlink" title="PAC Profile"></a>PAC Profile</h3>
       
     </div>
 
@@ -428,7 +429,7 @@
     var disqus_config = function () {
         this.page.url = 'http://lijundong.com/proxy-in-dev/';
         this.page.identifier = 'proxy-in-dev/';
-        this.page.title = '代理二三事';
+        this.page.title = '开发中的网络代理';
     };
     (function() {
     var d = document, s = d.createElement('script');
