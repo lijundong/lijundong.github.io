@@ -8,8 +8,23 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Tue, 18 Sep 2018 04:04:39 GMT</pubDate>
+    <pubDate>Sun, 25 Nov 2018 08:01:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>clnms</title>
+      <link>http://lijundong.com/clear-node-modules-by-nodejs/</link>
+      <guid>http://lijundong.com/clear-node-modules-by-nodejs/</guid>
+      <pubDate>Sun, 25 Nov 2018 07:28:50 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/18-11-25/24310408.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;前几天备份文件，为避免 &lt;code&gt;node_modules&lt;/code&gt; 黑洞，写了个清除指定目录下 &lt;code&gt;node_modules&lt;/code&gt; 目录的脚本&lt;br&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/clear-node-modules-by-nodejs/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Centos7 部署 Puppeteer 服务</title>
@@ -297,20 +312,6 @@
       </description>
       
       <comments>http://lijundong.com/good-coder-not-equal-to-good-developer/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>网上高效阅读</title>
-      <link>http://lijundong.com/surf-the-Internet-efficiently/</link>
-      <guid>http://lijundong.com/surf-the-Internet-efficiently/</guid>
-      <pubDate>Mon, 24 Jul 2017 04:08:03 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;网络信息多且繁杂，利用工具提高阅读效率，你如何过滤信息 ？你如何使用 Pocket 和 Evernote ？&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/surf-the-Internet-efficiently/#disqus_thread</comments>
     </item>
     
   </channel>

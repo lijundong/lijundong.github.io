@@ -12,10 +12,12 @@
 
 
 
-  <meta name="description" content="Write down,Mark it."/>
+  <meta name="description" content="clnms"/>
 
 
 
+
+  <meta name="keywords" content="node,npm," />
 
 
 
@@ -29,19 +31,23 @@
 
 
 
-<link rel="canonical" href="http://lijundong.com/archives/2015/09/"/>
+<link rel="canonical" href="http://lijundong.com/clear-node-modules-by-nodejs/"/>
 
 
-<meta name="description" content="Write down,Mark it.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Leeon Notes">
-<meta property="og:url" content="http://lijundong.com/archives/2015/09/index.html">
+<meta name="description" content="前几天备份文件，为避免 node_modules 黑洞，写了个清除指定目录下 node_modules 目录的脚本">
+<meta name="keywords" content="node,npm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="clnms">
+<meta property="og:url" content="http://lijundong.com/clear-node-modules-by-nodejs/index.html">
 <meta property="og:site_name" content="Leeon Notes">
-<meta property="og:description" content="Write down,Mark it.">
+<meta property="og:description" content="前几天备份文件，为避免 node_modules 黑洞，写了个清除指定目录下 node_modules 目录的脚本">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="http://source.lijundong.com/18-11-25/24310408.jpg">
+<meta property="og:updated_time" content="2018-11-25T08:01:59.427Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leeon Notes">
-<meta name="twitter:description" content="Write down,Mark it.">
+<meta name="twitter:title" content="clnms">
+<meta name="twitter:description" content="前几天备份文件，为避免 node_modules 黑洞，写了个清除指定目录下 node_modules 目录的脚本">
+<meta name="twitter:image" content="http://source.lijundong.com/18-11-25/24310408.jpg">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -80,11 +86,7 @@
 
 
 
-    <title>
-  
-    归档 · Leeon Notes
-  
-</title>
+    <title> clnms · Leeon Notes </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -205,96 +207,129 @@
           <div id="content" class="content">
             
   
-  <section id="archive" class="archive">
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          clnms
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2018年11月25日
+        </span>
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#思路"><span class="toc-text">思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#问题"><span class="toc-text">问题</span></a></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <p><img src="http://source.lijundong.com/18-11-25/24310408.jpg" alt=""></p>
+<p>前几天备份文件，为避免 <code>node_modules</code> 黑洞，写了个清除指定目录下 <code>node_modules</code> 目录的脚本<br><a id="more"></a></p>
+<p>先贴上地址：</p>
+<ul>
+<li><a href="https://github.com/lijundong/clear-node_modules" target="_blank" rel="noopener">Github</a></li>
+<li><a href="https://www.npmjs.com/package/clnms" target="_blank" rel="noopener">NPM</a></li>
+</ul>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ul>
+<li>递归查找 <code>node_modules</code> 目录</li>
+<li>用 <code>fs</code> 删除 找到的 <code>node_modules</code> 目录</li>
+</ul>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
+<li>遇到符号链接(symbolic links) 文件时，<code>fs.stat</code> vs <code>fs.lstat</code><ul>
+<li><code>fs.stat</code> 返回是链接对象的状态</li>
+<li><code>fs.lstat</code> 返回是符号链接的状态</li>
+<li>通常还会提到 <code>fs.fstat</code>，它接受的参数不是文件 <code>path</code>，而是文件描述符</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
     
       
-        <div class="archive-title">
-          <h2 class="archive-name"> All </h2>
-          <span class="archive-post-counter">
-            目前共计 86 篇日志
-          </span>
-        </div>
+      
+
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>作者: </span>
+      <span>leeon</span>
+    </p>
+    <p class="copyright-item">
+      <span>来源: </span>
+      <a href="http://lijundong.com">http://lijundong.com</a>
+    </p>
+    <p class="copyright-item">
+      <span>链接: </span>
+      <a href="http://lijundong.com/clear-node-modules-by-nodejs/">http://lijundong.com/clear-node-modules-by-nodejs/</a>
+    </p>
+
+    <p class="copyright-item lincese">
+      
+      本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+    </p>
+  </div>
+
+
+
+      
       
     
 
     
-      
+      <footer class="post-footer">
         
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year">2015</h2>
+          <div class="post-tags">
+            
+              <a href="/tags/node/">node</a>
+            
+              <a href="/tags/npm/">npm</a>
+            
           </div>
         
-      
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            09-15
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/cycling-on-318/" class="archive-post-link">
-            记暑假骑行川藏
-          </a>
-        </span>
-      </div>
+        
+        
+  <nav class="post-nav">
     
-      
-        
-        
-
-        
-      
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            09-10
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/Hello World/" class="archive-post-link">
-            Hello World
-          </a>
-        </span>
-      </div>
     
-      
-        
-        
-
-        
-      
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            09-05
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/Canvas-animation-about-sort/" class="archive-post-link">
-            Canvas制作排序算法演示动画
-          </a>
-        </span>
-      </div>
-    
-  </section>
-
-  
-  <nav class="pagination">
-    
+      <a class="next" href="/deply-puppeteer-on-production/">
+        <span class="next-text nav-default">Centos7 部署 Puppeteer 服务</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
+      </footer>
+    
+
+  </article>
 
 
           </div>
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>  
       </main>
@@ -371,6 +406,28 @@
     </div>
 
     
+  
+
+  
+  <script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://lijundong.com/clear-node-modules-by-nodejs/';
+        this.page.identifier = 'clear-node-modules-by-nodejs/';
+        this.page.title = 'clnms';
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+
+    s.src = '//http-www-lijundong-com.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();  
+  </script>
+
+  
+
+
 
 
     

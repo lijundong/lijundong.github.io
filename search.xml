@@ -4,6 +4,47 @@
   
     
     <entry>
+      <title><![CDATA[clnms]]></title>
+      <url>http://lijundong.com/clear-node-modules-by-nodejs/</url>
+      <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/18-11-25/24310408.jpg" alt=""></p>
+<p>前几天备份文件，为避免 <code>node_modules</code> 黑洞，写了个清除指定目录下 <code>node_modules</code> 目录的脚本<br><a id="more"></a></p>
+<p>先贴上地址：</p>
+<ul>
+<li><a href="https://github.com/lijundong/clear-node_modules" target="_blank" rel="noopener">Github</a></li>
+<li><a href="https://www.npmjs.com/package/clnms" target="_blank" rel="noopener">NPM</a></li>
+</ul>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ul>
+<li>递归查找 <code>node_modules</code> 目录</li>
+<li>用 <code>fs</code> 删除 找到的 <code>node_modules</code> 目录</li>
+</ul>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
+<li>遇到符号链接(symbolic links) 文件时，<code>fs.stat</code> vs <code>fs.lstat</code><ul>
+<li><code>fs.stat</code> 返回是链接对象的状态</li>
+<li><code>fs.lstat</code> 返回是符号链接的状态</li>
+<li>通常还会提到 <code>fs.fstat</code>，它接受的参数不是文件 <code>path</code>，而是文件描述符</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 工具 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> npm </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Centos7 部署 Puppeteer 服务]]></title>
       <url>http://lijundong.com/deply-puppeteer-on-production/</url>
       <content type="html"><![CDATA[<p>之前的文章中介绍了「<a href="//lijundong.com/headless-browser/">“木偶”浏览器简简史</a>」，文中介绍了 Google 的 Puppetter，这一篇介绍下如何在 Centos7 环境下部署 Puppeteer 服务环境。<br><a id="more"></a></p>
@@ -566,9 +607,9 @@
         
         <tags>
             
-            <tag> react </tag>
+            <tag> node </tag>
             
-            <tag> node.js </tag>
+            <tag> react </tag>
             
             <tag> github </tag>
             
@@ -667,9 +708,9 @@
         
         <tags>
             
-            <tag> react </tag>
+            <tag> node </tag>
             
-            <tag> node.js </tag>
+            <tag> react </tag>
             
             <tag> github </tag>
             
@@ -743,9 +784,9 @@
         
         <tags>
             
-            <tag> react </tag>
+            <tag> node </tag>
             
-            <tag> node.js </tag>
+            <tag> react </tag>
             
             <tag> github </tag>
             
@@ -925,11 +966,11 @@
         
         <tags>
             
+            <tag> 规范 </tag>
+            
             <tag> code snippets </tag>
             
             <tag> dash </tag>
-            
-            <tag> 规范 </tag>
             
             <tag> Google Driver </tag>
             
@@ -2621,9 +2662,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> git </tag>
             
-            <tag> vim </tag>
-            
             <tag> linux </tag>
+            
+            <tag> vim </tag>
             
             <tag> 正则 </tag>
             
@@ -3523,9 +3564,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
         
