@@ -8,8 +8,37 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 25 Nov 2018 08:01:59 GMT</pubDate>
+    <pubDate>Sun, 02 Dec 2018 17:57:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>旧时光</title>
+      <link>http://lijundong.com/old-days/</link>
+      <guid>http://lijundong.com/old-days/</guid>
+      <pubDate>Sun, 02 Dec 2018 16:49:08 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;进来听支曲&lt;/p&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;420&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=1320649246&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/old-days/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>「掘金」小程序开发者大会</title>
+      <link>http://lijundong.com/2018-miniprogram-developer-conference/</link>
+      <guid>http://lijundong.com/2018-miniprogram-developer-conference/</guid>
+      <pubDate>Sun, 25 Nov 2018 08:08:36 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/18-11-29/15453682.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;九月底参加了掘金主办的小程序开发者大会，近期开始填坑，总结下会议中的收获。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/2018-miniprogram-developer-conference/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>clnms</title>
@@ -280,38 +309,6 @@
       </description>
       
       <comments>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>【译】React 的 10 种迷你开发模式</title>
-      <link>http://lijundong.com/translation-10-mini-react-patterns/</link>
-      <guid>http://lijundong.com/translation-10-mini-react-patterns/</guid>
-      <pubDate>Sun, 30 Jul 2017 08:18:22 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;原文地址：&lt;a href=&quot;//hackernoon.com/10-react-mini-patterns-c1da92f068c5&quot;&gt;10 React mini-patterns&lt;/a&gt;&lt;br&gt;对于 React 初学者的一些经验之谈，初次翻译，望多指教。&lt;/p&gt;
-&lt;/blockquote&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/translation-10-mini-react-patterns/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-32</title>
-      <link>http://lijundong.com/good-coder-not-equal-to-good-developer/</link>
-      <guid>http://lijundong.com/good-coder-not-equal-to-good-developer/</guid>
-      <pubDate>Thu, 27 Jul 2017 13:15:51 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;时间：2017-7-27&lt;br&gt;坐标：北京&lt;br&gt;天气：阴&lt;/p&gt;
-&lt;/blockquote&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/good-coder-not-equal-to-good-developer/#disqus_thread</comments>
     </item>
     
   </channel>
