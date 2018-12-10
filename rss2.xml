@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 02 Dec 2018 17:57:58 GMT</pubDate>
+    <pubDate>Mon, 03 Dec 2018 16:27:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Javascript 模块化</title>
+      <link>http://lijundong.com/module-in-js/</link>
+      <guid>http://lijundong.com/module-in-js/</guid>
+      <pubDate>Mon, 03 Dec 2018 16:26:13 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;a
+          
+        
+      
+      </description>
+      
+      <comments>http://lijundong.com/module-in-js/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>旧时光</title>
@@ -19,7 +39,7 @@
       <description>
       
         &lt;p&gt;进来听支曲&lt;/p&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;420&quot; height=&quot;86&quot; src=&quot;//music.163.com/outchain/player?type=2&amp;id=1320649246&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;
+&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=&quot;420&quot; height=&quot;86&quot; src=&quot;//i.y.qq.com/v8/playsong.html?songid=218766651&amp;source=yqq#wechat_redirect&quot;&gt;&lt;/iframe&gt;
       
       </description>
       
@@ -293,22 +313,6 @@
       </description>
       
       <comments>http://lijundong.com/manage-code-snippets/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>【译】高性能 React：提高性能的 3 个开发工具</title>
-      <link>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</link>
-      <guid>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</guid>
-      <pubDate>Sun, 06 Aug 2017 12:31:49 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;原文地址：&lt;a href=&quot;//medium.freecodecamp.org/make-react-fast-again-tools-and-techniques-for-speeding-up-your-react-app-7ad39d3c1b82&quot;&gt;High Performance React: 3 New Tools to Speed Up Your Apps&lt;/a&gt;&lt;br&gt;文中介绍了几种 React 应用性能检测工具，并且提供了几条关于应用性能提升的解决方案。&lt;/p&gt;
-&lt;/blockquote&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/#disqus_thread</comments>
     </item>
     
   </channel>
