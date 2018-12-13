@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lijundong.com/use-charles-up-to-debug/</loc>
+    
+    <lastmod>2018-12-13T09:00:07.981Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lijundong.com/2018-miniprogram-developer-conference/</loc>
     
     <lastmod>2018-12-11T03:00:52.266Z</lastmod>
@@ -93,13 +100,6 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/use-charles-up-to-debug/</loc>
-    
-    <lastmod>2018-07-28T10:40:20.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lijundong.com/node-dev-config/</loc>
     
     <lastmod>2018-06-17T07:21:09.000Z</lastmod>
@@ -142,28 +142,7 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/nginx-conficure-domains-to-servers/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/chrome-extensions-recommend/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/deep-clone-vs-shallow-clone/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/git-hooks/</loc>
+    <loc>http://lijundong.com/manage-code-snippets/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -177,56 +156,14 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/google-no-country-redirect-disabled/</loc>
+    <loc>http://lijundong.com/centos-install-node/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lijundong.com/embeded-javascript-templates/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/hexo-blog-custom-log/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/image-and-line-height/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/javascript-variable-lift/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Hello%20World/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/location-of-bom/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/manage-code-snippets/</loc>
+    <loc>http://lijundong.com/chrome-extensions-recommend/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -240,84 +177,14 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/Lexical%20analysis/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/wechat-node-0th/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/note-hexo-deploy-on-server/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/update-laptop-cpu/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Chrome-extension-one-clock/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/centos-install-node/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/secure-copy/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/sheets-collections/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/surf-the-Internet-efficiently/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/synchronize-data-between-google-accounts/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lijundong.com/SublimeText-extension-recommend/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/javascript-variable-lift/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -331,7 +198,63 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/translation-10-mini-react-patterns/</loc>
+    <loc>http://lijundong.com/synchronize-data-between-google-accounts/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/deep-clone-vs-shallow-clone/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/surf-the-Internet-efficiently/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/wechat-node-0th/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/embeded-javascript-templates/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/git-hooks/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/sheets-collections/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/google-no-country-redirect-disabled/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -345,14 +268,105 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
+    <loc>http://lijundong.com/hexo-blog-custom-log/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/secure-copy/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/update-laptop-cpu/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/image-and-line-height/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Lexical%20analysis/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/note-hexo-deploy-on-server/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/translation-10-mini-react-patterns/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Hello%20World/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/nginx-conficure-domains-to-servers/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Chrome-extension-one-clock/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/location-of-bom/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
+    <loc>http://lijundong.com/lazy-load-optimization-on-iOS-Android/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Canvas-animation-about-sort/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
@@ -366,7 +380,7 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/clear-float/</loc>
+    <loc>http://lijundong.com/information-system-Wampserver/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
@@ -374,6 +388,55 @@
   
   <url>
     <loc>http://lijundong.com/node-js-dirname-difference/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/normal-flow/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/novel-crawler-by-Nodejs/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Centos7-install-nodejs-update/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/improve-UE-by-localStorage/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/year-again/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
@@ -394,105 +457,7 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/Kindle-content-manage/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/normal-flow/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/novel-crawler-by-Nodejs/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/coding-page-github-page-deploy-dns/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Dell-laptop-add-ssd/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Centos7-install-nodejs-update/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Canvas-animation-about-sort/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/information-system-Wampserver/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/improve-UE-by-localStorage/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://lijundong.com/year-again-2017/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/cycling-on-318/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/information-system-PHP-Mysql/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/think-about-learning/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://lijundong.com/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
@@ -506,14 +471,28 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/think-in-early-bus/</loc>
+    <loc>http://lijundong.com/when-lixiaofeng-become-sky/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://lijundong.com/year-again/</loc>
+    <loc>http://lijundong.com/cycling-on-318/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Windows-tips-you-may-ignore/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/think-about-learning/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
@@ -527,6 +506,20 @@
   </url>
   
   <url>
+    <loc>http://lijundong.com/think-in-early-bus/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Dell-laptop-add-ssd/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lijundong.com/Bootstrap-hover-toggle-menu/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
@@ -534,7 +527,14 @@
   </url>
   
   <url>
-    <loc>http://lijundong.com/lazy-load-optimization-on-iOS-Android/</loc>
+    <loc>http://lijundong.com/clear-float/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://lijundong.com/Kindle-content-manage/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     

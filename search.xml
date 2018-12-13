@@ -1545,7 +1545,7 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
 <h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><p>当下的移动应用开发广泛应用了 Hybrid 模式，将 H5 页面嵌入原生应用中，以手机 QQ 为例，<a href="//mp.weixin.qq.com/s/evzDnTsHrAr2b9jcevwBzA">70% 以上业务是由 H5 开发</a>，由此可见一斑。<br>常规的开发流程是 FE 在本地开发环境中写好 H5 页面，开发完成后，后台 RD 将项目部署到测试版本中，手机下次测试版 APP，在 APP 内对页面进行测试。</p>
 <p>FE 在开发环境中可以通过浏览器调试，部署到测试环境后，遇到新的 bug 或是需求的改动，需要在本地改动代码，重新部署到测试包，打开 APP 进行验证。这个过程太复杂，后台 RD 也会很烦。</p>
 <p>这时候就需要 Charles 辅助开发。</p>
-<h3 id="关于-Charles"><a href="#关于-Charles" class="headerlink" title="关于 Charles"></a>关于 Charles</h3><p>Charles 常用于截取网络封存包，可以设想一下，你的手机与服务器之间存在一个代理服务器，手机所有的请求都会经过这个代理服务器，如下示意图<br><img src="" alt=""><br>设想你是一个负责收发信件的信使，当一位客户将书信交予你递送时，你可以按常规流程去递送，也可以在非常规状态下更改信件的内容、收信人等，你还可以决定这封信递送的速度，甚至直接将这封信拦截不送，知道收信人地址的你，可以反复递送信件考研收件人的耐心。收信人的回信，你可以将其修改，调包。长此以往，作为信使，你可能会被投诉，开除。但作为工具，你可以成为 Charles，受到大批开发者的拥趸。</p>
+<h3 id="关于-Charles"><a href="#关于-Charles" class="headerlink" title="关于 Charles"></a>关于 Charles</h3><p>Charles 常用于截取网络封存包，可以设想一下，你的手机与服务器之间存在一个代理服务器，手机所有的请求都会经过这个代理服务器，如下示意图<br><img src="http://source.lijundong.com/18-12-13/25195027.jpg" alt=""><br>设想你是一个负责收发信件的信使，当一位客户将书信交予你递送时，你可以按常规流程去递送，也可以在非常规状态下更改信件的内容、收信人等，你还可以决定这封信递送的速度，甚至直接将这封信拦截不送，知道收信人地址的你，可以反复递送信件考研收件人的耐心。收信人的回信，你可以将其修改，调包。长此以往，作为信使，你可能会被投诉，开除。但作为工具，你可以成为 Charles，受到大批开发者的拥趸。</p>
 <h3 id="监听设备"><a href="#监听设备" class="headerlink" title="监听设备"></a>监听设备</h3><p>为了 Charles 能监听到你的移动设备的所有请求，你需要做一点配置</p>
 <ul>
 <li>你的移动设备与电脑处于同一局域网下，查看你电脑在此局域网下的 IP</li>
@@ -2337,9 +2337,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
             
             <tag> 服务器 </tag>
             
-            <tag> git </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> git </tag>
             
         </tags>
         
