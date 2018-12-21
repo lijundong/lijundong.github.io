@@ -367,9 +367,9 @@
         
         <tags>
             
-            <tag> node </tag>
-            
             <tag> 工具使用 </tag>
+            
+            <tag> node </tag>
             
             <tag> mac </tag>
             
@@ -632,16 +632,16 @@
     </entry>
     
     <entry>
-      <title><![CDATA[IKBC Poker 2 使用报告]]></title>
+      <title><![CDATA[IKBC Poker 2 使用指南]]></title>
       <url>http://lijundong.com/poker-shortcut/</url>
       <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/17-11-21/64023066.jpg" alt=""><br>一个半月前，夏部长的青轴出现了 P 键间歇失灵的问题，忍了一段时间就下单了 Poker 茶轴，用着很舒服，不过由于组合键太多，导致经常出现按键锁定的情况，每到这个时候，我就像个猴子在电脑前，按哪错哪。</p>
-<p>据我研究表明，使用工具前先看<strong>说明书</strong>是一件非常重要的事情。</p>
+<p>这里总结一些常见的问题，供大家快速解决问题</p>
 <a id="more"></a>
-<h3 id="太长不看版本"><a href="#太长不看版本" class="headerlink" title="太长不看版本"></a>太长不看版本</h3><blockquote>
+<h3 id="TL-DR"><a href="#TL-DR" class="headerlink" title="TL;DR"></a>TL;DR</h3><blockquote>
 <p>Q:  左 WIN 键亮灯怎么关 ？<br>A: <code>FN + Z</code></p>
 </blockquote>
 <blockquote>
-<p>Q: 空格左灯怎么关 ？<br>A: <code>FN + 左 Shift</code></p>
+<p>Q: 空格左灯怎么关 ？<br>A: <code>FN + 右 Shift</code></p>
 </blockquote>
 <blockquote>
 <p>Q: 空格右灯怎么关 ？<br>A: <code>FN + 右 Ctrl</code></p>
@@ -658,27 +658,233 @@
 <blockquote>
 <p>Q: w、a、s、d 打不出来，变成方向键了<br>A: <code>FN +  空格键</code></p>
 </blockquote>
-<h3 id="精简版说明书"><a href="#精简版说明书" class="headerlink" title="精简版说明书"></a>精简版说明书</h3><h4 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h4><ul>
-<li>FN + [1、2、3…… -&gt; +] = [F1 -&gt; F12]</li>
-<li>FN + BackSpace = Del</li>
-<li>FN + I = Insert</li>
-<li>FN + P = PrintScreen</li>
-<li>FN + ‘“ = PAGE UP</li>
-<li>FN + /? = PAGEDOWN</li>
-<li>FN + W = ↑</li>
-<li>FN + A = ←</li>
-<li>FN + S = ↓</li>
-<li>FN + D = →</li>
-<li>FN + N = 音量减</li>
-<li>FN + M = 音量增</li>
-<li>FN + ,&lt; = 静音</li>
-</ul>
-<h4 id="编程相关"><a href="#编程相关" class="headerlink" title="编程相关"></a>编程相关</h4><ul>
-<li>FN + 空格 = 锁定／解锁方向键(w、a、s、d)</li>
-<li>FN + z = 左 WIN 键亮灯（再按一次 FN + z 灯熄灭），按 shift 锁定大写，再按 shift 解锁大写</li>
-<li>FN + 右 Ctrl = 编程模式，空格右灯亮（再按一次退出）</li>
-<li>FN + 右 Shift = 锁定已编程模式，可不用按 PN 键，即可食用编程快捷键，空格左灯亮（再按一次退出）</li>
-</ul>
+<blockquote>
+<p>Q: PN 键被锁定了，锁定编程层才能正常使用（FN + 右 Shift）才能正常用键码<br>A：键盘断电试试（亲测可行，可能是 bug）</p>
+</blockquote>
+<h3 id="完整版指南"><a href="#完整版指南" class="headerlink" title="完整版指南"></a>完整版指南</h3><h4 id="常用功能"><a href="#常用功能" class="headerlink" title="常用功能"></a>常用功能</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">FN 常用功能键</th>
+<th style="text-align:center">功能键</th>
+<th style="text-align:center">组合键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">ESC</td>
+<td style="text-align:center">`~</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">[1、2、3…… -&gt; +]</td>
+<td style="text-align:center">[F1 -&gt; F12]</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">BACKSPACE</td>
+<td style="text-align:center">DEL</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">I</td>
+<td style="text-align:center">INS</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">P</td>
+<td style="text-align:center">PRINT SCREEN</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">[ {</td>
+<td style="text-align:center">SCROLL LOCK</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">] }</td>
+<td style="text-align:center">PAUSE</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">ENTER</td>
+<td style="text-align:center">副 ENTER</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">; :</td>
+<td style="text-align:center">HOME</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">‘ “”</td>
+<td style="text-align:center">PAGE UP</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">X</td>
+<td style="text-align:center">APP</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">. &gt;</td>
+<td style="text-align:center">END</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">/ ? &gt;</td>
+<td style="text-align:center">PAGE DOWN</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">W</td>
+<td style="text-align:center">↑</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">←</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">S</td>
+<td style="text-align:center">↓</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">D</td>
+<td style="text-align:center">→</td>
+</tr>
+</tbody>
+</table>
+<h4 id="多媒体功能"><a href="#多媒体功能" class="headerlink" title="多媒体功能"></a>多媒体功能</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">FN 多媒体功能键</th>
+<th style="text-align:center">功能键</th>
+<th style="text-align:center">组合键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">Y</td>
+<td style="text-align:center">计算器</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">N</td>
+<td style="text-align:center">音量减</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">M</td>
+<td style="text-align:center">音量增</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">, &lt;</td>
+<td style="text-align:center">静音 🔇</td>
+</tr>
+</tbody>
+</table>
+<h4 id="LED-功能（适用于背光版本）"><a href="#LED-功能（适用于背光版本）" class="headerlink" title="LED 功能（适用于背光版本）"></a>LED 功能（适用于背光版本）</h4><p><br>FN LED 功能|功能键|组合键|备注|<br>:—:|:—:|:—:|:—:<br>FN|V|全键 LED 亮（除左 WIN）| 按压第一次<br>FN|V|关闭 LED| 按压第二次<br>FN|C|降低 LED 亮度|共 7 级亮度<br>FN|B|增加 LED 亮度|共 7 级亮度<br>FN|E|保存背光亮度|</p>
+<h4 id="编程相关"><a href="#编程相关" class="headerlink" title="编程相关"></a>编程相关</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">FN LED 功能</th>
+<th style="text-align:center">功能键</th>
+<th style="text-align:center">组合键</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">R</td>
+<td style="text-align:center">复位键（<strong>慎重</strong>）</td>
+<td style="text-align:center">必须长按 12 秒</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">右 Shift</td>
+<td style="text-align:center">切换至编程层</td>
+<td style="text-align:center">按压第一次（空格左灯亮）</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">右 Shift</td>
+<td style="text-align:center">切换回编程层</td>
+<td style="text-align:center">按压第二次（空格左灯灭）</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">右 Ctrl</td>
+<td style="text-align:center">进入编程模式</td>
+<td style="text-align:center">按压第一次（PN 灯亮）</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">右 Ctrl</td>
+<td style="text-align:center">退出编程模式</td>
+<td style="text-align:center">按压第二次（PN 灯灭）</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">延时 15 ms</td>
+<td style="text-align:center">仅在编程模式下有效</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">G</td>
+<td style="text-align:center">延时 0.1 s</td>
+<td style="text-align:center">仅在编程模式下有效</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">H</td>
+<td style="text-align:center">延时 0.5 s</td>
+<td style="text-align:center">仅在编程模式下有效</td>
+</tr>
+</tbody>
+</table>
+<h4 id="特殊功能"><a href="#特殊功能" class="headerlink" title="特殊功能"></a>特殊功能</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">FN 特殊功能</th>
+<th style="text-align:center">功能键</th>
+<th style="text-align:center">组合键</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">Z</td>
+<td style="text-align:center">把 Shift 键变成按下一直发码，再按一下停止发码</td>
+<td style="text-align:center">按压第一次（左 WIN 灯亮）</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">Z</td>
+<td style="text-align:center">Shift 键恢复正常</td>
+<td style="text-align:center">按压第二次（左 WIN 灯灭）</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">SPACE</td>
+<td style="text-align:center">W，A，S，D 转换为 ↑←↓→</td>
+<td style="text-align:center">按压第一次</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">SPACE</td>
+<td style="text-align:center">↑←↓→ 转换为 W，A，S，D</td>
+<td style="text-align:center">按压第二次</td>
+</tr>
+</tbody>
+</table>
 <h4 id="编程举例"><a href="#编程举例" class="headerlink" title="编程举例"></a>编程举例</h4><p>目标：把 <code>a</code> 编为 <code>Ctrl + FN + a</code> （mac 下切换屏幕）</p>
 <ol>
 <li><code>FN + 右 Ctrl</code> 打开编程模式，空格右键亮起</li>
@@ -687,6 +893,49 @@
 <li><code>PN + a</code> =&gt; 屏幕切换，成功</li>
 <li>现在我们锁定编程模式 <code>FN + 右 Shift</code>，按 <code>a</code> =&gt; 屏幕切换 （get it ?)</li>
 </ol>
+<h4 id="指拨开关说明"><a href="#指拨开关说明" class="headerlink" title="指拨开关说明"></a>指拨开关说明</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">指拨开关说明</th>
+<th style="text-align:center">ON</th>
+<th style="text-align:center">OFF</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">开关 1</td>
+<td style="text-align:center">CAP = 左 WIN / 左 FN <br> CAP 灯 = 左 WIN 灯</td>
+<td style="text-align:center">CAP = CAP<br> CAP 灯 =  CAP 灯</td>
+<td style="text-align:center">预设 = OFF </td>
+</tr>
+<tr>
+<td style="text-align:center">开关 1</td>
+<td style="text-align:center">左 WIN / 左 FN = CAP<br>左 WIN 灯 = CAP 灯</td>
+<td style="text-align:center">左 WIN / 左 FN = 左 WIN / 左 FN<br>左 WIN 灯 = 左 WIN 灯</td>
+<td style="text-align:center">预设 = OFF </td>
+</tr>
+<tr>
+<td style="text-align:center">开关 2</td>
+<td style="text-align:center">右 Ctrl = `~</td>
+<td style="text-align:center">右 Ctrl = 右 Ctrl</td>
+<td style="text-align:center">预设 = OFF </td>
+</tr>
+<tr>
+<td style="text-align:center">开关 3</td>
+<td style="text-align:center">左 WIN = 左 FN</td>
+<td style="text-align:center">左 WIN = 左 WIN</td>
+<td style="text-align:center">预设 = OFF</td>
+</tr>
+<tr>
+<td style="text-align:center">开关 4</td>
+<td style="text-align:center">写保护键盘，按 FN + R <br>或当尝试编程按键都会导致 PN 灯快速闪烁一秒<br>然后熄灭并返回非编程模式的正常状态</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">预设 = OFF</td>
+</tr>
+</tbody>
+</table>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>&gt; Data:20181221 更新<br>今天键盘又被锁了，我又像个猴子似的，打开了这篇文章，emmm 顺便更新了一些内容</p>
 ]]></content>
       
         <categories>
@@ -701,6 +950,8 @@
             <tag> 键盘 </tag>
             
             <tag> poker 2 </tag>
+            
+            <tag> 键盘编程 </tag>
             
         </tags>
         
@@ -1810,11 +2061,11 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
+            <tag> mac </tag>
+            
             <tag> 备份 </tag>
             
             <tag> timemachine </tag>
-            
-            <tag> mac </tag>
             
             <tag> 系统 </tag>
             
@@ -2134,9 +2385,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> 游记 </tag>
-            
             <tag> 总结 </tag>
+            
+            <tag> 游记 </tag>
             
         </tags>
         
@@ -3966,13 +4217,13 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> 工具使用 </tag>
-            
             <tag> sublimetext </tag>
             
             <tag> 插件 </tag>
             
             <tag> 力所能及的分享 </tag>
+            
+            <tag> 工具使用 </tag>
             
         </tags>
         
@@ -4254,9 +4505,9 @@ import Footer from &apos;../../Footer/Footer.jsx&apos;;
         
         <tags>
             
-            <tag> kindle </tag>
-            
             <tag> 工具使用 </tag>
+            
+            <tag> kindle </tag>
             
         </tags>
         
