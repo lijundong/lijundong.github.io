@@ -367,9 +367,9 @@
         
         <tags>
             
-            <tag> node </tag>
-            
             <tag> 工具使用 </tag>
+            
+            <tag> node </tag>
             
             <tag> mac </tag>
             
@@ -661,7 +661,7 @@
 <blockquote>
 <p>Q: PN 键被锁定了，锁定编程层才能正常使用（FN + 右 Shift）才能正常用键码<br>A：键盘断电试试（亲测可行，可能是 bug）</p>
 </blockquote>
-<h3 id="完整版指南"><a href="#完整版指南" class="headerlink" title="完整版指南"></a>完整版指南</h3><h4 id="常用功能"><a href="#常用功能" class="headerlink" title="常用功能"></a>常用功能</h4><table>
+<h2 id="完整版指南"><a href="#完整版指南" class="headerlink" title="完整版指南"></a>完整版指南</h2><h3 id="常用功能"><a href="#常用功能" class="headerlink" title="常用功能"></a>常用功能</h3><table>
 <thead>
 <tr>
 <th style="text-align:center">FN 常用功能键</th>
@@ -757,7 +757,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="多媒体功能"><a href="#多媒体功能" class="headerlink" title="多媒体功能"></a>多媒体功能</h4><table>
+<h3 id="多媒体功能"><a href="#多媒体功能" class="headerlink" title="多媒体功能"></a>多媒体功能</h3><table>
 <thead>
 <tr>
 <th style="text-align:center">FN 多媒体功能键</th>
@@ -788,11 +788,52 @@
 </tr>
 </tbody>
 </table>
-<h4 id="LED-功能（适用于背光版本）"><a href="#LED-功能（适用于背光版本）" class="headerlink" title="LED 功能（适用于背光版本）"></a>LED 功能（适用于背光版本）</h4><p><br>FN LED 功能|功能键|组合键|备注|<br>:—:|:—:|:—:|:—:<br>FN|V|全键 LED 亮（除左 WIN）| 按压第一次<br>FN|V|关闭 LED| 按压第二次<br>FN|C|降低 LED 亮度|共 7 级亮度<br>FN|B|增加 LED 亮度|共 7 级亮度<br>FN|E|保存背光亮度|</p>
-<h4 id="编程相关"><a href="#编程相关" class="headerlink" title="编程相关"></a>编程相关</h4><table>
+<h3 id="LED-功能（适用于背光版本）"><a href="#LED-功能（适用于背光版本）" class="headerlink" title="LED 功能（适用于背光版本）"></a>LED 功能（适用于背光版本）</h3><table>
 <thead>
 <tr>
-<th style="text-align:center">FN LED 功能</th>
+<th style="text-align:center">LED</th>
+<th style="text-align:center">功能键</th>
+<th style="text-align:center">功能</th>
+<th style="text-align:center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">V</td>
+<td style="text-align:center">全键 LED 亮（除左 WIN）</td>
+<td style="text-align:center">按压第一次</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">V</td>
+<td style="text-align:center">关闭 LED</td>
+<td style="text-align:center">按压第二次</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">降低 LED 亮度</td>
+<td style="text-align:center">共 7 级亮度</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">增加 LED 亮度</td>
+<td style="text-align:center">共 7 级亮度</td>
+</tr>
+<tr>
+<td style="text-align:center">FN</td>
+<td style="text-align:center">E</td>
+<td style="text-align:center">保存背光亮度</td>
+<td style="text-align:center">无</td>
+</tr>
+</tbody>
+</table>
+<h3 id="编程相关"><a href="#编程相关" class="headerlink" title="编程相关"></a>编程相关</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">编程相关</th>
 <th style="text-align:center">功能键</th>
 <th style="text-align:center">组合键</th>
 <th style="text-align:center">备注</th>
@@ -849,7 +890,15 @@
 </tr>
 </tbody>
 </table>
-<h4 id="特殊功能"><a href="#特殊功能" class="headerlink" title="特殊功能"></a>特殊功能</h4><table>
+<h3 id="编程举例"><a href="#编程举例" class="headerlink" title="编程举例"></a>编程举例</h3><p>目标：把 <code>a</code> 编为 <code>Ctrl + FN + a</code> （mac 下切换屏幕）</p>
+<ol>
+<li><code>FN + 右 Ctrl</code> 打开编程模式，空格右键亮起</li>
+<li>点下 <code>a</code> 键， 接着按下 <code>Ctrl + FN + a</code> 组合键，放开，再点击 <code>PN</code> 键保存编辑</li>
+<li><code>FN + 右 Ctrl</code> 退出编程模式，空格右灯熄灭</li>
+<li><code>PN + a</code> =&gt; 屏幕切换，成功</li>
+<li>现在我们锁定编程模式 <code>FN + 右 Shift</code>，按 <code>a</code> =&gt; 屏幕切换 （get it ?)</li>
+</ol>
+<h3 id="特殊功能"><a href="#特殊功能" class="headerlink" title="特殊功能"></a>特殊功能</h3><table>
 <thead>
 <tr>
 <th style="text-align:center">FN 特殊功能</th>
@@ -885,15 +934,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="编程举例"><a href="#编程举例" class="headerlink" title="编程举例"></a>编程举例</h4><p>目标：把 <code>a</code> 编为 <code>Ctrl + FN + a</code> （mac 下切换屏幕）</p>
-<ol>
-<li><code>FN + 右 Ctrl</code> 打开编程模式，空格右键亮起</li>
-<li>点下 <code>a</code> 键， 接着按下 <code>Ctrl + FN + a</code> 组合键，放开，再点击 <code>PN</code> 键保存编辑</li>
-<li><code>FN + 右 Ctrl</code> 退出编程模式，空格右灯熄灭</li>
-<li><code>PN + a</code> =&gt; 屏幕切换，成功</li>
-<li>现在我们锁定编程模式 <code>FN + 右 Shift</code>，按 <code>a</code> =&gt; 屏幕切换 （get it ?)</li>
-</ol>
-<h4 id="指拨开关说明"><a href="#指拨开关说明" class="headerlink" title="指拨开关说明"></a>指拨开关说明</h4><table>
+<h3 id="指拨开关说明"><a href="#指拨开关说明" class="headerlink" title="指拨开关说明"></a>指拨开关说明</h3><table>
 <thead>
 <tr>
 <th style="text-align:center">指拨开关说明</th>
@@ -935,7 +976,9 @@
 </tr>
 </tbody>
 </table>
-<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>&gt; Data:20181221 更新<br>今天键盘又被锁了，我又像个猴子似的，打开了这篇文章，emmm 顺便更新了一些内容</p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><blockquote>
+<p>Date-20181221 更新<br>今天键盘又被锁了，我又像个猴子似的，打开了这篇文章，emmm 顺便更新了一些内容</p>
+</blockquote>
 ]]></content>
       
         <categories>
