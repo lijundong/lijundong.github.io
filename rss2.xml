@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 03 Dec 2018 16:27:25 GMT</pubDate>
+    <pubDate>Sun, 06 Jan 2019 12:07:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>厨子的仪式感</title>
+      <link>http://lijundong.com/year-again-2019/</link>
+      <guid>http://lijundong.com/year-again-2019/</guid>
+      <pubDate>Fri, 04 Jan 2019 12:08:46 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/19-1-6/94618431.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;看着 17 年的总结，精神维度感觉已经过了很久，每当这个时候，物理的衡量刻度显现出价值，提醒你，仅是又过一年而已。&lt;br&gt;是啊，又是一年。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/year-again-2019/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Javascript 模块化</title>
@@ -297,21 +311,6 @@
       </description>
       
       <comments>http://lijundong.com/add-slide-in-zepto/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>使用 Dash 管理代码段</title>
-      <link>http://lijundong.com/manage-code-snippets/</link>
-      <guid>http://lijundong.com/manage-code-snippets/</guid>
-      <pubDate>Sat, 02 Sep 2017 10:04:22 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;要想成为一名合格的泥瓦匠，我们理应管理好手上的工具，对于趁手的工具需要即用即拿，这在工作中会带来事半功倍的效果。&lt;/p&gt;
-&lt;p&gt;所以，今天我们讨论一下如何用 Dash 管理以及&lt;strong&gt;同步&lt;/strong&gt;代码段（code snippets）。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/manage-code-snippets/#disqus_thread</comments>
     </item>
     
   </channel>
