@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 06 Jan 2019 12:07:53 GMT</pubDate>
+    <pubDate>Sun, 13 Jan 2019 19:09:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>四个春天</title>
+      <link>http://lijundong.com/four-springs/</link>
+      <guid>http://lijundong.com/four-springs/</guid>
+      <pubDate>Sun, 06 Jan 2019 15:06:13 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/19-1-6/94594660.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/four-springs/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>厨子的仪式感</title>
@@ -297,20 +311,6 @@
       </description>
       
       <comments>http://lijundong.com/lazy-load-optimization-on-iOS-Android/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>zepto 添加 slideDown 和 slideUp</title>
-      <link>http://lijundong.com/add-slide-in-zepto/</link>
-      <guid>http://lijundong.com/add-slide-in-zepto/</guid>
-      <pubDate>Tue, 26 Sep 2017 12:37:08 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/add-slide-in-zepto/#disqus_thread</comments>
     </item>
     
   </channel>
