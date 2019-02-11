@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+  <head><meta name="generator" content="Hexo 3.8.0">
     
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="google-site-verification" content="pkU2KYRN1tWvy4_-hckuBnzMDytRrfPQpV9Y49Ej1I8" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="pkU2KYRN1tWvy4_-hckuBnzMDytRrfPQpV9Y49Ej1I8">
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
-  <meta name="description" content="Write down,Mark it."/>
+  <meta name="description" content="Write down,Mark it.">
 
 
 
@@ -25,11 +25,11 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x" />
+  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x">
 
 
 
-<link rel="canonical" href="http://lijundong.com/page/3/"/>
+<link rel="canonical" href="http://lijundong.com/page/3/">
 
 
 <meta name="description" content="Write down,Mark it.">
@@ -44,11 +44,11 @@
 <meta name="twitter:description" content="Write down,Mark it.">
 
 
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
 
 
 
-  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css">
 
 
 
@@ -185,7 +185,7 @@
         <li class="menu-search">
           <form>
             <i class="iconfont icon-search" id="open-search"></i>
-            <input type="text" class="search-input" id="search-input" />
+            <input type="text" class="search-input" id="search-input">
             <i class="iconfont icon-close" id="close-search"></i>
           </form>
         </li>
@@ -201,6 +201,139 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts">
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/application-with-react-and-node-1th/">React + Node 单页应用「一」前端搭建</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017年11月3日
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <h2 id="关于项目"><a href="#关于项目" class="headerlink" title="关于项目"></a>关于项目</h2><ul>
+<li><a href="//github.com/lijundong/gitcard">项目地址</a></li>
+<li><a href="//github.lijundong.com/">预览地址</a></li>
+</ul>
+<p>记录最近做的一个 demo，前端使用 <code>React</code>，用 <code>React Router</code> 实现前端路由，<code>Koa 2</code> 搭建 API Server， 最后通过 <code>Nginx</code> 做请求转发。 </p>
+<p>这是第一篇，主要介绍下前端代码的构建、<code>React router</code> 使用中遇到问题，以及前端开发完成后部署相关工作。</p>
+          <div class="read-more">
+            <a href="/application-with-react-and-node-1th/" class="read-more-link">阅读更多</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/ssh-login-directly/">配置 SSH 快捷登录</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017年10月28日
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <p>目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， <code>ssh root@xxx.xxx.xxx.xxx</code>，接着输入 <code>password</code>，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 优化前</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 公司机器</span></span><br><span class="line">ssh root@xxx.xxx.xxx.xxx</span><br><span class="line">password: ******</span><br><span class="line"><span class="meta">#</span><span class="bash"> 私人机器</span></span><br><span class="line">ssh root@xxx.xxx.xxx.xxx</span><br><span class="line">password: ******</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">优化后</span></span><br><span class="line"><span class="meta">#</span><span class="bash">公司机器</span></span><br><span class="line">ssh dev-server</span><br><span class="line"><span class="meta">#</span><span class="bash"> 私人机器</span></span><br><span class="line">ssh leeon-server</span><br></pre></td></tr></table></figure></p>
+          <div class="read-more">
+            <a href="/ssh-login-directly/" class="read-more-link">阅读更多</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/lazy-load-optimization-on-iOS-Android/">移动端 H5 页面滚动加载优化</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2017年10月15日
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <p>当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。</p>
+<p>PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。</p>
+<p>而在移动端，我们更想让用户无感知地浏览到页面最后一页，保证了信息阅读的连续、流畅，既然这样，滚动懒加载的方式处理分页就成了不二之选。</p>
+          <div class="read-more">
+            <a href="/lazy-load-optimization-on-iOS-Android/" class="read-more-link">阅读更多</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
     
       
   <article class="post">
@@ -491,132 +624,6 @@
           <p>脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。</p>
           <div class="read-more">
             <a href="/use-charles-up-to-debug/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/improve-UE-by-localStorage/">用户体验之 localStorage</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年7月5日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>通过在页面应用使用 localStorage 提升用户使用体验。 </p>
-          <div class="read-more">
-            <a href="/improve-UE-by-localStorage/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/normalize-life-with-tools/">给生活一个规范</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年6月29日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>生活中的高频问题都应有一个相对最优解，如果没有，你应该有一个。</p>
-          <div class="read-more">
-            <a href="/normalize-life-with-tools/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/synchronize-data-between-google-accounts/">Chrome 下合并不同 Google 账号数据</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年3月16日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>如果你在 Chrome 上同时拥有了两个 Google 账号，并深受其扰，开始想着合并两个账户的数据到某一个账户，我想告诉你，这真的远比想象的简单。</p>
-          <div class="read-more">
-            <a href="/synchronize-data-between-google-accounts/" class="read-more-link">阅读更多</a>
           </div>
         
       

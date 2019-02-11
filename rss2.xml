@@ -8,8 +8,56 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 13 Jan 2019 19:09:31 GMT</pubDate>
+    <pubDate>Mon, 11 Feb 2019 07:17:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>how mini program share</title>
+      <link>http://lijundong.com/how-mini-program-share/</link>
+      <guid>http://lijundong.com/how-mini-program-share/</guid>
+      <pubDate>Mon, 11 Feb 2019 07:17:05 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;a
+          
+        
+      
+      </description>
+      
+      <comments>http://lijundong.com/how-mini-program-share/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>小程序埋点方案</title>
+      <link>http://lijundong.com/mini-program-event-track/</link>
+      <guid>http://lijundong.com/mini-program-event-track/</guid>
+      <pubDate>Sat, 09 Feb 2019 09:52:14 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;今天梳理下小程序的数据埋点方案&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/mini-program-event-track/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>小程序 iconfont 方案</title>
+      <link>http://lijundong.com/mini-program-use-iconfont/</link>
+      <guid>http://lijundong.com/mini-program-use-iconfont/</guid>
+      <pubDate>Tue, 29 Jan 2019 07:16:30 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;小程序中使用 &lt;code&gt;iconfont&lt;/code&gt; 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 &lt;code&gt;iconfont&lt;/code&gt;，再聊一下小程序环境中应用 &lt;code&gt;iconfont&lt;/code&gt; 的方案。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/mini-program-use-iconfont/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>四个春天</title>
@@ -262,55 +310,6 @@
       </description>
       
       <comments>http://lijundong.com/application-with-react-and-node-2th/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>React + Node 单页应用「一」前端搭建</title>
-      <link>http://lijundong.com/application-with-react-and-node-1th/</link>
-      <guid>http://lijundong.com/application-with-react-and-node-1th/</guid>
-      <pubDate>Fri, 03 Nov 2017 02:51:40 GMT</pubDate>
-      <description>
-      
-        &lt;h2 id=&quot;关于项目&quot;&gt;&lt;a href=&quot;#关于项目&quot; class=&quot;headerlink&quot; title=&quot;关于项目&quot;&gt;&lt;/a&gt;关于项目&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;//github.com/lijundong/gitcard&quot;&gt;项目地址&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;//github.lijundong.com/&quot;&gt;预览地址&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;记录最近做的一个 demo，前端使用 &lt;code&gt;React&lt;/code&gt;，用 &lt;code&gt;React Router&lt;/code&gt; 实现前端路由，&lt;code&gt;Koa 2&lt;/code&gt; 搭建 API Server， 最后通过 &lt;code&gt;Nginx&lt;/code&gt; 做请求转发。 &lt;/p&gt;
-&lt;p&gt;这是第一篇，主要介绍下前端代码的构建、&lt;code&gt;React router&lt;/code&gt; 使用中遇到问题，以及前端开发完成后部署相关工作。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/application-with-react-and-node-1th/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>配置 SSH 快捷登录</title>
-      <link>http://lijundong.com/ssh-login-directly/</link>
-      <guid>http://lijundong.com/ssh-login-directly/</guid>
-      <pubDate>Sat, 28 Oct 2017 02:54:38 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， &lt;code&gt;ssh root@xxx.xxx.xxx.xxx&lt;/code&gt;，接着输入 &lt;code&gt;password&lt;/code&gt;，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 优化前&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 公司机器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh root@xxx.xxx.xxx.xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;password: ******&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 私人机器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh root@xxx.xxx.xxx.xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;password: ******&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;优化后&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt;公司机器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh dev-server&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;bash&quot;&gt; 私人机器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ssh leeon-server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/ssh-login-directly/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>移动端 H5 页面滚动加载优化</title>
-      <link>http://lijundong.com/lazy-load-optimization-on-iOS-Android/</link>
-      <guid>http://lijundong.com/lazy-load-optimization-on-iOS-Android/</guid>
-      <pubDate>Sun, 15 Oct 2017 13:34:06 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。&lt;/p&gt;
-&lt;p&gt;PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。&lt;/p&gt;
-&lt;p&gt;而在移动端，我们更想让用户无感知地浏览到页面最后一页，保证了信息阅读的连续、流畅，既然这样，滚动懒加载的方式处理分页就成了不二之选。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/lazy-load-optimization-on-iOS-Android/#disqus_thread</comments>
     </item>
     
   </channel>

@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+  <head><meta name="generator" content="Hexo 3.8.0">
     
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="google-site-verification" content="pkU2KYRN1tWvy4_-hckuBnzMDytRrfPQpV9Y49Ej1I8" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="pkU2KYRN1tWvy4_-hckuBnzMDytRrfPQpV9Y49Ej1I8">
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-  <meta name="description" content="SublimeText 配置 LaTeX 编辑器"/>
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
+  <meta name="description" content="SublimeText 配置 LaTeX 编辑器">
 
-  <meta name="keywords" content="LaTeX,sublime," />
+
+
+
+  <meta name="keywords" content="LaTeX,sublime,">
 
 
 
@@ -27,11 +27,11 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x" />
+  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x">
 
 
 
-<link rel="canonical" href="http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/"/>
+<link rel="canonical" href="http://lijundong.com/start-latex-and-configure-latext-editor-with-sublime/">
 
 
 <meta name="description" content="上一篇 Node.js 实现简单小说爬虫，文末处理 Markdown 文件时，因为 Pandoc 对中文支持度不好，折腾了一会没解决，退而求其次选择用 Chrome 打印功能把 Markdown 文件转成 PDF。折腾不出来肯定要继续折腾呀，最近抽空在 Ubuntu 配置了下，终于支持了中文文档转换，但是用的 LaTeX 模板是在网上找的，想自己写一个，顺便了解下 LaTeX。工欲善其事，必先利其">
@@ -51,11 +51,11 @@
 <meta name="twitter:image" content="http://source.lijundong.com/public/16-11-24/95505961.jpg">
 
 
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
 
 
 
-  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css">
 
 
 
@@ -192,7 +192,7 @@
         <li class="menu-search">
           <form>
             <i class="iconfont icon-search" id="open-search"></i>
-            <input type="text" class="search-input" id="search-input" />
+            <input type="text" class="search-input" id="search-input">
             <i class="iconfont icon-close" id="close-search"></i>
           </form>
         </li>
@@ -259,7 +259,7 @@
 <h4 id="Sublime-安装-LaTeXtools-插件"><a href="#Sublime-安装-LaTeXtools-插件" class="headerlink" title="Sublime 安装 LaTeXtools 插件"></a>Sublime 安装 LaTeXtools 插件</h4><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p>如果对于 Sublime Text 不熟悉的同学，可以参见 <a href="//jundong.coding.me/2016/03/17/SublimeText-extension-recommand/">SublimeText 插件推荐</a><br>通过 Package Control 安装插件 <code>LaTeXTools</code></p>
 <h5 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h5><p>配置文件路径：<br><code>Preference &gt; Package Setting &gt; LaTeXTools &gt; Setting-User</code></p>
 <p>配置以下参数<br><code>texpath</code>：TeX Live 可执行文件的路径(即添加到环境变量中的路径)<br><code>distro</code>：修改为 <code>texlive</code><br><code>sumtra</code>：sumatraPDF 可执行文件的路径(即添加到环境变量中的路径)</p>
-<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"windows"</span>: &#123;</span><br><span class="line">    <span class="string">"texpath"</span> : <span class="string">"C:\\texlive\\2016\\bin\\win32"</span>,</span><br><span class="line">    <span class="string">"distro"</span> : <span class="string">"texlive"</span>,</span><br><span class="line">    <span class="string">"sumatra"</span>: <span class="string">"C:\\Program Files\\SumatraPDF"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"windows"</span>: &#123;</span><br><span class="line">    <span class="string">"texpath"</span> : <span class="string">"C:\\texlive\\2016\\bin\\win32"</span>,</span><br><span class="line">    <span class="string">"distro"</span> : <span class="string">"texlive"</span>,</span><br><span class="line">    <span class="string">"sumatra"</span>: <span class="string">"C:\\Program Files\\SumatraPDF"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h5 id="配置-sumatraPDF-反向搜索"><a href="#配置-sumatraPDF-反向搜索" class="headerlink" title="配置 sumatraPDF 反向搜索"></a>配置 sumatraPDF 反向搜索</h5><p>路径为 SublimeText 的可执行文件路劲，如下示例<br><code>sumatrapdf.exe -inverse-search &quot;\&quot;C:\Program Files\Sublime Text 3\sublime_text.exe\&quot; \&quot;%f:%l\&quot;&quot;</code></p>
 <h3 id="LaTeX-上手"><a href="#LaTeX-上手" class="headerlink" title="LaTeX 上手"></a>LaTeX 上手</h3><p>所有配置都完成了，下面可以测试成果了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">\documentclass[UTF8]&#123;ctexart&#125;</span><br><span class="line">\title&#123;SublimeText 配置 LaTeX 编辑器&#125;</span><br><span class="line">\author&#123;Leeon&#125;</span><br><span class="line">\date&#123;\today&#125;</span><br><span class="line">\usepackage&#123;graphicx&#125;</span><br><span class="line">\usepackage&#123;geometry&#125;</span><br><span class="line">\geometry&#123;papersize=&#123;21cm,29.7cm&#125;&#125;</span><br><span class="line">\geometry&#123;left=2.5cm,right=2.5cm,top=3cm,bottom=3cm&#125;</span><br><span class="line">\begin&#123;document&#125;</span><br><span class="line">\maketitle</span><br><span class="line">\tableofcontents</span><br><span class="line">\section&#123;系统 \&amp; 软件 版本&#125;</span><br><span class="line">\begin&#123;center&#125;</span><br><span class="line">\includegraphics[width = .4\textwidth]&#123;boat.jpg&#125;</span><br><span class="line">\end&#123;center&#125;</span><br><span class="line">\section&#123;名词解释&#125;</span><br><span class="line">专有名词，注意名词大小写</span><br><span class="line">TeX：美国计算机教授高德纳 (Donald Ervin Knuth) 为了排版他的著作 『The Art of Computer Programming』(TAOCP) 编写的功能强大的排版软件。</span><br><span class="line">LaTeX：美国计算机科学家莱斯利·兰伯特为了准备他的著作 『The Great American Concurrency Book』基于 TeX 开发的宏，详见Wiki</span><br><span class="line">TeX Live：是由国际 TEX 用户组整理和发布的TEX软件发行套装，详见wiki</span><br><span class="line">\section&#123;使用场景&#125;</span><br><span class="line">\subsection&#123;公式编辑&#125;</span><br><span class="line">\subsection&#123;排版&#125;</span><br><span class="line">\section&#123;配置 LaTeX 编辑器&#125;</span><br><span class="line">\subsection&#123;安装 TeXlive&#125;</span><br><span class="line">\subsection&#123;安装 sumatraPDF (可选)&#125;</span><br><span class="line">\subsection&#123;Sublime 安装 LaTeXtools 插件&#125;</span><br><span class="line">\subsubsection&#123;安装&#125;</span><br><span class="line">\subsubsection&#123;配置&#125;</span><br><span class="line">\end&#123;document&#125;</span><br></pre></td></tr></table></figure></p>
 <p>编译效果：</p>

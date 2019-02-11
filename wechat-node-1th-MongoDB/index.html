@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head>
+  <head><meta name="generator" content="Hexo 3.8.0">
     
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="google-site-verification" content="pkU2KYRN1tWvy4_-hckuBnzMDytRrfPQpV9Y49Ej1I8" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="pkU2KYRN1tWvy4_-hckuBnzMDytRrfPQpV9Y49Ej1I8">
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-  <meta name="description" content="微信公号Node开发「壹」之操作MongoDB(上)"/>
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
+  <meta name="description" content="微信公号Node开发「壹」之操作MongoDB(上)">
 
-  <meta name="keywords" content="mongodb,node,微信," />
+
+
+
+  <meta name="keywords" content="mongodb,node,微信,">
 
 
 
@@ -27,11 +27,11 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x" />
+  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x">
 
 
 
-<link rel="canonical" href="http://lijundong.com/wechat-node-1th-MongoDB/"/>
+<link rel="canonical" href="http://lijundong.com/wechat-node-1th-MongoDB/">
 
 
 <meta name="description" content="项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。">
@@ -48,11 +48,11 @@
 <meta name="twitter:description" content="项目中用mongoose操作MongoDB，非关系型数据库MongoDB的结构以及语法与常用的关系型数据库相差很大，这里记录了MongoDB结构以及操作数据库的方法和一些增删改查实例。">
 
 
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
 
 
 
-  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css">
 
 
 
@@ -189,7 +189,7 @@
         <li class="menu-search">
           <form>
             <i class="iconfont icon-search" id="open-search"></i>
-            <input type="text" class="search-input" id="search-input" />
+            <input type="text" class="search-input" id="search-input">
             <i class="iconfont icon-close" id="close-search"></i>
           </form>
         </li>
@@ -279,7 +279,7 @@
 <p><strong>$lte</strong><br>语法：{ field: { $lte: value} }<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&lt;=20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">lte</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
 <p><strong>$gt</strong><br>语法：{field: {$gt: value} }<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&gt;20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">gt</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
 <p><strong>$gte</strong><br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//查询users集合下age&gt;=20的记录</span></span><br><span class="line"><span class="selector-tag">db</span><span class="selector-class">.find</span>(&#123;$<span class="attribute">gte</span>:&#123;<span class="attribute">age</span>:<span class="number">20</span>&#125;&#125;)</span><br></pre></td></tr></table></figure></p>
-<p><strong>注：save和insert的区别主要在于，新记录中指定的<code>_id</code>在集合中已存在，save会对原纪录进行覆盖，而insert不会操作，如果<code>_id</code>没有指定，则没有区别，都是进行插入</strong><br>例子:<br><figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">db.users.find()</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.<span class="keyword">insert</span>(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.save(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line">//&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"li"</span>,<span class="string">"age"</span>:<span class="number">12</span>&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>注：save和insert的区别主要在于，新记录中指定的<code>_id</code>在集合中已存在，save会对原纪录进行覆盖，而insert不会操作，如果<code>_id</code>没有指定，则没有区别，都是进行插入</strong><br>例子:<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">db.users.find()</span><br><span class="line"><span class="regexp">//</span>&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.insert(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line"><span class="regexp">//</span>&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"leeon"</span>,<span class="string">"age"</span>:<span class="number">23</span>&#125;</span><br><span class="line">db.users.save(&#123;<span class="string">"_id"</span>:<span class="number">1</span>,name:<span class="string">"li"</span>,age:<span class="number">12</span>&#125;)</span><br><span class="line"><span class="regexp">//</span>&#123;<span class="string">"_id"</span>:<span class="number">1</span>,<span class="string">"name"</span>:<span class="string">"li"</span>,<span class="string">"age"</span>:<span class="number">12</span>&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
