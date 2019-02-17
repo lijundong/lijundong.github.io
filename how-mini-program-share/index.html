@@ -12,10 +12,12 @@
 
 
 
-  <meta name="description" content="how mini program share">
+  <meta name="description" content="小程序的分享方案">
 
 
 
+
+  <meta name="keywords" content="小程序,分享,">
 
 
 
@@ -32,14 +34,18 @@
 <link rel="canonical" href="http://lijundong.com/how-mini-program-share/">
 
 
+<meta name="description" content="假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。">
+<meta name="keywords" content="小程序,分享">
 <meta property="og:type" content="article">
-<meta property="og:title" content="how mini program share">
+<meta property="og:title" content="小程序的分享方案">
 <meta property="og:url" content="http://lijundong.com/how-mini-program-share/index.html">
 <meta property="og:site_name" content="Leeonfield">
+<meta property="og:description" content="假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-02-11T07:17:05.508Z">
+<meta property="og:updated_time" content="2019-02-17T10:44:46.131Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="how mini program share">
+<meta name="twitter:title" content="小程序的分享方案">
+<meta name="twitter:description" content="假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -78,7 +84,7 @@
 
 
 
-    <title> how mini program share · Leeonfield </title>
+    <title> 小程序的分享方案 · Leeonfield </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -203,7 +209,7 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          how mini program share
+          小程序的分享方案
         
       </h1>
 
@@ -216,10 +222,22 @@
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#激励分享"><span class="toc-text">激励分享</span></a></li></ol>
+    </div>
+  </div>
+
 
     <div class="post-content">
       
-        <a id="more"></a>
+        <p>假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。</p>
+<a id="more"></a>
+<p>除了少数微信官方提供的入口流量，大多数小程序主要以分享的方式获取用户，以奖励方式激励用户分享，分享页面拉新，分享出去还能再回来，多种分享形式。</p>
+<h2 id="激励分享"><a href="#激励分享" class="headerlink" title="激励分享"></a>激励分享</h2><p>小游戏出来后，微信聊天群被各种小游戏分享攻占，分享续命、续命得金币等等，导致聊天过程充斥着大量垃圾信息，逼的微信立马阉割了 <code>onShareAppMessage</code> 接口，用户仍可以分享，但开发者无法判断分享结果的成功失败。</p>
+<p>这样一来，微信自己的问题解决了，留下开发者们暗自神伤。没有分享状态，还怎么做分享激励，这里提供两个思路。</p>
+<p>利用 <code>scene</code>，这是腾讯斗地主小游戏的做法，产品提示用户将小程序添加到“我的小程序中”，后而从我的小程序中进入，即可领取豆子。</p>
 
       
     </div>
@@ -257,9 +275,23 @@
     
       <footer class="post-footer">
         
+          <div class="post-tags">
+            
+              <a href="/tags/小程序/">小程序</a>
+            
+              <a href="/tags/分享/">分享</a>
+            
+          </div>
+        
         
         
   <nav class="post-nav">
+    
+      <a class="prev" href="/id-in-wechat/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">微信用户数据该如何使用</span>
+        <span class="prev-text nav-mobile">上一篇</span>
+      </a>
     
     
       <a class="next" href="/mini-program-event-track/">
@@ -372,7 +404,7 @@
     var disqus_config = function () {
         this.page.url = 'http://lijundong.com/how-mini-program-share/';
         this.page.identifier = 'how-mini-program-share/';
-        this.page.title = 'how mini program share';
+        this.page.title = '小程序的分享方案';
     };
     (function() {
     var d = document, s = d.createElement('script');

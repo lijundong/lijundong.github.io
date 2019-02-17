@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 iconfont，再聊一下小程序环境中应用 iconfont 的方案。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-01-29T08:16:58.251Z">
+<meta property="og:updated_time" content="2019-02-17T10:44:12.067Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序 iconfont 方案">
 <meta name="twitter:description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 iconfont，再聊一下小程序环境中应用 iconfont 的方案。">
@@ -225,7 +225,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#iconfont"><span class="toc-text">iconfont</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序应用-iconfont"><span class="toc-text">小程序应用 iconfont</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#iconfont"><span class="toc-text">iconfont</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序应用-iconfont"><span class="toc-text">小程序应用 iconfont</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#全局引入字体"><span class="toc-text">全局引入字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组件怎么办-？"><span class="toc-text">组件怎么办 ？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多少两句"><span class="toc-text">多少两句</span></a></li></ol>
     </div>
   </div>
 
@@ -234,7 +234,27 @@
       
         <p>小程序中使用 <code>iconfont</code> 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 <code>iconfont</code>，再聊一下小程序环境中应用 <code>iconfont</code> 的方案。</p>
 <a id="more"></a>
-<h2 id="iconfont"><a href="#iconfont" class="headerlink" title="iconfont"></a>iconfont</h2><h2 id="小程序应用-iconfont"><a href="#小程序应用-iconfont" class="headerlink" title="小程序应用 iconfont"></a>小程序应用 <code>iconfont</code></h2>
+<h2 id="iconfont"><a href="#iconfont" class="headerlink" title="iconfont"></a>iconfont</h2><h2 id="小程序应用-iconfont"><a href="#小程序应用-iconfont" class="headerlink" title="小程序应用 iconfont"></a>小程序应用 <code>iconfont</code></h2><h3 id="全局引入字体"><a href="#全局引入字体" class="headerlink" title="全局引入字体"></a>全局引入字体</h3><p>我们的做法是在构建时，<code>app.wxss</code> 中引入 iconfont 文件，可以全局生效。引入的方案可以直接将 <code>iconfont</code> 文件传 CDN，当然，如果使用阿里的 <code>iconfont</code>，他们提供的已经是一份线上的版本，最后也是使用最复杂的方案，先将字体文件转为 <code>base64</code>，再在文件中引入 <code>base64</code>，这种方案对于开发者以及后续维护很不友好，但目前搜索的很多结果提供的都是这种方案，非常误人子弟。</p>
+<h3 id="组件怎么办-？"><a href="#组件怎么办-？" class="headerlink" title="组件怎么办 ？"></a>组件怎么办 ？</h3><p>小程序官方为了防止组件样式被外层样式污染，规定了一些<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html" target="_blank" rel="noopener">条件</a></p>
+<blockquote>
+<ul>
+<li>组件和引用组件的页面不能使用id选择器（#a）、属性选择器（[a]）和标签名选择器，请改用class选择器。</li>
+<li>组件和引用组件的页面中使用后代选择器（.a .b）在一些极端情况下会有非预期的表现，如遇，请避免使用。</li>
+<li>子元素选择器（.a&gt;.b）只能用于 view 组件与其子节点之间，用于其他组件可能导致非预期的情况。</li>
+<li>继承样式，如 font 、 color ，会从组件外继承到组件内。</li>
+<li>除继承样式外， app.wxss 中的样式、组件所在页面的的样式对自定义组件无效。</li>
+</ul>
+</blockquote>
+<p>解释一下这个条件对我们的影响是，</p>
+<ul>
+<li>组件不能继承 <code>app.wxss</code> 中的全局样式</li>
+<li>组件中引入字体文件时，不能使用属性选择器</li>
+</ul>
+<p>每个组件单独引入一份字体文件的代价太大，而且还需要对现有字体中的属性选择器进行改造。这时候我们发现了一个新特性，小程序在 <code>2.2.3</code> 版本后开始<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html" target="_blank" rel="noopener">支持 <code>addGlobalClass</code> 选项</a>，激活后组件可以继承 <code>app.wxss</code> 中的样式。</p>
+<p>到这里，组件使用的 <code>iconfont</code> 的问题基本已经解决，唯一需要注意的是，为了避免样式污染问题，后续新的组件样式类名都必须有一套自己的命名空间。</p>
+<h2 id="多少两句"><a href="#多少两句" class="headerlink" title="多少两句"></a>多少两句</h2><p><br>日常工作学习，遇到新技术或新生态，需要多思考，从技术角度而言，小程序不完全是新技术，并不是和 <code>web</code> 技术完全隔离，网络上搜索信息时，对于别人的观点需要有实践，有自己的思考，如前文提到的，当下网上关于小程序的分享，大部分内容粗糙不堪，很多人甚至不明白为什么用 <code>base64</code> 格式引入字体都不能说清楚就在网上分享，基础的 <code>web</code> 知识都没弄清楚，却把小程序当作技术研究，有些本末倒置了。</p>
+<p>我很多次表述过，小程序是生态的一环，所以我更趋向去分享一些业务玩法，以及一些 hack 方式去解决当下，官方还没解决的问题。</p>
+
       
     </div>
 
