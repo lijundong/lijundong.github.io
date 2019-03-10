@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 11 Feb 2019 10:10:15 GMT</pubDate>
+    <pubDate>Sun, 10 Mar 2019 17:12:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>平衡</title>
+      <link>http://lijundong.com/life-balance/</link>
+      <guid>http://lijundong.com/life-balance/</guid>
+      <pubDate>Sun, 10 Mar 2019 14:38:47 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;众生皆苦，苦即平常&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/life-balance/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>微信用户数据该如何使用</title>
@@ -292,22 +306,6 @@
       </description>
       
       <comments>http://lijundong.com/poker-shortcut/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>React + Node 单页应用「三」API 设计 &amp; 项目部署</title>
-      <link>http://lijundong.com/application-with-react-and-node-3th/</link>
-      <guid>http://lijundong.com/application-with-react-and-node-3th/</guid>
-      <pubDate>Sun, 05 Nov 2017 06:43:34 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;关于项目&quot;&gt;&lt;a href=&quot;#关于项目&quot; class=&quot;headerlink&quot; title=&quot;关于项目&quot;&gt;&lt;/a&gt;关于项目&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;//github.com/lijundong/gitcard&quot;&gt;项目地址&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;//github.lijundong.com/&quot;&gt;预览地址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;记录最近做的一个 demo，前端使用 &lt;code&gt;React&lt;/code&gt;，用 &lt;code&gt;React Router&lt;/code&gt; 实现前端路由，&lt;code&gt;Koa 2&lt;/code&gt; 搭建 API Server， 最后通过 &lt;code&gt;Nginx&lt;/code&gt; 做请求转发。 &lt;/p&gt;
-&lt;p&gt;这是第三篇，也是最后一篇，内容关于整个项目的 API 设计，以及最后的项目部署。&lt;br&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/application-with-react-and-node-3th/#disqus_thread</comments>
     </item>
     
   </channel>
