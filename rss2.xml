@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 10 Mar 2019 17:12:30 GMT</pubDate>
+    <pubDate>Fri, 15 Mar 2019 07:55:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -80,7 +80,7 @@
       <pubDate>Tue, 29 Jan 2019 07:16:30 GMT</pubDate>
       <description>
       
-        &lt;p&gt;小程序中使用 &lt;code&gt;iconfont&lt;/code&gt; 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 &lt;code&gt;iconfont&lt;/code&gt;，再聊一下小程序环境中应用 &lt;code&gt;iconfont&lt;/code&gt; 的方案。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/19-3-15/WX20190217-190910.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;小程序中使用 &lt;code&gt;iconfont&lt;/code&gt; 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 &lt;code&gt;iconfont&lt;/code&gt;，再聊一下小程序环境中应用 &lt;code&gt;iconfont&lt;/code&gt; 的方案。&lt;/p&gt;
       
       </description>
       
