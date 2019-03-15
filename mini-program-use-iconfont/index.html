@@ -34,19 +34,19 @@
 <link rel="canonical" href="http://lijundong.com/mini-program-use-iconfont/">
 
 
-<meta name="description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 iconfont，再聊一下小程序环境中应用 iconfont 的方案。">
+<meta name="description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 iconfont 的方案。">
 <meta name="keywords" content="小程序,iconfont">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小程序 iconfont 方案">
 <meta property="og:url" content="http://lijundong.com/mini-program-use-iconfont/index.html">
 <meta property="og:site_name" content="Leeonfield">
-<meta property="og:description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 iconfont，再聊一下小程序环境中应用 iconfont 的方案。">
+<meta property="og:description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 iconfont 的方案。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://source.lijundong.com/19-3-15/WX20190217-190910.jpg">
-<meta property="og:updated_time" content="2019-03-15T09:46:03.974Z">
+<meta property="og:updated_time" content="2019-03-15T10:18:15.597Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序 iconfont 方案">
-<meta name="twitter:description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 iconfont，再聊一下小程序环境中应用 iconfont 的方案。">
+<meta name="twitter:description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 iconfont 的方案。">
 <meta name="twitter:image" content="http://source.lijundong.com/19-3-15/WX20190217-190910.jpg">
 
 
@@ -227,16 +227,16 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序应用-iconfont"><span class="toc-text">小程序应用 iconfont</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#全局引入字体"><span class="toc-text">全局引入字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组件怎么办-？"><span class="toc-text">组件怎么办 ？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啰嗦两句"><span class="toc-text">啰嗦两句</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#iconfont"><span class="toc-text">iconfont</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序应用-iconfont"><span class="toc-text">小程序应用 iconfont</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#全局引入字体"><span class="toc-text">全局引入字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#组件怎么办-？"><span class="toc-text">组件怎么办 ？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啰嗦两句"><span class="toc-text">啰嗦两句</span></a></li></ol>
     </div>
   </div>
 
 
     <div class="post-content">
       
-        <p><img src="http://source.lijundong.com/19-3-15/WX20190217-190910.jpg" alt=""><br>小程序中使用 <code>iconfont</code> 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 <code>iconfont</code>，再聊一下小程序环境中应用 <code>iconfont</code> 的方案。</p>
+        <p><img src="http://source.lijundong.com/19-3-15/WX20190217-190910.jpg" alt=""><br>小程序中使用 <code>iconfont</code> 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 <code>iconfont</code> 的方案。</p>
 <a id="more"></a>
-<h2 id="小程序应用-iconfont"><a href="#小程序应用-iconfont" class="headerlink" title="小程序应用 iconfont"></a>小程序应用 <code>iconfont</code></h2><h3 id="全局引入字体"><a href="#全局引入字体" class="headerlink" title="全局引入字体"></a>全局引入字体</h3><p>我目前的做法是在项目的 <code>app.wxss</code> 中引入 iconfont 文件，可以全局生效。问题是组件无法继承这个全局字体，解决方案下文会提。</p>
+<h2 id="iconfont"><a href="#iconfont" class="headerlink" title="iconfont"></a>iconfont</h2><h2 id="小程序应用-iconfont"><a href="#小程序应用-iconfont" class="headerlink" title="小程序应用 iconfont"></a>小程序应用 <code>iconfont</code></h2><h3 id="全局引入字体"><a href="#全局引入字体" class="headerlink" title="全局引入字体"></a>全局引入字体</h3><p>我目前的做法是在项目的 <code>app.wxss</code> 中引入 iconfont 文件，可以全局生效。问题是组件无法继承这个全局字体，解决方案下文会提。</p>
 <p>另一种方案比较复杂，先将字体文件转为 <code>base64</code>，在全局样式中引入 <code>base64</code>，这种方案毫无优势可言，仅仅为了方案而方案，对于开发者以及后续维护很不友好。</p>
 <p>线上字体文件管理，将 <code>iconfont</code> 文件放线上 CDN，通过线上地址引入。当然，如果使用<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">阿里的矢量图库</a>生成 <code>iconfont</code>，会默认提供一份线上的版本，</p>
 <p>再说说如何管理字体源文件，如果线上 icon 变动较为频繁，并且内部都是定制化的 icon，推荐将 icon 源文件托管在 <a href="https://icomoon.io" target="_blank" rel="noopener">iconmoon`</a> 类似的线上服务中，方便后续维护更新，源文件更新后，生成新的字体文件，再将新的字体更新到线上 CDN。（这也是我们目前的做法）</p>

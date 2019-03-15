@@ -33,7 +33,7 @@
       <link href="/id-in-wechat/"/>
       <url>/id-in-wechat/</url>
       
-        <content type="html"><![CDATA[<a id="more"></a>]]></content>
+        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/unionid.jpg" alt=""></p><a id="more"></a>]]></content>
       
       
       <categories>
@@ -62,7 +62,7 @@
       <link href="/how-mini-program-share/"/>
       <url>/how-mini-program-share/</url>
       
-        <content type="html"><![CDATA[<p>假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。</p><a id="more"></a><p>除了少数微信官方提供的入口流量，大多数小程序主要以分享的方式获取用户，以奖励方式激励用户分享，分享页面拉新，分享出去还能再回来，多种分享形式。</p><h2 id="激励分享"><a href="#激励分享" class="headerlink" title="激励分享"></a>激励分享</h2><p>小游戏出来后，微信聊天群被各种小游戏分享攻占，分享续命、续命得金币等等，导致聊天过程充斥着大量垃圾信息，逼的微信立马阉割了 <code>onShareAppMessage</code> 接口，用户仍可以分享，但开发者无法判断分享结果的成功失败。</p><p>这样一来，微信自己的问题解决了，留下开发者们暗自神伤。没有分享状态，还怎么做分享激励，这里提供两个思路。</p><p>利用 <code>scene</code>，这是腾讯斗地主小游戏的做法，产品提示用户将小程序添加到“我的小程序中”，后而从我的小程序中进入，即可领取豆子。</p>]]></content>
+        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/share.jpg" alt=""><br>假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。</p><a id="more"></a><p>除了少数微信官方提供的入口流量，大多数小程序主要以分享的方式获取用户，以奖励方式激励用户分享，分享页面拉新，分享出去还能再回来，多种分享形式。</p><h2 id="激励分享"><a href="#激励分享" class="headerlink" title="激励分享"></a>激励分享</h2><p>小游戏出来后，微信聊天群被各种小游戏分享攻占，分享续命、续命得金币等等，导致聊天过程充斥着大量垃圾信息，逼的微信立马阉割了 <code>onShareAppMessage</code> 接口，用户仍可以分享，但开发者无法判断分享结果的成功失败。</p><p>这样一来，微信自己的问题解决了，留下开发者们暗自神伤。没有分享状态，还怎么做分享激励，这里提供两个思路。</p><p>利用 <code>scene</code>，这是腾讯斗地主小游戏的做法，产品提示用户将小程序添加到“我的小程序中”，后而从我的小程序中进入，即可领取豆子。</p>]]></content>
       
       
       <categories>
@@ -89,7 +89,7 @@
       <link href="/mini-program-event-track/"/>
       <url>/mini-program-event-track/</url>
       
-        <content type="html"><![CDATA[<p>今天梳理下小程序的数据埋点方案</p><a id="more"></a><h2 id="场景梳理"><a href="#场景梳理" class="headerlink" title="场景梳理"></a>场景梳理</h2><h2 id="埋点数据收集"><a href="#埋点数据收集" class="headerlink" title="埋点数据收集"></a>埋点数据收集</h2>]]></content>
+        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/eventtrack.jpg" alt=""><br>今天梳理下小程序的数据埋点方案</p><a id="more"></a><h2 id="场景梳理"><a href="#场景梳理" class="headerlink" title="场景梳理"></a>场景梳理</h2><h2 id="埋点数据收集"><a href="#埋点数据收集" class="headerlink" title="埋点数据收集"></a>埋点数据收集</h2>]]></content>
       
       
       <categories>
@@ -116,7 +116,7 @@
       <link href="/mini-program-use-iconfont/"/>
       <url>/mini-program-use-iconfont/</url>
       
-        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/WX20190217-190910.jpg" alt=""><br>小程序中使用 <code>iconfont</code> 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们先大概介绍下 <code>iconfont</code>，再聊一下小程序环境中应用 <code>iconfont</code> 的方案。</p><a id="more"></a><h2 id="小程序应用-iconfont"><a href="#小程序应用-iconfont" class="headerlink" title="小程序应用 iconfont"></a>小程序应用 <code>iconfont</code></h2><h3 id="全局引入字体"><a href="#全局引入字体" class="headerlink" title="全局引入字体"></a>全局引入字体</h3><p>我目前的做法是在项目的 <code>app.wxss</code> 中引入 iconfont 文件，可以全局生效。问题是组件无法继承这个全局字体，解决方案下文会提。</p><p>另一种方案比较复杂，先将字体文件转为 <code>base64</code>，在全局样式中引入 <code>base64</code>，这种方案毫无优势可言，仅仅为了方案而方案，对于开发者以及后续维护很不友好。</p><p>线上字体文件管理，将 <code>iconfont</code> 文件放线上 CDN，通过线上地址引入。当然，如果使用<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">阿里的矢量图库</a>生成 <code>iconfont</code>，会默认提供一份线上的版本，</p><p>再说说如何管理字体源文件，如果线上 icon 变动较为频繁，并且内部都是定制化的 icon，推荐将 icon 源文件托管在 <a href="https://icomoon.io" target="_blank" rel="noopener">iconmoon`</a> 类似的线上服务中，方便后续维护更新，源文件更新后，生成新的字体文件，再将新的字体更新到线上 CDN。（这也是我们目前的做法）</p><h3 id="组件怎么办-？"><a href="#组件怎么办-？" class="headerlink" title="组件怎么办 ？"></a>组件怎么办 ？</h3><p>小程序官方为了防止组件样式被外层样式污染，规定了一些<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html" target="_blank" rel="noopener">条件</a></p><blockquote><ul><li>组件和引用组件的页面不能使用id选择器（#a）、属性选择器（[a]）和标签名选择器，请改用class选择器。</li><li>组件和引用组件的页面中使用后代选择器（.a .b）在一些极端情况下会有非预期的表现，如遇，请避免使用。</li><li>子元素选择器（.a&gt;.b）只能用于 view 组件与其子节点之间，用于其他组件可能导致非预期的情况。</li><li>继承样式，如 font 、 color ，会从组件外继承到组件内。</li><li>除继承样式外， app.wxss 中的样式、组件所在页面的的样式对自定义组件无效。</li></ul></blockquote><p>解释一下这个条件对我们的影响是，</p><ul><li>组件不能继承 <code>app.wxss</code> 中的全局样式</li><li>组件中引入字体文件时，不能使用属性选择器</li></ul><p>每个组件单独引入一份字体文件的代价太大，而且还需要对现有字体中的属性选择器进行改造。这时候我们发现了一个新特性，小程序在 <strong><code>2.2.3</code></strong> 版本后开始<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html" target="_blank" rel="noopener">支持 <code>addGlobalClass</code> 选项</a>，激活后组件可以继承 <code>app.wxss</code> 中的样式。</p><p>到这里，组件使用的 <code>iconfont</code> 的问题基本已经解决，唯一需要注意的是，为了避免样式污染问题，后续新的组件样式类名都必须有一套自己的命名空间。</p><h2 id="啰嗦两句"><a href="#啰嗦两句" class="headerlink" title="啰嗦两句"></a>啰嗦两句</h2><p><br>日常工作学习，遇到新技术或新生态，需要多思考，从技术角度而言，小程序不完全是新技术，并不是和 <code>web</code> 技术完全隔离，网络上搜索信息时，对于别人的观点需要有实践，有自己的思考，当下网上关于小程序的分享，大部分内容粗糙不堪，很多人甚至不明白为什么用 <code>base64</code> 格式引入字体都不能说清楚就在网上分享，基础的 <code>web</code> 知识都没弄清楚，却把小程序当作技术研究，有些本末倒置了。</p><p>我很多次表述过，小程序是生态的一环，所以我更趋向去分享一些业务技巧，以及一些 hack 方式去解决当下，官方还没解决的问题。</p>]]></content>
+        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/WX20190217-190910.jpg" alt=""><br>小程序中使用 <code>iconfont</code> 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 <code>iconfont</code> 的方案。</p><a id="more"></a><h2 id="iconfont"><a href="#iconfont" class="headerlink" title="iconfont"></a>iconfont</h2><h2 id="小程序应用-iconfont"><a href="#小程序应用-iconfont" class="headerlink" title="小程序应用 iconfont"></a>小程序应用 <code>iconfont</code></h2><h3 id="全局引入字体"><a href="#全局引入字体" class="headerlink" title="全局引入字体"></a>全局引入字体</h3><p>我目前的做法是在项目的 <code>app.wxss</code> 中引入 iconfont 文件，可以全局生效。问题是组件无法继承这个全局字体，解决方案下文会提。</p><p>另一种方案比较复杂，先将字体文件转为 <code>base64</code>，在全局样式中引入 <code>base64</code>，这种方案毫无优势可言，仅仅为了方案而方案，对于开发者以及后续维护很不友好。</p><p>线上字体文件管理，将 <code>iconfont</code> 文件放线上 CDN，通过线上地址引入。当然，如果使用<a href="https://www.iconfont.cn/" target="_blank" rel="noopener">阿里的矢量图库</a>生成 <code>iconfont</code>，会默认提供一份线上的版本，</p><p>再说说如何管理字体源文件，如果线上 icon 变动较为频繁，并且内部都是定制化的 icon，推荐将 icon 源文件托管在 <a href="https://icomoon.io" target="_blank" rel="noopener">iconmoon`</a> 类似的线上服务中，方便后续维护更新，源文件更新后，生成新的字体文件，再将新的字体更新到线上 CDN。（这也是我们目前的做法）</p><h3 id="组件怎么办-？"><a href="#组件怎么办-？" class="headerlink" title="组件怎么办 ？"></a>组件怎么办 ？</h3><p>小程序官方为了防止组件样式被外层样式污染，规定了一些<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html" target="_blank" rel="noopener">条件</a></p><blockquote><ul><li>组件和引用组件的页面不能使用id选择器（#a）、属性选择器（[a]）和标签名选择器，请改用class选择器。</li><li>组件和引用组件的页面中使用后代选择器（.a .b）在一些极端情况下会有非预期的表现，如遇，请避免使用。</li><li>子元素选择器（.a&gt;.b）只能用于 view 组件与其子节点之间，用于其他组件可能导致非预期的情况。</li><li>继承样式，如 font 、 color ，会从组件外继承到组件内。</li><li>除继承样式外， app.wxss 中的样式、组件所在页面的的样式对自定义组件无效。</li></ul></blockquote><p>解释一下这个条件对我们的影响是，</p><ul><li>组件不能继承 <code>app.wxss</code> 中的全局样式</li><li>组件中引入字体文件时，不能使用属性选择器</li></ul><p>每个组件单独引入一份字体文件的代价太大，而且还需要对现有字体中的属性选择器进行改造。这时候我们发现了一个新特性，小程序在 <strong><code>2.2.3</code></strong> 版本后开始<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html" target="_blank" rel="noopener">支持 <code>addGlobalClass</code> 选项</a>，激活后组件可以继承 <code>app.wxss</code> 中的样式。</p><p>到这里，组件使用的 <code>iconfont</code> 的问题基本已经解决，唯一需要注意的是，为了避免样式污染问题，后续新的组件样式类名都必须有一套自己的命名空间。</p><h2 id="啰嗦两句"><a href="#啰嗦两句" class="headerlink" title="啰嗦两句"></a>啰嗦两句</h2><p><br>日常工作学习，遇到新技术或新生态，需要多思考，从技术角度而言，小程序不完全是新技术，并不是和 <code>web</code> 技术完全隔离，网络上搜索信息时，对于别人的观点需要有实践，有自己的思考，当下网上关于小程序的分享，大部分内容粗糙不堪，很多人甚至不明白为什么用 <code>base64</code> 格式引入字体都不能说清楚就在网上分享，基础的 <code>web</code> 知识都没弄清楚，却把小程序当作技术研究，有些本末倒置了。</p><p>我很多次表述过，小程序是生态的一环，所以我更趋向去分享一些业务技巧，以及一些 hack 方式去解决当下，官方还没解决的问题。</p>]]></content>
       
       
       <categories>
@@ -1255,9 +1255,9 @@
       
         <tags>
             
-            <tag> 总结 </tag>
-            
             <tag> 游记 </tag>
+            
+            <tag> 总结 </tag>
             
         </tags>
       
@@ -1807,9 +1807,9 @@
       
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -2044,9 +2044,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
       
