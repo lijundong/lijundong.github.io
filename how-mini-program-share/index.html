@@ -43,7 +43,9 @@
 <meta property="og:description" content="假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://source.lijundong.com/19-3-15/share.jpg">
-<meta property="og:updated_time" content="2019-03-20T07:18:09.484Z">
+<meta property="og:image" content="http://source.lijundong.com/19-3-20/WX20190320-153921.jpg">
+<meta property="og:image" content="http://source.lijundong.com/19-3-20/WX20190320-153904.jpg">
+<meta property="og:updated_time" content="2019-03-20T07:44:15.780Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序的分享案例">
 <meta name="twitter:description" content="假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。">
@@ -227,7 +229,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#案例"><span class="toc-text">案例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分享出去，还要回来"><span class="toc-text">分享出去，还要回来</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首页跳板"><span class="toc-text">首页跳板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#增加自定义导航"><span class="toc-text">增加自定义导航</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#自定义导航栏"><span class="toc-text">自定义导航栏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其他自定义导航"><span class="toc-text">其他自定义导航</span></a></li></ol></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#案例"><span class="toc-text">案例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分享出去，还要回来"><span class="toc-text">分享出去，还要回来</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首页跳板"><span class="toc-text">首页跳板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#增加自定义导航"><span class="toc-text">增加自定义导航</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#自定义导航栏"><span class="toc-text">自定义导航栏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其他自定义导航"><span class="toc-text">其他自定义导航</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li></ol>
     </div>
   </div>
 
@@ -274,12 +276,49 @@
 <blockquote>
 <p>备注：<br>客户端 7.0.0 以下版本，navigationStyle 只在 app.json 中生效。<br>客户端 6.7.2 版本开始，navigationStyle: custom 对 <web-view> 组件无效</web-view></p>
 </blockquote>
-<p>通过在自定义导航栏中增加返回入口或者首页入口，用户从分享页面进入时，可以改变对应文案，提醒用户点击回到首页。相较于在 <code>app.js</code> 里配置全局自定义导航栏，我推荐使用页面级配置，这就需要明确客户端版本导致的兼容性问题影响面。下面是微信官方的数据（<strong>更新时间：2019年3月20日</strong>，参考资料在文末）<br>|端|客户端版本|基础库版本|&gt;= 该版本的用户比例<br>|—|—|—|—<br>|iOS|7.0.0|2.5.2|60.01%<br>|iOS|7.0.3|2.6.2|56.37%<br>|Android|7.0.0|2.5.2|74.01%<br>|Android|7.0.3|2.6.2|70.51%</p>
+<p>通过在自定义导航栏中增加返回入口或者首页入口，用户从分享页面进入时，可以改变对应文案，提醒用户点击回到首页。相较于在 <code>app.js</code> 里配置全局自定义导航栏，我推荐使用页面级配置，这就需要明确客户端版本导致的兼容性问题影响面。下面是微信官方的数据（<strong>更新时间：2019年3月20日</strong>，参考资料在文末）</p>
+<table>
+<thead>
+<tr>
+<th>端</th>
+<th>客户端版本</th>
+<th>基础库版本</th>
+<th>&gt;= 该版本的用户比例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iOS</td>
+<td>7.0.0</td>
+<td>2.5.2</td>
+<td>60.01%</td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>7.0.3</td>
+<td>2.6.2</td>
+<td>56.37%</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>7.0.0</td>
+<td>2.5.2</td>
+<td>74.01%</td>
+</tr>
+<tr>
+<td>Android</td>
+<td>7.0.3</td>
+<td>2.6.2</td>
+<td>70.51%</td>
+</tr>
+</tbody>
+</table>
 <p>这个数据能作为决定是否进行兼容的参考，另一个更具有参考价值的数据可以在小程序管理后台看到，进入后台在 <code>设置 -&gt; 基础库最低版本设置</code> 中可以看到近30天内访问小程序的用户的公共库版是否会被影响的比例。这个比例可以最终设置线上基础库的参考。</p>
-<h4 id="其他自定义导航"><a href="#其他自定义导航" class="headerlink" title="其他自定义导航"></a>其他自定义导航</h4><p>除了自定义导航栏的方式，还可以在页面中增加返回首页 <code>fixed</code> 按钮，辅助用户回到首页，这个方案再进一步，则可以做成 iPhone 辅助功能快捷键的方式，除了返回首页，还提供其他导航快捷功能，这也是目前 Airbnb 的方案，这种方案的优势是完全不需要考虑兼容性。但在开发角度，对于组件的引入则需要花费更多的心思，如果管理这些全局组件。</p>
+<p>当然，你可以做的更激进一些，把更多的功能性入口放在导航栏中，比如搜索……</p>
+<p><img src="http://source.lijundong.com/19-3-20/WX20190320-153921.jpg" alt=""></p>
+<h4 id="其他自定义导航"><a href="#其他自定义导航" class="headerlink" title="其他自定义导航"></a>其他自定义导航</h4><p>除了自定义导航栏的方式，还可以在页面中增加返回首页 <code>fixed</code> 按钮，辅助用户回到首页，这个方案再进一步，则可以做成 iPhone 辅助功能快捷键的方式，除了返回首页，还提供其他导航快捷功能，这也是目前 Airbnb 的方案，这种方案的优势是完全不需要考虑兼容性。但在开发角度，对于全局组件的管理则需要花费更多的心思。<br><img src="http://source.lijundong.com/19-3-20/WX20190320-153904.jpg" alt=""></p>
 <p>以上，就是所有内容。</p>
-<p>参考资料</p>
-<ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
 <li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/client.html" target="_blank" rel="noopener">基础库版本与客户端版本对应关系</a></li>
 <li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib.html" target="_blank" rel="noopener">基础库</a></li>
 </ul>
