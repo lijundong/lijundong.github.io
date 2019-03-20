@@ -45,7 +45,7 @@
 <meta property="og:image" content="http://source.lijundong.com/19-3-15/share.jpg">
 <meta property="og:image" content="http://source.lijundong.com/19-3-20/WX20190320-153921.jpg">
 <meta property="og:image" content="http://source.lijundong.com/19-3-20/WX20190320-153904.jpg">
-<meta property="og:updated_time" content="2019-03-20T07:44:15.780Z">
+<meta property="og:updated_time" content="2019-03-20T08:47:01.437Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序的分享案例">
 <meta name="twitter:description" content="假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。">
@@ -229,7 +229,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#案例"><span class="toc-text">案例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分享出去，还要回来"><span class="toc-text">分享出去，还要回来</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首页跳板"><span class="toc-text">首页跳板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#增加自定义导航"><span class="toc-text">增加自定义导航</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#自定义导航栏"><span class="toc-text">自定义导航栏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其他自定义导航"><span class="toc-text">其他自定义导航</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#案例"><span class="toc-text">案例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小程序码的限制"><span class="toc-text">小程序码的限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分享出去，还要回来"><span class="toc-text">分享出去，还要回来</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首页跳板"><span class="toc-text">首页跳板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#增加自定义导航"><span class="toc-text">增加自定义导航</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#自定义导航栏"><span class="toc-text">自定义导航栏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#其他自定义导航"><span class="toc-text">其他自定义导航</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li></ol>
     </div>
   </div>
 
@@ -244,6 +244,38 @@
 <p>另一种方案是，用户分享时，在分享链接中带上用户专属 <code>key</code>，其他用户通过分享的链接进入小程序时，请求将链接中的 <code>key</code> 带回后端，这种做法也是拉新场景常用的方案。</p>
 <p>第三种，大家在日常生活中应该都体验过，帮微信好友加速抢火车票，这种方案是比较高级的做法，产品的逻辑进了朋友圈，好友的参与度更高，除了点赞之交，还可以升级成抢票加速之交。尤其是春运期间，这种分享方式带来海量的新用户数据。这种方式被发扬光大后，雨后春笋般地出现了邀请好友帮砍价，邀请好友帮砍房租等等。</p>
 <p>当然，除了转发到聊天，朋友圈也是非常重要的场景，但目前小程序并没有开通朋友圈的小程序入口，不过，分享到朋友圈仍然可以做，只是改成以小程序码形式展现，用户通过扫描小程序码进入。以租房场景为例，假如二狗在发布房源后，可以生成一张房源卡片，房源卡片内容包括房源的基本信息，以及最重要的小程序码。二狗可以将这种卡片分享到朋友圈进行传播。</p>
+<h2 id="小程序码的限制"><a href="#小程序码的限制" class="headerlink" title="小程序码的限制"></a>小程序码的限制</h2><p>这里想把小程序码独拎出来单说一下，小程序通过接口生成二维码和小程序码，相应接口对比如下：</p>
+<table>
+<thead>
+<tr>
+<th>接口</th>
+<th>参数限制</th>
+<th>码类型</th>
+<th>生成码数量限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>getWXACode</code></td>
+<td>128 字节</td>
+<td>小程序码</td>
+<td><code>getWXACode</code> + <code>createWXAQRCode</code>总量上限 10w</td>
+</tr>
+<tr>
+<td><code>getWXACode</code></td>
+<td>128 字节</td>
+<td>二维码</td>
+<td><code>getWXACode</code> + <code>createWXAQRCode</code>总量上限 10w</td>
+</tr>
+<tr>
+<td><code>getWXACodeUnlimit</code></td>
+<td>32 个可见字符</td>
+<td>小程序码</td>
+<td>无上限</td>
+</tr>
+</tbody>
+</table>
+<p>日常开发中大家用 <code>getWXACodeUnlimit</code> 接口生成码的次数应该较多，毕竟无上限，没有心理负担，但有得必有失，参数限制 32 个可见字符导致分享的链接无法携带过多参数。我之前用过缩短参数 key、value 值的方法，但对日益增长的参数而言，不是长久之计。目前的方案是在服务端维护一套映射数据库，生成码时，通过原参数生成长度小于 32 位的长串，并存库，用户扫码后，首先将小程序码上链接传至服务端进行解码，获取正确参数，小程序拿到正确参数后再进行正常条状、渲染等。这个方案虽然需要在进入时处理异步问题，但从收益角度而言，是非常具有性价比的方案。</p>
 <h2 id="分享出去，还要回来"><a href="#分享出去，还要回来" class="headerlink" title="分享出去，还要回来"></a>分享出去，还要回来</h2><blockquote>
 <p>首先注明下，下面提到的分享页，都不属于 <code>tab</code> 页面，<code>tab</code> 页也不会出现这e y</p>
 </blockquote>
@@ -321,6 +353,7 @@
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
 <li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/client.html" target="_blank" rel="noopener">基础库版本与客户端版本对应关系</a></li>
 <li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib.html" target="_blank" rel="noopener">基础库</a></li>
+<li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.html" target="_blank" rel="noopener">获取小程序码</a></li>
 </ul>
 
       
@@ -373,13 +406,13 @@
     
       <a class="prev" href="/id-in-wechat/">
         <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">微信体系的 UnionID 和 openID</span>
+        <span class="prev-text nav-default">微信的账号体系以及各种 ID</span>
         <span class="prev-text nav-mobile">上一篇</span>
       </a>
     
     
-      <a class="next" href="/mini-program-event-track/">
-        <span class="next-text nav-default">小程序埋点方案</span>
+      <a class="next" href="/mini-program-use-iconfont/">
+        <span class="next-text nav-default">小程序 iconfont 方案</span>
         <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>

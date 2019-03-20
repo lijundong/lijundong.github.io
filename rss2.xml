@@ -40,7 +40,7 @@
     </item>
     
     <item>
-      <title>微信体系的 UnionID 和 openID</title>
+      <title>微信的账号体系以及各种 ID</title>
       <link>http://lijundong.com/id-in-wechat/</link>
       <guid>http://lijundong.com/id-in-wechat/</guid>
       <pubDate>Mon, 11 Feb 2019 10:07:30 GMT</pubDate>
@@ -66,20 +66,6 @@
       </description>
       
       <comments>http://lijundong.com/how-mini-program-share/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>小程序埋点方案</title>
-      <link>http://lijundong.com/mini-program-event-track/</link>
-      <guid>http://lijundong.com/mini-program-event-track/</guid>
-      <pubDate>Sat, 09 Feb 2019 09:52:14 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/19-3-15/eventtrack.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;今天梳理下小程序的数据埋点方案&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/mini-program-event-track/#disqus_thread</comments>
     </item>
     
     <item>
@@ -300,6 +286,21 @@
       </description>
       
       <comments>http://lijundong.com/year-again-2018/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>IKBC Poker 2 使用指南</title>
+      <link>http://lijundong.com/poker-shortcut/</link>
+      <guid>http://lijundong.com/poker-shortcut/</guid>
+      <pubDate>Sun, 12 Nov 2017 06:06:09 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/17-11-21/64023066.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;一个半月前，夏部长的青轴出现了 P 键间歇失灵的问题，忍了一段时间就下单了 Poker 茶轴，用着很舒服，不过由于组合键太多，导致经常出现按键锁定的情况，每到这个时候，我就像个猴子在电脑前，按哪错哪。&lt;/p&gt;
+&lt;p&gt;这里总结一些常见的问题，供大家快速解决问题&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/poker-shortcut/#disqus_thread</comments>
     </item>
     
   </channel>
