@@ -56,11 +56,11 @@
     
     
     <entry>
-      <title>微信的账号体系以及各种 ID</title>
+      <title>微信的账号体系及各种 ID</title>
       <link href="/id-in-wechat/"/>
       <url>/id-in-wechat/</url>
       
-        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/unionid.jpg" alt=""></p><p>如何利用好微信生态的账号体系？</p><a id="more"></a><p>首先我们需要明确几个名词，主体、微信开放平台帐号、微信公众平台、UnionID、openId</p><ul><li><p>主体<br>微信生态下的主体常指公司主体，维基百科没有这个此条，根据<a href="https://kf.qq.com/faq/180110bYRvYZ180110V36j2U.html" target="_blank" rel="noopener">微信的说法</a>则是“由相关主管部门证明的合法机构”，那么通俗点就是在工商局登记在册的公司。例如 QQ、微信背后的公司主体是 “深圳市腾讯计算机系统有限公司”，抖音、火山小视频、Tik Tok 背后的主体是 “北京微播视界科技有限公司”。当然，除了公司，主体还包括事业单位、民办非企业单位等等。微信进行认证时，只需要提供<a href="https://kf.qq.com/faq/180110bYRvYZ180110V36j2U.html" target="_blank" rel="noopener">主体证件</a>即可。</p></li><li><p>微信开放平台<br>微信开放平台为接入平台的应用模块提供<br>面向对象包括移动应用、网站应用、公众号/小程序、第三方平台</p></li><li><p>微信公众平台：</p></li><li>openId：</li><li>UnionID：</li></ul><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1445241432" target="_blank" rel="noopener">微信公众平台</a></li><li><a href="http://kf.qq.com/product/wxkfpt.html#hid=2568" target="_blank" rel="noopener">腾讯客服-开放平台</a></li><li><a href="http://kf.qq.com/faq/120911VrYVrA140428naUJVv.html" target="_blank" rel="noopener">腾讯客服-公众平台</a> </li><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html" target="_blank" rel="noopener">用户信息</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/unionid.jpg" alt=""></p><p>如何利用好微信生态的账号体系？</p><a id="more"></a><p>首先我们需要明确几个名词，主体、微信开放平台帐号、微信公众平台、UnionID、OpenID</p><h2 id="词条"><a href="#词条" class="headerlink" title="词条"></a>词条</h2><h3 id="主体"><a href="#主体" class="headerlink" title="主体"></a>主体</h3><p>微信生态下的主体常指公司主体，维基百科没有这个此条，根据<a href="https://kf.qq.com/faq/180110bYRvYZ180110V36j2U.html" target="_blank" rel="noopener">微信的说法</a>则是“由相关主管部门证明的合法机构”，那么通俗点就是在工商局登记在册的公司。例如 QQ、微信背后的公司主体是 “深圳市腾讯计算机系统有限公司”，抖音、火山小视频、Tik Tok 背后的主体是 “北京微播视界科技有限公司”。当然，除了公司，主体还包括事业单位、民办非企业单位等等。微信进行认证时，只需要提供<a href="https://kf.qq.com/faq/180110bYRvYZ180110V36j2U.html" target="_blank" rel="noopener">主体证件</a>即可。</p><h3 id="微信开放平台"><a href="#微信开放平台" class="headerlink" title="微信开放平台"></a>微信开放平台</h3><p>微信开放平台为接入平台的应用模块提供开放接口以及技术支持服务，面向对象包括移动应用（iOS、Android、WP）、网站应用、公众号、小程序以及第三方平台。同一个开放平台账号可以绑定多个应用，同一开放平台账号下的不同应用，对同一用户而言他的 <code>UnionID</code> 是唯一的。</p><p>同一个开放平台账号<a href="http://kf.qq.com/faq/180104uY7r2a180104ziqumu.html" target="_blank" rel="noopener">绑定应用限制</a>：</p><ol><li>移动应用<ul><li>已认证（组织类型）帐号可绑定最多50个移动应用。</li><li>未认证（个人类型）帐号可绑定最多10个移动应用。</li></ul></li></ol><p>2.网站应用</p><ul><li>一个帐号可申请最多10个网站应用。</li></ul><p>3.公众号</p><ul><li>已认证（组织类型）帐号可绑定最多50个同主体公众号、5个不同主体公众号及5个公众号测试号，一个月最多新增绑定5个不同主体的公众号。</li><li>未认证（个人类型）帐号不支持绑定公众号及公众号测试号。</li></ul><p>4.小程序</p><ul><li>已认证（组织类型）帐号可绑定最多50个同主体小程序、5个不同主体小程序，一个月最多新增绑定5个不同主体的小程序。</li><li>未认证（个人类型）帐号帐号不支持绑定小程序。</li></ul><blockquote><p>备注：以上“同主体”指的是：公众号/小程序的主体信息与开放平台主体信息相同；“不同主体”指的是公众号/小程序的主体信息与开放平台主体信息不相同。</p></blockquote><h3 id="微信公众平台"><a href="#微信公众平台" class="headerlink" title="微信公众平台"></a>微信公众平台</h3><p>公众平台的内容就是我们日常接触到的公众号（订阅号、服务号、企业号）</p><p><a href="http://kf.qq.com/faq/120911VrYVrA140428naUJVv.html" target="_blank" rel="noopener">公众号注册限制</a>：</p><ul><li>同一个邮箱只能申请1个公众号；</li><li>同一个手机号码可绑定5个公众号；</li><li>同一身份证注册个人类型公众号数量上限为1个；</li><li>同一企业、个体工商户、其他组织资料注册公众号数量上限为2个；</li><li>同一政府、媒体类型可注册和认证50个公众号。</li></ul><h3 id="OpenID"><a href="#OpenID" class="headerlink" title="OpenID"></a>OpenID</h3><p>每个用户在使用不同应用时（公众号、小程序、移动应用、网站等），微信会为每个用户针对不同的应用生成一份 <code>OpenID</code></p><h3 id="UnionID"><a href="#UnionID" class="headerlink" title="UnionID"></a>UnionID</h3><p>类似于 <code>OpenID</code> 与应用关联，<code>UnionID</code> 与开放平台账号关联，同一用户，对同一个微信开放平台下的不同应用，<code>UnionID</code> 是相同且唯一的。</p><h2 id="获取-OpenID"><a href="#获取-OpenID" class="headerlink" title="获取 OpenID"></a>获取 OpenID</h2><p><code>OpenID</code> 的获取方式是静默的，无需用户授权<br>客户端通过 <code>wx.login()</code> 拿到临时登录凭证 code，并且回传到开发者服务器，服务端带着 <code>code + appid + appsecret</code> 调用 <code>code2Session</code> 接口换取用户 <code>OpenID</code> 以及其他数据</p><p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html" target="_blank" rel="noopener">授权流程</a>如图：</p><p><img src="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/api-login.jpg?t=19032023" alt=""></p><h2 id="获取-UnionID"><a href="#获取-UnionID" class="headerlink" title="获取 UnionID"></a>获取 UnionID</h2><p>不同于 <code>OpenID</code> 的静默获取方式，获取 <code>UnionID</code> 时，必须拿到用户授权，授权方式包括同意获取用户基础信息、关注公众号、授权登录移动应用、授权登录网站等，在拿到用户授权后，开发者通过对应接口拿到用户的 <code>UnionID</code></p><p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html" target="_blank" rel="noopener">UnionID 获取接口</a>：</p><ul><li>用户已经授权，直接调用 <code>wx.getUserInfo</code>，从解密数据中获取 <code>UnionID</code>。</li><li>同一开放平台账号下其他应用已经拿到过授权（<strong>用户关注了公众号、用户已经授权登录过公众号或移动应用等</strong>），可以直接通过 <code>wx.login + code2Session</code> 获取到该用户 <code>UnionID</code>。(云函数中通过 <code>cloud.getWXContext</code> )</li><li>用户在小程序中支付完成后，可以直接通过 <code>getPaidUnionId</code> 接口获取该用户的 <code>UnionID</code>，无需用户授权。(注意：接口仅在用户支付完成后的5分钟内有效。)</li></ul><p>小程序通过 <code>wx.getSetting</code> 接口可以获取<strong>小程序已经向用户请求过的权限列表</strong></p><ul><li>未请求过的权限，除 <code>userInfo</code> 均可通过<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html" target="_blank" rel="noopener">接口</a>向用户发起授权请求，而 <code>userInfo</code> 则必须使用 <code>&lt;button open-type=&quot;getUserInfo&quot;/&gt;</code> 方式，由用户点击按钮才能发起。</li><li>请求过的权限，当用户拒绝权限申请时，如果产品逻辑被阻塞，可调用 <code>wx.oepnSetting</code> 接口打开小程序设置界面，引导用户开启权限，当然，<code>userInfo</code> 权限被拒绝后仍可以通过 <code>&lt;button open-type=&quot;getUserInfo&quot;/&gt;</code> 方式继续向用户发起权限请求。</li></ul><p><img src="http://source.lijundong.com/19-3-21/WX20190321-153635.jpg" alt=""></p><h2 id="UnionID-与内部数据打通"><a href="#UnionID-与内部数据打通" class="headerlink" title="UnionID 与内部数据打通"></a>UnionID 与内部数据打通</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1445241432" target="_blank" rel="noopener">微信公众平台</a></li><li><a href="http://kf.qq.com/product/wxkfpt.html#hid=2568" target="_blank" rel="noopener">腾讯客服-开放平台</a></li><li><a href="http://kf.qq.com/faq/120911VrYVrA140428naUJVv.html" target="_blank" rel="noopener">腾讯客服-公众平台</a> </li><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html" target="_blank" rel="noopener">用户信息</a></li><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html" target="_blank" rel="noopener">授权</a></li><li><a href="https://developers.weixin.qq.com/miniprogram/dev/api/AuthSetting.html" target="_blank" rel="noopener">AuthSetting</a></li></ul>]]></content>
       
       
       <categories>
@@ -627,9 +627,9 @@
             
             <tag> github </tag>
             
-            <tag> OAuth 2.0 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> OAuth 2.0 </tag>
             
         </tags>
       
@@ -660,9 +660,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> react router4 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -913,9 +913,9 @@
       
         <tags>
             
-            <tag> charles </tag>
-            
             <tag> debug </tag>
+            
+            <tag> charles </tag>
             
             <tag> 抓包 </tag>
             
@@ -1367,9 +1367,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -1807,9 +1807,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -2044,9 +2044,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
       
