@@ -17,7 +17,7 @@
 
 
 
-  <meta name="keywords" content="小程序,微信,账户,">
+  <meta name="keywords" content="小程序,微信,账户,unionID,openID,授权机制,">
 
 
 
@@ -35,7 +35,7 @@
 
 
 <meta name="description" content="如何利用好微信生态的账号体系？">
-<meta name="keywords" content="小程序,微信,账户">
+<meta name="keywords" content="小程序,微信,账户,unionID,openID,授权机制">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信的账号体系及各种 ID">
 <meta property="og:url" content="http://lijundong.com/id-in-wechat/index.html">
@@ -45,7 +45,7 @@
 <meta property="og:image" content="http://source.lijundong.com/19-3-15/unionid.jpg">
 <meta property="og:image" content="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/api-login.jpg?t=19032023">
 <meta property="og:image" content="http://source.lijundong.com/19-3-21/WX20190321-153635.jpg">
-<meta property="og:updated_time" content="2019-03-21T07:48:12.286Z">
+<meta property="og:updated_time" content="2019-03-21T08:16:18.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信的账号体系及各种 ID">
 <meta name="twitter:description" content="如何利用好微信生态的账号体系？">
@@ -229,7 +229,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#词条"><span class="toc-text">词条</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主体"><span class="toc-text">主体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微信开放平台"><span class="toc-text">微信开放平台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微信公众平台"><span class="toc-text">微信公众平台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OpenID"><span class="toc-text">OpenID</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UnionID"><span class="toc-text">UnionID</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取-OpenID"><span class="toc-text">获取 OpenID</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取-UnionID"><span class="toc-text">获取 UnionID</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UnionID-与内部数据打通"><span class="toc-text">UnionID 与内部数据打通</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#词条"><span class="toc-text">词条</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#主体"><span class="toc-text">主体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微信开放平台"><span class="toc-text">微信开放平台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#微信公众平台"><span class="toc-text">微信公众平台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OpenID"><span class="toc-text">OpenID</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UnionID"><span class="toc-text">UnionID</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取-OpenID"><span class="toc-text">获取 OpenID</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取-UnionID"><span class="toc-text">获取 UnionID</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UnionID-与内部数据打通"><span class="toc-text">UnionID 与内部数据打通</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#啰嗦两句"><span class="toc-text">啰嗦两句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-text">参考资料</span></a></li></ol>
     </div>
   </div>
 
@@ -294,7 +294,10 @@
 <li>请求过的权限，当用户拒绝权限申请时，如果产品逻辑被阻塞，可调用 <code>wx.oepnSetting</code> 接口打开小程序设置界面，引导用户开启权限，当然，<code>userInfo</code> 权限被拒绝后仍可以通过 <code>&lt;button open-type=&quot;getUserInfo&quot;/&gt;</code> 方式继续向用户发起权限请求。</li>
 </ul>
 <p><img src="http://source.lijundong.com/19-3-21/WX20190321-153635.jpg" alt=""></p>
-<h2 id="UnionID-与内部数据打通"><a href="#UnionID-与内部数据打通" class="headerlink" title="UnionID 与内部数据打通"></a>UnionID 与内部数据打通</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<h2 id="UnionID-与内部数据打通"><a href="#UnionID-与内部数据打通" class="headerlink" title="UnionID 与内部数据打通"></a>UnionID 与内部数据打通</h2><p>在获得用户授权，拿到 <code>UnionID</code> 后，可以通过验证用户手机号，将 <code>UnionID</code> 作为用户信息的一部分，给用户带来的便利是不用每次验证手机号，同时也给公司省了一笔话务的费用，一次打通，多端复用，APP、小程序、H5 活动，可以利用微信生态将所有场景串联。</p>
+<p>更重要的是以此积累的数据，通过多端积累的海量 <code>UnionID</code>，可以对用户行为数据进行详细分析，进行精准推送，这种数据带来的价值不可估量。</p>
+<h2 id="啰嗦两句"><a href="#啰嗦两句" class="headerlink" title="啰嗦两句"></a>啰嗦两句</h2><p>不是所有的事情都会按预期的方向发展，甚至往好的方向发展，你说我是错的，那你最好证明你是对的。但世事哪有那么鲜明的对错，多数人只是在和稀泥罢了。</p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
 <li><a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&amp;id=mp1445241432" target="_blank" rel="noopener">微信公众平台</a></li>
 <li><a href="http://kf.qq.com/product/wxkfpt.html#hid=2568" target="_blank" rel="noopener">腾讯客服-开放平台</a></li>
 <li><a href="http://kf.qq.com/faq/120911VrYVrA140428naUJVv.html" target="_blank" rel="noopener">腾讯客服-公众平台</a> </li>
@@ -346,6 +349,12 @@
               <a href="/tags/微信/">微信</a>
             
               <a href="/tags/账户/">账户</a>
+            
+              <a href="/tags/unionID/">unionID</a>
+            
+              <a href="/tags/openID/">openID</a>
+            
+              <a href="/tags/授权机制/">授权机制</a>
             
           </div>
         
