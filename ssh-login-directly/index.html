@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， ssh root@xxx.xxx.xxx.xxx，接着输入 password，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。12345678910111213# 优化前# 公司机器ssh root@xxx.xxx.xxx.xxxpassword: ****">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-10-30T01:29:35.000Z">
+<meta property="og:updated_time" content="2019-03-22T03:09:54.729Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置 SSH 快捷登录">
 <meta name="twitter:description" content="目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， ssh root@xxx.xxx.xxx.xxx，接着输入 password，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。12345678910111213# 优化前# 公司机器ssh root@xxx.xxx.xxx.xxxpassword: ****">
@@ -265,7 +265,7 @@
 <p>登陆成功！</p>
 <h4 id="提示错误-？"><a href="#提示错误-？" class="headerlink" title="提示错误 ？"></a>提示错误 ？</h4><p>我第一次尝试免密码登录时遇到以下错误，</p>
 <p>提示<strong>错误</strong>： <code>Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).</code></p>
-<p>搜了下原因，将开发机中的 <code>.ssh</code> <strong>目录权限</strong>设置为 600 或者 700<br><code>chmod 600 .ssh/</code></p>
+<p>尝试将开发机中的 <code>.ssh</code> <strong>目录权限</strong>设置为 600 或者 700<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod 700 .ssh/</span><br><span class="line">chmod 600 .ssh/authorized_keys</span><br><span class="line">restorecon -r -vv .ssh/authorized_keys</span><br></pre></td></tr></table></figure></p>
 
       
     </div>

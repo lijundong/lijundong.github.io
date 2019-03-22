@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 17 Mar 2019 15:45:14 GMT</pubDate>
+    <pubDate>Fri, 22 Mar 2019 03:39:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Centos 7 开发环境依赖安装</title>
+      <link>http://lijundong.com/centos-dev-dependencies-install-shell/</link>
+      <guid>http://lijundong.com/centos-dev-dependencies-install-shell/</guid>
+      <pubDate>Fri, 22 Mar 2019 03:12:20 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Centos 开发环境依赖安装。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/centos-dev-dependencies-install-shell/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>潜质</title>
@@ -286,21 +300,6 @@
       </description>
       
       <comments>http://lijundong.com/year-again-2018/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>IKBC Poker 2 使用指南</title>
-      <link>http://lijundong.com/poker-shortcut/</link>
-      <guid>http://lijundong.com/poker-shortcut/</guid>
-      <pubDate>Sun, 12 Nov 2017 06:06:09 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;http://source.lijundong.com/17-11-21/64023066.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;一个半月前，夏部长的青轴出现了 P 键间歇失灵的问题，忍了一段时间就下单了 Poker 茶轴，用着很舒服，不过由于组合键太多，导致经常出现按键锁定的情况，每到这个时候，我就像个猴子在电脑前，按哪错哪。&lt;/p&gt;
-&lt;p&gt;这里总结一些常见的问题，供大家快速解决问题&lt;/p&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/poker-shortcut/#disqus_thread</comments>
     </item>
     
   </channel>
