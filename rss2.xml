@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 23 Mar 2019 05:41:10 GMT</pubDate>
+    <pubDate>Thu, 11 Apr 2019 07:06:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>小程序 IntersectionObserver 使用案例</title>
+      <link>http://lijundong.com/mp-IntersectionObserver/</link>
+      <guid>http://lijundong.com/mp-IntersectionObserver/</guid>
+      <pubDate>Mon, 01 Apr 2019 12:22:57 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;今天聊聊小程序的 &lt;code&gt;IntersectionObserver&lt;/code&gt; 接口。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>http://lijundong.com/mp-IntersectionObserver/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Centos 7 开发环境依赖安装</title>
@@ -284,22 +298,6 @@
       </description>
       
       <comments>http://lijundong.com/javascript-asi/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>火车驶向云外，梦安魂于九霄</title>
-      <link>http://lijundong.com/year-again-2018/</link>
-      <guid>http://lijundong.com/year-again-2018/</guid>
-      <pubDate>Sun, 21 Jan 2018 05:52:34 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;黑色的不是夜晚 是漫长的孤单&lt;br&gt;看脚下一片黑暗 望头顶星光璀璨&lt;br&gt;叹世万物皆可盼 唯真爱最短暂&lt;br&gt;失去的永不复返 世守恒而今倍还&lt;br&gt;摇旗呐喊的热情 携光阴渐远去&lt;br&gt;人世间悲喜烂剧 昼夜轮播不停&lt;br&gt;纷飞的滥情男女 情仇爱恨别离&lt;br&gt;一代人终将老去 但总有人正年轻&lt;/p&gt;
-&lt;/blockquote&gt;
-      
-      </description>
-      
-      <comments>http://lijundong.com/year-again-2018/#disqus_thread</comments>
     </item>
     
   </channel>
