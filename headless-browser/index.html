@@ -46,7 +46,7 @@
 <meta property="og:image" content="http://source.lijundong.com/18-9-10/69990616.jpg">
 <meta property="og:image" content="http://source.lijundong.com/18-9-10/44337548.jpg">
 <meta property="og:image" content="http://source.lijundong.com/18-9-10/11854417.jpg">
-<meta property="og:updated_time" content="2018-09-10T10:52:32.000Z">
+<meta property="og:updated_time" content="2019-05-08T07:09:39.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“木偶”浏览器简简史">
 <meta name="twitter:description" content="之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome">
@@ -237,7 +237,7 @@
 
     <div class="post-content">
       
-        <p><img src="http://source.lijundong.com/18-9-10/19197120.jpg" alt=""><br>之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome</p>
+        <p><img src="//source.lijundong.com/18-9-10/19197120.jpg" alt=""><br>之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome</p>
 <a id="more"></a>
 <h2 id="“木偶”浏览器"><a href="#“木偶”浏览器" class="headerlink" title="“木偶”浏览器"></a>“木偶”浏览器</h2><p>受 Puppeteer 启发，我在这里造了一个词，“木偶”浏览器，指通过调用 API 来操控浏览器行为，我们可以在此基础上构建一套自动化系统，以此解放开发人员的双手，目前主要应用在下面几个场景中：</p>
 <ul>
@@ -254,7 +254,7 @@
 <p>以 Selenium 2.0 为例，完整的组成结构应该是</p>
 <p><code>Selenium = Selenium IDE + Selenium WebDriver + Selenium Remote Control + Selenium Grid</code></p>
 <p>这里简要解释下这几个名词，配合下图（途中略去 RC 部分）食用效果更佳：</p>
-<p><img src="http://source.lijundong.com/18-9-10/69990616.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/18-9-10/69990616.jpg" alt=""></p>
 <h4 id="Selenium-IDE"><a href="#Selenium-IDE" class="headerlink" title="Selenium IDE"></a>Selenium IDE</h4><p>Selenium IDE 是 firefox/Chrome 浏览器的插件，提供简单的脚本录制、编辑与回放功能。</p>
 <h4 id="Selenium-Client-API"><a href="#Selenium-Client-API" class="headerlink" title="Selenium Client API"></a>Selenium Client API</h4><p>Selenese 是 Selenium 的指令集，除了使用 Selenese，Selenium 还开放了编程语言调用接口，通过调用 Selenium Client API 中的方法与 WebDriver 进行通信，目前支持 <code>JAVA</code>、<code>C#</code>、<code>Javascript</code>、<code>Python</code>。</p>
 <blockquote>
@@ -282,7 +282,7 @@
 <p><img src="http://source.lijundong.com/18-9-10/44337548.jpg" alt="效果图"></p>
 <h3 id="Selenium-WebDriver-VS-Puppeteer"><a href="#Selenium-WebDriver-VS-Puppeteer" class="headerlink" title="Selenium WebDriver VS Puppeteer"></a>Selenium WebDriver VS Puppeteer</h3><p>上文已经对 WebDriver、Puppeteer 的概念做了阐述，那么两者的区别在哪？</p>
 <p>实际上，WebDriver 是 Selenium 根据不同的浏览器（Chrome、Safari、IE、Firefox）的接口定制的规范统称，面对不同浏览器，使用的 Driver 不同，官网目前提供了 <code>IE Driver</code>、<code>Safari Driver</code>、<code>Chrome Driver</code>、<code>Firefox Driver</code>，可以通过下图加深理解，以 Chrome 为例，Puppeteer-core 和 ChromeDriver 都是通过 devtools-protocol 控制浏览器，区别是 Puppeteer-core 是开发者直接可用的 Node 库，ChromeDriver 则需要用户通过 Selenium Client API 进行调用</p>
-<p><img src="http://source.lijundong.com/18-9-10/11854417.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/18-9-10/11854417.jpg" alt=""></p>
 <p>参考：</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/PhantomJS#CasperJS" target="_blank" rel="noopener">PhantomJS WikiPedia</a></li>

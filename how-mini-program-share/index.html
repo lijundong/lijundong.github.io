@@ -45,7 +45,7 @@
 <meta property="og:image" content="http://source.lijundong.com/19-3-15/share.jpg">
 <meta property="og:image" content="http://source.lijundong.com/19-3-20/WX20190320-153921.jpg">
 <meta property="og:image" content="http://source.lijundong.com/19-3-20/WX20190320-153904.jpg">
-<meta property="og:updated_time" content="2019-04-12T12:10:49.056Z">
+<meta property="og:updated_time" content="2019-05-08T07:09:39.722Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序的分享案例">
 <meta name="twitter:description" content="假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。">
@@ -236,7 +236,7 @@
 
     <div class="post-content">
       
-        <p><img src="http://source.lijundong.com/19-3-15/share.jpg" alt=""><br>假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。</p>
+        <p><img src="//source.lijundong.com/19-3-15/share.jpg" alt=""><br>假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。</p>
 <a id="more"></a>
 <p>除了少数微信官方提供的入口流量，大多数小程序主要以分享的方式获取用户，以奖励方式激励用户分享，分享页面拉新，分享出去还能再回来，多种分享形式。</p>
 <p>小游戏出来后，微信聊天群被各种小游戏分享攻占，分享续命、续命得金币等等，导致聊天过程充斥着大量垃圾信息，逼的微信立马阉割了 <code>onShareAppMessage</code> 接口，用户仍可以分享，但开发者无法判断分享结果的成功失败。如此一来，微信自己的问题解决了，留下开发者们黯然神伤。没有分享状态，从开发角度该如何应对？除了分享，其他场景呢？这里可以给几个例子做参考。</p>
@@ -347,8 +347,8 @@
 </table>
 <p>这个数据能作为决定是否进行兼容的参考，另一个更具有参考价值的数据可以在小程序管理后台看到，进入后台在 <code>设置 -&gt; 基础库最低版本设置</code> 中可以看到近30天内访问小程序的用户的公共库版是否会被影响的比例。这个比例可以最终设置线上基础库的参考。</p>
 <p>当然，你可以做的更激进一些，把更多的功能性入口放在导航栏中，比如搜索……</p>
-<p><img src="http://source.lijundong.com/19-3-20/WX20190320-153921.jpg" alt=""></p>
-<h4 id="其他自定义导航"><a href="#其他自定义导航" class="headerlink" title="其他自定义导航"></a>其他自定义导航</h4><p>除了自定义导航栏的方式，还可以在页面中增加返回首页 <code>fixed</code> 按钮，辅助用户回到首页，这个方案再进一步，则可以做成 iPhone 辅助功能快捷键的方式，除了返回首页，还提供其他导航快捷功能，这也是目前 Airbnb 的方案，这种方案的优势是完全不需要考虑兼容性。但在开发角度，对于全局组件的管理则需要花费更多的心思。<br><img src="http://source.lijundong.com/19-3-20/WX20190320-153904.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/19-3-20/WX20190320-153921.jpg" alt=""></p>
+<h4 id="其他自定义导航"><a href="#其他自定义导航" class="headerlink" title="其他自定义导航"></a>其他自定义导航</h4><p>除了自定义导航栏的方式，还可以在页面中增加返回首页 <code>fixed</code> 按钮，辅助用户回到首页，这个方案再进一步，则可以做成 iPhone 辅助功能快捷键的方式，除了返回首页，还提供其他导航快捷功能，这也是目前 Airbnb 的方案，这种方案的优势是完全不需要考虑兼容性。但在开发角度，对于全局组件的管理则需要花费更多的心思。<br><img src="//source.lijundong.com/19-3-20/WX20190320-153904.jpg" alt=""></p>
 <p>以上，就是所有内容。</p>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
 <li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/client.html" target="_blank" rel="noopener">基础库版本与客户端版本对应关系</a></li>

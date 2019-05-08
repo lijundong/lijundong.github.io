@@ -43,7 +43,7 @@
 <meta property="og:description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 iconfont 的方案。">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="http://source.lijundong.com/19-3-15/WX20190217-190910.jpg">
-<meta property="og:updated_time" content="2019-03-15T10:39:09.015Z">
+<meta property="og:updated_time" content="2019-05-08T07:09:39.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序 iconfont 方案">
 <meta name="twitter:description" content="小程序中使用 iconfont 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 iconfont 的方案。">
@@ -234,7 +234,7 @@
 
     <div class="post-content">
       
-        <p><img src="http://source.lijundong.com/19-3-15/WX20190217-190910.jpg" alt=""><br>小程序中使用 <code>iconfont</code> 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 <code>iconfont</code> 的方案。</p>
+        <p><img src="//source.lijundong.com/19-3-15/WX20190217-190910.jpg" alt=""><br>小程序中使用 <code>iconfont</code> 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 <code>iconfont</code> 的方案。</p>
 <a id="more"></a>
 <h2 id="小程序应用-iconfont"><a href="#小程序应用-iconfont" class="headerlink" title="小程序应用 iconfont"></a>小程序应用 <code>iconfont</code></h2><h3 id="全局引入字体"><a href="#全局引入字体" class="headerlink" title="全局引入字体"></a>全局引入字体</h3><p>我目前的做法是在项目的 <code>app.wxss</code> 中引入 iconfont 文件，可以全局生效。问题是组件无法继承这个全局字体，解决方案下文会提。</p>
 <p>另一种方案比较复杂，先将字体文件转为 <code>base64</code>，在全局样式中引入 <code>base64</code>，这种方案毫无优势可言，仅仅为了方案而方案，对于开发者以及后续维护很不友好。</p>
