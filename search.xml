@@ -49,9 +49,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
             <tag> 环境配置 </tag>
             
@@ -161,7 +161,7 @@
       <link href="/how-mini-program-share/"/>
       <url>/how-mini-program-share/</url>
       
-        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/share.jpg" alt=""><br>假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。</p><a id="more"></a><p>除了少数微信官方提供的入口流量，大多数小程序主要以分享的方式获取用户，以奖励方式激励用户分享，分享页面拉新，分享出去还能再回来，多种分享形式。</p><p>小游戏出来后，微信聊天群被各种小游戏分享攻占，分享续命、续命得金币等等，导致聊天过程充斥着大量垃圾信息，逼的微信立马阉割了 <code>onShareAppMessage</code> 接口，用户仍可以分享，但开发者无法判断分享结果的成功失败。如此一来，微信自己的问题解决了，留下开发者们黯然神伤。没有分享状态，从开发角度该如何应对？除了分享，其他场景呢？这里可以给几个例子做参考。</p><h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><p>首先是腾讯自家的小游戏，腾讯斗地主，利用用户进入小程序的 <code>scene</code> 进行场景识别并进行奖励，产品提示用户将小程序添加到“我的小程序中”，并从我的小程序中进入，即可领取奖励豆子。通过进入小程序场景值判断用户是否通过 “我的小程序” 进入小程序，以此进行奖励。</p><p>另一种方案是，用户分享时，在分享链接中带上用户专属 <code>key</code>，其他用户通过分享的链接进入小程序时，请求将链接中的 <code>key</code> 带回后端，这种做法也是拉新场景常用的方案。</p><p>第三种，大家在日常生活中应该都体验过，帮微信好友加速抢火车票，这种方案是比较高级的做法，产品的逻辑进了朋友圈，好友的参与度更高，除了点赞之交，还可以升级成抢票加速之交。尤其是春运期间，这种分享方式带来海量的新用户数据。这种方式被发扬光大后，雨后春笋般地出现了邀请好友帮砍价，邀请好友帮砍房租等等。</p><p>当然，除了转发到聊天，朋友圈也是非常重要的场景，但目前小程序并没有开通朋友圈的小程序入口，不过，分享到朋友圈仍然可以做，只是改成以小程序码形式展现，用户通过扫描小程序码进入。以租房场景为例，假如二狗在发布房源后，可以生成一张房源卡片，房源卡片内容包括房源的基本信息，以及最重要的小程序码。二狗可以将这种卡片分享到朋友圈进行传播。</p><h2 id="小程序码的限制"><a href="#小程序码的限制" class="headerlink" title="小程序码的限制"></a>小程序码的限制</h2><p>这里想把小程序码独拎出来单说一下，小程序通过接口生成二维码和小程序码，相应接口对比如下：</p><table><thead><tr><th>接口</th><th>参数限制</th><th>码类型</th><th>生成码数量限制</th></tr></thead><tbody><tr><td><code>getWXACode</code></td><td>128 字节</td><td>小程序码</td><td><code>getWXACode</code> + <code>createWXAQRCode</code>总量上限 10w</td></tr><tr><td><code>getWXACode</code></td><td>128 字节</td><td>二维码</td><td><code>getWXACode</code> + <code>createWXAQRCode</code>总量上限 10w</td></tr><tr><td><code>getWXACodeUnlimit</code></td><td>32 个可见字符</td><td>小程序码</td><td>无上限</td></tr></tbody></table><p>日常开发中大家用 <code>getWXACodeUnlimit</code> 接口生成码的次数应该较多，毕竟无上限，没有心理负担，但有得必有失，参数限制 32 个可见字符导致分享的链接无法携带过多参数。我之前用过缩短参数 key、value 值的方法，但对日益增长的参数而言，不是长久之计。目前的方案是在服务端维护一套映射数据库，生成码时，通过原参数生成长度小于 32 位的长串，并存库，用户扫码后，首先将小程序码上链接传至服务端进行解码，获取正确参数，小程序拿到正确参数后再进行正常条状、渲染等。这个方案虽然需要在进入时处理异步问题，但从收益角度而言，是非常具有性价比的方案。</p><h2 id="分享出去，还要回来"><a href="#分享出去，还要回来" class="headerlink" title="分享出去，还要回来"></a>分享出去，还要回来</h2><blockquote><p>首先注明下，下面提到的分享页，都不属于 <code>tab</code> 页面，<code>tab</code> 页也不会出现这e y</p></blockquote><p>仍用一下租房的案例，铁蛋在朋友圈看到二狗分享的房源，比较感兴趣，于是从分享的链接或者卡片进入小程序查看房源的详细信息，看完觉得不是很满意，就退出了小程序，这肯定不是我们愿意看到的，我们希望用户除了被分享的内容外，还能去体验下小程序的整体流程，虽然是从某一个点分享出去，但用户进来后可以看到整个面。这就涉及到分享方案的具体实施，从分享页面回到其他页面目前有两种通用的方案。</p><p>先说下出现两种方案的原因，首先假设首页的路径是 <code>/index</code>，列表页的路径是 <code>/list</code>，详情页的路径是 <code>/detail</code>，正常用户从首页进入小程序房源详情页的页面栈顺序是 <code>index -&gt; list -&gt; detail</code>，因为有前一级页面栈存在，用户访问详情页时，可以返回上一级，但分享链接时，通常仅分享当前页面的路径，例如我现在分享某详情页时，分享的链接则是 <code>/detail?code=XXX</code>，用户通过我的小程序链接直接进入了 <code>detail</code>，没有前置页面栈，这就导致页面无法返回到首页或其他页面。</p><p>而微信官方不建议开发者直接操作页面栈，会导致未知问题，日常开发中遇到这个问题，下面是两种常用的方案。</p><h3 id="首页跳板"><a href="#首页跳板" class="headerlink" title="首页跳板"></a>首页跳板</h3><p>既然不能直接操作页面栈，我们可以换种思路，每次都从首页进入小程序，那么每次小程序分享的链接就变成了 <code>index?redirect=detail?code=XXX</code>，encode 后就是 <code>index?redirect=detail%3Fcode%3DXXX</code>，用户点击链接进入时，首页拿到 <code>redirect</code> 参数，再 <code>redirectTo</code> 到 <code>detail?code=XXX</code>。访问的页面栈就成了 <code>index -&gt; detail</code>。这种方案成本很低，对项目的改动也最少，适用较小的项目，当页面层级加深，这种方案就不再合适。这时候就可以试试自定义导航栏的方式，给产品增加新的交互逻辑。</p><h3 id="增加自定义导航"><a href="#增加自定义导航" class="headerlink" title="增加自定义导航"></a>增加自定义导航</h3><h4 id="自定义导航栏"><a href="#自定义导航栏" class="headerlink" title="自定义导航栏"></a>自定义导航栏</h4><p>小程序支持自定义导航栏，适用于<strong>全局配置</strong>和<strong>页面配置</strong>，下面是对应的开始支持的客户端版本</p><table><thead><tr><th>番茄</th><th>参数</th><th>支持版本</th></tr></thead><tbody><tr><td>全局配置(app.js)</td><td><code>default</code>(默认样式)/<code>custom</code>(自定义导航栏，只保留右上角胶囊按钮。)</td><td>微信客户端 6.6.0</td></tr><tr><td>页面配置(page)</td><td><code>default</code>(默认样式)/<code>custom</code>(自定义导航栏，只保留右上角胶囊按钮。)</td><td>微信客户端 7.0.0</td></tr></tbody></table><blockquote><p>备注：<br>客户端 7.0.0 以下版本，navigationStyle 只在 app.json 中生效。<br>客户端 6.7.2 版本开始，navigationStyle: custom 对 <web-view> 组件无效</web-view></p></blockquote><p>通过在自定义导航栏中增加返回入口或者首页入口，用户从分享页面进入时，可以改变对应文案，提醒用户点击回到首页。相较于在 <code>app.js</code> 里配置全局自定义导航栏，我推荐使用页面级配置，这就需要明确客户端版本导致的兼容性问题影响面。下面是微信官方的数据（<strong>更新时间：2019年3月20日</strong>，参考资料在文末）</p><table><thead><tr><th>端</th><th>客户端版本</th><th>基础库版本</th><th>&gt;= 该版本的用户比例</th></tr></thead><tbody><tr><td>iOS</td><td>7.0.0</td><td>2.5.2</td><td>60.01%</td></tr><tr><td>iOS</td><td>7.0.3</td><td>2.6.2</td><td>56.37%</td></tr><tr><td>Android</td><td>7.0.0</td><td>2.5.2</td><td>74.01%</td></tr><tr><td>Android</td><td>7.0.3</td><td>2.6.2</td><td>70.51%</td></tr></tbody></table><p>这个数据能作为决定是否进行兼容的参考，另一个更具有参考价值的数据可以在小程序管理后台看到，进入后台在 <code>设置 -&gt; 基础库最低版本设置</code> 中可以看到近30天内访问小程序的用户的公共库版是否会被影响的比例。这个比例可以最终设置线上基础库的参考。</p><p>当然，你可以做的更激进一些，把更多的功能性入口放在导航栏中，比如搜索……</p><p><img src="http://source.lijundong.com/19-3-20/WX20190320-153921.jpg" alt=""></p><h4 id="其他自定义导航"><a href="#其他自定义导航" class="headerlink" title="其他自定义导航"></a>其他自定义导航</h4><p>除了自定义导航栏的方式，还可以在页面中增加返回首页 <code>fixed</code> 按钮，辅助用户回到首页，这个方案再进一步，则可以做成 iPhone 辅助功能快捷键的方式，除了返回首页，还提供其他导航快捷功能，这也是目前 Airbnb 的方案，这种方案的优势是完全不需要考虑兼容性。但在开发角度，对于全局组件的管理则需要花费更多的心思。<br><img src="http://source.lijundong.com/19-3-20/WX20190320-153904.jpg" alt=""></p><p>以上，就是所有内容。</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/client.html" target="_blank" rel="noopener">基础库版本与客户端版本对应关系</a></li><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib.html" target="_blank" rel="noopener">基础库</a></li><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.html" target="_blank" rel="noopener">获取小程序码</a></li></ul>]]></content>
+        <content type="html"><![CDATA[<p><img src="http://source.lijundong.com/19-3-15/share.jpg" alt=""><br>假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。</p><a id="more"></a><p>除了少数微信官方提供的入口流量，大多数小程序主要以分享的方式获取用户，以奖励方式激励用户分享，分享页面拉新，分享出去还能再回来，多种分享形式。</p><p>小游戏出来后，微信聊天群被各种小游戏分享攻占，分享续命、续命得金币等等，导致聊天过程充斥着大量垃圾信息，逼的微信立马阉割了 <code>onShareAppMessage</code> 接口，用户仍可以分享，但开发者无法判断分享结果的成功失败。如此一来，微信自己的问题解决了，留下开发者们黯然神伤。没有分享状态，从开发角度该如何应对？除了分享，其他场景呢？这里可以给几个例子做参考。</p><h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2><p>首先是腾讯自家的小游戏，腾讯斗地主，利用用户进入小程序的 <code>scene</code> 进行场景识别并进行奖励，产品提示用户将小程序添加到“我的小程序中”，并从我的小程序中进入，即可领取奖励豆子。通过进入小程序场景值判断用户是否通过 “我的小程序” 进入小程序，以此进行奖励。</p><p>另一种方案是，用户分享时，在分享链接中带上用户专属 <code>key</code>，其他用户通过分享的链接进入小程序时，请求将链接中的 <code>key</code> 带回后端，这种做法也是拉新场景常用的方案。</p><p>第三种，大家在日常生活中应该都体验过，帮微信好友加速抢火车票，这种方案是比较高级的做法，产品的逻辑进了朋友圈，好友的参与度更高，除了点赞之交，还可以升级成抢票加速之交。尤其是春运期间，这种分享方式带来海量的新用户数据。这种方式被发扬光大后，雨后春笋般地出现了邀请好友帮砍价，邀请好友帮砍房租等等。</p><p>当然，除了转发到聊天，朋友圈也是非常重要的场景，但目前小程序并没有开通朋友圈的小程序入口，不过，分享到朋友圈仍然可以做，只是改成以小程序码形式展现，用户通过扫描小程序码进入。以租房场景为例，假如二狗在发布房源后，可以生成一张房源卡片，房源卡片内容包括房源的基本信息，以及最重要的小程序码。二狗可以将这种卡片分享到朋友圈进行传播。</p><h2 id="小程序码的限制"><a href="#小程序码的限制" class="headerlink" title="小程序码的限制"></a>小程序码的限制</h2><p>这里想把小程序码独拎出来单说一下，小程序通过接口生成二维码和小程序码，相应接口对比如下：</p><table><thead><tr><th>接口</th><th>参数限制</th><th>码类型</th><th>生成码数量限制</th></tr></thead><tbody><tr><td><code>getWXACode</code></td><td>128 字节</td><td>小程序码</td><td><code>getWXACode</code> + <code>createWXAQRCode</code>总量上限 10w</td></tr><tr><td><code>getWXACode</code></td><td>128 字节</td><td>二维码</td><td><code>getWXACode</code> + <code>createWXAQRCode</code>总量上限 10w</td></tr><tr><td><code>getWXACodeUnlimit</code></td><td>32 个可见字符</td><td>小程序码</td><td>无上限</td></tr></tbody></table><p>日常开发中大家用 <code>getWXACodeUnlimit</code> 接口生成码的次数应该较多，毕竟无上限，没有心理负担，但有得必有失，参数限制 32 个可见字符导致分享的链接无法携带过多参数。我之前用过缩短参数 key、value 值的方法，但对日益增长的参数而言，不是长久之计。目前的方案是在服务端维护一套映射数据库，生成码时，通过原参数生成长度小于 32 位的长串，并存库，用户扫码后，首先将小程序码上链接传至服务端进行解码，获取正确参数，小程序拿到正确参数后再进行正常条状、渲染等。这个方案虽然需要在进入时处理异步问题，但从收益角度而言，是非常具有性价比的方案。</p><h2 id="分享出去，还要回来"><a href="#分享出去，还要回来" class="headerlink" title="分享出去，还要回来"></a>分享出去，还要回来</h2><blockquote><p>首先注明下，下面提到的分享页，都不属于 <code>tab</code> 页面，<code>tab</code> 页也不会出现这个需求了</p></blockquote><p>仍用一下租房的案例，铁蛋在朋友圈看到二狗分享的房源，比较感兴趣，于是从分享的链接或者卡片进入小程序查看房源的详细信息，看完觉得不是很满意，就退出了小程序，这肯定不是我们愿意看到的，我们希望用户除了被分享的内容外，还能去体验下小程序的整体流程，虽然是从某一个点分享出去，但用户进来后可以看到整个面。这就涉及到分享方案的具体实施，从分享页面回到其他页面目前有两种通用的方案。</p><p>先说下出现两种方案的原因，首先假设首页的路径是 <code>/index</code>，列表页的路径是 <code>/list</code>，详情页的路径是 <code>/detail</code>，正常用户从首页进入小程序房源详情页的页面栈顺序是 <code>index -&gt; list -&gt; detail</code>，因为有前一级页面栈存在，用户访问详情页时，可以返回上一级，但分享链接时，通常仅分享当前页面的路径，例如我现在分享某详情页时，分享的链接则是 <code>/detail?code=XXX</code>，用户通过我的小程序链接直接进入了 <code>detail</code>，没有前置页面栈，这就导致页面无法返回到首页或其他页面。</p><p>而微信官方不建议开发者直接操作页面栈，会导致未知问题，日常开发中遇到这个问题，下面是两种常用的方案。</p><h3 id="首页跳板"><a href="#首页跳板" class="headerlink" title="首页跳板"></a>首页跳板</h3><p>既然不能直接操作页面栈，我们可以换种思路，每次都从首页进入小程序，那么每次小程序分享的链接就变成了 <code>index?redirect=detail?code=XXX</code>，encode 后就是 <code>index?redirect=detail%3Fcode%3DXXX</code>，用户点击链接进入时，首页拿到 <code>redirect</code> 参数，再 <code>redirectTo</code> 到 <code>detail?code=XXX</code>。访问的页面栈就成了 <code>index -&gt; detail</code>。这种方案成本很低，对项目的改动也最少，适用较小的项目，当页面层级加深，这种方案就不再合适。这时候就可以试试自定义导航栏的方式，给产品增加新的交互逻辑。</p><h3 id="增加自定义导航"><a href="#增加自定义导航" class="headerlink" title="增加自定义导航"></a>增加自定义导航</h3><h4 id="自定义导航栏"><a href="#自定义导航栏" class="headerlink" title="自定义导航栏"></a>自定义导航栏</h4><p>小程序支持自定义导航栏，适用于<strong>全局配置</strong>和<strong>页面配置</strong>，下面是对应的开始支持的客户端版本</p><table><thead><tr><th>范围</th><th>参数</th><th>支持版本</th></tr></thead><tbody><tr><td>全局配置(app.js)</td><td><code>default</code>(默认样式)/<code>custom</code>(自定义导航栏，只保留右上角胶囊按钮。)</td><td>微信客户端 6.6.0</td></tr><tr><td>页面配置(page)</td><td><code>default</code>(默认样式)/<code>custom</code>(自定义导航栏，只保留右上角胶囊按钮。)</td><td>微信客户端 7.0.0</td></tr></tbody></table><blockquote><p>备注：<br>客户端 7.0.0 以下版本，navigationStyle 只在 app.json 中生效。<br>客户端 6.7.2 版本开始，navigationStyle: custom 对 <web-view> 组件无效</web-view></p></blockquote><p>通过在自定义导航栏中增加返回入口或者首页入口，用户从分享页面进入时，可以改变对应文案，提醒用户点击回到首页。相较于在 <code>app.js</code> 里配置全局自定义导航栏，我推荐使用页面级配置，这就需要明确客户端版本导致的兼容性问题影响面。下面是微信官方的数据（<strong>更新时间：2019年3月20日</strong>，参考资料在文末）</p><table><thead><tr><th>端</th><th>客户端版本</th><th>基础库版本</th><th>&gt;= 该版本的用户比例</th></tr></thead><tbody><tr><td>iOS</td><td>7.0.0</td><td>2.5.2</td><td>60.01%</td></tr><tr><td>iOS</td><td>7.0.3</td><td>2.6.2</td><td>56.37%</td></tr><tr><td>Android</td><td>7.0.0</td><td>2.5.2</td><td>74.01%</td></tr><tr><td>Android</td><td>7.0.3</td><td>2.6.2</td><td>70.51%</td></tr></tbody></table><p>这个数据能作为决定是否进行兼容的参考，另一个更具有参考价值的数据可以在小程序管理后台看到，进入后台在 <code>设置 -&gt; 基础库最低版本设置</code> 中可以看到近30天内访问小程序的用户的公共库版是否会被影响的比例。这个比例可以最终设置线上基础库的参考。</p><p>当然，你可以做的更激进一些，把更多的功能性入口放在导航栏中，比如搜索……</p><p><img src="http://source.lijundong.com/19-3-20/WX20190320-153921.jpg" alt=""></p><h4 id="其他自定义导航"><a href="#其他自定义导航" class="headerlink" title="其他自定义导航"></a>其他自定义导航</h4><p>除了自定义导航栏的方式，还可以在页面中增加返回首页 <code>fixed</code> 按钮，辅助用户回到首页，这个方案再进一步，则可以做成 iPhone 辅助功能快捷键的方式，除了返回首页，还提供其他导航快捷功能，这也是目前 Airbnb 的方案，这种方案的优势是完全不需要考虑兼容性。但在开发角度，对于全局组件的管理则需要花费更多的心思。<br><img src="http://source.lijundong.com/19-3-20/WX20190320-153904.jpg" alt=""></p><p>以上，就是所有内容。</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib/client.html" target="_blank" rel="noopener">基础库版本与客户端版本对应关系</a></li><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/client-lib.html" target="_blank" rel="noopener">基础库</a></li><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/qr-code.html" target="_blank" rel="noopener">获取小程序码</a></li></ul>]]></content>
       
       
       <categories>
@@ -699,9 +699,9 @@
             
             <tag> github </tag>
             
-            <tag> OAuth 2.0 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> OAuth 2.0 </tag>
             
         </tags>
       
@@ -732,9 +732,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> react router4 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -1327,9 +1327,9 @@
       
         <tags>
             
-            <tag> 总结 </tag>
-            
             <tag> 游记 </tag>
+            
+            <tag> 总结 </tag>
             
         </tags>
       
@@ -1879,9 +1879,9 @@
       
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -2116,9 +2116,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
       
@@ -2199,9 +2199,9 @@
       
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
       

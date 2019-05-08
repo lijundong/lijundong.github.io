@@ -45,7 +45,7 @@
 <meta property="og:image" content="http://source.lijundong.com/19-3-15/share.jpg">
 <meta property="og:image" content="http://source.lijundong.com/19-3-20/WX20190320-153921.jpg">
 <meta property="og:image" content="http://source.lijundong.com/19-3-20/WX20190320-153904.jpg">
-<meta property="og:updated_time" content="2019-03-20T08:47:01.437Z">
+<meta property="og:updated_time" content="2019-04-12T12:10:49.056Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小程序的分享案例">
 <meta name="twitter:description" content="假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。">
@@ -277,7 +277,7 @@
 </table>
 <p>日常开发中大家用 <code>getWXACodeUnlimit</code> 接口生成码的次数应该较多，毕竟无上限，没有心理负担，但有得必有失，参数限制 32 个可见字符导致分享的链接无法携带过多参数。我之前用过缩短参数 key、value 值的方法，但对日益增长的参数而言，不是长久之计。目前的方案是在服务端维护一套映射数据库，生成码时，通过原参数生成长度小于 32 位的长串，并存库，用户扫码后，首先将小程序码上链接传至服务端进行解码，获取正确参数，小程序拿到正确参数后再进行正常条状、渲染等。这个方案虽然需要在进入时处理异步问题，但从收益角度而言，是非常具有性价比的方案。</p>
 <h2 id="分享出去，还要回来"><a href="#分享出去，还要回来" class="headerlink" title="分享出去，还要回来"></a>分享出去，还要回来</h2><blockquote>
-<p>首先注明下，下面提到的分享页，都不属于 <code>tab</code> 页面，<code>tab</code> 页也不会出现这e y</p>
+<p>首先注明下，下面提到的分享页，都不属于 <code>tab</code> 页面，<code>tab</code> 页也不会出现这个需求了</p>
 </blockquote>
 <p>仍用一下租房的案例，铁蛋在朋友圈看到二狗分享的房源，比较感兴趣，于是从分享的链接或者卡片进入小程序查看房源的详细信息，看完觉得不是很满意，就退出了小程序，这肯定不是我们愿意看到的，我们希望用户除了被分享的内容外，还能去体验下小程序的整体流程，虽然是从某一个点分享出去，但用户进来后可以看到整个面。这就涉及到分享方案的具体实施，从分享页面回到其他页面目前有两种通用的方案。</p>
 <p>先说下出现两种方案的原因，首先假设首页的路径是 <code>/index</code>，列表页的路径是 <code>/list</code>，详情页的路径是 <code>/detail</code>，正常用户从首页进入小程序房源详情页的页面栈顺序是 <code>index -&gt; list -&gt; detail</code>，因为有前一级页面栈存在，用户访问详情页时，可以返回上一级，但分享链接时，通常仅分享当前页面的路径，例如我现在分享某详情页时，分享的链接则是 <code>/detail?code=XXX</code>，用户通过我的小程序链接直接进入了 <code>detail</code>，没有前置页面栈，这就导致页面无法返回到首页或其他页面。</p>
@@ -287,7 +287,7 @@
 <table>
 <thead>
 <tr>
-<th>番茄</th>
+<th>范围</th>
 <th>参数</th>
 <th>支持版本</th>
 </tr>
