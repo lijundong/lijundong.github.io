@@ -31,29 +31,29 @@
 
 
 
-<link rel="canonical" href="http://lijundong.com/deep-clone-vs-shallow-clone/">
+<link rel="canonical" href="https://leeon.im/deep-clone-vs-shallow-clone/">
 
 
 <meta name="description" content="在之前总结 This 用法 的时候,遇到了传参问题，由此意识到了复制与引用的问题，说得高端些，引申出了深拷贝与浅拷贝的问题，后来在链家面试的时候，和一面也讨论到这个问题，当时的理解比较乱，涉及到深拷贝实现的方面都不熟悉，现在试着总结一下。">
 <meta name="keywords" content="javascript,深拷贝,浅拷贝">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javascript 的赋值、引用以及深拷贝、浅拷贝">
-<meta property="og:url" content="http://lijundong.com/deep-clone-vs-shallow-clone/index.html">
+<meta property="og:url" content="https://leeon.im/deep-clone-vs-shallow-clone/index.html">
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="在之前总结 This 用法 的时候,遇到了传参问题，由此意识到了复制与引用的问题，说得高端些，引申出了深拷贝与浅拷贝的问题，后来在链家面试的时候，和一面也讨论到这个问题，当时的理解比较乱，涉及到深拷贝实现的方面都不熟悉，现在试着总结一下。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="http://source.lijundong.com/17-2-28/11497418-file_1488289350451_141ba.png">
-<meta property="og:image" content="http://source.lijundong.com/17-2-28/17191622-file_1488289392814_648.png">
-<meta property="og:image" content="http://source.lijundong.com/17-2-28/579494-file_1488289373542_128ea.png">
-<meta property="og:image" content="http://source.lijundong.com/17-2-28/28695556-file_1488289419385_10e6a.png">
-<meta property="og:image" content="http://source.lijundong.com/17-2-28/62092344-file_1488289444123_a40c.png">
-<meta property="og:image" content="http://source.lijundong.com/17-3-1/23876944-file_1488298747142_8a89.png">
-<meta property="og:image" content="http://source.lijundong.com/17-3-1/33543805-file_1488298796532_150c9.png">
+<meta property="og:image" content="https://source.lijundong.com/17-2-28/11497418-file_1488289350451_141ba.png">
+<meta property="og:image" content="https://source.lijundong.com/17-2-28/17191622-file_1488289392814_648.png">
+<meta property="og:image" content="https://source.lijundong.com/17-2-28/579494-file_1488289373542_128ea.png">
+<meta property="og:image" content="https://source.lijundong.com/17-2-28/28695556-file_1488289419385_10e6a.png">
+<meta property="og:image" content="https://source.lijundong.com/17-2-28/62092344-file_1488289444123_a40c.png">
+<meta property="og:image" content="https://source.lijundong.com/17-3-1/23876944-file_1488298747142_8a89.png">
+<meta property="og:image" content="https://source.lijundong.com/17-3-1/33543805-file_1488298796532_150c9.png">
 <meta property="og:updated_time" content="2017-11-21T08:03:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript 的赋值、引用以及深拷贝、浅拷贝">
 <meta name="twitter:description" content="在之前总结 This 用法 的时候,遇到了传参问题，由此意识到了复制与引用的问题，说得高端些，引申出了深拷贝与浅拷贝的问题，后来在链家面试的时候，和一面也讨论到这个问题，当时的理解比较乱，涉及到深拷贝实现的方面都不熟悉，现在试着总结一下。">
-<meta name="twitter:image" content="http://source.lijundong.com/17-2-28/11497418-file_1488289350451_141ba.png">
+<meta name="twitter:image" content="https://source.lijundong.com/17-2-28/11497418-file_1488289350451_141ba.png">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -290,11 +290,11 @@
     </p>
     <p class="copyright-item">
       <span>来源: </span>
-      <a href="http://lijundong.com">http://lijundong.com</a>
+      <a href="https://leeon.im">https://leeon.im</a>
     </p>
     <p class="copyright-item">
       <span>链接: </span>
-      <a href="http://lijundong.com/deep-clone-vs-shallow-clone/">http://lijundong.com/deep-clone-vs-shallow-clone/</a>
+      <a href="https://leeon.im/deep-clone-vs-shallow-clone/">https://leeon.im/deep-clone-vs-shallow-clone/</a>
     </p>
 
     <p class="copyright-item lincese">
@@ -455,7 +455,7 @@
   
   <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'http://lijundong.com/deep-clone-vs-shallow-clone/';
+        this.page.url = 'https://leeon.im/deep-clone-vs-shallow-clone/';
         this.page.identifier = 'deep-clone-vs-shallow-clone/';
         this.page.title = 'Javascript 的赋值、引用以及深拷贝、浅拷贝';
     };

@@ -1,5 +1,5 @@
-Sitemap: http://www.lijundong.com/sitemap.xml
-Sitemap: http://www.lijundong.com/baidusitemap.xml
+Sitemap: https://leeon.im/sitemap.xml
+Sitemap: https://leeon.im/baidusitemap.xml
 
 
 # hexo robots.txt
@@ -18,5 +18,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://www.lijundong.com/sitemap.xml
-Sitemap: http://www.lijundong.com/baidusitemap.xml
+Sitemap: https://leeon.im/sitemap.xml
+Sitemap: https://leeon.im/baidusitemap.xml
