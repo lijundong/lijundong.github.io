@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 11 Apr 2019 07:06:06 GMT</pubDate>
+    <pubDate>Wed, 22 May 2019 06:17:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>提高效率的方法论和工具</title>
+      <link>https://leeon.im/efficient-method-and-tool/</link>
+      <guid>https://leeon.im/efficient-method-and-tool/</guid>
+      <pubDate>Tue, 21 May 2019 10:37:51 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;这篇内容是我在公司内的分享「打造职场竞争力」的补充内容，日常使用的工具以及一些方法论，仅供参考。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/efficient-method-and-tool/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>小程序 IntersectionObserver 使用案例</title>
@@ -283,21 +297,6 @@
       </description>
       
       <comments>https://leeon.im/A-Javascript-journey-with-only-six-characters/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Javascript 分号自动插入机制</title>
-      <link>https://leeon.im/javascript-asi/</link>
-      <guid>https://leeon.im/javascript-asi/</guid>
-      <pubDate>Mon, 26 Feb 2018 02:01:03 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/18-3-5/17920261.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;最近彻底从分号党变节为无分号群众，分号党的日子对 Javascript 分号的原理不求甚解，这几天仔细了解了下，这篇文章总结下 ASI（automatic semicolon insertion， 分号自动插入机制）&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/javascript-asi/#disqus_thread</comments>
     </item>
     
   </channel>
