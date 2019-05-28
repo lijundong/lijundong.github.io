@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="Centos 开发环境依赖安装。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-03-23T05:41:10.563Z">
+<meta property="og:updated_time" content="2019-05-28T08:16:33.435Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Centos 7 开发环境依赖安装">
 <meta name="twitter:description" content="Centos 开发环境依赖安装。">
@@ -255,7 +255,7 @@
 </ul>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>Q: manpath: can’t set the locale; make sure $LC_* and $LANG are correct</p>
 <blockquote>
-<p>A: <code>localedef -i en_US -f UTF-8 en_US.UTF-8</code></p>
+<p>A:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> .zshrc 中设置，记得 <span class="built_in">source</span></span></span><br><span class="line">export LC_ALL=en_US.UTF-8  </span><br><span class="line">export LANG=en_US.UTF-8</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <p>Q：Cannot find color scheme ‘gruvbox’</p>
 <blockquote>

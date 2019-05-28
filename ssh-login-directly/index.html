@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， ssh root@xxx.xxx.xxx.xxx，接着输入 password，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。12345678910111213# 优化前# 公司机器ssh root@xxx.xxx.xxx.xxxpassword: ****">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-03-22T03:09:54.729Z">
+<meta property="og:updated_time" content="2019-05-28T08:55:41.860Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置 SSH 快捷登录">
 <meta name="twitter:description" content="目前我有两台开发机，一台公司，一台私人，日常开发对开发机强依赖，但一直以来都是用最原始的方式登录机器， ssh root@xxx.xxx.xxx.xxx，接着输入 password，偶尔会出现密码和 IP 记混的状况，得尝试好几次，不妨用十分钟优化这个过程，一劳永逸。12345678910111213# 优化前# 公司机器ssh root@xxx.xxx.xxx.xxxpassword: ****">
@@ -225,8 +225,8 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置主机别名"><span class="toc-text">设置主机别名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置公钥登录"><span class="toc-text">设置公钥登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#生成公钥"><span class="toc-text">生成公钥</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-SSH-公钥登录"><span class="toc-text">配置 SSH 公钥登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一步"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二步"><span class="toc-text">第二步</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#免密码登录"><span class="toc-text">免密码登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#提示错误-？"><span class="toc-text">提示错误 ？</span></a></li></ol></li></ol>
-    </div>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#环境"><span class="toc-text">环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置主机别名"><span class="toc-text">设置主机别名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置公钥登录"><span class="toc-text">设置公钥登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#生成公钥"><span class="toc-text">生成公钥</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置-SSH-公钥登录"><span class="toc-text">配置 SSH 公钥登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一步"><span class="toc-text">第一步</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第二步"><span class="toc-text">第二步</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#免密码登录"><span class="toc-text">免密码登录</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#提示错误-？"><span class="toc-text">提示错误 ？</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#安全配置"><span class="toc-text">安全配置</span></a>
+    </li></div>
   </div>
 
 
@@ -265,7 +265,11 @@
 <p>登陆成功！</p>
 <h4 id="提示错误-？"><a href="#提示错误-？" class="headerlink" title="提示错误 ？"></a>提示错误 ？</h4><p>我第一次尝试免密码登录时遇到以下错误，</p>
 <p>提示<strong>错误</strong>： <code>Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).</code></p>
-<p>尝试将开发机中的 <code>.ssh</code> <strong>目录权限</strong>设置为 600 或者 700<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod 700 .ssh/</span><br><span class="line">chmod 600 .ssh/authorized_keys</span><br><span class="line">restorecon -r -vv .ssh/authorized_keys</span><br></pre></td></tr></table></figure></p>
+<p>尝试将开发机中的 <code>.ssh</code> <strong>目录权限</strong>设置为 600 或者 700 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod 700 .ssh/</span><br><span class="line">chmod 600 .ssh/authorized_keys</span><br><span class="line">restorecon -r -vv .ssh/authorized_keys</span><br></pre></td></tr></table></figure>
+<h2 id="安全配置"><a href="#安全配置" class="headerlink" title="安全配置"></a>安全配置</h2><p>为了服务器的安全，我们需要做一些必要的配置，需要对 <code>/etc/ssh/sshd_config</code> 的配置进行修改</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 关闭允许任何密码认证</span></span><br><span class="line">ChallengeResponseAuthentication no</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 禁止密码登录</span></span><br><span class="line">PasswordAuthentication no</span><br><span class="line"></span><br><span class="line">UsePAM no</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 禁止 root 登录</span></span><br><span class="line">PermitRootLogin no</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 修改默认的登录端口，下面举个例子，将 port 配置为 3456此处修改，上面的客户端配置的端口需要同步修改</span></span><br><span class="line">Port 3456</span><br></pre></td></tr></table></figure>
+<p>保存修改，执行 <code>service sshd restart</code> 命令，生效配置，修改完，不要急着退出，先验证能再次登录再退出，可以避免被自己锁门外……</p>
 
       
     </div>
