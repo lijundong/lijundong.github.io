@@ -8,8 +8,44 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Wed, 22 May 2019 08:52:50 GMT</pubDate>
+    <pubDate>Tue, 02 Jul 2019 17:28:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>产品随想</title>
+      <link>https://leeon.im/thinking-in-roduct-managent/</link>
+      <guid>https://leeon.im/thinking-in-roduct-managent/</guid>
+      <pubDate>Tue, 02 Jul 2019 14:14:34 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;近期对产品的思考总结。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/thinking-in-roduct-managent/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>打造你的私人通知机器人</title>
+      <link>https://leeon.im/build-your-own-private-message-bot/</link>
+      <guid>https://leeon.im/build-your-own-private-message-bot/</guid>
+      <pubDate>Wed, 29 May 2019 06:57:14 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;mail&quot;&gt;&lt;a href=&quot;#mail&quot; class=&quot;headerlink&quot; title=&quot;mail&quot;&gt;&lt;/a&gt;mail&lt;/h2&gt;&lt;p&gt;nodemailer&lt;/p&gt;
+&lt;p&gt;const mailInfo = {&lt;br&gt; 
+          
+        
+      
+      </description>
+      
+      <comments>https://leeon.im/build-your-own-private-message-bot/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>提高效率的方法论和工具</title>
@@ -269,34 +305,6 @@
       </description>
       
       <comments>https://leeon.im/node-dev-config/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>开发配置相关</title>
-      <link>https://leeon.im/coder-setting/</link>
-      <guid>https://leeon.im/coder-setting/</guid>
-      <pubDate>Thu, 24 May 2018 02:25:08 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;开发环境配置贴集中&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/coder-setting/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>【译】六个字符构建 Javascript 世界</title>
-      <link>https://leeon.im/A-Javascript-journey-with-only-six-characters/</link>
-      <guid>https://leeon.im/A-Javascript-journey-with-only-six-characters/</guid>
-      <pubDate>Thu, 01 Mar 2018 08:46:25 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/18-3-2/27593533.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;无用但有趣的冷知识，通过&lt;code&gt;[ ] ( ) ! +&lt;/code&gt; 构建 Javascript 世界，hope you enjoy it！ &lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/A-Javascript-journey-with-only-six-characters/#disqus_thread</comments>
     </item>
     
   </channel>

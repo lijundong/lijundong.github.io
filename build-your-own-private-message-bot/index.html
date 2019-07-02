@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head><meta name="generator" content="Hexo 3.8.0">
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="pkU2KYRN1tWvy4_-hckuBnzMDytRrfPQpV9Y49Ej1I8">
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="description" content="打造你的私人通知机器人">
+
+
+
+
+  <meta name="keywords" content="wechat,mail,">
+
+
+
+
+  <link rel="alternate" href="/rss2.xml" title="Leeonfield">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico?v=2.4.x">
+
+
+
+<link rel="canonical" href="https://leeon.im/build-your-own-private-message-bot/">
+
+
+<meta name="description" content="mailnodemailer const mailInfo = {  user: &amp;#39;bot@foxmail.com‘,  pass: ‘XXXXXXX’} 12345678910111213141516async function main(title, htmlInfo) &amp;#123;  let transporter = nodemailer.createTransport(&amp;#12">
+<meta name="keywords" content="wechat,mail">
+<meta property="og:type" content="article">
+<meta property="og:title" content="打造你的私人通知机器人">
+<meta property="og:url" content="https://leeon.im/build-your-own-private-message-bot/index.html">
+<meta property="og:site_name" content="Leeonfield">
+<meta property="og:description" content="mailnodemailer const mailInfo = {  user: &amp;#39;bot@foxmail.com‘,  pass: ‘XXXXXXX’} 12345678910111213141516async function main(title, htmlInfo) &amp;#123;  let transporter = nodemailer.createTransport(&amp;#12">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2019-05-29T07:37:44.947Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="打造你的私人通知机器人">
+<meta name="twitter:description" content="mailnodemailer const mailInfo = {  user: &amp;#39;bot@foxmail.com‘,  pass: ‘XXXXXXX’} 12345678910111213141516async function main(title, htmlInfo) &amp;#123;  let transporter = nodemailer.createTransport(&amp;#12">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css">
+
+
+
+
+
+<script>
+  var CONFIG = {
+    search: true,
+    searchPath: "/search.xml",
+    fancybox: true,
+    toc: true,
+  }
+</script>
+
+
+
+
+  
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?d8428121d0d837e8e98306a04b7cea59";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+
+
+
+    <title> 打造你的私人通知机器人 · Leeonfield </title>
+  </head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">Leeonfield</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            Home
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            Archives
+          
+        </li>
+      </a>
+    
+      <a href="/tags">
+        <li class="mobile-menu-item">
+          
+          
+            Tags
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            About
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">Leeonfield</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              首页
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              归档
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/tags">
+            
+            
+              标签
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              关于
+            
+          </a>
+        </li>
+      
+      
+        <li class="menu-search">
+          <form>
+            <i class="iconfont icon-search" id="open-search"></i>
+            <input type="text" class="search-input" id="search-input">
+            <i class="iconfont icon-close" id="close-search"></i>
+          </form>
+        </li>
+      
+    </ul>
+  
+</nav>
+
+      </header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          打造你的私人通知机器人
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019年5月29日
+        </span>
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#mail"><span class="toc-text">mail</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wechaty"><span class="toc-text">wechaty</span></a></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <a id="more"></a>
+<h2 id="mail"><a href="#mail" class="headerlink" title="mail"></a>mail</h2><p>nodemailer</p>
+<p>const mailInfo = {<br>  user: <a href="mailto:&#39;bot@foxmail.com" target="_blank" rel="noopener">&#39;bot@foxmail.com</a>‘,<br>  pass: ‘XXXXXXX’<br>}</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span>(<span class="params">title, htmlInfo</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> transporter = nodemailer.createTransport(&#123;</span><br><span class="line">    service: <span class="string">"QQ"</span>,</span><br><span class="line">    auth: &#123;</span><br><span class="line">      user: mailInfo.user,</span><br><span class="line">      pass: mailInfo.pass</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">let</span> info = <span class="keyword">await</span> transporter.sendMail(&#123;</span><br><span class="line">    <span class="keyword">from</span>: <span class="string">'"Leeon_Bot 🤖️" &lt;bot@foxmail.com&gt;'</span>,</span><br><span class="line">    to: <span class="string">"leeon@gmail.com"</span>,</span><br><span class="line">    subject: title,</span><br><span class="line">    html: htmlInfo</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Message sent: %s"</span>, info.messageId);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="wechaty"><a href="#wechaty" class="headerlink" title="wechaty"></a>wechaty</h2><p>环境依赖<br>yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y</p>
+<p><a href="https://docs.chatie.io/quick-start" target="_blank" rel="noopener">https://docs.chatie.io/quick-start</a></p>
+
+      
+    </div>
+
+    
+      
+      
+
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>作者: </span>
+      <span>leeon</span>
+    </p>
+    <p class="copyright-item">
+      <span>来源: </span>
+      <a href="https://leeon.im">https://leeon.im</a>
+    </p>
+    <p class="copyright-item">
+      <span>链接: </span>
+      <a href="https://leeon.im/build-your-own-private-message-bot/">https://leeon.im/build-your-own-private-message-bot/</a>
+    </p>
+
+    <p class="copyright-item lincese">
+      
+      本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+    </p>
+  </div>
+
+
+
+      
+      
+  <div class="post-reward">
+    <input type="checkbox" name="reward" id="reward" hidden>
+    <label class="reward-button" for="reward">赞赏支持</label>
+    <div class="qr-code">
+      
+      
+        <label class="qr-code-image" for="reward">
+          <img class="image" src="/image/reward/wechat-pay.jpg" title="wechat">
+        </label>
+      
+      
+    </div>
+  </div>
+
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/wechat/">wechat</a>
+            
+              <a href="/tags/mail/">mail</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/thinking-in-roduct-managent/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">产品随想</span>
+        <span class="prev-text nav-mobile">上一篇</span>
+      </a>
+    
+    
+      <a class="next" href="/efficient-method-and-tool/">
+        <span class="next-text nav-default">提高效率的方法论和工具</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>  
+      </main>
+
+      <footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:leeonfield@gmail.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/lijundong" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      <a href="/rss2.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
+
+
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+  </span>
+  
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2015 - 
+    
+    2019
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">leeon</span>
+  </span>
+</div>
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+
+    
+  
+
+  
+  <script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://leeon.im/build-your-own-private-message-bot/';
+        this.page.identifier = 'build-your-own-private-message-bot/';
+        this.page.title = '打造你的私人通知机器人';
+    };
+    (function() {
+    var d = document, s = d.createElement('script');
+
+    s.src = '//http-www-lijundong-com.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();  
+  </script>
+
+  
+
+
+
+
+    
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.4.x"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.4.x"></script>
+
+    
+  <script type="text/html" id="search-result">
+    <article class="post">
+      <header class="post-header">
+        <h1 class="post-title">
+          <a href="$url$" class="post-link">
+            $title$
+          </a>
+        </h1>
+      </header>
+      <div class="post-content">
+        $content$
+        <div class="read-more">
+          <a href="$url$" class="read-more-link">
+            阅读更多
+          </a>
+        </div>
+      </div>
+    </article>
+  </script>
+  <script type="text/html" id="no-search-result">
+    <div class="no-result">
+      <h2>No result found!</h2>
+    </div>
+  </script>
+  <script type="text/javascript" src="/js/src/search.js?v=2.4.x"></script>
+
+  </body>
+</html>

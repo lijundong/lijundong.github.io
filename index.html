@@ -207,6 +207,91 @@
     <header class="post-header">
       <h1 class="post-title">
         
+          <a class="post-link" href="/thinking-in-roduct-managent/">产品随想</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019年7月2日
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+          
+        
+
+        
+          <p>近期对产品的思考总结。</p>
+          <div class="read-more">
+            <a href="/thinking-in-roduct-managent/" class="read-more-link">阅读更多</a>
+          </div>
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          <a class="post-link" href="/build-your-own-private-message-bot/">打造你的私人通知机器人</a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2019年5月29日
+        </span>
+      </div>
+    </header>
+
+    
+    
+
+    <div class="post-content">
+      
+        
+        
+
+        
+          <a id="more"></a>
+<h2 id="mail"><a href="#mail" class="headerlink" title="mail"></a>mail</h2><p>nodemailer</p>
+<p>const mailInfo = {<br>  user: <a href="mailto:&#39;bot@foxmail.com" target="_blank" rel="noopener">&#39;bot@foxmail.com</a>‘,<br>  pass: ‘XXXXXXX’<br>}</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span>(<span class="params">title, htmlInfo</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> transporter = nodemailer.createTransport(&#123;</span><br><span class="line">    service: <span class="string">"QQ"</span>,</span><br><span class="line">    auth: &#123;</span><br><span class="line">      user: mailInfo.user,</span><br><span class="line">      pass: mailInfo.pass</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">let</span> info = <span class="keyword">await</span> transporter.sendMail(&#123;</span><br><span class="line">    <span class="keyword">from</span>: <span class="string">'"Leeon_Bot 🤖️" &lt;bot@foxmail.com&gt;'</span>,</span><br><span class="line">    to: <span class="string">"leeon@gmail.com"</span>,</span><br><span class="line">    subject: title,</span><br><span class="line">    html: htmlInfo</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Message sent: %s"</span>, info.messageId);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="wechaty"><a href="#wechaty" class="headerlink" title="wechaty"></a>wechaty</h2><p>环境依赖<br>yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y</p>
+<p><a href="https://docs.chatie.io/quick-start" target="_blank" rel="noopener">https://docs.chatie.io/quick-start</a></p>
+
+        
+      
+    </div>
+
+    
+
+    
+
+  </article>
+
+    
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
           <a class="post-link" href="/efficient-method-and-tool/">提高效率的方法论和工具</a>
         
       </h1>
@@ -527,90 +612,6 @@
           <p><img src="//source.lijundong.com/19-3-15/WX20190217-190910.jpg" alt=""><br>小程序中使用 <code>iconfont</code> 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 <code>iconfont</code> 的方案。</p>
           <div class="read-more">
             <a href="/mini-program-use-iconfont/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/four-springs/">四个春天</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2019年1月6日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p><img src="//source.lijundong.com/19-1-6/94594660.jpg" alt=""></p>
-          <div class="read-more">
-            <a href="/four-springs/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/year-again-2019/">厨子的仪式感</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2019年1月4日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p><img src="//source.lijundong.com/19-1-6/94618431.jpg" alt=""><br>看着 17 年的总结，精神维度感觉已经过了很久，每当这个时候，物理的衡量刻度显现出价值，提醒你，仅是又过一年而已。<br>是啊，又是一年。</p>
-          <div class="read-more">
-            <a href="/year-again-2019/" class="read-more-link">阅读更多</a>
           </div>
         
       
