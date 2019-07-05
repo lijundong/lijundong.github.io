@@ -267,15 +267,14 @@
       
         
         
+          
+        
 
         
-          <a id="more"></a>
-<h2 id="mail"><a href="#mail" class="headerlink" title="mail"></a>mail</h2><p>nodemailer</p>
-<p>const mailInfo = {<br>  user: <a href="mailto:&#39;bot@foxmail.com" target="_blank" rel="noopener">&#39;bot@foxmail.com</a>‘,<br>  pass: ‘XXXXXXX’<br>}</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span>(<span class="params">title, htmlInfo</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> transporter = nodemailer.createTransport(&#123;</span><br><span class="line">    service: <span class="string">"QQ"</span>,</span><br><span class="line">    auth: &#123;</span><br><span class="line">      user: mailInfo.user,</span><br><span class="line">      pass: mailInfo.pass</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">let</span> info = <span class="keyword">await</span> transporter.sendMail(&#123;</span><br><span class="line">    <span class="keyword">from</span>: <span class="string">'"Leeon_Bot 🤖️" &lt;bot@foxmail.com&gt;'</span>,</span><br><span class="line">    to: <span class="string">"leeon@gmail.com"</span>,</span><br><span class="line">    subject: title,</span><br><span class="line">    html: htmlInfo</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Message sent: %s"</span>, info.messageId);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="wechaty"><a href="#wechaty" class="headerlink" title="wechaty"></a>wechaty</h2><p>环境依赖<br>yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y</p>
-<p><a href="https://docs.chatie.io/quick-start" target="_blank" rel="noopener">https://docs.chatie.io/quick-start</a></p>
-
+          <p>当我需要一个通知机器人时，我的选型过程以及最终方案。</p>
+          <div class="read-more">
+            <a href="/build-your-own-private-message-bot/" class="read-more-link">阅读更多</a>
+          </div>
         
       
     </div>

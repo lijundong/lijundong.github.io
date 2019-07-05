@@ -33,7 +33,7 @@
       <link href="/build-your-own-private-message-bot/"/>
       <url>/build-your-own-private-message-bot/</url>
       
-        <content type="html"><![CDATA[<a id="more"></a><h2 id="mail"><a href="#mail" class="headerlink" title="mail"></a>mail</h2><p>nodemailer</p><p>const mailInfo = {<br>  user: <a href="mailto:&#39;bot@foxmail.com" target="_blank" rel="noopener">&#39;bot@foxmail.com</a>‘,<br>  pass: ‘XXXXXXX’<br>}</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span>(<span class="params">title, htmlInfo</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> transporter = nodemailer.createTransport(&#123;</span><br><span class="line">    service: <span class="string">"QQ"</span>,</span><br><span class="line">    auth: &#123;</span><br><span class="line">      user: mailInfo.user,</span><br><span class="line">      pass: mailInfo.pass</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">let</span> info = <span class="keyword">await</span> transporter.sendMail(&#123;</span><br><span class="line">    <span class="keyword">from</span>: <span class="string">'"Leeon_Bot 🤖️" &lt;bot@foxmail.com&gt;'</span>,</span><br><span class="line">    to: <span class="string">"leeon@gmail.com"</span>,</span><br><span class="line">    subject: title,</span><br><span class="line">    html: htmlInfo</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Message sent: %s"</span>, info.messageId);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="wechaty"><a href="#wechaty" class="headerlink" title="wechaty"></a>wechaty</h2><p>环境依赖<br>yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y</p><p><a href="https://docs.chatie.io/quick-start" target="_blank" rel="noopener">https://docs.chatie.io/quick-start</a></p>]]></content>
+        <content type="html"><![CDATA[<p>当我需要一个通知机器人时，我的选型过程以及最终方案。</p><a id="more"></a><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>我的私人服务器有一些定时任务，任务内容是去一些站点爬取内容，当有我需要的内容时，发消息给我。这个消息很短并且有时效性，所以通知既需要保证时效性，同时对我的侵入不能太强。</p><p>针对通知，我知道的方案有邮箱、微信机器人、企业通讯工具机器人（企业微信、钉钉），经朋友提醒，还有 <a href="http://sc.ftqq.com/3.version" target="_blank" rel="noopener">Server 酱</a>，如果还有其他的方案，欢迎反馈，下面针对当前的需求分析这几种方案。</p><table><thead><tr><th style="text-align:center">方案</th><th style="text-align:center">实现方式</th><th style="text-align:center">限制</th><th style="text-align:center">通知形式</th><th style="text-align:center">时效性</th><th style="text-align:center">通知侵入</th></tr></thead><tbody><tr><td style="text-align:center">邮件</td><td style="text-align:center">nodemailer</td><td style="text-align:center">邮箱</td><td style="text-align:center">邮件</td><td style="text-align:center">低</td><td style="text-align:center">强</td></tr><tr><td style="text-align:center">企业微信机器人</td><td style="text-align:center">webhook</td><td style="text-align:center">需要一个公司 &amp; 群</td><td style="text-align:center">企业微信消息</td><td style="text-align:center">强</td><td style="text-align:center">一般</td></tr><tr><td style="text-align:center">钉钉机器人</td><td style="text-align:center">webhook</td><td style="text-align:center">群</td><td style="text-align:center">钉钉消息</td><td style="text-align:center">强</td><td style="text-align:center">一般</td></tr><tr><td style="text-align:center">telegram</td><td style="text-align:center">Telegram Bot</td><td style="text-align:center">国内某些区域需要科学上网</td><td style="text-align:center">telegram 消息</td><td style="text-align:center">网络问题导致较弱的延时</td><td style="text-align:center">一般</td></tr><tr><td style="text-align:center">微信机器人</td><td style="text-align:center">wechaty 等微信协议</td><td style="text-align:center">新注册微信无法使用 web 协议 <br>非 web 协议实现成本较高且要求实体机</td><td style="text-align:center">微信消息</td><td style="text-align:center">高</td><td style="text-align:center">弱</td></tr><tr><td style="text-align:center">Server 酱</td><td style="text-align:center">服务号通知</td><td style="text-align:center">关注服务号</td><td style="text-align:center">微信消息</td><td style="text-align:center">强</td><td style="text-align:center">弱</td></tr></tbody></table><p>邮件并不适合这种即时消息通知场景，并且有种杀鸡用牛刀的意思，我用了一段时间后，果断开始找替代品。</p><p>之前了解过微信机器人，看了文档和社区之后意识到实现成本略高，首先需要一个可以 web 端登录的微信号，其次你得有两个微信号（因为微信限制多端登录），同时还得承受号被封的危险……当然我直接被卡在了第一步，虽然小号注册很早，但依然不能登录 web 端，有些帖子说号需要”养“一段时间，客户端登录，多发朋友圈，多分享，多加好友，这样的操作也透着玄学的意思，最终放弃。</p><p>快速简单的方案不可行之后，开始考虑从其他 IM 工具入手，比如企业微信和钉钉原生支持机器人，相交于微信需要通过公司的方式进入，钉钉则简单很多，建一个群（拉一个人进来，创建一个机器人，再把刚拉进来的人踢掉），创建机器人之后，机器人对应一个 hook 地址，带上消息请求这个地址就直接发消息，简单粗暴，方便。虽然需要多开一个钉钉，但因为除了这个机器人，没有其他的消息通知内容，几乎无感，可以忍受。到这里，需求已经满足了。</p><p>在知道 Server 酱之后，我觉得 Server 酱的模式要优于钉钉，直接在微信看消息，后续如果有新的通知场景，我会试试，它的逻辑是将微信号绑定在 Server 酱这个服务号下，调用接口把要发送的消息发给 Server 酱的服务器，让服务器调微信发送服务号通知，思路取巧。</p><p>正文已经结束，下面说下对应几个方案的代码实现</p><h2 id="邮箱-amp-nodemailer"><a href="#邮箱-amp-nodemailer" class="headerlink" title="邮箱 &amp; nodemailer"></a>邮箱 &amp; nodemailer</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> mailInfo = &#123;</span><br><span class="line">  user: <span class="string">'bot@foxmail.com'</span>,</span><br><span class="line">  pass: <span class="string">'XXXXXXX'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">main</span>(<span class="params">title, htmlInfo</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> transporter = nodemailer.createTransport(&#123;</span><br><span class="line">    service: <span class="string">"QQ"</span>,</span><br><span class="line">    auth: &#123;</span><br><span class="line">      user: mailInfo.user,</span><br><span class="line">      pass: mailInfo.pass</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="keyword">let</span> info = <span class="keyword">await</span> transporter.sendMail(&#123;</span><br><span class="line">    <span class="keyword">from</span>: <span class="string">'"Leeon_Bot 🤖" &lt;bot@foxmail.com&gt;'</span>,</span><br><span class="line">    to: <span class="string">"leeon@gmail.com"</span>,</span><br><span class="line">    subject: title,</span><br><span class="line">    html: htmlInfo</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="微信机器人-amp-wechaty"><a href="#微信机器人-amp-wechaty" class="headerlink" title="微信机器人 &amp; wechaty"></a>微信机器人 &amp; wechaty</h2><p>wechaty 的封装十分强大，上手也极其简单，具体可以参考 <a href="https://docs.chatie.io/quick-start" target="_blank" rel="noopener">wechaty 文档</a>，这里不再赘述</p><p>Linux 环境中我遇到了依赖问题，通过安装以下依赖解决：<br><code>yum install pango.x86_64 libXcomposite.x86_64 libXcursor.x86_64 libXdamage.x86_64 libXext.x86_64 libXi.x86_64 libXtst.x86_64 cups-libs.x86_64 libXScrnSaver.x86_64 libXrandr.x86_64 GConf2.x86_64 alsa-lib.x86_64 atk.x86_64 gtk3.x86_64 -y</code></p><h2 id="钉钉"><a href="#钉钉" class="headerlink" title="钉钉"></a>钉钉</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这里用 dingtalk-robot 这个封装好的包演示一下</span></span><br><span class="line"><span class="keyword">const</span> robot = <span class="built_in">require</span>(<span class="string">'dingtalk-robot'</span>)(xxxxx)</span><br><span class="line"><span class="keyword">const</span> robotShot = <span class="function"><span class="params">data</span> =&gt;</span> &#123;</span><br><span class="line">  robot.send(&#123;</span><br><span class="line">    msgtype: <span class="string">'markdown'</span>,</span><br><span class="line">    <span class="string">'markdown'</span>: &#123;</span><br><span class="line">      <span class="string">"title"</span>:<span class="string">"New Msg"</span>,</span><br><span class="line">      <span class="string">"text"</span>: data</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">      log(<span class="string">'Error ==&gt;&gt;'</span>, err)</span><br><span class="line">    &#125;</span><br><span class="line">    log(<span class="string">'Success'</span>, <span class="keyword">new</span> <span class="built_in">Date</span>())</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -48,6 +48,10 @@
             <tag> wechat </tag>
             
             <tag> mail </tag>
+            
+            <tag> 钉钉 </tag>
+            
+            <tag> 机器人 </tag>
             
         </tags>
       
@@ -130,9 +134,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
             <tag> git </tag>
             
@@ -602,9 +606,9 @@
       
         <tags>
             
-            <tag> chrome </tag>
-            
             <tag> mac </tag>
+            
+            <tag> chrome </tag>
             
             <tag> 开发机 </tag>
             
@@ -780,9 +784,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> OAuth 2.0 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -813,9 +817,9 @@
             
             <tag> github </tag>
             
-            <tag> react router4 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> react router4 </tag>
             
         </tags>
       
@@ -1960,9 +1964,9 @@
       
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -2197,9 +2201,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
       
@@ -2280,9 +2284,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -2440,13 +2444,13 @@
       
         <tags>
             
-            <tag> 工具使用 </tag>
-            
             <tag> sublimetext </tag>
             
             <tag> 插件 </tag>
             
             <tag> 力所能及的分享 </tag>
+            
+            <tag> 工具使用 </tag>
             
         </tags>
       
@@ -2612,9 +2616,9 @@
       
         <tags>
             
-            <tag> kindle </tag>
-            
             <tag> 工具使用 </tag>
+            
+            <tag> kindle </tag>
             
         </tags>
       
@@ -2641,9 +2645,9 @@
             
             <tag> chrome </tag>
             
-            <tag> 扩展 </tag>
-            
             <tag> javascript </tag>
+            
+            <tag> 扩展 </tag>
             
         </tags>
       
