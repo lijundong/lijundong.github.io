@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Tue, 02 Jul 2019 17:50:08 GMT</pubDate>
+    <pubDate>Mon, 05 Aug 2019 15:20:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>今天到拉萨</title>
+      <link>https://leeon.im/318-journey-4th-anniversary/</link>
+      <guid>https://leeon.im/318-journey-4th-anniversary/</guid>
+      <pubDate>Mon, 05 Aug 2019 13:16:08 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;写在骑行川藏线四周年。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/318-journey-4th-anniversary/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>产品随想</title>
@@ -283,20 +297,6 @@
       </description>
       
       <comments>https://leeon.im/proxy-in-dev/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Node 环境配置</title>
-      <link>https://leeon.im/node-dev-config/</link>
-      <guid>https://leeon.im/node-dev-config/</guid>
-      <pubDate>Fri, 15 Jun 2018 10:33:28 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;FE ，包含 node、nrm、 nvm &lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/node-dev-config/#disqus_thread</comments>
     </item>
     
   </channel>
