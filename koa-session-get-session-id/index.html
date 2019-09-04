@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="使用 koa-session 时，获取 sessionid。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-09-04T16:48:03.139Z">
+<meta property="og:updated_time" content="2019-09-04T16:56:55.547Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="koa-session 获取当前会话的 sessionid">
 <meta name="twitter:description" content="使用 koa-session 时，获取 sessionid。">
@@ -225,7 +225,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tl-dr9"><span class="toc-text">tl;dr9</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#场景"><span class="toc-text">场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原因"><span class="toc-text">原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多一种方案"><span class="toc-text">多一种方案</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tl-dr"><span class="toc-text">tl;dr</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#场景"><span class="toc-text">场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原因"><span class="toc-text">原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多一种方案"><span class="toc-text">多一种方案</span></a></li></ol>
     </div>
   </div>
 
@@ -234,7 +234,7 @@
       
         <p>使用 <code>koa-session</code> 时，获取 sessionid。</p>
 <a id="more"></a>
-<h2 id="tl-dr9"><a href="#tl-dr9" class="headerlink" title="tl;dr9"></a>tl;dr9</h2><p>先说结论，如果在使用 <code>koa-session</code> 时需要获取当前<strong>新建</strong> <code>session</code> 的 <code>sessionid</code> 时，可以通过手动调用 <code>koa-session</code> 的 <code>save</code> 方法立即保存当前的 session 更改，即 <code>await ctx.session.manuallyCommit();</code> 或 <code>await ctx.session.save();</code>（强制保存），调用后，我们可以在 <code>ctx.response.header</code> 的 <code>set-cookie</code> 属性中拿到当前的 <code>sessionid</code>。</p>
+<h2 id="tl-dr"><a href="#tl-dr" class="headerlink" title="tl;dr"></a>tl;dr</h2><p>先说结论，如果在使用 <code>koa-session</code> 时需要获取当前<strong>新建</strong> <code>session</code> 的 <code>sessionid</code> 时，可以通过手动调用 <code>koa-session</code> 的 <code>save</code> 方法立即保存当前的 session 更改，即 <code>await ctx.session.manuallyCommit();</code> 或 <code>await ctx.session.save();</code>（强制保存），调用后，我们可以在 <code>ctx.response.header</code> 的 <code>set-cookie</code> 属性中拿到当前的 <code>sessionid</code>。</p>
 <p>接下来说下场景和原因。</p>
 <h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>项目技术背景如下，其中单点的逻辑这里简化描述，我们目前使用的方案是 <a href="https://apereo.github.io/cas/6.0.x/index.html" target="_blank" rel="noopener">CAS</a>，下文我们也会用 CAS 表述单点服务。</p>
 <blockquote>
