@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 05 Aug 2019 15:20:09 GMT</pubDate>
+    <pubDate>Wed, 04 Sep 2019 16:48:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>koa-session 获取当前会话的 sessionid</title>
+      <link>https://leeon.im/koa-session-get-session-id/</link>
+      <guid>https://leeon.im/koa-session-get-session-id/</guid>
+      <pubDate>Wed, 04 Sep 2019 11:07:00 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;使用 &lt;code&gt;koa-session&lt;/code&gt; 时，获取 sessionid。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/koa-session-get-session-id/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>今天到拉萨</title>
@@ -283,20 +297,6 @@
       </description>
       
       <comments>https://leeon.im/headless-browser/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>开发中的网络代理</title>
-      <link>https://leeon.im/proxy-in-dev/</link>
-      <guid>https://leeon.im/proxy-in-dev/</guid>
-      <pubDate>Sun, 17 Jun 2018 07:13:23 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;日常开发中，关于代理的一些总结，重点聊聊 &lt;a href=&quot;https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Proxy SwitchyOmega&lt;/a&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/proxy-in-dev/#disqus_thread</comments>
     </item>
     
   </channel>
