@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Wed, 04 Sep 2019 16:56:55 GMT</pubDate>
+    <pubDate>Thu, 05 Sep 2019 06:53:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>单页应用处理 406 状态</title>
+      <link>https://leeon.im/SPA-fix-406-status-code/</link>
+      <guid>https://leeon.im/SPA-fix-406-status-code/</guid>
+      <pubDate>Thu, 05 Sep 2019 02:48:52 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;书接上文，&lt;a href=&quot;https://leeon.im/koa-session-get-session-id/&quot;&gt;上篇文章&lt;/a&gt;已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/SPA-fix-406-status-code/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>koa-session 获取当前会话的 sessionid</title>
@@ -283,20 +297,6 @@
       </description>
       
       <comments>https://leeon.im/deply-puppeteer-on-production/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>“木偶”浏览器简简史</title>
-      <link>https://leeon.im/headless-browser/</link>
-      <guid>https://leeon.im/headless-browser/</guid>
-      <pubDate>Sat, 28 Jul 2018 09:09:39 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/18-9-10/19197120.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;之前在团队内做了一次关于 Headless Browser 的分享，趁着周末，梳理成文字版本，主要内容涉及到 Selenium、PhantomJS、Puppeteer、Headeless Chrome&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/headless-browser/#disqus_thread</comments>
     </item>
     
   </channel>

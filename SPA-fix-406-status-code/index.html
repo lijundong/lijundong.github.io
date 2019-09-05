@@ -12,12 +12,12 @@
 
 
 
-  <meta name="description" content="测试 - Hexo 部署到阿里云">
+  <meta name="description" content="单页应用处理 406 状态">
 
 
 
 
-  <meta name="keywords" content="服务器,hexo,git,">
+  <meta name="keywords" content="SPA,nodejs,koa,">
 
 
 
@@ -31,21 +31,21 @@
 
 
 
-<link rel="canonical" href="https://leeon.im/deploy-hexo-blog-on-server/">
+<link rel="canonical" href="https://leeon.im/SPA-fix-406-status-code/">
 
 
-<meta name="description" content="测试 git push 之后 hook 触发没有  Hexo 最开始部署在 Github，因为速度太慢，访问性太差，而且偶尔还被 DDOS，为了缩短加载时间，转到了 Coding 上，今天把它迁到了阿里云上。 我是测试的分割线  hook 生效，push 上去即可更新生活又开始有希望起来">
-<meta name="keywords" content="服务器,hexo,git">
+<meta name="description" content="书接上文，上篇文章已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。">
+<meta name="keywords" content="SPA,nodejs,koa">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试 - Hexo 部署到阿里云">
-<meta property="og:url" content="https://leeon.im/deploy-hexo-blog-on-server/index.html">
+<meta property="og:title" content="单页应用处理 406 状态">
+<meta property="og:url" content="https://leeon.im/SPA-fix-406-status-code/index.html">
 <meta property="og:site_name" content="Leeonfield">
-<meta property="og:description" content="测试 git push 之后 hook 触发没有  Hexo 最开始部署在 Github，因为速度太慢，访问性太差，而且偶尔还被 DDOS，为了缩短加载时间，转到了 Coding 上，今天把它迁到了阿里云上。 我是测试的分割线  hook 生效，push 上去即可更新生活又开始有希望起来">
+<meta property="og:description" content="书接上文，上篇文章已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2016-12-23T12:12:02.000Z">
+<meta property="og:updated_time" content="2019-09-05T06:53:17.693Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="测试 - Hexo 部署到阿里云">
-<meta name="twitter:description" content="测试 git push 之后 hook 触发没有  Hexo 最开始部署在 Github，因为速度太慢，访问性太差，而且偶尔还被 DDOS，为了缩短加载时间，转到了 Coding 上，今天把它迁到了阿里云上。 我是测试的分割线  hook 生效，push 上去即可更新生活又开始有希望起来">
+<meta name="twitter:title" content="单页应用处理 406 状态">
+<meta name="twitter:description" content="书接上文，上篇文章已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -84,7 +84,7 @@
 
 
 
-    <title> 测试 - Hexo 部署到阿里云 · Leeonfield </title>
+    <title> 单页应用处理 406 状态 · Leeonfield </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -209,38 +209,57 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          测试 - Hexo 部署到阿里云
+          单页应用处理 406 状态
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2016年12月14日
+          2019年9月5日
         </span>
       </div>
     </header>
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#406-Not-Acceptable"><span class="toc-text">406 Not Acceptable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#场景"><span class="toc-text">场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方案"><span class="toc-text">方案</span></a></li></ol>
+    </div>
+  </div>
+
 
     <div class="post-content">
       
-        <blockquote>
-<p>测试 git push 之后 hook 触发没有</p>
-</blockquote>
-<p>Hexo 最开始部署在 Github，因为速度太慢，访问性太差，而且偶尔还被 DDOS，为了缩短加载时间，转到了 Coding 上，今天把它迁到了阿里云上。</p>
-<p>我是测试的分割线</p>
-<hr>
-<p>hook 生效，push 上去即可更新<br>生活又开始有希望起来</p>
+        <p>书接上文，<a href="https://leeon.im/koa-session-get-session-id/">上篇文章</a>已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。</p>
 <a id="more"></a>
-<blockquote>
-<p>PS：Coding 正在变得越来越好，提供的服务也越来越强大，工程师八哥半夜还在回复 Bug，每一次更新都会带来惊喜。</p>
-</blockquote>
-<p>迁移到 Coding 之后，便捷提高了，只不过在给 <code>Coidng Page</code> 绑定自定义域名时出现了问题，绑定域名之后，通过自定义域名访问时，通过 <code>http</code> 方式，链接会被重置，必须手动 <code>https</code> 或者通过代理访问……这还怎么玩</p>
-<p>为了对比，我借了胜祥同学的二级域名绑定了一次，正常访问，只可能是域名的问题了</p>
-<p>问阿里云的工程师，得到的答复是服务器那边的问题，问 Coding 的工程师，他们也一头雾水，最后的结论是 <code>可能被墙了？</code></p>
-<p>买过域名之后一直没备案，后来被屏蔽了，备案之后屏蔽解除了，不知道这个问题跟那次屏蔽有无关联</p>
-<p>不想再被这样的问题困扰，自己动手，丰衣足食，思来想去还是直接放服务器上。</p>
+<h2 id="406-Not-Acceptable"><a href="#406-Not-Acceptable" class="headerlink" title="406 Not Acceptable"></a>406 Not Acceptable</h2><p>客户端出现这个状态码意味着，当前接口的返回数据没有匹配 <code>request header</code> 的 <code>acceptable values</code> 的要求，具体的配置的点如下：</p>
+<ul>
+<li><code>Accept</code>：客户端支持的内容类型，用 MIME 类型表示，<ul>
+<li><code>Accept</code>: <code>&lt;MIME_type&gt;/&lt;MIME_subtype&gt;</code></li>
+<li><code>Accept</code>: <code>&lt;MIME_type&gt;/*</code></li>
+<li><code>Accept</code>: <code>*/*</code></li>
+<li>实例 <code>Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8</code>（此处的 q 表示权重，所有值根据对应权重大小排序）</li>
+</ul>
+</li>
+<li><code>Accept-Charset</code>：客户端支持的字符编码，例 <code>Accept-Charset: utf-8, iso-8859-1;q=0.5, *;q=0.1</code></li>
+<li><code>Accept-Encoding</code>：客户端支持的内容编码方式，<ul>
+<li>压缩算法如 gzip、compress、deflate、br </li>
+<li>identity，标记支持无压缩</li>
+<li>*</li>
+<li>例 <code>Accept-Encoding: deflate, gzip;q=1.0, *;q=0.5</code></li>
+</ul>
+</li>
+<li><code>Accept-Language</code>：客户端支持的语言<ul>
+<li><code>Accept-Language</code>: <code>&lt;language&gt;</code></li>
+<li><code>Accept-Language</code>: <code>*</code></li>
+<li>实例 <code>Accept-Language: en-US,en;q=0.5</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>用户当前同时开着 A、B 系统的窗口，在 B 系统中退出，在 A 系统中页面操作，请求的接口返回 <code>406 Not Acceptable</code>，出现原因是服务端鉴权发现当前请求无用户状态后，直接通过 <code>ctx.redirect(&#39;/login&#39;)</code> 企图跳转到登录页面，但 redirect 时，请求返回内容格式就成了 HTML 格式，但客户端的 ajax 配置了 <code>Accept: application/json;</code>，客户端收到了 HTML，心想这不是糊弄我吗，果断 throw 了一个 406。</p>
+<h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>在后端权限校验逻辑决定 redirect 前，使用 <code>ctx.assert(ctx.request.accepts(&#39;html&#39;),406,&#39;User not found. Please login!&#39;,);</code> 判断当前请求是否支持 HTML 内容，如不支持直接服务端返回 406 错误，前端请求方法初判断返回是否是 406，返回 406 时，直接 reload 页面。</p>
 
       
     </div>
@@ -260,7 +279,7 @@
     </p>
     <p class="copyright-item">
       <span>链接: </span>
-      <a href="https://leeon.im/deploy-hexo-blog-on-server/">https://leeon.im/deploy-hexo-blog-on-server/</a>
+      <a href="https://leeon.im/SPA-fix-406-status-code/">https://leeon.im/SPA-fix-406-status-code/</a>
     </p>
 
     <p class="copyright-item lincese">
@@ -294,11 +313,11 @@
         
           <div class="post-tags">
             
-              <a href="/tags/服务器/">服务器</a>
+              <a href="/tags/SPA/">SPA</a>
             
-              <a href="/tags/hexo/">hexo</a>
+              <a href="/tags/nodejs/">nodejs</a>
             
-              <a href="/tags/git/">git</a>
+              <a href="/tags/koa/">koa</a>
             
           </div>
         
@@ -306,15 +325,9 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/git-hooks/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">Git Hooks</span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
     
-    
-      <a class="next" href="/start-latex-and-configure-latext-editor-with-sublime/">
-        <span class="next-text nav-default">SublimeText 配置 LaTeX 编辑器</span>
+      <a class="next" href="/koa-session-get-session-id/">
+        <span class="next-text nav-default">koa-session 获取当前会话的 sessionid</span>
         <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
@@ -421,9 +434,9 @@
   
   <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'https://leeon.im/deploy-hexo-blog-on-server/';
-        this.page.identifier = 'deploy-hexo-blog-on-server/';
-        this.page.title = '测试 - Hexo 部署到阿里云';
+        this.page.url = 'https://leeon.im/SPA-fix-406-status-code/';
+        this.page.identifier = 'SPA-fix-406-status-code/';
+        this.page.title = '单页应用处理 406 状态';
     };
     (function() {
     var d = document, s = d.createElement('script');

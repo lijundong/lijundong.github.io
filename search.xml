@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>单页应用处理 406 状态</title>
+      <link href="/SPA-fix-406-status-code/"/>
+      <url>/SPA-fix-406-status-code/</url>
+      
+        <content type="html"><![CDATA[<p>书接上文，<a href="https://leeon.im/koa-session-get-session-id/">上篇文章</a>已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。</p><a id="more"></a><h2 id="406-Not-Acceptable"><a href="#406-Not-Acceptable" class="headerlink" title="406 Not Acceptable"></a>406 Not Acceptable</h2><p>客户端出现这个状态码意味着，当前接口的返回数据没有匹配 <code>request header</code> 的 <code>acceptable values</code> 的要求，具体的配置的点如下：</p><ul><li><code>Accept</code>：客户端支持的内容类型，用 MIME 类型表示，<ul><li><code>Accept</code>: <code>&lt;MIME_type&gt;/&lt;MIME_subtype&gt;</code></li><li><code>Accept</code>: <code>&lt;MIME_type&gt;/*</code></li><li><code>Accept</code>: <code>*/*</code></li><li>实例 <code>Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8</code>（此处的 q 表示权重，所有值根据对应权重大小排序）</li></ul></li><li><code>Accept-Charset</code>：客户端支持的字符编码，例 <code>Accept-Charset: utf-8, iso-8859-1;q=0.5, *;q=0.1</code></li><li><code>Accept-Encoding</code>：客户端支持的内容编码方式，<ul><li>压缩算法如 gzip、compress、deflate、br </li><li>identity，标记支持无压缩</li><li>*</li><li>例 <code>Accept-Encoding: deflate, gzip;q=1.0, *;q=0.5</code></li></ul></li><li><code>Accept-Language</code>：客户端支持的语言<ul><li><code>Accept-Language</code>: <code>&lt;language&gt;</code></li><li><code>Accept-Language</code>: <code>*</code></li><li>实例 <code>Accept-Language: en-US,en;q=0.5</code></li></ul></li></ul><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>用户当前同时开着 A、B 系统的窗口，在 B 系统中退出，在 A 系统中页面操作，请求的接口返回 <code>406 Not Acceptable</code>，出现原因是服务端鉴权发现当前请求无用户状态后，直接通过 <code>ctx.redirect(&#39;/login&#39;)</code> 企图跳转到登录页面，但 redirect 时，请求返回内容格式就成了 HTML 格式，但客户端的 ajax 配置了 <code>Accept: application/json;</code>，客户端收到了 HTML，心想这不是糊弄我吗，果断 throw 了一个 406。</p><h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>在后端权限校验逻辑决定 redirect 前，使用 <code>ctx.assert(ctx.request.accepts(&#39;html&#39;),406,&#39;User not found. Please login!&#39;,);</code> 判断当前请求是否支持 HTML 内容，如不支持直接服务端返回 406 错误，前端请求方法初判断返回是否是 406，返回 406 时，直接 reload 页面。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SPA </tag>
+            
+            <tag> nodejs </tag>
+            
+            <tag> koa </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>koa-session 获取当前会话的 sessionid</title>
       <link href="/koa-session-get-session-id/"/>
       <url>/koa-session-get-session-id/</url>
@@ -196,13 +225,13 @@
             
             <tag> centos </tag>
             
-            <tag> 环境配置 </tag>
-            
             <tag> nodejs </tag>
             
-            <tag> zsh </tag>
-            
             <tag> git </tag>
+            
+            <tag> 环境配置 </tag>
+            
+            <tag> zsh </tag>
             
             <tag> vim </tag>
             
@@ -875,9 +904,9 @@
             
             <tag> github </tag>
             
-            <tag> react router4 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> react router4 </tag>
             
         </tags>
       
@@ -1582,9 +1611,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> git </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> git </tag>
             
         </tags>
       
