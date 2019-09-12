@@ -8,7 +8,7 @@
       <link href="/javascript-get-all-image-src-from-markdown/"/>
       <url>/javascript-get-all-image-src-from-markdown/</url>
       
-        <content type="html"><![CDATA[<p>JavaScript 解析 Markdown 获取 所有图片节点</p><a id="more"></a>]]></content>
+        <content type="html"><![CDATA[<p>JavaScript 解析 Markdown 获取 所有图片节点</p><a id="more"></a><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>需要对 Markdown 中所有 img src 进行服务端加签名。</p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>因为 Markdown 有语法，首先放弃正则的方案，搜一下是否有现有方案，</p><p>google <code>javascript get all image in markdown</code> 搜到 <a href="https://github.com/iamstarkov/get-md-image" target="_blank" rel="noopener">get-md-image</a> 这个方案，本地试了一下，发现只取到了 Markdown 中第一个 image 节点。看了下源码实现，原来是基于 <a href="https://www.npmjs.com/package/commonmark" target="_blank" rel="noopener">commonmark.js</a> 实现，除了获取图片，作者还封装了一系列基于 commonmark.js 的库，并且这些库的 npm 下载量都很大。</p><p>再看下 commonmark.js，这个库是基于 markdown 标准的 JavaScript 实现，其中提供的 <code>Parser</code> 方法可以将 markdown string 解析为一棵节点树，节点数包含<a href="https://github.com/commonmark/commonmark.js" target="_blank" rel="noopener">基础数据和一些方法</a>，我们会用到 <code>type</code>、<code>destination</code>、<code>walker()</code> 来获取所有的图片节点，代码如下</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> commonMark = <span class="built_in">require</span>(<span class="string">"commonmark"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> getAllImg = <span class="function"><span class="params">markdown</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span>(!markdown) <span class="keyword">return</span></span><br><span class="line">  <span class="keyword">let</span> parsed = <span class="keyword">new</span> commonMark.Parser().parse(markdown)</span><br><span class="line">  <span class="keyword">let</span> walker = parsed.walker()</span><br><span class="line">  <span class="keyword">let</span> event</span><br><span class="line">  <span class="keyword">let</span> srcList = []</span><br><span class="line">  <span class="keyword">let</span> nodeList = []</span><br><span class="line">  <span class="keyword">while</span> (event = walker.next()) &#123;</span><br><span class="line">    <span class="keyword">let</span> node = event.node;</span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">      node.type === <span class="string">"image"</span> &amp;&amp;</span><br><span class="line">      node.destination</span><br><span class="line">    ) &#123;</span><br><span class="line">      nodeList.push(node)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> srcList = nodeList.map(<span class="function"><span class="params">node</span> =&gt;</span> node.destination)</span><br><span class="line">  <span class="keyword">const</span> uniqueSrcList = [...new <span class="built_in">Set</span>(srcList)]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    srcList,</span><br><span class="line">    uniqueSrcList,</span><br><span class="line">    nodeList</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -250,17 +250,17 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
             
-            <tag> git </tag>
+            <tag> mongodb </tag>
             
             <tag> nodejs </tag>
             
             <tag> 环境配置 </tag>
             
             <tag> zsh </tag>
+            
+            <tag> git </tag>
             
             <tag> vim </tag>
             
@@ -1356,11 +1356,11 @@
       
         <tags>
             
-            <tag> mac </tag>
-            
             <tag> 备份 </tag>
             
             <tag> timemachine </tag>
+            
+            <tag> mac </tag>
             
             <tag> 系统 </tag>
             
@@ -1528,9 +1528,9 @@
       
         <tags>
             
-            <tag> 游记 </tag>
-            
             <tag> 总结 </tag>
+            
+            <tag> 游记 </tag>
             
         </tags>
       
@@ -1640,9 +1640,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -2080,9 +2080,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -2317,9 +2317,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
       
@@ -2400,9 +2400,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -2815,9 +2815,9 @@
       
         <tags>
             
-            <tag> life </tag>
-            
             <tag> 骑行 </tag>
+            
+            <tag> life </tag>
             
         </tags>
       

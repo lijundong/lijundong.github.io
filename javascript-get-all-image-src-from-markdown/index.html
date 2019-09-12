@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="JavaScript 解析 Markdown 获取 所有图片节点">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-09-12T03:15:08.057Z">
+<meta property="og:updated_time" content="2019-09-12T04:29:37.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript 获取 Markdown 所有图片节点">
 <meta name="twitter:description" content="JavaScript 解析 Markdown 获取 所有图片节点">
@@ -222,12 +222,23 @@
 
     
     
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#场景"><span class="toc-text">场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#思路"><span class="toc-text">思路</span></a></li></ol>
+    </div>
+  </div>
+
 
     <div class="post-content">
       
         <p>JavaScript 解析 Markdown 获取 所有图片节点</p>
 <a id="more"></a>
-
+<h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>需要对 Markdown 中所有 img src 进行服务端加签名。</p>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>因为 Markdown 有语法，首先放弃正则的方案，搜一下是否有现有方案，</p>
+<p>google <code>javascript get all image in markdown</code> 搜到 <a href="https://github.com/iamstarkov/get-md-image" target="_blank" rel="noopener">get-md-image</a> 这个方案，本地试了一下，发现只取到了 Markdown 中第一个 image 节点。看了下源码实现，原来是基于 <a href="https://www.npmjs.com/package/commonmark" target="_blank" rel="noopener">commonmark.js</a> 实现，除了获取图片，作者还封装了一系列基于 commonmark.js 的库，并且这些库的 npm 下载量都很大。</p>
+<p>再看下 commonmark.js，这个库是基于 markdown 标准的 JavaScript 实现，其中提供的 <code>Parser</code> 方法可以将 markdown string 解析为一棵节点树，节点数包含<a href="https://github.com/commonmark/commonmark.js" target="_blank" rel="noopener">基础数据和一些方法</a>，我们会用到 <code>type</code>、<code>destination</code>、<code>walker()</code> 来获取所有的图片节点，代码如下</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> commonMark = <span class="built_in">require</span>(<span class="string">"commonmark"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> getAllImg = <span class="function"><span class="params">markdown</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span>(!markdown) <span class="keyword">return</span></span><br><span class="line">  <span class="keyword">let</span> parsed = <span class="keyword">new</span> commonMark.Parser().parse(markdown)</span><br><span class="line">  <span class="keyword">let</span> walker = parsed.walker()</span><br><span class="line">  <span class="keyword">let</span> event</span><br><span class="line">  <span class="keyword">let</span> srcList = []</span><br><span class="line">  <span class="keyword">let</span> nodeList = []</span><br><span class="line">  <span class="keyword">while</span> (event = walker.next()) &#123;</span><br><span class="line">    <span class="keyword">let</span> node = event.node;</span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">      node.type === <span class="string">"image"</span> &amp;&amp;</span><br><span class="line">      node.destination</span><br><span class="line">    ) &#123;</span><br><span class="line">      nodeList.push(node)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> srcList = nodeList.map(<span class="function"><span class="params">node</span> =&gt;</span> node.destination)</span><br><span class="line">  <span class="keyword">const</span> uniqueSrcList = [...new <span class="built_in">Set</span>(srcList)]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    srcList,</span><br><span class="line">    uniqueSrcList,</span><br><span class="line">    nodeList</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
