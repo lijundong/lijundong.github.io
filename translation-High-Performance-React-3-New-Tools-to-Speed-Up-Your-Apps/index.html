@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head><meta name="generator" content="Hexo 3.8.0">
+  <head><meta name="generator" content="Hexo 3.9.0">
     
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -243,7 +243,7 @@
 <p>原文地址：<a href="//medium.freecodecamp.org/make-react-fast-again-tools-and-techniques-for-speeding-up-your-react-app-7ad39d3c1b82">High Performance React: 3 New Tools to Speed Up Your Apps</a><br>文中介绍了几种 React 应用性能检测工具，并且提供了几条关于应用性能提升的解决方案。</p>
 </blockquote>
 <a id="more"></a>
-<p><img src="//source.lijundong.com/17-8-6/93104397.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/17-8-6/93104397.jpg" alt></p>
 <p>React 通常都是非常快的，只不过一些小错误很容易会导致性能问题，组件挂载慢、组件树过深以及无意义的渲染周期等因素都会导致用户使用时感觉很慢。</p>
 <h3 id="工具-1：Chrome-的-Performance-时间轴"><a href="#工具-1：Chrome-的-Performance-时间轴" class="headerlink" title="工具#1：Chrome 的 Performance 时间轴"></a>工具#1：Chrome 的 Performance 时间轴</h3><p>React 15.4 引入了一个新的 Performance 时间轴功能，它可以让你准确查看组件的挂载、更新以及卸载的过程，还能可视化相关组件的生命周期。<br><strong>注意：</strong>因为该功能使用了尚未完全适配的 <code>User Timing API</code>，所以目前只适用于 Chrome、Edge、以及 IE。</p>
 <h4 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h4><ol>
@@ -253,7 +253,7 @@
 <li>停止 <strong>Recording</strong></li>
 <li>检查时间轴中生成的可视化图表</li>
 </ol>
-<p><img src="//source.lijundong.com/17-8-6/84131199.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/17-8-6/84131199.jpg" alt></p>
 <h4 id="查看检测结果"><a href="#查看检测结果" class="headerlink" title="查看检测结果"></a>查看检测结果</h4><p>每个彩条代表着一个组件占用的时间，因为 Javascript 是单线程的，当一个组件正在挂载或渲染时，它会占用主进程并且会阻止其他代码运行。</p>
 <p>像 <code>[update]</code> 一类被包在括号中的文字描述了组件当前的状态，即组件正处于生命周期的哪一阶段。时间轴会分解出每个过程，因此你可以看到类似于 <code>[componentDidMount]</code>、<code>[componentWillReceiveProps]</code>、<code>[ctor]</code> （构造函数)、以及 <code>[render]</code> 等方法占用的时间。</p>
 <p>堆叠到一起的彩条代表组建树，虽然在 React 中经常见到非常深的组件树，但如果你优化一些频繁挂载的组件，则可以减少包装组件的数量，而每少一个组件都会减少性能以及内存的损耗。</p>
@@ -275,7 +275,7 @@
 }
 </code></pre><p>不管父组件什么时候渲染，<code>DumbComponent</code> 都会重新渲染，不管它的属性值有没有改变。</p>
 <p>通常，如果 <code>render</code> 函数执行了，但虚拟 DOM 没有任何改变，就意味此渲染周期是浪费的，无意义的，<code>render</code> 方法应该是纯净并且没有任何副作用的，在庞大的 React 项目中，要检测可能造成这些问题的代码会非常棘手，但比较方便的是，现在有个现成的工具可以用。</p>
-<h4 id="使用-why-did-you-update"><a href="#使用-why-did-you-update" class="headerlink" title="使用 why-did-you-update"></a>使用 why-did-you-update</h4><p><img src="//source.lijundong.com/17-8-6/19890189.jpg" alt=""></p>
+<h4 id="使用-why-did-you-update"><a href="#使用-why-did-you-update" class="headerlink" title="使用 why-did-you-update"></a>使用 why-did-you-update</h4><p><img src="//source.lijundong.com/17-8-6/19890189.jpg" alt></p>
 <p><code>why-did-you-update</code> 是一个挂钩到 React 的库，可以检测一些潜在的不必要的组件渲染，它可以检测到组件属性值没变但却重新渲染的情况。</p>
 <h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><ol>
 <li>用 npm 安装：<code>npm i --save-dev why-did-you-update</code></li>
@@ -291,9 +291,9 @@ if (process.env.NODE\_ENV !== &apos;production&apos;) {
 <h4 id="示例-2"><a href="#示例-2" class="headerlink" title="示例#2"></a>示例#2</h4><p>为了演示，我在 TodoMVC 项目里安装了 <code>why-did-you-update</code>，并放在了 Code Sandbox 平台上（一个线上 React 平台），打开浏览器的 console，在页面中添加一些 ToDo，你就会看到控制台输出的问题。</p>
 <p><a href="//codesandbox.io/s/xGJP4QExn">这里是项目</a>。</p>
 <p>需要注意的是，项目中的一些组件存在无意义渲染，试试上面的方式来杜绝那些无意义的组件渲染，如果你处理正确的话，控制台中应该没有 <code>why-did-you-update</code> 输出的警告。</p>
-<h3 id="React-开发工具"><a href="#React-开发工具" class="headerlink" title="React 开发工具"></a>React 开发工具</h3><p><img src="//source.lijundong.com/17-8-6/18745991.jpg" alt=""></p>
+<h3 id="React-开发工具"><a href="#React-开发工具" class="headerlink" title="React 开发工具"></a>React 开发工具</h3><p><img src="//source.lijundong.com/17-8-6/18745991.jpg" alt></p>
 <p>Chrome 扩展“React Developer Tools”已经内建了更新组件的高亮功能，这对于定位无意义的组件渲染是非常有用的，要使用功能，首先得<a href="//codesandbox.io/s/xGJP4QExn">安装 React Developer Tools 扩展</a><br>安装后，在调试面板中进入 React 选项狂，打开 “Highlight Updates” 功能。</p>
-<p><img src="//source.lijundong.com/17-8-6/71902719.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/17-8-6/71902719.jpg" alt></p>
 <p>然后操作项目页面，和不同的组件进行交互，你就可以看到 React 开发工具高亮的效果了。</p>
 <h4 id="查看检测结果-2"><a href="#查看检测结果-2" class="headerlink" title="查看检测结果"></a>查看检测结果</h4><p>React 开发工具高亮显示了那些在给定时间内重新渲染的组件，不同颜色的高亮对应了组件更新的频率，蓝色代表更新频率低，而颜色范围为绿黄红则代表了高频更新。<br>看到黄色或者红色不一定代表有问题，可能是调整滑动条或触发频繁更新的其他 UI 组件。但如果你点击了一个按钮却看到了红色高亮，这可能代表代码有问题了。该扩展的功能是让开发者定位项目中无意义更新的组件，作为一个开发者，你应该对给定时间内哪些组件需要更新有大概的意识。</p>
 <h4 id="示例-3"><a href="#示例-3" class="headerlink" title="示例#3"></a>示例#3</h4><p>同上面的例子一样，为了演示更形象生动，我在 TodoMVC 项目中恶意造成了一些不必要的组件更新。<br><a href="//highlight-demo.firebaseapp.com/">TodoMVC 项目地址</a><br>打开上面的项目链接，打开 React 开发工具，并且打开 “update highlighting”，当你在输入框中输入时，你会看到所有的 Todo 条目都在高亮，如果你快速输入，你会看到高亮的颜色不同，分别代表着这些组件的更新频率。</p>
@@ -320,7 +320,7 @@ if (process.env.NODE\_ENV !== &apos;production&apos;) {
       }
 }
 </code></pre><h3 id="在生产环境调试性能问题"><a href="#在生产环境调试性能问题" class="headerlink" title="在生产环境调试性能问题"></a>在生产环境调试性能问题</h3><p>React 开发工具只在你本地起作用，但如果你想在生产环境了解项目的性能问题的话，你应该试试 <a href="//logrocket.com/">LogRocket</a></p>
-<p><img src="//source.lijundong.com/17-8-6/2564335.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/17-8-6/2564335.jpg" alt></p>
 <p><a href="//logrocket.com/">LogRocket</a> 就像是网络应用的录像机，记录在你网站上发生的一切，你不用去猜测问题的原因，你可以重播存在 bug 或者性能问题的会话来快速定位问题的根本原因。<br>LogRocket 会记录页面的性能数据、Redux 动作／状态、日志、错误、网络请求／响应（包含响应头和响应体）以及浏览器的 metadata。也会记录页面中的 HTML 和 CSS，重新创建即使是最复杂的单页应用的非常完美的视频。</p>
 <p><a href="//logrocket.com/">LogRocket | Logging and Session Replay for JavaScript Apps</a></p>
 <p>感谢您的阅读，希望这些工具和技巧对你的下一个项目会有帮助！</p>

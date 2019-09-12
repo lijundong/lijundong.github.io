@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 05 Sep 2019 06:53:17 GMT</pubDate>
+    <pubDate>Thu, 12 Sep 2019 03:15:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Javascript 获取 Markdown 所有图片节点</title>
+      <link>https://leeon.im/javascript-get-all-image-src-from-markdown/</link>
+      <guid>https://leeon.im/javascript-get-all-image-src-from-markdown/</guid>
+      <pubDate>Thu, 12 Sep 2019 03:13:23 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;JavaScript 解析 Markdown 获取 所有图片节点&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/javascript-get-all-image-src-from-markdown/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>单页应用处理 406 状态</title>
@@ -158,7 +172,7 @@
       <pubDate>Mon, 11 Feb 2019 10:07:30 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-3-15/unionid.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-3-15/unionid.jpg&quot; alt&gt;&lt;/p&gt;
 &lt;p&gt;如何利用好微信生态的账号体系？&lt;/p&gt;
       
       </description>
@@ -173,7 +187,7 @@
       <pubDate>Mon, 11 Feb 2019 07:17:05 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-3-15/share.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-3-15/share.jpg&quot; alt&gt;&lt;br&gt;假期在家里玩腾讯斗地主小游戏，发现了分享逻辑里的一个细节，之前没考虑过这个角度，觉得方案取巧而且可行。&lt;/p&gt;
       
       </description>
       
@@ -187,7 +201,7 @@
       <pubDate>Tue, 29 Jan 2019 07:16:30 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-3-15/WX20190217-190910.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;小程序中使用 &lt;code&gt;iconfont&lt;/code&gt; 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 &lt;code&gt;iconfont&lt;/code&gt; 的方案。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-3-15/WX20190217-190910.jpg&quot; alt&gt;&lt;br&gt;小程序中使用 &lt;code&gt;iconfont&lt;/code&gt; 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 &lt;code&gt;iconfont&lt;/code&gt; 的方案。&lt;/p&gt;
       
       </description>
       
@@ -201,7 +215,7 @@
       <pubDate>Sun, 06 Jan 2019 15:06:13 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-1-6/94594660.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-1-6/94594660.jpg&quot; alt&gt;&lt;/p&gt;
       
       </description>
       
@@ -215,7 +229,7 @@
       <pubDate>Fri, 04 Jan 2019 12:08:46 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-1-6/94618431.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;看着 17 年的总结，精神维度感觉已经过了很久，每当这个时候，物理的衡量刻度显现出价值，提醒你，仅是又过一年而已。&lt;br&gt;是啊，又是一年。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-1-6/94618431.jpg&quot; alt&gt;&lt;br&gt;看着 17 年的总结，精神维度感觉已经过了很久，每当这个时候，物理的衡量刻度显现出价值，提醒你，仅是又过一年而已。&lt;br&gt;是啊，又是一年。&lt;/p&gt;
       
       </description>
       
@@ -263,7 +277,7 @@
       <pubDate>Sun, 25 Nov 2018 08:08:36 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/18-11-29/15453682.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;九月底参加了掘金主办的小程序开发者大会，近期开始填坑，总结下会议中的收获。&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/18-11-29/15453682.jpg&quot; alt&gt;&lt;br&gt;九月底参加了掘金主办的小程序开发者大会，近期开始填坑，总结下会议中的收获。&lt;/p&gt;
       
       </description>
       
@@ -277,26 +291,12 @@
       <pubDate>Sun, 25 Nov 2018 07:28:50 GMT</pubDate>
       <description>
       
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/18-11-25/24310408.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/18-11-25/24310408.jpg&quot; alt&gt;&lt;/p&gt;
 &lt;p&gt;前几天备份文件，为避免 &lt;code&gt;node_modules&lt;/code&gt; 黑洞，写了个清除指定目录下 &lt;code&gt;node_modules&lt;/code&gt; 目录的脚本&lt;br&gt;
       
       </description>
       
       <comments>https://leeon.im/clear-node-modules-by-nodejs/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Centos7 部署 Puppeteer 服务</title>
-      <link>https://leeon.im/deply-puppeteer-on-production/</link>
-      <guid>https://leeon.im/deply-puppeteer-on-production/</guid>
-      <pubDate>Mon, 17 Sep 2018 14:42:56 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;之前的文章中介绍了「&lt;a href=&quot;//lijundong.com/headless-browser/&quot;&gt;“木偶”浏览器简简史&lt;/a&gt;」，文中介绍了 Google 的 Puppetter，这一篇介绍下如何在 Centos7 环境下部署 Puppeteer 服务环境。&lt;br&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/deply-puppeteer-on-production/#disqus_thread</comments>
     </item>
     
   </channel>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head><meta name="generator" content="Hexo 3.8.0">
+  <head><meta name="generator" content="Hexo 3.9.0">
     
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -236,7 +236,7 @@
 
     <div class="post-content">
       
-        <p><img src="//source.lijundong.com/19-3-15/unionid.jpg" alt=""></p>
+        <p><img src="//source.lijundong.com/19-3-15/unionid.jpg" alt></p>
 <p>如何利用好微信生态的账号体系？</p>
 <a id="more"></a>
 <p>首先我们需要明确几个名词，主体、微信开放平台帐号、微信公众平台、UnionID、OpenID</p>
@@ -280,7 +280,7 @@
 <h3 id="UnionID"><a href="#UnionID" class="headerlink" title="UnionID"></a>UnionID</h3><p>类似于 <code>OpenID</code> 与应用关联，<code>UnionID</code> 与开放平台账号关联，同一用户，对同一个微信开放平台下的不同应用，<code>UnionID</code> 是相同且唯一的。</p>
 <h2 id="获取-OpenID"><a href="#获取-OpenID" class="headerlink" title="获取 OpenID"></a>获取 OpenID</h2><p><code>OpenID</code> 的获取方式是静默的，无需用户授权<br>客户端通过 <code>wx.login()</code> 拿到临时登录凭证 code，并且回传到开发者服务器，服务端带着 <code>code + appid + appsecret</code> 调用 <code>code2Session</code> 接口换取用户 <code>OpenID</code> 以及其他数据</p>
 <p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/login.html" target="_blank" rel="noopener">授权流程</a>如图：</p>
-<p><img src="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/api-login.jpg?t=19032023" alt=""></p>
+<p><img src="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/image/api-login.jpg?t=19032023" alt></p>
 <h2 id="获取-UnionID"><a href="#获取-UnionID" class="headerlink" title="获取 UnionID"></a>获取 UnionID</h2><p>不同于 <code>OpenID</code> 的静默获取方式，获取 <code>UnionID</code> 时，必须拿到用户授权，授权方式包括同意获取用户基础信息、关注公众号、授权登录移动应用、授权登录网站等，在拿到用户授权后，开发者通过对应接口拿到用户的 <code>UnionID</code></p>
 <p><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/union-id.html" target="_blank" rel="noopener">UnionID 获取接口</a>：</p>
 <ul>
@@ -293,7 +293,7 @@
 <li>未请求过的权限，除 <code>userInfo</code> 均可通过<a href="https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html" target="_blank" rel="noopener">接口</a>向用户发起授权请求，而 <code>userInfo</code> 则必须使用 <code>&lt;button open-type=&quot;getUserInfo&quot;/&gt;</code> 方式，由用户点击按钮才能发起。</li>
 <li>请求过的权限，当用户拒绝权限申请时，如果产品逻辑被阻塞，可调用 <code>wx.oepnSetting</code> 接口打开小程序设置界面，引导用户开启权限，当然，<code>userInfo</code> 权限被拒绝后仍可以通过 <code>&lt;button open-type=&quot;getUserInfo&quot;/&gt;</code> 方式继续向用户发起权限请求。</li>
 </ul>
-<p><img src="//source.lijundong.com/19-3-21/WX20190321-153635.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/19-3-21/WX20190321-153635.jpg" alt></p>
 <h2 id="UnionID-与内部数据打通"><a href="#UnionID-与内部数据打通" class="headerlink" title="UnionID 与内部数据打通"></a>UnionID 与内部数据打通</h2><p>在获得用户授权，拿到 <code>UnionID</code> 后，可以通过验证用户手机号，将 <code>UnionID</code> 作为用户信息的一部分，给用户带来的便利是不用每次验证手机号，同时也给公司省了一笔话务的费用，一次打通，多端复用，APP、小程序、H5 活动，可以利用微信生态将所有场景串联。</p>
 <p>更重要的是以此积累的数据，通过多端积累的海量 <code>UnionID</code>，可以对用户行为数据进行详细分析，进行精准推送，这种数据带来的价值不可估量。</p>
 <h2 id="啰嗦两句"><a href="#啰嗦两句" class="headerlink" title="啰嗦两句"></a>啰嗦两句</h2><p>不是所有的事情都会按预期的方向发展，甚至往好的方向发展，你说我是错的，那你最好证明你是对的。但世事哪有那么鲜明的对错，多数人只是在和稀泥罢了。</p>

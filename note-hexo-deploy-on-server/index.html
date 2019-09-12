@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head><meta name="generator" content="Hexo 3.8.0">
+  <head><meta name="generator" content="Hexo 3.9.0">
     
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -243,7 +243,7 @@
 </ul>
 </blockquote>
 <p>之前使用 Hexo 部署静态博客到 Github 或者 coding，也没有细究实现原理，但是一直在折腾，后来看到了下面这张图，这是从 <code>hexo d -g</code> 命令一直到浏览器访问到博客页面的整个流程的架构图。<br>在部署之前看懂这张图，部署过程会十分流畅。</p>
-<p><img src="//source.lijundong.com/16-12-19/68486025-file_1482077506840_3562.png" alt=""></p>
+<p><img src="//source.lijundong.com/16-12-19/68486025-file_1482077506840_3562.png" alt></p>
 <h3 id="流程架构"><a href="#流程架构" class="headerlink" title="流程架构"></a>流程架构</h3><ul>
 <li>Hexo 文件结构下，<code>\source</code> 存放所有 <code>markdown</code> 原文件，我们写的文章 存放在 <code>\source\_post</code> 目录下</li>
 <li><code>hexo generate</code> 命令将 <code>\source</code> 下的 <code>markdown</code> 文件编译为 <code>html</code> 文件存放到 <code>\public</code> 目录下，并且根据时间、tag、category 等生成了索引页面。</li>

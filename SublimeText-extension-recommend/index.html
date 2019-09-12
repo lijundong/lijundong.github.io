@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head><meta name="generator" content="Hexo 3.8.0">
+  <head><meta name="generator" content="Hexo 3.9.0">
     
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -245,10 +245,10 @@
 <p><strong>SublimeText3</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request,os; pf = <span class="string">'Package Control.sublime-package'</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), <span class="string">'wb'</span>).write(urllib.request.urlopen( <span class="string">'//sublime.wbond.net/'</span> + pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).read())</span><br></pre></td></tr></table></figure></p>
 <h3 id="插件安装-1"><a href="#插件安装-1" class="headerlink" title="插件安装"></a>插件安装</h3><p><strong><code>Ctrl + Shift + P</code>打开控制面板</strong></p>
 <p><strong>注：关于插件的设置以及快捷键的设置：都可以通过控制面板进行搜索</strong></p>
-<p><strong>输入<code>installPackage</code> 回车</strong><br><img src="//source.lijundong.com/16-3-17/81113868.jpg" alt=""></p>
-<p><strong>输入插件名，回车安装</strong><br><img src="//source.lijundong.com/16-3-17/49212030.jpg" alt=""></p>
+<p><strong>输入<code>installPackage</code> 回车</strong><br><img src="//source.lijundong.com/16-3-17/81113868.jpg" alt></p>
+<p><strong>输入插件名，回车安装</strong><br><img src="//source.lijundong.com/16-3-17/49212030.jpg" alt></p>
 <p><strong>控制面板，选择<code>listPackage</code>可以看到已经安装的插件</strong></p>
-<p><img src="//source.lijundong.com/16-3-17/33463949.jpg" alt=""><br><img src="//source.lijundong.com/16-3-17/76484603.jpg" alt=""></p>
+<p><img src="//source.lijundong.com/16-3-17/33463949.jpg" alt><br><img src="//source.lijundong.com/16-3-17/76484603.jpg" alt></p>
 <h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h3><ul>
 <li>Emmet: 前端开发神器，如果没听过，请出门左转 <a href="google.com">Google</a>，<strong>注意的是Emmet需要和PyV8这个插件才能工作，所以PyV8也需要装</strong></li>
 <li>AutofileName: 提示文件名，并可以自动补全</li>
@@ -274,7 +274,7 @@
 <li>Git: 可以直接在控制面板用Git，不过还是需要先学习下</li>
 <li>ColorPicker: 取色插件</li>
 <li>SFTP: 可以直接在 sublime 中传输文件</li>
-<li>LiveReload: 我非常喜欢这个插件，配合Chrome的liveReload插件可以做到在编辑器保存文件Chrome立即刷新页面。<br>Chrome的插件安装之后，打开(点下图红圈圈，中心点变成黑色即意味打开)即可与ST配合使用。<br><img src="//source.lijundong.com/16-3-17/44002025.jpg" alt=""><br>除了写写页面用到这个插件，还有其他用途，我的Markdown预览到Chrome，打开liveReload，边写边看效果，还有Hexo打开调试时，打开liveReload，保存一次，页面刷新一次，省了很多不必要的麻烦，很方便。</li>
+<li>LiveReload: 我非常喜欢这个插件，配合Chrome的liveReload插件可以做到在编辑器保存文件Chrome立即刷新页面。<br>Chrome的插件安装之后，打开(点下图红圈圈，中心点变成黑色即意味打开)即可与ST配合使用。<br><img src="//source.lijundong.com/16-3-17/44002025.jpg" alt><br>除了写写页面用到这个插件，还有其他用途，我的Markdown预览到Chrome，打开liveReload，边写边看效果，还有Hexo打开调试时，打开liveReload，保存一次，页面刷新一次，省了很多不必要的麻烦，很方便。</li>
 <li>View In Browser: 在浏览器预览HTMl文件，设置快捷键之后更方便。</li>
 <li>Terminal: 在当前目录下打开 Terminal，可以自定义 Terminal 路径，我在 windows 下更偏好 <a href="//git-scm.com/download/">git-for-windows</a>，所以我把 <code>Termina-sublime-settings-User</code> 中的 Terminal 路径设置成如下。<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"terminal"</span>: <span class="string">"C:\\Program Files\\Git\\git-bash.exe"</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>

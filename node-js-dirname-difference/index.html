@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-  <head><meta name="generator" content="Hexo 3.8.0">
+  <head><meta name="generator" content="Hexo 3.9.0">
     
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -230,8 +230,8 @@
       
         <p>‘./‘指向的目录是执行脚本时所在的当前目录，’__dirname’指向的目录是执行的脚本所保存的目录。<br><a id="more"></a><br>举个例子：<br>现在我的文件目录结构是<br><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">/dir1</span></span><br><span class="line">    <span class="string">/dir2</span></span><br><span class="line">        path.js</span><br></pre></td></tr></table></figure></p>
 <p>path.js的内容是<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> path=<span class="built_in">require</span>(<span class="string">"path"</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" . ="</span>+path.resolve(<span class="string">"."</span>));</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">" __dirname ="</span>+path.resolve(__dirname));</span><br></pre></td></tr></table></figure></p>
-<p>在<code>/dir2</code>目录下运行<br><img src="//source.lijundong.com/16-6-18/88967313.jpg" alt=""></p>
-<p>在<code>/dir1</code>目录下运行<br><img src="//source.lijundong.com/16-6-18/15613612.jpg" alt=""></p>
+<p>在<code>/dir2</code>目录下运行<br><img src="//source.lijundong.com/16-6-18/88967313.jpg" alt></p>
+<p>在<code>/dir1</code>目录下运行<br><img src="//source.lijundong.com/16-6-18/15613612.jpg" alt></p>
 <p>参考：</p>
 <ul>
 <li><a href="//stackoverflow.com/questions/8131344/what-is-the-difference-between-dirname-and-in-node-js">What is the difference between __dirname and ./ in node.js(stackoverflow)</a></li>
