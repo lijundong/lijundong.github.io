@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>worklog-1：产品拆解</title>
-      <link href="/work-log-1/"/>
-      <url>/work-log-1/</url>
-      
-        <content type="html"><![CDATA[<p>拆解一个产品需求</p><a id="more"></a><p>我会在 worklog 这个分类中记录日常工作中我认为有价值的点，首先是笔记，其次是分享。</p><p>技术开发者更多关心的产品映射的需求，开发完成后，如果没有新的需求，那技术开发者在这个项目的生命周期就已经结束，这是某种程度上开发人员的职业属性决定的。</p><p>但当一个项目引入一个 pm 时，ta 会对这个项目进行拆解</p><ul><li>这个产品解决的问题是什么，如果公司是 OKR 驱动，它对应的 Object 是什么？</li><li>这个产品是长期还是短期项目？</li></ul><p>如果是短期，那么是不是一期开发结束，后续只需要运营即可，后续也不会深入讨论。</p><p>但从产品的角度，需要给产品一个更高维度的定位，解决更多的问题，从</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> worklog </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> worklog </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Javascript 获取 Markdown 所有图片节点</title>
       <link href="/javascript-get-all-image-src-from-markdown/"/>
       <url>/javascript-get-all-image-src-from-markdown/</url>
@@ -271,9 +246,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> nodejs </tag>
             
@@ -2101,9 +2076,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -2338,9 +2313,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
       
