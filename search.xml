@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>worklog-1：产品拆解</title>
+      <link href="/work-log-1/"/>
+      <url>/work-log-1/</url>
+      
+        <content type="html"><![CDATA[<p>拆解一个产品需求</p><a id="more"></a><p>我会在 worklog 这个分类中记录日常工作中我认为有价值的点，首先是笔记，其次是分享。</p><p>技术开发者更多关心的产品映射的需求，开发完成后，如果没有新的需求，那技术开发者在这个项目的生命周期就已经结束，这是某种程度上开发人员的职业属性决定的。</p><p>但当一个项目引入一个 pm 时，ta 会对这个项目进行拆解</p><ul><li>这个产品解决的问题是什么，如果公司是 OKR 驱动，它对应的 Object 是什么？</li><li>这个产品是长期还是短期项目？</li></ul><p>如果是短期，那么是不是一期开发结束，后续只需要运营即可，后续也不会深入讨论。</p><p>但从产品的角度，需要给产品一个更高维度的定位，解决更多的问题，从</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> worklog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> worklog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Javascript 获取 Markdown 所有图片节点</title>
       <link href="/javascript-get-all-image-src-from-markdown/"/>
       <url>/javascript-get-all-image-src-from-markdown/</url>
@@ -54,37 +79,6 @@
             <tag> nodejs </tag>
             
             <tag> koa </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>koa-session 获取当前会话的 sessionid</title>
-      <link href="/koa-session-get-session-id/"/>
-      <url>/koa-session-get-session-id/</url>
-      
-        <content type="html"><![CDATA[<p>使用 <code>koa-session</code> 时，获取 sessionid。</p><a id="more"></a><h2 id="tl-dr"><a href="#tl-dr" class="headerlink" title="tl;dr"></a>tl;dr</h2><p>先说结论，如果在使用 <code>koa-session</code> 时需要获取当前<strong>新建</strong> <code>session</code> 的 <code>sessionid</code> 时，可以通过手动调用 <code>koa-session</code> 的 <code>save</code> 方法立即保存当前的 session 更改，即 <code>await ctx.session.manuallyCommit();</code> 或 <code>await ctx.session.save();</code>（强制保存），调用后，我们可以在 <code>ctx.response.header</code> 的 <code>set-cookie</code> 属性中拿到当前的 <code>sessionid</code>。</p><p>接下来说下场景和原因。</p><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>项目技术背景如下，其中单点的逻辑这里简化描述，我们目前使用的方案是 <a href="https://apereo.github.io/cas/6.0.x/index.html" target="_blank" rel="noopener">CAS</a>，下文我们也会用 CAS 表述单点服务。</p><blockquote><p>使用了 <code>koas-session</code> 管理 session<br>使用 redis 存储 session（这个可以在 session 方法的 opitons 属性中配置）<br>接入了 CAS，登录成功后，我会把 CAS 下发的 ticket 和当前 session 的 sessionid，存入 redis（退出登录时会使用到）<br>在服务里给 CAS 预留一个登出入口，CAS 登出时会请求这个接口，我们可以拿到 CAS 带来的 ticket 参数，通过 ticket，我们可以从 redis 里拿到对应的 sessionid，再通过 sessionid 销毁对应的 session<br>注：用户在接入 CAS 的项目中登出时，CAS 会对所有接入的端发送登出的请求，各个端系统在预留的登出接口里配置 session 销毁逻辑</p></blockquote><p>这个方案没有问题，唯一的问题在于实现时发现，<code>koa-session</code> 并没有暴露当前 <code>sessionid</code> 的方法，如果拿不到 <code>sessionid</code>，整个流程都会被卡主，获取方法前面已经提过了，下面我们聊聊为什么。</p><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>看过 <code>koa-session</code> 源码的同学应该知道，当使用外部存储时（mongo、redis 等）时，以 redis 为例，这个中间件会将 <code>session</code> 数据存在 redis 里，将 <code>sessionid</code> 写入客户端的 <code>cookie</code>，当客户端再次请求时，通过读取 <code>cookie</code>，再从 redis 中拿出 session。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 保存到外部存储</span></span><br><span class="line"><span class="keyword">if</span> (externalKey) &#123;</span><br><span class="line">  debug(<span class="string">'save %j to external key %s'</span>, json, externalKey);</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> maxAge === <span class="string">'number'</span>) &#123;</span><br><span class="line">    maxAge += <span class="number">10000</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">await</span> <span class="keyword">this</span>.store.set(externalKey, json, maxAge, &#123;</span><br><span class="line">    changed,</span><br><span class="line">    rolling: opts.rolling,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">if</span> (opts.externalKey) &#123;</span><br><span class="line">    opts.externalKey.set(<span class="keyword">this</span>.ctx, externalKey);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.ctx.cookies.set(key, externalKey, opts);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>当看到 <code>this.ctx.cookies.set(key, externalKey, opts);</code> 这行代码时，意识到可以通过拿 <code>set-cookie</code> 来获取，但是，在配置 session 后，打印 <code>response.header</code> 时却没看到任何 <code>set-cookie</code> 的信息，再看源码，上面保存的方法被放置到了最后触发</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">opts, app</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (opts &amp;&amp; <span class="keyword">typeof</span> opts.use === <span class="string">'function'</span>) &#123;</span><br><span class="line">    [ app, opts ] = [ opts, app ];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (!app || <span class="keyword">typeof</span> app.use !== <span class="string">'function'</span>) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">TypeError</span>(<span class="string">'app instance required: `session(opts, app)`'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  opts = formatOpts(opts);</span><br><span class="line">  extendContext(app.context, opts);</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">session</span>(<span class="params">ctx, next</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> sess = ctx[CONTEXT_SESSION];</span><br><span class="line">    <span class="keyword">if</span> (sess.store) <span class="keyword">await</span> sess.initFromExternal();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">      <span class="keyword">await</span> next();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (err) &#123;</span><br><span class="line">      <span class="keyword">throw</span> err;</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (opts.autoCommit) &#123;</span><br><span class="line">        <span class="comment">// commit 方法中执行上文的保存操作</span></span><br><span class="line">        <span class="keyword">await</span> sess.commit();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>这样就太被动了，不过还好暴露除了 <code>save</code> 和 <code>manuallyCommit</code> 两种方式触发保存，区别是 <code>save</code> 是冒着 session 被污染的风险强制更新，保存之后，再次打印，令人满意的 <code>set-cookie</code> 如约出现。</p><h2 id="多一种方案"><a href="#多一种方案" class="headerlink" title="多一种方案"></a>多一种方案</h2><p>获取 <code>koa-session</code> 默认生成的 <code>sessionid</code>，只是一种方案，我们还可以生成自定义 <code>sessionid</code>，配置到 <code>option</code> 中的 <code>externalKey</code> 属性，可以达到制定 <code>sessionid</code> 的目的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> nodejs </tag>
-            
-            <tag> koajs </tag>
-            
-            <tag> koa-session </tag>
-            
-            <tag> session </tag>
             
         </tags>
       
@@ -250,9 +244,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
             <tag> nodejs </tag>
             
@@ -2080,9 +2074,9 @@
       
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -2317,9 +2311,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
       
