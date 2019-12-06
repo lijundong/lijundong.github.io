@@ -40,13 +40,13 @@
     </item>
     
     <item>
-      <title>koa</title>
+      <title>koa-session 获取当前会话的 sessionid</title>
       <link>https://leeon.im/koa-session-get-session-id/</link>
       <guid>https://leeon.im/koa-session-get-session-id/</guid>
       <pubDate>Wed, 04 Sep 2019 11:07:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;test&lt;/p&gt;
+        &lt;p&gt;使用 &lt;code&gt;koa-session&lt;/code&gt; 时，获取 sessionid。&lt;/p&gt;
       
       </description>
       
