@@ -12,12 +12,12 @@
 
 
 
-  <meta name="description" content="Javascript 获取 Markdown 所有图片节点">
+  <meta name="description" content="llog-1-思维训练">
 
 
 
 
-  <meta name="keywords" content="javascript,markdown,commonmark,">
+  <meta name="keywords" content="llog,">
 
 
 
@@ -31,21 +31,21 @@
 
 
 
-<link rel="canonical" href="https://leeon.im/javascript-get-all-image-src-from-markdown/">
+<link rel="canonical" href="https://leeon.im/life-log-20191215/">
 
 
-<meta name="description" content="JavaScript 解析 Markdown 获取 所有图片节点">
-<meta name="keywords" content="javascript,markdown,commonmark">
+<meta name="description" content="尝试一种结构性思考方式。  本文 25m/12s">
+<meta name="keywords" content="llog">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Javascript 获取 Markdown 所有图片节点">
-<meta property="og:url" content="https://leeon.im/javascript-get-all-image-src-from-markdown/index.html">
+<meta property="og:title" content="llog-1-思维训练">
+<meta property="og:url" content="https://leeon.im/life-log-20191215/index.html">
 <meta property="og:site_name" content="Leeonfield">
-<meta property="og:description" content="JavaScript 解析 Markdown 获取 所有图片节点">
+<meta property="og:description" content="尝试一种结构性思考方式。  本文 25m/12s">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-09-12T04:29:37.496Z">
+<meta property="og:updated_time" content="2019-12-15T14:26:53.823Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript 获取 Markdown 所有图片节点">
-<meta name="twitter:description" content="JavaScript 解析 Markdown 获取 所有图片节点">
+<meta name="twitter:title" content="llog-1-思维训练">
+<meta name="twitter:description" content="尝试一种结构性思考方式。  本文 25m/12s">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -84,7 +84,7 @@
 
 
 
-    <title> Javascript 获取 Markdown 所有图片节点 · Leeonfield </title>
+    <title> llog-1-思维训练 · Leeonfield </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -209,13 +209,13 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          Javascript 获取 Markdown 所有图片节点
+          llog-1-思维训练
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2019年9月12日
+          2019年12月15日
         </span>
       </div>
     </header>
@@ -225,20 +225,24 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#场景"><span class="toc-text">场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#思路"><span class="toc-text">思路</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么"><span class="toc-text">为什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么做"><span class="toc-text">怎么做</span></a></li></ol>
     </div>
   </div>
 
 
     <div class="post-content">
       
-        <p>JavaScript 解析 Markdown 获取 所有图片节点</p>
+        <p>尝试一种结构性思考方式。</p>
+<blockquote>
+<p>本文 25m/12s</p>
+</blockquote>
 <a id="more"></a>
-<h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>需要对 Markdown 中所有 img src 进行服务端加签名。</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>因为 Markdown 有语法，首先放弃正则的方案，搜一下是否有现有方案，</p>
-<p>google <code>javascript get all image in markdown</code> 搜到 <a href="https://github.com/iamstarkov/get-md-image" target="_blank" rel="noopener">get-md-image</a> 这个方案，本地试了一下，发现只取到了 Markdown 中第一个 image 节点。看了下源码实现，原来是基于 <a href="https://www.npmjs.com/package/commonmark" target="_blank" rel="noopener">commonmark.js</a> 实现，除了获取图片，作者还封装了一系列基于 commonmark.js 的库，并且这些库的 npm 下载量都很大。</p>
-<p>再看下 commonmark.js，这个库是基于 markdown 标准的 JavaScript 实现，其中提供的 <code>Parser</code> 方法可以将 markdown string 解析为一棵节点树，节点数包含<a href="https://github.com/commonmark/commonmark.js" target="_blank" rel="noopener">基础数据和一些方法</a>，我们会用到 <code>type</code>、<code>destination</code>、<code>walker()</code> 来获取所有的图片节点，代码如下</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> commonMark = <span class="built_in">require</span>(<span class="string">"commonmark"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> getAllImg = <span class="function"><span class="params">markdown</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span>(!markdown) <span class="keyword">return</span></span><br><span class="line">  <span class="keyword">let</span> parsed = <span class="keyword">new</span> commonMark.Parser().parse(markdown)</span><br><span class="line">  <span class="keyword">let</span> walker = parsed.walker()</span><br><span class="line">  <span class="keyword">let</span> event</span><br><span class="line">  <span class="keyword">let</span> srcList = []</span><br><span class="line">  <span class="keyword">let</span> nodeList = []</span><br><span class="line">  <span class="keyword">while</span> (event = walker.next()) &#123;</span><br><span class="line">    <span class="keyword">let</span> node = event.node;</span><br><span class="line">    <span class="keyword">if</span> (</span><br><span class="line">      node.type === <span class="string">"image"</span> &amp;&amp;</span><br><span class="line">      node.destination</span><br><span class="line">    ) &#123;</span><br><span class="line">      nodeList.push(node)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">const</span> srcList = nodeList.map(<span class="function"><span class="params">node</span> =&gt;</span> node.destination)</span><br><span class="line">  <span class="keyword">const</span> uniqueSrcList = [...new <span class="built_in">Set</span>(srcList)]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    srcList,</span><br><span class="line">    uniqueSrcList,</span><br><span class="line">    nodeList</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h2><p>首先解释下背景，随着工作经历的深入，我开始意识到自身表达能力的不足，业余时间很少投入精力去训练表达和结构化思考，每次进步都来自不太成功的实战，例如频率不高的线下分享或者面对面的沟通，每次都能发现一些新的问题。很早就意识到这些问题，直到近期发现这些问题开始阻塞我的进步空间，才真正想着做出改变，fix 这些问题。</p>
+<h2 id="怎么做"><a href="#怎么做" class="headerlink" title="怎么做"></a>怎么做</h2><p>我的计划分为两部分，首先最直接的优化是表达能力，自上周开始，每晚睡前我会用手机录一段五到十分钟的录音，录音的内容是用这段时间来表达一个清楚的议题，可以是对于某一件事情的看法，也可以是对某一个事物的表述。录完，再听一遍，听得过程中发现自己的问题，可以再下一次录音过程中刻意避免，例如我们日常表述过程中，会出现大量无效用词，然后、嗯、emmm等等，这些词的出现会很大程度降低表述的力度。尤其在演讲、分享这种场合，对于效果是非常打折扣的。录音这个阶段，我需要做的是刻意避免这些无效用词，尽可能多的丰富自己的用语。可以慢一点，但表述一定要简洁，用清晰简洁的字句传递出想表达的意思。</p>
+<p>录音是第一步，能解决表达的问题，如果这一步顺利进行，我会进入表述清晰，但每一句过程中会出现大量停顿，停顿意味我在思考。如果解决思考带来停顿的问题，这是今天这篇文章的由来。我希望通过规定时间内产出一篇文章来训练我的结构化思维能力。</p>
+<p>我的博客的内容已经能体现我在文字上的表达能力，只不过，还差一点意思。如果写一篇深度技术文章，我可能会花费长达一周的时间，修修改改，即便是随笔也可能会花费超过一个小时，产出的可能也只是一篇千字文，我缺乏结构化的思考，导致写文章时前，脑海中是大量碎片化的信息，结构化的工作是在这些岁碎片信息写成文字后进行，导致浪费了大量时间。</p>
+<p>这个系列文章我会限制十五分钟写完，初期可能会超时，超时所在就是改进方向。</p>
+
       
     </div>
 
@@ -257,7 +261,7 @@
     </p>
     <p class="copyright-item">
       <span>链接: </span>
-      <a href="https://leeon.im/javascript-get-all-image-src-from-markdown/">https://leeon.im/javascript-get-all-image-src-from-markdown/</a>
+      <a href="https://leeon.im/life-log-20191215/">https://leeon.im/life-log-20191215/</a>
     </p>
 
     <p class="copyright-item lincese">
@@ -291,11 +295,7 @@
         
           <div class="post-tags">
             
-              <a href="/tags/javascript/">javascript</a>
-            
-              <a href="/tags/markdown/">markdown</a>
-            
-              <a href="/tags/commonmark/">commonmark</a>
+              <a href="/tags/llog/">llog</a>
             
           </div>
         
@@ -303,15 +303,9 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/life-log-20191215/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">llog-1-思维训练</span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
     
-    
-      <a class="next" href="/SPA-fix-406-status-code/">
-        <span class="next-text nav-default">单页应用处理 406 状态</span>
+      <a class="next" href="/javascript-get-all-image-src-from-markdown/">
+        <span class="next-text nav-default">Javascript 获取 Markdown 所有图片节点</span>
         <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
@@ -418,9 +412,9 @@
   
   <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'https://leeon.im/javascript-get-all-image-src-from-markdown/';
-        this.page.identifier = 'javascript-get-all-image-src-from-markdown/';
-        this.page.title = 'Javascript 获取 Markdown 所有图片节点';
+        this.page.url = 'https://leeon.im/life-log-20191215/';
+        this.page.identifier = 'life-log-20191215/';
+        this.page.title = 'llog-1-思维训练';
     };
     (function() {
     var d = document, s = d.createElement('script');

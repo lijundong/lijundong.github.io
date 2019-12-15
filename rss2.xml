@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 12 Sep 2019 04:29:37 GMT</pubDate>
+    <pubDate>Sun, 15 Dec 2019 14:26:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-1-思维训练</title>
+      <link>https://leeon.im/life-log-20191215/</link>
+      <guid>https://leeon.im/life-log-20191215/</guid>
+      <pubDate>Sun, 15 Dec 2019 13:59:31 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;尝试一种结构性思考方式。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文 25m/12s&lt;/p&gt;
+&lt;/blockquote&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191215/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>Javascript 获取 Markdown 所有图片节点</title>
@@ -282,21 +299,6 @@
       </description>
       
       <comments>https://leeon.im/2018-miniprogram-developer-conference/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>clnms</title>
-      <link>https://leeon.im/clear-node-modules-by-nodejs/</link>
-      <guid>https://leeon.im/clear-node-modules-by-nodejs/</guid>
-      <pubDate>Sun, 25 Nov 2018 07:28:50 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/18-11-25/24310408.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;p&gt;前几天备份文件，为避免 &lt;code&gt;node_modules&lt;/code&gt; 黑洞，写了个清除指定目录下 &lt;code&gt;node_modules&lt;/code&gt; 目录的脚本&lt;br&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/clear-node-modules-by-nodejs/#disqus_thread</comments>
     </item>
     
   </channel>
