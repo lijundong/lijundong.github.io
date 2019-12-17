@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 16 Dec 2019 14:23:46 GMT</pubDate>
+    <pubDate>Tue, 17 Dec 2019 16:29:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-3-时间观念</title>
+      <link>https://leeon.im/life-log-20191217/</link>
+      <guid>https://leeon.im/life-log-20191217/</guid>
+      <pubDate>Tue, 17 Dec 2019 15:57:58 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;27m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;现在是凌晨 零点 27 分，该睡觉了&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191217/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-2-小步快跑</title>
@@ -288,20 +305,6 @@
       </description>
       
       <comments>https://leeon.im/module-in-js/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>旧时光</title>
-      <link>https://leeon.im/old-days/</link>
-      <guid>https://leeon.im/old-days/</guid>
-      <pubDate>Sun, 02 Dec 2018 16:49:08 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;进来听首曲子吧，来自阿鲲为「风味人间」作的「&lt;a href=&quot;https://music.163.com/#/song?id=1320649246&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;那些美好&lt;/a&gt;」&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/old-days/#disqus_thread</comments>
     </item>
     
   </channel>
