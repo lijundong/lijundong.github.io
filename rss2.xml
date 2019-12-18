@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Tue, 17 Dec 2019 16:29:09 GMT</pubDate>
+    <pubDate>Wed, 18 Dec 2019 16:42:32 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-4-沟通中的变量</title>
+      <link>https://leeon.im/life-log-20191218/</link>
+      <guid>https://leeon.im/life-log-20191218/</guid>
+      <pubDate>Wed, 18 Dec 2019 14:52:54 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;43m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;你今天的工作顺利吗？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191218/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-3-时间观念</title>
@@ -285,26 +302,6 @@
       </description>
       
       <comments>https://leeon.im/year-again-2019/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Javascript 模块化</title>
-      <link>https://leeon.im/module-in-js/</link>
-      <guid>https://leeon.im/module-in-js/</guid>
-      <pubDate>Mon, 03 Dec 2018 16:26:13 GMT</pubDate>
-      <description>
-      
-        
-        
-          
-          
-            &lt;a
-          
-        
-      
-      </description>
-      
-      <comments>https://leeon.im/module-in-js/#disqus_thread</comments>
     </item>
     
   </channel>
