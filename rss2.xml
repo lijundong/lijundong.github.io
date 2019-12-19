@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Wed, 18 Dec 2019 16:43:50 GMT</pubDate>
+    <pubDate>Thu, 19 Dec 2019 17:36:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-5-答复之前停顿三秒</title>
+      <link>https://leeon.im/life-log-20191219/</link>
+      <guid>https://leeon.im/life-log-20191219/</guid>
+      <pubDate>Thu, 19 Dec 2019 14:39:16 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;32m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;你确定吗？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191219/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-4-沟通中的变量</title>
@@ -288,20 +305,6 @@
       </description>
       
       <comments>https://leeon.im/four-springs/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>厨子的仪式感</title>
-      <link>https://leeon.im/year-again-2019/</link>
-      <guid>https://leeon.im/year-again-2019/</guid>
-      <pubDate>Fri, 04 Jan 2019 12:08:46 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-1-6/94618431.jpg&quot; alt&gt;&lt;br&gt;看着 17 年的总结，精神维度感觉已经过了很久，每当这个时候，物理的衡量刻度显现出价值，提醒你，仅是又过一年而已。&lt;br&gt;是啊，又是一年。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/year-again-2019/#disqus_thread</comments>
     </item>
     
   </channel>
