@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 19 Dec 2019 17:36:43 GMT</pubDate>
+    <pubDate>Fri, 20 Dec 2019 14:56:10 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-6-做确定的事情</title>
+      <link>https://leeon.im/life-log-20191220/</link>
+      <guid>https://leeon.im/life-log-20191220/</guid>
+      <pubDate>Fri, 20 Dec 2019 14:18:52 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;22m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;都知道该做什么，就是不去做。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191220/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-5-答复之前停顿三秒</title>
@@ -291,20 +308,6 @@
       </description>
       
       <comments>https://leeon.im/mini-program-use-iconfont/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>四个春天</title>
-      <link>https://leeon.im/four-springs/</link>
-      <guid>https://leeon.im/four-springs/</guid>
-      <pubDate>Sun, 06 Jan 2019 15:06:13 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-1-6/94594660.jpg&quot; alt&gt;&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/four-springs/#disqus_thread</comments>
     </item>
     
   </channel>
