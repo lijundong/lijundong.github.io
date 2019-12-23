@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>「Yapi 改造计划一」多层级目录支持</title>
+      <link href="/yapi-refactor-1-multi-level-directory/"/>
+      <url>/yapi-refactor-1-multi-level-directory/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>100m</p></blockquote><p>改造 Yapi 扁平管理逻辑，支持多层级结构管理。</p><a id="more"></a><p>Yapi 是很优秀的一款 API 管理及 Mock 工具，日常开发过程中，可以用于接口管理规范化同时提升团队间的沟通协作体验，不过我们在使用过程中也遇到了一些问题，并且在预期时间内这些问题无法被官方版本解决，因此，我们决定在 Yapi 之上做一些改造，以满足我们当前的使用场景。我们会用系列文章聊聊我们的改造和优化详细内容。</p><h2 id="改造原因"><a href="#改造原因" class="headerlink" title="改造原因"></a>改造原因</h2><p>今天的内容是针对 API 管理结构进行二次开发，现在的扁平化方案随着业务的增长及 API 托管量的增长日渐吃力，在此基础上，我们需要在目录上做一些改动。</p><h2 id="改造预期"><a href="#改造预期" class="headerlink" title="改造预期"></a>改造预期</h2><p>需要改动的模块主要是接口列表部分，分类目录下管理的数据除 <code>API</code> 类型外，增加 <code>目录</code> 类型，且 <code>目录</code> 下可以继续管理 <code>API</code> 和 <code>子目录</code>，改造后，用户在使用时拥有较高的自由度，可以满足大部分场景。</p><p>改造前：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── cat</span><br><span class="line">│   ├── 1.api</span><br><span class="line">│   ├── 2.api</span><br><span class="line">│   └── 3.api</span><br><span class="line">└── cat1</span><br><span class="line">    ├── 1.api</span><br><span class="line">    ├── 2.api</span><br><span class="line">    └── 3.api</span><br></pre></td></tr></table></figure></p><p>改造后：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">└── cat</span><br><span class="line">    ├── 1.api</span><br><span class="line">    ├── 2.api</span><br><span class="line">    └── dir1</span><br><span class="line">        ├── 3.api</span><br><span class="line">        └── dir1-1</span><br><span class="line">            └── 4.api</span><br></pre></td></tr></table></figure></p><p>数据结构改动后，需要对依赖的模块做产品逻辑兼容，</p><ul><li>首先是接口列表的位置编辑功能，需要兼容的操作逻辑包括接口、目录顺序变更、层级移动，分类变更。</li><li>数据导入时，需在导入的数据中增加层级信息，并且支持导入目录，现行的方案会将 postman 的接口打平到一级目录下，丢失目录信息。</li><li>数据导出时，导出 swagger json 时，需要将数据层级打平，导出 json 时，保留层级信息。</li></ul><h2 id="改造过程"><a href="#改造过程" class="headerlink" title="改造过程"></a>改造过程</h2><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><p>增加目录类型：通过在 <code>interface</code> 数据 schema 中增加 <code>interface_type</code> 字段用于标记当前数据类型，<code>0</code> 标记接口，<code>2</code> 标记目录，目录类型的数据结构较简单，有效信息包括 <code>title</code> 用于标记目录名以及接下来提到的层级关系数据。</p><p>增加层级关系：在 <code>interface</code> 数据 schema 中增加 <code>parent_id</code> 字段用于记录父节点，增加 <code>ancestors</code> 字段记录当前数据的直系祖先数据，<code>parent_id</code> 用于查找直系子节点，<code>ancestors</code> 字段便于查找所有子孙节点，分类一级目录下的数据，<code>parent_id</code> 与 <code>ancestors</code> 值为空。</p><p>举个例子：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">└── cat</span><br><span class="line">    ├── 1.api(1)</span><br><span class="line">    ├── 2.api(2)</span><br><span class="line">    └── dir1(3)</span><br><span class="line">        ├── 3.api(4)</span><br><span class="line">        └── dir1-1(5)</span><br><span class="line">            └── 4.api(6)</span><br></pre></td></tr></table></figure></p><p>以这节点树为例，节点括号中标注为当前节点的 ID，各层级数据存储结构分别为（为了方便理解，仅展示上文提到的字段，其余通用字段略过）：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1<span class="selector-class">.api</span>: &#123; <span class="attribute">interface_type</span>: <span class="number">0</span>, parent_id: <span class="string">''</span>, ancestors: <span class="string">''</span>&#125;</span><br><span class="line"><span class="selector-tag">dir1-1</span>: &#123; <span class="attribute">interface_type</span>: <span class="number">1</span>, parent_id: <span class="number">3</span>, ancestors: <span class="string">',3'</span>&#125;</span><br><span class="line">4<span class="selector-class">.api</span>: &#123; <span class="attribute">interface_type</span>: <span class="number">0</span>, parent_id: <span class="number">5</span>, ancestors: <span class="string">',3,5'</span> &#125;</span><br></pre></td></tr></table></figure><h3 id="逻辑兼容"><a href="#逻辑兼容" class="headerlink" title="逻辑兼容"></a>逻辑兼容</h3><p>数据管理部分涉及处理的逻辑比较复杂，另做一篇文章单独聊，今天先说节点位置编辑这部分，在处理这部分逻辑时，分两种情况处理</p><ol><li>当前编辑节点无子节点时，更改分类只需要变更 <code>catid</code> 字段，更改所在目录只需修改 <code>parent_id</code> 和 <code>ancestor</code> 字段，无额外操作</li><li>当编辑的节点存在子孙节点时，第一点中所有的变更动作需要同步应用在子孙节点</li></ol><h2 id="优化方向"><a href="#优化方向" class="headerlink" title="优化方向"></a>优化方向</h2><p>上面的改造半年前已经完成，这段时间，平台托管的数据量进一步增加，一个项目的节点数据愈加庞大，首屏加载或者节点操作的计算成本开始增加，导致用户能感知的卡顿，节点异步加载的改造排上了日常。没有最好的方案，只有当前最合适的方案</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> yapi </tag>
+            
+            <tag> mock </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>llog-6-逻辑很重要</title>
       <link href="/life-log-20191221/"/>
       <url>/life-log-20191221/</url>
@@ -413,9 +440,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
             <tag> nodejs </tag>
             
@@ -2243,9 +2270,9 @@
       
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -2480,9 +2507,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
       
