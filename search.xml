@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>llog-7-问题的根源取决于对错吗</title>
+      <link href="/life-log-20191223/"/>
+      <url>/life-log-20191223/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>26m</p></blockquote><p>是非重要吗</p><a id="more"></a><p>这个问题的本身就是一个案例，它不是一个选择疑问句，可以简单选择是或者否，为了满足提问者的需求，我们需要分场景解答，</p><p>如果条件单一的情况下，是非是确定的，小学的算术题 <code>1+1=2</code> 没人会说是错的，这种思维除了解答题目，还被我用在生活中，一根筋、倔强、吃苦耐劳、坚毅、专业，伴随着我度过高中，进入大学，进入工作，解决了我人生的 <code>1+1=2</code> 那个阶段。</p><p>学会了 <code>1+1</code> 之后，遇到了物理，遇到受力分析，特定场景下各种条件交织，需要理清各种条件的需求，找到一种方案，满足所有的需求，计算反而成了过程中最简单的步骤。</p><p>所以，是非重要吗？挺重要的，它是最小问题集合的答案，只是当问题的关键已经不是「是」或者「非」，当问题指向了一个完全不同的方向，这时候，是非对错已经不再重要。正如这篇文章聊的内容，开篇问题的答案还重要吗？</p><p>当你看到一群人争执不下，他们真的在讨论答案吗？在一个企业经营过程中，符合法律一定等同于正确吗？</p><p>我不知道。</p><hr><p>为了避免忘记，明晚我们聊一聊什么是有效信息。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> llog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>「Yapi 改造计划一」多层级目录支持</title>
       <link href="/yapi-refactor-1-multi-level-directory/"/>
       <url>/yapi-refactor-1-multi-level-directory/</url>
