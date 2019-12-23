@@ -8,7 +8,7 @@
       <link href="/life-log-20191221/"/>
       <url>/life-log-20191221/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>m</p></blockquote><p>尤其是在吵架时。</p><a id="more"></a><p>在表达过程中，时刻清楚自己想表达什么，现在说的是什么，接下来要说什么，想表达的东西此刻进度到哪。例如今天这篇 llog 我想说表达过程中需要逻辑，那么这篇文章本身应该具有基础的逻辑性，抛出观点，细述内容，现实案例，及内容收尾。</p><p>切忌贪多，每次内容应在表述之前构思清晰，顺着既定的条例抛出观点即可，如果过程中有发散的想法，我不建议切换话题，你的听众不一定能接受这种思维跳转，导致的结果是，大家根本听不懂你在说什么。较好的处理方式应该是，上述构思的条例表述结束，在此基础上增加你的观点，或直接放弃，这种场景下，少就是多。</p><p>当然，这种表达上的克制，需要锻炼，锻炼的方式我在第一篇 llog 中就已经提到，不再赘述。</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>12m</p></blockquote><p>尤其是在吵架时。</p><a id="more"></a><p>在表达过程中，时刻清楚自己想表达什么，现在说的是什么，接下来要说什么，想表达的东西此刻进度到哪。例如今天这篇 llog 我想说表达过程中需要逻辑，那么这篇文章本身应该具有基础的逻辑性，抛出观点，细述内容，现实案例，及内容收尾。</p><p>切忌贪多，每次内容应在表述之前构思清晰，顺着既定的条例抛出观点即可，如果过程中有发散的想法，我不建议切换话题，你的听众不一定能接受这种思维跳转，导致的结果是，大家根本听不懂你在说什么。较好的处理方式应该是，上述构思的条例表述结束，在此基础上增加你的观点，或直接放弃，这种场景下，少就是多。</p><p>当然，这种表达上的克制，需要锻炼，锻炼的方式我在第一篇 llog 中就已经提到，不再赘述。</p>]]></content>
       
       
       <categories>
@@ -413,17 +413,17 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
             
-            <tag> nodejs </tag>
+            <tag> mongodb </tag>
             
-            <tag> git </tag>
+            <tag> nodejs </tag>
             
             <tag> 环境配置 </tag>
             
             <tag> zsh </tag>
+            
+            <tag> git </tag>
             
             <tag> vim </tag>
             
@@ -1803,9 +1803,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -2243,9 +2243,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -2480,9 +2480,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
       
