@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Fri, 20 Dec 2019 14:56:10 GMT</pubDate>
+    <pubDate>Mon, 23 Dec 2019 01:57:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-6-逻辑很重要</title>
+      <link>https://leeon.im/life-log-20191221/</link>
+      <guid>https://leeon.im/life-log-20191221/</guid>
+      <pubDate>Sat, 21 Dec 2019 17:36:17 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;尤其是在吵架时。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191221/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-6-做确定的事情</title>
@@ -294,20 +311,6 @@
       </description>
       
       <comments>https://leeon.im/how-mini-program-share/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>小程序 iconfont 方案</title>
-      <link>https://leeon.im/mini-program-use-iconfont/</link>
-      <guid>https://leeon.im/mini-program-use-iconfont/</guid>
-      <pubDate>Tue, 29 Jan 2019 07:16:30 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;&lt;img src=&quot;//source.lijundong.com/19-3-15/WX20190217-190910.jpg&quot; alt&gt;&lt;br&gt;小程序中使用 &lt;code&gt;iconfont&lt;/code&gt; 与传统 BOM 环境类似，只是小程序更为封闭，微信团队针对性地做了一些定制化处理，今天我们聊一下小程序场景下应用 &lt;code&gt;iconfont&lt;/code&gt; 的方案。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/mini-program-use-iconfont/#disqus_thread</comments>
     </item>
     
   </channel>
