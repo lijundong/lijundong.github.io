@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 23 Dec 2019 14:22:55 GMT</pubDate>
+    <pubDate>Tue, 24 Dec 2019 16:39:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-8-获取有效信息</title>
+      <link>https://leeon.im/life-log-20191224/</link>
+      <guid>https://leeon.im/life-log-20191224/</guid>
+      <pubDate>Tue, 24 Dec 2019 15:51:19 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;39m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;哪些是信息噪音？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191224/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-7-问题的根源取决于对错吗</title>
@@ -302,20 +319,6 @@
       </description>
       
       <comments>https://leeon.im/potential-in-life/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>平衡</title>
-      <link>https://leeon.im/life-balance/</link>
-      <guid>https://leeon.im/life-balance/</guid>
-      <pubDate>Sun, 10 Mar 2019 14:38:47 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;众生皆苦，苦即平常&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-balance/#disqus_thread</comments>
     </item>
     
   </channel>
