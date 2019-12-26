@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Tue, 24 Dec 2019 16:39:06 GMT</pubDate>
+    <pubDate>Thu, 26 Dec 2019 15:31:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-9-了解环境</title>
+      <link>https://leeon.im/life-log-20191225/</link>
+      <guid>https://leeon.im/life-log-20191225/</guid>
+      <pubDate>Wed, 25 Dec 2019 12:43:56 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;27m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;包括环境中的人&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191225/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-8-获取有效信息</title>
@@ -305,20 +322,6 @@
       </description>
       
       <comments>https://leeon.im/centos-dev-dependencies-install-shell/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>潜质</title>
-      <link>https://leeon.im/potential-in-life/</link>
-      <guid>https://leeon.im/potential-in-life/</guid>
-      <pubDate>Sun, 17 Mar 2019 14:54:46 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;最近的一点反思。&lt;br&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/potential-in-life/#disqus_thread</comments>
     </item>
     
   </channel>
