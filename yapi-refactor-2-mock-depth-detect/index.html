@@ -12,12 +12,12 @@
 
 
 
-  <meta name="description" content="单页应用处理 406 状态">
+  <meta name="description" content="「Yapi 改造计划二」接口模板预检">
 
 
 
 
-  <meta name="keywords" content="nodejs,SPA,koa,">
+  <meta name="keywords" content="yapi,mock,">
 
 
 
@@ -31,21 +31,21 @@
 
 
 
-<link rel="canonical" href="https://leeon.im/SPA-fix-406-status-code/">
+<link rel="canonical" href="https://leeon.im/yapi-refactor-2-mock-depth-detect/">
 
 
-<meta name="description" content="书接上文，上篇文章已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。">
-<meta name="keywords" content="nodejs,SPA,koa">
+<meta name="description" content="Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。">
+<meta name="keywords" content="yapi,mock">
 <meta property="og:type" content="article">
-<meta property="og:title" content="单页应用处理 406 状态">
-<meta property="og:url" content="https://leeon.im/SPA-fix-406-status-code/index.html">
+<meta property="og:title" content="「Yapi 改造计划二」接口模板预检">
+<meta property="og:url" content="https://leeon.im/yapi-refactor-2-mock-depth-detect/index.html">
 <meta property="og:site_name" content="Leeonfield">
-<meta property="og:description" content="书接上文，上篇文章已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。">
+<meta property="og:description" content="Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-09-05T06:53:17.693Z">
+<meta property="og:updated_time" content="2019-12-28T07:56:21.886Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="单页应用处理 406 状态">
-<meta name="twitter:description" content="书接上文，上篇文章已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。">
+<meta name="twitter:title" content="「Yapi 改造计划二」接口模板预检">
+<meta name="twitter:description" content="Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。">
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x">
@@ -84,7 +84,7 @@
 
 
 
-    <title> 单页应用处理 406 状态 · Leeonfield </title>
+    <title> 「Yapi 改造计划二」接口模板预检 · Leeonfield </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -209,13 +209,13 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          单页应用处理 406 状态
+          「Yapi 改造计划二」接口模板预检
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2019年9月5日
+          2019年12月27日
         </span>
       </div>
     </header>
@@ -225,41 +225,24 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#406-Not-Acceptable"><span class="toc-text">406 Not Acceptable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#场景"><span class="toc-text">场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方案"><span class="toc-text">方案</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#改造原因"><span class="toc-text">改造原因</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#问题"><span class="toc-text">问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方案"><span class="toc-text">方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#优化方向"><span class="toc-text">优化方向</span></a></li></ol>
     </div>
   </div>
 
 
     <div class="post-content">
       
-        <p>书接上文，<a href="https://leeon.im/koa-session-get-session-id/">上篇文章</a>已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。</p>
+        <p>Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。</p>
 <a id="more"></a>
-<h2 id="406-Not-Acceptable"><a href="#406-Not-Acceptable" class="headerlink" title="406 Not Acceptable"></a>406 Not Acceptable</h2><p>客户端出现这个状态码意味着，当前接口的返回数据没有匹配 <code>request header</code> 的 <code>acceptable values</code> 的要求，具体的配置的点如下：</p>
-<ul>
-<li><code>Accept</code>：客户端支持的内容类型，用 MIME 类型表示，<ul>
-<li><code>Accept</code>: <code>&lt;MIME_type&gt;/&lt;MIME_subtype&gt;</code></li>
-<li><code>Accept</code>: <code>&lt;MIME_type&gt;/*</code></li>
-<li><code>Accept</code>: <code>*/*</code></li>
-<li>实例 <code>Accept: text/html, application/xhtml+xml, application/xml;q=0.9, */*;q=0.8</code>（此处的 q 表示权重，所有值根据对应权重大小排序）</li>
-</ul>
-</li>
-<li><code>Accept-Charset</code>：客户端支持的字符编码，例 <code>Accept-Charset: utf-8, iso-8859-1;q=0.5, *;q=0.1</code></li>
-<li><code>Accept-Encoding</code>：客户端支持的内容编码方式，<ul>
-<li>压缩算法如 gzip、compress、deflate、br </li>
-<li>identity，标记支持无压缩</li>
-<li>*</li>
-<li>例 <code>Accept-Encoding: deflate, gzip;q=1.0, *;q=0.5</code></li>
-</ul>
-</li>
-<li><code>Accept-Language</code>：客户端支持的语言<ul>
-<li><code>Accept-Language</code>: <code>&lt;language&gt;</code></li>
-<li><code>Accept-Language</code>: <code>*</code></li>
-<li>实例 <code>Accept-Language: en-US,en;q=0.5</code></li>
-</ul>
-</li>
-</ul>
-<h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>用户当前同时开着 A、B 系统的窗口，在 B 系统中退出，在 A 系统中页面操作，请求的接口返回 <code>406 Not Acceptable</code>，出现原因是服务端鉴权发现当前请求无用户状态后，直接通过 <code>ctx.redirect(&#39;/login&#39;)</code> 企图跳转到登录页面，但 redirect 时，请求返回内容格式就成了 HTML 格式，但客户端的 ajax 配置了 <code>Accept: application/json;</code>，客户端收到了 HTML，心想这不是糊弄我吗，果断 throw 了一个 406。</p>
-<h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>在后端权限校验逻辑决定 redirect 前，使用 <code>ctx.assert(ctx.request.accepts(&#39;html&#39;),406,&#39;User not found. Please login!&#39;,);</code> 判断当前请求是否支持 HTML 内容，如不支持直接服务端返回 406 错误，前端请求方法初判断返回是否是 406，返回 406 时，直接 reload 页面。</p>
+<h2 id="改造原因"><a href="#改造原因" class="headerlink" title="改造原因"></a>改造原因</h2><p>先介绍下 Yapi 基础的 mock 逻辑，首先需要用户定义 API 的基础信息，请求、返回等信息，返回数据将被存储为描述 <code>response</code> 的抽象对象模板，mock 服务根据这份模板，生成一份具体的 mock 数据，生成是由 <a href="https://github.com/json-schema-faker/json-schema-faker" target="_blank" rel="noopener">json-schema-faker</a> 这个库完成，下文中我们将简称为 <code>jsf</code>，mock 服务将生成的 mock 数据返回，就完成了一次最基础的 mock。</p>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>这部分的逻辑没问题，但随时可能造成整个 Yapi 服务挂掉，这里没有危言耸听，交由 <code>jsf</code> 处理的模板如果嵌套层级过多，处理复杂度陡省，耗费时间和资源增加，直到触发系统 GC（内存回收），服务崩溃。</p>
+<h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>我们的解决方案是在模板数据交由 <code>jsf</code> 处理前，先进行嵌套深度检测，如果嵌套层级过多，直接跳过 mock，避免拖垮整站服务，检测代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> depthDetect = <span class="function">(<span class="params">objectData, depth = <span class="number">0</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (!(objectData <span class="keyword">instanceof</span> <span class="built_in">Array</span> || objectData <span class="keyword">instanceof</span> <span class="built_in">Object</span>)) &#123;</span><br><span class="line">    <span class="keyword">return</span> depth</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> newDepth = depth</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">in</span> objectData) &#123;</span><br><span class="line">    <span class="keyword">let</span> resDepth = depthDetect(objectData[index], depth + <span class="number">1</span>)</span><br><span class="line">    newDepth = newDepth === <span class="literal">undefined</span> ? newDepth : <span class="built_in">Math</span>.max(newDepth, resDepth)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newDepth</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>经过多次测试，将嵌套深度限制在 30 层内，可以保证稳定的服务运行。</p>
+<h2 id="优化方向"><a href="#优化方向" class="headerlink" title="优化方向"></a>优化方向</h2><p>无法预测研发人员定义的接口复杂度，不能在用户端限制用户编辑的接口嵌套深度，因此选择在 mock 前进行检测，这一步流程可以优化至接口模板保存时，保存时校验接口嵌套深度，并进行标记。</p>
+<blockquote>
+<p>Yapi 是很优秀的一款 API 管理及 Mock 工具，日常开发过程中，可以用于接口管理规范化同时提升团队间的沟通协作体验，不过我们在使用过程中也遇到了一些问题，并且在预期时间内这些问题无法被官方版本解决，因此，我们决定在 Yapi 之上做一些改造，以满足我们当前的使用场景。我们会用系列文章聊聊我们的改造和优化详细内容。</p>
+</blockquote>
 
       
     </div>
@@ -279,7 +262,7 @@
     </p>
     <p class="copyright-item">
       <span>链接: </span>
-      <a href="https://leeon.im/SPA-fix-406-status-code/">https://leeon.im/SPA-fix-406-status-code/</a>
+      <a href="https://leeon.im/yapi-refactor-2-mock-depth-detect/">https://leeon.im/yapi-refactor-2-mock-depth-detect/</a>
     </p>
 
     <p class="copyright-item lincese">
@@ -313,11 +296,9 @@
         
           <div class="post-tags">
             
-              <a href="/tags/nodejs/">nodejs</a>
+              <a href="/tags/yapi/">yapi</a>
             
-              <a href="/tags/SPA/">SPA</a>
-            
-              <a href="/tags/koa/">koa</a>
+              <a href="/tags/mock/">mock</a>
             
           </div>
         
@@ -325,15 +306,9 @@
         
   <nav class="post-nav">
     
-      <a class="prev" href="/javascript-get-all-image-src-from-markdown/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">Javascript 获取 Markdown 所有图片节点</span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
     
-    
-      <a class="next" href="/koa-session-get-session-id/">
-        <span class="next-text nav-default">koa-session 获取当前会话的 sessionid</span>
+      <a class="next" href="/life-log-20191225/">
+        <span class="next-text nav-default">llog-9-了解环境</span>
         <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
@@ -440,9 +415,9 @@
   
   <script type="text/javascript">
     var disqus_config = function () {
-        this.page.url = 'https://leeon.im/SPA-fix-406-status-code/';
-        this.page.identifier = 'SPA-fix-406-status-code/';
-        this.page.title = '单页应用处理 406 状态';
+        this.page.url = 'https://leeon.im/yapi-refactor-2-mock-depth-detect/';
+        this.page.identifier = 'yapi-refactor-2-mock-depth-detect/';
+        this.page.title = '「Yapi 改造计划二」接口模板预检';
     };
     (function() {
     var d = document, s = d.createElement('script');

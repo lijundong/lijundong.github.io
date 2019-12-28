@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="100m  改造 Yapi 扁平管理逻辑，支持多层级结构管理。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-12-23T12:27:32.000Z">
+<meta property="og:updated_time" content="2019-12-28T07:27:04.645Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「Yapi 改造计划一」多层级目录支持">
 <meta name="twitter:description" content="100m  改造 Yapi 扁平管理逻辑，支持多层级结构管理。">
@@ -237,7 +237,6 @@
 </blockquote>
 <p>改造 Yapi 扁平管理逻辑，支持多层级结构管理。</p>
 <a id="more"></a>
-<p>Yapi 是很优秀的一款 API 管理及 Mock 工具，日常开发过程中，可以用于接口管理规范化同时提升团队间的沟通协作体验，不过我们在使用过程中也遇到了一些问题，并且在预期时间内这些问题无法被官方版本解决，因此，我们决定在 Yapi 之上做一些改造，以满足我们当前的使用场景。我们会用系列文章聊聊我们的改造和优化详细内容。</p>
 <h2 id="改造原因"><a href="#改造原因" class="headerlink" title="改造原因"></a>改造原因</h2><p>今天的内容是针对 API 管理结构进行二次开发，现在的扁平化方案随着业务的增长及 API 托管量的增长日渐吃力，在此基础上，我们需要在目录上做一些改动。</p>
 <h2 id="改造预期"><a href="#改造预期" class="headerlink" title="改造预期"></a>改造预期</h2><p>需要改动的模块主要是接口列表部分，分类目录下管理的数据除 <code>API</code> 类型外，增加 <code>目录</code> 类型，且 <code>目录</code> 下可以继续管理 <code>API</code> 和 <code>子目录</code>，改造后，用户在使用时拥有较高的自由度，可以满足大部分场景。</p>
 <p>改造前：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── cat</span><br><span class="line">│   ├── 1.api</span><br><span class="line">│   ├── 2.api</span><br><span class="line">│   └── 3.api</span><br><span class="line">└── cat1</span><br><span class="line">    ├── 1.api</span><br><span class="line">    ├── 2.api</span><br><span class="line">    └── 3.api</span><br></pre></td></tr></table></figure></p>
@@ -259,6 +258,9 @@
 <li>当编辑的节点存在子孙节点时，第一点中所有的变更动作需要同步应用在子孙节点</li>
 </ol>
 <h2 id="优化方向"><a href="#优化方向" class="headerlink" title="优化方向"></a>优化方向</h2><p>上面的改造半年前已经完成，这段时间，平台托管的数据量进一步增加，一个项目的节点数据愈加庞大，首屏加载或者节点操作的计算成本开始增加，导致用户能感知的卡顿，节点异步加载的改造排上了日常。没有最好的方案，只有当前最合适的方案</p>
+<blockquote>
+<p>Yapi 是很优秀的一款 API 管理及 Mock 工具，日常开发过程中，可以用于接口管理规范化同时提升团队间的沟通协作体验，不过我们在使用过程中也遇到了一些问题，并且在预期时间内这些问题无法被官方版本解决，因此，我们决定在 Yapi 之上做一些改造，以满足我们当前的使用场景。我们会用系列文章聊聊我们的改造和优化详细内容。</p>
+</blockquote>
 
       
     </div>

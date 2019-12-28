@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 26 Dec 2019 15:36:43 GMT</pubDate>
+    <pubDate>Sat, 28 Dec 2019 07:56:21 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>「Yapi 改造计划二」接口模板预检</title>
+      <link>https://leeon.im/yapi-refactor-2-mock-depth-detect/</link>
+      <guid>https://leeon.im/yapi-refactor-2-mock-depth-detect/</guid>
+      <pubDate>Fri, 27 Dec 2019 10:52:12 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/yapi-refactor-2-mock-depth-detect/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-9-了解环境</title>
@@ -308,20 +322,6 @@
       </description>
       
       <comments>https://leeon.im/mp-IntersectionObserver/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>Centos 7 开发环境依赖安装</title>
-      <link>https://leeon.im/centos-dev-dependencies-install-shell/</link>
-      <guid>https://leeon.im/centos-dev-dependencies-install-shell/</guid>
-      <pubDate>Fri, 22 Mar 2019 03:12:20 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;Centos 开发环境依赖安装。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/centos-dev-dependencies-install-shell/#disqus_thread</comments>
     </item>
     
   </channel>
