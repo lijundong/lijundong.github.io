@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 28 Dec 2019 08:03:12 GMT</pubDate>
+    <pubDate>Sat, 28 Dec 2019 11:06:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-11-不要断开与世界的连接</title>
+      <link>https://leeon.im/life-log-20191227/</link>
+      <guid>https://leeon.im/life-log-20191227/</guid>
+      <pubDate>Sat, 28 Dec 2019 10:29:09 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;42m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;404 ?&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191227/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>「Yapi 改造计划二」接口模板预检</title>
@@ -314,20 +331,6 @@
       </description>
       
       <comments>https://leeon.im/build-your-own-private-message-bot/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>提高效率的方法论和工具</title>
-      <link>https://leeon.im/efficient-method-and-tool/</link>
-      <guid>https://leeon.im/efficient-method-and-tool/</guid>
-      <pubDate>Tue, 21 May 2019 10:37:51 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;这篇内容是我在公司内的分享「打造职场竞争力」的补充内容，日常使用的工具以及一些方法论，仅供参考。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/efficient-method-and-tool/#disqus_thread</comments>
     </item>
     
   </channel>
