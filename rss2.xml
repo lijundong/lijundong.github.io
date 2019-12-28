@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 28 Dec 2019 08:02:07 GMT</pubDate>
+    <pubDate>Sat, 28 Dec 2019 10:26:00 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-10-再具体一点</title>
+      <link>https://leeon.im/life-log-20191226/</link>
+      <guid>https://leeon.im/life-log-20191226/</guid>
+      <pubDate>Sat, 28 Dec 2019 08:05:23 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;31m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;你想说什么?&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191226/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>「Yapi 改造计划二」接口模板预检</title>
@@ -18,7 +35,10 @@
       <pubDate>Fri, 27 Dec 2019 10:52:12 GMT</pubDate>
       <description>
       
-        &lt;p&gt;Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。&lt;/p&gt;
+        &lt;blockquote&gt;
+&lt;p&gt;25m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。&lt;/p&gt;
       
       </description>
       
@@ -308,20 +328,6 @@
       </description>
       
       <comments>https://leeon.im/efficient-method-and-tool/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>小程序 IntersectionObserver 使用案例</title>
-      <link>https://leeon.im/mp-IntersectionObserver/</link>
-      <guid>https://leeon.im/mp-IntersectionObserver/</guid>
-      <pubDate>Mon, 01 Apr 2019 12:22:57 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;今天聊聊小程序的 &lt;code&gt;IntersectionObserver&lt;/code&gt; 接口。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/mp-IntersectionObserver/#disqus_thread</comments>
     </item>
     
   </channel>
