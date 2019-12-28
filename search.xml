@@ -8,7 +8,7 @@
       <link href="/yapi-refactor-2-mock-depth-detect/"/>
       <url>/yapi-refactor-2-mock-depth-detect/</url>
       
-        <content type="html"><![CDATA[<p>Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。</p><a id="more"></a><h2 id="改造原因"><a href="#改造原因" class="headerlink" title="改造原因"></a>改造原因</h2><p>先介绍下 Yapi 基础的 mock 逻辑，首先需要用户定义 API 的基础信息，请求、返回等信息，返回数据将被存储为描述 <code>response</code> 的抽象对象模板，mock 服务根据这份模板，生成一份具体的 mock 数据，生成是由 <a href="https://github.com/json-schema-faker/json-schema-faker" target="_blank" rel="noopener">json-schema-faker</a> 这个库完成，下文中我们将简称为 <code>jsf</code>，mock 服务将生成的 mock 数据返回，就完成了一次最基础的 mock。</p><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>这部分的逻辑没问题，但随时可能造成整个 Yapi 服务挂掉，这里没有危言耸听，交由 <code>jsf</code> 处理的模板如果嵌套层级过多，处理复杂度陡省，耗费时间和资源增加，直到触发系统 GC（内存回收），服务崩溃。</p><h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>我们的解决方案是在模板数据交由 <code>jsf</code> 处理前，先进行嵌套深度检测，如果嵌套层级过多，直接跳过 mock，避免拖垮整站服务，检测代码如下：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> depthDetect = <span class="function">(<span class="params">objectData, depth = <span class="number">0</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (!(objectData <span class="keyword">instanceof</span> <span class="built_in">Array</span> || objectData <span class="keyword">instanceof</span> <span class="built_in">Object</span>)) &#123;</span><br><span class="line">    <span class="keyword">return</span> depth</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> newDepth = depth</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">in</span> objectData) &#123;</span><br><span class="line">    <span class="keyword">let</span> resDepth = depthDetect(objectData[index], depth + <span class="number">1</span>)</span><br><span class="line">    newDepth = newDepth === <span class="literal">undefined</span> ? newDepth : <span class="built_in">Math</span>.max(newDepth, resDepth)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newDepth</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>经过多次测试，将嵌套深度限制在 30 层内，可以保证稳定的服务运行。</p><h2 id="优化方向"><a href="#优化方向" class="headerlink" title="优化方向"></a>优化方向</h2><p>无法预测研发人员定义的接口复杂度，不能在用户端限制用户编辑的接口嵌套深度，因此选择在 mock 前进行检测，这一步流程可以优化至接口模板保存时，保存时校验接口嵌套深度，并进行标记。</p><blockquote><p>Yapi 是很优秀的一款 API 管理及 Mock 工具，日常开发过程中，可以用于接口管理规范化同时提升团队间的沟通协作体验，不过我们在使用过程中也遇到了一些问题，并且在预期时间内这些问题无法被官方版本解决，因此，我们决定在 Yapi 之上做一些改造，以满足我们当前的使用场景。我们会用系列文章聊聊我们的改造和优化详细内容。</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<p>Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。</p><a id="more"></a><blockquote><p>25m</p></blockquote><h2 id="改造原因"><a href="#改造原因" class="headerlink" title="改造原因"></a>改造原因</h2><p>先介绍下 Yapi 基础的 mock 逻辑，首先需要用户定义 API 的基础信息，请求、返回等信息，返回数据将被存储为描述 <code>response</code> 的抽象对象模板，mock 服务根据这份模板，生成一份具体的 mock 数据，生成是由 <a href="https://github.com/json-schema-faker/json-schema-faker" target="_blank" rel="noopener">json-schema-faker</a> 这个库完成，下文中我们将简称为 <code>jsf</code>，mock 服务将生成的 mock 数据返回，就完成了一次最基础的 mock。</p><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>这部分的逻辑没问题，但随时可能造成整个 Yapi 服务挂掉，这里没有危言耸听，交由 <code>jsf</code> 处理的模板如果嵌套层级过多，处理复杂度陡省，耗费时间和资源增加，直到触发系统 GC（内存回收），服务崩溃。</p><h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>我们的解决方案是在模板数据交由 <code>jsf</code> 处理前，先进行嵌套深度检测，如果嵌套层级过多，直接跳过 mock，避免拖垮整站服务，检测代码如下：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> depthDetect = <span class="function">(<span class="params">objectData, depth = <span class="number">0</span></span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (!(objectData <span class="keyword">instanceof</span> <span class="built_in">Array</span> || objectData <span class="keyword">instanceof</span> <span class="built_in">Object</span>)) &#123;</span><br><span class="line">    <span class="keyword">return</span> depth</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> newDepth = depth</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">in</span> objectData) &#123;</span><br><span class="line">    <span class="keyword">let</span> resDepth = depthDetect(objectData[index], depth + <span class="number">1</span>)</span><br><span class="line">    newDepth = newDepth === <span class="literal">undefined</span> ? newDepth : <span class="built_in">Math</span>.max(newDepth, resDepth)</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newDepth</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>经过多次测试，将嵌套深度限制在 30 层内，可以保证稳定的服务运行。</p><h2 id="优化方向"><a href="#优化方向" class="headerlink" title="优化方向"></a>优化方向</h2><p>无法预测研发人员定义的接口复杂度，不能在用户端限制用户编辑的接口嵌套深度，因此选择在 mock 前进行检测，这一步流程可以优化至接口模板保存时，保存时校验接口嵌套深度，并进行标记。</p><blockquote><p>Yapi 是很优秀的一款 API 管理及 Mock 工具，日常开发过程中，可以用于接口管理规范化同时提升团队间的沟通协作体验，不过我们在使用过程中也遇到了一些问题，并且在预期时间内这些问题无法被官方版本解决，因此，我们决定在 Yapi 之上做一些改造，以满足我们当前的使用场景。我们会用系列文章聊聊我们的改造和优化详细内容。</p></blockquote>]]></content>
       
       
       <categories>
@@ -341,9 +341,9 @@
       
         <tags>
             
-            <tag> nodejs </tag>
-            
             <tag> SPA </tag>
+            
+            <tag> nodejs </tag>
             
             <tag> koa </tag>
             
@@ -542,17 +542,17 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
             
-            <tag> git </tag>
-            
-            <tag> 环境配置 </tag>
+            <tag> centos </tag>
             
             <tag> nodejs </tag>
             
+            <tag> 环境配置 </tag>
+            
             <tag> zsh </tag>
+            
+            <tag> git </tag>
             
             <tag> vim </tag>
             
@@ -1820,9 +1820,9 @@
       
         <tags>
             
-            <tag> 总结 </tag>
-            
             <tag> 游记 </tag>
+            
+            <tag> 总结 </tag>
             
         </tags>
       
@@ -1932,9 +1932,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -2372,9 +2372,9 @@
       
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -2609,9 +2609,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
       

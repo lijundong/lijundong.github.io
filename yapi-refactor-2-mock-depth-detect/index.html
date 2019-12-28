@@ -42,7 +42,7 @@
 <meta property="og:site_name" content="Leeonfield">
 <meta property="og:description" content="Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2019-12-28T07:56:21.886Z">
+<meta property="og:updated_time" content="2019-12-28T08:02:07.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「Yapi 改造计划二」接口模板预检">
 <meta name="twitter:description" content="Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。">
@@ -234,6 +234,9 @@
       
         <p>Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。</p>
 <a id="more"></a>
+<blockquote>
+<p>25m</p>
+</blockquote>
 <h2 id="改造原因"><a href="#改造原因" class="headerlink" title="改造原因"></a>改造原因</h2><p>先介绍下 Yapi 基础的 mock 逻辑，首先需要用户定义 API 的基础信息，请求、返回等信息，返回数据将被存储为描述 <code>response</code> 的抽象对象模板，mock 服务根据这份模板，生成一份具体的 mock 数据，生成是由 <a href="https://github.com/json-schema-faker/json-schema-faker" target="_blank" rel="noopener">json-schema-faker</a> 这个库完成，下文中我们将简称为 <code>jsf</code>，mock 服务将生成的 mock 数据返回，就完成了一次最基础的 mock。</p>
 <h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>这部分的逻辑没问题，但随时可能造成整个 Yapi 服务挂掉，这里没有危言耸听，交由 <code>jsf</code> 处理的模板如果嵌套层级过多，处理复杂度陡省，耗费时间和资源增加，直到触发系统 GC（内存回收），服务崩溃。</p>
 <h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>我们的解决方案是在模板数据交由 <code>jsf</code> 处理前，先进行嵌套深度检测，如果嵌套层级过多，直接跳过 mock，避免拖垮整站服务，检测代码如下：</p>
