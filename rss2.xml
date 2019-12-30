@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 30 Dec 2019 03:56:42 GMT</pubDate>
+    <pubDate>Mon, 30 Dec 2019 16:03:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-13-预设立场</title>
+      <link>https://leeon.im/life-log-20191230/</link>
+      <guid>https://leeon.im/life-log-20191230/</guid>
+      <pubDate>Mon, 30 Dec 2019 14:58:03 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;39m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这人成心的。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191230/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-12-“新文化”运动</title>
@@ -320,20 +337,6 @@
       </description>
       
       <comments>https://leeon.im/318-journey-4th-anniversary/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>产品随想</title>
-      <link>https://leeon.im/thinking-in-roduct-managent/</link>
-      <guid>https://leeon.im/thinking-in-roduct-managent/</guid>
-      <pubDate>Tue, 02 Jul 2019 14:14:34 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;近期对产品的思考总结。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/thinking-in-roduct-managent/#disqus_thread</comments>
     </item>
     
   </channel>
