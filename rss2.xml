@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 28 Dec 2019 11:07:38 GMT</pubDate>
+    <pubDate>Mon, 30 Dec 2019 03:56:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-12-“新文化”运动</title>
+      <link>https://leeon.im/life-log-20191229/</link>
+      <guid>https://leeon.im/life-log-20191229/</guid>
+      <pubDate>Sun, 29 Dec 2019 13:57:41 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;30m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;给城市打上新标签。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191229/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-11-不要断开与世界的连接</title>
@@ -317,20 +334,6 @@
       </description>
       
       <comments>https://leeon.im/thinking-in-roduct-managent/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>打造你的私人通知机器人</title>
-      <link>https://leeon.im/build-your-own-private-message-bot/</link>
-      <guid>https://leeon.im/build-your-own-private-message-bot/</guid>
-      <pubDate>Wed, 29 May 2019 06:57:14 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;当我需要一个通知机器人时，我的选型过程以及最终方案。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/build-your-own-private-message-bot/#disqus_thread</comments>
     </item>
     
   </channel>
