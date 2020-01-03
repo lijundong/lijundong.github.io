@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 30 Dec 2019 16:03:02 GMT</pubDate>
+    <pubDate>Fri, 03 Jan 2020 16:47:48 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-14-2020</title>
+      <link>https://leeon.im/life-log-20191231/</link>
+      <guid>https://leeon.im/life-log-20191231/</guid>
+      <pubDate>Wed, 01 Jan 2020 08:12:54 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt; 60m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;告别 10 年代&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20191231/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-13-预设立场</title>
@@ -323,20 +340,6 @@
       </description>
       
       <comments>https://leeon.im/koa-session-get-session-id/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>今天到拉萨</title>
-      <link>https://leeon.im/318-journey-4th-anniversary/</link>
-      <guid>https://leeon.im/318-journey-4th-anniversary/</guid>
-      <pubDate>Mon, 05 Aug 2019 13:16:08 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;写在骑行川藏线四周年。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/318-journey-4th-anniversary/#disqus_thread</comments>
     </item>
     
   </channel>
