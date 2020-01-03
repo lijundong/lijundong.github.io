@@ -8,11 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Fri, 03 Jan 2020 16:47:48 GMT</pubDate>
+    <pubDate>Fri, 03 Jan 2020 17:45:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>llog-14-2020</title>
+      <title>llog-15-做菜</title>
+      <link>https://leeon.im/life-log-20200104/</link>
+      <guid>https://leeon.im/life-log-20200104/</guid>
+      <pubDate>Fri, 03 Jan 2020 16:53:02 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;50m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;做菜也要依据基本法。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200104/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>llog-14-20年代</title>
       <link>https://leeon.im/life-log-20191231/</link>
       <guid>https://leeon.im/life-log-20191231/</guid>
       <pubDate>Wed, 01 Jan 2020 08:12:54 GMT</pubDate>
@@ -326,20 +343,6 @@
       </description>
       
       <comments>https://leeon.im/SPA-fix-406-status-code/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>koa-session 获取当前会话的 sessionid</title>
-      <link>https://leeon.im/koa-session-get-session-id/</link>
-      <guid>https://leeon.im/koa-session-get-session-id/</guid>
-      <pubDate>Wed, 04 Sep 2019 11:07:00 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;使用 &lt;code&gt;koa-session&lt;/code&gt; 时，获取 sessionid。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/koa-session-get-session-id/#disqus_thread</comments>
     </item>
     
   </channel>
