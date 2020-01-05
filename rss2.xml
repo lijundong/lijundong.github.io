@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Fri, 03 Jan 2020 17:49:02 GMT</pubDate>
+    <pubDate>Sun, 05 Jan 2020 14:33:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-16-生态系统</title>
+      <link>https://leeon.im/life-log-20200105/</link>
+      <guid>https://leeon.im/life-log-20200105/</guid>
+      <pubDate>Sun, 05 Jan 2020 10:48:30 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;37m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;生态系统的终点在哪 ？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200105/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-15-做菜</title>
@@ -329,20 +346,6 @@
       </description>
       
       <comments>https://leeon.im/javascript-get-all-image-src-from-markdown/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>单页应用处理 406 状态</title>
-      <link>https://leeon.im/SPA-fix-406-status-code/</link>
-      <guid>https://leeon.im/SPA-fix-406-status-code/</guid>
-      <pubDate>Thu, 05 Sep 2019 02:48:52 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;书接上文，&lt;a href=&quot;https://leeon.im/koa-session-get-session-id/&quot;&gt;上篇文章&lt;/a&gt;已经解决了单点登录里 session 处理的问题，这篇我们聊聊用户登出后，用户操作页面，服务返回 406 报错问题。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/SPA-fix-406-status-code/#disqus_thread</comments>
     </item>
     
   </channel>
