@@ -8,8 +8,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 06 Jan 2020 15:21:57 GMT</pubDate>
+    <pubDate>Thu, 09 Jan 2020 09:57:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-18-年轻的时候浪一浪</title>
+      <link>https://leeon.im/life-log-20200108/</link>
+      <guid>https://leeon.im/life-log-20200108/</guid>
+      <pubDate>Wed, 08 Jan 2020 15:03:44 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;35m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用二十岁的二十一天时间送出一张明信片&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//source.lijundong.com/20-01-09/1578560181373.jpeg&quot; alt&gt;&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200108/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-17-感受当下</title>
@@ -332,23 +350,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191216/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-1-思维训练</title>
-      <link>https://leeon.im/life-log-20191215/</link>
-      <guid>https://leeon.im/life-log-20191215/</guid>
-      <pubDate>Sun, 15 Dec 2019 13:59:31 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;尝试一种结构性思考方式。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;25m&lt;/p&gt;
-&lt;/blockquote&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191215/#disqus_thread</comments>
     </item>
     
   </channel>
