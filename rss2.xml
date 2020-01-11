@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 09 Jan 2020 09:57:18 GMT</pubDate>
+    <pubDate>Sat, 11 Jan 2020 17:34:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-19-Node 线下活动小记</title>
+      <link>https://leeon.im/life-log-20200111/</link>
+      <guid>https://leeon.im/life-log-20200111/</guid>
+      <pubDate>Sat, 11 Jan 2020 15:57:30 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;65m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;参加 node party 2020 有感&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200111/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-18-年轻的时候浪一浪</title>
@@ -333,23 +350,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191217/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-2-小步快跑</title>
-      <link>https://leeon.im/life-log-20191216/</link>
-      <guid>https://leeon.im/life-log-20191216/</guid>
-      <pubDate>Mon, 16 Dec 2019 13:48:20 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;27m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;小步迭代&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191216/#disqus_thread</comments>
     </item>
     
   </channel>
