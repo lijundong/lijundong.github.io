@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 11 Jan 2020 17:34:29 GMT</pubDate>
+    <pubDate>Sun, 12 Jan 2020 17:03:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-20-聚焦被打断</title>
+      <link>https://leeon.im/life-log-20200112/</link>
+      <guid>https://leeon.im/life-log-20200112/</guid>
+      <pubDate>Sun, 12 Jan 2020 15:42:04 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;78m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我刚才准备做啥来着？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200112/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-19-Node 线下活动小记</title>
@@ -333,23 +350,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191218/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-3-时间观念</title>
-      <link>https://leeon.im/life-log-20191217/</link>
-      <guid>https://leeon.im/life-log-20191217/</guid>
-      <pubDate>Tue, 17 Dec 2019 15:57:58 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;27m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;现在是凌晨 零点 27 分，该睡觉了&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191217/#disqus_thread</comments>
     </item>
     
   </channel>
