@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 12 Jan 2020 17:03:47 GMT</pubDate>
+    <pubDate>Thu, 16 Jan 2020 10:31:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-21-表达的思考</title>
+      <link>https://leeon.im/life-log-20200115/</link>
+      <guid>https://leeon.im/life-log-20200115/</guid>
+      <pubDate>Wed, 15 Jan 2020 15:03:52 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;重新思考「表达」本身&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200115/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-20-聚焦被打断</title>
@@ -333,23 +350,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191219/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-4-沟通中的变量</title>
-      <link>https://leeon.im/life-log-20191218/</link>
-      <guid>https://leeon.im/life-log-20191218/</guid>
-      <pubDate>Wed, 18 Dec 2019 14:52:54 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;43m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;你今天的工作顺利吗？&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191218/#disqus_thread</comments>
     </item>
     
   </channel>
