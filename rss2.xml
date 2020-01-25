@@ -8,8 +8,24 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 16 Jan 2020 13:37:31 GMT</pubDate>
+    <pubDate>Fri, 17 Jan 2020 15:25:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>下个十二年</title>
+      <link>https://leeon.im/life-log-20200117/</link>
+      <guid>https://leeon.im/life-log-20200117/</guid>
+      <pubDate>Fri, 17 Jan 2020 15:18:10 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;m&lt;/p&gt;
+&lt;/blockquote&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200117/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-21-「表达」的目的</title>
@@ -333,23 +349,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191220/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-5-答复之前停顿三秒</title>
-      <link>https://leeon.im/life-log-20191219/</link>
-      <guid>https://leeon.im/life-log-20191219/</guid>
-      <pubDate>Thu, 19 Dec 2019 14:39:16 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;32m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;你确定吗？&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191219/#disqus_thread</comments>
     </item>
     
   </channel>
