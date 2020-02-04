@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 26 Jan 2020 07:08:50 GMT</pubDate>
+    <pubDate>Tue, 04 Feb 2020 07:34:47 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-23-立春</title>
+      <link>https://leeon.im/life-log-20200204/</link>
+      <guid>https://leeon.im/life-log-20200204/</guid>
+      <pubDate>Tue, 04 Feb 2020 04:14:59 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;50m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;太阳开始从南回归线北上，又一个轮回交替。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200204/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>下个十二年</title>
@@ -333,23 +350,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191221/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-6-做确定的事情</title>
-      <link>https://leeon.im/life-log-20191220/</link>
-      <guid>https://leeon.im/life-log-20191220/</guid>
-      <pubDate>Fri, 20 Dec 2019 14:18:52 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;22m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;都知道该做什么，就是不去做。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191220/#disqus_thread</comments>
     </item>
     
   </channel>

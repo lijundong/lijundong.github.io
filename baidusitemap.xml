@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://leeon.im/life-log-20200204/</loc>
+    <lastmod>2020-02-04</lastmod>
+  </url>  <url>
     <loc>https://leeon.im/life-log-20200117/</loc>
     <lastmod>2020-01-26</lastmod>
   </url>  <url>
@@ -127,10 +130,10 @@
     <loc>https://leeon.im/2018-miniprogram-developer-conference/</loc>
     <lastmod>2019-05-08</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/how-mini-program-share/</loc>
+    <loc>https://leeon.im/javascript-asi/</loc>
     <lastmod>2019-05-08</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/javascript-asi/</loc>
+    <loc>https://leeon.im/how-mini-program-share/</loc>
     <lastmod>2019-05-08</lastmod>
   </url>  <url>
     <loc>https://leeon.im/year-again-2019/</loc>
@@ -226,10 +229,10 @@
     <loc>https://leeon.im/javascript-variable-lift/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/manage-code-snippets/</loc>
+    <loc>https://leeon.im/location-of-bom/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/location-of-bom/</loc>
+    <loc>https://leeon.im/manage-code-snippets/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/nginx-conficure-domains-to-servers/</loc>
@@ -238,37 +241,37 @@
     <loc>https://leeon.im/note-hexo-deploy-on-server/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/secure-copy/</loc>
-    <lastmod>2017-11-21</lastmod>
-  </url>  <url>
     <loc>https://leeon.im/sheets-collections/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    <loc>https://leeon.im/secure-copy/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/surf-the-Internet-efficiently/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/this-in-javascript/</loc>
-    <lastmod>2017-11-21</lastmod>
-  </url>  <url>
     <loc>https://leeon.im/synchronize-data-between-google-accounts/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
+    <loc>https://leeon.im/start-latex-and-configure-latext-editor-with-sublime/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/wechat-node-0th/</loc>
+    <loc>https://leeon.im/this-in-javascript/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/update-laptop-cpu/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/xlsx-to-json-by-json/</loc>
+    <loc>https://leeon.im/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/translation-10-mini-react-patterns/</loc>
+    <lastmod>2017-11-21</lastmod>
+  </url>  <url>
+    <loc>https://leeon.im/wechat-node-0th/</loc>
+    <lastmod>2017-11-21</lastmod>
+  </url>  <url>
+    <loc>https://leeon.im/xlsx-to-json-by-json/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/Batch%20Process-PPT-images/</loc>
@@ -277,16 +280,16 @@
     <loc>https://leeon.im/Bootstrap-hover-toggle-menu/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/Canvas-animation-about-sort/</loc>
-    <lastmod>2017-11-21</lastmod>
-  </url>  <url>
     <loc>https://leeon.im/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/Dell-laptop-add-ssd/</loc>
+    <loc>https://leeon.im/Canvas-animation-about-sort/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/Centos7-install-nodejs-update/</loc>
+    <lastmod>2017-11-21</lastmod>
+  </url>  <url>
+    <loc>https://leeon.im/Dell-laptop-add-ssd/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/Kindle-content-manage/</loc>
@@ -313,10 +316,10 @@
     <loc>https://leeon.im/html-make-clock-select/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/improve-UE-by-localStorage/</loc>
+    <loc>https://leeon.im/information-system-PHP-Mysql/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/information-system-PHP-Mysql/</loc>
+    <loc>https://leeon.im/improve-UE-by-localStorage/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/information-system-Wampserver/</loc>
@@ -328,10 +331,10 @@
     <loc>https://leeon.im/lazy-load-optimization-on-iOS-Android/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/normal-flow/</loc>
+    <loc>https://leeon.im/node-js-dirname-difference/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/node-js-dirname-difference/</loc>
+    <loc>https://leeon.im/normal-flow/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/novel-crawler-by-Nodejs/</loc>
