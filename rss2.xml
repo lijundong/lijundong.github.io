@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Tue, 04 Feb 2020 07:34:47 GMT</pubDate>
+    <pubDate>Thu, 06 Feb 2020 06:20:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-24-疫情带来的思考</title>
+      <link>https://leeon.im/life-log-20200206/</link>
+      <guid>https://leeon.im/life-log-20200206/</guid>
+      <pubDate>Thu, 06 Feb 2020 05:42:05 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;38 m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;魔幻世界，活下去。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200206/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-23-立春</title>
@@ -333,23 +350,6 @@
       </description>
       
       <comments>https://leeon.im/yapi-refactor-1-multi-level-directory/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-6-逻辑很重要</title>
-      <link>https://leeon.im/life-log-20191221/</link>
-      <guid>https://leeon.im/life-log-20191221/</guid>
-      <pubDate>Sat, 21 Dec 2019 17:36:17 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;12m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;尤其是在吵架时。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191221/#disqus_thread</comments>
     </item>
     
   </channel>
