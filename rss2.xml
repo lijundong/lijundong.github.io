@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 06 Feb 2020 06:20:57 GMT</pubDate>
+    <pubDate>Sat, 08 Feb 2020 12:49:03 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-25-寻求共同目标</title>
+      <link>https://leeon.im/life-log-20200208/</link>
+      <guid>https://leeon.im/life-log-20200208/</guid>
+      <pubDate>Sat, 08 Feb 2020 12:04:54 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;24m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;王小川访谈有感&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200208/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-24-疫情带来的思考</title>
@@ -333,23 +350,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191223/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>「Yapi 改造计划一」多层级目录支持</title>
-      <link>https://leeon.im/yapi-refactor-1-multi-level-directory/</link>
-      <guid>https://leeon.im/yapi-refactor-1-multi-level-directory/</guid>
-      <pubDate>Mon, 23 Dec 2019 03:52:48 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;100m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;改造 Yapi 扁平管理逻辑，支持多层级结构管理。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/yapi-refactor-1-multi-level-directory/#disqus_thread</comments>
     </item>
     
   </channel>

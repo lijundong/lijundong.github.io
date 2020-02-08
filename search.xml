@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>llog-25-寻求共同目标</title>
+      <link href="/life-log-20200208/"/>
+      <url>/life-log-20200208/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>24m</p></blockquote><p>王小川访谈有感</p><a id="more"></a><p>今天是元宵节，家里看了几段任务访谈，其中印象最深刻的是关于搜狗王小川的几个片段，这里记录一下。</p><blockquote><p>片段 1：背景是王小川想做搜狗浏览器，张朝阳不同意，两人没谈拢，张把所有事情收走，王被架空，王受到了极大打击，但没走。主持人问为什么不走，以表达自己的态度。王反问态度干嘛用的？我的目的是做成这件事，我不是表达态度。</p></blockquote><blockquote><p>片段 2：背景是周鸿祎发起二次收购搜狗，王不认可周鸿祎的价值观，背着张直接拉来腾讯入局。主持人问不担心张会生气吗。王认为大家根本要的东西不冲突，虽然不能找腾讯，但不影响腾讯找上门来。</p></blockquote><p>这两个片段有个共同点是，目标明确，知道自己要做什么，知道自己的合作伙伴要什么，在这些需求中协调大家的共同目标，通过这种目标的一致达到共赢的局面。情绪没有任何价值，冲突的关键节点往往是利益分配，目标在哪，解决方案就在哪。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> llog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>llog-24-疫情带来的思考</title>
       <link href="/life-log-20200206/"/>
       <url>/life-log-20200206/</url>
@@ -925,11 +950,11 @@
             
             <tag> nodejs </tag>
             
-            <tag> git </tag>
-            
             <tag> 环境配置 </tag>
             
             <tag> zsh </tag>
+            
+            <tag> git </tag>
             
             <tag> vim </tag>
             
@@ -1364,9 +1389,9 @@
       
         <tags>
             
-            <tag> node </tag>
-            
             <tag> 工具使用 </tag>
+            
+            <tag> node </tag>
             
             <tag> mac </tag>
             
@@ -2025,11 +2050,11 @@
       
         <tags>
             
+            <tag> mac </tag>
+            
             <tag> 备份 </tag>
             
             <tag> timemachine </tag>
-            
-            <tag> mac </tag>
             
             <tag> 系统 </tag>
             
@@ -2309,9 +2334,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
