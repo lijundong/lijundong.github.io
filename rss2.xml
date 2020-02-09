@@ -8,8 +8,28 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 09 Feb 2020 08:21:58 GMT</pubDate>
+    <pubDate>Sun, 09 Feb 2020 08:23:20 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>life-log-20200209</title>
+      <link>https://leeon.im/life-log-20200209/</link>
+      <guid>https://leeon.im/life-log-20200209/</guid>
+      <pubDate>Sun, 09 Feb 2020 08:23:08 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;a
+          
+        
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200209/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-25-寻求共同目标</title>
@@ -333,23 +353,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191224/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-7-问题的根源取决于对错吗</title>
-      <link>https://leeon.im/life-log-20191223/</link>
-      <guid>https://leeon.im/life-log-20191223/</guid>
-      <pubDate>Mon, 23 Dec 2019 13:09:14 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;26m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;是非重要吗&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191223/#disqus_thread</comments>
     </item>
     
   </channel>

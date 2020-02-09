@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>life-log-20200209</title>
+      <link href="/life-log-20200209/"/>
+      <url>/life-log-20200209/</url>
+      
+        <content type="html"><![CDATA[<a id="more"></a>]]></content>
+      
+      
+      <categories>
+          
+          <category> llog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>llog-25-寻求共同目标</title>
       <link href="/life-log-20200208/"/>
       <url>/life-log-20200208/</url>
@@ -1594,9 +1619,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> OAuth 2.0 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -1627,9 +1652,9 @@
             
             <tag> github </tag>
             
-            <tag> react router4 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> react router4 </tag>
             
         </tags>
       
