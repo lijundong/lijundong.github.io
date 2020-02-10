@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>llog-27-好人 joey</title>
+      <link href="/life-log-20200210/"/>
+      <url>/life-log-20200210/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>39m</p></blockquote><p>纪念「老鹰说」</p><a id="more"></a><p>早晨起床后看到老鹰说推了一 <a href="https://mp.weixin.qq.com/s/jclft_dKVvem5RQ7nCPFYA" target="_blank" rel="noopener">「再见，微信」</a>，得知老鹰的微信被封了，有些伤感。</p><p>我只是公众号「老鹰说」的读者，与作者素未谋面，也没加过他的微信，「老鹰说」这个公众号更新的频率很低，翻了下记录，18 年应该断更了一年，19 年保持着每月一更。但这些并不影响，某种意义上而言，公众号只是我们互相沟通的一个平台而已，偶尔的一个推送很像老朋友突然寄来的一封信。</p><p>这种关系在我大三时建立，现在已经忘了怎么得知这个公众号，大概率是 Fenng 的推荐，16 年初，百度因魏则西事件被大众群殴，与此同时，老鹰在公众号写了一篇「你们骂你们的，我来为我的读者做点事」，用实际行动影响了他能影响的一群人，后来我效仿搭了一个服务，给同实验室的同学们使用，并且在公众号后台跟他聊了这件事，这后来，我就把他当成“老朋友”。</p><p>如上文所说，我对他不了解，并不影响我把他当做老朋友，会有短暂的伤感，就像邻居突然搬了家，不过江湖再见。</p><hr><p>这件事情也让我重新开始重新思考我们对于既有系统的依赖，现有的大多数产品都想做用户的水和电，真正达成这样的目标后，平台的定位已经不是产品开发者能左右。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> llog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>life-log-20200209</title>
       <link href="/life-log-20200209/"/>
       <url>/life-log-20200209/</url>
@@ -971,17 +996,17 @@
             
             <tag> centos </tag>
             
+            <tag> mongodb </tag>
+            
             <tag> nodejs </tag>
+            
+            <tag> git </tag>
             
             <tag> 环境配置 </tag>
             
             <tag> zsh </tag>
             
-            <tag> git </tag>
-            
             <tag> vim </tag>
-            
-            <tag> mongodb </tag>
             
         </tags>
       
@@ -1093,9 +1118,9 @@
       
         <tags>
             
-            <tag> 小程序 </tag>
-            
             <tag> 分享 </tag>
+            
+            <tag> 小程序 </tag>
             
         </tags>
       
@@ -1619,9 +1644,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> OAuth 2.0 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -1652,9 +1677,9 @@
             
             <tag> github </tag>
             
-            <tag> react router4 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> react router4 </tag>
             
         </tags>
       
@@ -2359,9 +2384,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> git </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> git </tag>
             
         </tags>
       
