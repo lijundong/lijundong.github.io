@@ -1000,11 +1000,11 @@
             
             <tag> nodejs </tag>
             
-            <tag> git </tag>
-            
             <tag> 环境配置 </tag>
             
             <tag> zsh </tag>
+            
+            <tag> git </tag>
             
             <tag> vim </tag>
             
@@ -1118,9 +1118,9 @@
       
         <tags>
             
-            <tag> 分享 </tag>
-            
             <tag> 小程序 </tag>
+            
+            <tag> 分享 </tag>
             
         </tags>
       
@@ -1644,9 +1644,9 @@
             
             <tag> github </tag>
             
-            <tag> OAuth 2.0 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> OAuth 2.0 </tag>
             
         </tags>
       
@@ -1677,9 +1677,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> react router4 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -2384,9 +2384,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
