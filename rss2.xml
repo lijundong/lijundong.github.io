@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 10 Feb 2020 08:16:42 GMT</pubDate>
+    <pubDate>Thu, 13 Feb 2020 16:43:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-28-沟通的必要性</title>
+      <link>https://leeon.im/life-log-20200213/</link>
+      <guid>https://leeon.im/life-log-20200213/</guid>
+      <pubDate>Thu, 13 Feb 2020 15:34:11 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;70m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;别放在心里，让ta知道&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200213/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-27-好人 joey</title>
@@ -336,23 +353,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191226/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-9-了解环境</title>
-      <link>https://leeon.im/life-log-20191225/</link>
-      <guid>https://leeon.im/life-log-20191225/</guid>
-      <pubDate>Wed, 25 Dec 2019 12:43:56 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;27m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;包括环境中的人&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191225/#disqus_thread</comments>
     </item>
     
   </channel>
