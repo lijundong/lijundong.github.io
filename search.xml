@@ -843,9 +843,9 @@
       
         <tags>
             
-            <tag> SPA </tag>
-            
             <tag> nodejs </tag>
+            
+            <tag> SPA </tag>
             
             <tag> koa </tag>
             
@@ -1044,17 +1044,17 @@
       
         <tags>
             
+            <tag> centos </tag>
+            
             <tag> mongodb </tag>
             
-            <tag> centos </tag>
+            <tag> git </tag>
             
             <tag> nodejs </tag>
             
             <tag> 环境配置 </tag>
             
             <tag> zsh </tag>
-            
-            <tag> git </tag>
             
             <tag> vim </tag>
             
@@ -2322,9 +2322,9 @@
       
         <tags>
             
-            <tag> 游记 </tag>
-            
             <tag> 总结 </tag>
+            
+            <tag> 游记 </tag>
             
         </tags>
       
@@ -2434,9 +2434,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> git </tag>
-            
             <tag> hexo </tag>
+            
+            <tag> git </tag>
             
         </tags>
       
@@ -2874,9 +2874,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -3111,9 +3111,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
       
@@ -3354,13 +3354,13 @@
       
         <tags>
             
-            <tag> 工具使用 </tag>
-            
             <tag> sublimetext </tag>
             
             <tag> 插件 </tag>
             
             <tag> 力所能及的分享 </tag>
+            
+            <tag> 工具使用 </tag>
             
         </tags>
       
@@ -3526,9 +3526,9 @@
       
         <tags>
             
-            <tag> kindle </tag>
-            
             <tag> 工具使用 </tag>
+            
+            <tag> kindle </tag>
             
         </tags>
       
