@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 23 Feb 2020 16:55:12 GMT</pubDate>
+    <pubDate>Sat, 29 Feb 2020 17:54:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>life-log-自说自话，心情低落</title>
+      <link>https://leeon.im/life-log-20200229/</link>
+      <guid>https://leeon.im/life-log-20200229/</guid>
+      <pubDate>Sat, 29 Feb 2020 15:48:46 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;48m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;去看更大的世界&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200229/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-29-1095</title>
@@ -18,7 +35,7 @@
       <pubDate>Sat, 22 Feb 2020 08:09:01 GMT</pubDate>
       <description>
       
-        &lt;p&gt;工作三年记&lt;/p&gt;
+        &lt;p&gt;工作三年记，三年后再来看&lt;/p&gt;
       
       </description>
       
@@ -327,23 +344,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191227/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>「Yapi 改造计划二」接口模板预检</title>
-      <link>https://leeon.im/yapi-refactor-2-mock-depth-detect/</link>
-      <guid>https://leeon.im/yapi-refactor-2-mock-depth-detect/</guid>
-      <pubDate>Fri, 27 Dec 2019 10:52:12 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;25m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Mock 之前先对接口模板的复杂度进行检测，复杂度过高时放弃 mock，以防主站服务被拖挂。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/yapi-refactor-2-mock-depth-detect/#disqus_thread</comments>
     </item>
     
   </channel>
