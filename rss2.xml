@@ -8,11 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 29 Feb 2020 17:54:46 GMT</pubDate>
+    <pubDate>Sun, 08 Mar 2020 17:51:29 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>life-log-自说自话，心情低落</title>
+      <title>llog-31-聊聊得失</title>
+      <link>https://leeon.im/life-log-20200306/</link>
+      <guid>https://leeon.im/life-log-20200306/</guid>
+      <pubDate>Fri, 06 Mar 2020 08:14:55 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;如果当年如何如何……&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200306/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>llog-30-自说自话，心情低落</title>
       <link>https://leeon.im/life-log-20200229/</link>
       <guid>https://leeon.im/life-log-20200229/</guid>
       <pubDate>Sat, 29 Feb 2020 15:48:46 GMT</pubDate>
@@ -327,23 +341,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191229/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-11-不要断开与世界的连接</title>
-      <link>https://leeon.im/life-log-20191227/</link>
-      <guid>https://leeon.im/life-log-20191227/</guid>
-      <pubDate>Sat, 28 Dec 2019 10:29:09 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;34m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;来啦？坐吧！&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191227/#disqus_thread</comments>
     </item>
     
   </channel>
