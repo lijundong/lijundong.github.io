@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 08 Mar 2020 17:51:29 GMT</pubDate>
+    <pubDate>Sun, 08 Mar 2020 18:01:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,10 @@
       <pubDate>Fri, 06 Mar 2020 08:14:55 GMT</pubDate>
       <description>
       
-        &lt;p&gt;如果当年如何如何……&lt;/p&gt;
+        &lt;blockquote&gt;
+&lt;p&gt;50m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果当年如何如何……&lt;/p&gt;
       
       </description>
       
