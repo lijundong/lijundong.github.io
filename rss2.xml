@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 08 Mar 2020 18:01:16 GMT</pubDate>
+    <pubDate>Mon, 16 Mar 2020 15:02:43 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-32-多画流程图</title>
+      <link>https://leeon.im/life-log-20200316/</link>
+      <guid>https://leeon.im/life-log-20200316/</guid>
+      <pubDate>Mon, 16 Mar 2020 14:20:20 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;25m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用图去表达，一图胜千言&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200316/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-31-聊聊得失</title>
@@ -327,23 +344,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191230/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-12-“新文化”运动</title>
-      <link>https://leeon.im/life-log-20191229/</link>
-      <guid>https://leeon.im/life-log-20191229/</guid>
-      <pubDate>Sun, 29 Dec 2019 13:57:41 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;30m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;给城市打上新标签。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191229/#disqus_thread</comments>
     </item>
     
   </channel>
