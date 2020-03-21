@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 16 Mar 2020 15:02:43 GMT</pubDate>
+    <pubDate>Sat, 21 Mar 2020 17:50:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-33-中文互联网圈信息在枯萎吗？</title>
+      <link>https://leeon.im/life-log-20200321/</link>
+      <guid>https://leeon.im/life-log-20200321/</guid>
+      <pubDate>Sat, 21 Mar 2020 17:05:38 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;43m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;信息质量堪忧。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200321/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-32-多画流程图</title>
@@ -327,23 +344,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20191231/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-13-预设立场</title>
-      <link>https://leeon.im/life-log-20191230/</link>
-      <guid>https://leeon.im/life-log-20191230/</guid>
-      <pubDate>Mon, 30 Dec 2019 14:58:03 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;39m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;这人成心的。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191230/#disqus_thread</comments>
     </item>
     
   </channel>
