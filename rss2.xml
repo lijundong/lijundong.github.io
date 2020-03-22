@@ -8,14 +8,31 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 21 Mar 2020 17:50:05 GMT</pubDate>
+    <pubDate>Sun, 22 Mar 2020 08:28:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-34-当我们在讨论问题时，我们在讨论什么？</title>
+      <link>https://leeon.im/life-log-20200322/</link>
+      <guid>https://leeon.im/life-log-20200322/</guid>
+      <pubDate>Sun, 22 Mar 2020 07:44:40 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;20m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;别掉进陷阱&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200322/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-33-中文互联网圈信息在枯萎吗？</title>
       <link>https://leeon.im/life-log-20200321/</link>
       <guid>https://leeon.im/life-log-20200321/</guid>
-      <pubDate>Sat, 21 Mar 2020 17:05:38 GMT</pubDate>
+      <pubDate>Sat, 21 Mar 2020 15:05:38 GMT</pubDate>
       <description>
       
         &lt;blockquote&gt;
@@ -327,23 +344,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200104/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-14-20年代</title>
-      <link>https://leeon.im/life-log-20191231/</link>
-      <guid>https://leeon.im/life-log-20191231/</guid>
-      <pubDate>Wed, 01 Jan 2020 08:12:54 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt; 60m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;告别 10 年代&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20191231/#disqus_thread</comments>
     </item>
     
   </channel>
