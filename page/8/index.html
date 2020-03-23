@@ -124,6 +124,15 @@
         </li>
       </a>
     
+      <a href="/categories">
+        <li class="mobile-menu-item">
+          
+          
+            Categories
+          
+        </li>
+      </a>
+    
       <a href="/about">
         <li class="mobile-menu-item">
           
@@ -173,6 +182,15 @@
         </li>
       
         <li class="menu-item">
+          <a class="menu-item-link" href="/categories">
+            
+            
+              分类
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
           <a class="menu-item-link" href="/about">
             
             
@@ -207,13 +225,13 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          <a class="post-link" href="/lazy-load-optimization-on-iOS-Android/">移动端 H5 页面滚动加载优化</a>
+          <a class="post-link" href="/Lexical analysis/">编写词法分析程序</a>
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2017年10月15日
+          2015年5月12日
         </span>
       </div>
     </header>
@@ -229,11 +247,15 @@
         
 
         
-          <p>当一个页面需要展示的数据量较大时，为了使用户获得最佳使用体验，我们常选择分页的方式进行展示数据，减少单次显示数据来降低服务器响应时间以及页面渲染时间，从而降低页面首屏时间。</p>
-<p>PC 端常见两种交互方式，通过分页控件的方式，用户点击下一页或指定页数进行跳转，另一种是通过懒加载的方式，通过监听页面滚动，在页面内容快展示完时请求下一页的数据并 append 到页面中。</p>
-<p>而在移动端，我们更想让用户无感知地浏览到页面最后一页，保证了信息阅读的连续、流畅，既然这样，滚动懒加载的方式处理分页就成了不二之选。</p>
+          <h4 id="Note："><a href="#Note：" class="headerlink" title="Note："></a>Note：</h4><p>这学期修了严厉的Mr.J的编译原理，不定期更新笔记！<br>欢迎指正！</p>
+<h4 id="Github"><a href="#Github" class="headerlink" title="Github:"></a>Github:</h4><ul>
+<li><a href="//github.com/lijundong/lexi">词法分析</a></li>
+<li><a href="//github.com/lijundong/syntax">语法分析</a></li>
+<li><a href="//github.com/lijundong/semantic">语义分析</a></li>
+</ul>
+<hr>
           <div class="read-more">
-            <a href="/lazy-load-optimization-on-iOS-Android/" class="read-more-link">阅读更多</a>
+            <a href="/Lexical analysis/" class="read-more-link">阅读更多</a>
           </div>
         
       
@@ -251,13 +273,13 @@
     <header class="post-header">
       <h1 class="post-title">
         
-          <a class="post-link" href="/add-slide-in-zepto/">zepto 添加 slideDown 和 slideUp</a>
+          <a class="post-link" href="/OpenCV-mouse-event/">OpenCV鼠标事件</a>
         
       </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2017年9月26日
+          2015年5月1日
         </span>
       </div>
     </header>
@@ -273,356 +295,22 @@
         
 
         
-          <p>之前一直用 jQuery，最近开发移动端较多，转用 zepto，多数场景下都与 jQuery 无缝切换，但某些功能暂时还不支持，其中就包括我要用到的 slideDown 和 slideUp。</p>
+          <p>与鼠标事件相关两个函数</p>
+<h4 id="回调函数cvSetMouseCallback"><a href="#回调函数cvSetMouseCallback" class="headerlink" title="回调函数cvSetMouseCallback"></a>回调函数<code>cvSetMouseCallback</code></h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">cvSetMouseCallback</span><span class="params">( <span class="keyword">const</span> <span class="keyword">char</span>* window_name, CvMouseCallback on_mouse, <span class="keyword">void</span>* param CV_DEFAULT(<span class="literal">NULL</span>))</span></span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><code>window_name</code>：鼠标执行的窗口名</p>
+<p><code>on_mouse</code>：每次指定窗口鼠标事件发生时被调用的函数指针</p>
+<p><code>param</code> :传递到回调函数的参数</p>
+<hr>
+<h4 id="on-mouse的原型"><a href="#on-mouse的原型" class="headerlink" title="on_mouse的原型"></a><code>on_mouse</code>的原型</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Foo</span><span class="params">(<span class="keyword">int</span> event, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> flags, <span class="keyword">void</span>* param)</span></span>;</span><br></pre></td></tr></table></figure>
+<hr>
+<p><code>param</code>:传递到cvSetMouseCallback函数调用的参数<br>
           <div class="read-more">
-            <a href="/add-slide-in-zepto/" class="read-more-link">阅读更多</a>
+            <a href="/OpenCV-mouse-event/" class="read-more-link">阅读更多</a>
           </div>
         
       
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/manage-code-snippets/">使用 Dash 管理代码段</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年9月2日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>要想成为一名合格的泥瓦匠，我们理应管理好手上的工具，对于趁手的工具需要即用即拿，这在工作中会带来事半功倍的效果。</p>
-<p>所以，今天我们讨论一下如何用 Dash 管理以及<strong>同步</strong>代码段（code snippets）。</p>
-          <div class="read-more">
-            <a href="/manage-code-snippets/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/">【译】高性能 React：提高性能的 3 个开发工具</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年8月6日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <blockquote>
-<p>原文地址：<a href="//medium.freecodecamp.org/make-react-fast-again-tools-and-techniques-for-speeding-up-your-react-app-7ad39d3c1b82">High Performance React: 3 New Tools to Speed Up Your Apps</a><br>文中介绍了几种 React 应用性能检测工具，并且提供了几条关于应用性能提升的解决方案。</p>
-</blockquote>
-          <div class="read-more">
-            <a href="/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/translation-10-mini-react-patterns/">【译】React 的 10 种迷你开发模式</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年7月30日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <blockquote>
-<p>原文地址：<a href="//hackernoon.com/10-react-mini-patterns-c1da92f068c5">10 React mini-patterns</a><br>对于 React 初学者的一些经验之谈，初次翻译，望多指教。</p>
-</blockquote>
-          <div class="read-more">
-            <a href="/translation-10-mini-react-patterns/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/good-coder-not-equal-to-good-developer/">llog-32</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年7月27日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <blockquote>
-<p>时间：2017-7-27<br>坐标：北京<br>天气：阴</p>
-</blockquote>
-          <div class="read-more">
-            <a href="/good-coder-not-equal-to-good-developer/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/surf-the-Internet-efficiently/">网上高效阅读</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年7月24日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>网络信息多且繁杂，利用工具提高阅读效率，你如何过滤信息 ？你如何使用 Pocket 和 Evernote ？</p>
-          <div class="read-more">
-            <a href="/surf-the-Internet-efficiently/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/use-charles-up-to-debug/">Charles 使用小记</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年7月20日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>脱离使用场景谈工具都是在扯淡，今天咱们不扯淡，说点有用的，最近做的一个项目中，使用了 Charles 让调试变得简单很多，这是可以提升编码幸福感的工具，这里总结几个常用的 feature。</p>
-          <div class="read-more">
-            <a href="/use-charles-up-to-debug/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/improve-UE-by-localStorage/">用户体验之 localStorage</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年7月5日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>通过在页面应用使用 localStorage 提升用户使用体验。 </p>
-          <div class="read-more">
-            <a href="/improve-UE-by-localStorage/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
-
-    
-
-    
-
-  </article>
-
-    
-      
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          <a class="post-link" href="/normalize-life-with-tools/">给生活一个规范</a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <span class="post-time">
-          2017年6月29日
-        </span>
-      </div>
-    </header>
-
-    
-    
-
-    <div class="post-content">
-      
-        
-        
-          
-        
-
-        
-          <p>生活中的高频问题都应有一个相对最优解，如果没有，你应该有一个。</p>
-          <div class="read-more">
-            <a href="/normalize-life-with-tools/" class="read-more-link">阅读更多</a>
-          </div>
-        
-      
-    </div>
+    </p></div>
 
     
 
@@ -641,11 +329,6 @@
         <span class="prev-text">上一页</span>
       </a>
     
-    
-      <a class="next" href="/page/9/">
-        <span class="next-text">下一页</span>
-        <i class="iconfont icon-right"></i>
-      </a>
     
   </nav>
 
