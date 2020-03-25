@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>读书-佛祖都说了些什么</title>
+      <link href="/book-what-buddha-said/"/>
+      <url>/book-what-buddha-said/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>m</p></blockquote><p>所以，佛祖都说了些什么？</p><a id="more"></a><blockquote><ul><li>推荐：四星</li><li>结论：作者文笔生动有趣，内容详实，优秀的佛学入门指南。</li></ul></blockquote><p>佛学在国内的传播，是与政权紧密结合的，最早的应用可以追溯到黄巾军起义，再到后赵时期石勒通过佛图澄巩固皇权，皇权与佛学的传播相辅相成。另一方面，佛学的发展，也加快了国内文化的探索进程，具有完备逻辑体系的佛学打败了推翻了穷途末路的玄学体系，在大乘佛法被翻译之前，佛学研究者对于小乘佛法的探讨也达到了高潮，之后又演化出门槛较低的禅学，针对的禅学的讨论，引出了“理学”、“心学”等多个文化探讨方向。</p><p>除了陌生的佛学发展史外，书中关于唐玄奘的章节大家应该会比较喜欢，介绍了「大唐西域记」之外的故事，比如他出发时是通过偷渡出国，回国之前在唐朝边界外小国待了小半年，写了封信给皇帝求原谅，等到皇帝的回信才终于正大光明回了家，回家之后的日子也不好过，他一心想翻译经文，皇帝却想拿他当侦察兵。</p><p>书中还介绍了一些佛学常识，例如佛教中荤是指有恶臭和异味的蔬菜，例如葱、蒜、韭菜，腥是指肉类，我们常说的阿弥陀佛，其实也是一位叫弥陀的佛。</p><hr><p>书中也包括一些历史内容，读历史总能看到当下的一些影子，例如早期小乘佛法的逻辑不够完备，一些学者尝试提出突破的理论解释，一些则是因循守旧，这些不思考的原教主义被随后翻译过来的大乘佛法疯狂打脸。同时也告诉了大家，站在巨人肩膀的好处，小乘佛法的争论过程早在一百多年前的印度已经被讨论过，结论几乎一致。最后一点是禅学，禅学的兴起和它无下限的门槛不无干系，低门槛让短时间内在大量的群众中散开，人民群众喜爱这种低成本高回报的修行方式，那么这群人自然不会关心这门学科的生死存亡，最后也走到了和数百年前玄学的穷途末路。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 读书 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 读书笔记 </tag>
+            
+            <tag> 佛学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>llog-34-当我们在讨论问题时，我们在讨论什么？</title>
       <link href="/life-log-20200322/"/>
       <url>/life-log-20200322/</url>
@@ -1183,9 +1210,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
             <tag> nodejs </tag>
             
@@ -1833,9 +1860,9 @@
             
             <tag> github </tag>
             
-            <tag> OAuth 2.0 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> OAuth 2.0 </tag>
             
         </tags>
       
@@ -1866,9 +1893,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> react router4 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -1893,9 +1920,9 @@
       
         <tags>
             
-            <tag> 服务器 </tag>
-            
             <tag> ssh </tag>
+            
+            <tag> 服务器 </tag>
             
         </tags>
       
@@ -2289,11 +2316,11 @@
       
         <tags>
             
-            <tag> mac </tag>
-            
             <tag> 备份 </tag>
             
             <tag> timemachine </tag>
+            
+            <tag> mac </tag>
             
             <tag> 系统 </tag>
             
@@ -2515,9 +2542,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 服务器 </tag>
+            
+            <tag> hexo </tag>
             
             <tag> 阿里云 </tag>
             
@@ -2571,11 +2598,11 @@
       
         <tags>
             
+            <tag> 服务器 </tag>
+            
             <tag> git </tag>
             
             <tag> hexo </tag>
-            
-            <tag> 服务器 </tag>
             
         </tags>
       
@@ -3013,9 +3040,9 @@
       
         <tags>
             
-            <tag> node </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> node </tag>
             
             <tag> 微信 </tag>
             
@@ -3250,9 +3277,9 @@
       
         <tags>
             
-            <tag> centos </tag>
-            
             <tag> mongodb </tag>
+            
+            <tag> centos </tag>
             
         </tags>
       
@@ -3277,9 +3304,9 @@
       
         <tags>
             
-            <tag> 服务器 </tag>
-            
             <tag> ssh </tag>
+            
+            <tag> 服务器 </tag>
             
         </tags>
       
@@ -3748,9 +3775,9 @@
       
         <tags>
             
-            <tag> life </tag>
-            
             <tag> 骑行 </tag>
+            
+            <tag> life </tag>
             
         </tags>
       

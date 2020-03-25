@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 22 Mar 2020 08:28:12 GMT</pubDate>
+    <pubDate>Wed, 25 Mar 2020 17:38:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>读书-佛祖都说了些什么</title>
+      <link>https://leeon.im/book-what-buddha-said/</link>
+      <guid>https://leeon.im/book-what-buddha-said/</guid>
+      <pubDate>Wed, 25 Mar 2020 16:33:05 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以，佛祖都说了些什么？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/book-what-buddha-said/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-34-当我们在讨论问题时，我们在讨论什么？</title>
@@ -327,23 +344,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200105/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-15-做菜</title>
-      <link>https://leeon.im/life-log-20200104/</link>
-      <guid>https://leeon.im/life-log-20200104/</guid>
-      <pubDate>Fri, 03 Jan 2020 16:53:02 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;50m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;做菜也要依据基本法。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200104/#disqus_thread</comments>
     </item>
     
   </channel>
