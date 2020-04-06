@@ -4,11 +4,38 @@
   
     
     <entry>
+      <title>源码-ejs</title>
+      <link href="/sourcecode-ejs/"/>
+      <url>/sourcecode-ejs/</url>
+      
+        <content type="html"><![CDATA[<p>大道至简，tj 教你如何用 400 行代码写一个模板语言</p><a id="more"></a><blockquote><p>Github：<a href="https://github.com/tj/ejs" target="_blank" rel="noopener">https://github.com/tj/ejs</a><br>类型：模板</p></blockquote><p>这次看的源码是 tj 写的 V1 版本，V2 版本可以前往 <a href="https://github.com/mde/ejs" target="_blank" rel="noopener">mde/ejs</a> 查看。</p><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>下面是源码项目的目录结构，核心的 ejs 代码在 <code>lib/ejs.js</code> 中。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── History.md</span><br><span class="line">├── Makefile</span><br><span class="line">├── Readme.md</span><br><span class="line">├── benchmark<span class="selector-class">.js</span> <span class="comment">// 性能测试</span></span><br><span class="line">├── ejs<span class="selector-class">.js</span> </span><br><span class="line">├── ejs<span class="selector-class">.min</span><span class="selector-class">.js</span> </span><br><span class="line">├── examples <span class="comment">// 案例</span></span><br><span class="line">├── index.js</span><br><span class="line">├── lib <span class="comment">// 源码目录</span></span><br><span class="line">│   ├── ejs<span class="selector-class">.js</span> <span class="comment">// 核心代码</span></span><br><span class="line">│   ├── filters<span class="selector-class">.js</span> <span class="comment">// 通用工具方法</span></span><br><span class="line">│   └── utils<span class="selector-class">.js</span> <span class="comment">// 提供 escape 方法</span></span><br><span class="line">├── package.json</span><br><span class="line">├── support <span class="comment">// 用于 Makefile</span></span><br><span class="line">│   └── compile.js</span><br><span class="line">└── test <span class="comment">// 测试目录</span></span><br><span class="line">    ├── ejs.js</span><br><span class="line">    └── fixtures</span><br></pre></td></tr></table></figure></p><h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:525px; height:245px;" src="https://www.processon.com/embed/5e834bd0e4b0893f95772dbc"></iframe><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>ejs 实现的逻辑如下</p><ul><li><code>parse</code> 方法实现了简易的词法分析，实现了模板语法</li><li><code>parse</code> 方法遍历模板，最终处理为一段函数字符串</li><li><code>compile</code> 方法将 <code>parse</code> 处理得到的函数串构造为函数实例</li><li>通过 <code>with</code> 方法，将数据写进函数 <code>context</code> 中，执行函数的结果，即得模板 + 数据渲染后的 HTML 代码</li></ul><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>在看源码的过程中，可以思考</p><ul><li><code>eval</code> 和 <code>new Function</code> 的区别、优劣</li><li>通用方法的可扩展性，<code>ejs</code> 给了使用者极大的扩展权限，大量可配置条件，这一点让我印象深刻，与此类似的还有 <code>koa-session</code> 的扩展选项，我认为这一点非常值得学习，并且应用在实际开发中</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> source </category>
+          
+          <category> ejs </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> sourcecode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>llog-35-清明</title>
       <link href="/life-log-20200404/"/>
       <url>/life-log-20200404/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>50m</p></blockquote><p>出门走走</p><a id="more"></a><p>回京之后一直在家办公，除了日常买菜几乎不出门，上周下了场春雨之后，气温回暖，花草树木开始复苏，赶上今天好天气，出门走一走。</p><p>上一次爬长城是十年前，学校组织的夏令营，去的是居庸关，细节已记不起，只记得当天大雾，和同行伙伴一鼓作气爬到那一段峰顶。不过今天去的是八达岭，而且爬的是坡度较缓的南段。来回路途中花了四个小时，游客不是很多，边走边休息，两个小时走完南段下山。全程的风景很好，层峦叠嶂，连绵起伏。</p><p><img src="https://source.lijundong.com/picgo/20200404231432.jpg" alt></p><p><img src="https://source.lijundong.com/picgo/20200404231431.jpg" alt></p><p>游客不多，城墙也清爽了很多</p><p><img src="https://source.lijundong.com/picgo/20200404231429.jpg" alt></p><p>抓到一架飞机，华为手机的变焦很好用，成品效果还可以</p><p><img src="https://source.lijundong.com/picgo/20200404231428.jpg" alt></p><p>抓到另一架飞机</p><p><img src="https://source.lijundong.com/picgo/20200404231430.jpg" alt></p><p>这张图让我想起贾科长的新片「一直游到海水变蓝」的在国内的海报，有兴趣可以去搜一下，设计很惊艳。</p><p><img src="https://source.lijundong.com/picgo/20200404231433.jpg" alt></p><p>显卡不行，绿植只能渲染一半……，要想看另一半，三个月之后再来</p><hr><p>今天还是一个特殊的日子，国家公祭日，上午十点鸣笛时，我正在去八达岭的车上，在车上我回想了今年到现在经历的事情，恍如隔世，失望、恐慌、绝望、平静、冷漠……，这个春天大家经历了太多的情感变化，三个月之前谁都无法想象将会以这样的形式经历这段历史，再回头看最难的那段时间，心情五味杂陈，时代的巨轮碾压过的地方，人们如同那野草般倔强的生长，抗争有时抵不过现实的残酷，付出生命的代价。</p><p>残酷的现实告诉我，当下的时代不会比史书中的更美好，没有理所应当，世界不会顺利地朝着我们期望的方向发展，没有完美无缺的系统，只是 bug 还未被触发。大家好好生活，保重身体。</p>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>50m</p></blockquote><p>出门走走</p><a id="more"></a><p>回京之后一直在家办公，除了日常买菜几乎不出门，上周下了场春雨之后，气温回暖，花草树木开始复苏，赶上今天好天气，出门走一走。</p><p>上一次爬长城是十年前，学校组织的夏令营，去的是居庸关，细节已记不起，只记得当天大雾，和同行伙伴一鼓作气爬到那一段峰顶。不过今天去的是八达岭，而且爬的是坡度较缓的南段。来回路途中花了四个小时，游客不是很多，边走边休息，两个小时走完南段下山。全程的风景很好，层峦叠嶂，连绵起伏。</p><p><img src="https://source.lijundong.com/picgo/20200404231432.jpg" alt></p><p><img src="https://source.lijundong.com/picgo/20200404231431.jpg" alt></p><p>游客不多，城墙也清爽了很多</p><p><img src="https://source.lijundong.com/picgo/20200404231429.jpg" alt></p><p>抓到一架飞机，华为手机的变焦很好用，成片效果还可以</p><p><img src="https://source.lijundong.com/picgo/20200404231428.jpg" alt></p><p>抓到另一架飞机</p><p><img src="https://source.lijundong.com/picgo/20200404231430.jpg" alt></p><p>这张图让我想起贾科长的新片「一直游到海水变蓝」的在国内的海报，有兴趣可以去搜一下，设计很惊艳。</p><p><img src="https://source.lijundong.com/picgo/20200404231433.jpg" alt></p><p>显卡不行，绿植只能渲染一半……，要想看另一半，三个月之后再来</p><hr><p>今天还是一个特殊的日子，国家公祭日，上午十点鸣笛时，我正在去八达岭的车上，在车上我回想了今年到现在经历的事情，恍如隔世，失望、恐慌、绝望、平静、冷漠……，这个春天大家经历了太多的情感变化，三个月之前谁都无法想象将会以这样的形式经历这段历史，再回头看最难的那段时间，心情五味杂陈，时代的巨轮碾压过的地方，人们如同那野草般倔强的生长，抗争有时抵不过现实的残酷，付出生命的代价。</p><p>残酷的现实告诉我，当下的时代不会比史书中的更美好，没有理所应当，世界不会顺利地朝着我们期望的方向发展，没有完美无缺的系统，只是 bug 还未被触发。大家好好生活，保重身体。</p>]]></content>
       
       
       <categories>
@@ -1123,9 +1150,9 @@
       
         <tags>
             
-            <tag> 随笔 </tag>
-            
             <tag> 骑行 </tag>
+            
+            <tag> 随笔 </tag>
             
         </tags>
       
@@ -1264,17 +1291,17 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
             
-            <tag> nodejs </tag>
+            <tag> mongodb </tag>
             
-            <tag> git </tag>
+            <tag> nodejs </tag>
             
             <tag> 环境配置 </tag>
             
             <tag> zsh </tag>
+            
+            <tag> git </tag>
             
             <tag> vim </tag>
             
@@ -1914,9 +1941,9 @@
             
             <tag> github </tag>
             
-            <tag> OAuth 2.0 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> OAuth 2.0 </tag>
             
         </tags>
       
@@ -1947,9 +1974,9 @@
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> react router4 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -2654,9 +2681,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> hexo </tag>
-            
             <tag> git </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -3094,9 +3121,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> node </tag>
+            
+            <tag> mongodb </tag>
             
             <tag> 微信 </tag>
             
@@ -3331,9 +3358,9 @@
       
         <tags>
             
-            <tag> mongodb </tag>
-            
             <tag> centos </tag>
+            
+            <tag> mongodb </tag>
             
         </tags>
       
@@ -3574,13 +3601,13 @@
       
         <tags>
             
+            <tag> 工具使用 </tag>
+            
             <tag> sublimetext </tag>
             
             <tag> 插件 </tag>
             
             <tag> 力所能及的分享 </tag>
-            
-            <tag> 工具使用 </tag>
             
         </tags>
       
@@ -3746,9 +3773,9 @@
       
         <tags>
             
-            <tag> 工具使用 </tag>
-            
             <tag> kindle </tag>
+            
+            <tag> 工具使用 </tag>
             
         </tags>
       
