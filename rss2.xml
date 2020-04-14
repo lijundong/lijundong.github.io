@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 06 Apr 2020 17:06:26 GMT</pubDate>
+    <pubDate>Tue, 14 Apr 2020 15:20:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>读书-贫穷的本质</title>
+      <link>https://leeon.im/book-Poor-Economics-A-Radical-Rethinking-of-the-Way-to-Fight-Global-Poverty/</link>
+      <guid>https://leeon.im/book-Poor-Economics-A-Radical-Rethinking-of-the-Way-to-Fight-Global-Poverty/</guid>
+      <pubDate>Tue, 14 Apr 2020 02:08:37 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;是什么导致的贫困？&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/book-Poor-Economics-A-Radical-Rethinking-of-the-Way-to-Fight-Global-Poverty/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>源码-ejs</title>
@@ -323,23 +337,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200112/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-19-Node 线下活动小记</title>
-      <link>https://leeon.im/life-log-20200111/</link>
-      <guid>https://leeon.im/life-log-20200111/</guid>
-      <pubDate>Sat, 11 Jan 2020 15:57:30 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;65m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;参加 node party 2020 有感&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200111/#disqus_thread</comments>
     </item>
     
   </channel>
