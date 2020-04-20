@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Thu, 16 Apr 2020 16:11:25 GMT</pubDate>
+    <pubDate>Mon, 20 Apr 2020 16:43:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>读书-远见</title>
+      <link>https://leeon.im/book-The-Long-View-Career-Strategies-to-Start-Strong-Reach-High-and-Go-Far/</link>
+      <guid>https://leeon.im/book-The-Long-View-Career-Strategies-to-Start-Strong-Reach-High-and-Go-Far/</guid>
+      <pubDate>Mon, 20 Apr 2020 15:49:20 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;三个职业阶段，如果你赶时间，推荐阅读「第一部分」。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/book-The-Long-View-Career-Strategies-to-Start-Strong-Reach-High-and-Go-Far/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>读书-贫穷的本质</title>
@@ -320,23 +334,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200115/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-20-聚焦被打断</title>
-      <link>https://leeon.im/life-log-20200112/</link>
-      <guid>https://leeon.im/life-log-20200112/</guid>
-      <pubDate>Sun, 12 Jan 2020 15:42:04 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;78m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我刚才准备做啥来着？&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200112/#disqus_thread</comments>
     </item>
     
   </channel>
