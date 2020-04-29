@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 20 Apr 2020 16:43:28 GMT</pubDate>
+    <pubDate>Wed, 29 Apr 2020 16:01:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-36-鲜啤上市了</title>
+      <link>https://leeon.im/life-log-20200429/</link>
+      <guid>https://leeon.im/life-log-20200429/</guid>
+      <pubDate>Wed, 29 Apr 2020 14:56:53 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;28m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;鲜啤已经上市了&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200429/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>读书-远见</title>
@@ -317,23 +334,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200117/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-21-「表达」的目的</title>
-      <link>https://leeon.im/life-log-20200115/</link>
-      <guid>https://leeon.im/life-log-20200115/</guid>
-      <pubDate>Wed, 15 Jan 2020 15:03:52 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;70m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;重新思考「表达」本身&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200115/#disqus_thread</comments>
     </item>
     
   </channel>

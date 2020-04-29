@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>llog-36-鲜啤上市了</title>
+      <link href="/life-log-20200429/"/>
+      <url>/life-log-20200429/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>28m</p></blockquote><p>鲜啤已经上市了</p><a id="more"></a><p>晚间饭后，和 boss 聊了很久，家庭、工作、职业规划，围着公司转了五圈，收获很多。</p><p>多去思考事情的本质，身处公司之中，你的价值应该对谁呈现，谁定义了你的价值。这件事思考清楚。持续培养可迁移的能力，可复用的能力在每个行业都能找到对应的着力点。</p><p>晚上回到小区附近，发现临近的超时新上了鲜啤，没忍住买了点尝鲜，咋了一口原浆，夏天的味道。</p><p>不知是不是太久没有喝酒，喝了一升的原浆之后头晕的不行，失去了平衡的能力，哈哈，不过不影响我现在敲代码。</p><p>五一有几件事要做，先搬家，再去杭州，这是第一次去杭州这座城，之前谈过无数次的地方，竟然从未去过，神奇。</p><hr><p>另外，今天北京放开了条件，从非指定地区返京的同学不需要在家中隔离两周，预计接下来一段时间机票价格应该会涨点，不过我已经提前买了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> llog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读书-远见</title>
       <link href="/book-The-Long-View-Career-Strategies-to-Start-Strong-Reach-High-and-Go-Far/"/>
       <url>/book-The-Long-View-Career-Strategies-to-Start-Strong-Reach-High-and-Go-Far/</url>
@@ -1790,9 +1815,9 @@
       
         <tags>
             
-            <tag> 工具使用 </tag>
-            
             <tag> node </tag>
+            
+            <tag> 工具使用 </tag>
             
             <tag> mac </tag>
             
@@ -1958,9 +1983,9 @@
       
         <tags>
             
-            <tag> react </tag>
-            
             <tag> node </tag>
+            
+            <tag> react </tag>
             
             <tag> github </tag>
             
@@ -1989,15 +2014,15 @@
       
         <tags>
             
-            <tag> react </tag>
-            
             <tag> node </tag>
+            
+            <tag> react </tag>
             
             <tag> github </tag>
             
-            <tag> 前后分离 </tag>
-            
             <tag> OAuth 2.0 </tag>
+            
+            <tag> 前后分离 </tag>
             
         </tags>
       
@@ -2022,15 +2047,15 @@
       
         <tags>
             
-            <tag> react </tag>
-            
             <tag> node </tag>
+            
+            <tag> react </tag>
             
             <tag> github </tag>
             
-            <tag> react router4 </tag>
-            
             <tag> 前后分离 </tag>
+            
+            <tag> react router4 </tag>
             
         </tags>
       

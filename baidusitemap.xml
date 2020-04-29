@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://leeon.im/life-log-20200429/</loc>
+    <lastmod>2020-04-29</lastmod>
+  </url>  <url>
     <loc>https://leeon.im/book-The-Long-View-Career-Strategies-to-Start-Strong-Reach-High-and-Go-Far/</loc>
     <lastmod>2020-04-20</lastmod>
   </url>  <url>
@@ -283,10 +286,10 @@
     <loc>https://leeon.im/location-of-bom/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/nginx-conficure-domains-to-servers/</loc>
+    <loc>https://leeon.im/manage-code-snippets/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/manage-code-snippets/</loc>
+    <loc>https://leeon.im/nginx-conficure-domains-to-servers/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/note-hexo-deploy-on-server/</loc>
@@ -298,10 +301,10 @@
     <loc>https://leeon.im/sheets-collections/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/surf-the-Internet-efficiently/</loc>
+    <loc>https://leeon.im/start-latex-and-configure-latext-editor-with-sublime/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    <loc>https://leeon.im/surf-the-Internet-efficiently/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/synchronize-data-between-google-accounts/</loc>
@@ -310,10 +313,10 @@
     <loc>https://leeon.im/this-in-javascript/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
+    <loc>https://leeon.im/translation-10-mini-react-patterns/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/translation-10-mini-react-patterns/</loc>
+    <loc>https://leeon.im/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/update-laptop-cpu/</loc>
@@ -328,13 +331,16 @@
     <loc>https://leeon.im/Batch%20Process-PPT-images/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/Canvas-animation-about-sort/</loc>
-    <lastmod>2017-11-21</lastmod>
-  </url>  <url>
     <loc>https://leeon.im/Bootstrap-hover-toggle-menu/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
+    <loc>https://leeon.im/Canvas-animation-about-sort/</loc>
+    <lastmod>2017-11-21</lastmod>
+  </url>  <url>
     <loc>https://leeon.im/Centos-Redhat-Fedora-install-MongoDB3-2X/</loc>
+    <lastmod>2017-11-21</lastmod>
+  </url>  <url>
+    <loc>https://leeon.im/Centos7-install-nodejs-update/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/Dell-laptop-add-ssd/</loc>
@@ -352,9 +358,6 @@
     <loc>https://leeon.im/Tmux-common-comands-shortcuts/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/Centos7-install-nodejs-update/</loc>
-    <lastmod>2017-11-21</lastmod>
-  </url>  <url>
     <loc>https://leeon.im/clear-float/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
@@ -367,10 +370,10 @@
     <loc>https://leeon.im/html-make-clock-select/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/information-system-PHP-Mysql/</loc>
+    <loc>https://leeon.im/improve-UE-by-localStorage/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/improve-UE-by-localStorage/</loc>
+    <loc>https://leeon.im/information-system-PHP-Mysql/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/information-system-Wampserver/</loc>
@@ -391,16 +394,16 @@
     <loc>https://leeon.im/novel-crawler-by-Nodejs/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/think-in-early-bus/</loc>
-    <lastmod>2017-11-21</lastmod>
-  </url>  <url>
     <loc>https://leeon.im/think-about-learning/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/year-again-2017/</loc>
+    <loc>https://leeon.im/think-in-early-bus/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/when-lixiaofeng-become-sky/</loc>
+    <lastmod>2017-11-21</lastmod>
+  </url>  <url>
+    <loc>https://leeon.im/year-again-2017/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/year-again/</loc>
