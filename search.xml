@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>llog-38-清理 TODO</title>
+      <link href="/life-log-20200518/"/>
+      <url>/life-log-20200518/</url>
+      
+        <content type="html"><![CDATA[<p>聊聊最近在做什么</p><a id="more"></a><p>五一从杭州回京之后，先把节前的项目上线，随后开始花了两天时间把之前一直想重写的 Yapi 的构建脚本写了，写完之后顺手把优化也做了，合并主干之后接下来的开发工作体验会好很多。这件事情实在拖了太久，多数时间里，挡住我们行动的只有内心的畏难，投入到问题中，解决它。</p><p>第二件事，在 mentor 这个角色上进入新的状态，在交流中刻意去实践一些想法，获得反馈，我希望对我带的同学们带来好的影响，在刚进入职场时，这个特殊的时期。</p><p>最后一件事减肥，因为隔离在家期间每天都做饭，运动量缺失，导致现在体重超标，开始刻意戒碳水，增加运动量，目前进度正常，预计一个月刻意恢复到之前的状态。</p><p>分享几首最近沉迷的歌，</p><p>Juke Ross 的 <a href="https://music.163.com/#/song?id=518066992&amp;userid=48948039" target="_blank" rel="noopener">Morning Breeze</a> 和 <a href="http://music.163.com/song?id=574906258&amp;userid=48948039" target="_blank" rel="noopener">Fresh Roses</a></p><p>周深版本的<a href="http://music.163.com/song?id=1446233390&amp;userid=48948039" target="_blank" rel="noopener">千千阙歌</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> llog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>llog-37-搬家</title>
       <link href="/life-log-20200503/"/>
       <url>/life-log-20200503/</url>
@@ -3547,9 +3572,9 @@
       
         <tags>
             
-            <tag> scp </tag>
-            
             <tag> linux </tag>
+            
+            <tag> scp </tag>
             
         </tags>
       

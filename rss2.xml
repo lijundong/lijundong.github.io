@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sun, 03 May 2020 16:36:19 GMT</pubDate>
+    <pubDate>Mon, 18 May 2020 16:15:36 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-38-清理 TODO</title>
+      <link>https://leeon.im/life-log-20200518/</link>
+      <guid>https://leeon.im/life-log-20200518/</guid>
+      <pubDate>Mon, 18 May 2020 15:37:36 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;聊聊最近在做什么&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200518/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-37-搬家</title>
@@ -317,23 +331,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200206/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-23-立春</title>
-      <link>https://leeon.im/life-log-20200204/</link>
-      <guid>https://leeon.im/life-log-20200204/</guid>
-      <pubDate>Tue, 04 Feb 2020 04:14:59 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;50m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;太阳开始从南回归线北上，又一个轮回交替。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200204/#disqus_thread</comments>
     </item>
     
   </channel>
