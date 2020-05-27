@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Wed, 27 May 2020 10:10:32 GMT</pubDate>
+    <pubDate>Wed, 27 May 2020 15:38:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>「Yapi 改造计划三」重写构建脚本，使用 webpack 替换 ykit</title>
+      <link>https://leeon.im/yapi-refactor-3-webpack-replace-ykit/</link>
+      <guid>https://leeon.im/yapi-refactor-3-webpack-replace-ykit/</guid>
+      <pubDate>Wed, 27 May 2020 10:27:11 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;使用 webpack 4 重构 yapi 构建脚本。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/yapi-refactor-3-webpack-replace-ykit/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>tui.editor 视频嵌入插件</title>
@@ -311,23 +325,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200209/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-25-寻求共同目标</title>
-      <link>https://leeon.im/life-log-20200208/</link>
-      <guid>https://leeon.im/life-log-20200208/</guid>
-      <pubDate>Sat, 08 Feb 2020 12:04:54 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;24m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;王小川访谈有感&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200208/#disqus_thread</comments>
     </item>
     
   </channel>
