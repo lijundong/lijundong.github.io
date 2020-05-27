@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> yapi </tag>
-            
             <tag> webpack </tag>
+            
+            <tag> yapi </tag>
             
             <tag> 重构 </tag>
             
@@ -1279,9 +1279,9 @@
       
         <tags>
             
-            <tag> nodejs </tag>
-            
             <tag> SPA </tag>
+            
+            <tag> nodejs </tag>
             
             <tag> koa </tag>
             
@@ -1484,9 +1484,9 @@
             
             <tag> centos </tag>
             
-            <tag> 环境配置 </tag>
-            
             <tag> nodejs </tag>
+            
+            <tag> 环境配置 </tag>
             
             <tag> zsh </tag>
             
@@ -3630,9 +3630,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> scp </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
