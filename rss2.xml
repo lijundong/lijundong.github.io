@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 18 May 2020 16:15:36 GMT</pubDate>
+    <pubDate>Wed, 27 May 2020 10:05:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>tui.editor 视频嵌入插件</title>
+      <link>https://leeon.im/video-plugin-for-tui-editor/</link>
+      <guid>https://leeon.im/video-plugin-for-tui-editor/</guid>
+      <pubDate>Wed, 27 May 2020 09:16:06 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Tui.editor 视频嵌入插件&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/video-plugin-for-tui-editor/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-38-清理 TODO</title>
@@ -314,23 +328,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200208/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-24-疫情带来的思考</title>
-      <link>https://leeon.im/life-log-20200206/</link>
-      <guid>https://leeon.im/life-log-20200206/</guid>
-      <pubDate>Thu, 06 Feb 2020 05:42:05 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;38 m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;魔幻世界，活下去。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200206/#disqus_thread</comments>
     </item>
     
   </channel>
