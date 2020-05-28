@@ -44,7 +44,7 @@
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://source.lijundong.com/picgo/20200527232247.png">
 <meta property="og:image" content="https://source.lijundong.com/picgo/20200527232216.png">
-<meta property="og:updated_time" content="2020-05-27T15:42:35.557Z">
+<meta property="og:updated_time" content="2020-05-28T08:49:22.800Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「Yapi 改造计划三」重写构建脚本，使用 webpack 替换 ykit">
 <meta name="twitter:description" content="使用 webpack 4 重构 yapi 构建脚本。">
@@ -246,7 +246,7 @@
   <div class="post-toc" id="post-toc">
     <h2 class="post-toc-title">文章目录</h2>
     <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#背景"><span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#升级-webpack-4-x"><span class="toc-text">升级 webpack@4.x</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化配置"><span class="toc-text">初始化配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题列表"><span class="toc-text">问题列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#优化列表"><span class="toc-text">优化列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码优化"><span class="toc-text">代码优化</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#背景"><span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tl-dr"><span class="toc-text">tl;dr</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#升级-webpack-4-x"><span class="toc-text">升级 webpack@4.x</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化配置"><span class="toc-text">初始化配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#问题列表"><span class="toc-text">问题列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#优化列表"><span class="toc-text">优化列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#代码优化"><span class="toc-text">代码优化</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol>
     </div>
   </div>
 
@@ -256,6 +256,7 @@
         <p>使用 webpack 4 重构 yapi 构建脚本。</p>
 <a id="more"></a>
 <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>我的一部分工作是基于 <a href="https://github.com/YMFE/yapi" target="_blank" rel="noopener">Yapi</a> 做二次开发，Yapi 官方使用的构建工具是同属 <a href="https://github.com/YMFE" target="_blank" rel="noopener">YMFE</a> 出品的 <a href="https://github.com/YMFE/ykit" target="_blank" rel="noopener">Ykit</a>，Ykit 是基于 <a href="mailto:`webpack@3.8.1" target="_blank" rel="noopener">`webpack@3.8.1</a><code>的二次封装，随着我开发强度的增加，Ykit 逐渐影响日常开发体验，尤其是 hot-reload 时间，而官方主要几乎停止维护，在看了 Ykit 源码之后，决定用</code><a href="mailto:webpack@4.x" target="_blank" rel="noopener">webpack@4.x</a>` 重写构建脚本。</p>
+<h2 id="tl-dr"><a href="#tl-dr" class="headerlink" title="tl;dr"></a>tl;dr</h2><p><strong><a href="https://github.com/leeonfield/migrate-ykit-to-webpack-4" target="_blank" rel="noopener">webpack@4 构建脚本源码</a></strong></p>
 <h2 id="升级-webpack-4-x"><a href="#升级-webpack-4-x" class="headerlink" title="升级 webpack@4.x"></a>升级 <a href="mailto:webpack@4.x" target="_blank" rel="noopener">webpack@4.x</a></h2><h3 id="初始化配置"><a href="#初始化配置" class="headerlink" title="初始化配置"></a>初始化配置</h3><ol>
 <li>官方文档：webpack 官方文档有 <a href="https://webpack.js.org/migrate/4/" target="_blank" rel="noopener">V3 升级 V4</a> 一些注意事项，其中就包括废弃的一些包</li>
 <li>除了官方废弃的包，这次重构将 Babel 版本也升级到了 <code>7.x</code>，这个版本包都以命名空间的方式发布，所以需要重新安装</li>
