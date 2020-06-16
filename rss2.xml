@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 30 May 2020 07:31:22 GMT</pubDate>
+    <pubDate>Tue, 16 Jun 2020 16:18:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-39-遇到问题时，你如何寻找答案</title>
+      <link>https://leeon.im/life-log-20200616/</link>
+      <guid>https://leeon.im/life-log-20200616/</guid>
+      <pubDate>Tue, 16 Jun 2020 13:59:46 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;信息源随着所处阶段的变化而变化。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200616/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>「Yapi 改造计划四」升级 tui.editor@2.x</title>
@@ -308,23 +322,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200213/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-27-好人 joey</title>
-      <link>https://leeon.im/life-log-20200210/</link>
-      <guid>https://leeon.im/life-log-20200210/</guid>
-      <pubDate>Mon, 10 Feb 2020 07:06:56 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;39m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;纪念「老鹰说」&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200210/#disqus_thread</comments>
     </item>
     
   </channel>
