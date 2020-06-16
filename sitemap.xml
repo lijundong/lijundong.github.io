@@ -723,14 +723,14 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/manage-code-snippets/</loc>
+    <loc>https://leeon.im/location-of-bom/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://leeon.im/location-of-bom/</loc>
+    <loc>https://leeon.im/manage-code-snippets/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -772,13 +772,6 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/synchronize-data-between-google-accounts/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://leeon.im/surf-the-Internet-efficiently/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
@@ -786,21 +779,7 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/this-in-javascript/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leeon.im/update-laptop-cpu/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leeon.im/translation-10-mini-react-patterns/</loc>
+    <loc>https://leeon.im/synchronize-data-between-google-accounts/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -814,7 +793,28 @@
   </url>
   
   <url>
+    <loc>https://leeon.im/translation-10-mini-react-patterns/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leeon.im/update-laptop-cpu/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leeon.im/wechat-node-0th/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leeon.im/this-in-javascript/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -824,13 +824,6 @@
     <loc>https://leeon.im/xlsx-to-json-by-json/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leeon.im/Bootstrap-hover-toggle-menu/</loc>
-    
-    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
   </url>
   
@@ -850,6 +843,13 @@
   
   <url>
     <loc>https://leeon.im/Centos7-install-nodejs-update/</loc>
+    
+    <lastmod>2017-11-21T08:03:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leeon.im/Bootstrap-hover-toggle-menu/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
@@ -884,14 +884,14 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/Tmux-common-comands-shortcuts/</loc>
+    <loc>https://leeon.im/Windows-tips-you-may-ignore/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://leeon.im/Windows-tips-you-may-ignore/</loc>
+    <loc>https://leeon.im/Tmux-common-comands-shortcuts/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
