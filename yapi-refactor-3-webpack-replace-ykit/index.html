@@ -17,7 +17,7 @@
 
 
 
-  <meta name="keywords" content="yapi,webpack,重构,">
+  <meta name="keywords" content="webpack,yapi,重构,">
 
 
 
@@ -35,7 +35,7 @@
 
 
 <meta name="description" content="使用 webpack 4 重构 yapi 构建脚本。">
-<meta name="keywords" content="yapi,webpack,重构">
+<meta name="keywords" content="webpack,yapi,重构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="「Yapi 改造计划三」重写构建脚本，使用 webpack 替换 ykit">
 <meta property="og:url" content="https://leeon.im/yapi-refactor-3-webpack-replace-ykit/index.html">
@@ -44,7 +44,7 @@
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://source.lijundong.com/picgo/20200527232247.png">
 <meta property="og:image" content="https://source.lijundong.com/picgo/20200527232216.png">
-<meta property="og:updated_time" content="2020-05-28T08:49:22.800Z">
+<meta property="og:updated_time" content="2020-06-17T10:01:16.204Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「Yapi 改造计划三」重写构建脚本，使用 webpack 替换 ykit">
 <meta name="twitter:description" content="使用 webpack 4 重构 yapi 构建脚本。">
@@ -304,6 +304,12 @@
 <h4 id="优化列表"><a href="#优化列表" class="headerlink" title="优化列表"></a>优化列表</h4><ol>
 <li>使用 <code>mini-css-extract-plugin</code> 抽离样式：这种方式存在一个问题，在 <code>yapi-plugin-wiki</code> 插件的文档中，样式的引入顺序是先引入 <code>codemirror</code> 再引入 <code>tui-editor</code>，<code>tui-editor</code> 的样式文件复写了 <code>codemirror</code> 的部分样式，但 <code>mini-css-extract-plugin</code> 打包后的引用顺序不是源码的引入顺序，为了临时解决这个问题，只在 <code>less</code> 和 <code>sass</code> 这两种文件上使用 <code>mini-css-extract-plugin</code>，再回看 <code>ykit.config.js</code> 的配置，也是通过这种方式绕过。</li>
 <li>分包：将一些低频变更的依赖打包，通过 <code>contenthash</code> 命名，避免每次上线后，用户需要重新下载所有包</li>
+<li>使用 <code>fast refresh</code> 替代 <code>react-hot-loader</code> 实现热替换，具体方案可以参考 <a href="https://github.com/pmmmwh/react-refresh-webpack-plugin" target="_blank" rel="noopener">react-refresh-webpack-plugin</a>，配置流程相较于 <code>react-hot-loader</code> 更简洁，流程大体为<ol>
+<li>依赖安装：<code>npm install -D @pmmmwh/react-refresh-webpack-plugin react-refresh</code></li>
+<li>webpack 的 <code>plugins</code> 在开发环境增加 <code>new ReactRefreshWebpackPlugin()</code></li>
+<li>babel 的 <code>plugins</code> 在开发环境增加 <code>react-refresh/babel</code></li>
+</ol>
+</li>
 <li>优化<ol>
 <li><code>antd</code> 按需加载</li>
 <li><code>moment.js</code> 替换语言包</li>
@@ -399,9 +405,9 @@
         
           <div class="post-tags">
             
-              <a href="/tags/yapi/">yapi</a>
-            
               <a href="/tags/webpack/">webpack</a>
+            
+              <a href="/tags/yapi/">yapi</a>
             
               <a href="/tags/重构/">重构</a>
             
