@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Tue, 16 Jun 2020 16:18:52 GMT</pubDate>
+    <pubDate>Mon, 06 Jul 2020 15:56:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-40-从零到一</title>
+      <link>https://leeon.im/life-log-20200706/</link>
+      <guid>https://leeon.im/life-log-20200706/</guid>
+      <pubDate>Mon, 06 Jul 2020 15:23:28 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;28m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;创业维艰，创作亦然。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200706/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-39-遇到问题时，你如何寻找答案</title>
@@ -305,23 +322,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200220/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-28-沟通的必要性</title>
-      <link>https://leeon.im/life-log-20200213/</link>
-      <guid>https://leeon.im/life-log-20200213/</guid>
-      <pubDate>Thu, 13 Feb 2020 15:34:11 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;70m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;别放在心里，让ta知道&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200213/#disqus_thread</comments>
     </item>
     
   </channel>
