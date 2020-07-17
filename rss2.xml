@@ -8,8 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Mon, 06 Jul 2020 15:56:06 GMT</pubDate>
+    <pubDate>Fri, 17 Jul 2020 09:01:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-41-人生的增长点</title>
+      <link>https://leeon.im/life-log-20200717/</link>
+      <guid>https://leeon.im/life-log-20200717/</guid>
+      <pubDate>Fri, 17 Jul 2020 06:05:04 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;45m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;骑车通勤随想&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200717/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-40-从零到一</title>
@@ -308,20 +325,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200229/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-29-1095</title>
-      <link>https://leeon.im/life-log-20200220/</link>
-      <guid>https://leeon.im/life-log-20200220/</guid>
-      <pubDate>Sat, 22 Feb 2020 08:09:01 GMT</pubDate>
-      <description>
-      
-        &lt;p&gt;工作三年记，三年后再来看&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200220/#disqus_thread</comments>
     </item>
     
   </channel>
