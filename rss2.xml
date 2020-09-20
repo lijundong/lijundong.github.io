@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write down,Mark it.</description>
-    <pubDate>Sat, 18 Jul 2020 15:46:40 GMT</pubDate>
+    <pubDate>Sun, 20 Sep 2020 15:20:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-43-打一下午乒乓球如何</title>
+      <link>https://leeon.im/life-log-20200919/</link>
+      <guid>https://leeon.im/life-log-20200919/</guid>
+      <pubDate>Fri, 18 Sep 2020 16:13:14 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;阶段性不学习，阶段性没进步，阶段性迷茫&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20200919/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-42-信息更新</title>
@@ -308,23 +322,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200316/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-31-聊聊得失</title>
-      <link>https://leeon.im/life-log-20200306/</link>
-      <guid>https://leeon.im/life-log-20200306/</guid>
-      <pubDate>Fri, 06 Mar 2020 08:14:55 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;50m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;如果当年如何如何……&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200306/#disqus_thread</comments>
     </item>
     
   </channel>
