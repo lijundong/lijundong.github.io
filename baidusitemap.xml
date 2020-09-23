@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://leeon.im/life-log-20200919/</loc>
-    <lastmod>2020-09-20</lastmod>
+    <lastmod>2020-09-23</lastmod>
   </url>  <url>
     <loc>https://leeon.im/headless-browser/</loc>
     <lastmod>2020-09-17</lastmod>
@@ -313,10 +313,10 @@
     <loc>https://leeon.im/javascript-variable-lift/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/location-of-bom/</loc>
+    <loc>https://leeon.im/manage-code-snippets/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/manage-code-snippets/</loc>
+    <loc>https://leeon.im/location-of-bom/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/nginx-conficure-domains-to-servers/</loc>
@@ -346,10 +346,10 @@
     <loc>https://leeon.im/translation-10-mini-react-patterns/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
+    <loc>https://leeon.im/update-laptop-cpu/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/update-laptop-cpu/</loc>
+    <loc>https://leeon.im/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/wechat-node-0th/</loc>
@@ -382,13 +382,10 @@
     <loc>https://leeon.im/Putty-login-aliyun-Network-error-Software-caused-connection-abort/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/Windows-tips-you-may-ignore/</loc>
-    <lastmod>2017-11-21</lastmod>
-  </url>  <url>
     <loc>https://leeon.im/Tmux-common-comands-shortcuts/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/clear-float/</loc>
+    <loc>https://leeon.im/Windows-tips-you-may-ignore/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/coding-page-github-page-deploy-dns/</loc>
@@ -400,13 +397,16 @@
     <loc>https://leeon.im/html-make-clock-select/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/information-system-PHP-Mysql/</loc>
+    <loc>https://leeon.im/clear-float/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/improve-UE-by-localStorage/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/information-system-Wampserver/</loc>
+    <lastmod>2017-11-21</lastmod>
+  </url>  <url>
+    <loc>https://leeon.im/information-system-PHP-Mysql/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/just-do-good-thing/</loc>
@@ -424,10 +424,10 @@
     <loc>https://leeon.im/novel-crawler-by-Nodejs/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/think-in-early-bus/</loc>
+    <loc>https://leeon.im/think-about-learning/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
-    <loc>https://leeon.im/think-about-learning/</loc>
+    <loc>https://leeon.im/think-in-early-bus/</loc>
     <lastmod>2017-11-21</lastmod>
   </url>  <url>
     <loc>https://leeon.im/when-lixiaofeng-become-sky/</loc>
