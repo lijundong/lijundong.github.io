@@ -7,9 +7,26 @@
     <link>https://leeon.im/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
-    <description>Write down,Mark it.</description>
-    <pubDate>Wed, 23 Sep 2020 08:22:23 GMT</pubDate>
+    <description>Write it,Mark it.</description>
+    <pubDate>Sun, 27 Dec 2020 06:31:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>feel free</title>
+      <link>https://leeon.im/year-again-2021/</link>
+      <guid>https://leeon.im/year-again-2021/</guid>
+      <pubDate>Sat, 26 Dec 2020 07:12:49 GMT</pubDate>
+      <description>
+      
+        &lt;blockquote&gt;
+&lt;p&gt;m&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;开始复盘过去的 2020 年&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/year-again-2021/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-43-去打球吧</title>
@@ -305,23 +322,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200321/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-32-多画流程图</title>
-      <link>https://leeon.im/life-log-20200316/</link>
-      <guid>https://leeon.im/life-log-20200316/</guid>
-      <pubDate>Mon, 16 Mar 2020 14:20:20 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;25m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;用图去表达，一图胜千言&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200316/#disqus_thread</comments>
     </item>
     
   </channel>
