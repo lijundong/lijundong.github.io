@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write it,Mark it.</description>
-    <pubDate>Thu, 31 Dec 2020 15:15:35 GMT</pubDate>
+    <pubDate>Sun, 03 Jan 2021 14:05:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>llog-44-见字如面</title>
+      <link>https://leeon.im/life-log-20210103/</link>
+      <guid>https://leeon.im/life-log-20210103/</guid>
+      <pubDate>Sun, 03 Jan 2021 13:27:07 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;好久不见&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20210103/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>feel free</title>
@@ -302,23 +316,6 @@
       </description>
       
       <comments>https://leeon.im/life-log-20200322/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-33-中文互联网圈信息在枯萎吗？</title>
-      <link>https://leeon.im/life-log-20200321/</link>
-      <guid>https://leeon.im/life-log-20200321/</guid>
-      <pubDate>Sat, 21 Mar 2020 15:05:38 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;43m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;信息质量堪忧。&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200321/#disqus_thread</comments>
     </item>
     
   </channel>
