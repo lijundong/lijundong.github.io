@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leeon.im/about/index.html</loc>
+    
+    <lastmod>2021-01-03T15:55:38.523Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leeon.im/life-log-20210103/</loc>
     
     <lastmod>2021-01-03T15:33:55.292Z</lastmod>
@@ -117,13 +124,6 @@
     <loc>https://leeon.im/life-log-20200518/</loc>
     
     <lastmod>2020-05-18T16:15:36.353Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leeon.im/about/index.html</loc>
-    
-    <lastmod>2020-05-10T15:47:34.295Z</lastmod>
     
   </url>
   
@@ -737,13 +737,6 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/git-hooks/</loc>
-    
-    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://leeon.im/embeded-javascript-templates/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
@@ -752,6 +745,13 @@
   
   <url>
     <loc>https://leeon.im/google-no-country-redirect-disabled/</loc>
+    
+    <lastmod>2017-11-21T08:03:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://leeon.im/git-hooks/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -821,14 +821,14 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/start-latex-and-configure-latext-editor-with-sublime/</loc>
+    <loc>https://leeon.im/surf-the-Internet-efficiently/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://leeon.im/surf-the-Internet-efficiently/</loc>
+    <loc>https://leeon.im/start-latex-and-configure-latext-editor-with-sublime/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -849,14 +849,14 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/translation-10-mini-react-patterns/</loc>
+    <loc>https://leeon.im/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://leeon.im/translation-High-Performance-React-3-New-Tools-to-Speed-Up-Your-Apps/</loc>
+    <loc>https://leeon.im/translation-10-mini-react-patterns/</loc>
     
     <lastmod>2017-11-21T08:03:57.000Z</lastmod>
     
@@ -919,14 +919,14 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/Dell-laptop-add-ssd/</loc>
+    <loc>https://leeon.im/Kindle-content-manage/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://leeon.im/Kindle-content-manage/</loc>
+    <loc>https://leeon.im/Dell-laptop-add-ssd/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
@@ -1003,14 +1003,14 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/just-do-good-thing/</loc>
+    <loc>https://leeon.im/lazy-load-optimization-on-iOS-Android/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://leeon.im/lazy-load-optimization-on-iOS-Android/</loc>
+    <loc>https://leeon.im/just-do-good-thing/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
@@ -1038,14 +1038,14 @@
   </url>
   
   <url>
-    <loc>https://leeon.im/think-about-learning/</loc>
+    <loc>https://leeon.im/think-in-early-bus/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://leeon.im/think-in-early-bus/</loc>
+    <loc>https://leeon.im/think-about-learning/</loc>
     
     <lastmod>2017-11-21T08:03:11.000Z</lastmod>
     
