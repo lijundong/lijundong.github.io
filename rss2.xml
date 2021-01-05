@@ -8,8 +8,22 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write it,Mark it.</description>
-    <pubDate>Sun, 03 Jan 2021 15:33:55 GMT</pubDate>
+    <pubDate>Tue, 05 Jan 2021 16:56:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>独立思考</title>
+      <link>https://leeon.im/life-log-20210105/</link>
+      <guid>https://leeon.im/life-log-20210105/</guid>
+      <pubDate>Tue, 05 Jan 2021 16:16:01 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;独立思考，独立判断。&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20210105/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>llog-44-见字如面</title>
@@ -299,23 +313,6 @@
       </description>
       
       <comments>https://leeon.im/book-what-buddha-said/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>llog-34-当我们在讨论问题时，我们在讨论什么？</title>
-      <link>https://leeon.im/life-log-20200322/</link>
-      <guid>https://leeon.im/life-log-20200322/</guid>
-      <pubDate>Sun, 22 Mar 2020 07:44:40 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;20m&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;别掉进陷阱&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/life-log-20200322/#disqus_thread</comments>
     </item>
     
   </channel>
