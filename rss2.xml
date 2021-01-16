@@ -8,11 +8,25 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Write it,Mark it.</description>
-    <pubDate>Wed, 06 Jan 2021 12:16:52 GMT</pubDate>
+    <pubDate>Sat, 16 Jan 2021 06:43:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>独立思考</title>
+      <title>llog-46-去写小说怎么样？</title>
+      <link>https://leeon.im/life-log-20210116/</link>
+      <guid>https://leeon.im/life-log-20210116/</guid>
+      <pubDate>Sat, 16 Jan 2021 06:25:33 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;应该会很有意思&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://leeon.im/life-log-20210116/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>llg-45-独立思考</title>
       <link>https://leeon.im/life-log-20210105/</link>
       <guid>https://leeon.im/life-log-20210105/</guid>
       <pubDate>Tue, 05 Jan 2021 16:16:01 GMT</pubDate>
@@ -296,23 +310,6 @@
       </description>
       
       <comments>https://leeon.im/book-The-21-Irrefutable-Laws-Of-Leadership/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>读书-佛祖都说了些什么</title>
-      <link>https://leeon.im/book-what-buddha-said/</link>
-      <guid>https://leeon.im/book-what-buddha-said/</guid>
-      <pubDate>Wed, 25 Mar 2020 16:33:05 GMT</pubDate>
-      <description>
-      
-        &lt;blockquote&gt;
-&lt;p&gt;20200316-20200322&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;所以，佛祖都说了些什么？&lt;/p&gt;
-      
-      </description>
-      
-      <comments>https://leeon.im/book-what-buddha-said/#disqus_thread</comments>
     </item>
     
   </channel>
