@@ -44,7 +44,7 @@
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://source.lijundong.com/17-11-11/2009205.jpg">
 <meta property="og:image" content="https://source.lijundong.com/17-11-11/23233133.jpg">
-<meta property="og:updated_time" content="2018-11-25T07:30:07.306Z">
+<meta property="og:updated_time" content="2021-02-18T12:32:39.481Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React + Node 单页应用「二」OAuth 2.0 协议 &amp; GitHub 授权实践">
 <meta name="twitter:description" content="关于项目项目地址预览地址 记录最近做的一个 demo，前端使用 React，用 React Router 实现前端路由，Koa 2 搭建 API Server， 最后通过 Nginx 做请求转发。  这是第二篇，介绍下 OAuth 2.0 授权机制，以及 Github App 授权过程，通过获取授权使用 Github API。">
@@ -266,11 +266,11 @@
 <li>任何第三方应用的漏洞都可能会威胁到用户的密码，以及对应密码权限下的用户数据。</li>
 </ul>
 <h3 id="OAuth-2-0"><a href="#OAuth-2-0" class="headerlink" title="OAuth 2.0"></a>OAuth 2.0</h3><p>为了解决这个问题，<code>OAuth</code> 协议引入了授权层，并将客户端与服务端的角色区分开，在 <code>OAuth</code> 协议中，客户端请求的 <code>Access_token</code> ，被托管在资源服务器，但受用户控制，并且与用户凭证完全不同。</p>
-<p>举个例子，现在有一家档案馆，档案馆中有很多资料，这些资料有些涉及到机密，有些只是常规资料，<br>研究员<strong>小李</strong>需要进入档案馆查找<strong>常规资料</strong>，于是就跑去找<strong>罗馆长</strong>批条子</p>
+<p>举个例子，现在有一家档案馆，档案馆中有很多资料，这些资料有些涉及到机密，有些只是常规资料，<br>研究员<strong>小李</strong>需要进入档案馆查找<strong>常规资料</strong>，于是就跑去找<strong>馆长</strong>批条子</p>
 <blockquote>
 <p>“馆长馆长，我要看一些常规资料，请给我批个条子吧”</p>
 </blockquote>
-<p>罗馆长了解了小李要看的是常规资料，很爽快地批了</p>
+<p>馆长了解了小李要看的是常规资料，很爽快地批了</p>
 <blockquote>
 <p>“没问题，给，这是同意的<strong>条子</strong>”</p>
 </blockquote>
