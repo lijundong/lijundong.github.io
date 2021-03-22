@@ -44,7 +44,7 @@
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://source.lijundong.com/picgo/20200527232247.png">
 <meta property="og:image" content="https://source.lijundong.com/picgo/20200527232216.png">
-<meta property="og:updated_time" content="2020-09-14T03:23:00.423Z">
+<meta property="og:updated_time" content="2021-03-22T07:29:26.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「Yapi 改造计划三」重写构建脚本，使用 webpack 替换 ykit">
 <meta name="twitter:description" content="使用 webpack 4 重构 yapi 构建脚本。">
@@ -255,7 +255,7 @@
       
         <p>使用 webpack 4 重构 yapi 构建脚本。</p>
 <a id="more"></a>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>我的一部分工作是基于 <a href="https://github.com/YMFE/yapi" target="_blank" rel="noopener">Yapi</a> 做二次开发，Yapi 官方使用的构建工具是同属 <a href="https://github.com/YMFE" target="_blank" rel="noopener">YMFE</a> 出品的 <a href="https://github.com/YMFE/ykit" target="_blank" rel="noopener">Ykit</a>，Ykit 是基于 <a href="mailto:`webpack@3.8.1" target="_blank" rel="noopener">`webpack@3.8.1</a><code>的二次封装，随着我开发强度的增加，Ykit 逐渐影响日常开发体验，尤其是 hot-reload 时间，而官方主要几乎停止维护，在看了 Ykit 源码之后，决定用</code><a href="mailto:webpack@4.x" target="_blank" rel="noopener">webpack@4.x</a>` 重写构建脚本。</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>我的一部分工作是基于 <a href="https://github.com/YMFE/yapi" target="_blank" rel="noopener">Yapi</a> 做二次开发，Yapi 官方使用的构建工具是同属 <a href="https://github.com/YMFE" target="_blank" rel="noopener">YMFE</a> 出品的 <a href="https://github.com/YMFE/ykit" target="_blank" rel="noopener">Ykit</a>，<code>Ykit</code> 是基于 <a href="mailto:`webpack@3.8.1" target="_blank" rel="noopener">`webpack@3.8.1</a><code>的二次封装，随着我开发强度的增加，</code>Ykit<code>逐渐影响日常开发体验，尤其是</code>hot-reload<code>时间，而官方主要几乎停止维护，在看了</code>Ykit<code>源码之后，决定用</code><a href="mailto:webpack@4.x" target="_blank" rel="noopener">webpack@4.x</a>` 重写构建脚本。</p>
 <h2 id="tl-dr"><a href="#tl-dr" class="headerlink" title="tl;dr"></a>tl;dr</h2><p><strong><a href="https://github.com/leeonfield/migrate-ykit-to-webpack-4" target="_blank" rel="noopener">webpack@4 构建脚本源码</a></strong></p>
 <h2 id="升级-webpack-4-x"><a href="#升级-webpack-4-x" class="headerlink" title="升级 webpack@4.x"></a>升级 <a href="mailto:webpack@4.x" target="_blank" rel="noopener">webpack@4.x</a></h2><h3 id="初始化配置"><a href="#初始化配置" class="headerlink" title="初始化配置"></a>初始化配置</h3><ol>
 <li>官方文档：webpack 官方文档有 <a href="https://webpack.js.org/migrate/4/" target="_blank" rel="noopener">V3 升级 V4</a> 一些注意事项，其中就包括废弃的一些包</li>
