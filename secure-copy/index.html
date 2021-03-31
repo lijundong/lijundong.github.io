@@ -17,12 +17,12 @@
 
 
 
-  <meta name="keywords" content="linux,scp,">
+  <meta name="keywords" content="scp,linux,">
 
 
 
 
-  <link rel="alternate" href="/rss2.xml" title="Leeonfield">
+  <link rel="alternate" href="/atom.xml" title="Leeonfield">
 
 
 
@@ -35,7 +35,7 @@
 
 
 <meta name="description" content="在 windows 本地操作服务器，最初使用 putty + FileZilla，之后使用 Xshell + Xftp，之后看到黄彪同学直接在命令行( Linux 下)用 ssh 命令登陆服务器，vim 下操作，手指在键盘上下翻飞，好不潇洒，十分羡慕，无奈电脑性能太差，开虚拟机太卡，双系统并不想折腾，生产力太低，硬件跟不上，软件来凑，不得不赞叹git for windows功能之强大，让我在 wi">
-<meta name="keywords" content="linux,scp">
+<meta name="keywords" content="scp,linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SCP跨机远程拷贝">
 <meta property="og:url" content="https://leeon.im/secure-copy/index.html">
@@ -60,7 +60,7 @@
 
 <script>
   var CONFIG = {
-    search: true,
+    search: false,
     searchPath: "/search.xml",
     fancybox: true,
     toc: true,
@@ -204,14 +204,6 @@
         </li>
       
       
-        <li class="menu-search">
-          <form>
-            <i class="iconfont icon-search" id="open-search"></i>
-            <input type="text" class="search-input" id="search-input">
-            <i class="iconfont icon-close" id="close-search"></i>
-          </form>
-        </li>
-      
     </ul>
   
 </nav>
@@ -327,9 +319,9 @@
         
           <div class="post-tags">
             
-              <a href="/tags/linux/">linux</a>
-            
               <a href="/tags/scp/">scp</a>
+            
+              <a href="/tags/linux/">linux</a>
             
           </div>
         
@@ -380,10 +372,6 @@
   <div class="social-links">
     
       
-        
-          <a href="mailto:leeonfield@gmail.com" class="iconfont icon-email" title="email"></a>
-        
-      
     
       
     
@@ -409,15 +397,13 @@
     
     
     
-      <a href="/rss2.xml" class="iconfont icon-rss" title="rss"></a>
-    
   </div>
 
 
 
 <div class="copyright">
   <span class="power-by">
-    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+    构建自 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 
   </span>
   
   <span class="theme-info">
@@ -495,31 +481,5 @@
 <script type="text/javascript" src="/js/src/bootstrap.js?v=2.4.x"></script>
 
     
-  <script type="text/html" id="search-result">
-    <article class="post">
-      <header class="post-header">
-        <h1 class="post-title">
-          <a href="$url$" class="post-link">
-            $title$
-          </a>
-        </h1>
-      </header>
-      <div class="post-content">
-        $content$
-        <div class="read-more">
-          <a href="$url$" class="read-more-link">
-            阅读更多
-          </a>
-        </div>
-      </div>
-    </article>
-  </script>
-  <script type="text/html" id="no-search-result">
-    <div class="no-result">
-      <h2>No result found!</h2>
-    </div>
-  </script>
-  <script type="text/javascript" src="/js/src/search.js?v=2.4.x"></script>
-
   </body>
 </html>

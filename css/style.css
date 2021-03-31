@@ -460,7 +460,7 @@ h6 {
     float: left; }
     .header .logo-wrapper .logo {
       font-size: 48px;
-      font-family: "Chancery", cursive, LiSu, sans-serif; }
+      font-family: cursive, LiSu, sans-serif; }
   @media screen and (max-width: 800px) {
     .header .logo-wrapper {
       display: none; } }
@@ -1266,7 +1266,7 @@ h6 {
     .mobile-navbar .mobile-header-logo .logo {
       font-size: 22px;
       line-height: 50px;
-      font-family: "Chancery", cursive, LiSu, sans-serif; }
+      font-family: cursive, LiSu, sans-serif; }
   .mobile-navbar .mobile-navbar-icon {
     color: #16982B;
     height: 50px;
